@@ -1,1569 +1,786 @@
 1
-00:00:08,516 --> 00:00:16,500
-[ Applause and cheers ]
+00:00:17,518 --> 00:00:19,686
+<c.magenta>（为订阅成功而设计）</c>
 
 
 2
-00:00:20,216 --> 00:00:21,676
->> In this session we're going
+00:00:20,254 --> 00:00:23,924
+<c.magenta>订阅是App Store</c>
+<c.magenta>发展最快的商业模式</c>
 
 
 3
-00:00:21,676 --> 00:00:23,756
-to discuss the best practices of
+00:00:24,124 --> 00:00:26,894
+<c.magenta>为什么几乎每次准备要注册</c>
 
 
 4
-00:00:23,756 --> 00:00:24,756
-subscriptions.
+00:00:27,794 --> 00:00:32,366
+<c.magenta>出色的新服务或订阅精彩的新内容</c>
 
 
 5
-00:00:25,086 --> 00:00:26,776
-We'll focus on effectively
+00:00:32,866 --> 00:00:34,735
+<c.magenta>你会有这样的感受</c>
 
 
 6
-00:00:26,776 --> 00:00:29,116
-communicating the value of your
+00:00:35,469 --> 00:00:37,804
+<c.magenta>这是因为订阅时 感觉太复杂</c>
 
 
 7
-00:00:29,116 --> 00:00:30,866
-subscriptions, streamlining the
+00:00:37,871 --> 00:00:41,175
+<c.magenta>太困惑或太费事</c>
 
 
 8
-00:00:30,866 --> 00:00:33,046
-signup flow, and providing
+00:00:41,508 --> 00:00:43,877
+<c.magenta>这种情况很常见</c>
 
 
 9
-00:00:33,046 --> 00:00:34,856
-positive and effortless
+00:00:44,611 --> 00:00:46,747
+<c.magenta>为实现出色的用户体验</c>
 
 
 10
-00:00:35,076 --> 00:00:36,756
-subscription experiences.
+00:00:46,813 --> 00:00:51,451
+<c.magenta>为使得订阅无比轻松 透明 生动有趣</c>
 
 
 11
-00:00:37,706 --> 00:00:38,986
-Lauren, back to you.
+00:00:51,652 --> 00:00:54,221
+<c.magenta>我们需要专注于下列原则</c>
 
 
 12
-00:00:39,586 --> 00:00:39,996
->> All right.
+00:00:54,288 --> 00:00:57,457
+<c.magenta>来改进用户体验</c>
+<c.magenta>使得设计有利于获得预订成功</c>
 
 
 13
-00:00:40,736 --> 00:00:41,276
-Thanks, Doug.
+00:00:59,393 --> 00:01:02,829
+<c.magenta>我们探讨的第一步 是要做到轻松</c>
 
 
 14
-00:00:41,926 --> 00:00:42,976
-We're going to try this again.
+00:01:03,230 --> 00:01:05,999
+<c.magenta>让订阅轻松 是什么意思？</c>
 
 
 15
-00:00:43,331 --> 00:00:45,331
-[ Laugh ]
+00:01:06,433 --> 00:01:09,203
+<c.magenta>这是指人们需要知道你有订阅功能</c>
 
 
 16
-00:00:45,646 --> 00:00:47,296
-Subscriptions are the fastest
+00:01:10,504 --> 00:01:13,407
+<c.magenta>这样他们不应去找具体注册方法</c>
 
 
 17
-00:00:47,296 --> 00:00:48,476
-growing business model in the
+00:01:14,408 --> 00:01:16,410
+<c.magenta>所以可见性很重要</c>
 
 
 18
-00:00:48,476 --> 00:00:49,026
-App Store.
+00:01:16,844 --> 00:01:18,712
+<c.magenta>主动表现 不必害羞</c>
 
 
 19
-00:00:49,486 --> 00:00:50,966
-Why is it almost every time
+00:01:19,112 --> 00:01:21,481
+<c.magenta>让人们知道你提供订阅功能</c>
 
 
 20
-00:00:50,966 --> 00:00:53,446
-you're ready to sign up for an
+00:01:21,548 --> 00:01:23,250
+<c.magenta>请大家进行注册</c>
 
 
 21
-00:00:53,446 --> 00:00:55,326
-awesome new service or to
+00:01:23,650 --> 00:01:27,788
+<c.magenta>有一种方法是在应用界面</c>
+<c.magenta>保持订阅按钮</c>
 
 
 22
-00:00:55,326 --> 00:00:57,036
-subscribe to some amazing new
+00:01:28,589 --> 00:01:33,227
+<c.magenta>这里是《纽约时报》</c>
+<c.magenta>他们在保留订阅按钮方面做得不错</c>
 
 
 23
-00:00:57,036 --> 00:00:59,526
-content, this is the feeling
+00:01:33,527 --> 00:01:36,597
+<c.magenta>在整个UI 他们的做法很有品位</c>
 
 
 24
-00:00:59,526 --> 00:01:00,086
-that you get?
+00:01:36,897 --> 00:01:39,867
+<c.magenta>订阅按钮很显眼 在每篇文章都有</c>
 
 
 25
-00:01:00,816 --> 00:01:02,336
-That's because it's all too
+00:01:40,801 --> 00:01:44,738
+<c.magenta>他们做得很好</c>
+<c.magenta>没有惹人烦或是太过强势</c>
 
 
 26
-00:01:02,336 --> 00:01:04,396
-common for subscriptions to feel
+00:01:45,138 --> 00:01:48,008
+<c.magenta>因为整合到他们的界面中</c>
 
 
 27
-00:01:04,396 --> 00:01:07,756
-complicated, confusing, or just
+00:01:49,176 --> 00:01:52,946
+<c.magenta>不要通过弹出广告或通知推出订阅</c>
 
 
 28
-00:01:07,756 --> 00:01:09,986
-take too long to sign up.
+00:01:53,580 --> 00:01:57,284
+<c.magenta>因为弹出广告和通知是要被拒绝的</c>
 
 
 29
-00:01:09,986 --> 00:01:12,026
-So, for a great user experience,
+00:01:57,518 --> 00:02:00,454
+<c.magenta>而你不希望人们拒绝你的订阅要求</c>
 
 
 30
-00:01:12,176 --> 00:01:13,466
-make your subscription
+00:02:01,388 --> 00:02:03,557
+<c.magenta>推出订阅还有一种办法</c>
 
 
 31
-00:01:13,726 --> 00:01:16,046
-effortless, transparent, and
+00:02:03,724 --> 00:02:07,728
+<c.magenta>就是要醒目 当有人对一段内容</c>
+<c.magenta>或你通过订阅提供的专题</c>
 
 
 32
-00:01:16,046 --> 00:01:16,606
-engaging.
+00:02:08,228 --> 00:02:12,466
+<c.magenta>表现出兴趣时 就呈现出来</c>
 
 
 33
-00:01:16,996 --> 00:01:18,526
-Let's focus on each of these
+00:02:12,533 --> 00:02:13,400
+<c.magenta>（我感兴趣）</c>
 
 
 34
-00:01:18,526 --> 00:01:19,996
-principles to improve the user
+00:02:13,767 --> 00:02:15,602
+<c.magenta>这里是约会应用Her</c>
 
 
 35
-00:01:19,996 --> 00:01:21,476
-experience and design for
+00:02:16,103 --> 00:02:19,106
+<c.magenta>比如 你看过几则介绍</c>
 
 
 36
-00:01:21,476 --> 00:01:22,426
-subscription success.
+00:02:19,406 --> 00:02:21,742
+<c.magenta>偶然瞧见有个人很有意思</c>
 
 
 37
-00:01:24,476 --> 00:01:26,416
-The first step we'll talk about,
+00:02:22,242 --> 00:02:25,245
+<c.magenta>所以你想再看看这个简介 在那一刻</c>
 
 
 38
-00:01:27,036 --> 00:01:27,916
-being effortless.
+00:02:25,579 --> 00:02:29,283
+<c.magenta>应用Her很有品位地提出订阅选项</c>
 
 
 39
-00:01:28,576 --> 00:01:29,846
-So what does it mean for your
+00:02:29,683 --> 00:02:33,053
+<c.magenta>因为回顾功能是他们所提供的订阅内容</c>
 
 
 40
-00:01:29,846 --> 00:01:31,156
-subscription to be effortless?
+00:02:34,121 --> 00:02:34,988
+<c.magenta>这很棒</c>
 
 
 41
-00:01:31,776 --> 00:01:33,146
-It means that people should know
+00:02:35,055 --> 00:02:37,824
+<c.magenta>这是Her推出订阅要求的合适时机</c>
 
 
 42
-00:01:33,146 --> 00:01:34,556
-that you have a subscription.
+00:02:37,891 --> 00:02:39,326
+<c.magenta>因为你已经表现出兴趣</c>
 
 
 43
-00:01:35,866 --> 00:01:36,936
-That way they shouldn't have to
+00:02:40,127 --> 00:02:43,330
+<c.magenta>这里Her在体现</c>
+<c.magenta>订阅价值方面表现出色</c>
 
 
 44
-00:01:36,936 --> 00:01:39,606
-look for how to sign up.
+00:02:43,397 --> 00:02:47,167
+<c.magenta>同时 还做得很漂亮 动画轻松</c>
 
 
 45
-00:01:39,776 --> 00:01:41,766
-So it's important to be visible.
+00:02:48,502 --> 00:02:53,307
+<c.magenta>你是否选择在你的用户界面中</c>
+<c.magenta>始终保持这一特色</c>
 
 
 46
-00:01:42,186 --> 00:01:43,956
-Get out there and don't be shy.
+00:02:53,373 --> 00:02:58,745
+<c.magenta>或是在有人表示出兴趣时</c>
+<c.magenta>呈现出订阅选项</c>
 
 
 47
-00:01:44,486 --> 00:01:45,806
-Let people know that you have a
+00:02:59,346 --> 00:03:03,550
+<c.magenta>以确保它能让人们看到</c>
+<c.magenta>让他们知道你有订阅服务</c>
 
 
 48
-00:01:45,806 --> 00:01:47,626
-subscription offer, and ask them
+00:03:04,017 --> 00:03:06,119
+<c.magenta>无论你做何选择</c>
 
 
 49
-00:01:47,626 --> 00:01:48,916
-to sign up.
+00:03:06,353 --> 00:03:11,425
+<c.magenta>所有预订应用应包括在</c>
+<c.magenta>设置或账户注册的空间</c>
 
 
 50
-00:01:49,006 --> 00:01:50,896
-One approach would be to persist
+00:03:11,491 --> 00:03:15,162
+<c.magenta>因为这是人们要进行注册的直观位置</c>
 
 
 51
-00:01:50,896 --> 00:01:52,516
-a Subscribe button in your app's
+00:03:17,464 --> 00:03:22,636
+<c.magenta>同时 你的订阅应该很轻松</c>
+<c.magenta>需要去除麻烦</c>
 
 
 52
-00:01:52,516 --> 00:01:53,086
-interface.
+00:03:23,337 --> 00:03:28,275
+<c.magenta>所谓麻烦包括要求太多信息 太多步骤</c>
 
 
 53
-00:01:53,956 --> 00:01:55,476
-Here in "The New York Times"
+00:03:28,342 --> 00:03:30,844
+<c.magenta>花费太多时间 才能完成注册</c>
 
 
 54
-00:01:55,766 --> 00:01:57,566
-they do a great job persisting a
+00:03:31,578 --> 00:03:34,047
+<c.magenta>不过 怎样才能知道</c>
+<c.magenta>自己要求的太多呢？</c>
 
 
 55
-00:01:57,606 --> 00:01:58,476
-Subscribe button.
+00:03:34,948 --> 00:03:36,149
+<c.magenta>这个数据会有帮助</c>
 
 
 56
-00:01:58,886 --> 00:02:00,446
-And they do this tastefully
+00:03:36,683 --> 00:03:40,120
+<c.magenta>这个图表是一个月以来的数据快照</c>
 
 
 57
-00:02:00,496 --> 00:02:01,476
-throughout the entire UI.
+00:03:40,187 --> 00:03:43,957
+<c.magenta>来自美国的前三位视频流媒体应用</c>
 
 
 58
-00:02:02,266 --> 00:02:03,456
-It's very visible.
+00:03:44,424 --> 00:03:46,593
+<c.magenta>当它们的名字去除时</c>
 
 
 59
-00:02:03,546 --> 00:02:05,216
-And it's across each article.
+00:03:46,660 --> 00:03:49,897
+<c.magenta>所有的重要数据就是点击量的转化率</c>
 
 
 60
-00:02:06,146 --> 00:02:07,576
-This is done really well.
+00:03:50,964 --> 00:03:56,870
+<c.magenta>订阅流表明3个点击</c>
+<c.magenta>会导致61%的转化率</c>
 
 
 61
-00:02:07,756 --> 00:02:10,106
-And it's not annoying or pushy,
+00:03:57,371 --> 00:04:01,975
+<c.magenta>4次点击的订阅流</c>
+<c.magenta>会导致48%的转化率</c>
 
 
 62
-00:02:10,506 --> 00:02:12,016
-because it families together
+00:04:02,442 --> 00:04:07,481
+<c.magenta>不过 一旦有9个点击</c>
+<c.magenta>转化率会掉到7%</c>
 
 
 63
-00:02:12,016 --> 00:02:12,926
-with their interface.
+00:04:08,348 --> 00:04:12,152
+<c.magenta>现在 这里是个样本 显然你应该</c>
 
 
 64
-00:02:14,206 --> 00:02:16,016
-Don't present your subscription
+00:04:12,219 --> 00:04:15,255
+<c.magenta>要求注册所必须的内容</c>
 
 
 65
-00:02:16,016 --> 00:02:17,446
-like a popup add or a
+00:04:15,622 --> 00:04:18,692
+<c.magenta>因为很显然 少就是多</c>
 
 
 66
-00:02:17,446 --> 00:02:18,306
-notification.
+00:04:19,259 --> 00:04:24,998
+<c.magenta>点击次数越少 麻烦越少</c>
+<c.magenta>转化率越高 订阅数量越多</c>
 
 
 67
-00:02:18,946 --> 00:02:20,976
-Because popups and notifications
+00:04:25,666 --> 00:04:28,402
+<c.magenta>关注首先注册的人</c>
 
 
 68
-00:02:20,976 --> 00:02:22,626
-are intended to be dismissed.
+00:04:28,936 --> 00:04:33,707
+<c.magenta>收藏 个性化 要求额外的个人信息</c>
 
 
 69
-00:02:22,886 --> 00:02:24,216
-And you don't want people to
+00:04:33,774 --> 00:04:36,410
+<c.magenta>这些可以等到注册完成后再进行</c>
 
 
 70
-00:02:24,216 --> 00:02:25,716
-dismiss your subscription offer.
+00:04:37,911 --> 00:04:40,848
+<c.magenta>通过做到醒目 去除麻烦环节</c>
 
 
 71
-00:02:26,746 --> 00:02:27,986
-Another way to present your
+00:04:40,914 --> 00:04:45,152
+<c.magenta>你的应用订阅会对订阅者轻松便捷</c>
 
 
 72
-00:02:27,986 --> 00:02:29,686
-subscription would be to be
+00:04:46,820 --> 00:04:50,791
+<c.magenta>接下来 谈谈让订阅变得透明</c>
 
 
 73
-00:02:29,686 --> 00:02:31,336
-visible and present it when
+00:04:51,325 --> 00:04:53,894
+<c.magenta>因为透明是最佳策略</c>
 
 
 74
-00:02:31,406 --> 00:02:32,996
-someone has expressed interest
+00:04:54,761 --> 00:04:56,597
+<c.magenta>你需要提供清晰条款</c>
 
 
 75
-00:02:33,596 --> 00:02:35,206
-in a piece of content or in a
+00:04:56,663 --> 00:04:59,600
+<c.magenta>这样人们会理解他们注册的是什么</c>
 
 
 76
-00:02:35,206 --> 00:02:36,616
-feature that you offer through a
+00:05:00,834 --> 00:05:02,436
+<c.magenta>努力做到一览无余</c>
 
 
 77
-00:02:36,616 --> 00:02:37,746
-subscription.
+00:05:02,970 --> 00:05:05,706
+<c.magenta>一眼就可以看明白 只需几秒钟</c>
 
 
 78
-00:02:39,116 --> 00:02:40,846
-This is the dating app Her.
+00:05:05,772 --> 00:05:07,975
+<c.magenta>人们就可以清晰了解</c>
 
 
 79
-00:02:41,476 --> 00:02:43,006
-So let's just say you're swiping
+00:05:08,041 --> 00:05:11,178
+<c.magenta>订阅服务的内容以及注册方法</c>
 
 
 80
-00:02:43,006 --> 00:02:45,226
-through a few profiles and you
+00:05:11,712 --> 00:05:15,282
+<c.magenta>当你进行注册时 通常包括：</c>
 
 
 81
-00:02:45,226 --> 00:02:46,496
-accidentally pass on somebody
+00:05:15,349 --> 00:05:17,417
+<c.magenta>简洁的价值主张</c>
 
 
 82
-00:02:46,496 --> 00:02:46,986
-who's cute.
+00:05:18,051 --> 00:05:20,020
+<c.magenta>强烈建议采取行动</c>
 
 
 83
-00:02:47,606 --> 00:02:48,876
-So you attempt to rewind that
+00:05:20,821 --> 00:05:24,591
+<c.magenta>登录之处 如果他们是现有的订户</c>
 
 
 84
-00:02:48,876 --> 00:02:51,056
-profile, and in that moment, the
+00:05:25,492 --> 00:05:28,629
+<c.magenta>如果有人有了新设备 还可以恢复信息</c>
 
 
 85
-00:02:51,056 --> 00:02:53,226
-app Her tastefully presents an
+00:05:29,696 --> 00:05:34,067
+<c.magenta>还有可以包括</c>
+<c.magenta>清晰定价和条款的注册空间</c>
 
 
 86
-00:02:53,226 --> 00:02:54,536
-option for you to subscribe.
+00:05:34,668 --> 00:05:36,537
+<c.magenta>还要提供多级选择</c>
 
 
 87
-00:02:55,026 --> 00:02:56,686
-Because the rewind feature is
+00:05:36,904 --> 00:05:40,340
+<c.magenta>因为你不知道人们希望注册一天</c>
 
 
 88
-00:02:56,686 --> 00:02:57,616
-what they offer as a
+00:05:40,407 --> 00:05:43,043
+<c.magenta>一周 一个月还是两年</c>
 
 
 89
-00:02:57,616 --> 00:02:58,356
-subscription.
+00:05:43,210 --> 00:05:46,146
+<c.magenta>所以要试着提供三四个不同的级别</c>
 
 
 90
-00:02:59,396 --> 00:03:00,406
-And this is great.
+00:05:46,213 --> 00:05:49,049
+<c.magenta>找出怎样才是对受众最好的办法</c>
 
 
 91
-00:03:00,406 --> 00:03:01,806
-It's an appropriate time for Her
+00:05:50,450 --> 00:05:54,321
+<c.magenta>MLB At Bat应用做得不错</c>
 
 
 92
-00:03:01,806 --> 00:03:03,126
-to present you with this offer
+00:05:54,388 --> 00:05:57,691
+<c.magenta>在一览无余的情况下</c>
+<c.magenta>清晰提供所有这些内容</c>
 
 
 93
-00:03:03,236 --> 00:03:04,526
-because you've shown interest.
+00:05:58,258 --> 00:06:02,329
+<c.magenta>这一点很重要 因为大部分人</c>
+<c.magenta>会用手机注册</c>
 
 
 94
-00:03:05,476 --> 00:03:06,796
-Her does a wonderful job
+00:06:02,396 --> 00:06:03,964
+<c.magenta>所以一定要简单易行</c>
 
 
 95
-00:03:06,796 --> 00:03:07,976
-presenting the values of your
+00:06:06,133 --> 00:06:07,668
+<c.magenta>提供清晰条款</c>
 
 
 96
-00:03:07,976 --> 00:03:09,876
-subscription right here as well
+00:06:07,734 --> 00:06:11,305
+<c.magenta>人们会就订阅方法做出明达的决定</c>
 
 
 97
-00:03:09,876 --> 00:03:11,806
-with this beautiful, light
+00:06:12,272 --> 00:06:13,207
+<c.magenta>好的</c>
 
 
 98
-00:03:11,806 --> 00:03:12,436
-animation.
+00:06:13,273 --> 00:06:14,775
+<c.magenta>我将最好的保存下来</c>
 
 
 99
-00:03:13,856 --> 00:03:16,476
-So whether you choose to make it
+00:06:15,809 --> 00:06:21,114
+<c.magenta>你的应用需要从一开始就参与其中</c>
+<c.magenta>在人们订阅前就开始</c>
 
 
 100
-00:03:16,476 --> 00:03:17,696
-persistent in your user
+00:06:21,515 --> 00:06:24,852
+<c.magenta>让他们参与其中的最好方法是通过体验</c>
 
 
 101
-00:03:17,696 --> 00:03:20,866
-interface, or present the option
+00:06:25,552 --> 00:06:28,355
+<c.magenta>在他们订阅前</c>
 
 
 102
-00:03:20,866 --> 00:03:22,666
-to subscribe when someone has
+00:06:28,422 --> 00:06:30,157
+<c.magenta>让他们体验应用及其内容</c>
 
 
 103
-00:03:22,666 --> 00:03:25,186
-expressed interest, make sure
+00:06:30,691 --> 00:06:33,660
+<c.magenta>因为在购买前 可以体验和尝试</c>
 
 
 104
-00:03:25,186 --> 00:03:26,876
-that it is visible to people so
+00:06:33,727 --> 00:06:36,363
+<c.magenta>是我们做出购买决策的一部分</c>
 
 
 105
-00:03:26,876 --> 00:03:27,636
-they know you have a
+00:06:37,231 --> 00:06:41,001
+<c.magenta>从试衣服到参加开放参观日活动</c>
 
 
 106
-00:03:27,636 --> 00:03:28,716
-subscription.
+00:06:41,768 --> 00:06:45,005
+<c.magenta>甚至是在购车或租车前进行试驾</c>
 
 
 107
-00:03:29,386 --> 00:03:31,236
-And no matter what you choose,
+00:06:46,073 --> 00:06:48,542
+<c.magenta>所有这些体验</c>
 
 
 108
-00:03:31,696 --> 00:03:33,286
-all subscription apps should
+00:06:48,609 --> 00:06:51,144
+<c.magenta>可以在购买前 帮助你做出决策</c>
 
 
 109
-00:03:33,286 --> 00:03:35,136
-include a place to sign up in
+00:06:51,712 --> 00:06:53,981
+<c.magenta>在应用方面 这也适用</c>
 
 
 110
-00:03:35,136 --> 00:03:37,226
-Settings or Accounts, because
+00:06:54,948 --> 00:06:57,751
+<c.magenta>有三种方式可以通过体验</c>
+<c.magenta>增加人们的参与感</c>
 
 
 111
-00:03:37,226 --> 00:03:39,046
-it's a very intuitive place for
+00:06:57,818 --> 00:07:00,354
+<c.magenta>这会让他们订阅时更便捷</c>
 
 
 112
-00:03:39,046 --> 00:03:40,246
-place for people to look to sign
+00:07:01,555 --> 00:07:03,724
+<c.magenta>首先 可以提供免费试用</c>
 
 
 113
-00:03:40,416 --> 00:03:40,483
-up.
+00:07:04,191 --> 00:07:08,529
+<c.magenta>这样人们可在一段有限时间内</c>
+<c.magenta>免费试用整个应用</c>
 
 
 114
-00:03:42,476 --> 00:03:42,976
-All right.
+00:07:09,630 --> 00:07:12,132
+<c.magenta>这对树立品牌很有帮助</c>
 
 
 115
-00:03:43,596 --> 00:03:45,166
-Also, to make your subscription
+00:07:12,199 --> 00:07:15,636
+<c.magenta>人们会对订阅的内容有所了解</c>
 
 
 116
-00:03:45,246 --> 00:03:47,136
-effortless, you need to remove
+00:07:16,370 --> 00:07:18,372
+<c.magenta>如果你已树立了品牌</c>
 
 
 117
-00:03:47,136 --> 00:03:47,886
-friction.
+00:07:18,438 --> 00:07:22,009
+<c.magenta>免费试用是让人们在订阅前</c>
 
 
 118
-00:03:48,716 --> 00:03:50,686
-Friction is asking for too much
+00:07:22,242 --> 00:07:24,678
+<c.magenta>参与应用及其内容的最佳方法</c>
 
 
 119
-00:03:50,686 --> 00:03:52,916
-information, having too many
+00:07:26,180 --> 00:07:29,550
+<c.magenta>还可以让应用的大部分内容免费使用</c>
 
 
 120
-00:03:52,916 --> 00:03:55,116
-steps, and taking too much time
+00:07:29,616 --> 00:07:32,419
+<c.magenta>通过订阅 提供高级特色服务</c>
 
 
 121
-00:03:55,116 --> 00:03:56,096
-for somebody to sign up.
+00:07:33,153 --> 00:07:35,322
+<c.magenta>例如Sleep Cycle应用</c>
 
 
 122
-00:03:56,836 --> 00:03:58,096
-But how do you know when you've
+00:07:35,689 --> 00:07:40,561
+<c.magenta>还可以让整个应用免费</c>
+<c.magenta>除了这里显示的趋势特性</c>
 
 
 123
-00:03:58,096 --> 00:03:59,176
-asked for too much?
+00:07:40,894 --> 00:07:44,431
+<c.magenta>这只面向订阅的用户</c>
 
 
 124
-00:04:00,316 --> 00:04:01,316
-This data should help.
+00:07:45,465 --> 00:07:49,169
+<c.magenta>Sleep Cycle</c>
+<c.magenta>让人们可以方便注册</c>
 
 
 125
-00:04:02,006 --> 00:04:03,986
-This graph represents a snapshot
+00:07:49,536 --> 00:07:53,407
+<c.magenta>这是不错的技巧</c>
+<c.magenta>可以让人们对内容有所了解</c>
 
 
 126
-00:04:03,986 --> 00:04:05,796
-of one month of data from the
+00:07:53,874 --> 00:07:57,644
+<c.magenta>这样潜在订阅用户可以了解</c>
 
 
 127
-00:04:05,956 --> 00:04:08,006
-three top video streaming apps
+00:07:57,711 --> 00:08:00,714
+<c.magenta>一旦订阅 他们可以用到的内容</c>
 
 
 128
-00:04:08,196 --> 00:04:09,266
-in the US.
+00:08:02,449 --> 00:08:05,819
+<c.magenta>最后 让人们可以对内容有所体验</c>
 
 
 129
-00:04:09,786 --> 00:04:10,896
-Now, while their names have been
+00:08:06,286 --> 00:08:08,455
+<c.magenta>这是通过体验进行参与的不错方法</c>
 
 
 130
-00:04:10,896 --> 00:04:13,086
-removed, all the important data
+00:08:08,522 --> 00:08:11,124
+<c.magenta>对于大部分应用 效果都很好</c>
 
 
 131
-00:04:13,086 --> 00:04:14,446
-here is the clicks to conversion
+00:08:12,259 --> 00:08:13,794
+<c.magenta>这是《纽约时报》</c>
 
 
 132
-00:04:14,446 --> 00:04:15,046
-ratio.
+00:08:13,861 --> 00:08:17,564
+<c.magenta>每月可以免费阅读10篇文章</c>
 
 
 133
-00:04:15,796 --> 00:04:18,755
-A subscription flow that has
+00:08:18,065 --> 00:08:20,501
+<c.magenta>这是不错的样本体验</c>
 
 
 134
-00:04:18,755 --> 00:04:21,456
-three clicks led to a 61%
+00:08:20,567 --> 00:08:23,403
+<c.magenta>因为《纽约时报》让人们控制</c>
 
 
 135
-00:04:21,456 --> 00:04:22,216
-conversion rate.
+00:08:23,470 --> 00:08:25,706
+<c.magenta>他们可以取样体验的内容</c>
 
 
 136
-00:04:22,616 --> 00:04:24,056
-And a subscription flow with
+00:08:26,473 --> 00:08:29,643
+<c.magenta>这可以让人们发现他们感兴趣的内容</c>
 
 
 137
-00:04:24,146 --> 00:04:26,576
-four clicks led to a 48%
+00:08:29,710 --> 00:08:32,980
+<c.magenta>帮助他们更好地理解订阅的价值</c>
 
 
 138
-00:04:26,576 --> 00:04:27,276
-conversion rate.
+00:08:34,481 --> 00:08:37,751
+<c.magenta>其目的是让人们体验并熟悉</c>
 
 
 139
-00:04:27,786 --> 00:04:29,436
-However, as soon as there was
+00:08:37,818 --> 00:08:39,486
+<c.magenta>你的应用及其内容</c>
 
 
 140
-00:04:29,436 --> 00:04:30,706
-nine clicks, it dropped
+00:08:39,886 --> 00:08:42,422
+<c.magenta>这会让他们的订阅更简单</c>
 
 
 141
-00:04:30,766 --> 00:04:32,846
-significantly down to 7%.
+00:08:43,624 --> 00:08:45,526
+<c.magenta>无论你选择的哪个选项</c>
 
 
 142
-00:04:33,696 --> 00:04:34,696
-Now, while this is just a
+00:08:45,959 --> 00:08:48,328
+<c.magenta>确保可以对受众有效</c>
 
 
 143
-00:04:34,786 --> 00:04:36,576
-sample, it's clear that you
+00:08:48,729 --> 00:08:50,063
+<c.magenta>你非常了解</c>
 
 
 144
-00:04:36,576 --> 00:04:37,916
-should only ask for what is
+00:08:50,564 --> 00:08:52,733
+<c.magenta>想想他们当前的用户体验</c>
 
 
 145
-00:04:38,096 --> 00:04:39,766
-absolutely necessary for someone
+00:08:52,799 --> 00:08:55,836
+<c.magenta>应用中现有的内容类型</c>
 
 
 146
-00:04:39,766 --> 00:04:40,386
-to sign up.
+00:08:56,236 --> 00:08:59,206
+<c.magenta>以及增加订阅会对体验所产生的影响</c>
 
 
 147
-00:04:40,876 --> 00:04:43,596
-Because quite literally, less is
+00:09:00,574 --> 00:09:02,676
+<c.magenta>那么要把订阅设计为轻松可行</c>
 
 
 148
-00:04:43,596 --> 00:04:43,986
-more.
+00:09:02,743 --> 00:09:05,612
+<c.magenta>通过醒目并减少麻烦来实现</c>
 
 
 149
-00:04:44,626 --> 00:04:47,356
-Less clicks, less friction, will
+00:09:06,113 --> 00:09:08,849
+<c.magenta>通过在条款和定价方面做到透明</c>
 
 
 150
-00:04:47,356 --> 00:04:49,336
-lead to more conversion and more
+00:09:09,183 --> 00:09:13,654
+<c.magenta>通过体验应用及其丰富内容</c>
+<c.magenta>加大人们的参与度</c>
 
 
 151
-00:04:49,336 --> 00:04:50,066
-subscribers.
+00:09:14,188 --> 00:09:17,691
+<c.magenta>这样人们注册就会真的很容易</c>
 
 
 152
-00:04:51,016 --> 00:04:52,736
-So focus on people on just
-
-
-153
-00:04:52,766 --> 00:04:53,786
-signing up first.
-
-
-154
-00:04:54,306 --> 00:04:55,846
-Things like favoriting,
-
-
-155
-00:04:55,846 --> 00:04:57,876
-personalization, and asking for
-
-
-156
-00:04:57,876 --> 00:04:59,256
-additional personal details can
-
-
-157
-00:04:59,256 --> 00:05:01,076
-all wait until after someone has
-
-
-158
-00:05:01,076 --> 00:05:02,166
-signed up.
-
-
-159
-00:05:02,916 --> 00:05:04,756
-So, by being visible, and
-
-
-160
-00:05:04,756 --> 00:05:06,986
-removing friction, your app
-
-
-161
-00:05:06,986 --> 00:05:08,356
-subscription will be effortless
-
-
-162
-00:05:08,356 --> 00:05:09,726
-and easier for people to
-
-
-163
-00:05:09,726 --> 00:05:10,246
-subscribe.
-
-
-164
-00:05:12,176 --> 00:05:14,146
-Next, let's talk about being
-
-
-165
-00:05:14,146 --> 00:05:15,136
-transparent with your
-
-
-166
-00:05:15,136 --> 00:05:16,006
-subscription.
-
-
-167
-00:05:16,676 --> 00:05:18,576
-Because transparency is the best
-
-
-168
-00:05:18,576 --> 00:05:19,146
-policy.
-
-
-169
-00:05:20,016 --> 00:05:21,356
-And you need to provide clear
-
-
-170
-00:05:21,356 --> 00:05:23,856
-terms so people understand what
-
-
-171
-00:05:23,856 --> 00:05:24,906
-they're signing up for.
-
-
-172
-00:05:26,196 --> 00:05:27,696
-Strive to be glance-able.
-
-
-173
-00:05:28,246 --> 00:05:30,086
-All in one view and in just a
-
-
-174
-00:05:30,086 --> 00:05:31,756
-few seconds, people should be
-
-
-175
-00:05:31,756 --> 00:05:33,566
-able to clearly understand what
-
-
-176
-00:05:33,566 --> 00:05:35,316
-your subscription offer is and
-
-
-177
-00:05:35,366 --> 00:05:37,106
-how to sign up.
-
-
-178
-00:05:37,106 --> 00:05:37,966
-So when you're making your
-
-
-179
-00:05:37,966 --> 00:05:40,876
-subscription, always include: a
-
-
-180
-00:05:40,876 --> 00:05:43,566
-concise value proposition, a
-
-
-181
-00:05:43,566 --> 00:05:46,696
-strong call to action, a place
-
-
-182
-00:05:46,776 --> 00:05:48,426
-for people to log in if they are
-
-
-183
-00:05:48,426 --> 00:05:49,636
-existing subscribers.
-
-
-184
-00:05:50,836 --> 00:05:52,636
-Also the ability to restore if
-
-
-185
-00:05:52,636 --> 00:05:53,676
-someone has a new device.
-
-
-186
-00:05:55,056 --> 00:05:56,666
-And a place to sign up that
-
-
-187
-00:05:56,666 --> 00:05:58,716
-includes clear pricing and
-
-
-188
-00:05:58,716 --> 00:05:59,216
-terms.
-
-
-189
-00:05:59,896 --> 00:06:01,906
-And always offer multiple tiers.
-
-
-190
-00:06:02,276 --> 00:06:03,456
-Because you don't know if
-
-
-191
-00:06:03,456 --> 00:06:04,886
-somebody wants to sign up for a
-
-
-192
-00:06:04,886 --> 00:06:07,626
-day, a week, a month, or two
-
-
-193
-00:06:07,626 --> 00:06:08,076
-years.
-
-
-194
-00:06:08,556 --> 00:06:10,596
-So try offering three or four
-
-
-195
-00:06:10,596 --> 00:06:12,656
-different tiers to find out what
-
-
-196
-00:06:12,656 --> 00:06:14,356
-works best for your audience.
-
-
-197
-00:06:15,376 --> 00:06:17,986
-The MLB At Bat app does a great
-
-
-198
-00:06:17,986 --> 00:06:20,006
-job and offers all of this in
-
-
-199
-00:06:20,006 --> 00:06:21,686
-one easy-to-understand
-
-
-200
-00:06:21,756 --> 00:06:22,886
-glance-able view.
-
-
-201
-00:06:23,366 --> 00:06:25,466
-And this is important because
-
-
-202
-00:06:25,466 --> 00:06:27,216
-most of us are signing up on our
-
-
-203
-00:06:27,216 --> 00:06:27,666
-phones.
-
-
-204
-00:06:27,666 --> 00:06:29,526
-So please, keep it simple.
-
-
-205
-00:06:31,176 --> 00:06:33,326
-By providing clear terms, people
-
-
-206
-00:06:33,326 --> 00:06:34,686
-will be able to make an informed
-
-
-207
-00:06:34,686 --> 00:06:36,446
-decision on how to subscribe.
-
-
-208
-00:06:37,626 --> 00:06:37,926
-All right.
-
-
-209
-00:06:38,616 --> 00:06:40,046
-I saved the best for last.
-
-
-210
-00:06:41,166 --> 00:06:43,316
-Your app needs to be engaging
-
-
-211
-00:06:43,506 --> 00:06:45,786
-from the start, before people
-
-
-212
-00:06:45,786 --> 00:06:46,396
-subscribe.
-
-
-213
-00:06:46,866 --> 00:06:48,446
-And the best way to engage them
-
-
-214
-00:06:48,546 --> 00:06:49,886
-is through experience.
-
-
-215
-00:06:50,916 --> 00:06:52,776
-Let them experience your app and
-
-
-216
-00:06:52,776 --> 00:06:54,616
-your app's content before having
-
-
-217
-00:06:54,616 --> 00:06:55,456
-them subscribe.
-
-
-218
-00:06:56,046 --> 00:06:57,786
-Because being able to experience
-
-
-219
-00:06:57,786 --> 00:06:59,656
-and try before you buy is a part
-
-
-220
-00:06:59,656 --> 00:07:00,686
-of how we make purchase
-
-
-221
-00:07:00,686 --> 00:07:01,346
-decisions today.
-
-
-222
-00:07:02,596 --> 00:07:04,896
-From trying on clothes to
-
-
-223
-00:07:04,896 --> 00:07:07,696
-attending an open house, or even
-
-
-224
-00:07:07,696 --> 00:07:09,046
-test driving a car before you
-
-
-225
-00:07:09,046 --> 00:07:10,156
-buy or lease it.
-
-
-226
-00:07:11,436 --> 00:07:13,026
-All of these are experiences
-
-
-227
-00:07:13,026 --> 00:07:14,456
-that you can do that help you
-
-
-228
-00:07:14,456 --> 00:07:15,716
-make a decision before you
-
-
-229
-00:07:15,716 --> 00:07:16,086
-purchase.
-
-
-230
-00:07:17,086 --> 00:07:18,936
-And the same applies for your
-
-
-231
-00:07:18,936 --> 00:07:19,046
-app.
-
-
-232
-00:07:20,306 --> 00:07:21,756
-There are three ways to engage
-
-
-233
-00:07:21,756 --> 00:07:22,886
-people through experience.
-
-
-234
-00:07:22,996 --> 00:07:24,506
-And it'll make it much easier
-
-
-235
-00:07:24,506 --> 00:07:25,536
-for them to subscribe.
-
-
-236
-00:07:26,906 --> 00:07:28,516
-First, you can offer a free
-
-
-237
-00:07:28,516 --> 00:07:29,026
-trial.
-
-
-238
-00:07:29,536 --> 00:07:31,016
-That way, people can try out the
-
-
-239
-00:07:31,016 --> 00:07:32,996
-entire app for free for a
-
-
-240
-00:07:32,996 --> 00:07:33,756
-limited time.
-
-
-241
-00:07:34,976 --> 00:07:37,006
-This works well for established
-
-
-242
-00:07:37,006 --> 00:07:38,386
-brands and when people have an
-
-
-243
-00:07:38,386 --> 00:07:40,156
-idea of what's included with the
-
-
-244
-00:07:40,156 --> 00:07:40,896
-subscription.
-
-
-245
-00:07:41,726 --> 00:07:43,276
-So, if you have an established
-
-
-246
-00:07:43,276 --> 00:07:45,206
-brand, a free trial is a great
-
-
-247
-00:07:45,206 --> 00:07:46,766
-way to let people engage with
-
-
-248
-00:07:46,766 --> 00:07:49,186
-your app and its contents before
-
-
-249
-00:07:49,186 --> 00:07:49,856
-they subscribe.
-
-
-250
-00:07:50,496 --> 00:07:53,106
-You can also make the majority
-
-
-251
-00:07:53,106 --> 00:07:54,886
-of your app available for free
-
-
-252
-00:07:54,936 --> 00:07:57,026
-and offer a premium feature as a
-
-
-253
-00:07:57,026 --> 00:07:57,766
-subscription.
-
-
-254
-00:07:58,516 --> 00:08:00,056
-For example, in the app Sleep
-
-
-255
-00:08:00,056 --> 00:08:02,096
-Cycle, you can use the entire
-
-
-256
-00:08:02,096 --> 00:08:04,436
-app for free, except the trends
-
-
-257
-00:08:04,436 --> 00:08:07,026
-feature shown here is what is
-
-
-258
-00:08:07,026 --> 00:08:09,016
-available to people who have
-
-
-259
-00:08:09,016 --> 00:08:09,606
-subscribed.
-
-
-260
-00:08:10,816 --> 00:08:12,416
-And Sleep Cycle makes it really
-
-
-261
-00:08:12,416 --> 00:08:13,856
-easy for people to sign up right
-
-
-262
-00:08:13,856 --> 00:08:14,316
-from here.
-
-
-263
-00:08:14,896 --> 00:08:16,546
-It's a great technique to offer
-
-
-264
-00:08:16,546 --> 00:08:18,296
-a peek of content behind this
-
-
-265
-00:08:18,366 --> 00:08:18,766
-blur.
-
-
-266
-00:08:19,206 --> 00:08:21,466
-That way potential subscribers
-
-
-267
-00:08:21,466 --> 00:08:23,086
-can see what kind of content
-
-
-268
-00:08:23,086 --> 00:08:24,806
-they would have access to if
-
-
-269
-00:08:24,806 --> 00:08:25,916
-they did subscribe.
-
-
-270
-00:08:27,266 --> 00:08:29,726
-And finally, you can allow
-
-
-271
-00:08:29,726 --> 00:08:31,086
-people to sample content.
-
-
-272
-00:08:31,646 --> 00:08:32,936
-It's a great way to engage
-
-
-273
-00:08:32,936 --> 00:08:33,746
-through experience.
-
-
-274
-00:08:33,746 --> 00:08:35,076
-And it works great for the
-
-
-275
-00:08:35,076 --> 00:08:36,226
-majority of apps.
-
-
-276
-00:08:37,626 --> 00:08:39,135
-This is "The New York Times."
-
-
-277
-00:08:39,216 --> 00:08:40,486
-And you're able to read ten
-
-
-278
-00:08:40,525 --> 00:08:42,736
-articles for free per month.
-
-
-279
-00:08:43,346 --> 00:08:44,856
-And this is a wonderful sampling
-
-
-280
-00:08:44,856 --> 00:08:46,716
-experience because "The New York
-
-
-281
-00:08:46,716 --> 00:08:48,776
-Times" lets people have control
-
-
-282
-00:08:48,776 --> 00:08:50,386
-over what content they're able
-
-
-283
-00:08:50,386 --> 00:08:51,026
-to sample.
-
-
-284
-00:08:51,816 --> 00:08:53,306
-That allows people to find the
-
-
-285
-00:08:53,306 --> 00:08:54,476
-content that they're interested
-
-
-286
-00:08:54,476 --> 00:08:55,976
-in and helps them better
-
-
-287
-00:08:55,976 --> 00:08:57,466
-understand the value of the
-
-
-288
-00:08:57,466 --> 00:08:58,196
-subscription.
-
-
-289
-00:08:59,496 --> 00:09:01,276
-The objective is to let people
-
-
-290
-00:09:01,276 --> 00:09:03,186
-experience and become familiar
-
-
-291
-00:09:03,186 --> 00:09:04,836
-with your app and its content.
-
-
-292
-00:09:05,246 --> 00:09:06,806
-And that will make it easier for
-
-
-293
-00:09:06,806 --> 00:09:07,626
-them to subscribe.
-
-
-294
-00:09:08,616 --> 00:09:10,216
-And no matter which option you
-
-
-295
-00:09:10,216 --> 00:09:12,236
-choose, make sure that it works
-
-
-296
-00:09:12,236 --> 00:09:13,476
-for your audience.
-
-
-297
-00:09:13,976 --> 00:09:15,316
-And you know them best.
-
-
-298
-00:09:15,926 --> 00:09:17,166
-Think about their current user
-
-
-299
-00:09:17,166 --> 00:09:19,156
-experience, the type of content
-
-
-300
-00:09:19,156 --> 00:09:20,566
-they have currently available in
-
-
-301
-00:09:20,566 --> 00:09:22,366
-your app, and how adding
-
-
-302
-00:09:22,366 --> 00:09:23,716
-subscriptions could impact that
-
-
-303
-00:09:23,716 --> 00:09:24,366
-experience.
-
-
-304
-00:09:25,936 --> 00:09:27,326
-So design your subscription to
-
-
-305
-00:09:27,326 --> 00:09:29,306
-be effortless by being visible
-
-
-306
-00:09:29,676 --> 00:09:30,826
-and reducing friction.
-
-
-307
-00:09:31,376 --> 00:09:32,876
-By being transparent with your
-
-
-308
-00:09:32,876 --> 00:09:35,206
-terms and pricing, and engaging
-
-
-309
-00:09:35,206 --> 00:09:37,186
-people through experiencing your
-
-
-310
-00:09:37,426 --> 00:09:38,926
-app and its rich contents.
-
-
-311
-00:09:39,366 --> 00:09:41,746
-That way it'll be really easy
-
-
-312
-00:09:41,746 --> 00:09:43,526
-for people to sign up.
-
-
-313
-00:09:43,666 --> 00:09:43,956
-Thank you.
-
-
-314
-00:09:44,016 --> 00:09:46,000
-[ Applause ]
+00:09:18,458 --> 00:09:19,326
+<c.magenta>谢谢</c>
 

@@ -65,16 +65,16 @@ async.waterfall([
                 callback(null, videoInfo);
             } else {
                 console.log("start download subtitle index file of " + videoInfo.videoNameWithOutExtension);
-                var videoSubtitleIndexFileURL = videoInfo.videoURLPrefix + "subtitles/eng/prog_index.m3u8";
+                var videoSubtitleIndexFileURL = videoInfo.videoURLPrefix + "subtitles/zho/prog_index.m3u8";
                 request(videoSubtitleIndexFileURL, function (err, response, body) {
                     if (!err && response.statusCode === 200) {
                         var webvttFileNames = body.split("\n").filter(function(line, index) {
                             return line.indexOf("fileSequence") === 0;
                         });
                         webvttFileNames = webvttFileNames.map(function (fileName) {
-                            return videoInfo.videoURLPrefix + "subtitles/eng/"+ fileName;
+                            return videoInfo.videoURLPrefix + "subtitles/zho/"+ fileName;
                         });
-                        console.log("webvttfilenames:" + webvttFileNames);
+                        //console.log("webvttfilenames:" + webvttFileNames);
                         videoInfo.webvttFileNames = webvttFileNames;
                     } else {
                         var errMsg = "Failed to fetch subtitle index file for video " + videoInfo.videoNameWithOutExtension + ", url:" + videoSubtitleIndexFileURL;
@@ -95,7 +95,7 @@ async.waterfall([
                 console.log("start to download webvtt files of " + videoInfo.videoNameWithOutExtension);
                 (function (videoInfo) {
                     async.reduce(videoInfo.webvttFileNames, [], function (webvttFilesLines, webvttFileURL, callback) {
-                        console.log("start to download webvtt file: " + webvttFileURL);
+                        //console.log("start to download webvtt file: " + webvttFileURL);
                         request(webvttFileURL, function(err, response, body) {
                             if (!err && response.statusCode === 200) {
                                 var lines = body.split("\n");
@@ -107,6 +107,10 @@ async.waterfall([
                             }
                         });
                     }, function (err, webvttFilesLines) {
+                        if(err) {
+                            console.log("failed to download webvtt file, err:" + err);
+                            return;
+                        }
                         if (webvttFilesLines.length > 0) {
                             webvttFilesLines = webvttFilesLines.filter(function (line) {
                                 //remove webvtt file header, they're useless

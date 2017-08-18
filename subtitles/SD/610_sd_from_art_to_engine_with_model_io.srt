@@ -1,5994 +1,5994 @@
 1
 00:00:28,836 --> 00:00:29,846
->> Hi everybody, I'm Nick
+>> 大家好 我是 Nick
 
 
 2
 00:00:29,846 --> 00:00:30,336
-Porcino.
+Porcino
 
 
 3
 00:00:30,476 --> 00:00:32,116
-I work in the Games Technologies
+我在游戏技术团队
 
 
 4
 00:00:32,116 --> 00:00:34,426
-Team, and I'm here to talk to
+工作 今天在这里我想谈谈
 
 
 5
 00:00:34,426 --> 00:00:36,736
-you today about taking your art
+如何将你的艺术作品
 
 
 6
 00:00:36,826 --> 00:00:39,186
-from, all the way from Asset to
+从最初的素材开始
 
 
 7
 00:00:39,186 --> 00:00:41,176
-Engine using Model I/O, so
+通过 Model I/O 引入到引擎
 
 
 8
 00:00:41,276 --> 00:00:41,676
-welcome.
+欢迎大家
 
 
 9
 00:00:42,546 --> 00:00:46,006
-So, I'd like to begin by
+所以在最开始 我想
 
 
 10
 00:00:46,006 --> 00:00:48,276
-refreshing you what's Model I/O.
+先帮大家回想一下 Model I/O 是什么
 
 
 11
 00:00:49,006 --> 00:00:50,766
-Model I/O is Apple's toolkit for
+Model I/O 是 Apple 为
 
 
 12
 00:00:50,766 --> 00:00:51,726
-building pipelines.
+构建管道设计的成套工具
 
 
 13
 00:00:51,956 --> 00:00:53,776
-You can import and export 3D
+你们可以用它来导入或导出 3D
 
 
 14
 00:00:53,776 --> 00:00:55,646
-assets in a variety of industry
+素材 包括多个行业的
 
 
 15
 00:00:55,646 --> 00:00:58,006
-standard file formats, such as
+标准文件格式 例如
 
 
 16
 00:00:58,436 --> 00:01:00,546
-common ones like Wavefront OBJ
+常见的 Wavefront OBJ
 
 
 17
 00:01:00,656 --> 00:01:02,206
-and more modern ones like
+以及更现代点的 像是
 
 
 18
 00:01:02,206 --> 00:01:03,056
-Pixar's USD.
+Pixar 的 USD
 
 
 19
 00:01:03,646 --> 00:01:06,126
-It represents geometry and
+它可以描绘几何结构
 
 
 20
 00:01:06,126 --> 00:01:07,986
-materials, lighting, cameras,
+材质 光线照相机
 
 
 21
 00:01:08,086 --> 00:01:11,416
-voxels as well as lights and all
+三维像素化 灯光以及
 
 
 22
 00:01:11,416 --> 00:01:12,126
-kinds of other things.
+各种其他的东西
 
 
 23
 00:01:12,566 --> 00:01:14,226
-It does data format conversions,
+它也可以进行数据格式转换
 
 
 24
 00:01:14,556 --> 00:01:16,146
-so you can get your assets
+这样不管你所拿到的素材
 
 
 25
 00:01:16,146 --> 00:01:17,506
-coming in whatever format
+原始创作时是
 
 
 26
 00:01:17,506 --> 00:01:18,636
-they're originally authored in
+什么格式
 
 
 27
 00:01:18,806 --> 00:01:21,576
-and you can conform them to
+你都可以使它们符合
 
 
 28
 00:01:21,576 --> 00:01:22,866
-particular strides and layouts
+特定的步幅和布局
 
 
 29
 00:01:22,866 --> 00:01:23,896
-that you might need for Metal.
+以满足 Metal 的需求
 
 
 30
 00:01:24,476 --> 00:01:25,416
-And, there's a variety of
+另外还有各种
 
 
 31
 00:01:25,416 --> 00:01:27,196
-processing tools and we'll
+处理工具 我们
 
 
 32
 00:01:27,196 --> 00:01:28,436
-review them briefly at the end
+在演讲最后会简要地
 
 
 33
 00:01:28,436 --> 00:01:31,276
-of the talk.
+评价一下它们
 
 
 34
 00:01:31,486 --> 00:01:33,986
-So, this year, there's a bunch
+今年我们对
 
 
 35
 00:01:33,986 --> 00:01:35,356
-of improvements in Model I/O.
+Model I/O 做了很多改进
 
 
 36
 00:01:35,396 --> 00:01:37,486
-I'm going to refer you to the
+这里我想向大家推荐
 
 
 37
 00:01:37,486 --> 00:01:39,196
-developer website to learn more
+我们的开发人员网站 帮助大家了解更多
 
 
 38
 00:01:39,416 --> 00:01:41,556
-details, but just to give you a
+为了让大家
 
 
 39
 00:01:41,896 --> 00:01:43,046
-taste of what's coming up.
+大致了解接下来的内容
 
 
 40
 00:01:43,626 --> 00:01:44,676
-There's improvements to the
+我们对导入器
 
 
 41
 00:01:44,676 --> 00:01:45,206
-importers.
+做了改进
 
 
 42
 00:01:45,206 --> 00:01:46,936
-We've got lots of feedback from
+我们得到过很多这样的反馈
 
 
 43
 00:01:46,936 --> 00:01:49,086
-people who've loaded one exotic
+当他们加载了外部
 
 
 44
 00:01:49,136 --> 00:01:50,306
-file format or another and run
+文件格式 他们就会遇到
 
 
 45
 00:01:50,306 --> 00:01:50,816
-into issues.
+问题
 
 
 46
 00:01:50,816 --> 00:01:52,126
-We've corrected things as
+我们已经根据需求进行了
 
 
 47
 00:01:52,646 --> 00:01:53,486
-needed.
+修正
 
 
 48
 00:01:53,906 --> 00:01:54,986
-We've introduced support for
+我们引入了对
 
 
 49
 00:01:54,986 --> 00:01:56,276
-skinned character animation.
+蒙皮角色动画的支持
 
 
 50
 00:01:56,676 --> 00:01:57,856
-And that's going to, that's
+这点稍后
 
 
 51
 00:01:57,856 --> 00:01:59,876
-going to come up in a bit.
+会讲到
 
 
 52
 00:02:00,376 --> 00:02:02,026
-We're supporting blend shapes,
+我们支持融合变形
 
 
 53
 00:02:02,306 --> 00:02:03,656
-so if you have a character with
+如果你有一个角色的两种表情
 
 
 54
 00:02:03,656 --> 00:02:04,936
-a say a smile and a frown, you
+微笑以及皱眉
 
 
 55
 00:02:04,936 --> 00:02:06,536
-can go from one to the other
+利用这个数据结构
 
 
 56
 00:02:06,536 --> 00:02:07,516
-with this data structure.
+你可以实现两个表情间的转换
 
 
 57
 00:02:07,966 --> 00:02:09,346
-And we've got transform stacks
+并且我们还有变换栈
 
 
 58
 00:02:09,836 --> 00:02:12,426
-which correspond to how data
+对应数据在不同
 
 
 59
 00:02:12,426 --> 00:02:13,966
-looks in a program like for
+程序中的状态 例如
 
 
 60
 00:02:13,966 --> 00:02:16,796
-example Maya where the animation
+在 Maya 中动画将被
 
 
 61
 00:02:16,796 --> 00:02:17,926
-is going to be separated out
+分为
 
 
 62
 00:02:17,926 --> 00:02:19,326
-into rotations and skills and
+旋转 技巧
 
 
 63
 00:02:19,326 --> 00:02:21,046
-translations and put in certain
+翻译 并以特定
 
 
 64
 00:02:21,046 --> 00:02:21,406
-orders.
+的顺序摆放
 
 
 65
 00:02:22,196 --> 00:02:23,566
-Last year, we just gave you a
+去年我们给了大家一个
 
 
 66
 00:02:23,566 --> 00:02:25,976
-matrix, this year we can compose
+矩阵 今年我们能用
 
 
 67
 00:02:26,366 --> 00:02:28,516
-the components of the animation
+你们在创作工具时用的
 
 
 68
 00:02:28,626 --> 00:02:30,406
-just the same as you do in an
+同样的构件组成
 
 
 69
 00:02:30,406 --> 00:02:31,026
-authoring tool.
+动画
 
 
 70
 00:02:31,866 --> 00:02:36,096
-Now, most importantly, Model I/O
+现在最重要的是 Model I/O
 
 
 71
 00:02:36,346 --> 00:02:38,076
-gives you a consistent view on
+能够让你们对你们的数据有
 
 
 72
 00:02:38,076 --> 00:02:38,446
-your data.
+统一的视图
 
 
 73
 00:02:39,096 --> 00:02:42,046
-So, if you open up an asset, no
+所以如果你打开一个素材
 
 
 74
 00:02:42,046 --> 00:02:43,226
-matter what format it was
+不管它原本是什么格式
 
 
 75
 00:02:43,226 --> 00:02:45,276
-originally, Model I/O is going
+Model I/O 将
 
 
 76
 00:02:45,276 --> 00:02:48,036
-to normalize it so that as you
+对它进行标准化 这样你就可以
 
 
 77
 00:02:48,036 --> 00:02:49,726
-traverse it, you can write one
+遍历它 写一个
 
 
 78
 00:02:49,726 --> 00:02:51,096
-loop of code, it's going to know
+代码环 它将知道
 
 
 79
 00:02:51,096 --> 00:02:51,986
-how to go through all of the
+如何每次以统一的方式
 
 
 80
 00:02:51,986 --> 00:02:54,556
-data in a consistent way every
+处理所有的数据
 
 
 81
 00:02:54,556 --> 00:02:55,836
-time and for every asset that
+对你加载的每一项素材
 
 
 82
 00:02:55,836 --> 00:02:56,836
-you ever load.
+都是如此
 
 
 83
 00:02:56,836 --> 00:02:58,306
-So, this particular asset that
+这个我放到屏幕
 
 
 84
 00:02:58,306 --> 00:02:59,756
-I've got up here on the screen
+上的素材
 
 
 85
 00:03:00,126 --> 00:03:01,436
-is just a simple thing with a
+只是车的一个小
 
 
 86
 00:03:01,466 --> 00:03:01,876
-car.
+部件
 
 
 87
 00:03:02,056 --> 00:03:03,446
-It's got a camera, it's got a
+它有一个摄像头 还有
 
 
 88
 00:03:03,446 --> 00:03:03,746
-light.
+光
 
 
 89
 00:03:04,036 --> 00:03:05,216
-The car is broken down into
+这辆车被分解为
 
 
 90
 00:03:05,216 --> 00:03:05,956
-components.
+各种部件
 
 
 91
 00:03:05,956 --> 00:03:06,956
-It's got materials.
+它有各种不同的材质
 
 
 92
 00:03:07,836 --> 00:03:09,526
-No matter what scene I load up,
+不管我加载的是何种场景
 
 
 93
 00:03:09,526 --> 00:03:11,696
-it's going to come in like this
+它都将是这样的
 
 
 94
 00:03:11,696 --> 00:03:12,766
-and it's going to be easy to
+并且它非常容易
 
 
 95
 00:03:12,766 --> 00:03:13,246
-traverse.
+遍历
 
 
 96
 00:03:13,396 --> 00:03:15,546
-So, that's why Model I/O is
+这也是为什么 Model I/O
 
 
 97
 00:03:16,196 --> 00:03:18,206
-really easy and helpful in
+真的非常容易使用 并且在管道中
 
 
 98
 00:03:18,206 --> 00:03:18,776
-pipelines.
+非常有用 
 
 
 99
 00:03:20,686 --> 00:03:22,916
-Now, we want to make something
+现在 我们想创造
 
 
 100
 00:03:22,916 --> 00:03:23,696
-that looks like this.
+像这样的东西
 
 
 101
 00:03:23,696 --> 00:03:25,186
-So it's going to be my little
+这将是我的一个小
 
 
 102
 00:03:25,936 --> 00:03:26,046
-game.
+游戏
 
 
 103
 00:03:26,046 --> 00:03:28,476
-And, the game is going to be
+这个游戏将由
 
 
 104
 00:03:28,476 --> 00:03:30,466
-composed of art assets that were
+一些艺术素材组成 它们
 
 
 105
 00:03:30,466 --> 00:03:32,046
-prepared in another tool like
+已经在另外一个工具中准备好了
 
 
 106
 00:03:32,166 --> 00:03:33,466
-Maya for example or Blender or
+这个工具可以是 Maya Blender 或者
 
 
 107
 00:03:33,466 --> 00:03:34,146
-whatever you like.
+任何其他你喜欢的工具
 
 
 108
 00:03:34,706 --> 00:03:36,456
-And there's going to be models.
+然后还需要有模型
 
 
 109
 00:03:36,456 --> 00:03:37,716
-There's going to be materials on
+需要有模型上的
 
 
 110
 00:03:37,716 --> 00:03:38,356
-those models.
+材料
 
 
 111
 00:03:38,636 --> 00:03:40,086
-There's going to be animations,
+将有动画
 
 
 112
 00:03:40,776 --> 00:03:41,896
-textures of various sorts.
+各种各样的纹理
 
 
 113
 00:03:42,356 --> 00:03:43,546
-And we're going to put a scene
+我们将会从各种
 
 
 114
 00:03:43,546 --> 00:03:45,556
-together from a lot of different
+不同的文件中整合
 
 
 115
 00:03:45,606 --> 00:03:46,126
-files.
+一个场景
 
 
 116
 00:03:47,316 --> 00:03:51,626
-Now, when an artist creates an
+一个艺术家在创造
 
 
 117
 00:03:51,626 --> 00:03:54,106
-asset, they're in a pretty
+素材时 他们处于一个特别
 
 
 118
 00:03:54,146 --> 00:03:56,056
-sophisticated environment with a
+复杂的环境中
 
 
 119
 00:03:56,056 --> 00:03:57,676
-lot of tools at their disposal.
+有很多他们可以使用的工具
 
 
 120
 00:03:58,066 --> 00:04:00,776
-So, for an artist the art and
+对于艺术家来说 艺术作品以及
 
 
 121
 00:04:00,776 --> 00:04:02,846
-the tool like Maya or Blender is
+Maya 和 Blender 这些工具的意义
 
 
 122
 00:04:02,846 --> 00:04:04,706
-very much like source code for a
+就像源代码
 
 
 123
 00:04:04,706 --> 00:04:05,246
-programmer.
+对于程序员的意义
 
 
 124
 00:04:05,696 --> 00:04:07,106
-It's got all kinds of things
+它有各种各样
 
 
 125
 00:04:07,326 --> 00:04:08,546
-that are super helpful for
+对迭代和开发
 
 
 126
 00:04:08,546 --> 00:04:10,026
-iteration and development, but
+非常有用的东西 但是
 
 
 127
 00:04:10,076 --> 00:04:11,576
-that don't actually make it into
+那些并不能让它被运用到
 
 
 128
 00:04:11,576 --> 00:04:12,036
-the runtime.
+运行中 
 
 
 129
 00:04:12,036 --> 00:04:12,896
-You don't ship your code you
+你们不需要交付代码 你们
 
 
 130
 00:04:12,896 --> 00:04:13,906
-ship your object code.
+要交付的是编译代码
 
 
 131
 00:04:14,516 --> 00:04:16,495
-So, just like you compile source
+正如你们在应用程序中
 
 
 132
 00:04:17,396 --> 00:04:18,666
-for your object code in your
+为你们的对象编写
 
 
 133
 00:04:18,666 --> 00:04:19,516
-application, we're going to
+源一样 我们将
 
 
 134
 00:04:19,516 --> 00:04:21,976
-compile assets to be optimal for
+编写适用于引擎的
 
 
 135
 00:04:21,976 --> 00:04:22,426
-an engine.
+最佳素材
 
 
 136
 00:04:23,536 --> 00:04:26,296
-Now, it's pretty tempting to
+现在 制作基于 UI 的小工具
 
 
 137
 00:04:26,296 --> 00:04:28,686
-make nice little UI-based tool.
+是非常有吸引力的
 
 
 138
 00:04:29,526 --> 00:04:30,926
-So maybe some Drag and Drop, and
+所以也许通过一些拖放 以及
 
 
 139
 00:04:30,926 --> 00:04:32,056
-lots of things to click and
+很多其他的操作去点击
 
 
 140
 00:04:32,096 --> 00:04:33,206
-slide around and so on and so
+滑动等
 
 
 141
 00:04:33,206 --> 00:04:34,756
-forth, and it's going to be fun
+去构造那个工具
 
 
 142
 00:04:34,876 --> 00:04:35,866
-to build that tool and it's
+这个过程将会很有意思
 
 
 143
 00:04:35,866 --> 00:04:37,106
-going to be fun to use the first
+而且最初使用的几次
 
 
 144
 00:04:37,106 --> 00:04:37,736
-few times.
+也会很有意思
 
 
 145
 00:04:38,306 --> 00:04:40,796
-But then, I did my first car,
+但是当我完成我的第一辆车
 
 
 146
 00:04:40,926 --> 00:04:42,136
-and then the artist gave me 12
+艺术家又给了我另外 12 辆
 
 
 147
 00:04:42,136 --> 00:04:43,576
-more cars, and it's like really,
+车的时候 那么
 
 
 148
 00:04:43,576 --> 00:04:44,966
-I have to drag all of them in,
+我就必须把他们都拖进来
 
 
 149
 00:04:44,966 --> 00:04:46,326
-and I have to click all of those
+一次又一次地去重复
 
 
 150
 00:04:46,326 --> 00:04:47,416
-buttons again and again and
+点击同样的
 
 
 151
 00:04:47,416 --> 00:04:47,736
-again?
+按钮吗
 
 
 152
 00:04:48,146 --> 00:04:49,346
-That kind of a tool becomes
+那样这个工具很快就会变得
 
 
 153
 00:04:49,616 --> 00:04:51,256
-overwhelming pretty quickly.
+让人非常有负担
 
 
 154
 00:04:51,886 --> 00:04:52,986
-What we're going to talk about
+这里我们要讲讲
 
 
 155
 00:04:52,986 --> 00:04:56,966
-is how to scale that work using
+如何通过管道批量处理
 
 
 156
 00:04:56,966 --> 00:04:57,526
-a pipeline.
+这个操作
 
 
 157
 00:04:58,566 --> 00:05:00,566
-So, we're going to start with
+我们将从图案
 
 
 158
 00:05:00,566 --> 00:05:01,156
-the artwork.
+开始
 
 
 159
 00:05:01,606 --> 00:05:03,506
-We're going to use an exporter
+我将使用一个导出器
 
 
 160
 00:05:03,686 --> 00:05:05,406
-to turn it into an asset.
+将它转换为素材
 
 
 161
 00:05:07,026 --> 00:05:08,696
-We're going to use Model I/O to
+我们将使用 Model I/O 将
 
 
 162
 00:05:08,696 --> 00:05:10,846
-transform that asset into
+这个素材转换为
 
 
 163
 00:05:10,846 --> 00:05:11,846
-engine-ready data.
+引擎就绪数据
 
 
 164
 00:05:12,426 --> 00:05:14,806
-We're going to load that
+我们将在我们的引擎里
 
 
 165
 00:05:14,806 --> 00:05:17,686
-engine-ready data into our
+加载这个引擎就绪
 
 
 166
 00:05:17,686 --> 00:05:18,026
-engine.
+数据
 
 
 167
 00:05:18,076 --> 00:05:19,506
-We're going to convert it into
+我们将把它转换为
 
 
 168
 00:05:19,506 --> 00:05:21,216
-Metal buffers and then we're
+Metal 缓冲文件 然后 Metal
 
 
 169
 00:05:21,366 --> 00:05:22,336
-going to make a pretty picture.
+将制作一张好看的图片
 
 
 170
 00:05:23,586 --> 00:05:28,656
-So, the very first step is to
+所以第一步是
 
 
 171
 00:05:28,856 --> 00:05:29,686
-export the art.
+导出艺术作品
 
 
 172
 00:05:30,246 --> 00:05:33,696
-Now, in the example that we've
+在我们的
 
 
 173
 00:05:33,696 --> 00:05:35,436
-put together, we're using Maya
+这个例子中 我们使用的是 Maya
 
 
 174
 00:05:35,766 --> 00:05:37,236
-and we have a little Python
+我们有一个 Python
 
 
 175
 00:05:37,236 --> 00:05:38,646
-script that goes through Maya,
+脚本 它将浏览 Maya
 
 
 176
 00:05:38,646 --> 00:05:39,566
-finds all the things.
+找到所有的东西
 
 
 177
 00:05:40,116 --> 00:05:42,776
-It traverses complex hierarchies
+它遍历复杂的层级
 
 
 178
 00:05:42,776 --> 00:05:46,256
-and files and it exports an
+和文件 然后导出一个
 
 
 179
 00:05:46,256 --> 00:05:46,826
-asset file.
+素材文件
 
 
 180
 00:05:47,556 --> 00:05:50,216
-Now, as I mentioned before, the
+正如我之前提到的
 
 
 181
 00:05:50,316 --> 00:05:51,796
-choice of file formats is pretty
+选择文件格式非常
 
 
 182
 00:05:51,796 --> 00:05:53,116
-important, and we're not going
+重要 我们不会
 
 
 183
 00:05:53,116 --> 00:05:54,906
-to use something that's, you
+使用齿轮处
 
 
 184
 00:05:54,906 --> 00:05:55,896
-know, a bit long in the tooth
+有点长的东西
 
 
 185
 00:05:55,896 --> 00:05:57,476
-like Wavefront OBJ, we're going
+例如 Wavefront OBJ 我们将
 
 
 186
 00:05:58,506 --> 00:06:00,156
-to use something fresh and
+使用比较新的
 
 
 187
 00:06:00,156 --> 00:06:01,486
-modern which is Pixar's
+现代的东西 也就是 Pixar 的
 
 
 188
 00:06:01,486 --> 00:06:02,736
-Universal Scene Description file
+USD 文件
 
 
 189
 00:06:02,736 --> 00:06:03,146
-format.
+格式
 
 
 190
 00:06:03,146 --> 00:06:06,956
-Now, I'm just going to say a few
+现在我们要简要
 
 
 191
 00:06:06,956 --> 00:06:10,106
-words about it and first of all,
+介绍一下它 首先
 
 
 192
 00:06:10,346 --> 00:06:11,166
-there is a website.
+它有一个网站
 
 
 193
 00:06:11,166 --> 00:06:12,476
-You can see the URL there.
+你可以在那儿看到网址
 
 
 194
 00:06:12,476 --> 00:06:15,086
-And you can find out all the
+在这里你可以找到
 
 
 195
 00:06:15,086 --> 00:06:16,186
-details and information that you
+你可能想知道的关于
 
 
 196
 00:06:16,186 --> 00:06:17,476
-possibly want to know about USD
+USD 的细节和各种
 
 
 197
 00:06:18,066 --> 00:06:18,686
-there.
+信息
 
 
 198
 00:06:18,826 --> 00:06:21,546
-Now, Pixar's Universal Scene
+现在可以在他们的网站上
 
 
 199
 00:06:21,546 --> 00:06:22,706
-Description file format has been
+找到 Pixar 的 USD 文件格式
 
 
 200
 00:06:22,706 --> 00:06:25,646
-in use at their site for years
+这些文件多年以来用于
 
 
 201
 00:06:25,646 --> 00:06:27,146
-in the production of feature
+制作动画
 
 
 202
 00:06:27,146 --> 00:06:27,866
-animation film.
+长片
 
 
 203
 00:06:28,266 --> 00:06:30,436
-And as you know, or you might
+大家可能还
 
 
 204
 00:06:30,436 --> 00:06:31,966
-recall from last year's SceneKit
+记得在去年的 SceneKit
 
 
 205
 00:06:31,966 --> 00:06:33,416
-presentation, we integrated
+展示 我们把
 
 
 206
 00:06:33,416 --> 00:06:35,276
-Universal Scene Description into
+USD 整合到
 
 
 207
 00:06:35,276 --> 00:06:37,676
-the operating system, iOS and on
+iOS 和 macOS
 
 
 208
 00:06:37,676 --> 00:06:39,366
-macOS last year.
+操作系统当中
 
 
 209
 00:06:39,836 --> 00:06:41,326
-And we've been working with
+我们一直在和
 
 
 210
 00:06:41,326 --> 00:06:43,126
-Pixar to improve that
+Pixar 共同努力以不断改善
 
 
 211
 00:06:43,126 --> 00:06:45,166
-integration over time and add
+整合情况 并且添加了
 
 
 212
 00:06:45,166 --> 00:06:45,826
-new features.
+新的功能
 
 
 213
 00:06:46,536 --> 00:06:49,556
-Now, what makes Universal Scene
+那么是什么让 USD
 
 
 214
 00:06:49,556 --> 00:06:52,006
-Description like super powerful
+变得比之前所有的
 
 
 215
 00:06:52,836 --> 00:06:54,556
-compared to what we might have
+都更强大呢
 
 
 216
 00:06:54,556 --> 00:06:57,226
-had before is the fact that we
+正是因为我们
 
 
 217
 00:06:57,226 --> 00:06:58,826
-can take a whole ton of files
+把大量的文件
 
 
 218
 00:06:58,996 --> 00:07:00,346
-and we can compose them together
+组合在一起
 
 
 219
 00:07:00,346 --> 00:07:01,486
-to make a complex scene.
+创造一个复杂的场景
 
 
 220
 00:07:02,006 --> 00:07:04,376
-So, in this particular sample
+在这个样本里
 
 
 221
 00:07:04,376 --> 00:07:07,426
-here, I've decomposed the pieces
+我从我们的赛道里面
 
 
 222
 00:07:07,776 --> 00:07:09,826
-from our race track, or from our
+拆出了一些部件 或者从我们
 
 
 223
 00:07:09,826 --> 00:07:12,266
-game with a race track, into the
+有赛道的游戏里面 然后把它们运用到
 
 
 224
 00:07:12,266 --> 00:07:13,766
-building, the race track, a tire
+建筑物 赛道 轮胎 
 
 
 225
 00:07:13,766 --> 00:07:15,286
-wall, a car, and some wheels.
+墙壁 车辆以及一些轮子中 
 
 
 226
 00:07:15,696 --> 00:07:17,566
-We're hierarchically composing
+我们逐级将这些
 
 
 227
 00:07:17,566 --> 00:07:19,356
-that all together into a single
+组合成一个单独的
 
 
 228
 00:07:19,356 --> 00:07:19,686
-file.
+文件
 
 
 229
 00:07:20,256 --> 00:07:22,006
-And, just like that diagram I
+正如我之前给你们看的
 
 
 230
 00:07:22,006 --> 00:07:24,496
-showed earlier where Model I/O
+那张表格 Model I/O
 
 
 231
 00:07:24,496 --> 00:07:26,296
-will read everything in into
+将把一切都解读为
 
 
 232
 00:07:27,076 --> 00:07:28,576
-easy to traverse format, that's
+容易遍历的格式
 
 
 233
 00:07:28,676 --> 00:07:30,396
-what we're going to get when we
+当我们只要将文件加载到
 
 
 234
 00:07:30,396 --> 00:07:31,806
-load this file into Model I/O.
+Model I/O 中就可以实现这点
 
 
 235
 00:07:32,476 --> 00:07:34,726
-Now, the other great thing,
+还有一件特别棒的事
 
 
 236
 00:07:34,906 --> 00:07:36,416
-another great thing you get from
+另外一个你们可以从
 
 
 237
 00:07:36,416 --> 00:07:37,826
-Universal Scene Description is
+USD 中得到的特别棒的东西
 
 
 238
 00:07:37,826 --> 00:07:39,196
-this idea of variations.
+就是变化的概念
 
 
 239
 00:07:39,556 --> 00:07:42,116
-So, this is a really powerful
+这对艺术家来说是一个
 
 
 240
 00:07:42,116 --> 00:07:43,556
-tool for artists to use when
+非常强大的工具
 
 
 241
 00:07:43,556 --> 00:07:44,156
-they're putting a scene
+他们可以用它来创造
 
 
 242
 00:07:44,156 --> 00:07:44,596
-together.
+场景
 
 
 243
 00:07:44,596 --> 00:07:46,006
-If I want to have lots of cars
+如果你希望跑道上
 
 
 244
 00:07:46,006 --> 00:07:47,516
-on that race track, what I can
+有很多车 我可以用
 
 
 245
 00:07:47,516 --> 00:07:49,156
-do with USD is make a single car
+USD 做的就是先做一个汽车
 
 
 246
 00:07:49,156 --> 00:07:50,826
-file, and I can have some
+文件 然后我可以获得
 
 
 247
 00:07:50,826 --> 00:07:51,996
-shading variations.
+各种颜色的变化
 
 
 248
 00:07:52,036 --> 00:07:53,306
-You can see them here, yellow,
+大家可以看到这里有黄色的
 
 
 249
 00:07:53,306 --> 00:07:54,176
-green, red.
+绿色的 红色的
 
 
 250
 00:07:54,486 --> 00:07:56,626
-And modeling variations, with a
+还有各种模型的变化
 
 
 251
 00:07:56,626 --> 00:07:58,026
-fin and not with a fin.
+有翼片的和没有翼片的
 
 
 252
 00:07:58,546 --> 00:07:59,996
-So, I can reference them into
+我可以在文件里引用它们
 
 
 253
 00:07:59,996 --> 00:08:02,246
-the file, pick which versions
+选择我所需要的
 
 
 254
 00:08:02,246 --> 00:08:04,536
-that I want, and then Model I/O
+版本 然后 Model I/O
 
 
 255
 00:08:04,826 --> 00:08:05,826
-will essentially flatten that
+将会对它们进行平面化
 
 
 256
 00:08:05,826 --> 00:08:06,946
-all down so that when you're
+这样当你在
 
 
 257
 00:08:06,946 --> 00:08:08,426
-traversing the data structures
+遍历数据结构
 
 
 258
 00:08:08,426 --> 00:08:10,096
-and looking to the data to make
+寻找你的
 
 
 259
 00:08:10,096 --> 00:08:12,016
-your buffers, it's going to find
+缓冲数据时 它将为你
 
 
 260
 00:08:12,016 --> 00:08:12,886
-the right things for you.
+找到合适的东西
 
 
 261
 00:08:13,586 --> 00:08:16,326
-And I also want to mention that
+我还想提到的一点是
 
 
 262
 00:08:16,376 --> 00:08:17,966
-Universal Scene Description has
+USD 有
 
 
 263
 00:08:18,336 --> 00:08:21,536
-a ASCII format and a fast binary
+ASCII 格式以及一个快速的二进制
 
 
 264
 00:08:21,536 --> 00:08:21,976
-format.
+格式
 
 
 265
 00:08:22,386 --> 00:08:25,266
-So, the mesh with all of the
+网格由成千上万的
 
 
 266
 00:08:25,266 --> 00:08:26,546
-thousands of vertices, normals,
+顶点和法线等组成
 
 
 267
 00:08:26,546 --> 00:08:27,626
-and so on, I'm going to export
+我将把它输出为
 
 
 268
 00:08:27,626 --> 00:08:28,306
-as binary.
+二进制
 
 
 269
 00:08:28,736 --> 00:08:30,496
-But on the other hand, if I want
+但是另一方面 如果我只是
 
 
 270
 00:08:30,496 --> 00:08:31,816
-to just noodle around with the
+随机地使用这个
 
 
 271
 00:08:31,816 --> 00:08:35,285
-data, I can write text that
+数据 我可以写一个
 
 
 272
 00:08:35,285 --> 00:08:37,326
-looks like this, where here I've
+像这样的文本 这里我
 
 
 273
 00:08:37,356 --> 00:08:41,285
-got a world with an animation on
+有一个有关
 
 
 274
 00:08:41,285 --> 00:08:44,626
-a car and the car is referenced
+一辆车的动画世界 这个车将被引用
 
 
 275
 00:08:45,066 --> 00:08:47,146
-and I'm actually changing just
+我只是改变了
 
 
 276
 00:08:47,146 --> 00:08:49,476
-the color on this car, and I put
+这辆车的颜色 并且我把它放在
 
 
 277
 00:08:49,476 --> 00:08:50,686
-it in the animation scene, and
+动画场景中
 
 
 278
 00:08:50,686 --> 00:08:52,116
-it's not animated by, you know,
+大家知道它并不是根据它的
 
 
 279
 00:08:52,426 --> 00:08:53,536
-it's general principle here.
+通用规则来进行动画绘制的
 
 
 280
 00:08:54,356 --> 00:08:56,796
-And this is really powerful for
+这点对
 
 
 281
 00:08:56,796 --> 00:08:58,686
-just making variations and
+创造变化和
 
 
 282
 00:08:58,686 --> 00:09:00,706
-iterating your assets offline
+离线试验迭代素材来说
 
 
 283
 00:09:01,116 --> 00:09:01,726
-experimenting.
+具有十分强大的功能
 
 
 284
 00:09:02,486 --> 00:09:06,056
-So, what we're going to build is
+我们将构建的是
 
 
 285
 00:09:06,056 --> 00:09:07,746
-a little tool that's going to
+一个小的工具 它将
 
 
 286
 00:09:07,906 --> 00:09:08,796
-take that Universal Scene
+把 USD
 
 
 287
 00:09:08,796 --> 00:09:10,736
-Description asset and turn it
+素材转化为
 
 
 288
 00:09:10,876 --> 00:09:13,856
-into engine-ready data.
+引擎就绪的数据
 
 
 289
 00:09:14,046 --> 00:09:16,016
-So, command line tool.
+命令行工具
 
 
 290
 00:09:16,816 --> 00:09:19,296
-The thing that we're going to
+拥有命令行工具
 
 
 291
 00:09:19,296 --> 00:09:20,696
-get form having a command line
+可以给我们带来的
 
 
 292
 00:09:20,696 --> 00:09:22,356
-tool is that it's going to be
+好处就是
 
 
 293
 00:09:22,356 --> 00:09:22,796
-repeatable.
+可复制性
 
 
 294
 00:09:22,856 --> 00:09:24,096
-It's repeatable because it's got
+它可复制是因为具有
 
 
 295
 00:09:24,096 --> 00:09:25,076
-command line arguments.
+命令行参数
 
 
 296
 00:09:26,306 --> 00:09:27,836
-The operation of tools can be
+这些工具的操作可以保持
 
 
 297
 00:09:28,076 --> 00:09:29,396
-consistent because we've got
+一致因为我们有
 
 
 298
 00:09:29,396 --> 00:09:30,896
-well defined inputs and outputs
+定义良好的输入和输出
 
 
 299
 00:09:30,896 --> 00:09:31,946
-and parameters.
+以及参数
 
 
 300
 00:09:31,946 --> 00:09:34,006
-It's going to be scriptable.
+它将可编写脚本
 
 
 301
 00:09:34,506 --> 00:09:36,606
-So, you can batch your tools,
+你可以分批处理你的工具
 
 
 302
 00:09:36,606 --> 00:09:37,846
-you can sequence your tools.
+将你的工具排好顺序
 
 
 303
 00:09:39,096 --> 00:09:39,806
-It's going to give us the
+它将给我们带来
 
 
 304
 00:09:39,866 --> 00:09:41,406
-scalability that we didn't have
+可扩展性 这是
 
 
 305
 00:09:41,406 --> 00:09:42,396
-with the graphical user
+图形用户
 
 
 306
 00:09:42,396 --> 00:09:44,876
-interface tool, and because we
+界面工具所没有的 因为我们
 
 
 307
 00:09:44,876 --> 00:09:46,406
-can have automation without
+可以不中断地进行
 
 
 308
 00:09:46,406 --> 00:09:47,076
-intervention.
+自动操作
 
 
 309
 00:09:47,536 --> 00:09:49,276
-For example, the artist might
+例如 艺术家可能
 
 
 310
 00:09:49,276 --> 00:09:50,786
-have a Dropbox folder somewhere,
+在某处有一个 Dropbox 文件
 
 
 311
 00:09:51,126 --> 00:09:51,966
-where they're just going to
+他们会把
 
 
 312
 00:09:51,966 --> 00:09:53,366
-throw all of their assets in
+所有的素材都放进去
 
 
 313
 00:09:53,366 --> 00:09:54,486
-whenever they're ready to be
+无论何时 只要他们准备好将它们整合进
 
 
 314
 00:09:54,486 --> 00:09:55,816
-integrated into the engine, we
+引擎 我们
 
 
 315
 00:09:55,816 --> 00:09:57,076
-can have a little script
+都可以用一个小脚本
 
 
 316
 00:09:57,076 --> 00:09:58,386
-monitoring that directory.
+对该目录进行监测
 
 
 317
 00:09:59,046 --> 00:10:00,316
-Whenever it notices there's new
+任何时候当它注意到有新
 
 
 318
 00:10:00,316 --> 00:10:02,286
-files, the processes that we're
+文件时 我们将要介绍的
 
 
 319
 00:10:02,286 --> 00:10:03,426
-going to talk about in a moment
+处理器
 
 
 320
 00:10:03,476 --> 00:10:05,336
-can automatically run, make it
+将自动运行 使文件
 
 
 321
 00:10:05,336 --> 00:10:07,106
-engine-ready, and then move it
+引擎就绪 然后移动它
 
 
 322
 00:10:07,466 --> 00:10:09,046
-so that when you build in Xcode,
+这样当你们构建 Xcode 时
 
 
 323
 00:10:09,156 --> 00:10:10,036
-all the assets will be
+所有的素材将被
 
 
 324
 00:10:10,036 --> 00:10:11,826
-automatically imported and ready
+自动导入
 
 
 325
 00:10:11,826 --> 00:10:12,396
-for your game.
+为你们的游戏做好准备
 
 
 326
 00:10:13,576 --> 00:10:15,136
-And finally, this kind of tool
+最后 这种工具
 
 
 327
 00:10:15,136 --> 00:10:16,616
-is composable, and that's what
+是可组合的 这正是
 
 
 328
 00:10:16,616 --> 00:10:18,266
-the little arc on the right side
+表格右边的小弧线
 
 
 329
 00:10:18,266 --> 00:10:19,676
-of the diagram indicates.
+所表明的
 
 
 330
 00:10:20,186 --> 00:10:21,466
-It's composable in the sense
+如果我们的场景中有多个工具
 
 
 331
 00:10:21,496 --> 00:10:23,516
-that if I've got multiple tools
+它是可组合的
 
 
 332
 00:10:23,516 --> 00:10:24,536
-and they can all read and write
+它们都可以读写
 
 
 333
 00:10:24,536 --> 00:10:26,546
-the same blocks of data, then I
+同样的数据块 然后我就
 
 
 334
 00:10:26,676 --> 00:10:28,326
-can feed one tool into another.
+可以将一个工具送进另外一个中
 
 
 335
 00:10:28,326 --> 00:10:30,236
-I might do one tool and to
+我可以用一个工具来
 
 
 336
 00:10:30,236 --> 00:10:32,826
-extract all the meshes and light
+提取所有的网格 然后对它们进行
 
 
 337
 00:10:32,826 --> 00:10:33,446
-map them.
+光照贴图
 
 
 338
 00:10:33,446 --> 00:10:35,086
-I might do another tool to find
+我可能做另外一个工具来寻找
 
 
 339
 00:10:35,086 --> 00:10:36,316
-all the textures and make a list
+所有的纹理 然后做一个
 
 
 340
 00:10:36,316 --> 00:10:36,956
-of textures.
+纹理清单
 
 
 341
 00:10:37,426 --> 00:10:39,016
-And I make lots of little tools
+我做了很多像这样的小工具
 
 
 342
 00:10:39,016 --> 00:10:40,266
-like that and put them together
+然后把他们一起放进
 
 
 343
 00:10:40,716 --> 00:10:41,916
-into a workflow.
+工作流程中
 
 
 344
 00:10:43,196 --> 00:10:47,136
-So, in this sample, it's a very
+所以 这个样本
 
 
 345
 00:10:47,136 --> 00:10:47,656
-simple one.
+还是非常简单的
 
 
 346
 00:10:48,006 --> 00:10:49,976
-And it doesn't go into a whole
+它并不像很多其他的
 
 
 347
 00:10:49,976 --> 00:10:52,276
-lot of you know best practices
+最佳实践
 
 
 348
 00:10:52,276 --> 00:10:54,316
-but it does give you a
+它只是为了给大家
 
 
 349
 00:10:54,316 --> 00:10:55,866
-simplified data format that's
+一个简化的数据格式
 
 
 350
 00:10:55,866 --> 00:10:57,026
-really easy to understand so
+让大家更容易理解
 
 
 351
 00:10:57,186 --> 00:10:58,266
-that you can match what we're
+这样大家便可以将
 
 
 352
 00:10:58,266 --> 00:10:59,276
-talking about versus what you
+我们所讲的与你们
 
 
 353
 00:10:59,276 --> 00:10:59,886
-see in the code.
+在代码中所看到的相匹配
 
 
 354
 00:11:00,386 --> 00:11:01,446
-There's no compression because
+其中并没有压缩 因为
 
 
 355
 00:11:01,536 --> 00:11:02,646
-you don't want to obscure
+你们不会想模糊
 
 
 356
 00:11:02,646 --> 00:11:03,746
-anything about what's going on.
+正在进行的操作
 
 
 357
 00:11:04,766 --> 00:11:06,036
-This thing's intended to be a
+它的目的是成为你们
 
 
 358
 00:11:06,036 --> 00:11:08,816
-jumping off point for you to
+开始构建你们自己的
 
 
 359
 00:11:08,816 --> 00:11:10,476
-start to build your own pipeline
+管道工具的起点
 
 
 360
 00:11:10,476 --> 00:11:11,986
-tools and elaborate them to
+用它们匹配
 
 
 361
 00:11:11,986 --> 00:11:13,336
-match your own engines and data
+你们自己的引擎和数据
 
 
 362
 00:11:13,336 --> 00:11:13,916
-formats.
+格式
 
 
 363
 00:11:14,336 --> 00:11:17,196
-So, also like to talk a little
+我还想谈一点
 
 
 364
 00:11:17,196 --> 00:11:18,626
-bit about the toy engine that
+有关我们组合在一起的
 
 
 365
 00:11:18,626 --> 00:11:19,406
-we're going to put together.
+玩具引擎
 
 
 366
 00:11:20,856 --> 00:11:21,786
-It's got a really simple
+它内部有一个非常简单的
 
 
 367
 00:11:21,786 --> 00:11:22,576
-renderer in it.
+渲染程序
 
 
 368
 00:11:22,576 --> 00:11:23,676
-It's all written in Swift and
+它都是用 Swift 和
 
 
 369
 00:11:23,676 --> 00:11:23,976
-Metal.
+Metal 编写的
 
 
 370
 00:11:24,356 --> 00:11:25,536
-It's a single-pass forward
+它是一个单通道的
 
 
 371
 00:11:25,536 --> 00:11:26,826
-renderer, physically-based
+渲染程序 基于实物的
 
 
 372
 00:11:26,826 --> 00:11:28,986
-shader, mesh instancing, skinned
+着色器 对象副本 蒙皮
 
 
 373
 00:11:28,986 --> 00:11:30,976
-and animated meshes, multiple
+骨骼动画以及多种
 
 
 374
 00:11:30,976 --> 00:11:31,456
-materials.
+材质 
 
 
 375
 00:11:32,176 --> 00:11:34,596
-Ticking off lots of bullet
+那里标出了好多
 
 
 376
 00:11:34,596 --> 00:11:35,076
-points there.
+要点
 
 
 377
 00:11:35,806 --> 00:11:37,186
-It's got a straight forward
+它有一个非常直接的
 
 
 378
 00:11:37,186 --> 00:11:37,776
-rendering loop.
+渲染循环
 
 
 379
 00:11:38,216 --> 00:11:39,846
-We have on the left side of the
+在左边我们有
 
 
 380
 00:11:39,846 --> 00:11:41,796
-diagram, some meshes to draw.
+那个表格以及一些需要绘制的网格
 
 
 381
 00:11:42,876 --> 00:11:44,326
-For everything that we want to
+对于我们想画的所有事物
 
 
 382
 00:11:44,326 --> 00:11:45,526
-draw, we're going to set
+我们都会设置
 
 
 383
 00:11:46,016 --> 00:11:47,736
-transform buffer, skinning data,
+转换缓冲 蒙皮数据
 
 
 384
 00:11:47,736 --> 00:11:49,466
-vertex buffers, set our pipeline
+顶点缓冲 设置我们的管道
 
 
 385
 00:11:49,466 --> 00:11:51,326
-state, material uniforms,
+状态 材质均一
 
 
 386
 00:11:51,646 --> 00:11:52,606
-fragment textures.
+以及碎片纹理
 
 
 387
 00:11:52,906 --> 00:11:53,836
-And we're going to draw indexed
+我们将会为制作
 
 
 388
 00:11:54,106 --> 00:11:55,536
-primitive to make the pretty
+好看的画面而绘制
 
 
 389
 00:11:55,536 --> 00:11:55,896
-picture.
+索引的原语
 
 
 390
 00:11:56,526 --> 00:11:59,776
-So, we're going to call that
+我们把那个工具叫作
 
 
 391
 00:11:59,776 --> 00:12:00,466
-tool the baker.
+baker 
 
 
 392
 00:12:01,706 --> 00:12:03,666
-So what are we going to bake?
+那么我们要烤什么呢
 
 
 393
 00:12:06,136 --> 00:12:08,246
-We're going to bake, first of
+首先 我们要烤
 
 
 394
 00:12:08,246 --> 00:12:09,586
-all, geometry and
+几何结构和
 
 
 395
 00:12:09,586 --> 00:12:11,246
-transformations, what something
+变换 事物的
 
 
 396
 00:12:11,246 --> 00:12:12,896
-looks like and where it sits.
+样子 其所在位置
 
 
 397
 00:12:14,006 --> 00:12:16,016
-Texture paths and materials so
+纹理路径以及材质
 
 
 398
 00:12:16,016 --> 00:12:17,146
-that when we're drawing those
+这样在我们绘制那些
 
 
 399
 00:12:17,146 --> 00:12:18,076
-somethings we know what they're
+东西的时候 我们知道
 
 
 400
 00:12:18,076 --> 00:12:18,776
-going to look like.
+它们将呈现的样子
 
 
 401
 00:12:19,316 --> 00:12:20,836
-Instancing data so if we have
+实例化数据 这样当我们有
 
 
 402
 00:12:21,236 --> 00:12:23,026
-say more than wheel, we're going
+多个轮子的时候 将
 
 
 403
 00:12:23,026 --> 00:12:24,296
-to have information that tells
+有信息可以告诉
 
 
 404
 00:12:24,296 --> 00:12:26,366
-us where to put many copies of
+我们如何高效地将那个轮子的
 
 
 405
 00:12:26,366 --> 00:12:27,606
-that wheel in an efficient way.
+多个副本放在何处
 
 
 406
 00:12:28,356 --> 00:12:30,146
-Transform animation, so that
+转换动画 这样就
 
 
 407
 00:12:30,146 --> 00:12:31,536
-things can be animated.
+可以让事物进行动画化
 
 
 408
 00:12:32,216 --> 00:12:33,866
-And finally, we're going to talk
+最后我们将谈一下
 
 
 409
 00:12:33,866 --> 00:12:35,196
-about skinning and character
+蒙皮和角色
 
 
 410
 00:12:35,196 --> 00:12:35,696
-animation.
+动画
 
 
 411
 00:12:36,306 --> 00:12:40,116
-So, first of all, geometry and
+首先是几何机构和
 
 
 412
 00:12:40,116 --> 00:12:41,046
-transformations.
+转换
 
 
 413
 00:12:42,496 --> 00:12:44,666
-Now, from basic computer
+了解基本计算机
 
 
 414
 00:12:44,666 --> 00:12:45,656
-graphics you're probably
+绘图的话 你应该
 
 
 415
 00:12:45,656 --> 00:12:47,046
-familiar with a scene graph.
+熟悉场景图
 
 
 416
 00:12:47,806 --> 00:12:48,946
-We've got a transformational
+这里我们有一个转换
 
 
 417
 00:12:48,946 --> 00:12:49,786
-hierarchy here.
+层级 
 
 
 418
 00:12:49,926 --> 00:12:51,926
-A couple of transform nodes A
+有转换节点 A
 
 
 419
 00:12:51,926 --> 00:12:52,756
-and B.
+和 B
 
 
 420
 00:12:53,126 --> 00:12:55,426
-And A is perhaps a world's node
+A 可能是一个世界节点
 
 
 421
 00:12:55,586 --> 00:12:56,826
-and maybe it doesn't provide
+它可能只是提供
 
 
 422
 00:12:56,826 --> 00:12:57,816
-anything but an identity
+一个恒等
 
 
 423
 00:12:57,816 --> 00:12:58,616
-transformation.
+变换
 
 
 424
 00:12:58,616 --> 00:13:01,196
-B is a transformation that says
+B 是一个转换节点 它说明
 
 
 425
 00:13:01,196 --> 00:13:02,436
-where is the car in the world.
+了车在世界中所处的位置
 
 
 426
 00:13:02,966 --> 00:13:05,686
-And my racing car as one wheel,
+我的赛车现在只有一个轮子
 
 
 427
 00:13:05,686 --> 00:13:06,566
-pretend you can see all the
+假装你们可以在
 
 
 428
 00:13:06,566 --> 00:13:07,776
-other wheels off the bottom of
+我的幻灯片下面看到
 
 
 429
 00:13:07,776 --> 00:13:08,296
-my slide here.
+其他的轮子
 
 
 430
 00:13:08,806 --> 00:13:10,086
-And we've got a body.
+我们还有车身
 
 
 431
 00:13:10,946 --> 00:13:14,756
-So, the way a transform
+转换层级工作的方式是
 
 
 432
 00:13:14,756 --> 00:13:16,976
-hierarchy works is if I move the
+如果我移动了
 
 
 433
 00:13:16,976 --> 00:13:18,236
-parent node everything
+母节点 那个母节点
 
 
 434
 00:13:18,236 --> 00:13:19,286
-underneath that parent node
+下面的一切
 
 
 435
 00:13:19,446 --> 00:13:23,036
-moves together as a unit.
+都会作为整体一起移动
 
 
 436
 00:13:23,176 --> 00:13:25,666
-So, what we want to do is we
+我们想做的是 
 
 
 437
 00:13:25,666 --> 00:13:26,976
-want to get that information
+要把那个信息放入
 
 
 438
 00:13:27,356 --> 00:13:29,316
-into our engine so that it can
+我们的引擎中 这样它
 
 
 439
 00:13:29,316 --> 00:13:30,196
-render it ultimately.
+马上就可以对其进行渲染
 
 
 440
 00:13:30,526 --> 00:13:32,836
-So we want to compactly encode
+我们希望简洁地进行编码
 
 
 441
 00:13:32,836 --> 00:13:34,736
-that in a way that's easy to
+使操作容易
 
 
 442
 00:13:34,736 --> 00:13:36,126
-store and easy to read and
+存储并且
 
 
 443
 00:13:36,126 --> 00:13:37,586
-doesn't require me to fix up
+不需要我去修复
 
 
 444
 00:13:37,586 --> 00:13:39,706
-pointers or any of that kind of
+指示器或者任何其他的
 
 
 445
 00:13:40,256 --> 00:13:40,366
-thing.
+此类事物
 
 
 446
 00:13:40,586 --> 00:13:42,866
-So, what I'm going to do is I'm
+我将要做的是
 
 
 447
 00:13:42,866 --> 00:13:43,826
-going to flatten and
+平面化
 
 
 448
 00:13:43,826 --> 00:13:46,056
-linearalize, linearalize that
+并且直线化那个
 
 
 449
 00:13:46,056 --> 00:13:46,426
-array.
+队列
 
 
 450
 00:13:46,836 --> 00:13:47,836
-I hope I don't have to say that
+我希望我不需要再说
 
 
 451
 00:13:47,836 --> 00:13:48,216
-word again.
+那个单词了
 
 
 452
 00:13:48,796 --> 00:13:52,016
-So, we're going to make an array
+我们将进行一队列的
 
 
 453
 00:13:52,186 --> 00:13:53,666
-of local transformations.
+本地转换
 
 
 454
 00:13:53,966 --> 00:13:56,446
-So the first one A is probably
+第一个可能是
 
 
 455
 00:13:56,446 --> 00:13:58,216
-identity, the world, world
+世界
 
 
 456
 00:13:58,276 --> 00:13:59,226
-matrix.
+矩阵
 
 
 457
 00:13:59,946 --> 00:14:01,526
-Then another matrix to tell us
+然后有另外一个矩阵告诉我们
 
 
 458
 00:14:01,526 --> 00:14:02,406
-where is the car.
+车的位置
 
 
 459
 00:14:03,276 --> 00:14:05,046
-Another matrix to tell me where
+另外一个矩阵告诉我
 
 
 460
 00:14:05,046 --> 00:14:06,296
-is the, the wheel.
+轮子在哪里
 
 
 461
 00:14:07,276 --> 00:14:08,556
-Another matrix to tell me where
+另外一个矩阵告诉我
 
 
 462
 00:14:08,556 --> 00:14:09,436
-is the car's body.
+车身在哪里
 
 
 463
 00:14:09,436 --> 00:14:12,286
-I'm going to assign indices
+我将分配指标
 
 
 464
 00:14:12,286 --> 00:14:13,056
-because those are going to be
+因为稍后它们将会
 
 
 465
 00:14:13,056 --> 00:14:14,126
-really useful in a moment.
+非常有用
 
 
 466
 00:14:14,566 --> 00:14:16,586
-So, 0, 1, 2, 3 that was the
+0 1 2 3 将是
 
 
 467
 00:14:16,616 --> 00:14:20,386
-in-order traversal of the scene
+场景图的
 
 
 468
 00:14:20,956 --> 00:14:21,086
-graph.
+中序遍历
 
 
 469
 00:14:21,266 --> 00:14:22,776
-Now, I'm going to encode the
+现在我将对那棵树
 
 
 470
 00:14:22,776 --> 00:14:23,336
-tree.
+进行编码
 
 
 471
 00:14:24,176 --> 00:14:25,436
-So, I'm going to make another
+我将编写另外
 
 
 472
 00:14:25,436 --> 00:14:26,606
-array of parent indices.
+一队列母指标
 
 
 473
 00:14:26,726 --> 00:14:29,176
-The first entry is nil.
+第一条是 nil
 
 
 474
 00:14:29,176 --> 00:14:32,086
-The world has no parent.
+这个世界没有亲项
 
 
 475
 00:14:33,156 --> 00:14:36,626
-The car's root B has a parent at
+这辆车的 root B 的亲项在
 
 
 476
 00:14:36,626 --> 00:14:38,166
-index 0, which is the world.
+索引 0 中 也就是世界
 
 
 477
 00:14:39,716 --> 00:14:42,926
-The wheel is parented under the
+轮子的亲项在
 
 
 478
 00:14:43,106 --> 00:14:45,216
-B, transfer node, as would the
+B 转换节点下 其他的
 
 
 479
 00:14:45,216 --> 00:14:46,246
-other wheels be.
+轮子也将是如此
 
 
 480
 00:14:47,456 --> 00:14:49,666
-The body is also parented under
+车身的亲项也在
 
 
 481
 00:14:49,666 --> 00:14:50,156
-that node.
+那个节点之下
 
 
 482
 00:14:51,126 --> 00:14:53,896
-So, we've encoded a graph.
+所以我们编码了一个图表
 
 
 483
 00:14:54,546 --> 00:14:55,836
-Finally, we're going to want to
+最后我们希望能够
 
 
 484
 00:14:55,836 --> 00:14:57,516
-be able to tell the engine what
+告诉引擎需要
 
 
 485
 00:14:57,516 --> 00:14:59,136
-to draw, so we're going to draw
+绘制什么 所以我们将绘制
 
 
 486
 00:14:59,136 --> 00:15:01,186
-a wheel, which is at index 2.
+一个轮子 它在索引 2 下面
 
 
 487
 00:15:01,296 --> 00:15:03,196
-And we're going to draw the body
+然后我们将绘制在
 
 
 488
 00:15:03,456 --> 00:15:04,606
-which is at index 3.
+索引 3 的车身
 
 
 489
 00:15:05,476 --> 00:15:08,756
-So, we've described our scene in
+我们用特别容易
 
 
 490
 00:15:08,936 --> 00:15:09,906
-a way that's really easy to
+编写的方式描述了
 
 
 491
 00:15:09,906 --> 00:15:10,266
-write out.
+我们的场景
 
 
 492
 00:15:11,586 --> 00:15:13,606
-And now, we also just need to
+现在我们也只需要
 
 
 493
 00:15:13,606 --> 00:15:14,596
-tell what to draw.
+描述需要画的内容
 
 
 494
 00:15:15,056 --> 00:15:17,196
-So, that's going to be a vertex
+这将是一个顶点
 
 
 495
 00:15:17,196 --> 00:15:19,936
-descriptor, which is an array
+描述符 也就是将
 
 
 496
 00:15:19,936 --> 00:15:21,216
-that's going to tell Metal these
+告诉 Metal 以下信息的队列
 
 
 497
 00:15:21,216 --> 00:15:22,526
-are normals, these are texture
+这些是标准的 这些是纹理
 
 
 498
 00:15:22,526 --> 00:15:23,496
-coordinates, these are
+坐标 这些是
 
 
 499
 00:15:23,496 --> 00:15:25,476
-positions, the actual vertex
+位置 真正的顶点可以
 
 
 500
 00:15:25,476 --> 00:15:26,476
-buffers themselves.
+自行缓冲
 
 
 501
 00:15:26,476 --> 00:15:28,316
-And then the index buffer that
+然后索引缓冲器
 
 
 502
 00:15:28,316 --> 00:15:29,876
-just says, you know, these
+会表明这些
 
 
 503
 00:15:30,096 --> 00:15:31,346
-indices correspond to these
+指数对应
 
 
 504
 00:15:31,346 --> 00:15:32,966
-triangles in the vertex buffers.
+这些顶点缓冲区里的三角形
 
 
 505
 00:15:33,526 --> 00:15:38,336
-So, it's really easy to do this
+有了我们一致的
 
 
 506
 00:15:38,916 --> 00:15:39,886
-with our consistent data
+数据结构 是很容易
 
 
 507
 00:15:39,886 --> 00:15:40,436
-structures.
+做到这点的
 
 
 508
 00:15:40,956 --> 00:15:41,986
-We're going to run through all
+我们会把所有的对象
 
 
 509
 00:15:41,986 --> 00:15:44,566
-of the objects in the MDLAsset
+放在 MDLAsset 对象里运行一遍
 
 
 510
 00:15:44,716 --> 00:15:46,656
-object after we've imported it.
+在我们导入它之后
 
 
 511
 00:15:47,396 --> 00:15:50,036
-If the object can be casted to
+如果对象可以被放入
 
 
 512
 00:15:50,116 --> 00:15:52,956
-MDLMesh, we're going to fetch
+MDLMesh 里面铸造 我们将拿出 MDLMesh
 
 
 513
 00:15:52,956 --> 00:15:54,896
-out the vertexDescriptor which
+以及顶点描述符 它将
 
 
 514
 00:15:54,896 --> 00:15:56,166
-tells us that we've got
+告诉我们是否获得
 
 
 515
 00:15:56,166 --> 00:15:59,026
-positions and normalcy.
+位置及正常状态
 
 
 516
 00:15:59,086 --> 00:16:00,696
-For all of the vertex buffers,
+对于在网格里的所有
 
 
 517
 00:16:00,816 --> 00:16:02,436
-that are in that mesh, we're
+顶点缓冲区 我们
 
 
 518
 00:16:02,436 --> 00:16:04,366
-just going to create an NSData
+将根据顶点缓冲区和
 
 
 519
 00:16:04,616 --> 00:16:07,196
-from the vertex buffer bytes and
+其长度创建 NSData 
 
 
 520
 00:16:07,476 --> 00:16:09,536
-how long it is, and the dot dot
+点点点
 
 
 521
 00:16:09,536 --> 00:16:10,696
-dot just tells us that we're
+会告诉我们要
 
 
 522
 00:16:10,696 --> 00:16:12,016
-going to store that NSData
+把 NSData 存储在
 
 
 523
 00:16:12,016 --> 00:16:13,406
-somewhere for encoding.
+某处供编码使用
 
 
 524
 00:16:13,946 --> 00:16:17,166
-Then, we're going run through
+然后我们将在
 
 
 525
 00:16:17,166 --> 00:16:18,356
-the submeshes and just a quick
+子网格中运行 这里要快速
 
 
 526
 00:16:18,576 --> 00:16:20,006
-note about what is submesh.
+介绍一下什么是子网格
 
 
 527
 00:16:20,396 --> 00:16:21,536
-And since I've just introduced
+因为我刚刚提到了
 
 
 528
 00:16:21,536 --> 00:16:22,786
-that word, if we just think
+这个词 我们可以想想
 
 
 529
 00:16:22,786 --> 00:16:24,266
-about that wheel, the wheel had
+轮子 轮子有
 
 
 530
 00:16:24,266 --> 00:16:26,266
-a rubber tire and a metal rim,
+一个橡胶轮胎和一个金属圈
 
 
 531
 00:16:26,386 --> 00:16:26,606
-right?
+对吧
 
 
 532
 00:16:27,036 --> 00:16:28,356
-So, we're probably going to have
+所以我们可能将有
 
 
 533
 00:16:28,356 --> 00:16:29,866
-two materials and therefore two
+两种材质 所以需要有两种
 
 
 534
 00:16:29,866 --> 00:16:30,526
-draw calls.
+绘制调用
 
 
 535
 00:16:30,966 --> 00:16:31,756
-But it's one mesh.
+但是它还是一个网格
 
 
 536
 00:16:31,756 --> 00:16:32,706
-There are going to share a lot
+他们将共用很多
 
 
 537
 00:16:32,706 --> 00:16:33,826
-of vertices, like on the
+顶点 例如
 
 
 538
 00:16:33,826 --> 00:16:35,696
-intersection between the tire
+轮胎和金属圈之间的
 
 
 539
 00:16:35,696 --> 00:16:36,106
-and the rim.
+交叉点
 
 
 540
 00:16:36,106 --> 00:16:37,426
-So, we're going to make two
+所以我们将创建两个
 
 
 541
 00:16:37,426 --> 00:16:40,336
-submeshes to just index the rim
+子网格用来索引金属圈
 
 
 542
 00:16:40,586 --> 00:16:42,466
-and the tire with their own
+以及轮胎 他们都有自己
 
 
 543
 00:16:42,466 --> 00:16:44,566
-independent index buffers and
+独立的索引缓冲器和
 
 
 544
 00:16:44,566 --> 00:16:44,976
-meshes.
+网格
 
 
 545
 00:16:45,196 --> 00:16:47,386
-So, we run through them, we cast
+我们将运行它们 然后
 
 
 546
 00:16:47,536 --> 00:16:47,686
-them.
+铸造它们
 
 
 547
 00:16:47,686 --> 00:16:49,146
-If we successfully cast them, we
+如果我们成功地铸造了它们 我们就
 
 
 548
 00:16:49,146 --> 00:16:51,896
-create some NSDatas and stash
+创建了一些 NSData
 
 
 549
 00:16:51,896 --> 00:16:52,626
-them for storage.
+并且可以将之存储起来
 
 
 550
 00:16:53,256 --> 00:16:55,946
-Finally, for all of the objects
+最后对于素材里面的所有
 
 
 551
 00:16:57,126 --> 00:16:59,136
-in the asset, we're just going
+对象 我们将
 
 
 552
 00:16:59,136 --> 00:17:01,696
-to find if there's a transform
+发现对象是否进行过
 
 
 553
 00:17:01,696 --> 00:17:04,425
-on the object, then grab its
+变换 然后拿到它的
 
 
 554
 00:17:04,425 --> 00:17:05,856
-matrix and store it in the
+矩阵 然后把它存在
 
 
 555
 00:17:05,856 --> 00:17:06,116
-array.
+队列中  
 
 
 556
 00:17:06,766 --> 00:17:08,526
-Well NSEncode and archive it,
+完善 NSEncode 并将之归档
 
 
 557
 00:17:08,945 --> 00:17:10,316
-and these are the buffers that
+这些是将
 
 
 558
 00:17:10,316 --> 00:17:11,876
-are going to go off to the disc.
+进入光盘中的缓冲器
 
 
 559
 00:17:12,276 --> 00:17:14,316
-And the mesh data, descriptors,
+网格数据 描述符 
 
 
 560
 00:17:14,316 --> 00:17:16,336
-vertex and index buffers, the
+顶点以及索引缓冲器
 
 
 561
 00:17:16,336 --> 00:17:18,306
-scene data which is the
+对场景中参数
 
 
 562
 00:17:18,366 --> 00:17:21,746
-linearalization of the indices
+进行直线化后的
 
 
 563
 00:17:21,976 --> 00:17:23,646
-of the hierarchy, and finally
+场景数据 最后
 
 
 564
 00:17:23,646 --> 00:17:24,935
-the transformation data the
+关于在哪里放置
 
 
 565
 00:17:24,935 --> 00:17:26,366
-actual places to put those
+这些东西的
 
 
 566
 00:17:26,366 --> 00:17:26,715
-things.
+变换数据
 
 
 567
 00:17:27,165 --> 00:17:31,016
-Next, we're going to fetch out
+接下来 我们将拿出
 
 
 568
 00:17:31,336 --> 00:17:33,336
-all of the material data.
+所有的材质数据
 
 
 569
 00:17:33,896 --> 00:17:37,076
-So, for every submesh, we're
+对于每一个子网格 我们
 
 
 570
 00:17:37,076 --> 00:17:38,406
-going to find out that there's
+将找出它
 
 
 571
 00:17:38,876 --> 00:17:39,646
-possibly a material.
+可能对应一个材质
 
 
 572
 00:17:39,646 --> 00:17:41,186
-And if there's a material, we're
+如果我们有一个材质 那么我们
 
 
 573
 00:17:41,186 --> 00:17:42,926
-going to find the parameters
+将需要找到我们的着色器
 
 
 574
 00:17:43,186 --> 00:17:45,216
-that are needed by our shader.
+所需要的指数
 
 
 575
 00:17:45,496 --> 00:17:47,036
-If our shader needs say diffuse
+如果我们的着色器需要扩散
 
 
 576
 00:17:47,036 --> 00:17:49,086
-color and roughness, then we'll
+色彩和粗糙度 那么我将
 
 
 577
 00:17:49,086 --> 00:17:50,836
-ask the MDLMaterial hey have you
+问 MDLMaterial 你有
 
 
 578
 00:17:50,836 --> 00:17:52,936
-got those values, and then we're
+哪些值 我将
 
 
 579
 00:17:53,046 --> 00:17:54,316
-going to check is it a scaler
+确定它为定标
 
 
 580
 00:17:54,316 --> 00:17:56,956
-value or is texture and we're
+值还是纹理 然后我们
 
 
 581
 00:17:56,956 --> 00:17:58,466
-grab that out and record it.
+将拿出并且记录它们
 
 
 582
 00:17:59,606 --> 00:18:01,026
-Once again, the code's really
+同样 这些代码都是非常
 
 
 583
 00:18:01,026 --> 00:18:01,646
-straightforward.
+直接的
 
 
 584
 00:18:02,996 --> 00:18:04,206
-If the submesh has a material,
+如果子网格有一种材质
 
 
 585
 00:18:04,206 --> 00:18:06,836
-run through all the properties.
+它将在所有属性中运行一遍
 
 
 586
 00:18:07,336 --> 00:18:08,456
-What I'm not showing you here is
+这里我没有向你们展示是因为
 
 
 587
 00:18:08,456 --> 00:18:10,046
-just filtering out the ones that
+我只是为我们的运行时着色器
 
 
 588
 00:18:10,046 --> 00:18:11,206
-we actually care about for our
+过滤出那些
 
 
 589
 00:18:11,206 --> 00:18:11,936
-run-time shader.
+我们真正在意的东西
 
 
 590
 00:18:11,986 --> 00:18:13,676
-But once we've got to the point
+但是一旦我们到了
 
 
 591
 00:18:13,676 --> 00:18:14,576
-of filtering it out, we're then
+需要把它过滤掉的那个点
 
 
 592
 00:18:14,576 --> 00:18:17,096
-going to say, hey property are
+我们将问 嗨 属性
 
 
 593
 00:18:17,096 --> 00:18:18,636
-you a string or URL?
+你是字符串还是网址
 
 
 594
 00:18:19,006 --> 00:18:20,466
-If so, we're referring to a
+如果是这样的话 我们将参考一个
 
 
 595
 00:18:20,466 --> 00:18:21,836
-texture and we'll just write out
+纹理 然后我们直接
 
 
 596
 00:18:21,836 --> 00:18:23,056
-the texture path for later.
+为之后编写出纹理通道
 
 
 597
 00:18:23,876 --> 00:18:25,406
-Otherwise we're going to check
+不然我们就需要
 
 
 598
 00:18:25,826 --> 00:18:27,666
-and are you just a uniform
+检查你是否只是一个统一
 
 
 599
 00:18:27,666 --> 00:18:28,996
-property like are you a float
+属性 例如你是否是
 
 
 600
 00:18:28,996 --> 00:18:31,026
-value or a color or something
+浮动值或者颜色或者
 
 
 601
 00:18:31,026 --> 00:18:32,536
-like that, and if that's what
+类似的东西 如果是这样的 
 
 
 602
 00:18:32,536 --> 00:18:33,276
-we've found then we'll write
+那么我们将把它
 
 
 603
 00:18:33,276 --> 00:18:33,636
-that out.
+写出来
 
 
 604
 00:18:33,636 --> 00:18:37,956
-And then once again, here's the
+然后再次 这是我们
 
 
 605
 00:18:37,956 --> 00:18:39,026
-data that we wrote out in the
+在之前的步骤里
 
 
 606
 00:18:39,026 --> 00:18:40,326
-previous step which was the
+写出的数据 也就是
 
 
 607
 00:18:40,376 --> 00:18:41,326
-scene graph and the mesh.
+场景图和网格 
 
 
 608
 00:18:42,436 --> 00:18:43,866
-Now we'll write out the material
+现在我将写出
 
 
 609
 00:18:43,866 --> 00:18:48,416
-uniforms and the texture paths.
+材质均一和纹理通道
 
 
 610
 00:18:48,556 --> 00:18:50,566
-Finally, instancing.
+最后进行实例化
 
 
 611
 00:18:53,556 --> 00:18:56,756
-So, this is where our car gets
+也就是在这里我们的汽车
 
 
 612
 00:18:56,756 --> 00:18:57,656
-to have more than one wheel I
+将有不只一个
 
 
 613
 00:18:57,716 --> 00:18:57,956
-think.
+轮子
 
 
 614
 00:18:57,956 --> 00:18:59,856
-So, you're going to probably
+你可能
 
 
 615
 00:18:59,856 --> 00:19:01,386
-want to use a single mesh more
+想多次使用
 
 
 616
 00:19:01,386 --> 00:19:02,756
-than one time.
+单一的网格
 
 
 617
 00:19:03,476 --> 00:19:07,206
-So, now my car has two wheels.
+现在我的车有两个轮子了
 
 
 618
 00:19:07,386 --> 00:19:10,386
-Now, it's kind of a waste to
+要把这个多次
 
 
 619
 00:19:10,386 --> 00:19:12,086
-store that in memory more than
+存储在存储器里面
 
 
 620
 00:19:12,086 --> 00:19:12,556
-once, right?
+有点浪费 对吧
 
 
 621
 00:19:12,556 --> 00:19:14,376
-It's the same wheel multiplied
+它们都是同样的轮子
 
 
 622
 00:19:14,376 --> 00:19:15,106
-lots of times.
+只不过重复了多次
 
 
 623
 00:19:15,626 --> 00:19:18,866
-So, Model I/O has a thing on the
+所以 Model I/O 在
 
 
 624
 00:19:18,966 --> 00:19:21,496
-MDLAsset called a masters array.
+MDLAsset 里有一个叫控制队列的东西
 
 
 625
 00:19:22,186 --> 00:19:24,866
-When you load one of Pixar's USD
+当你加载一个通过实例化
 
 
 626
 00:19:24,866 --> 00:19:26,886
-files that uses instancing to
+来复制数据的 Pixar USD 文件时
 
 
 627
 00:19:26,886 --> 00:19:28,686
-replicate data, Model I/O
+Model I/O
 
 
 628
 00:19:28,686 --> 00:19:30,726
-notices that, collects all of
+会注意到这点 并且收集
 
 
 629
 00:19:30,726 --> 00:19:32,056
-those replicated objects into
+所有复制对象 把它们放入
 
 
 630
 00:19:32,056 --> 00:19:35,026
-the masters array, and instead
+控制队列中 而不是
 
 
 631
 00:19:35,026 --> 00:19:36,936
-of storing the individual meshes
+存储在单个的网格
 
 
 632
 00:19:37,096 --> 00:19:39,016
-in the nodes, instead just refer
+的节点中 相反只是引用
 
 
 633
 00:19:39,136 --> 00:19:40,546
-it, just stores an MDLObject
+它 只需要存储引用回
 
 
 634
 00:19:40,546 --> 00:19:42,066
-that refers back to the master
+控制队列的
 
 
 635
 00:19:42,066 --> 00:19:42,266
-array.
+MDLObjective 就行
 
 
 636
 00:19:42,686 --> 00:19:44,086
-And so that's how we get reuse.
+我们就是这么做到重复利用的
 
 
 637
 00:19:44,616 --> 00:19:46,246
-And since Metal has great
+而且 由于 Metal 有非常棒的
 
 
 638
 00:19:46,246 --> 00:19:48,076
-instancing facilities, that's
+实例化设备 这将
 
 
 639
 00:19:48,076 --> 00:19:51,876
-going to stand us in good stead.
+对我们非常有益
 
 
 640
 00:19:52,096 --> 00:19:54,396
-So, once again, we're going to
+我们将再次
 
 
 641
 00:19:54,396 --> 00:19:55,976
-flatten the hierarchy and
+平面化各个层级 并且
 
 
 642
 00:19:55,976 --> 00:19:58,596
-linearalize the arrays, just as
+直线化队列 
 
 
 643
 00:19:58,626 --> 00:19:59,376
-we did before.
+和我们之前做的一样
 
 
 644
 00:20:00,206 --> 00:20:02,266
-And now on the right, you can
+现在在右侧 你可以
 
 
 645
 00:20:02,266 --> 00:20:03,526
-see I've got two wheels in that
+看到我在索引 2 3 4
 
 
 646
 00:20:03,526 --> 00:20:06,126
-array at indexes 2, 3, and 4.
+队列中有两个轮子
 
 
 647
 00:20:06,536 --> 00:20:07,666
-But we want to batch those
+但是我们希望成批处理
 
 
 648
 00:20:07,666 --> 00:20:08,766
-things together, so let's just
+那些东西 但是我们
 
 
 649
 00:20:08,766 --> 00:20:13,086
-go ahead and do that.
+现在就要做这个
 
 
 650
 00:20:13,296 --> 00:20:14,536
-So, we've grouped the tires
+我们把这些轮胎分组
 
 
 651
 00:20:14,536 --> 00:20:16,926
-together, and now we've got the
+放在一起 现在我们在底部
 
 
 652
 00:20:16,926 --> 00:20:17,816
-body down on the bottom.
+有了车身
 
 
 653
 00:20:18,396 --> 00:20:19,136
-So, we're just going to store a
+我们只要再存储
 
 
 654
 00:20:19,136 --> 00:20:20,706
-tiny little bit more data, which
+一点点数据 也就是
 
 
 655
 00:20:20,706 --> 00:20:22,046
-is the instance count.
+实例计数
 
 
 656
 00:20:22,196 --> 00:20:23,766
-There's two wheels and one body.
+现在有两个轮子和一个车身
 
 
 657
 00:20:25,046 --> 00:20:25,826
-Eventually they'll be four
+最后它将有四个
 
 
 658
 00:20:25,826 --> 00:20:26,496
-wheels, trust me.
+轮子的 相信我
 
 
 659
 00:20:28,206 --> 00:20:30,656
-So, we're going to get the data
+我们将调出
 
 
 660
 00:20:30,656 --> 00:20:31,666
-that we stored out already
+我们之前已经存储好的
 
 
 661
 00:20:31,666 --> 00:20:33,106
-earlier and to the scene
+数据 再到场景
 
 
 662
 00:20:33,106 --> 00:20:35,386
-composition data, we're just
+组成数据 我们将
 
 
 663
 00:20:35,386 --> 00:20:36,356
-going to add the instance count.
+添加实例计数
 
 
 664
 00:20:37,406 --> 00:20:39,846
-And that's all it takes to get
+我们做了这些就可以得到
 
 
 665
 00:20:39,846 --> 00:20:41,676
-an instanced scene with lots of
+一个包含多种材质和对象的
 
 
 666
 00:20:41,676 --> 00:20:42,786
-materials and objects.
+实例化场景
 
 
 667
 00:20:43,346 --> 00:20:46,016
-Now, with that I'd like to hand
+接下来我希望交给
 
 
 668
 00:20:46,306 --> 00:20:48,136
-it off to Nicholas to show you
+Nicholas 来向大家展示
 
 
 669
 00:20:48,286 --> 00:20:49,266
-how that's all starting to come
+这些是如何从最开始
 
 
 670
 00:20:49,266 --> 00:20:49,586
-together.
+再到组合到一起的
 
 
 671
 00:20:51,516 --> 00:20:54,500
-[ Applause ]
+［掌声］
 
 
 672
 00:21:05,096 --> 00:21:06,016
->> I'd like to show you how easy
+>>我要向大家展示用 Model I/O
 
 
 673
 00:21:06,016 --> 00:21:07,846
-it is to take our assets and
+可以多么容易地
 
 
 674
 00:21:07,846 --> 00:21:09,206
-turn them into engine-ready data
+把我们的素材变换为
 
 
 675
 00:21:09,206 --> 00:21:10,196
-using Model I/O.
+引擎就绪的数据
 
 
 676
 00:21:10,276 --> 00:21:12,376
-I have here two folders and in
+我这里有两个文件夹
 
 
 677
 00:21:12,376 --> 00:21:13,646
-the first folder we have our art
+第一个文件夹里有我们的艺术
 
 
 678
 00:21:13,646 --> 00:21:14,076
-assets.
+素材
 
 
 679
 00:21:14,616 --> 00:21:16,176
-It contains animation data,
+它包含了动画数据
 
 
 680
 00:21:16,806 --> 00:21:18,706
-cars, it has skinned animation,
+汽车 采用了蒙皮动画的方式
 
 
 681
 00:21:18,706 --> 00:21:19,786
-it has a bunch of materials.
+它还有一堆材质
 
 
 682
 00:21:20,446 --> 00:21:21,476
-So what we want to do is we want
+所以我们想做的就是我们希望
 
 
 683
 00:21:21,476 --> 00:21:23,896
-to create a baker that takes
+创建一个 baker 
 
 
 684
 00:21:23,896 --> 00:21:25,626
-this data, turns it into engine
+它可以把这个数据变为引擎
 
 
 685
 00:21:25,626 --> 00:21:26,796
-data, and puts it into this
+数据 然后把它放在
 
 
 686
 00:21:26,796 --> 00:21:27,616
-second folder here.
+第二个文件夹里 
 
 
 687
 00:21:28,246 --> 00:21:31,216
-So, what we have here is our
+这里我们有我们的
 
 
 688
 00:21:31,216 --> 00:21:32,736
-baker project and what we're
+baker 项目 我们要做的
 
 
 689
 00:21:32,736 --> 00:21:33,996
-going to do is we're going to
+就是我们要
 
 
 690
 00:21:34,096 --> 00:21:35,506
-slowly extend it to extract more
+慢慢地把它扩展 以从这些
 
 
 691
 00:21:35,506 --> 00:21:37,256
-and more data out of those art
+艺术素材中提取更多的
 
 
 692
 00:21:37,256 --> 00:21:37,696
-assets.
+数据
 
 
 693
 00:21:38,176 --> 00:21:39,126
-So starting out with the
+从最简单的开始
 
 
 694
 00:21:39,166 --> 00:21:40,956
-simplest, let's export the
+让我们来导出
 
 
 695
 00:21:40,956 --> 00:21:42,236
-geometry and transforms.
+几何结构和转换
 
 
 696
 00:21:42,956 --> 00:21:44,146
-To do that we're going to walk
+为了做这点 我们将浏览
 
 
 697
 00:21:44,146 --> 00:21:46,186
-the scene graph hierarchy and
+场景图分级并且
 
 
 698
 00:21:46,186 --> 00:21:47,786
-look for any object of MDLMesh
+寻找任何是 MDLMesh 类型的
 
 
 699
 00:21:48,526 --> 00:21:48,626
-type.
+对象
 
 
 700
 00:21:51,076 --> 00:21:52,156
-Then we're going to store the
+然后我们将存储
 
 
 701
 00:21:52,156 --> 00:21:55,636
-vertexDescriptor, all the
+顶点描述符 所有的
 
 
 702
 00:21:55,636 --> 00:21:58,816
-vertexBuffers, and then we're
+顶点缓冲区 然后我们
 
 
 703
 00:21:58,816 --> 00:22:00,326
-going to iterate through all the
+将迭代所有的
 
 
 704
 00:22:00,386 --> 00:22:02,696
-submeshes and grab the index
+子网格并且拿到索引
 
 
 705
 00:22:02,726 --> 00:22:03,076
-buffers.
+缓冲器
 
 
 706
 00:22:06,896 --> 00:22:07,896
-We're going to walk through the
+我们将再一次浏览
 
 
 707
 00:22:07,936 --> 00:22:10,256
-scene graph once again, and this
+场景图 这次
 
 
 708
 00:22:10,256 --> 00:22:12,836
-time we're going to look for any
+我们要寻找的是所有
 
 
 709
 00:22:12,836 --> 00:22:14,066
-objects that have a transform
+有转换组件的
 
 
 710
 00:22:14,066 --> 00:22:14,576
-component.
+对象
 
 
 711
 00:22:15,456 --> 00:22:16,906
-If they do, then we simply store
+如果有的话 我们只需要存储
 
 
 712
 00:22:16,906 --> 00:22:17,396
-the matrix.
+矩阵就行
 
 
 713
 00:22:17,526 --> 00:22:19,546
-And that's all for the first
+第一个例子
 
 
 714
 00:22:19,546 --> 00:22:19,846
-example.
+就是这样
 
 
 715
 00:22:19,846 --> 00:22:20,726
-And so let's go ahead and run
+让我们运行
 
 
 716
 00:22:20,726 --> 00:22:20,906
-this.
+它
 
 
 717
 00:22:26,076 --> 00:22:27,166
-And you'll notice in that second
+大家会注意到在第二个
 
 
 718
 00:22:27,166 --> 00:22:28,446
-folder we now have a new file
+文件夹里 我们有一个新文档
 
 
 719
 00:22:28,446 --> 00:22:29,726
-and that's our engine-ready
+这就是我们的引擎就绪
 
 
 720
 00:22:30,406 --> 00:22:30,536
-data.
+数据
 
 
 721
 00:22:31,956 --> 00:22:33,336
-This second project here will be
+这里的第二个项目将是
 
 
 722
 00:22:33,336 --> 00:22:34,386
-our engine and it's going to
+我们的引擎 它将
 
 
 723
 00:22:34,386 --> 00:22:35,486
-read in that data and it's going
+读取那个数据 并且
 
 
 724
 00:22:35,486 --> 00:22:36,086
-to render it.
+对其进行渲染
 
 
 725
 00:22:36,086 --> 00:22:37,086
-So let's see what we have so
+我们来看看现在的
 
 
 726
 00:22:37,136 --> 00:22:37,376
-far.
+成果
 
 
 727
 00:22:37,636 --> 00:22:40,066
-So as you notice, we have two
+你可能注意到 我们的
 
 
 728
 00:22:40,066 --> 00:22:41,336
-cars on a race track, but
+一个赛道上有两辆车 但是
 
 
 729
 00:22:41,336 --> 00:22:42,126
-there's color.
+还有颜色需要处理 
 
 
 730
 00:22:42,126 --> 00:22:43,746
-So let's extend the baker to
+那么让我们扩展 baker 
 
 
 731
 00:22:43,746 --> 00:22:45,116
-also support materials.
+让它也支持材质
 
 
 732
 00:22:50,046 --> 00:22:52,516
-So in addition to looking for
+我们不需要寻找
 
 
 733
 00:22:52,516 --> 00:22:53,326
-the index buffers on the
+子网格上的索引缓冲器
 
 
 734
 00:22:53,376 --> 00:22:54,256
-submesh, we're going to look to
+我们需要看看
 
 
 735
 00:22:54,316 --> 00:22:55,206
-see if it has a material
+它是否有一个材质
 
 
 736
 00:22:55,206 --> 00:22:55,656
-property.
+属性
 
 
 737
 00:22:56,116 --> 00:22:57,936
-If it does, then there are five
+如果有的话 那么就有五个
 
 
 738
 00:22:57,986 --> 00:22:58,986
-properties associated with the
+和以下相关的属性
 
 
 739
 00:22:58,986 --> 00:23:01,516
-semantic baseColor, metallic,
+语义 baseColor 金属材质的
 
 
 740
 00:23:02,346 --> 00:23:04,686
-roughness, bump, and
+粗糙度 碰撞以及
 
 
 741
 00:23:04,686 --> 00:23:05,996
-ambientOcclusion that we care
+ambientOcclusion 这些我们
 
 
 742
 00:23:05,996 --> 00:23:06,266
-about.
+在意的东西
 
 
 743
 00:23:07,066 --> 00:23:08,046
-And when we read in the
+并且当我们在属性里
 
 
 744
 00:23:08,076 --> 00:23:09,306
-property, we're going to iterate
+读取到相关的东西 我们将迭代
 
 
 745
 00:23:09,396 --> 00:23:11,116
-through all the properties and
+浏览所有的属性
 
 
 746
 00:23:11,116 --> 00:23:11,886
-checking the type.
+并检查类型
 
 
 747
 00:23:12,436 --> 00:23:15,296
-If the type is of float or
+如果类型是 float 或者
 
 
 748
 00:23:15,346 --> 00:23:17,486
-float3 we assume it's a uniform
+float3 我们就可以假定它是均一的
 
 
 749
 00:23:17,876 --> 00:23:19,826
-and we're going to record that.
+并且我们也将记录它
 
 
 750
 00:23:20,706 --> 00:23:22,516
-Otherwise, if it's a string or a
+不然 如果它是字符串或网址
 
 
 751
 00:23:22,516 --> 00:23:24,156
-URL we're going to record the
+我们将记录
 
 
 752
 00:23:24,156 --> 00:23:24,806
-texture paths.
+纹理通道
 
 
 753
 00:23:25,796 --> 00:23:27,036
-So now, let's run this second
+现在让我们来运行第二个
 
 
 754
 00:23:27,036 --> 00:23:28,026
-example and see what kind of
+例子 看看我们可以在我们的
 
 
 755
 00:23:28,026 --> 00:23:29,846
-output we get in our engine.
+引擎获得何种输出
 
 
 756
 00:23:35,046 --> 00:23:36,076
-So now we have a race track and
+现在我没有一个赛道
 
 
 757
 00:23:36,076 --> 00:23:36,966
-two cars, but now with
+两辆车 现在还有
 
 
 758
 00:23:36,966 --> 00:23:37,496
-materials.
+材质
 
 
 759
 00:23:38,256 --> 00:23:40,016
-Let's further extend this and
+我们进一步进行扩展
 
 
 760
 00:23:40,016 --> 00:23:41,176
-support instancing.
+并支持实例化
 
 
 761
 00:23:46,256 --> 00:23:48,006
-So, before, we only considered
+之前在浏览场景图时
 
 
 762
 00:23:48,006 --> 00:23:49,296
-meshes while traversing the
+我们只考虑了
 
 
 763
 00:23:49,346 --> 00:23:49,746
-scene graph.
+网格
 
 
 764
 00:23:49,896 --> 00:23:51,056
-But now, we want to consider all
+现在我们想要考虑所有
 
 
 765
 00:23:51,056 --> 00:23:52,436
-meshes that live in the masters
+在素材控制队列中
 
 
 766
 00:23:52,436 --> 00:23:53,366
-array of the asset.
+的网格
 
 
 767
 00:23:54,196 --> 00:23:55,436
-So we walk through the masters,
+所以我们浏览控制网格
 
 
 768
 00:23:56,226 --> 00:23:57,246
-collecting all objects that are
+收集所有是 MDLMesh 类型的
 
 
 769
 00:23:57,246 --> 00:23:59,006
-of MDLMesh type and storing in
+对象 然后像之前那样
 
 
 770
 00:23:59,446 --> 00:24:00,396
-just like we did before.
+存储它
 
 
 771
 00:24:01,246 --> 00:24:02,336
-In addition, we also need to
+并且 我们还需要
 
 
 772
 00:24:02,336 --> 00:24:04,566
-record all objects that refer to
+记录所有控制网格
 
 
 773
 00:24:04,566 --> 00:24:05,236
-those masters.
+引用的对象
 
 
 774
 00:24:05,236 --> 00:24:06,756
-And we can find that on the
+这点我们可以在
 
 
 775
 00:24:06,756 --> 00:24:07,646
-instance property.
+实例化属性中找到
 
 
 776
 00:24:08,216 --> 00:24:11,836
-We then, sort the instances by
+然后我们可以按网格区分
 
 
 777
 00:24:11,836 --> 00:24:14,346
-mesh, and then grab the instance
+实例 得出实例
 
 
 778
 00:24:14,346 --> 00:24:14,666
-count.
+计数
 
 
 779
 00:24:15,696 --> 00:24:16,616
-And that's it.
+这样就完成了
 
 
 780
 00:24:21,146 --> 00:24:22,256
-So, let's go ahead and run our
+现在让我们再运行一下
 
 
 781
 00:24:22,336 --> 00:24:22,846
-scene again.
+我们的场景
 
 
 782
 00:24:23,496 --> 00:24:26,126
-And now we have multiple cars,
+现在我们有多辆车
 
 
 783
 00:24:26,126 --> 00:24:27,346
-rendering using instancing.
+我们用实例化对它们进行渲染
 
 
 784
 00:24:28,146 --> 00:24:28,766
-Back to you Nick.
+交回给你了 Nick
 
 
 785
 00:24:31,516 --> 00:24:36,026
-[ Applause ]
+［掌声］
 
 
 786
 00:24:36,526 --> 00:24:37,586
->> Next, we're going to talk
+>>接下来 我们要讲一讲
 
 
 787
 00:24:37,806 --> 00:24:39,486
-about transform animation.
+变换动画
 
 
 788
 00:24:40,106 --> 00:24:43,856
-So, transform animation is
+变换动画是
 
 
 789
 00:24:43,856 --> 00:24:46,346
-transforms that vary over time.
+随时间改变的变换
 
 
 790
 00:24:47,776 --> 00:24:49,826
-So, let's just consider our
+现在让我们再考虑一下我们的
 
 
 791
 00:24:49,826 --> 00:24:51,266
-little simple scene graph again.
+场景图
 
 
 792
 00:24:51,876 --> 00:24:54,556
-Now, I've got a car sitting on
+现在 在起点线上我们有
 
 
 793
 00:24:54,966 --> 00:24:56,866
-the start line, and I'm just
+一辆车 现在我想
 
 
 794
 00:24:56,866 --> 00:24:58,656
-going to want to do an animation
+做这么一个动画
 
 
 795
 00:24:58,766 --> 00:25:00,866
-where maybe the body is going to
+例如在车发动之前
 
 
 796
 00:25:00,866 --> 00:25:02,006
-wiggle a little a bit before it
+车身稍微摆动
 
 
 797
 00:25:02,006 --> 00:25:03,826
-starts, and then the car is
+一下 然后车再
 
 
 798
 00:25:03,826 --> 00:25:04,626
-going to drive away.
+开走
 
 
 799
 00:25:05,266 --> 00:25:06,436
-So in order to accomplish that,
+为了实现这个效果
 
 
 800
 00:25:06,436 --> 00:25:07,586
-I'm going to need to record some
+我需要在车身节点 D
 
 
 801
 00:25:07,586 --> 00:25:10,736
-animation data on the body node
+以及整个对象的
 
 
 802
 00:25:10,736 --> 00:25:14,956
-D and on the root transform of
+根节点上录制
 
 
 803
 00:25:14,956 --> 00:25:16,396
-the whole object to move him
+一些动画数据来把它
 
 
 804
 00:25:16,396 --> 00:25:18,406
-away, which is B.
+移走 也就是节点 B
 
 
 805
 00:25:18,966 --> 00:25:19,906
-I'm going to record out
+我将要记录
 
 
 806
 00:25:19,906 --> 00:25:21,986
-animation tracks for both of
+两个节点的
 
 
 807
 00:25:21,986 --> 00:25:22,786
-those two nodes.
+动画路径
 
 
 808
 00:25:24,256 --> 00:25:26,476
-And once again with Model I/O,
+同样有了 Model I/O
 
 
 809
 00:25:26,476 --> 00:25:27,836
-that's really easy to do.
+这点特别容易做到
 
 
 810
 00:25:29,116 --> 00:25:31,186
-As before, we run over all of
+和之前一样 我们浏览所有的
 
 
 811
 00:25:31,186 --> 00:25:32,326
-the objects looking for the
+对象 寻找
 
 
 812
 00:25:32,326 --> 00:25:34,826
-transform components, and when
+变换组件 
 
 
 813
 00:25:34,826 --> 00:25:36,356
-we find them we're going to be
+当我们找到它们的时候 我们将
 
 
 814
 00:25:36,356 --> 00:25:36,916
-appending them.
+对它们进行附加
 
 
 815
 00:25:37,446 --> 00:25:38,396
-But now we're going to do one
+但是现在我们还需要做
 
 
 816
 00:25:38,396 --> 00:25:40,356
-more thing, which is, we're
+一件事 那就是我们将
 
 
 817
 00:25:40,516 --> 00:25:42,366
-going to ask the transform if
+询问变换它是否
 
 
 818
 00:25:42,456 --> 00:25:45,086
-it's got any keyed times on it.
+有键控时间
 
 
 819
 00:25:45,706 --> 00:25:47,796
-Now, if there's no keyed time,
+如果没有键控时间
 
 
 820
 00:25:48,076 --> 00:25:50,096
-that's 0 count, then we're just
+那么计数为 0 我们
 
 
 821
 00:25:50,096 --> 00:25:51,076
-going to use it as is.
+直接使用就行
 
 
 822
 00:25:51,456 --> 00:25:52,956
-And if there's 1 keyed time,
+如果有 1 个键控时间
 
 
 823
 00:25:53,066 --> 00:25:53,976
-we're just going to treat it as
+我将把它看做
 
 
 824
 00:25:53,976 --> 00:25:54,526
-constant.
+恒定
 
 
 825
 00:25:54,826 --> 00:25:56,726
-So we're just looking for counts
+所以我们只需要寻找计数
 
 
 826
 00:25:56,766 --> 00:25:58,396
-that are greater than 1.
+大于 1 的就行 
 
 
 827
 00:26:01,056 --> 00:26:03,296
-So, we're going to actually use
+我们现在要真正使用
 
 
 828
 00:26:03,526 --> 00:26:04,966
-a really exotic and cool piece
+Swift 一个非常不同寻常
 
 
 829
 00:26:04,966 --> 00:26:05,626
-of Swift here.
+非常酷的部分
 
 
 830
 00:26:06,066 --> 00:26:06,736
-I like this part.
+我喜欢这个部分
 
 
 831
 00:26:06,736 --> 00:26:08,996
-We're going to use a map
+我们将使用地图
 
 
 832
 00:26:09,246 --> 00:26:09,736
-closure.
+闭合
 
 
 833
 00:26:10,306 --> 00:26:12,936
-So, what we're going to do is
+我们将做的是
 
 
 834
 00:26:13,116 --> 00:26:14,956
-we're going to sample the
+根据时间对
 
 
 835
 00:26:14,956 --> 00:26:17,746
-animation at times and we're
+动画进行取样
 
 
 836
 00:26:17,746 --> 00:26:20,136
-going to create a new array of
+我们将创建
 
 
 837
 00:26:21,236 --> 00:26:22,496
-transforms corresponding to
+与那些时间对应的
 
 
 838
 00:26:22,496 --> 00:26:24,446
-those times that will append to
+新队列的变换 并将之
 
 
 839
 00:26:24,446 --> 00:26:24,926
-our buffer.
+附加在我们的缓冲器上
 
 
 840
 00:26:25,446 --> 00:26:27,306
-And to just pick apart that
+现在把绘图操作
 
 
 841
 00:26:27,306 --> 00:26:29,176
-mapping operation a little bit,
+拆开一下
 
 
 842
 00:26:29,436 --> 00:26:31,076
-the first line says
+第一行说的是
 
 
 843
 00:26:31,076 --> 00:26:32,076
-samplesTimes.map.
+samplesTimes.map
 
 
 844
 00:26:32,486 --> 00:26:33,546
-The thing that's not showing on
+幻灯片上没有
 
 
 845
 00:26:33,546 --> 00:26:34,526
-the slide is where did
+显示的是 sampleTimes
 
 
 846
 00:26:34,526 --> 00:26:36,226
-sampleTimes come from?
+从哪里来
 
 
 847
 00:26:36,816 --> 00:26:39,796
-So, it's another array of
+这是另外一个队列的
 
 
 848
 00:26:40,416 --> 00:26:42,876
-keyTimes and you can do two
+keyTimes 你在这里
 
 
 849
 00:26:42,876 --> 00:26:43,276
-things here.
+可以做两件事情
 
 
 850
 00:26:43,646 --> 00:26:45,286
-One is you can make the
+一件事是你让
 
 
 851
 00:26:45,286 --> 00:26:47,286
-sampleTimes array just the
+sampleTimes 队列就是
 
 
 852
 00:26:47,316 --> 00:26:51,626
-transform.keyTimes array, or if
+transform.keyTimes 队列 或者如果
 
 
 853
 00:26:51,626 --> 00:26:53,646
-you want to instead of just
+相反你只是想要
 
 
 854
 00:26:53,646 --> 00:26:55,506
-getting only the times that the
+艺术家放进文件
 
 
 855
 00:26:55,506 --> 00:26:57,216
-artist put in the file, if you
+中的时间点 例如如果
 
 
 856
 00:26:57,216 --> 00:26:58,586
-want to for example sample the
+你想以恒定帧频
 
 
 857
 00:26:58,586 --> 00:27:00,166
-times at a constant frame rate,
+对时间进行取样 
 
 
 858
 00:27:00,546 --> 00:27:01,556
-you could have synthetically
+你可以在你希望
 
 
 859
 00:27:01,556 --> 00:27:03,886
-made an array of transform times
+的帧频下合成
 
 
 860
 00:27:04,056 --> 00:27:05,486
-at the frame rate that you care
+一队列变换时间
 
 
 861
 00:27:05,486 --> 00:27:07,226
-about, say 60 frames a second.
+例如 60 帧每秒
 
 
 862
 00:27:07,886 --> 00:27:09,536
-And so, when you do this mapping
+所以当你在进行这个绘图
 
 
 863
 00:27:09,536 --> 00:27:12,096
-operation, the closure takes the
+操作的时候 闭合进行了
 
 
 864
 00:27:12,096 --> 00:27:14,126
-transforms, gets the local
+变换 在对应队列中
 
 
 865
 00:27:14,126 --> 00:27:16,546
-transform from it at the times
+相应值的时间下
 
 
 866
 00:27:16,546 --> 00:27:17,906
-corresponding to the values in
+获取本地
 
 
 867
 00:27:17,906 --> 00:27:18,236
-the array.
+变换
 
 
 868
 00:27:18,436 --> 00:27:19,936
-I thought that was really cool.
+我觉得这特别酷
 
 
 869
 00:27:21,256 --> 00:27:23,436
-So, here's the data that we've
+这是我们已经导出
 
 
 870
 00:27:23,436 --> 00:27:24,276
-output already.
+的数据
 
 
 871
 00:27:25,466 --> 00:27:27,986
-And it's straightforward to just
+它非常直接地
 
 
 872
 00:27:27,986 --> 00:27:29,336
-encode the animated local
+对本地变换动画
 
 
 873
 00:27:29,336 --> 00:27:30,016
-transforms.
+进行了编码
 
 
 874
 00:27:30,906 --> 00:27:34,746
-So, finally, skinning and
+最后蒙皮和
 
 
 875
 00:27:34,746 --> 00:27:35,686
-character animation.
+角色动画
 
 
 876
 00:27:36,546 --> 00:27:40,386
-So, we're just going to take a
+现在我们将要拿出一辆
 
 
 877
 00:27:40,386 --> 00:27:42,966
-little car here and he's a
+小车 它
 
 
 878
 00:27:42,966 --> 00:27:44,046
-cartoon car apparently.
+很明显是一辆卡通车
 
 
 879
 00:27:44,406 --> 00:27:46,296
-We're going to make him able to
+我们将让它可以
 
 
 880
 00:27:46,296 --> 00:27:48,756
-wiggle his nose and otherwise
+扭动它的鼻子 或者
 
 
 881
 00:27:48,756 --> 00:27:49,026
-animate.
+做其他动画效果
 
 
 882
 00:27:50,206 --> 00:27:53,686
-So, as we've seen before, the
+正如我们之前所看到的
 
 
 883
 00:27:53,686 --> 00:27:55,546
-mesh is going to have geometry
+网格将有几何结构
 
 
 884
 00:27:55,656 --> 00:27:56,536
-and all the same sorts of
+以及其他类似的
 
 
 885
 00:27:56,536 --> 00:27:57,656
-buffers and things that we've
+我们之前谈论过的
 
 
 886
 00:27:57,656 --> 00:28:00,056
-already talked about, but it has
+缓冲器 但是它还有
 
 
 887
 00:28:00,056 --> 00:28:02,496
-a new thing which is an embedded
+一个被嵌入骨架的
 
 
 888
 00:28:02,496 --> 00:28:02,966
-skeleton.
+新东西
 
 
 889
 00:28:03,256 --> 00:28:05,216
-I hope you can see the little
+我希望大家可以看到这个小小的
 
 
 890
 00:28:05,216 --> 00:28:06,036
-green bones.
+绿色的骨头
 
 
 891
 00:28:07,036 --> 00:28:08,186
-They are going out into the
+它们将被放置在
 
 
 892
 00:28:08,186 --> 00:28:09,396
-wheels and there's some going
+轮子中 在下面车的
 
 
 893
 00:28:09,396 --> 00:28:10,476
-down the spine of the car.
+“脊柱”位置也有一些
 
 
 894
 00:28:11,686 --> 00:28:15,496
-Now, those bones are bound to
+那些骨头通过
 
 
 895
 00:28:15,496 --> 00:28:17,876
-the vertices through a painting
+艺术家们的绘画步骤
 
 
 896
 00:28:17,876 --> 00:28:19,186
-process that the artists do.
+和顶点绑定
 
 
 897
 00:28:19,616 --> 00:28:22,786
-So, the one on the left has got
+所以左边的有
 
 
 898
 00:28:23,506 --> 00:28:25,156
-a bone that's bound to the front
+一根骨头和车的前部
 
 
 899
 00:28:25,216 --> 00:28:26,646
-of the car and heavily weighted
+绑定 靠保险杠
 
 
 900
 00:28:26,646 --> 00:28:27,756
-to the bumper and the nose.
+还有鼻子承重
 
 
 901
 00:28:28,166 --> 00:28:29,506
-And then the one on the right
+然后在右边
 
 
 902
 00:28:29,826 --> 00:28:32,026
-we've selected one of the bones
+我们选择了在车身背部
 
 
 903
 00:28:32,026 --> 00:28:33,536
-on the back of the car connected
+的一根骨头和
 
 
 904
 00:28:33,536 --> 00:28:35,086
-to the wheel, so when that one
+轮子相连 所以当这根
 
 
 905
 00:28:35,086 --> 00:28:37,746
-moves it's going to affect the
+骨头移动时 它将影响到
 
 
 906
 00:28:37,746 --> 00:28:39,316
-wing on the back of the car and
+车身背部的翼片以及
 
 
 907
 00:28:40,026 --> 00:28:42,156
-that wheel.
+那个轮子
 
 
 908
 00:28:42,356 --> 00:28:44,776
-So, I should also mention that
+我还需要提一下
 
 
 909
 00:28:44,776 --> 00:28:46,356
-that kind of data requires a
+这种数据需要
 
 
 910
 00:28:46,386 --> 00:28:48,686
-little bit of extra work in your
+你在你的着色器中多做一点
 
 
 911
 00:28:48,686 --> 00:28:49,086
-shader.
+工作
 
 
 912
 00:28:49,726 --> 00:28:53,696
-We've got some more information
+我们还需要一些信息
 
 
 913
 00:28:53,696 --> 00:28:54,856
-coming along for the ride that
+为我们之前还没有做过的
 
 
 914
 00:28:54,856 --> 00:28:55,896
-we didn't have before.
+发车做准备
 
 
 915
 00:28:56,516 --> 00:28:59,236
-And specifically, we've got the
+特别是 我们有
 
 
 916
 00:28:59,236 --> 00:29:03,806
-jointWeights per vertex and the
+jointWeights per vertex 以及
 
 
 917
 00:29:03,806 --> 00:29:07,326
-jointIndices which are a small
+jointIndices 也就是一小
 
 
 918
 00:29:07,326 --> 00:29:11,076
-array of indices to what we'll
+队列指数 我们将向
 
 
 919
 00:29:11,076 --> 00:29:13,186
-call the matrix palette of
+它们调用和顶点位置
 
 
 920
 00:29:13,626 --> 00:29:16,226
-joints that correspond to the
+相对应节点的
 
 
 921
 00:29:16,226 --> 00:29:17,196
-vertex positions.
+矩阵调色
 
 
 922
 00:29:17,676 --> 00:29:21,046
-So, if two joints or bones were
+如果有两个节点或者骨头
 
 
 923
 00:29:21,046 --> 00:29:23,426
-influencing a particular vertex,
+同时作用于一个特定顶点
 
 
 924
 00:29:23,796 --> 00:29:25,476
-then the indices of those bones
+那么当我进行变换时 
 
 
 925
 00:29:25,476 --> 00:29:27,666
-will come along with the vertex,
+那些骨头的指数将
 
 
 926
 00:29:28,136 --> 00:29:30,076
-with some weights so that when I
+和顶点一起再加上一些重量
 
 
 927
 00:29:30,076 --> 00:29:34,276
-transform them, when I transform
+当我在着色器中
 
 
 928
 00:29:34,846 --> 00:29:36,986
-them in the shader it'll all be
+对它们进行变换时 它们将
 
 
 929
 00:29:36,986 --> 00:29:39,506
-combined together and the vertex
+全部被结合起来 顶点
 
 
 930
 00:29:39,506 --> 00:29:41,606
-will move to its final deformed
+将移动到其最后的变形
 
 
 931
 00:29:41,606 --> 00:29:42,156
-position.
+位置 
 
 
 932
 00:29:44,656 --> 00:29:47,536
-So, there's more data involved
+为了从正在进行的几何结构和
 
 
 933
 00:29:47,836 --> 00:29:50,146
-in order to encode the skeleton
+其他变换中
 
 
 934
 00:29:50,256 --> 00:29:52,846
-separately from the geometry and
+单独编码骨架 
 
 
 935
 00:29:52,846 --> 00:29:54,066
-other transformations that are
+我们还需要更多的
 
 
 936
 00:29:54,066 --> 00:29:54,576
-going on.
+信息
 
 
 937
 00:29:55,146 --> 00:29:57,036
-And that's the skeleton down
+那就是表格
 
 
 938
 00:29:57,036 --> 00:29:57,716
-there at the bottom of the
+底部中的
 
 
 939
 00:29:57,716 --> 00:29:58,266
-diagram.
+骨架
 
 
 940
 00:29:58,266 --> 00:29:59,886
-Let's just isolate it.
+我们把它分隔开来
 
 
 941
 00:30:02,366 --> 00:30:04,656
-So, as we did before, we're
+所以和我们之前所做的一样
 
 
 942
 00:30:04,656 --> 00:30:07,586
-going to traverse the graph and
+我们将浏览绘图
 
 
 943
 00:30:07,586 --> 00:30:09,976
-assign indices according to
+然后根据浏览顺序 0 1 2 3
 
 
 944
 00:30:10,096 --> 00:30:14,816
-traversal order 0, 1, 2, 3.
+分配指数
 
 
 945
 00:30:15,036 --> 00:30:16,896
-We're going to encode the
+我们将对骨架图中的
 
 
 946
 00:30:16,946 --> 00:30:20,086
-parents in the skeleton graph
+亲项进行编码
 
 
 947
 00:30:20,356 --> 00:30:21,906
-just as we did for the geometry
+和我们之前对几何图所做的
 
 
 948
 00:30:21,906 --> 00:30:22,336
-graph.
+一样
 
 
 949
 00:30:22,806 --> 00:30:25,046
-And so, not going to go into
+我不会再细讲
 
 
 950
 00:30:25,046 --> 00:30:26,576
-particularly how it works
+它的工作原理
 
 
 951
 00:30:26,576 --> 00:30:27,576
-because it's exactly the same as
+因为这和之前的
 
 
 952
 00:30:27,576 --> 00:30:27,926
-before.
+完全一样
 
 
 953
 00:30:29,156 --> 00:30:32,106
-Now, we're also going to encode
+现在我们需要对
 
 
 954
 00:30:32,466 --> 00:30:35,396
-for each of the bones that
+每一根骨头进行编码
 
 
 955
 00:30:35,396 --> 00:30:37,886
-actually influences a vertex,
+它们会真正影响到顶点
 
 
 956
 00:30:38,566 --> 00:30:43,486
-the index of that bone in the
+层级中骨头的索引
 
 
 957
 00:30:43,566 --> 00:30:46,446
-hierarchy and the inverse bind
+以及逆绑定
 
 
 958
 00:30:46,446 --> 00:30:46,826
-pose.
+姿势
 
 
 959
 00:30:47,336 --> 00:30:48,806
-On the previous slide, with the
+在之前的幻灯片中
 
 
 960
 00:30:48,806 --> 00:30:50,316
-shader there is a bit of math
+提到着色器的部分有一些
 
 
 961
 00:30:50,486 --> 00:30:52,766
-there that referred to some sort
+数学运算提到某种
 
 
 962
 00:30:52,766 --> 00:30:53,716
-of a palette matrix.
+调色矩阵
 
 
 963
 00:30:54,286 --> 00:30:56,396
-The inverse bind pose is going
+逆向绑定姿势
 
 
 964
 00:30:56,396 --> 00:30:58,026
-to be an extra bit of math that
+将需要你用多一点的
 
 
 965
 00:30:58,026 --> 00:31:00,236
-you need in order to get the
+数学运算来帮你把
 
 
 966
 00:31:00,236 --> 00:31:02,416
-vertices into the right space to
+顶点放入右侧空间
 
 
 967
 00:31:02,416 --> 00:31:03,496
-be easily blended.
+使之更容易混合
 
 
 968
 00:31:03,786 --> 00:31:05,336
-And I'd refer you to the sample
+我将让大家看一个
 
 
 969
 00:31:05,336 --> 00:31:06,496
-for the details of that
+例子 以了解变换的
 
 
 970
 00:31:06,496 --> 00:31:07,236
-transformation.
+具体细节
 
 
 971
 00:31:08,776 --> 00:31:10,056
-We're going to go through each
+我们将浏览它们中的
 
 
 972
 00:31:10,056 --> 00:31:11,916
-one of those and store those
+每一项 然后把那些
 
 
 973
 00:31:12,076 --> 00:31:13,436
-matrices and indices.
+矩阵和指数存储起来 
 
 
 974
 00:31:14,086 --> 00:31:16,026
-And then finally, to make an
+最后 做一个
 
 
 975
 00:31:16,026 --> 00:31:18,326
-animation clip, we're going to
+动画片段 我们将
 
 
 976
 00:31:18,486 --> 00:31:20,696
-record the animation that
+录制和动画片段中
 
 
 977
 00:31:20,696 --> 00:31:22,416
-corresponds to each one of those
+每根骨头
 
 
 978
 00:31:22,476 --> 00:31:26,416
-bones in the clip.
+对应的动画
 
 
 979
 00:31:26,576 --> 00:31:29,426
-So, in code it looks very much
+所以从代码的角度
 
 
 980
 00:31:29,426 --> 00:31:30,356
-like what we've seen before.
+它和我们之前看到的非常像
 
 
 981
 00:31:31,246 --> 00:31:32,466
-We're going to go through the
+我们将浏览对象
 
 
 982
 00:31:32,466 --> 00:31:34,396
-object and find out if the
+找到对象是否有
 
 
 983
 00:31:34,396 --> 00:31:35,296
-object has skin.
+蒙皮
 
 
 984
 00:31:36,486 --> 00:31:38,496
-The skin, corresponding to the
+蒙皮和骨架等
 
 
 985
 00:31:38,496 --> 00:31:40,256
-skeleton et cetera and is
+相对应 是在
 
 
 986
 00:31:40,326 --> 00:31:42,286
-encoded in Model I/O's new
+Model I/O 全新的
 
 
 987
 00:31:42,766 --> 00:31:44,576
-MDLSkinDeformerComponent.
+MDLSkinDeformerComponent 中编码的
 
 
 988
 00:31:45,006 --> 00:31:46,826
-So if we found a skin deformer
+所以如果我们发现一个蒙皮变形器
 
 
 989
 00:31:46,826 --> 00:31:49,936
-component, we're once again
+组件 我们将再次
 
 
 990
 00:31:49,936 --> 00:31:51,316
-going to take advantage of this
+利用
 
 
 991
 00:31:51,746 --> 00:31:55,536
-Swift map closure to take the
+Swift 地图闭合 利用
 
 
 992
 00:31:55,536 --> 00:31:57,776
-jointBindTransforms that Model
+Model I/O 从文件中读取
 
 
 993
 00:31:57,776 --> 00:31:59,796
-I/O read from the file and
+并且存储的
 
 
 994
 00:31:59,796 --> 00:32:00,176
-stored.
+jointBindTransforms
 
 
 995
 00:32:00,916 --> 00:32:02,546
-We're going to use this simd
+我们将利用这个单指令
 
 
 996
 00:32:02,546 --> 00:32:05,406
-inverse to invert all of them
+倒转来倒置它们
 
 
 997
 00:32:05,776 --> 00:32:06,646
-because that's what the math
+因为数学运算需要
 
 
 998
 00:32:06,646 --> 00:32:08,346
-needs, and store it in an array.
+将它存储在一个队列中
 
 
 999
 00:32:09,036 --> 00:32:12,836
-And then, here's all the data
+然后这里是我们到现在为止
 
 
 1000
 00:32:12,896 --> 00:32:14,146
-that we've stored to date.
+存储的所有数据
 
 
 1001
 00:32:15,496 --> 00:32:17,416
-And we're going to put out the
+我们将调出
 
 
 1002
 00:32:17,416 --> 00:32:19,066
-skeletal data, the inverse bind
+骨架数据 逆向绑定
 
 
 1003
 00:32:19,066 --> 00:32:20,856
-transforms, and the joint to
+变换和色斑映射
 
 
 1004
 00:32:20,856 --> 00:32:22,786
-palette mapping, and the
+的连接点 以及
 
 
 1005
 00:32:22,786 --> 00:32:24,466
-skeleton parent indices.
+骨架亲项指数
 
 
 1006
 00:32:25,466 --> 00:32:30,156
-And so, I'd like to ask Nicholas
+我想请 Nicholas
 
 
 1007
 00:32:30,216 --> 00:32:32,576
-to come up again and show us
+再次上台来向我们展示一下
 
 
 1008
 00:32:32,576 --> 00:32:33,196
-what it looks like now.
+它现在的样子
 
 
 1009
 00:32:35,516 --> 00:32:39,500
-[ Applause ]
+［掌声］
 
 
 1010
 00:32:47,506 --> 00:32:48,856
->> So where we last left off, we
+>>从我们上次的地方开始 我们
 
 
 1011
 00:32:48,856 --> 00:32:50,336
-had a race track with multiple
+有一个赛道 多辆
 
 
 1012
 00:32:50,336 --> 00:32:51,736
-cars rendering using instancing.
+汽车使用实例化进行渲染
 
 
 1013
 00:32:52,356 --> 00:32:53,576
-Now, in addition let's also
+现在我们再让它
 
 
 1014
 00:32:53,646 --> 00:32:54,836
-support animation.
+支持动画效果
 
 
 1015
 00:32:55,306 --> 00:32:57,106
-So, before when we traversed the
+之前在我们浏览
 
 
 1016
 00:32:57,106 --> 00:32:58,176
-scene graph and we looked for
+场景图的时候 我们寻找
 
 
 1017
 00:32:58,176 --> 00:32:59,616
-any object that had a transform
+任何有变换组件的
 
 
 1018
 00:32:59,616 --> 00:33:00,846
-component, we assumed it was
+对象 然后我们假定它是
 
 
 1019
 00:33:00,846 --> 00:33:01,456
-constant.
+恒定的
 
 
 1020
 00:33:02,146 --> 00:33:02,916
-Now we want to know if the
+现在我们希望知道
 
 
 1021
 00:33:02,916 --> 00:33:04,146
-transform is time varying.
+变换是否会随着时间而改变
 
 
 1022
 00:33:04,146 --> 00:33:05,466
-And the easiest way to find that
+找到这个答案的最简单的办法
 
 
 1023
 00:33:05,466 --> 00:33:06,566
-out is to see if the
+就是看看
 
 
 1024
 00:33:06,566 --> 00:33:07,996
-keyTimes.count is greater than
+keyTimes.count 是否大于
 
 
 1025
 00:33:07,996 --> 00:33:08,246
-1.
+1
 
 
 1026
 00:33:09,196 --> 00:33:10,796
-If it is, then for the purposes
+如果是 为了达到
 
 
 1027
 00:33:10,796 --> 00:33:12,856
-of this sample, we're going to
+样本的目的 我们将
 
 
 1028
 00:33:13,176 --> 00:33:14,316
-sample it in regular intervals.
+在特定时间间隙取样
 
 
 1029
 00:33:14,436 --> 00:33:16,756
-So, we sample them and then we
+我们对它们进行取样
 
 
 1030
 00:33:16,876 --> 00:33:17,376
-store them.
+然后存储
 
 
 1031
 00:33:17,526 --> 00:33:18,626
-And that's it for animation.
+动画就是这样的
 
 
 1032
 00:33:18,656 --> 00:33:19,466
-So, let's go ahead and run this
+现在让我们来运行这个
 
 
 1033
 00:33:19,466 --> 00:33:20,596
-example and see what kind of
+例子 看看我们的引擎
 
 
 1034
 00:33:20,596 --> 00:33:21,686
-output we get in our engine.
+可以得到哪种输出
 
 
 1035
 00:33:28,046 --> 00:33:29,186
-So, now you notice that the
+大家注意到
 
 
 1036
 00:33:29,246 --> 00:33:30,406
-front cars are taking off.
+前面的车已经发动了
 
 
 1037
 00:33:31,556 --> 00:33:32,926
-So, finally let's go ahead and
+最后我们来
 
 
 1038
 00:33:32,926 --> 00:33:33,706
-add in skinning.
+加上蒙皮
 
 
 1039
 00:33:33,706 --> 00:33:34,786
-Let's extend the baker to
+现在让我们把 baker 扩展到
 
 
 1040
 00:33:34,786 --> 00:33:35,706
-support skinning now.
+支持蒙皮
 
 
 1041
 00:33:38,156 --> 00:33:40,276
-So, in addition to any mesh data
+所以你需要的除了有
 
 
 1042
 00:33:40,276 --> 00:33:41,376
-that you may need, there's an
+网格数据 还有
 
 
 1043
 00:33:41,376 --> 00:33:43,436
-additional skin data that you
+蒙皮数据
 
 
 1044
 00:33:43,436 --> 00:33:45,186
-might need and so we check to
+所以我们需要检查
 
 
 1045
 00:33:45,186 --> 00:33:47,276
-see if a MDLMesh has a component
+看看 MDLMesh 是否有
 
 
 1046
 00:33:47,276 --> 00:33:48,976
-conforming to MDLSkinDeformer.
+和 MDLSkinDeformer 一致的组件
 
 
 1047
 00:33:50,086 --> 00:33:51,906
-If it does, then two bits of
+如果有 那么我们
 
 
 1048
 00:33:51,906 --> 00:33:52,936
-additional information we need
+还需要两点额外信息
 
 
 1049
 00:33:52,936 --> 00:33:54,066
-is we need to know how the
+也就是我们需要知道
 
 
 1050
 00:33:54,166 --> 00:33:55,706
-skeleton is bound to the skin
+骨架如何和蒙皮网格绑定
 
 
 1051
 00:33:55,706 --> 00:33:57,366
-mesh, and we need to know its
+我们还需要知道
 
 
 1052
 00:33:57,366 --> 00:33:58,106
-animation data.
+动画数据
 
 
 1053
 00:33:58,286 --> 00:34:00,466
-So, we find that paths of all
+所以我们找到了 jointPaths 队列
 
 
 1054
 00:34:00,466 --> 00:34:01,646
-the bound skeleton joints in the
+中所有的绑定
 
 
 1055
 00:34:01,646 --> 00:34:02,856
-jointPaths array.
+骨架连接点
 
 
 1056
 00:34:03,476 --> 00:34:06,516
-And then, we find the bind pose
+然后我们找到
 
 
 1057
 00:34:06,516 --> 00:34:07,456
-of the skeleton in the
+jointBindTransforms 中的
 
 
 1058
 00:34:07,456 --> 00:34:08,666
-jointBindTransforms.
+骨架绑定姿势
 
 
 1059
 00:34:08,666 --> 00:34:11,416
-So, now that we know what our
+现在我们已经知道我们的
 
 
 1060
 00:34:11,416 --> 00:34:12,536
-skeleton looks like, let's go
+骨架长什么样子了 让我们
 
 
 1061
 00:34:12,536 --> 00:34:15,076
-ahead and time sample the
+继续根据时间对
 
 
 1062
 00:34:15,196 --> 00:34:16,676
-skeleton's joints transforms
+骨架连接点变换进行取样
 
 
 1063
 00:34:16,676 --> 00:34:18,266
-just like we did objects local
+和我们之前对本地对象
 
 
 1064
 00:34:18,266 --> 00:34:18,906
-transform.
+变换所做的一样
 
 
 1065
 00:34:20,076 --> 00:34:21,275
-So we time sample it in regular
+我们根据特定的时间间隔
 
 
 1066
 00:34:21,275 --> 00:34:24,106
-intervals, store the matrix, and
+进行取样 存储矩阵
 
 
 1067
 00:34:24,106 --> 00:34:25,956
-then we decompose it into a
+然后我们把它分解为
 
 
 1068
 00:34:25,956 --> 00:34:27,116
-quaternion rotation,
+四元数旋转
 
 
 1069
 00:34:28,335 --> 00:34:30,996
-translation, and we store it in
+翻译 然后把它存储在
 
 
 1070
 00:34:30,996 --> 00:34:31,866
-an animation clip.
+动画片段中
 
 
 1071
 00:34:32,956 --> 00:34:33,806
-So, let's go ahead and run this
+现在让我们来运行这个
 
 
 1072
 00:34:33,806 --> 00:34:34,295
-example.
+例子
 
 
 1073
 00:34:47,056 --> 00:34:48,146
-So now we have a skinned car.
+所以现在我们有了一辆蒙皮汽车
 
 
 1074
 00:34:48,996 --> 00:34:50,335
-So, to recap on what we've done.
+我再总结一下我们所做的
 
 
 1075
 00:34:50,545 --> 00:34:51,476
-We were able to construct a
+我们用 Model I/O 构建了
 
 
 1076
 00:34:51,516 --> 00:34:52,906
-simple baker using Model I/O
+一个简单的 baker
 
 
 1077
 00:34:52,906 --> 00:34:54,036
-that exported geometry and
+它可以导出几何结构和
 
 
 1078
 00:34:54,036 --> 00:34:55,916
-transforms, and with a bit of
+变换 再加点代码
 
 
 1079
 00:34:55,916 --> 00:34:57,256
-code we were able to extend it
+我们就可以对它进行扩展
 
 
 1080
 00:34:57,256 --> 00:34:58,586
-to support, materials,
+使它支持材质
 
 
 1081
 00:34:58,586 --> 00:35:00,206
-instancing, animation, and
+实例化 动画以及
 
 
 1082
 00:35:00,206 --> 00:35:01,156
-skinned animation.
+蒙皮动画
 
 
 1083
 00:35:01,896 --> 00:35:03,266
-All 5 of these examples and the
+这五个例子以及
 
 
 1084
 00:35:03,266 --> 00:35:04,296
-engine are available for this
+引擎都放在
 
 
 1085
 00:35:04,336 --> 00:35:05,746
-session sample code which you
+这个环节的代码样本中
 
 
 1086
 00:35:05,746 --> 00:35:07,186
-can modify for your own engine's
+大家可以根据自己的引擎需求进行
 
 
 1087
 00:35:07,186 --> 00:35:07,376
-needs.
+修改
 
 
 1088
 00:35:08,026 --> 00:35:09,726
-Back to you Nick.
+交回给你了 Nick
 
 
 1089
 00:35:10,216 --> 00:35:12,216
-[ Applause ]
+［掌声］
 
 
 1090
 00:35:12,416 --> 00:35:13,016
->> All right then.
+>> 好的
 
 
 1091
 00:35:14,776 --> 00:35:16,206
-So, quick recap.
+快速总结一下
 
 
 1092
 00:35:16,906 --> 00:35:19,406
-We've shown taking artwork all
+我们展示了如何把图案
 
 
 1093
 00:35:19,406 --> 00:35:22,346
-the way from your asset creation
+从最初的素材创作
 
 
 1094
 00:35:22,476 --> 00:35:24,686
-program to Pixar's Universal
+程序变成 Pixar 的 USD
 
 
 1095
 00:35:24,686 --> 00:35:25,816
-Scene Description file format.
+文件格式
 
 
 1096
 00:35:26,696 --> 00:35:28,916
-We used Model I/O to transform
+我们运用 Model I/O 将
 
 
 1097
 00:35:28,916 --> 00:35:31,036
-that asset into engine-ready
+素材变换为引擎就绪
 
 
 1098
 00:35:31,036 --> 00:35:34,916
-data and we encoded it and
+数据 我们对它们进行编码
 
 
 1099
 00:35:34,916 --> 00:35:36,246
-archived it off to the disc.
+然后把它们在光盘中归档
 
 
 1100
 00:35:36,786 --> 00:35:38,766
-We put together a little game
+我们利用 Swift 和 Metal
 
 
 1101
 00:35:38,816 --> 00:35:41,036
-engine with a simple renderer
+进行了简单的渲染
 
 
 1102
 00:35:41,136 --> 00:35:42,136
-using Swift and Metal.
+制作了一个小游戏
 
 
 1103
 00:35:42,706 --> 00:35:44,676
-And we loaded all that data up
+我们加载了所有的数据
 
 
 1104
 00:35:45,226 --> 00:35:47,846
-and we animated it and we drew
+然后我们将它进行动画化 而且我们绘制了
 
 
 1105
 00:35:47,846 --> 00:35:48,726
-some pretty pictures.
+一些漂亮的画面
 
 
 1106
 00:35:49,626 --> 00:35:52,576
-So, what's next?
+那么接下来呢
 
 
 1107
 00:35:52,736 --> 00:35:56,036
-Well, I'd encourage you to have
+我会鼓励大家去
 
 
 1108
 00:35:56,036 --> 00:35:58,106
-a look at the other facilities
+看看 Model I/O
 
 
 1109
 00:35:58,316 --> 00:35:59,686
-that Model I/O's got built into
+内置的其他
 
 
 1110
 00:35:59,686 --> 00:35:59,836
-it.
+设备
 
 
 1111
 00:36:00,356 --> 00:36:01,816
-There's a whole ton of tools
+我们还有非常多其他工具
 
 
 1112
 00:36:01,986 --> 00:36:04,076
-that are useful for building
+可以帮助大家构建
 
 
 1113
 00:36:04,076 --> 00:36:04,926
-your own tools.
+自己的工具
 
 
 1114
 00:36:05,266 --> 00:36:07,086
-Your own tools for that pipeline
+你们自己的适用于管道链的
 
 
 1115
 00:36:07,086 --> 00:36:07,376
-chain.
+工具
 
 
 1116
 00:36:08,036 --> 00:36:10,226
-For example, if you have a scene
+例如 如果你有一个
 
 
 1117
 00:36:10,226 --> 00:36:12,376
-composed of a bunch of objects,
+由多个对象组成的场景
 
 
 1118
 00:36:12,776 --> 00:36:14,266
-you can perform a light mapping
+你可以进行一个光照映射
 
 
 1119
 00:36:14,266 --> 00:36:14,906
-operation.
+操作
 
 
 1120
 00:36:15,096 --> 00:36:17,096
-Model I/O will cast lots of
+Model I/O 可以制作多种
 
 
 1121
 00:36:17,096 --> 00:36:18,536
-rays, it'll bounce light around.
+射线 它将让光线四处跳动
 
 
 1122
 00:36:19,296 --> 00:36:21,066
-It'll make a prioritization for
+它会将场景作为
 
 
 1123
 00:36:21,066 --> 00:36:22,296
-the scene, store the data all
+优先事项 并且为你存储
 
 
 1124
 00:36:22,296 --> 00:36:22,706
-out for you.
+所有的数据
 
 
 1125
 00:36:23,436 --> 00:36:26,656
-It's got tools to do things like
+它还有可以做
 
 
 1126
 00:36:26,656 --> 00:36:28,346
-UV unwrapping, so we've taken a
+紫外线解相位的工具 我们有一个
 
 
 1127
 00:36:28,346 --> 00:36:30,516
-little airplane and carved it
+小的飞机 我们可以把它
 
 
 1128
 00:36:30,516 --> 00:36:32,316
-apart into the logical chunks
+分为小的逻辑块
 
 
 1129
 00:36:32,366 --> 00:36:33,366
-that are ready for painting.
+这样就易于绘图
 
 
 1130
 00:36:33,976 --> 00:36:38,326
-It has other operations like
+它还有其他的操作 例如
 
 
 1131
 00:36:38,426 --> 00:36:40,006
-here we're calculating ambient
+这里它可以计算环境光
 
 
 1132
 00:36:40,006 --> 00:36:40,546
-occlusion.
+遮蔽
 
 
 1133
 00:36:40,906 --> 00:36:42,636
-So, we've taken the little
+例如这个小
 
 
 1134
 00:36:42,636 --> 00:36:44,766
-airplane, we've done ray casting
+飞机 我们已经做了光线投射
 
 
 1135
 00:36:44,766 --> 00:36:47,006
-to compute accessibility of the
+来计算从外部
 
 
 1136
 00:36:47,006 --> 00:36:48,256
-surface from the outside and
+表面的可及性并
 
 
 1137
 00:36:48,256 --> 00:36:49,996
-encoded that as a signal on the
+进行编码
 
 
 1138
 00:36:49,996 --> 00:36:51,706
-surface of the plane, so that
+飞机表面有一个信号 那么
 
 
 1139
 00:36:51,706 --> 00:36:54,306
-your shader can render an object
+你的着色器对你场景中
 
 
 1140
 00:36:54,306 --> 00:36:55,726
-to be more physically grounded
+对象的渲染将会更接近
 
 
 1141
 00:36:56,116 --> 00:36:56,866
-in your scene.
+实景
 
 
 1142
 00:36:56,866 --> 00:37:00,176
-Here's another fun thing that
+这里还有一件
 
 
 1143
 00:37:00,266 --> 00:37:01,246
-you can do.
+你能做的有意思的事
 
 
 1144
 00:37:01,936 --> 00:37:04,056
-We've got all kinds of tools for
+我们有各种各样 
 
 
 1145
 00:37:04,056 --> 00:37:06,156
-dealing with 360-degree imagery,
+处理 360 度图像的工具
 
 
 1146
 00:37:06,486 --> 00:37:07,936
-which would be very helpful for
+它们对于为 VR 等
 
 
 1147
 00:37:08,056 --> 00:37:09,356
-like making panoramic spheres
+制作全景图像
 
 
 1148
 00:37:09,356 --> 00:37:10,206
-for VR and whatnot.
+非常有用
 
 
 1149
 00:37:10,916 --> 00:37:13,516
-So, on the very left there you
+在最左边你们
 
 
 1150
 00:37:13,516 --> 00:37:16,546
-can see a 360-degree picture
+可以看到一张 360 度的图片
 
 
 1151
 00:37:16,546 --> 00:37:17,646
-that was taken with you know one
+它是用你们知道的那种
 
 
 1152
 00:37:17,646 --> 00:37:18,616
-of those funny little cameras.
+小相机拍摄的
 
 
 1153
 00:37:19,136 --> 00:37:21,056
-And Model I/O can convert it to
+Model I/O 可以将它转换为
 
 
 1154
 00:37:21,056 --> 00:37:22,396
-a cube map ready for hardware.
+可供硬件使用的立方体地图
 
 
 1155
 00:37:22,586 --> 00:37:24,136
-It can also take a cube map and
+它也可以把一个立方体地图
 
 
 1156
 00:37:24,136 --> 00:37:25,136
-convert it back to that other
+转换回为它另外一种
 
 
 1157
 00:37:25,136 --> 00:37:25,596
-format.
+格式
 
 
 1158
 00:37:25,806 --> 00:37:27,416
-And then the two blurry columns
+边上两个
 
 
 1159
 00:37:27,416 --> 00:37:29,056
-down on the side are
+模糊的栏
 
 
 1160
 00:37:29,256 --> 00:37:31,626
-precomputing the irradiance
+可以为你预计算
 
 
 1161
 00:37:31,626 --> 00:37:35,646
-convolution for physically-based
+基于实物着色的
 
 
 1162
 00:37:36,246 --> 00:37:36,936
-shading for you.
+辐照度卷积
 
 
 1163
 00:37:37,226 --> 00:37:38,866
-So, we're creating a bunch of
+我们制作了一些
 
 
 1164
 00:37:38,866 --> 00:37:40,276
-coefficients that are ready for
+系数可以为
 
 
 1165
 00:37:40,276 --> 00:37:41,276
-your shader so that if we
+你的着色器所用 这样如果我们
 
 
 1166
 00:37:41,276 --> 00:37:42,816
-dropped an object into the scene
+把一个对象放到场景中
 
 
 1167
 00:37:42,816 --> 00:37:43,776
-it would feel physically
+它将会找到它合适的
 
 
 1168
 00:37:43,776 --> 00:37:44,516
-situated.
+物理位置
 
 
 1169
 00:37:44,906 --> 00:37:46,216
-So, there's all kinds of things
+它里面有很多
 
 
 1170
 00:37:46,216 --> 00:37:46,806
-like that in there.
+类似的东西
 
 
 1171
 00:37:46,806 --> 00:37:47,966
-And I encourage you to go off
+希望大家可以自己去
 
 
 1172
 00:37:47,966 --> 00:37:48,556
-and explore.
+探索
 
 
 1173
 00:37:49,186 --> 00:37:53,146
-So, as Nicholas mentioned, this
+Nicolas 刚刚也提到
 
 
 1174
 00:37:53,366 --> 00:37:55,346
-sample is available for download
+样本在会议的网站上
 
 
 1175
 00:37:55,546 --> 00:37:57,736
-on this session's website.
+可以供大家下载
 
 
 1176
 00:37:57,736 --> 00:37:59,746
-So, please go grab like the
+所以希望大家能去用
 
 
 1177
 00:37:59,746 --> 00:38:00,976
-little car and find the other,
+那个小车的代码 或者找到其他的
 
 
 1178
 00:38:01,116 --> 00:38:02,166
-you know, missing wheels.
+例如那些消失的轮子
 
 
 1179
 00:38:04,466 --> 00:38:05,956
-And, there's a bunch of other
+另外还有其他的
 
 
 1180
 00:38:05,956 --> 00:38:07,386
-sessions that are worth
+有意思的环节
 
 
 1181
 00:38:07,386 --> 00:38:08,966
-reviewing in order to learn more
+大家可以按需要观看 以了解
 
 
 1182
 00:38:08,966 --> 00:38:09,816
-about these topics.
+有关这些话题的更多内容
 
 
 1183
 00:38:10,286 --> 00:38:13,396
-There was Introducing Metal 2
+其他环节有 “介绍 Metal 2”
 
 
 1184
 00:38:13,396 --> 00:38:15,966
-and What's New in SceneKit and
+“SceneKit 的新功能” 还有
 
 
 1185
 00:38:15,966 --> 00:38:18,316
-I'd also refer you to the What's
+一个我想向大家推荐的是去年大会的
 
 
 1186
 00:38:18,316 --> 00:38:19,926
-New in SceneKit session last
+“SceneKit 的新功能”
 
 
 1187
 00:38:19,926 --> 00:38:21,856
-year when we went into some
+在那里我们详细
 
 
 1188
 00:38:21,856 --> 00:38:23,756
-details about the integration
+介绍了与 USD 的
 
 
 1189
 00:38:23,756 --> 00:38:24,066
-with USD.
+融合
 
 
 1190
 00:38:24,066 --> 00:38:28,006
-And from 2015 there was also the
+2015 年的大会也有
 
 
 1191
 00:38:28,146 --> 00:38:30,736
-introductory session on Model
+介绍 Model I/O 的相关环节
 
 
 1192
 00:38:30,736 --> 00:38:32,376
-I/O where we go into quite a lot
+那里我们非常详细地
 
 
 1193
 00:38:32,376 --> 00:38:33,586
-of detail about the various data
+介绍了各种数据
 
 
 1194
 00:38:33,586 --> 00:38:35,306
-structures and operations on
+结构 以及在那些结构上的
 
 
 1195
 00:38:35,306 --> 00:38:36,056
-those structures.
+操作
 
 
 1196
 00:38:36,626 --> 00:38:37,766
-So, with that.
+那么 就到这里
 
 
 1197
 00:38:38,686 --> 00:38:40,476
-Thanks for showing up and hope
+感谢大家的聆听 希望
 
 
 1198
 00:38:40,476 --> 00:38:40,976
-you enjoyed it.
+你们喜欢
 
 
 1199
 00:38:41,508 --> 00:38:43,508
-[ Applause ]
+［掌声］
 

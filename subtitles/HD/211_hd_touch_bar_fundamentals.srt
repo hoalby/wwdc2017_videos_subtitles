@@ -1,8044 +1,8039 @@
 1
 00:00:19,636 --> 00:00:20,386
->> Good morning
+>> 早上好
 
 
 2
 00:00:21,029 --> 00:00:23,029
-[ Applause ]
+[掌声]
 
 
 3
 00:00:23,042 --> 00:00:25,042
-.
+[掌声]
 
 
 4
 00:00:25,056 --> 00:00:25,386
-Thank you.
+谢谢
 
 
 5
 00:00:26,066 --> 00:00:27,156
-I'm Chris Dreessen.
+我是 Chris Dreesen
 
 
 6
 00:00:27,396 --> 00:00:28,766
-This is Touch Bar Fundamentals.
+这里是“Touch Bar Fundamentals（Touch Bar 基础）”
 
 
 7
 00:00:29,136 --> 00:00:30,646
-If you have no idea whatsoever
+如果你还不知道
 
 
 8
 00:00:30,646 --> 00:00:32,235
-what Touch Bar is, I'm not sure
+什么是 Touch Bar  那我真的不确定你为什么
 
 
 9
 00:00:32,235 --> 00:00:33,336
-how you got here, but I'm glad
+会在这儿出现 但是我对你的到来
 
 
 10
 00:00:33,336 --> 00:00:33,656
-you're here.
+感到非常开心
 
 
 11
 00:00:34,286 --> 00:00:36,876
-Likely most of us are a bit more
+或许我们中的绝大多数人都
 
 
 12
 00:00:36,876 --> 00:00:38,776
-familiar with Touch Bar, but we
+对 Touch Bar 有所了解  但是
 
 
 13
 00:00:38,776 --> 00:00:39,596
-may not have had a chance to
+可能还没有机会去
 
 
 14
 00:00:39,596 --> 00:00:40,296
-actually play with it.
+真正使用它
 
 
 15
 00:00:40,296 --> 00:00:42,426
-So, let me orient you to it.
+所以 让我来为大家介绍一下
 
 
 16
 00:00:42,806 --> 00:00:44,346
-So, we have here a picture of a
+现在我们这里有一张 MacBook Pro
 
 
 17
 00:00:44,346 --> 00:00:45,856
-MacBook Pro and in place of the
+的图片 在你们熟悉的
 
 
 18
 00:00:45,856 --> 00:00:47,586
-F keys you might be used to, we
+功能键的位置 我们有一个
 
 
 19
 00:00:47,586 --> 00:00:48,566
-have this thing we call Touch
+叫做 Touch Bar 的
 
 
 20
 00:00:48,606 --> 00:00:48,846
-Bar.
+东西
 
 
 21
 00:00:49,146 --> 00:00:50,816
-And this is an interactive input
+这是一个交互式输入
 
 
 22
 00:00:50,816 --> 00:00:51,796
-and display device.
+和显示的设备
 
 
 23
 00:00:52,226 --> 00:00:53,596
-And let me familiarize you with
+让我带领大家来
 
 
 24
 00:00:53,596 --> 00:00:53,996
-these parts.
+熟悉它
 
 
 25
 00:00:53,996 --> 00:00:56,686
-On the left, we have the escape
+在触摸条左边有我们每个人
 
 
 26
 00:00:56,686 --> 00:00:58,216
-key, which should be pretty
+都非常熟悉的
 
 
 27
 00:00:58,216 --> 00:00:58,896
-familiar to everyone.
+Escape 键
 
 
 28
 00:00:59,226 --> 00:01:00,026
-And on the right, we have this
+在右边
 
 
 29
 00:01:00,026 --> 00:01:01,136
-thing called the control script.
+有一个叫做 Control Strip 的东西
 
 
 30
 00:01:01,586 --> 00:01:02,756
-And you can go ahead and
+如果你愿意
 
 
 31
 00:01:02,756 --> 00:01:04,086
-disclose the control strip if
+你可以展开
 
 
 32
 00:01:04,086 --> 00:01:04,446
-you want.
+Control Strip
 
 
 33
 00:01:04,796 --> 00:01:05,886
-And you'll have basically the
+这样 你将会得到和
 
 
 34
 00:01:05,886 --> 00:01:07,406
-old media functions the F keys
+以前的功能键一样的
 
 
 35
 00:01:07,406 --> 00:01:07,766
-offer.
+功能
 
 
 36
 00:01:08,206 --> 00:01:09,276
-And you can use this the same
+然后你可以和原来一样
 
 
 37
 00:01:09,276 --> 00:01:10,566
-way you always have, button
+把它们当成按钮来
 
 
 38
 00:01:11,286 --> 00:01:12,246
-presses.
+使用
 
 
 39
 00:01:12,646 --> 00:01:14,366
-You don't have to disclose it
+不过 你其实不必
 
 
 40
 00:01:14,616 --> 00:01:15,006
-thought.
+展开它
 
 
 41
 00:01:16,006 --> 00:01:18,556
-You can actually just go ahead
+你可以直接
 
 
 42
 00:01:18,556 --> 00:01:20,086
-and use it in its collapsed
+使用它的折叠
 
 
 43
 00:01:20,086 --> 00:01:20,346
-form.
+形式
 
 
 44
 00:01:20,756 --> 00:01:21,846
-And when it's its collapsed form
+当它处于折叠形式的时候
 
 
 45
 00:01:21,846 --> 00:01:22,906
-it has some neat functions too.
+它同样有很多巧妙的功能
 
 
 46
 00:01:23,166 --> 00:01:24,706
-We can just do like a glancing
+我们可以通过直接在
 
 
 47
 00:01:24,706 --> 00:01:26,296
-swipe over the volume button and
+音量键上随意滑动
 
 
 48
 00:01:26,296 --> 00:01:27,376
-adjust the volume directly.
+来调整声音大小
 
 
 49
 00:01:27,796 --> 00:01:28,886
-So, there's a lot of
+这里有很多
 
 
 50
 00:01:28,886 --> 00:01:30,306
-conveniences here for adjusting
+便捷的方式来调整
 
 
 51
 00:01:30,306 --> 00:01:31,346
-certain system functions.
+特定的系统功能
 
 
 52
 00:01:31,866 --> 00:01:33,586
-But, that's not really the most
+但是 这还不是 Touch Bar 最
 
 
 53
 00:01:33,586 --> 00:01:34,566
-interesting parts of Touch Bar,
+有趣的部分
 
 
 54
 00:01:34,566 --> 00:01:35,866
-the most interesting parts are
+最有趣的部分在
 
 
 55
 00:01:35,866 --> 00:01:37,546
-between the escape key and the
+Escape 键和 Control Strip 键
 
 
 56
 00:01:37,546 --> 00:01:38,126
-control strip.
+之间
 
 
 57
 00:01:38,426 --> 00:01:38,936
-And that's where your
+这里是你的
 
 
 58
 00:01:38,936 --> 00:01:40,066
-application content is going to
+应用程序内容所处的
 
 
 59
 00:01:40,066 --> 00:01:40,266
-go.
+位置
 
 
 60
 00:01:40,676 --> 00:01:41,446
-And so, let me show you what
+让我来向你们展示
 
 
 61
 00:01:41,446 --> 00:01:42,636
-some of our system applications
+我们的系统应用
 
 
 62
 00:01:42,636 --> 00:01:43,306
-have done with this.
+在这里的
 
 
 63
 00:01:44,616 --> 00:01:45,696
-So, here we have photos.
+这里是“照片”应用
 
 
 64
 00:01:46,316 --> 00:01:47,646
-And this is just browsing the
+我们正在浏览
 
 
 65
 00:01:47,646 --> 00:01:48,436
-photos library.
+照片库
 
 
 66
 00:01:48,636 --> 00:01:50,016
-And we can actually go ahead and
+我们可以
 
 
 67
 00:01:50,016 --> 00:01:51,836
-scrub through our photo library
+在这里滑动浏览
 
 
 68
 00:01:51,836 --> 00:01:52,056
-here.
+照片库
 
 
 69
 00:01:52,056 --> 00:01:53,306
-It's just like in iOS with
+这就像在 iOS 里可以直接
 
 
 70
 00:01:53,306 --> 00:01:54,586
-direct input with our finger, so
+用我们的手指输入一样
 
 
 71
 00:01:54,586 --> 00:01:56,006
-we plop our finger down on the
+我们将手指放在
 
 
 72
 00:01:56,006 --> 00:01:57,616
-Touch Bar and it's just tracking
+Touch Bar 上然后它就会追踪我们的
 
 
 73
 00:01:57,616 --> 00:01:57,766
-it.
+指尖
 
 
 74
 00:01:57,886 --> 00:01:59,476
-We also have momentum swipes
+如果我们希望能快速地进行浏览
 
 
 75
 00:01:59,476 --> 00:02:01,386
-there if we want to browse
+我们可通过快速滑动
 
 
 76
 00:02:01,386 --> 00:02:02,056
-through it quickly.
+来实现
 
 
 77
 00:02:02,116 --> 00:02:05,106
-If you go to edit a photo, this
+如果你想编辑图片 这里
 
 
 78
 00:02:05,216 --> 00:02:07,106
-is the photos crop and rotate
+是图片剪裁和旋转
 
 
 79
 00:02:07,106 --> 00:02:07,326
-tool.
+工具
 
 
 80
 00:02:07,596 --> 00:02:08,506
-And they have this rotation
+在 Touch Bar 中间有一个
 
 
 81
 00:02:08,506 --> 00:02:09,326
-thing in the middle of the Touch
+可以直接跟踪
 
 
 82
 00:02:09,326 --> 00:02:10,626
-Bar and it tracks your finger
+你的手指的旋转控件
 
 
 83
 00:02:10,846 --> 00:02:11,996
-directly, which is pretty fun,
+它很有趣 因为
 
 
 84
 00:02:11,996 --> 00:02:12,666
-because it's sort of like
+这有点像直接在
 
 
 85
 00:02:12,666 --> 00:02:15,596
-actually rotating a picture on a
+桌上用手指旋转
 
 
 86
 00:02:15,906 --> 00:02:16,226
-table.
+图片
 
 
 87
 00:02:16,846 --> 00:02:19,046
-Finally, photos also exposes
+最后 图片还可以使用
 
 
 88
 00:02:19,046 --> 00:02:19,506
-filters.
+滤镜
 
 
 89
 00:02:19,606 --> 00:02:21,106
-So, we can scrub and swipe
+我们可以在滤镜之间
 
 
 90
 00:02:21,106 --> 00:02:21,856
-through our filters here.
+滑动
 
 
 91
 00:02:22,116 --> 00:02:23,196
-And this is an interesting use
+这是 Touch Bar 的一个有趣的
 
 
 92
 00:02:23,196 --> 00:02:24,736
-of Touch Bar, because normally
+使用方式 因为通常我们使用
 
 
 93
 00:02:24,736 --> 00:02:25,716
-if we were using a mouse or a
+鼠标或者触控板时
 
 
 94
 00:02:25,716 --> 00:02:27,316
-track pad, we'd go ahead and
+我们会
 
 
 95
 00:02:27,316 --> 00:02:29,006
-look at our photo and then look
+先看照片 然后
 
 
 96
 00:02:29,006 --> 00:02:30,656
-at the filters section and move
+看滤镜部分
 
 
 97
 00:02:30,656 --> 00:02:31,876
-the mouse or track pad to that,
+再用鼠标和触控板
 
 
 98
 00:02:31,876 --> 00:02:32,946
-select the next filter.
+选择下一个滤镜
 
 
 99
 00:02:33,166 --> 00:02:34,036
-And with Touch Bar we can
+使用 Touch Bar 我们可以
 
 
 100
 00:02:34,036 --> 00:02:35,406
-actually keep our eyes on the
+只将视线放在猫
 
 
 101
 00:02:36,076 --> 00:02:36,186
-cat.
+上
 
 
 102
 00:02:37,376 --> 00:02:38,926
-Here's QuickTime Player.
+这里是一个 QuickTime 播放器
 
 
 103
 00:02:38,926 --> 00:02:40,546
-QuickTime Player has a scrubber
+它在 Touch Bar 上有一个
 
 
 104
 00:02:40,546 --> 00:02:41,666
-control directly in the touch
+滑动控制器
 
 
 105
 00:02:41,666 --> 00:02:43,006
-bar, so we can move a movie back
+使我们能对一部电影快进或快退
 
 
 106
 00:02:43,006 --> 00:02:44,486
-and forth, it's pretty neat.
+简单利落
 
 
 107
 00:02:44,616 --> 00:02:45,526
-And they've also gone ahead and
+他们还提供
 
 
 108
 00:02:45,526 --> 00:02:46,776
-exposed a similar control for
+一个类似的剪辑功能控件
 
 
 109
 00:02:46,776 --> 00:02:48,976
-trimming, so we can adjust the
+使我们能调整
 
 
 110
 00:02:48,976 --> 00:02:50,396
-beginning and end of a movie
+我们所拍摄的电影的
 
 
 111
 00:02:50,396 --> 00:02:51,156
-that we've recorded.
+开头和结尾
 
 
 112
 00:02:51,766 --> 00:02:52,866
-Something I'd like to point out
+关于 QuickTime 播放器
 
 
 113
 00:02:52,906 --> 00:02:54,206
-about QuickTime Player here, is
+我想指出的是
 
 
 114
 00:02:54,206 --> 00:02:55,176
-that QuickTime Player didn't
+QuickTime 播放器没有
 
 
 115
 00:02:55,176 --> 00:02:56,756
-write any code to do this, this
+对此功能编写任何程序 此功能
 
 
 116
 00:02:56,756 --> 00:02:58,306
-is all inside of AVKit and
+是包括在 AVKit 和 AVplayer 视图
 
 
 117
 00:02:58,306 --> 00:02:58,896
-AVPlayer view.
+中
 
 
 118
 00:02:58,896 --> 00:03:00,236
-So, if you're already using
+如果你已经在使用
 
 
 119
 00:03:00,236 --> 00:03:01,446
-AVKit, you've probably got this
+AVKit 那么恭喜你 你可能已经
 
 
 120
 00:03:01,446 --> 00:03:02,426
-functionality for free,
+自动获得了这项
 
 
 121
 00:03:02,706 --> 00:03:03,506
-congratulations.
+功能
 
 
 122
 00:03:04,496 --> 00:03:06,496
-Let's look at text edit for a
+现在让我们来看看文本
 
 
 123
 00:03:06,496 --> 00:03:06,796
-moment.
+编辑
 
 
 124
 00:03:07,226 --> 00:03:08,586
-So, everyone's familiar with
+在座各位应该很熟悉
 
 
 125
 00:03:08,586 --> 00:03:09,646
-QuickType on iOS.
+iOS 上的 QuickType 了
 
 
 126
 00:03:09,886 --> 00:03:10,956
-And We've gone ahead and brought
+我们已经将 QuickType
 
 
 127
 00:03:10,956 --> 00:03:12,636
-QuickType over to Touch Bar on
+放置在了 macOS 的 Touch Bar 上
 
 
 128
 00:03:12,636 --> 00:03:14,036
-macOS, and as everyone know
+众所周知
 
 
 129
 00:03:14,036 --> 00:03:15,426
-QuickType is a great short
+QuickType 是一个非常好的短篇小说
 
 
 130
 00:03:15,426 --> 00:03:16,366
-fiction writing tool.
+写作工具
 
 
 131
 00:03:16,776 --> 00:03:18,176
-So, if we go ahead and write a
+如果我们在这里写一个小故事
 
 
 132
 00:03:18,176 --> 00:03:20,456
-short story here, 'the fact is
+其实这不是
 
 
 133
 00:03:20,456 --> 00:03:21,996
-he has to;' this is not the best
+我看过的最好的
 
 
 134
 00:03:21,996 --> 00:03:22,986
-short fiction I've read.
+短篇小说
 
 
 135
 00:03:23,456 --> 00:03:24,856
-But that's okay, because Touch
+但是没关系 因为
 
 
 136
 00:03:24,856 --> 00:03:25,836
-Bar gives us a way of spicing
+Touch Bar 能为我们提供一个让其增色
 
 
 137
 00:03:25,836 --> 00:03:26,096
-that up.
+的方法
 
 
 138
 00:03:26,096 --> 00:03:27,456
-We also have the emoji picker.
+我们还有表情符号选择条
 
 
 139
 00:03:28,426 --> 00:03:30,696
-And, let's go ahead and spice it
+我们来让它变得有趣
 
 
 140
 00:03:30,696 --> 00:03:31,026
-up a bit.
+一点
 
 
 141
 00:03:31,026 --> 00:03:33,056
-We can browse our emoji here and
+我们可以在这里浏览表情符号
 
 
 142
 00:03:33,056 --> 00:03:34,306
-say I laughed until I cried, I
+比如 我笑了 我哭了
 
 
 143
 00:03:34,306 --> 00:03:36,236
-was turned into a frog, and I'm
+我变成了一只青蛙 然后我很开心
 
 
 144
 00:03:36,236 --> 00:03:37,526
-happy I'm no longer a frog.
+因为我不再是一只青蛙了
 
 
 145
 00:03:37,826 --> 00:03:39,126
-So, we've added some nice human
+我为我们的故事加上了一些非常好的人物情感
 
 
 146
 00:03:39,126 --> 00:03:40,826
-emotion and drama to our story,
+和喜剧效果
 
 
 147
 00:03:41,136 --> 00:03:42,076
-all thanks to Touch Bar.
+而这都要感谢 Touch Bar
 
 
 148
 00:03:43,286 --> 00:03:45,756
-TextEdit of course, is a text
+显而易见文本编辑是一款
 
 
 149
 00:03:45,756 --> 00:03:46,806
-editing tool also, so we can
+文本编辑工具
 
 
 150
 00:03:46,806 --> 00:03:48,626
-collapse the QuickType options
+我们可以将 QuickType 的选项折叠起来
 
 
 151
 00:03:48,626 --> 00:03:49,766
-here and bring up text
+然后调出文本
 
 
 152
 00:03:49,766 --> 00:03:50,586
-formatting controls.
+排版控件
 
 
 153
 00:03:50,766 --> 00:03:51,916
-And maybe the most useful thing
+可能最有用的事情就是
 
 
 154
 00:03:51,916 --> 00:03:53,116
-is to make it bold, or italic,
+让它加粗或者变成斜体
 
 
 155
 00:03:53,116 --> 00:03:54,636
-or add some color to it and pink
+或者加上颜色
 
 
 156
 00:03:54,636 --> 00:03:55,856
-feels right for the story where
+粉色感觉很适合故事中
 
 
 157
 00:03:55,856 --> 00:03:57,076
-I'm turned into a frog, and not
+我变成了青蛙然后不再是青蛙的
 
 
 158
 00:03:57,076 --> 00:03:57,656
-a frog again.
+部分
 
 
 159
 00:03:57,996 --> 00:03:58,946
-Anyway, let's never speak of
+不论如何 让我们别再说起
 
 
 160
 00:03:58,946 --> 00:03:59,516
-that.
+这个了
 
 
 161
 00:04:00,886 --> 00:04:02,406
-Something else I want to point
+关于我给大家展示的
 
 
 162
 00:04:02,406 --> 00:04:03,456
-out about all these examples
+这些例子 我还想指出的是
 
 
 163
 00:04:03,456 --> 00:04:04,656
-I've show you is that they're
+它们都是
 
 
 164
 00:04:04,656 --> 00:04:05,356
-customizable.
+可以自定义的
 
 
 165
 00:04:05,356 --> 00:04:07,056
-We have a customization panel
+我们有一个 Touch Bar 的
 
 
 166
 00:04:07,396 --> 00:04:08,696
-for Touch Bar.
+自定义面板
 
 
 167
 00:04:09,036 --> 00:04:10,286
-And you can rearrange items in
+你可以在这上面重新编排
 
 
 168
 00:04:10,286 --> 00:04:10,406
-it.
+控件
 
 
 169
 00:04:10,646 --> 00:04:11,876
-You can add items from the
+你可以从屏幕上的自定义面板中
 
 
 170
 00:04:11,876 --> 00:04:12,876
-customization panel on the
+添加控件
 
 
 171
 00:04:12,876 --> 00:04:14,086
-screen or remove them from the
+也可以将控件从 Touch Bar 中
 
 
 172
 00:04:14,086 --> 00:04:14,576
-Touch Bar.
+移除
 
 
 173
 00:04:14,886 --> 00:04:16,326
-And this is important, because
+这很重要
 
 
 174
 00:04:16,326 --> 00:04:17,456
-every user's workflow is a
+因为每个用户的使用习惯
 
 
 175
 00:04:17,456 --> 00:04:18,286
-little bit different.
+是不一样的
 
 
 176
 00:04:18,286 --> 00:04:19,245
-Some are doing different things
+有些人喜欢用
 
 
 177
 00:04:19,245 --> 00:04:20,375
-with your application, and
+应用做不同的事
 
 
 178
 00:04:20,375 --> 00:04:21,366
-others just prefer to use the
+有些人则喜欢用其他方式
 
 
 179
 00:04:21,366 --> 00:04:22,396
-computer in a different way.
+使用电脑
 
 
 180
 00:04:22,616 --> 00:04:24,196
-And by enabling customization,
+通过实现自定义
 
 
 181
 00:04:24,486 --> 00:04:25,766
-you can give users the exact
+你可以给用户
 
 
 182
 00:04:25,766 --> 00:04:26,606
-experience they want.
+他们想要的体验
 
 
 183
 00:04:27,116 --> 00:04:28,086
-And I'll teach you how to do
+接下来我将教大家
 
 
 184
 00:04:28,086 --> 00:04:29,126
-that programmatically in just a
+如何通过编程实现这个
 
 
 185
 00:04:29,126 --> 00:04:29,626
-little bit.
+功能
 
 
 186
 00:04:30,376 --> 00:04:31,526
-Let's cover some of the
+我们先来讲讲
 
 
 187
 00:04:31,526 --> 00:04:33,046
-technical details and some of
+这个功能的技术细节
 
 
 188
 00:04:33,926 --> 00:04:35,026
-the implications that come with
+和这些细节的
 
 
 189
 00:04:35,026 --> 00:04:35,256
-that.
+含义
 
 
 190
 00:04:35,646 --> 00:04:36,776
-So, the Touch Bar is the
+Touch Bar 是一个
 
 
 191
 00:04:36,776 --> 00:04:38,406
-beautiful P3 retina display.
+很绚丽的 P3 Retina 显示器
 
 
 192
 00:04:38,406 --> 00:04:40,456
-It has a nice P3 color gamut,
+他有很棒的 P3 色域
 
 
 193
 00:04:40,766 --> 00:04:42,496
-great blacks, wonderful
+迷人的黑色 让显示内容
 
 
 194
 00:04:42,496 --> 00:04:43,076
-contrast.
+对比鲜明
 
 
 195
 00:04:43,436 --> 00:04:46,276
-And that means that our assets
+这也意味着
 
 
 196
 00:04:46,276 --> 00:04:47,586
-we include in our applications
+我们在应用里包含的的素材
 
 
 197
 00:04:47,586 --> 00:04:49,046
-don't have to cover as much as
+不需要像主屏幕上
 
 
 198
 00:04:49,046 --> 00:04:50,176
-what we do on the main screen.
+那么多
 
 
 199
 00:04:50,866 --> 00:04:52,736
-Additionally, it's a true multi
+不仅如此 这还是一个多点触控的设备
 
 
 200
 00:04:52,736 --> 00:04:54,476
-touch device, which means we can
+这意味着我们能跟踪到
 
 
 201
 00:04:54,476 --> 00:04:55,906
-actually track multiple fingers.
+多个手指
 
 
 202
 00:04:56,276 --> 00:04:57,836
-And that affords us some new
+这也为我们能制作的控件
 
 
 203
 00:04:57,836 --> 00:04:58,726
-options for what sort of
+提供了一些
 
 
 204
 00:04:58,726 --> 00:04:59,536
-controls we might make.
+新的选择
 
 
 205
 00:04:59,696 --> 00:05:01,326
-You're going to hear this a lot
+说起 Touch Bar
 
 
 206
 00:05:01,326 --> 00:05:02,176
-about Touch Bar, that it's
+你经常听到词的将是
 
 
 207
 00:05:02,176 --> 00:05:02,996
-context sensitive.
+上下文敏感
 
 
 208
 00:05:03,556 --> 00:05:05,626
-And that's very neat in terms of
+使用户能在合适的应用中
 
 
 209
 00:05:05,676 --> 00:05:07,336
-enabling the user to work with
+使用功能的
 
 
 210
 00:05:07,336 --> 00:05:08,536
-functions in the application
+其实很简单
 
 
 211
 00:05:08,536 --> 00:05:10,606
-that are appropriate, but it has
+但是它具有
 
 
 212
 00:05:10,606 --> 00:05:11,916
-implications for event handling,
+处理事件的意义
 
 
 213
 00:05:11,916 --> 00:05:13,116
-because the context in the
+因为我们的用户在使用 Touch Bar 时
 
 
 214
 00:05:13,116 --> 00:05:14,956
-application might change, which
+应用中的上下文
 
 
 215
 00:05:14,956 --> 00:05:16,286
-the user is using the Touch Bar,
+可能会发生变化
 
 
 216
 00:05:16,396 --> 00:05:17,876
-and our controls need to react
+而我们的控件需要对变化
 
 
 217
 00:05:18,716 --> 00:05:19,176
-to that.
+进行应对
 
 
 218
 00:05:19,246 --> 00:05:20,686
-And finally, we actually go
+最后 我们
 
 
 219
 00:05:20,686 --> 00:05:22,726
-ahead and take some care to
+需要将 Touch Bar上的
 
 
 220
 00:05:22,726 --> 00:05:24,426
-match the key taps and glyphs on
+按钮 符号
 
 
 221
 00:05:24,426 --> 00:05:25,946
-the Touch Bar to those on the
+与物理键盘
 
 
 222
 00:05:25,946 --> 00:05:27,016
-physical keyboard, and we do
+进行对应
 
 
 223
 00:05:27,016 --> 00:05:28,136
-that by watching the ambient
+并且我们通过检测
 
 
 224
 00:05:28,136 --> 00:05:29,446
-brightness, and knowing whether
+环境的亮度来判断
 
 
 225
 00:05:29,446 --> 00:05:30,626
-or not the keyboard backlight is
+键盘的背灯是否应该
 
 
 226
 00:05:30,626 --> 00:05:30,816
-on.
+亮起
 
 
 227
 00:05:31,126 --> 00:05:32,296
-But this has implications for
+这将影响我们如何
 
 
 228
 00:05:32,296 --> 00:05:33,336
-how we might draw custom
+绘制自定义
 
 
 229
 00:05:33,336 --> 00:05:33,876
-controls.
+控件
 
 
 230
 00:05:34,246 --> 00:05:35,116
-And we're not going to go into
+但是在本次会议里
 
 
 231
 00:05:35,116 --> 00:05:35,996
-detail on any of those
+我们不会讲到
 
 
 232
 00:05:35,996 --> 00:05:37,196
-implications in this session,
+相关内容
 
 
 233
 00:05:37,196 --> 00:05:38,316
-but we do have a session later
+在今天下午的会议上
 
 
 234
 00:05:38,316 --> 00:05:39,846
-this afternoon that will cover
+将会讲到所有这些
 
 
 235
 00:05:39,846 --> 00:05:40,616
-all these topics.
+话题
 
 
 236
 00:05:41,876 --> 00:05:44,856
-So, I'm assuming that once
+我想 只要你听到了这里
 
 
 237
 00:05:44,856 --> 00:05:45,676
-you're done here, maybe even
+甚至可能在这之前 你就已经
 
 
 238
 00:05:45,676 --> 00:05:46,516
-before that, you're going to be
+想要把
 
 
 239
 00:05:46,516 --> 00:05:47,746
-really jazzed to add Touch Bar
+Touch Bar 支持加入到
 
 
 240
 00:05:47,746 --> 00:05:49,006
-support to your application if
+你的应用中去了
 
 
 241
 00:05:49,006 --> 00:05:49,686
-you haven't already.
+如果你还没有的话
 
 
 242
 00:05:49,686 --> 00:05:50,896
-But when you're coming up with
+不过 当你设计你的 UI 时
 
 
 243
 00:05:50,896 --> 00:05:52,326
-your UI's there's a few things
+有几点是应该
 
 
 244
 00:05:52,326 --> 00:05:53,056
-to keep in mind.
+记住的
 
 
 245
 00:05:53,396 --> 00:05:54,506
-And the first of them, the prime
+首先
 
 
 246
 00:05:54,506 --> 00:05:56,146
-directive of Touch Bar is that
+Touch Bar 的第一指导原则是
 
 
 247
 00:05:56,146 --> 00:05:57,316
-the Touch Bar is an input
+它是一个输入
 
 
 248
 00:05:57,316 --> 00:05:57,716
-device.
+设备
 
 
 249
 00:05:57,716 --> 00:05:58,936
-It's meant to be interacted with
+这意味着它应该能
 
 
 250
 00:05:58,936 --> 00:05:59,516
-by the user.
+与用户互动
 
 
 251
 00:05:59,766 --> 00:06:00,616
-It's not supposed to be
+它不应该被当成显示器
 
 
 252
 00:06:00,616 --> 00:06:01,416
-displaying things.
+来使用
 
 
 253
 00:06:01,416 --> 00:06:02,696
-So, no status indicators or
+所以 不要加入状态指示器
 
 
 254
 00:06:02,696 --> 00:06:03,406
-stock tickers.
+或者股票 K 线图
 
 
 255
 00:06:04,046 --> 00:06:05,656
-The next thing we should keep in
+另外一件需要记住的事是
 
 
 256
 00:06:05,656 --> 00:06:06,706
-mind when making our Touch Bar
+在制作 Touch Bar UI 时
 
 
 257
 00:06:06,706 --> 00:06:09,046
-UI's is that we don't want to
+我们不希望将应用中
 
 
 258
 00:06:09,046 --> 00:06:10,396
-put functionality in the Touch
+别的地方
 
 
 259
 00:06:10,426 --> 00:06:11,886
-Bar that doesn't exist anywhere
+都没有的功能
 
 
 260
 00:06:11,886 --> 00:06:12,906
-else in the application.
+加到 Touch Bar 里
 
 
 261
 00:06:13,226 --> 00:06:14,746
-It's great to have null and fun
+Touch Bar UI 可以有趣 可以存在空白
 
 
 262
 00:06:14,746 --> 00:06:16,066
-Touch Bar UI's, but it shouldn't
+这些都很好
 
 
 263
 00:06:16,066 --> 00:06:17,216
-be the only way of accessing
+但这不应该成为访问功能
 
 
 264
 00:06:17,216 --> 00:06:17,876
-functionality.
+的唯一途径
 
 
 265
 00:06:18,326 --> 00:06:19,736
-And there's a good reason for a
+这是有原因的
 
 
 266
 00:06:19,736 --> 00:06:21,526
-lot of that, and that's that not
+因为并非所有
 
 
 267
 00:06:21,526 --> 00:06:23,106
-every user has a Touch Bar, so
+用户都有 Touch Bar
 
 
 268
 00:06:23,106 --> 00:06:24,336
-if you only put something in the
+如果你加入了只在
 
 
 269
 00:06:24,336 --> 00:06:25,306
-Touch Bar, you're going to be
+Touch Bar 上可以使用的功能
 
 
 270
 00:06:25,306 --> 00:06:26,546
-losing out on functionality for
+那么很多用户都会失去使用这个功能
 
 
 271
 00:06:26,546 --> 00:06:27,216
-a lot of users.
+的机会
 
 
 272
 00:06:27,866 --> 00:06:30,476
-And finally, this is almost a
+最后 这几乎可以说是 Touch Bar
 
 
 273
 00:06:30,476 --> 00:06:31,616
-side effect of saying the Touch
+作为输入设备的
 
 
 274
 00:06:31,616 --> 00:06:32,476
-Bar is an input device.
+一个副作用
 
 
 275
 00:06:32,866 --> 00:06:34,206
-While we want creative beautiful
+当我们想要在 Touch Bar 上创造
 
 
 276
 00:06:34,206 --> 00:06:35,386
-UI's in the Touch Bar, they
+漂亮的 UI 时
 
 
 277
 00:06:35,386 --> 00:06:36,486
-shouldn't be taking center
+他们不应该喧宾
 
 
 278
 00:06:36,486 --> 00:06:36,966
-stage.
+夺主
 
 
 279
 00:06:37,206 --> 00:06:38,476
-The content the user's working
+用户在主屏幕上的工作内容
 
 
 280
 00:06:38,476 --> 00:06:40,226
-with on the main screen should
+应该永远都是
 
 
 281
 00:06:40,226 --> 00:06:41,316
-always be their focus.
+他们的焦点
 
 
 282
 00:06:41,316 --> 00:06:42,256
-So, the Touch Bar shouldn't be
+Touch Bar 不应该使人
 
 
 283
 00:06:42,256 --> 00:06:42,826
-distracting.
+分心
 
 
 284
 00:06:43,806 --> 00:06:45,506
-With that out of the way, we're
+说完了这些 我们
 
 
 285
 00:06:45,506 --> 00:06:46,436
-going to go ahead and cover the
+将要讲到
 
 
 286
 00:06:46,436 --> 00:06:48,016
-core classes that let you use
+能让你在应用中使用
 
 
 287
 00:06:48,016 --> 00:06:48,706
-the Touch Bar in your
+Touch Bar 的核心
 
 
 288
 00:06:48,706 --> 00:06:49,336
-application.
+类
 
 
 289
 00:06:49,626 --> 00:06:50,666
-We're going to cover how the
+我们将讲到响应器
 
 
 290
 00:06:50,666 --> 00:06:52,006
-responder change is integrated
+将如何变化 以配合发现
 
 
 291
 00:06:52,006 --> 00:06:53,266
-with these for discovering what
+应该显示何种
 
 
 292
 00:06:53,266 --> 00:06:54,736
-context sensitive functionality
+上下文敏感
 
 
 293
 00:06:54,736 --> 00:06:55,336
-to display.
+功能
 
 
 294
 00:06:55,336 --> 00:06:56,666
-And then, we're going to go
+然后 我们将
 
 
 295
 00:06:56,666 --> 00:06:58,136
-ahead and take a deep dive on
+深入探讨
 
 
 296
 00:06:58,136 --> 00:06:59,666
-one of those core classes and
+其中一门核心类
 
 
 297
 00:06:59,666 --> 00:07:00,756
-show you most of what it can do.
+并向大家展示它能做什么
 
 
 298
 00:07:01,646 --> 00:07:02,356
-So, let's start with the
+让我们从类
 
 
 299
 00:07:02,356 --> 00:07:02,816
-classes.
+开始
 
 
 300
 00:07:03,596 --> 00:07:05,436
-The first class is of course
+第一节课当然是关于
 
 
 301
 00:07:05,506 --> 00:07:06,296
-NSTouchBarItem.
+NSTouchBarItem 的
 
 
 302
 00:07:06,786 --> 00:07:08,096
-And that plays with NSTouchBar
+与它相配合的还有 NSTouchBar
 
 
 303
 00:07:08,096 --> 00:07:08,886
-and NSResponder.
+和 NSResponder
 
 
 304
 00:07:09,206 --> 00:07:10,486
-And let's just take a closer
+让我们详细了解
 
 
 305
 00:07:10,856 --> 00:07:11,106
-look.
+一下
 
 
 306
 00:07:11,106 --> 00:07:12,466
-This is a mockup of the mail
+这是我做的一个
 
 
 307
 00:07:12,466 --> 00:07:13,306
-Touch Bar I've made.
+“邮件”应用 Touch Bar 的实体模型
 
 
 308
 00:07:13,306 --> 00:07:14,546
-And everything I'm highlighting
+所有我标记高亮的部分
 
 
 309
 00:07:14,546 --> 00:07:16,486
-here, is an NS view, or NS
+要么是一个 NSView 要么是
 
 
 310
 00:07:16,486 --> 00:07:17,426
-control, or NS button.
+NSControl 要么就是 NSButton
 
 
 311
 00:07:17,426 --> 00:07:18,386
-They're all things you're very
+这都是大家很熟悉的
 
 
 312
 00:07:18,386 --> 00:07:19,826
-familiar with because Touch Bar
+因为 Touch Bar 使用的也是
 
 
 313
 00:07:20,116 --> 00:07:21,646
-is reusing the existing view
+我们已经在
 
 
 314
 00:07:21,646 --> 00:07:23,216
-functionality we've been using
+我们的 Cocoa App 中
 
 
 315
 00:07:23,216 --> 00:07:24,636
-in our Cocoa apps for very long
+用过很久的
 
 
 316
 00:07:25,806 --> 00:07:26,456
-time.
+视图功能
 
 
 317
 00:07:26,456 --> 00:07:27,556
-There's a few things though that
+有一些事是 Touch Bar 能做到
 
 
 318
 00:07:27,556 --> 00:07:28,936
-Touch Bar does, that view isn't
+但是视图目前
 
 
 319
 00:07:28,936 --> 00:07:29,776
-prepared to do.
+做不到的
 
 
 320
 00:07:30,036 --> 00:07:31,346
-So, we need some way of adapting
+所以我们需要一些解决
 
 
 321
 00:07:31,346 --> 00:07:31,556
-that.
+方法
 
 
 322
 00:07:31,556 --> 00:07:32,296
-And that's what this
+这也是这个
 
 
 323
 00:07:32,296 --> 00:07:33,396
-NSTouchBarItem class does.
+NSTouchBarItem 类的目的
 
 
 324
 00:07:33,396 --> 00:07:35,186
-So, it binds a view to the Touch
+它将一个 视图 结合到了
 
 
 325
 00:07:35,226 --> 00:07:35,446
-Bar.
+Touch Bar 中
 
 
 326
 00:07:36,186 --> 00:07:37,786
-NSTouchBarItem itself is a very
+NSTouchBarItem 是一个非常基础的
 
 
 327
 00:07:37,786 --> 00:07:38,596
-basic class.
+类
 
 
 328
 00:07:38,656 --> 00:07:40,726
-It's intended to be sub classed
+它是一个子类
 
 
 329
 00:07:40,726 --> 00:07:41,956
-and that's probably not
+你们可能也
 
 
 330
 00:07:41,956 --> 00:07:43,036
-something you're actually going
+不会真的用到
 
 
 331
 00:07:43,036 --> 00:07:43,716
-to have to do.
+它
 
 
 332
 00:07:43,716 --> 00:07:45,286
-Because AppKit includes about
+因为 AppKit 包含了
 
 
 333
 00:07:45,286 --> 00:07:46,896
-half a dozen existing Touch Bar
+大约 6 个 Touch Bar 子类
 
 
 334
 00:07:46,896 --> 00:07:48,106
-subclasses that will handle a
+可以满足
 
 
 335
 00:07:48,106 --> 00:07:49,626
-lot of the needs you're going to
+你们的很多
 
 
 336
 00:07:49,626 --> 00:07:49,896
-have.
+需求
 
 
 337
 00:07:50,266 --> 00:07:51,976
-And finally one of the most
+最后 NSTouchBarItem 类的
 
 
 338
 00:07:51,976 --> 00:07:52,886
-important features of the
+一个最重要的功能是
 
 
 339
 00:07:52,886 --> 00:07:54,866
-NSTouchBarItem class is that it
+他有一个能
 
 
 340
 00:07:54,866 --> 00:07:56,566
-has an identifier that uniquely
+唯一标识
 
 
 341
 00:07:56,566 --> 00:07:57,776
-identifies that item and
+NSTouchBar 实例里的
 
 
 342
 00:07:57,776 --> 00:07:59,216
-functionality within its
+项和功能的
 
 
 343
 00:07:59,276 --> 00:08:00,296
-NSTouchBar instance.
+标识符
 
 
 344
 00:08:01,066 --> 00:08:03,016
-So, let's talk about NSTouchBar
+让我们来说说 NSTouchBar
 
 
 345
 00:08:03,016 --> 00:08:03,686
-itself.
+本身
 
 
 346
 00:08:03,836 --> 00:08:05,446
-The most important thing is that
+最重要的是它有
 
 
 347
 00:08:05,446 --> 00:08:06,936
-it has an array of those item
+一个用于标识项的
 
 
 348
 00:08:06,936 --> 00:08:08,486
-identifiers that identify the
+标识符
 
 
 349
 00:08:08,486 --> 00:08:08,876
-items.
+数组
 
 
 350
 00:08:08,876 --> 00:08:10,286
-And this is important for
+这对解决哪些功能
 
 
 351
 00:08:10,406 --> 00:08:12,056
-resolving what functionalities
+要用在 Touch Bar 中
 
 
 352
 00:08:12,056 --> 00:08:13,026
-goes into the Touch Bar to the
+用于显示的视图中
 
 
 353
 00:08:13,026 --> 00:08:14,206
-views used to display it.
+是十分重要的
 
 
 354
 00:08:14,676 --> 00:08:15,736
-Let's take a quick look at a
+我们来快速的看一个
 
 
 355
 00:08:15,736 --> 00:08:16,306
-code snippet.
+代码片段
 
 
 356
 00:08:17,106 --> 00:08:18,556
-So, here we're going to go ahead
+这里我们将要为
 
 
 357
 00:08:18,556 --> 00:08:19,376
-and just declare some
+一条鲨鱼和一个海龟
 
 
 358
 00:08:19,376 --> 00:08:21,046
-identifiers for a shark and sea
+声明一些
 
 
 359
 00:08:21,046 --> 00:08:21,366
-turtle.
+标识符
 
 
 360
 00:08:21,876 --> 00:08:23,026
-Usually when you come up with
+通常我们在为代码
 
 
 361
 00:08:23,026 --> 00:08:24,736
-identifiers for our code, we
+命名标识符时 我们建议使用
 
 
 362
 00:08:24,736 --> 00:08:26,496
-recommend using reverse DNS, but
+反向域名解析 但是
 
 
 363
 00:08:26,496 --> 00:08:27,276
-these are a little bit more
+这样会更加
 
 
 364
 00:08:27,276 --> 00:08:27,686
-legible.
+清晰
 
 
 365
 00:08:27,776 --> 00:08:30,306
-And once we have those
+一旦我们有了这些标识符
 
 
 366
 00:08:30,306 --> 00:08:31,886
-identifiers, we're going to go
+我们将
 
 
 367
 00:08:31,886 --> 00:08:33,155
-ahead and instantiate a new
+实例化一个新的
 
 
 368
 00:08:33,155 --> 00:08:34,546
-NSTouchBar and just set the
+NSTouchBar 然后
 
 
 369
 00:08:34,546 --> 00:08:35,856
-default the item identifiers
+将项标识符数组设为
 
 
 370
 00:08:35,856 --> 00:08:36,096
-array.
+默认值
 
 
 371
 00:08:36,506 --> 00:08:38,206
-And this let's AppKit know what
+这样可以让 AppKit 知道
 
 
 372
 00:08:38,206 --> 00:08:39,546
-sort of semantic functionality
+我们把什么语义功能
 
 
 373
 00:08:39,546 --> 00:08:40,986
-we're putting in the Touch Bar.
+放到了 Touch Bar 里
 
 
 374
 00:08:41,466 --> 00:08:43,015
-What we're going to cover now is
+我们现在要讲的是
 
 
 375
 00:08:43,015 --> 00:08:44,426
-how AppKit resolves that.
+AppKit 如何解决这个问题
 
 
 376
 00:08:44,866 --> 00:08:46,096
-And there's two ways we do this
+我们有两个方法能
 
 
 377
 00:08:46,096 --> 00:08:46,386
-look up.
+进行查找
 
 
 378
 00:08:46,386 --> 00:08:47,446
-There's two ways we find
+我们有两种方法能够
 
 
 379
 00:08:47,446 --> 00:08:48,696
-NSTouchBarItem from the item
+从项标识符里找出
 
 
 380
 00:08:48,696 --> 00:08:49,346
-identifiers.
+NSTouchBarItem
 
 
 381
 00:08:49,756 --> 00:08:51,256
-And the first is a property on
+第一种是一个叫做 templateItems 的
 
 
 382
 00:08:51,296 --> 00:08:52,356
-NSTouchBar called template
+NSTouchBar
 
 
 383
 00:08:52,356 --> 00:08:52,726
-items.
+属性
 
 
 384
 00:08:53,086 --> 00:08:54,496
-And this is just a set of items.
+这只是一个项的集合
 
 
 385
 00:08:54,936 --> 00:08:56,176
-So, if we go back to some code
+如果我们回头看看代码片段
 
 
 386
 00:08:56,176 --> 00:08:57,436
-snippets, this is what we had
+这与我们之前编写的代码
 
 
 387
 00:08:57,436 --> 00:08:59,386
-before, exactly the same, and
+完全相同
 
 
 388
 00:08:59,386 --> 00:09:00,096
-we've added some.
+然后我们做一些添加
 
 
 389
 00:09:00,516 --> 00:09:02,226
-So, here I'm using an
+这里我给鲨鱼
 
 
 390
 00:09:02,226 --> 00:09:04,536
-NSCustomTouchBar item class for
+和海龟分别用了一个
 
 
 391
 00:09:04,536 --> 00:09:05,346
-the shark and turtles
+NSCustomTouchBar
 
 
 392
 00:09:05,346 --> 00:09:05,976
-respectively.
+的项类
 
 
 393
 00:09:05,976 --> 00:09:06,986
-And this is one of those
+这是我之前提到的
 
 
 394
 00:09:06,986 --> 00:09:07,996
-subclasses I mentioned.
+那些子类的其中一个
 
 
 395
 00:09:08,436 --> 00:09:09,726
-And we're just setting the view
+现在我们将项的视图
 
 
 396
 00:09:10,016 --> 00:09:12,586
-of these items to an NS button.
+设置为“NSButton”
 
 
 397
 00:09:13,456 --> 00:09:14,516
-And we go ahead and we make the
+接下来我们来处理标题
 
 
 398
 00:09:14,516 --> 00:09:15,696
-title, you know the shark emoji
+就像鲨鱼或者海龟
 
 
 399
 00:09:15,696 --> 00:09:16,476
-or the turtle emoji.
+表情符号那样
 
 
 400
 00:09:16,856 --> 00:09:18,216
-You'll notice we're using the NS
+你会注意到我们用到的是
 
 
 401
 00:09:18,246 --> 00:09:19,596
-button convenience constructor
+在 macOS10.12 里介绍到的
 
 
 402
 00:09:19,596 --> 00:09:22,116
-we introduced in macOS 10.12,
+NSButton 简便构造方法
 
 
 403
 00:09:22,566 --> 00:09:23,866
-and that's important because
+十分重要 因为
 
 
 404
 00:09:23,866 --> 00:09:24,966
-these convenience constructors
+这些简便构造方法
 
 
 405
 00:09:24,966 --> 00:09:26,326
-will configure the buttons to be
+可以使 NSButton 变成外观敏感的
 
 
 406
 00:09:26,326 --> 00:09:27,946
-appearance sensitive to use the
+从而能使用
 
 
 407
 00:09:27,946 --> 00:09:29,246
-right styling and font.
+正确的样式和字体
 
 
 408
 00:09:29,616 --> 00:09:30,896
-And if we build an NS button
+如果我们直接构建 NSButton
 
 
 409
 00:09:30,896 --> 00:09:32,466
-directly, we may not get that
+我们可能不会得到这个
 
 
 410
 00:09:32,466 --> 00:09:33,036
-functionality.
+功能
 
 
 411
 00:09:33,036 --> 00:09:34,166
-So, this is a big time saver.
+这可以大大节省时间
 
 
 412
 00:09:34,756 --> 00:09:36,676
-But, finally after instantiating
+最后在项目实例化后
 
 
 413
 00:09:36,676 --> 00:09:37,976
-these items, we're just going to
+我们要
 
 
 414
 00:09:37,976 --> 00:09:39,116
-go ahead and stuff them in the
+将它们添加到
 
 
 415
 00:09:39,116 --> 00:09:39,976
-template item set.
+templateItems 集合里
 
 
 416
 00:09:40,586 --> 00:09:41,596
-And if we do all of this, we're
+如果我们做完了
 
 
 417
 00:09:41,596 --> 00:09:42,416
-going to wind up with the Touch
+所有步骤 我们将在
 
 
 418
 00:09:42,416 --> 00:09:43,316
-Bar we see at the bottom of the
+屏幕底部的 Touch Bar 上看到
 
 
 419
 00:09:43,316 --> 00:09:44,766
-screen, with our shark button
+鲨鱼按钮和
 
 
 420
 00:09:44,766 --> 00:09:45,576
-and our turtle button.
+海龟按钮
 
 
 421
 00:09:47,036 --> 00:09:48,186
-Something I'd like to mention,
+我想要提到一件事是
 
 
 422
 00:09:48,416 --> 00:09:50,426
-if you go ahead and copy and
+如果你将代码拷贝粘贴到
 
 
 423
 00:09:50,426 --> 00:09:52,366
-paste the code on the slide into
+Swift Playground 里 XCode 将
 
 
 424
 00:09:52,366 --> 00:09:54,296
-a Swift playground, XCode will
+对我们创建的
 
 
 425
 00:09:54,296 --> 00:09:55,976
-go ahead and preview the Touch
+Touch Bar 项及
 
 
 426
 00:09:56,006 --> 00:09:57,216
-Bar items we construct and the
+Touch bar 本身
 
 
 427
 00:09:57,216 --> 00:09:58,406
-Touch Bar itself.
+进行预览
 
 
 428
 00:09:58,406 --> 00:09:59,756
-And this is a pretty useful way
+这是一种能快速
 
 
 429
 00:09:59,756 --> 00:10:01,006
-of rapidly prototyping your
+建立你的 Touch Bar UI 原型的
 
 
 430
 00:10:01,006 --> 00:10:01,816
-Touch Bar UIs.
+有效方式
 
 
 431
 00:10:03,046 --> 00:10:03,946
-So, that's template items.
+好了  templateItems 的内容就这么多
 
 
 432
 00:10:04,386 --> 00:10:06,036
-Let's go ahead and cover what we
+现在我们来看看
 
 
 433
 00:10:06,036 --> 00:10:08,056
-can do with the delegate.
+我们能用委托干些什么
 
 
 434
 00:10:08,056 --> 00:10:10,066
-So, there's a single delegate
+在 NSTouchBarDelegate 协议里
 
 
 435
 00:10:10,066 --> 00:10:11,476
-method in the NSTouchBarDelegate
+有一个单独的委托
 
 
 436
 00:10:11,476 --> 00:10:11,986
-protocol.
+方法
 
 
 437
 00:10:11,986 --> 00:10:12,776
-And that's Touch Bar,
+那就是 Touch Bar 的
 
 
 438
 00:10:12,776 --> 00:10:14,076
-makeItemForIdentifier.
+makeItemForIdentifier
 
 
 439
 00:10:14,976 --> 00:10:16,426
-And it's pretty simple.
+它非常简单
 
 
 440
 00:10:16,556 --> 00:10:17,566
-If we take a look at this code
+如果我们看看这里的代码
 
 
 441
 00:10:17,566 --> 00:10:19,076
-here, this is exactly the same
+会发现它和 templateItems
 
 
 442
 00:10:19,076 --> 00:10:20,106
-as the template items case.
+的情况一模一样
 
 
 443
 00:10:20,106 --> 00:10:20,966
-What's different is we've
+不同之处在于我们
 
 
 444
 00:10:20,966 --> 00:10:21,986
-structured it in a switch
+将它放在一个 Switch 语句里
 
 
 445
 00:10:21,986 --> 00:10:23,786
-statement, so we can go ahead
+当 AppKit 要查找一个
 
 
 446
 00:10:23,786 --> 00:10:25,276
-and conditionally create a new
+特殊的标识符时
 
 
 447
 00:10:25,276 --> 00:10:27,366
-item when AppKit asks for one of
+我们能有条件地
 
 
 448
 00:10:27,366 --> 00:10:28,616
-our specific identifiers.
+创建一个新项
 
 
 449
 00:10:29,596 --> 00:10:31,906
-AppKit cahces the result of this
+AppKit 会缓存这个方法的
 
 
 450
 00:10:31,906 --> 00:10:32,266
-method.
+结果
 
 
 451
 00:10:32,556 --> 00:10:33,806
-So, you really can just treat
+所以 你完全可以将它看作一个
 
 
 452
 00:10:33,806 --> 00:10:35,106
-this as a factory and make a new
+工厂 每次都创建一个
 
 
 453
 00:10:35,106 --> 00:10:35,896
-instance each time.
+新的实例
 
 
 454
 00:10:35,896 --> 00:10:36,856
-You don't have to maintain a
+除非在其他地方有用
 
 
 455
 00:10:36,856 --> 00:10:38,096
-back pointer yourself, unless
+否则你无须自己
 
 
 456
 00:10:38,096 --> 00:10:39,346
-that's useful for other reasons.
+保留一个反向指针
 
 
 457
 00:10:40,536 --> 00:10:43,236
-Something else that's important
+我要讲的另一个重点是
 
 
 458
 00:10:43,236 --> 00:10:44,646
-to mention is, you know I've
+我已经提到了一些
 
 
 459
 00:10:44,646 --> 00:10:46,806
-covered customizability a little
+关于自定义的内容
 
 
 460
 00:10:47,196 --> 00:10:48,346
-bit, and let's take that Touch
+现在就让我们来
 
 
 461
 00:10:48,346 --> 00:10:49,146
-Bar we've made and make it
+对我做的 Touch Bar 进行
 
 
 462
 00:10:49,146 --> 00:10:49,816
-customizable.
+自定义
 
 
 463
 00:10:50,626 --> 00:10:52,066
-So, that involves adding a few
+这包括增加一些
 
 
 464
 00:10:52,066 --> 00:10:52,376
-things.
+东西
 
 
 465
 00:10:52,666 --> 00:10:54,226
-The first bit is actually this
+首先是在第一行的内容
 
 
 466
 00:10:54,226 --> 00:10:55,756
-top line, where we go ahead and
+我们在这里要把 NSApp
 
 
 467
 00:10:55,756 --> 00:10:57,156
-tell NS application to set
+设置为 isAutomaticCustomize
 
 
 468
 00:10:57,386 --> 00:10:58,766
-isAutomaticCustomize
+TouchBarMenuItem
 
 
 469
 00:10:58,766 --> 00:11:00,226
-TouchBarMenuItemEnabled.
+Enabled
 
 
 470
 00:11:00,906 --> 00:11:02,606
-That's a mouthful, but it's
+这很拗口 但是
 
 
 471
 00:11:02,606 --> 00:11:03,636
-actually a very simply way of
+这是一种非常简单的
 
 
 472
 00:11:03,636 --> 00:11:04,196
-handling this.
+处理方法
 
 
 473
 00:11:04,196 --> 00:11:05,506
-If you set this to true,
+如果你将它设置为真
 
 
 474
 00:11:05,876 --> 00:11:07,126
-NSApplication is going to go
+NSApp 将为你
 
 
 475
 00:11:07,126 --> 00:11:08,496
-ahead and create a menu item for
+自动生成一个目录项
 
 
 476
 00:11:08,496 --> 00:11:10,276
-you automatically that will show
+可以用于展示
 
 
 477
 00:11:10,276 --> 00:11:11,306
-and hide the customization
+和隐藏自定义
 
 
 478
 00:11:11,306 --> 00:11:11,626
-panel.
+面板
 
 
 479
 00:11:12,156 --> 00:11:13,306
-You don't have to use that.
+你不需要用到它
 
 
 480
 00:11:13,346 --> 00:11:14,786
-NSApplication has a method to
+NSApp 有一种
 
 
 481
 00:11:14,786 --> 00:11:16,296
-show and hide it explicitly and
+方法能明确的展示和隐藏它
 
 
 482
 00:11:16,296 --> 00:11:17,236
-you can wire that up to your
+如果你希望多一些控制
 
 
 483
 00:11:17,236 --> 00:11:18,896
-menu item if you want a little
+你可以将它加入你的
 
 
 484
 00:11:19,746 --> 00:11:20,666
-bit more control.
+目录项
 
 
 485
 00:11:20,666 --> 00:11:21,546
-But with that out of the way,
+讲完了这些
 
 
 486
 00:11:21,866 --> 00:11:23,106
-let's look at the bottom of the
+我们来看幻灯片
 
 
 487
 00:11:23,106 --> 00:11:24,626
-code in this slide, where we set
+底部的这行代码 我们在这里设置
 
 
 488
 00:11:24,626 --> 00:11:26,026
-the customization identifier.
+自定义的标识符
 
 
 489
 00:11:26,456 --> 00:11:27,826
-And in this case, I'm just
+在这种情况下
 
 
 490
 00:11:27,826 --> 00:11:29,246
-making up an ocean animal
+我来编写一个海洋生物的
 
 
 491
 00:11:29,246 --> 00:11:29,836
-identifier.
+标识符
 
 
 492
 00:11:30,486 --> 00:11:32,166
-But it's important to set this,
+设置它是很重要的
 
 
 493
 00:11:32,166 --> 00:11:33,566
-because this is the token which
+因为这是个令牌
 
 
 494
 00:11:33,606 --> 00:11:35,076
-enables persistence of the Touch
+能使 Touch Bar 的配置在
 
 
 495
 00:11:35,076 --> 00:11:36,446
-Bar configuration across
+应用程序的开始
 
 
 496
 00:11:36,446 --> 00:11:37,936
-launches of your application or
+或者系统的重启时
 
 
 497
 00:11:37,936 --> 00:11:38,926
-reboots of the system.
+得以持续
 
 
 498
 00:11:39,736 --> 00:11:41,246
-And there's one other important
+启用自定义的
 
 
 499
 00:11:41,246 --> 00:11:42,576
-step for enabling customization,
+另一个重要步骤是
 
 
 500
 00:11:42,576 --> 00:11:43,376
-and that is to set this
+设置 customization
 
 
 501
 00:11:43,376 --> 00:11:44,686
-customizationAllowedItem
+AllowedItemIdentifier
 
 
 502
 00:11:44,686 --> 00:11:45,526
-Identifiers array.
+的数组
 
 
 503
 00:11:45,916 --> 00:11:47,076
-And we're just going ahead and
+我们现在重新设置
 
 
 504
 00:11:47,076 --> 00:11:48,076
-set it to our shark and sea
+我们的鲨鱼和
 
 
 505
 00:11:48,076 --> 00:11:48,576
-turtle again.
+海龟
 
 
 506
 00:11:48,976 --> 00:11:50,306
-But setting this allows the
+这个设置能让
 
 
 507
 00:11:50,306 --> 00:11:51,466
-customization panel to know
+自定义面板知道
 
 
 508
 00:11:51,466 --> 00:11:52,686
-which items can be added and
+哪些项可以被添加 哪些要被
 
 
 509
 00:11:52,686 --> 00:11:53,046
-removed.
+移除
 
 
 510
 00:11:53,706 --> 00:11:54,676
-If we do all of that, we can
+如果我们做完了所有这些
 
 
 511
 00:11:54,676 --> 00:11:55,976
-bring up the customization panel
+我们可以打开自定义面板
 
 
 512
 00:11:55,976 --> 00:11:57,586
-and we'll see exactly this, the
+我们将看到
 
 
 513
 00:11:57,586 --> 00:11:59,186
-defaultItemIdentifiers array is
+defaultItemIdentifiers 数组被
 
 
 514
 00:11:59,186 --> 00:12:00,366
-translated faithfully to the
+转化成为
 
 
 515
 00:12:00,366 --> 00:12:01,326
-default set of items on the
+左边的
 
 
 516
 00:12:01,326 --> 00:12:01,736
-left.
+一组项
 
 
 517
 00:12:01,776 --> 00:12:03,036
-And the individual items from
+被允许的项标识符
 
 
 518
 00:12:03,036 --> 00:12:04,686
-the allowed item identifiers are
+中的个别项
 
 
 519
 00:12:04,686 --> 00:12:05,516
-shown on the right.
+将显示在右边
 
 
 520
 00:12:06,236 --> 00:12:07,176
-This is kind of a boring
+这是个很乏味的
 
 
 521
 00:12:07,176 --> 00:12:08,336
-customization panel and we can
+自定义面板 我们来
 
 
 522
 00:12:08,336 --> 00:12:09,286
-spice it up a little.
+使它有变得有趣一些
 
 
 523
 00:12:10,186 --> 00:12:11,926
-So, here's a whole menagerie of
+这里有一整个动物园的
 
 
 524
 00:12:11,926 --> 00:12:12,576
-ocean animals.
+海洋动物
 
 
 525
 00:12:13,326 --> 00:12:15,806
-Something I want to mention, and
+我想说的是
 
 
 526
 00:12:15,806 --> 00:12:16,866
-it will come into play with
+在创建项模板的时候
 
 
 527
 00:12:16,926 --> 00:12:18,406
-deciding whether you're going to
+你需要决定你要
 
 
 528
 00:12:18,406 --> 00:12:19,496
-set the template items on a
+将它设置在 Touch Bar 上
 
 
 529
 00:12:19,496 --> 00:12:20,766
-Touch Bar when you create it, or
+还是使用
 
 
 530
 00:12:20,816 --> 00:12:22,696
-whether to use the delegate is
+默认的委托
 
 
 531
 00:12:22,796 --> 00:12:24,196
-by default we were only showing
+只显示鲨鱼和海龟
 
 
 532
 00:12:24,196 --> 00:12:25,126
-the shark and sea turtle.
+这时他就会起作用
 
 
 533
 00:12:25,326 --> 00:12:26,026
-And there's a lot of
+在很多应用中
 
 
 534
 00:12:26,026 --> 00:12:27,266
-applications where your default
+你的 Touch Bar 上的
 
 
 535
 00:12:27,266 --> 00:12:28,456
-functionality in the Touch Bar
+默认功能只是
 
 
 536
 00:12:28,736 --> 00:12:30,416
-is going to be a very small
+你在自定义时
 
 
 537
 00:12:30,416 --> 00:12:31,706
-subset of the total
+可添加的所有功能
 
 
 538
 00:12:31,706 --> 00:12:32,796
-functionality you can add
+中的很小一
 
 
 539
 00:12:32,796 --> 00:12:33,656
-through customization.
+部分
 
 
 540
 00:12:34,716 --> 00:12:36,626
-By using the delegate, users who
+通过使用委托
 
 
 541
 00:12:36,626 --> 00:12:37,776
-don't bring up the customization
+不使用自定义面板的用户
 
 
 542
 00:12:37,776 --> 00:12:38,836
-panel aren't going to pay the
+就不会浪费 CPU 时间
 
 
 543
 00:12:38,836 --> 00:12:43,106
-CPU time of creating new items.
+创建新项
 
 
 544
 00:12:43,626 --> 00:12:44,946
-Something else to mention here
+另一件需要注意的事是
 
 
 545
 00:12:44,946 --> 00:12:46,596
-is you may have a situation
+在某些情况下
 
 
 546
 00:12:46,596 --> 00:12:47,426
-where you're building a Touch
+你可能想要创建
 
 
 547
 00:12:47,426 --> 00:12:48,376
-Bar UI and there's some
+一个 Touch Bar UI
 
 
 548
 00:12:48,376 --> 00:12:49,556
-functionality you want to be
+其中的有些功能
 
 
 549
 00:12:49,556 --> 00:12:50,886
-there all the time, you don't
+你希望它一直存在
 
 
 550
 00:12:50,886 --> 00:12:51,896
-want the user to be able to
+不希望用户在自定义区
 
 
 551
 00:12:51,896 --> 00:12:53,646
-remove it in customization, and
+移除它
 
 
 552
 00:12:53,646 --> 00:12:54,876
-if you have a case like that you
+如果你遇到这样的问题
 
 
 553
 00:12:54,876 --> 00:12:56,086
-can set the customization
+你可以设置自定义
 
 
 554
 00:12:56,086 --> 00:12:57,666
-required item identifiers array.
+所需的项标识符数组
 
 
 555
 00:12:58,216 --> 00:12:59,706
-And in this case, obviously, the
+这样的情况下 显然
 
 
 556
 00:12:59,706 --> 00:13:00,936
-sea turtle is critical for the
+海龟对我们的应用功能
 
 
 557
 00:13:00,936 --> 00:13:02,006
-function of our application.
+很关键
 
 
 558
 00:13:02,006 --> 00:13:02,926
-So, we're going to prevent it
+所以 我们要避免它
 
 
 559
 00:13:02,926 --> 00:13:03,586
-from being removed.
+被移除
 
 
 560
 00:13:03,626 --> 00:13:07,196
-So, that kind of covers how to
+好了 这基本涵盖了怎样
 
 
 561
 00:13:07,196 --> 00:13:09,156
-make instances of NSTouchBar and
+制作 NSTouchBar 实例
 
 
 562
 00:13:09,156 --> 00:13:11,206
-how to facilitate item lookup by
+以及怎么通过
 
 
 563
 00:13:11,206 --> 00:13:12,306
-the item identifier, through the
+模板项和委托方法
 
 
 564
 00:13:12,306 --> 00:13:13,846
-template items and delegate
+使用用项标识符来帮助项目
 
 
 565
 00:13:13,846 --> 00:13:14,266
-methods.
+查找
 
 
 566
 00:13:14,636 --> 00:13:15,826
-But one of the things we're
+有一样东西我们漏掉了
 
 
 567
 00:13:15,826 --> 00:13:17,596
-missing is how the applicant
+那就是 App
 
 
 568
 00:13:17,596 --> 00:13:18,786
-finds those instances of
+如何能够找到 NSTouchBar
 
 
 569
 00:13:18,786 --> 00:13:19,396
-NSTouchBar.
+的实例
 
 
 570
 00:13:19,396 --> 00:13:21,286
-And I big part of that is the
+这里很重要的一个部分是
 
 
 571
 00:13:21,286 --> 00:13:22,626
-NSTouchBarProvider protocol.
+NSTouchBarProvider 协议
 
 
 572
 00:13:23,436 --> 00:13:24,786
-And it's a fairly simple
+这是一个很简单的
 
 
 573
 00:13:24,786 --> 00:13:25,256
-protocol.
+协议
 
 
 574
 00:13:25,496 --> 00:13:26,976
-It's just exposing a read-only
+它揭示了 Touch Bar 的一个
 
 
 575
 00:13:26,976 --> 00:13:28,886
-Touch Bar property.
+只读属性
 
 
 576
 00:13:28,886 --> 00:13:30,846
-NSResponder itself implements
+NSResponder 创新性的
 
 
 577
 00:13:30,846 --> 00:13:31,866
-this protocol right out of the
+执行了这个
 
 
 578
 00:13:31,866 --> 00:13:32,346
-box.
+协议
 
 
 579
 00:13:32,346 --> 00:13:33,256
-And we'll cover that in just a
+这个我们一会儿将会
 
 
 580
 00:13:33,256 --> 00:13:33,636
-second.
+谈到
 
 
 581
 00:13:34,006 --> 00:13:35,556
-But sometimes it's useful to
+有时候将 Touch Bar 加到
 
 
 582
 00:13:35,556 --> 00:13:36,676
-attach a Touch Bar to your
+你的应用委托
 
 
 583
 00:13:36,676 --> 00:13:38,386
-application delegate, or window
+或者窗口委托是
 
 
 584
 00:13:38,386 --> 00:13:38,976
-delegate.
+有用的
 
 
 585
 00:13:38,976 --> 00:13:40,156
-And neither of those is likely
+它们中任何一个都
 
 
 586
 00:13:40,156 --> 00:13:41,656
-to be a subclass of NSResponder.
+不是 NSResponder 的子类
 
 
 587
 00:13:41,966 --> 00:13:43,016
-So, let's see how you go ahead
+让我们来看看
 
 
 588
 00:13:43,016 --> 00:13:44,016
-and implement that protocol
+你将如何执行这个
 
 
 589
 00:13:44,016 --> 00:13:44,486
-yourself.
+协议
 
 
 590
 00:13:45,436 --> 00:13:47,256
-This looks like a lot of code,
+这起来和很多其他的代码一样
 
 
 591
 00:13:47,256 --> 00:13:48,486
-but really we're just using a
+但是我们只是用到了 Touch Bar 的属性中
 
 
 592
 00:13:48,486 --> 00:13:50,586
-Swift lazy variable here for the
+的 Swift 延迟
 
 
 593
 00:13:50,586 --> 00:13:51,396
-Touch Bar property.
+变量
 
 
 594
 00:13:51,986 --> 00:13:53,216
-And the first time the Touch Bar
+当 Touch Bar 第一次被访问时
 
 
 595
 00:13:53,216 --> 00:13:54,556
-property is accessed, Swift is
+Swift 就会开始
 
 
 596
 00:13:54,556 --> 00:13:55,576
-going to go ahead and run this
+运行代码块
 
 
 597
 00:13:55,576 --> 00:13:56,966
-block to instantiate our Touch
+并实例化
 
 
 598
 00:13:56,996 --> 00:13:57,196
-Bar.
+Touch Bar
 
 
 599
 00:13:57,416 --> 00:13:58,696
-All the code to create the item
+也就是我们在上一张幻灯片里看到的
 
 
 600
 00:13:58,696 --> 00:13:59,886
-in bar and stuff we looked at in
+在 Touch Bar 和别的地方创建项
 
 
 601
 00:13:59,886 --> 00:14:00,786
-the previous slides.
+的那些代码
 
 
 602
 00:14:02,176 --> 00:14:03,936
-Something else to mention is
+还需要提及的是
 
 
 603
 00:14:03,936 --> 00:14:05,706
-that AppKit key value observes
+AppKit Key 值可以监测
 
 
 604
 00:14:05,706 --> 00:14:06,296
-this property.
+这个属性
 
 
 605
 00:14:06,296 --> 00:14:07,606
-So, if you feel the need to
+如果你需要
 
 
 606
 00:14:07,756 --> 00:14:08,706
-replace your Touch Bar
+完全移除 Touch Bar
 
 
 607
 00:14:08,706 --> 00:14:09,876
-wholesale, we'll notice that
+我们将注意到
 
 
 608
 00:14:09,876 --> 00:14:10,526
-sort of change.
+这个改变
 
 
 609
 00:14:11,706 --> 00:14:13,756
-Let's look at how NSResponder
+让我们看看 NSResponder
 
 
 610
 00:14:13,756 --> 00:14:14,926
-implements this.
+如何执行它
 
 
 611
 00:14:14,926 --> 00:14:16,426
-First, it exposes that Touch Bar
+首先 它表明 touchBar 属性
 
 
 612
 00:14:16,426 --> 00:14:17,456
-property as a read-write
+是一个可读写的属性
 
 
 613
 00:14:17,456 --> 00:14:18,906
-property instead of read-only.
+而不是只读的
 
 
 614
 00:14:19,226 --> 00:14:20,596
-And the significance of that is
+它的重要性在于你可以
 
 
 615
 00:14:20,596 --> 00:14:22,076
-that you can set instances of
+在你应用的不同部分设置
 
 
 616
 00:14:22,186 --> 00:14:24,286
-NSTouchBar on various pieces of
+NSTouchBar
 
 
 617
 00:14:24,286 --> 00:14:24,946
-your application.
+实例
 
 
 618
 00:14:24,946 --> 00:14:26,086
-On the responders, you have in
+你可以在响应器的窗口
 
 
 619
 00:14:26,086 --> 00:14:26,596
-your windows.
+上看到
 
 
 620
 00:14:26,596 --> 00:14:27,856
-Like views and view controllers,
+就像视图 视图控制器
 
 
 621
 00:14:27,856 --> 00:14:28,696
-and window controllers.
+和窗口控制器那样
 
 
 622
 00:14:29,176 --> 00:14:31,086
-And that's really neat because
+这非常简单 因为
 
 
 623
 00:14:31,086 --> 00:14:32,076
-you don't necessarily have a
+你不用为每个
 
 
 624
 00:14:32,076 --> 00:14:33,306
-subclass for each and every one
+控件创建
 
 
 625
 00:14:33,306 --> 00:14:34,056
-of those controls.
+子类
 
 
 626
 00:14:34,746 --> 00:14:36,636
-If you are making a subclass of
+如果你为控件或
 
 
 627
 00:14:36,636 --> 00:14:37,676
-a control, or really any
+任何 NSResponder 创建了子类
 
 
 628
 00:14:37,766 --> 00:14:39,826
-NSResponder, NSResponder also
+NSResponder 同样会
 
 
 629
 00:14:39,826 --> 00:14:41,136
-exposes this makeTouchBar
+暴露 makeTouchBar()
 
 
 630
 00:14:41,136 --> 00:14:41,476
-method.
+方法
 
 
 631
 00:14:42,506 --> 00:14:43,536
-So, makeTouchBar is pretty
+所以 makeTouchBar() 是非常
 
 
 632
 00:14:43,536 --> 00:14:43,886
-simple.
+简单的
 
 
 633
 00:14:44,456 --> 00:14:45,956
-The first time the Touch Bar
+touchBar 属性第一次
 
 
 634
 00:14:45,956 --> 00:14:47,296
-property is accessed on an
+接入 NSResponder 时
 
 
 635
 00:14:47,326 --> 00:14:48,996
-NSResponder, it's going to call
+它将调用 makeTouchBar() 并 
 
 
 636
 00:14:49,276 --> 00:14:50,976
-self makeTouchBar and run this
+运行此
 
 
 637
 00:14:50,976 --> 00:14:51,316
-code.
+代码
 
 
 638
 00:14:51,316 --> 00:14:52,416
-And we just have to return a new
+这时我们只用返回一个新的
 
 
 639
 00:14:52,416 --> 00:14:53,216
-Touch Bar for it.
+Touch Bar 给它
 
 
 640
 00:14:53,606 --> 00:14:55,286
-A lot of the system controls and
+很多系统控件和
 
 
 641
 00:14:55,286 --> 00:14:56,606
-system frameworks, which expose
+系统框架都使用这种方法
 
 
 642
 00:14:56,606 --> 00:14:58,316
-functionality use this method to
+暴露他们的
 
 
 643
 00:14:58,316 --> 00:14:59,976
-provide it.
+功能
 
 
 644
 00:15:00,656 --> 00:15:02,436
-So, I mentioned that NSResponder
+就像我提到的那样 NSResponder
 
 
 645
 00:15:02,436 --> 00:15:03,586
-has a read-write Touch Bar
+有一个读写属性
 
 
 646
 00:15:03,586 --> 00:15:04,556
-property and you can set the
+大家可以对它进行
 
 
 647
 00:15:04,556 --> 00:15:05,106
-touch bar.
+设置
 
 
 648
 00:15:05,106 --> 00:15:06,186
-And one of the most important
+其中一个很重要的
 
 
 649
 00:15:06,186 --> 00:15:07,346
-clients of that is actually
+受众就是
 
 
 650
 00:15:07,346 --> 00:15:08,096
-Interface Builder.
+Interface Builder
 
 
 651
 00:15:08,906 --> 00:15:10,026
-So, let me show you how to build
+让我来向大家展示如何通过
 
 
 652
 00:15:10,026 --> 00:15:11,196
-a Touch Bar UI from Interface
+Interface Builder 创建一个
 
 
 653
 00:15:11,196 --> 00:15:11,496
-Builder.
+Touch Bar UI
 
 
 654
 00:15:11,956 --> 00:15:13,646
-If we go ahead and start with a
+如果我们从
 
 
 655
 00:15:13,646 --> 00:15:14,616
-new story board, we have a
+Story Board 开始
 
 
 656
 00:15:14,616 --> 00:15:16,136
-window controller seen here, and
+我们可以看到一个窗口控制器
 
 
 657
 00:15:16,136 --> 00:15:17,616
-we can filter the object library
+然后我们可以通过过滤对象库
 
 
 658
 00:15:17,996 --> 00:15:19,546
-to show us Touch Bar controls.
+来展示 Touch Bar 控件
 
 
 659
 00:15:20,166 --> 00:15:22,106
-So, if we just check the object
+所以如果我们检查对象库
 
 
 660
 00:15:22,106 --> 00:15:23,316
-library, here an instance of NS
+这里有一个 NSTouchBar 的实例
 
 
 661
 00:15:23,316 --> 00:15:24,746
-Touch Bar and we can drag that
+我们可以将它拖到
 
 
 662
 00:15:24,746 --> 00:15:25,876
-onto our window controller.
+窗口控制器上
 
 
 663
 00:15:26,336 --> 00:15:27,506
-And now we have an empty Touch
+现在我们得到了一个空的
 
 
 664
 00:15:27,506 --> 00:15:29,066
-Bar to play with and going back
+Touch Bar
 
 
 665
 00:15:29,066 --> 00:15:31,026
-to the object library, we can go
+回到对象库
 
 
 666
 00:15:31,026 --> 00:15:32,426
-ahead and see that there's
+我们可以看到一打打的
 
 
 667
 00:15:32,476 --> 00:15:33,856
-dozens and dozens of
+预配置的控件
 
 
 668
 00:15:33,856 --> 00:15:35,486
-preconfigured controls and Touch
+和 Touch Bar 项
 
 
 669
 00:15:35,526 --> 00:15:36,836
-Bar items we can just drag into
+我们可以把它拖到
 
 
 670
 00:15:36,836 --> 00:15:37,376
-the Touch Bar.
+Touch Bar 里
 
 
 671
 00:15:37,626 --> 00:15:40,896
-And from here, we can wire these
+从现在起 我们
 
 
 672
 00:15:40,896 --> 00:15:42,776
-items up with ID connections, or
+就可以用 ID 连接或者捆绑来
 
 
 673
 00:15:42,776 --> 00:15:43,636
-bindings or whatever.
+写这些项了
 
 
 674
 00:15:43,886 --> 00:15:45,626
-And it's actually very possible
+其实 不写一行代码
 
 
 675
 00:15:45,626 --> 00:15:47,056
-to write Touch Bar apps that are
+就使 Touch Bar 应用
 
 
 676
 00:15:47,056 --> 00:15:48,336
-perfectly functional and useable
+能进行完美的工作
 
 
 677
 00:15:48,526 --> 00:15:49,646
-without ever writing a line of
+和使用是非常
 
 
 678
 00:15:49,646 --> 00:15:50,806
-code for it.
+可能的
 
 
 679
 00:15:51,556 --> 00:15:53,606
-So, that covers creating
+我们讲完了创建
 
 
 680
 00:15:53,606 --> 00:15:54,906
-instances of NSTouchBarItem.
+NSTouchBarItem 实例
 
 
 681
 00:15:55,236 --> 00:15:56,506
-Let's see how this fits into the
+现在让我们来看 它将如何适应
 
 
 682
 00:15:56,506 --> 00:15:57,886
-bigger responder chain and how
+大的响应器链 以及我们
 
 
 683
 00:15:57,886 --> 00:15:59,506
-we discover all of these
+如何发现所有的 Touch Bar
 
 
 684
 00:15:59,506 --> 00:16:01,826
-individual Touch Bar instances.
+个体实例
 
 
 685
 00:16:01,826 --> 00:16:03,766
-So, a refresher, a responder
+一个刷新控件
 
 
 686
 00:16:03,766 --> 00:16:05,266
-chain is made up of instances of
+一个响应器链是由
 
 
 687
 00:16:05,266 --> 00:16:06,516
-the NSResponder class.
+NSResponder 类的实例组成的
 
 
 688
 00:16:06,836 --> 00:16:08,036
-And one of the most important
+NSResponder 类中最重要
 
 
 689
 00:16:08,036 --> 00:16:09,336
-properties of the NSResponder
+的属性就是它的
 
 
 690
 00:16:09,336 --> 00:16:11,416
-class is this next responder
+下一个响应器的
 
 
 691
 00:16:11,416 --> 00:16:12,776
-property it has.
+属性
 
 
 692
 00:16:13,266 --> 00:16:14,546
-And that just points at another
+这指向了另一个
 
 
 693
 00:16:14,546 --> 00:16:15,056
-responder.
+响应器
 
 
 694
 00:16:15,406 --> 00:16:16,396
-But it basically means that
+这意味着给定一个响应器
 
 
 695
 00:16:16,396 --> 00:16:17,956
-given a responder, we've
+我们就能链接
 
 
 696
 00:16:17,956 --> 00:16:20,246
-anchored an entire chain of
+整条响应器链并使其能
 
 
 697
 00:16:20,246 --> 00:16:21,936
-responders capable of handling
+处理事件
 
 
 698
 00:16:21,936 --> 00:16:23,256
-events and actions and things.
+行动和别的东西
 
 
 699
 00:16:23,656 --> 00:16:26,386
-And AppKit uses many different
+AppKit 用很多不同的
 
 
 700
 00:16:26,486 --> 00:16:28,196
-responders as the anchors for
+响应器作为链条的锚
 
 
 701
 00:16:28,196 --> 00:16:29,276
-chains for handling keyboard
+来处理键盘事件
 
 
 702
 00:16:29,276 --> 00:16:31,256
-events, and actions and kit
+对行为和点击的测试
 
 
 703
 00:16:31,256 --> 00:16:32,846
-testing and routing mouse events
+以及常规的鼠标事件。
 
 
 704
 00:16:32,846 --> 00:16:34,316
-and things, but let's cover how
+我们来讲讲
 
 
 705
 00:16:34,316 --> 00:16:35,226
-keyboard event works.
+键盘事件如何工作
 
 
 706
 00:16:35,226 --> 00:16:36,376
-Because Touch Bar is part of the
+因为 Touch Bar 是键盘的
 
 
 707
 00:16:36,376 --> 00:16:36,786
-keyboard.
+一部分
 
 
 708
 00:16:37,596 --> 00:16:38,846
-So, we're going to have an
+系统将交给我们
 
 
 709
 00:16:38,846 --> 00:16:39,886
-NSEvent handed to us by the
+一个 NSEvent 事件
 
 
 710
 00:16:39,886 --> 00:16:41,296
-system, and that's going to go
+随后这个事件
 
 
 711
 00:16:41,296 --> 00:16:42,376
-over the NSApplication.
+将返回 NSApplication
 
 
 712
 00:16:43,006 --> 00:16:44,236
-And NSApplication is going to
+NSApplication 将告知我们
 
 
 713
 00:16:44,236 --> 00:16:45,236
-say what do I do with this
+要对键盘事件
 
 
 714
 00:16:45,236 --> 00:16:45,796
-keyboard event.
+做什么
 
 
 715
 00:16:46,446 --> 00:16:48,246
-And most NSApplications are
+大多数 NSApplication 会问
 
 
 716
 00:16:48,246 --> 00:16:49,346
-going to say do I have a key
+我是否有主
 
 
 717
 00:16:49,346 --> 00:16:49,756
-window?
+窗口
 
 
 718
 00:16:49,906 --> 00:16:51,796
-Okay, it gets the keyboard event
+好的 这就是一个键盘
 
 
 719
 00:16:51,796 --> 00:16:51,936
-now.
+事件
 
 
 720
 00:16:52,926 --> 00:16:54,266
-And the key window meanwhile is
+同时 主窗口也会有
 
 
 721
 00:16:54,266 --> 00:16:55,256
-going to have the same question,
+同样的问题
 
 
 722
 00:16:55,256 --> 00:16:56,426
-what do I do with this keyboard
+我要对键盘事件
 
 
 723
 00:16:57,186 --> 00:16:57,506
-event.
+做什么
 
 
 724
 00:16:57,506 --> 00:16:59,616
-Every NS Window had a property
+每一个 NSWindow 都有
 
 
 725
 00:16:59,616 --> 00:17:01,086
-called first responder and
+一个叫做第一响应器的属性
 
 
 726
 00:17:01,086 --> 00:17:03,186
-that's designating where the
+它能指出键盘事件在
 
 
 727
 00:17:03,186 --> 00:17:04,356
-responder chain starts for
+响应器链条的
 
 
 728
 00:17:04,356 --> 00:17:05,616
-keyboard events and actions and
+什么位置开始启动
 
 
 729
 00:17:05,616 --> 00:17:05,925
-things.
+等等 
 
 
 730
 00:17:06,165 --> 00:17:06,965
-So, the key window is going to
+所以 主窗口
 
 
 731
 00:17:06,965 --> 00:17:07,996
-go ahead and say, all right
+会说 好的
 
 
 732
 00:17:07,996 --> 00:17:08,915
-let's send this event to my
+我们来将它发送到我的第一响应器
 
 
 733
 00:17:08,915 --> 00:17:11,465
-first responder, like in its key
+就像它在按下和释放键盘
 
 
 734
 00:17:11,465 --> 00:17:12,326
-down or key up method.
+方法里一样
 
 
 735
 00:17:13,236 --> 00:17:14,516
-So, the first responder
+这很有趣
 
 
 736
 00:17:14,516 --> 00:17:16,965
-meanwhile it's interesting,
+第一响应器是我们锚定响应链
 
 
 737
 00:17:16,965 --> 00:17:17,846
-because that's where it's
+的位置 是我们将要
 
 
 738
 00:17:17,846 --> 00:17:19,096
-anchoring the responder chain,
+像响应器方法那样
 
 
 739
 00:17:19,096 --> 00:17:19,906
-where we're going to be handling
+处理它的地方
 
 
 740
 00:17:19,906 --> 00:17:21,126
-this as a responder method, not
+而不仅仅是
 
 
 741
 00:17:21,126 --> 00:17:22,106
-just generic event routing.
+通用路由事件
 
 
 742
 00:17:22,106 --> 00:17:23,276
-But it's going to have a
+它将作出一个决定
 
 
 743
 00:17:23,276 --> 00:17:24,976
-decision, do I handle the event
+我是在按下键盘的时候
 
 
 744
 00:17:24,976 --> 00:17:27,076
-in key down, or do I call super
+处理事件 还是调用父类
 
 
 745
 00:17:27,076 --> 00:17:28,256
-and let it pass that to the next
+然后让它传递给下一个
 
 
 746
 00:17:28,256 --> 00:17:28,756
-responder.
+响应器
 
 
 747
 00:17:29,456 --> 00:17:30,596
-So, let's say it passes it to
+我们假设它传递到了
 
 
 748
 00:17:30,596 --> 00:17:31,296
-the next responder.
+下一个响应器
 
 
 749
 00:17:31,296 --> 00:17:33,196
-Usually the first responder will
+一般来说 第一个响应是一个视图
 
 
 750
 00:17:33,196 --> 00:17:34,496
-be a view, the second responder
+第二个响应器
 
 
 751
 00:17:34,496 --> 00:17:35,266
-will be a super view.
+是一个父视图
 
 
 752
 00:17:35,786 --> 00:17:37,206
-It will make the same choice.
+它会作出同样的选择
 
 
 753
 00:17:37,576 --> 00:17:39,046
-And these days, use and view
+目前 视图和
 
 
 754
 00:17:39,046 --> 00:17:40,256
-controllers tend to be
+视图控制器一般
 
 
 755
 00:17:40,256 --> 00:17:40,876
-[inaudible] in the responder
+是在响应器链
 
 
 756
 00:17:40,876 --> 00:17:41,156
-chain.
+里面的
 
 
 757
 00:17:41,426 --> 00:17:42,976
-So, pass it up to a view
+所以 将它传递给视图控制器
 
 
 758
 00:17:42,976 --> 00:17:44,216
-controller, have the same choice
+同样会使 Handler
 
 
 759
 00:17:44,216 --> 00:17:45,276
-handler call super.
+调用父类
 
 
 760
 00:17:45,356 --> 00:17:46,156
-It doesn't handle it.
+它不会处理它
 
 
 761
 00:17:46,426 --> 00:17:48,146
-It might even go and reach all
+它可能会回到
 
 
 762
 00:17:48,146 --> 00:17:49,016
-the way back to the initial
+最初引起
 
 
 763
 00:17:49,016 --> 00:17:50,526
-window that routed the event in
+路由事件
 
 
 764
 00:17:50,526 --> 00:17:51,246
-the first place.
+的窗口
 
 
 765
 00:17:51,546 --> 00:17:52,336
-And that, as part of the
+从而 它作为
 
 
 766
 00:17:52,336 --> 00:17:53,416
-responder chain, can make the
+响应器链条的一部分
 
 
 767
 00:17:53,416 --> 00:17:54,636
-same decisions whether to handle
+可以决定是处理
 
 
 768
 00:17:54,636 --> 00:17:55,336
-it or pass it on.
+还是传递它
 
 
 769
 00:17:55,646 --> 00:17:56,676
-And that can percolate all the
+这能将它滤回
 
 
 770
 00:17:56,676 --> 00:17:57,936
-way back up to the application.
+应用
 
 
 771
 00:17:58,626 --> 00:17:59,436
-So, that's how we handle
+这就是我们处理键盘
 
 
 772
 00:17:59,436 --> 00:18:00,156
-keyboard events.
+事件的方法
 
 
 773
 00:18:00,536 --> 00:18:01,316
-Touch Bar is part of the
+Touch Bar 是键盘的
 
 
 774
 00:18:01,316 --> 00:18:01,716
-keyboard.
+一部分
 
 
 775
 00:18:01,946 --> 00:18:03,156
-So, it also turns out these are
+这也表明 这些是我们可以
 
 
 776
 00:18:03,156 --> 00:18:04,606
-all the places we can attach
+添加
 
 
 777
 00:18:04,606 --> 00:18:05,766
-instances of NSTouchBar.
+NSTouchBar 实例的位置
 
 
 778
 00:18:06,246 --> 00:18:07,886
-And we search them in exactly
+我们以
 
 
 779
 00:18:07,886 --> 00:18:08,976
-the same order the keyboard
+与在响应器链里的路由
 
 
 780
 00:18:08,976 --> 00:18:10,256
-event was routed through the
+键盘事件相同的顺序
 
 
 781
 00:18:10,256 --> 00:18:10,996
-responder chain.
+来查找它们
 
 
 782
 00:18:11,926 --> 00:18:13,616
-So, one question you should be
+所以 你应该问的问题是
 
 
 783
 00:18:13,616 --> 00:18:15,276
-asking is hey, I notice you have
+嘿 我注意到你有
 
 
 784
 00:18:15,276 --> 00:18:16,836
-five instances of NSTouchBar
+5 个 NSTouchBar
 
 
 785
 00:18:16,836 --> 00:18:17,076
-here.
+实例
 
 
 786
 00:18:17,326 --> 00:18:18,966
-How do you go from that to one
+你要如何将它们
 
 
 787
 00:18:18,966 --> 00:18:20,216
-Touch Bar on the device.
+放在设备上的 Touch Bar 上
 
 
 788
 00:18:20,686 --> 00:18:21,926
-And I'm going to cover that in
+我马上会讲到这个
 
 
 789
 00:18:21,926 --> 00:18:22,546
-just a second.
+问题
 
 
 790
 00:18:22,926 --> 00:18:25,036
-But first I want to make a small
+但是首先 我想谈谈
 
 
 791
 00:18:25,036 --> 00:18:26,006
-note about views and views
+视图和视图
 
 
 792
 00:18:26,006 --> 00:18:26,576
-controllers.
+控制器
 
 
 793
 00:18:27,386 --> 00:18:28,276
-You're probably going to be
+你可能会在某个时候需要
 
 
 794
 00:18:28,276 --> 00:18:29,466
-attaching a Touch Bar to a view
+将 Touch Bar 加到视图控制器上
 
 
 795
 00:18:29,466 --> 00:18:31,216
-controller at some point, making
+来制作你的
 
 
 796
 00:18:31,436 --> 00:18:32,376
-your application.
+应用程序
 
 
 797
 00:18:32,956 --> 00:18:34,046
-And you'll run and test this.
+你会运行并测试
 
 
 798
 00:18:34,046 --> 00:18:34,786
-And you're going to see that
+然后你会发现
 
 
 799
 00:18:34,786 --> 00:18:35,816
-your Touch Bar doesn't show up
+Touch Bar 完全没有显示
 
 
 800
 00:18:35,816 --> 00:18:37,016
-at all and you'll think, oh, I
+这时你会想
 
 
 801
 00:18:37,016 --> 00:18:38,206
-guess my view controller is not
+我猜我的视图控制器不在
 
 
 802
 00:18:38,206 --> 00:18:39,186
-in the responder chain.
+响应器链上
 
 
 803
 00:18:39,356 --> 00:18:40,356
-And you'll go ahead and look at
+你会去查看你的视图控制器
 
 
 804
 00:18:40,356 --> 00:18:41,466
-your view controllers view and
+你会发现下一个响应器
 
 
 805
 00:18:41,466 --> 00:18:42,846
-see that its next responder is
+确实就是你的
 
 
 806
 00:18:42,846 --> 00:18:43,866
-indeed your view controller.
+视图控制器
 
 
 807
 00:18:44,376 --> 00:18:45,926
-And what's going on here is that
+这里发生的事是
 
 
 808
 00:18:46,376 --> 00:18:48,786
-while your particular responder
+当特定的响应器链
 
 
 809
 00:18:48,786 --> 00:18:50,216
-chain is set up correctly, it's
+被正确的设置，
 
 
 810
 00:18:50,216 --> 00:18:51,226
-not anchored in the first
+它不是在窗口的第一响应器
 
 
 811
 00:18:51,226 --> 00:18:52,246
-responder of the window.
+里被锚定
 
 
 812
 00:18:52,806 --> 00:18:54,326
-And that's often because the
+那通常是因为
 
 
 813
 00:18:54,326 --> 00:18:55,506
-first responder of the window
+窗口的第一响应器
 
 
 814
 00:18:55,506 --> 00:18:56,906
-has to return true for the
+必须对 acceptsFirstResponder 方法
 
 
 815
 00:18:56,906 --> 00:18:58,426
-acceptsFirstResponder method.
+返回真
 
 
 816
 00:18:58,876 --> 00:18:59,736
-So, if you wind up in this
+如果你在这种情况下结束
 
 
 817
 00:18:59,736 --> 00:19:00,946
-situation, it's really easy to
+很容易让你的第一响应器
 
 
 818
 00:19:00,946 --> 00:19:02,456
-subclass NS View or whatever
+去继承 NSView 或第一响应器
 
 
 819
 00:19:02,456 --> 00:19:03,926
-your first responder is to
+将要接受的内容并
 
 
 820
 00:19:03,926 --> 00:19:06,236
-accept first responder and make
+做出一个锚定在
 
 
 821
 00:19:06,236 --> 00:19:07,506
-a valid responder chain anchored
+第一响应器里的
 
 
 822
 00:19:07,506 --> 00:19:08,316
-at the first responder.
+有效的响应器链
 
 
 823
 00:19:09,396 --> 00:19:10,956
-So, let's get back to how we're
+让我们回到
 
 
 824
 00:19:10,956 --> 00:19:11,736
-going to handle multiple
+如何在这里处理多个
 
 
 825
 00:19:11,736 --> 00:19:13,006
-NSTouchBar instances on this.
+NSTouchBar 实例
 
 
 826
 00:19:13,326 --> 00:19:15,296
-The easiest thing to remember is
+最简单的是记住
 
 
 827
 00:19:15,296 --> 00:19:17,196
-that the responder, with an
+如果一个 NSTouchBar
 
 
 828
 00:19:17,226 --> 00:19:18,856
-NSTouchBar closest to that first
+距离第一响应器
 
 
 829
 00:19:18,856 --> 00:19:20,026
-responder, so closest to the
+很近 也就是离
 
 
 830
 00:19:20,026 --> 00:19:22,506
-keyboard input, its Touch Bar is
+键盘输入很近 它的 Touch Bar
 
 
 831
 00:19:22,506 --> 00:19:23,556
-going to win and take over the
+将会胜利并
 
 
 832
 00:19:23,556 --> 00:19:24,126
-whole thing.
+取代其他
 
 
 833
 00:19:24,726 --> 00:19:26,286
-Calling back to earlier where I
+回忆一下我之前提到的
 
 
 834
 00:19:26,286 --> 00:19:27,486
-mentioned that AVKit and some
+AVKit 和其他系统框架
 
 
 835
 00:19:27,486 --> 00:19:28,646
-other system frameworks provide
+能提供支持
 
 
 836
 00:19:28,646 --> 00:19:29,876
-support, you're probably
+你可能
 
 
 837
 00:19:29,876 --> 00:19:30,886
-thinking that they're likely
+会认为它们
 
 
 838
 00:19:30,886 --> 00:19:32,096
-going to provide support in NS
+会为距离第一响应器
 
 
 839
 00:19:32,096 --> 00:19:33,006
-Views which are going to be
+更近的 NS View
 
 
 840
 00:19:33,006 --> 00:19:34,576
-closer to the first responder
+提供支持
 
 
 841
 00:19:34,946 --> 00:19:36,266
-than your window controllers or
+而不是为你的窗口控制器或者
 
 
 842
 00:19:36,266 --> 00:19:37,556
-application delegates might be.
+应用程序委托
 
 
 843
 00:19:38,256 --> 00:19:39,996
-So, we need some way of sharing
+所以我们需要能
 
 
 844
 00:19:40,276 --> 00:19:41,556
-the device Touch Bar across
+在多个 NSTouchBar 实例中分享
 
 
 845
 00:19:41,556 --> 00:19:43,096
-multiple instances of NSTouchBar
+Touch Bar 设备的方法
 
 
 846
 00:19:43,096 --> 00:19:44,266
-and we have a way of doing that.
+我们有这样的方法
 
 
 847
 00:19:44,756 --> 00:19:45,856
-And that's accomplished with
+那就是用
 
 
 848
 00:19:45,856 --> 00:19:47,136
-this special item identifier,
+一个叫做 otherItemsProxy 的
 
 
 849
 00:19:47,356 --> 00:19:48,646
-called the otherItemsProxy.
+特殊的项标识符来完善它
 
 
 850
 00:19:49,426 --> 00:19:50,586
-I say it's a special item
+我称它为特殊项
 
 
 851
 00:19:50,586 --> 00:19:52,116
-identifier because you don't
+标识符因为
 
 
 852
 00:19:52,116 --> 00:19:53,176
-have to create any item for
+你不用为它创建
 
 
 853
 00:19:53,176 --> 00:19:53,406
-this.
+任何项
 
 
 854
 00:19:53,406 --> 00:19:54,316
-You don't have to put it in your
+你不用将它放到你的
 
 
 855
 00:19:54,316 --> 00:19:55,786
-template item set, you don't
+模板项组里
 
 
 856
 00:19:55,786 --> 00:19:57,596
-have to handle that identifier
+你不必在委托里
 
 
 857
 00:19:57,746 --> 00:19:58,866
-in your delegate and make item
+操作标识符 然后为标识符
 
 
 858
 00:19:58,866 --> 00:19:59,936
-for identifier case.
+创建项
 
 
 859
 00:20:01,166 --> 00:20:02,146
-But when you go ahead and
+但当你将代理服务器
 
 
 860
 00:20:02,146 --> 00:20:03,956
-include other items proxy in
+添加到
 
 
 861
 00:20:03,956 --> 00:20:05,196
-your default item identifier
+你的默认项标识符组里
 
 
 862
 00:20:05,246 --> 00:20:07,926
-array, when AppKit is harvesting
+当 AppKit 从响应器链里
 
 
 863
 00:20:08,006 --> 00:20:09,226
-NSTouchBar from the responder
+收到 NSTouchBar 时
 
 
 864
 00:20:09,226 --> 00:20:10,636
-chain, it will go ahead and
+它将用
 
 
 865
 00:20:10,636 --> 00:20:12,566
-replace the otherItemsProxy with
+距离第一响应器
 
 
 866
 00:20:12,566 --> 00:20:14,186
-the items from responders closer
+更近的项来代替
 
 
 867
 00:20:14,186 --> 00:20:15,286
-to the first responder.
+otherItemsProxy
 
 
 868
 00:20:16,406 --> 00:20:17,716
-So, let's look at that in
+我们来用实际操作来了解
 
 
 869
 00:20:17,716 --> 00:20:17,986
-action.
+一下
 
 
 870
 00:20:17,986 --> 00:20:18,976
-Here's an example of mail.
+这里是一个“邮件”的例子
 
 
 871
 00:20:19,396 --> 00:20:20,556
-My keyboard focus is on the
+我的光标
 
 
 872
 00:20:20,556 --> 00:20:21,346
-recipient's field.
+在收件人栏
 
 
 873
 00:20:21,346 --> 00:20:22,796
-And the recipient's field is
+收件人栏可以
 
 
 874
 00:20:22,796 --> 00:20:24,386
-providing suggestions for who I
+为我要向谁发送邮件
 
 
 875
 00:20:24,386 --> 00:20:25,446
-might to send the email to.
+提供建议
 
 
 876
 00:20:25,786 --> 00:20:27,716
-I also have this send button on
+我在 Touch Bar
 
 
 877
 00:20:27,716 --> 00:20:29,016
-the left side of the application
+应用部分的左侧
 
 
 878
 00:20:29,016 --> 00:20:29,896
-section of the Touch Bar.
+有一个发送按钮
 
 
 879
 00:20:30,766 --> 00:20:32,026
-If I were to change my keyboard
+如果我将我的光标
 
 
 880
 00:20:32,026 --> 00:20:34,886
-focus instead to the composition
+移到窗口中的
 
 
 881
 00:20:34,886 --> 00:20:36,416
-view in the window, I have a
+组合视图 我将有
 
 
 882
 00:20:36,416 --> 00:20:37,346
-bunch of text formatting
+很多文本排版控件
 
 
 883
 00:20:37,346 --> 00:20:38,446
-controls and an emoji picker.
+和一个表情符号选择器
 
 
 884
 00:20:38,486 --> 00:20:39,576
-But I still have that send
+但是我仍然有那个发送
 
 
 885
 00:20:39,576 --> 00:20:39,856
-button.
+按钮
 
 
 886
 00:20:40,596 --> 00:20:42,246
-And the way this breaks down is
+这个过程分解开来就是
 
 
 887
 00:20:42,246 --> 00:20:44,726
-that mail's composed window
+组织邮件的窗口控制器
 
 
 888
 00:20:44,726 --> 00:20:46,806
-controller has a Touch Bar with
+有一个带有发送键
 
 
 889
 00:20:46,806 --> 00:20:47,776
-a send button and an
+和 otherItemsProxy 的
 
 
 890
 00:20:47,776 --> 00:20:48,796
-otherItemsProxy.
+Touch Bar
 
 
 891
 00:20:50,036 --> 00:20:51,566
-And the recipient's field is
+然后收件人栏
 
 
 892
 00:20:51,626 --> 00:20:52,696
-providing the candidates.
+会提供候选人
 
 
 893
 00:20:52,696 --> 00:20:53,936
-And the recipient's field is
+收件人域和第一响应器
 
 
 894
 00:20:53,936 --> 00:20:54,816
-very close to the first
+距离很近
 
 
 895
 00:20:54,816 --> 00:20:55,916
-responder, so it's going to get
+所以它会先
 
 
 896
 00:20:55,916 --> 00:20:57,416
-first shot at that.
+执行
 
 
 897
 00:20:57,766 --> 00:20:58,776
-But the window controller
+但是窗口控制器
 
 
 898
 00:20:58,776 --> 00:21:00,506
-including the otherItemsProxy
+包括 otherItemsProxy
 
 
 899
 00:21:00,816 --> 00:21:01,926
-means we can merge those two
+意味着我们可以合并这两个
 
 
 900
 00:21:01,926 --> 00:21:03,606
-Touch Bars.
+Touch Bar
 
 
 901
 00:21:03,726 --> 00:21:05,146
-Likewise, for the composition
+同样的 对于组合视图
 
 
 902
 00:21:05,146 --> 00:21:06,956
-view, the window controller is
+窗口控制器
 
 
 903
 00:21:06,956 --> 00:21:08,446
-exactly the same instance, it's
+是完全相同的实例
 
 
 904
 00:21:09,076 --> 00:21:11,276
-just the responder chain
+只不过响应器链锚定在
 
 
 905
 00:21:11,276 --> 00:21:12,436
-anchored at the first responder
+第一响应器
 
 
 906
 00:21:12,706 --> 00:21:15,026
-includes the composition view
+包括在窗口控制器之前
 
 
 907
 00:21:15,316 --> 00:21:16,386
-before the window controller.
+的组合视图
 
 
 908
 00:21:17,176 --> 00:21:18,556
-Something else to mention is
+需要提到的是
 
 
 909
 00:21:18,626 --> 00:21:19,486
-that this is completely
+这和自定义功能
 
 
 910
 00:21:19,486 --> 00:21:20,936
-compatible with customization.
+是完全兼容的
 
 
 911
 00:21:20,986 --> 00:21:22,636
-We use the otherItemsProxy to
+就像你期待的那样
 
 
 912
 00:21:22,756 --> 00:21:24,106
-build the default set of items,
+我们用 otherItemsProxy
 
 
 913
 00:21:24,476 --> 00:21:25,346
-like you'd expect.
+来创建项目的默认设置
 
 
 914
 00:21:25,676 --> 00:21:26,786
-And we go ahead and union the
+我们从合适的
 
 
 915
 00:21:26,786 --> 00:21:28,066
-allowed items from the eligible
+Touch Bar 里聚合
 
 
 916
 00:21:28,066 --> 00:21:28,646
-touch bars.
+被允许项
 
 
 917
 00:21:28,946 --> 00:21:30,336
-So, we can see we can customize
+所以我们看到 我们可以
 
 
 918
 00:21:30,336 --> 00:21:31,436
-the send button in mail, even
+在邮件里自定义发送键
 
 
 919
 00:21:31,436 --> 00:21:32,296
-though it's provided by a
+尽管是用
 
 
 920
 00:21:32,296 --> 00:21:34,176
-different responder than the
+不同的响应器
 
 
 921
 00:21:34,176 --> 00:21:35,096
-formatting controls.
+而不是排版控件
 
 
 922
 00:21:36,966 --> 00:21:39,406
-You might think, hey the
+你可能会想 诶
 
 
 923
 00:21:39,406 --> 00:21:40,636
-otherItemsProxy sounds pretty
+otherItemsProxy 听起来
 
 
 924
 00:21:40,636 --> 00:21:41,926
-great for the reliable
+是个很适合
 
 
 925
 00:21:41,926 --> 00:21:42,926
-functioning of my Touch Bar
+Touch Bar 的东西
 
 
 926
 00:21:42,926 --> 00:21:44,036
-stuff, and you'd be right, but
+你可能是对的 但是
 
 
 927
 00:21:44,036 --> 00:21:45,216
-there's a few cases where you do
+有些时候 
 
 
 928
 00:21:45,216 --> 00:21:46,146
-want to omit it.
+你应该忽略它
 
 
 929
 00:21:46,526 --> 00:21:48,346
-And if we go back to mail, but
+我们回到邮件
 
 
 930
 00:21:48,346 --> 00:21:49,796
-close all the windows, we're
+关掉所有窗口
 
 
 931
 00:21:49,796 --> 00:21:50,846
-going to see that we have a new
+我们会看到有
 
 
 932
 00:21:50,846 --> 00:21:52,006
-viewer window button in the
+一个新的视图窗口出现在
 
 
 933
 00:21:52,006 --> 00:21:52,476
-Touch Bar.
+Touch Bar 里
 
 
 934
 00:21:53,076 --> 00:21:54,336
-And that's provided by the
+这是由应用提供的
 
 
 935
 00:21:54,336 --> 00:21:56,006
-application, but it omits the
+但它省略了
 
 
 936
 00:21:56,006 --> 00:21:56,896
-otherItemsProxy.
+otherItemsProxy
 
 
 937
 00:21:57,296 --> 00:21:59,216
-When we go ahead and bring a
+当我们调出
 
 
 938
 00:21:59,216 --> 00:22:00,526
-window up that has Touch Bar
+一个有 Touch Bar 的窗口
 
 
 939
 00:22:00,526 --> 00:22:02,046
-content it's going to be closer
+它会距离
 
 
 940
 00:22:02,046 --> 00:22:03,336
-to the first responder, and the
+第一响应器近
 
 
 941
 00:22:03,336 --> 00:22:05,336
-lack of the otherItemsProxy in
+Touch Bar 里没有
 
 
 942
 00:22:05,336 --> 00:22:06,846
-the farther out Touch Bar means
+otherItemsProxy 意味着
 
 
 943
 00:22:06,846 --> 00:22:07,996
-it gets replaced entirely.
+它被完全替代了
 
 
 944
 00:22:09,446 --> 00:22:10,776
-So, there's another sort of
+另一种我想讲到的
 
 
 945
 00:22:10,776 --> 00:22:11,946
-special item identifier I want
+特殊项标识符
 
 
 946
 00:22:11,946 --> 00:22:13,176
-to cover and those are spaces.
+则是间距
 
 
 947
 00:22:13,606 --> 00:22:15,236
-So, if you see here, we've made
+这里 我们已经制作了
 
 
 948
 00:22:15,236 --> 00:22:16,526
-a mockup Touch Bar and we have a
+一个仿制的 Touch Bar
 
 
 949
 00:22:16,526 --> 00:22:17,956
-shark item and an angelfish.
+我们有一个鲨鱼和
 
 
 950
 00:22:18,456 --> 00:22:20,546
-And the angel fish probably
+一个天使鱼项
 
 
 951
 00:22:20,546 --> 00:22:21,546
-isn't that comfortable being so
+天使鱼可能不想
 
 
 952
 00:22:21,546 --> 00:22:22,456
-close to the shark.
+太靠近鲨鱼
 
 
 953
 00:22:22,456 --> 00:22:24,016
-Thankfully, the shark is facing
+谢天谢地 鲨鱼面朝
 
 
 954
 00:22:24,016 --> 00:22:25,046
-the wrong way so the fish
+错误的方向
 
 
 955
 00:22:25,046 --> 00:22:26,356
-probably isn't on the menu yet.
+所以鱼可能还不在菜单里
 
 
 956
 00:22:26,966 --> 00:22:28,446
-But we can go ahead and give the
+但是我们能给
 
 
 957
 00:22:28,446 --> 00:22:29,366
-angelfish some breathing room.
+天使鱼一点呼吸空间
 
 
 958
 00:22:29,366 --> 00:22:30,716
-And we can do that by adding a
+我们可以在
 
 
 959
 00:22:30,716 --> 00:22:32,006
-fixed space small item
+鲨鱼和天使鱼之间
 
 
 960
 00:22:32,006 --> 00:22:33,666
-identifier in the default item
+的默认项标识符组里
 
 
 961
 00:22:33,666 --> 00:22:35,166
-identifiers array in between the
+加入一个
 
 
 962
 00:22:35,166 --> 00:22:36,246
-shark and angelfish item
+固定间距的
 
 
 963
 00:22:36,246 --> 00:22:36,866
-identifiers.
+小项标识符
 
 
 964
 00:22:37,296 --> 00:22:38,646
-And we don't have to settle for
+我们不一定用小的
 
 
 965
 00:22:38,646 --> 00:22:40,236
-small, we can also use a large
+我们也可以用大的
 
 
 966
 00:22:40,236 --> 00:22:41,066
-one and give it a little bit
+来给它更多
 
 
 967
 00:22:41,066 --> 00:22:42,126
-more space.
+间距
 
 
 968
 00:22:42,206 --> 00:22:43,786
-And it's useful to use these
+这比对你的间距
 
 
 969
 00:22:43,786 --> 00:22:44,996
-instead of hard coding your own
+进行硬编码有用
 
 
 970
 00:22:44,996 --> 00:22:46,206
-space, because these are our
+因为
 
 
 971
 00:22:46,206 --> 00:22:47,626
-system defined values that may
+我们系统定义的值
 
 
 972
 00:22:47,626 --> 00:22:48,506
-change from release to release,
+会随着一次次发布而改变
 
 
 973
 00:22:48,506 --> 00:22:50,506
-but they also give your app an
+这会使你的 App 和
 
 
 974
 00:22:50,506 --> 00:22:51,836
-appearance similar to other apps
+系统里别的 App 看起来
 
 
 975
 00:22:51,836 --> 00:22:52,356
-on the system.
+非常相似
 
 
 976
 00:22:52,986 --> 00:22:54,406
-We don't have to stop with fixed
+不过我们不需要用
 
 
 977
 00:22:54,406 --> 00:22:55,356
-spaces though, we also have a
+固定间距来阻止它
 
 
 978
 00:22:55,356 --> 00:22:57,096
-flexible space identifier.
+我们同样有自动调整间距的标识符
 
 
 979
 00:22:57,246 --> 00:22:58,286
-And the flexible space is
+有趣的是 自动调整间距
 
 
 980
 00:22:58,286 --> 00:22:59,256
-interesting in that it's going
+会将
 
 
 981
 00:22:59,256 --> 00:23:00,786
-to push the adjacent items as
+邻近的项
 
 
 982
 00:23:00,786 --> 00:23:02,326
-far away from each other as they
+能推多远就
 
 
 983
 00:23:02,326 --> 00:23:03,956
-can get.
+推多远
 
 
 984
 00:23:03,956 --> 00:23:05,676
-So, in this case, the angelfish
+在这种情况下
 
 
 985
 00:23:05,676 --> 00:23:06,916
-probably feels a lot better with
+天使鱼可能觉得自动调整
 
 
 986
 00:23:06,916 --> 00:23:08,016
-that flexible space between it
+它和鲨鱼之间的间距更
 
 
 987
 00:23:08,016 --> 00:23:08,526
-and the shark.
+舒服一些
 
 
 988
 00:23:09,246 --> 00:23:11,006
-You might be thinking you could
+你可能认为你可以
 
 
 989
 00:23:11,006 --> 00:23:12,656
-put flexible space on two side
+将自动调整间距放在项的两侧
 
 
 990
 00:23:12,656 --> 00:23:13,606
-of an item to center it.
+使项目居中
 
 
 991
 00:23:13,906 --> 00:23:15,286
-And that's a very reasonable
+你有充分的理由
 
 
 992
 00:23:15,286 --> 00:23:15,606
-thought.
+这样想
 
 
 993
 00:23:16,126 --> 00:23:17,206
-If you do that, you're going,
+如果要这样做
 
 
 994
 00:23:17,376 --> 00:23:18,446
-actually, let's say we do that
+比如我们这样
 
 
 995
 00:23:18,446 --> 00:23:19,476
-with our purple circle.
+处理一下紫色圆圈
 
 
 996
 00:23:19,616 --> 00:23:21,496
-We put flexible space on the
+我们在它的左右两边
 
 
 997
 00:23:21,496 --> 00:23:22,396
-left and right sides of it.
+放置可调整的间距
 
 
 998
 00:23:22,766 --> 00:23:23,886
-The circle is centered within
+你可能会使圆圈在
 
 
 999
 00:23:23,886 --> 00:23:24,986
-the application section of the
+Touch Bar 应用程序区里居中
 
 
 1000
 00:23:24,986 --> 00:23:26,276
-Touch Bar, which might be what
+这可能是你
 
 
 1001
 00:23:26,276 --> 00:23:26,966
-you're going for.
+想做的
 
 
 1002
 00:23:27,286 --> 00:23:28,416
-But you might also want to be
+但是你可能同样
 
 
 1003
 00:23:28,416 --> 00:23:29,626
-centering that item on the
+希望使这个项在真正的设备上
 
 
 1004
 00:23:29,626 --> 00:23:31,286
-actual device, and it's not
+也居中 但并它不在
 
 
 1005
 00:23:31,286 --> 00:23:31,646
-there.
+那里
 
 
 1006
 00:23:31,646 --> 00:23:34,566
-We're a little bit to the left.
+我们稍微有些偏右了
 
 
 1007
 00:23:34,566 --> 00:23:36,136
-So, we can fix that by using and
+所以我们可以通过用
 
 
 1008
 00:23:36,136 --> 00:23:37,556
-NSTouchBar property called the
+一个叫主要项标识符的
 
 
 1009
 00:23:37,556 --> 00:23:38,726
-principal item identifier.
+NSTouchBar 属性来解决它
 
 
 1010
 00:23:39,686 --> 00:23:41,376
-And we can go ahead and set a
+我们可以将
 
 
 1011
 00:23:41,376 --> 00:23:41,816
-Touch Bar's
+Touch Bar 的
 
 
 1012
 00:23:41,816 --> 00:23:43,116
-principalItemIdentifier to the
+主要项标识符设置成
 
 
 1013
 00:23:43,116 --> 00:23:44,676
-identifier of any visible item,
+任何可视项的标识符
 
 
 1014
 00:23:45,076 --> 00:23:47,106
-and it's going to go ahead and
+它就会将此项
 
 
 1015
 00:23:47,106 --> 00:23:48,656
-actually place that item in the
+置于设备
 
 
 1016
 00:23:48,656 --> 00:23:49,656
-center of the device.
+的中间位置
 
 
 1017
 00:23:50,186 --> 00:23:51,896
-So, if we go ahead and look at
+当我们看这个例子时
 
 
 1018
 00:23:51,896 --> 00:23:53,456
-this example, all the code in
+这里所有的代码都是
 
 
 1019
 00:23:53,456 --> 00:23:54,176
-here is stuff we see in our
+我们在前一张幻灯片里看到过的
 
 
 1020
 00:23:54,176 --> 00:23:55,986
-previous slides except this last
+除了我们被设置过的
 
 
 1021
 00:23:55,986 --> 00:23:56,686
-line where we set the
+主要项标识符的
 
 
 1022
 00:23:56,686 --> 00:23:57,776
-principalItemIdentifier.
+最后一行
 
 
 1023
 00:23:58,186 --> 00:23:59,306
-And by setting to the shark
+通过设置鲨鱼标识符
 
 
 1024
 00:23:59,306 --> 00:24:01,016
-identifier, we go ahead and move
+我们将鲨鱼放到
 
 
 1025
 00:24:01,016 --> 00:24:02,296
-and the shark to the middle of
+Touch Bar 的中间
 
 
 1026
 00:24:02,296 --> 00:24:03,966
-the Touch Bar and lay out the
+然后就像我们在别处做的一样
 
 
 1027
 00:24:03,966 --> 00:24:05,256
-items left to right like we did
+将项从左到右
 
 
 1028
 00:24:05,256 --> 00:24:05,946
-in other cases.
+摆放
 
 
 1029
 00:24:06,506 --> 00:24:07,456
-If we were to use the turtle
+如果我们要改用海龟
 
 
 1030
 00:24:07,456 --> 00:24:09,356
-instead, the shark winds up on
+鲨鱼像之前一样
 
 
 1031
 00:24:09,356 --> 00:24:10,296
-the left side like it would
+被放在左边
 
 
 1032
 00:24:10,296 --> 00:24:11,376
-normally, and the turtle is
+然后海龟会被
 
 
 1033
 00:24:11,376 --> 00:24:12,266
-centered on the device.
+放在设备的中间
 
 
 1034
 00:24:13,076 --> 00:24:14,356
-And this plays really well with
+这在自动设置间距和
 
 
 1035
 00:24:14,356 --> 00:24:16,056
-flexible spaces and other
+某些其他情况
 
 
 1036
 00:24:16,056 --> 00:24:16,346
-things.
+表现得很好
 
 
 1037
 00:24:16,346 --> 00:24:17,246
-Son you can make some nuance
+所以你可以用它来制作
 
 
 1038
 00:24:17,246 --> 00:24:17,796
-device with that.
+一些小的设备
 
 
 1039
 00:24:17,976 --> 00:24:19,076
-And there's additionally types
+还有其他种类的
 
 
 1040
 00:24:19,236 --> 00:24:20,796
-of NSTouchBar items subclasses
+能修改主要项标识符
 
 
 1041
 00:24:21,136 --> 00:24:22,656
-that modify the behavior of the
+行为的 NSTouchBar
 
 
 1042
 00:24:22,656 --> 00:24:23,816
-principalItemIdentifier.
+子项
 
 
 1043
 00:24:24,156 --> 00:24:25,576
-And John is going to go ahead
+接下来 John 将为大家
 
 
 1044
 00:24:25,896 --> 00:24:27,846
-and cover those as we take a
+深入地讲解
 
 
 1045
 00:24:27,846 --> 00:24:29,626
-deep dive into NSTouchBar item.
+NSTouchBar 项
 
 
 1046
 00:24:30,396 --> 00:24:31,336
-Welcome John Tegtmeyer.
+欢迎 John Tegtmeyer
 
 
 1047
 00:24:32,516 --> 00:24:35,856
-[ Applause ]
+[掌声]
 
 
 1048
 00:24:36,356 --> 00:24:38,186
-So, Chris gave us an overview
+Chris 向我们介绍了
 
 
 1049
 00:24:38,186 --> 00:24:39,866
-over the NSTouchBar API and how
+NSTouchBar API 以及它如何
 
 
 1050
 00:24:39,866 --> 00:24:41,726
-it's tied to the responder chain
+通过连接响应器链
 
 
 1051
 00:24:41,726 --> 00:24:43,186
-allowing us to provide context
+让我们为用户提供
 
 
 1052
 00:24:43,186 --> 00:24:44,806
-sensitive controls to our users.
+上下文敏感控件
 
 
 1053
 00:24:45,316 --> 00:24:46,546
-He also eluded to this
+他也提到了
 
 
 1054
 00:24:46,586 --> 00:24:48,196
-NSTouchBar item object, which is
+NSTouchBar 项目对象
 
 
 1055
 00:24:48,196 --> 00:24:50,026
-the wrap around all the views in
+是环绕 Touch Bar 里所有
 
 
 1056
 00:24:50,026 --> 00:24:50,626
-the Touch Bar.
+视图的
 
 
 1057
 00:24:51,346 --> 00:24:52,486
-Now, AppKit provides a lot of
+现在 AppKit 
 
 
 1058
 00:24:52,486 --> 00:24:54,096
-subclasses of this item, and
+提供项的许多子项
 
 
 1059
 00:24:54,096 --> 00:24:54,956
-they all offer some really
+他们都能提供一些
 
 
 1060
 00:24:54,956 --> 00:24:56,536
-unique, very cool functionality.
+非常特殊的 很酷的功能
 
 
 1061
 00:24:56,796 --> 00:24:57,776
-So, I'm here to give us a deep
+现在我来为大家深入的
 
 
 1062
 00:24:57,776 --> 00:24:58,986
-dive into those items.
+讲解一下这些项
 
 
 1063
 00:24:59,686 --> 00:25:01,996
-NSTouchBar item is a base class
+NSTouchBar 项是我们
 
 
 1064
 00:25:01,996 --> 00:25:02,946
-of everything that we'll talk
+今天谈论的所有东西的
 
 
 1065
 00:25:02,946 --> 00:25:03,426
-about today.
+基本项
 
 
 1066
 00:25:03,826 --> 00:25:04,976
-That means the properties on
+这代表它的设置
 
 
 1067
 00:25:04,976 --> 00:25:05,996
-this will be inherited by the
+会被子项所
 
 
 1068
 00:25:05,996 --> 00:25:06,736
-subclass.
+继承
 
 
 1069
 00:25:07,256 --> 00:25:08,266
-The first thing that all Touch
+所有 Touch Bar 项都有的
 
 
 1070
 00:25:08,266 --> 00:25:09,596
-Bar items have is a unique
+东西就是唯一
 
 
 1071
 00:25:09,596 --> 00:25:10,346
-identifier.
+标识符
 
 
 1072
 00:25:11,116 --> 00:25:13,806
-This is what NSTouchBar will use
+这就是 NSTouchBar 用来
 
 
 1073
 00:25:13,806 --> 00:25:14,696
-when looking up your item
+通过模板项数组
 
 
 1074
 00:25:14,696 --> 00:25:15,956
-through the template items
+或委托来查找项的
 
 
 1075
 00:25:15,956 --> 00:25:17,896
-array, or through the delegate.
+东西
 
 
 1076
 00:25:18,666 --> 00:25:20,216
-Items also have a view or a view
+项也有视图或者视图
 
 
 1077
 00:25:20,216 --> 00:25:20,716
-controller.
+控制器
 
 
 1078
 00:25:20,996 --> 00:25:21,736
-This is what's actually
+这也是实际上会
 
 
 1079
 00:25:21,736 --> 00:25:23,056
-presented to your users.
+展示给用户的东西
 
 
 1080
 00:25:23,316 --> 00:25:24,246
-And if you're using the view
+如果你在使用视图
 
 
 1081
 00:25:24,246 --> 00:25:25,236
-controller, this is a good
+控制器 这是延迟
 
 
 1082
 00:25:25,236 --> 00:25:27,336
-opportunity to lazily load your
+加载视图的
 
 
 1083
 00:25:27,336 --> 00:25:27,836
-views.
+好机会
 
 
 1084
 00:25:28,736 --> 00:25:30,066
-We also have a customization
+我们同样有自定义
 
 
 1085
 00:25:30,066 --> 00:25:30,436
-label.
+标签
 
 
 1086
 00:25:30,436 --> 00:25:31,736
-And this is the string that's
+这是显示在
 
 
 1087
 00:25:31,736 --> 00:25:33,146
-presented in the customization
+自定义 UI 上的
 
 
 1088
 00:25:33,146 --> 00:25:33,626
-UI.
+字符串
 
 
 1089
 00:25:33,916 --> 00:25:35,156
-And describes what your control
+它定义了你的控件能
 
 
 1090
 00:25:35,156 --> 00:25:35,926
-actually does.
+做什么
 
 
 1091
 00:25:36,796 --> 00:25:38,396
-I hope you notice one thing that
+我希望你们注意到了
 
 
 1092
 00:25:38,396 --> 00:25:39,466
-we don't have here is an
+在这里我们没有的是
 
 
 1093
 00:25:39,466 --> 00:25:41,246
-explicit minimum or maximum size
+明确的最小或最大的
 
 
 1094
 00:25:41,276 --> 00:25:41,736
-property.
+属性
 
 
 1095
 00:25:42,276 --> 00:25:43,756
-That's because, unlike tool bar
+这是因为 不同于
 
 
 1096
 00:25:43,756 --> 00:25:46,016
-item, which does have these
+工具栏项确实具有这些
 
 
 1097
 00:25:46,016 --> 00:25:47,926
-explicit properties Touch Bar
+明确的属性
 
 
 1098
 00:25:47,926 --> 00:25:49,336
-items are actually measured
+NSTouchBarItem 的度量
 
 
 1099
 00:25:49,336 --> 00:25:50,366
-using constraints.
+是有限制的
 
 
 1100
 00:25:50,776 --> 00:25:51,956
-That means if you're using
+这意味着 如果你
 
 
 1101
 00:25:51,956 --> 00:25:53,666
-something like an NS button
+使用一个有 intrinsicContentSize 的
 
 
 1102
 00:25:53,666 --> 00:25:54,956
-which has an intrinsic content
+类似 NSButton 的东西
 
 
 1103
 00:25:54,956 --> 00:25:56,526
-size, it will automatically be
+它将自动调整大小
 
 
 1104
 00:25:56,526 --> 00:25:58,166
-sized to fit its title and its
+以适应标题和
 
 
 1105
 00:25:58,166 --> 00:25:58,626
-image.
+图像
 
 
 1106
 00:25:59,196 --> 00:26:00,356
-You can also choose to use
+你也可以选择使用
 
 
 1107
 00:26:00,356 --> 00:26:01,796
-inequality constraints to set up
+不等式约束去设置
 
 
 1108
 00:26:01,846 --> 00:26:03,456
-minimum and maximum sizes.
+最大及最小尺寸
 
 
 1109
 00:26:03,836 --> 00:26:04,996
-And AppKit will automatically
+AppKit 将基于
 
 
 1110
 00:26:04,996 --> 00:26:06,726
-size you view based on how much
+应用程序区可用的距离
 
 
 1111
 00:26:06,726 --> 00:26:07,996
-space is available in the
+来自动调整视图
 
 
 1112
 00:26:07,996 --> 00:26:09,026
-application section.
+大小
 
 
 1113
 00:26:09,286 --> 00:26:10,596
-And you can find out more about
+你可以在今天晚些时候的
 
 
 1114
 00:26:10,596 --> 00:26:11,986
-how items are sized at the
+“Advanced Touch Bar（Touch Bar 进阶）”演讲上听到
 
 
 1115
 00:26:11,986 --> 00:26:13,636
-"Advanced Touch Bar Talk" later
+更多关于项目大小的
 
 
 1116
 00:26:15,256 --> 00:26:15,386
-today.
+内容
 
 
 1117
 00:26:15,576 --> 00:26:17,496
-Now, as I mentioned, AppKit
+现在 就像我之前提到的一样
 
 
 1118
 00:26:17,606 --> 00:26:20,156
-provides lots of subclasses of
+AppKit 提供了很多的
 
 
 1119
 00:26:20,156 --> 00:26:20,646
-this item.
+项子类
 
 
 1120
 00:26:21,276 --> 00:26:22,296
-And we'll talk about each of
+我们将逐个进行
 
 
 1121
 00:26:22,296 --> 00:26:22,576
-these.
+讲解
 
 
 1122
 00:26:22,576 --> 00:26:23,486
-We'll talk about the custom
+我们将谈到
 
 
 1123
 00:26:23,486 --> 00:26:25,326
-Touch Bar item, pop overs,
+Touch Bar 自定义项 弹窗
 
 
 1124
 00:26:25,326 --> 00:26:27,436
-sliders, group item, as well as
+滑动条 组项 以及在最后会提到的
 
 
 1125
 00:26:27,436 --> 00:26:28,736
-a few bonus topics at the end.
+几个额外的话题
 
 
 1126
 00:26:28,976 --> 00:26:30,306
-So, let's get started with the
+好的 让我们从 Touch Bar 的
 
 
 1127
 00:26:30,306 --> 00:26:31,306
-custom Touch Bar item.
+自定义项开始
 
 
 1128
 00:26:31,886 --> 00:26:34,256
-Now, the custom item offers
+现在自定义项为我们
 
 
 1129
 00:26:34,316 --> 00:26:35,666
-rewrite properties on everything
+刚才提到的所有基类上
 
 
 1130
 00:26:35,666 --> 00:26:36,566
-that we just talked about on the
+的东西提供了重写
 
 
 1131
 00:26:36,566 --> 00:26:37,236
-base class.
+属性
 
 
 1132
 00:26:37,346 --> 00:26:38,526
-That means you can simply set
+这意味着你可以简单地
 
 
 1133
 00:26:38,526 --> 00:26:39,816
-the view of the view controller
+对视图控制器的视图进行设置
 
 
 1134
 00:26:39,816 --> 00:26:40,916
-rather than subclassing your
+而不是子类化你的
 
 
 1135
 00:26:40,916 --> 00:26:41,286
-item.
+项
 
 
 1136
 00:26:41,886 --> 00:26:43,066
-This is likely the item that
+如果你想展示一个按钮
 
 
 1137
 00:26:43,066 --> 00:26:44,196
-you'll use if you want to show
+或者一个分段选择控件
 
 
 1138
 00:26:44,196 --> 00:26:45,356
-something like a button or a
+或者任何你熟悉的
 
 
 1139
 00:26:45,356 --> 00:26:46,376
-segmented control.
+AppKit 或者
 
 
 1140
 00:26:47,096 --> 00:26:48,426
-Anything that you're familiar
+自定义容器视图
 
 
 1141
 00:26:48,426 --> 00:26:49,876
-with through AppKit, or custom
+你都可以使用
 
 
 1142
 00:26:49,876 --> 00:26:50,736
-container views.
+它
 
 
 1143
 00:26:52,296 --> 00:26:53,566
-Now, this is also a really great
+这也是使用 10.12 中
 
 
 1144
 00:26:53,566 --> 00:26:54,716
-opportunity to use some of the
+引入的便利
 
 
 1145
 00:26:54,716 --> 00:26:56,016
-convenience constructors that we
+构造函数的
 
 
 1146
 00:26:56,016 --> 00:26:57,126
-introduced in 10.12.
+好机会
 
 
 1147
 00:26:57,596 --> 00:26:58,226
-Let's take a look.
+让我们来看看
 
 
 1148
 00:26:59,206 --> 00:27:00,556
-In this example, we're going to
+在这个例子里
 
 
 1149
 00:27:00,556 --> 00:27:01,696
-create a simple button for Touch
+我们将为 Touch Bar 创建一个简单的
 
 
 1150
 00:27:01,696 --> 00:27:01,916
-Bar.
+按钮
 
 
 1151
 00:27:02,356 --> 00:27:04,376
-We're doing that by creating a
+我们通过创建
 
 
 1152
 00:27:04,376 --> 00:27:05,506
-custom Touch Bar item and
+自定义 Touch Bar 项以
 
 
 1153
 00:27:05,506 --> 00:27:07,026
-providing a unique identifier.
+提供唯一标识符来实现
 
 
 1154
 00:27:07,026 --> 00:27:08,486
-And then we're going to set the
+我们将会用之前看到的
 
 
 1155
 00:27:08,486 --> 00:27:10,166
-items view to be an NS button
+title: target: action: 格式构造函数
 
 
 1156
 00:27:10,166 --> 00:27:11,636
-using the title target action
+来将项的视图
 
 
 1157
 00:27:11,636 --> 00:27:13,006
-constructor that we saw earlier.
+设置为 NSButton
 
 
 1158
 00:27:13,696 --> 00:27:15,156
-And as Chris mentioned, this
+就像 Chris 提到的
 
 
 1159
 00:27:15,156 --> 00:27:16,616
-will assign the correct font and
+这将把正确的字体和
 
 
 1160
 00:27:16,616 --> 00:27:17,606
-the correct appearance to this
+正确的外观赋值给这个
 
 
 1161
 00:27:17,606 --> 00:27:17,886
-button.
+按钮
 
 
 1162
 00:27:17,886 --> 00:27:18,966
-So, we have a great looking
+我们用两行简单的代码
 
 
 1163
 00:27:18,966 --> 00:27:20,256
-button that's ready for Touch
+为 Touch Bar 创建了
 
 
 1164
 00:27:20,256 --> 00:27:21,736
-Bar in two simple lines of code.
+一个漂亮的按钮
 
 
 1165
 00:27:22,656 --> 00:27:23,846
-This is also true for a more
+这对更加复杂的控件也
 
 
 1166
 00:27:23,846 --> 00:27:24,936
-complicated control.
+适用
 
 
 1167
 00:27:25,336 --> 00:27:26,826
-In this case, this is a
+在这里 这是一个
 
 
 1168
 00:27:26,826 --> 00:27:27,806
-segmented control.
+分段控制器
 
 
 1169
 00:27:28,096 --> 00:27:29,356
-Segmented control also has a
+分段控制器同时有一个
 
 
 1170
 00:27:29,356 --> 00:27:30,416
-convenience constructor.
+便利构造器
 
 
 1171
 00:27:30,766 --> 00:27:32,306
-And so, again with two lines of
+同样用两行代码
 
 
 1172
 00:27:32,306 --> 00:27:34,376
-code, my spacing for clarity, we
+我为了看起来更清晰所以将它间隔开
 
 
 1173
 00:27:34,376 --> 00:27:35,416
-have a great looking control
+为 Touch Bar 创建了一个
 
 
 1174
 00:27:35,416 --> 00:27:36,776
-that's ready for Touch Bar with
+有正确外观
 
 
 1175
 00:27:36,776 --> 00:27:39,656
-the right appearance and the
+和字体的美观
 
 
 1176
 00:27:39,656 --> 00:27:39,916
-right font.
+控件
 
 
 1177
 00:27:40,056 --> 00:27:41,636
-Next, let's talk about popovers.
+下面 我们来谈谈弹出框
 
 
 1178
 00:27:42,386 --> 00:27:43,596
-Popover item is really cool
+弹出框项很酷
 
 
 1179
 00:27:43,596 --> 00:27:44,756
-because it allows you to provide
+因为它能在用户要求的时候
 
 
 1180
 00:27:44,806 --> 00:27:46,776
-extra content to your user, but
+为用户提供
 
 
 1181
 00:27:46,776 --> 00:27:49,166
-only when the user requests it.
+更多内容
 
 
 1182
 00:27:49,606 --> 00:27:50,916
-Popovers have two parts.
+弹出框分两个部分
 
 
 1183
 00:27:51,496 --> 00:27:52,396
-The first is the class
+第一部分是折叠形式
 
 
 1184
 00:27:52,396 --> 00:27:53,486
-representation, which is the
+是当弹出框关闭时
 
 
 1185
 00:27:53,486 --> 00:27:55,066
-view presented to your user when
+展示给用户的
 
 
 1186
 00:27:55,066 --> 00:27:56,226
-the popovers close.
+视图
 
 
 1187
 00:27:56,806 --> 00:27:57,876
-And the second piece is the
+第二部分是
 
 
 1188
 00:27:57,876 --> 00:27:59,266
-popover's NSTouchBar, which
+弹出框的 NSTouchBar
 
 
 1189
 00:27:59,266 --> 00:28:00,166
-actually takes over the
+当弹出框打开的时候
 
 
 1190
 00:28:00,166 --> 00:28:01,316
-application section when the
+它会接管
 
 
 1191
 00:28:01,316 --> 00:28:02,276
-popover is open.
+应用程序区
 
 
 1192
 00:28:02,276 --> 00:28:03,646
-And this lets you use things
+这让你能够使用
 
 
 1193
 00:28:03,646 --> 00:28:03,856
-like the
+principalItemIdentifier
 
 
 1194
 00:28:03,856 --> 00:28:05,916
-principalItemIdentifier, or even
+甚至让你能进行
 
 
 1195
 00:28:05,916 --> 00:28:07,076
-enabling customization.
+自定义
 
 
 1196
 00:28:08,386 --> 00:28:09,576
-Let's talk more about the class
+让我们多谈谈
 
 
 1197
 00:28:09,576 --> 00:28:10,366
-representation.
+折叠形式
 
 
 1198
 00:28:11,826 --> 00:28:13,056
-AppKit will provide a default on
+AppKit 将给你提供一个默认值
 
 
 1199
 00:28:13,056 --> 00:28:14,816
-for you and you can customize
+你能通过折叠形式的
 
 
 1200
 00:28:14,816 --> 00:28:15,946
-the way it looks by using the
+图像或者标签
 
 
 1201
 00:28:15,946 --> 00:28:17,826
-class representation image, or
+属性来进行
 
 
 1202
 00:28:17,826 --> 00:28:18,806
-label properties.
+自定义
 
 
 1203
 00:28:19,116 --> 00:28:20,176
-And you can see an example of
+你可以在弹出框队列
 
 
 1204
 00:28:20,176 --> 00:28:21,596
-this in the list in alignment
+和排版控件里
 
 
 1205
 00:28:21,596 --> 00:28:22,766
-popovers and the formatting
+看到这种
 
 
 1206
 00:28:22,766 --> 00:28:23,326
-controls.
+例子
 
 
 1207
 00:28:23,976 --> 00:28:25,686
-You can also choose to use
+你也可以选择
 
 
 1208
 00:28:25,686 --> 00:28:26,826
-something more custom.
+使用更加自定义的东西
 
 
 1209
 00:28:27,206 --> 00:28:28,896
-Mail chooses to use a segmented
+“邮件”选择使用分段
 
 
 1210
 00:28:28,896 --> 00:28:29,406
-control.
+控制器
 
 
 1211
 00:28:29,406 --> 00:28:30,826
-And if you tap the main portion
+如果你点击这个控件的主要部分
 
 
 1212
 00:28:30,826 --> 00:28:31,656
-of this control, it will
+它马上将
 
 
 1213
 00:28:31,656 --> 00:28:33,516
-immediately move a message to
+消息移动到建议的
 
 
 1214
 00:28:33,606 --> 00:28:35,696
-the suggest mailbox.
+邮箱里
 
 
 1215
 00:28:36,446 --> 00:28:37,546
-But if you tap the arrow, it
+但是如果你点击箭头 它
 
 
 1216
 00:28:37,546 --> 00:28:38,556
-will show a popover with
+将出现一个有
 
 
 1217
 00:28:38,556 --> 00:28:39,716
-additional suggestions.
+额外建议的弹出框
 
 
 1218
 00:28:40,336 --> 00:28:41,566
-This is actually really easy to
+这其实非常容易做到
 
 
 1219
 00:28:41,566 --> 00:28:43,756
-achieve by providing your own
+你只需要给折叠形式
 
 
 1220
 00:28:43,756 --> 00:28:44,846
-view for the class
+提供你的视图
 
 
 1221
 00:28:44,846 --> 00:28:46,536
-representation and then using
+然后使用显示弹出框
 
 
 1222
 00:28:46,536 --> 00:28:47,746
-the show popover and dismiss
+和隐藏弹出框
 
 
 1223
 00:28:47,746 --> 00:28:48,856
-popover methods.
+的方法
 
 
 1224
 00:28:50,066 --> 00:28:51,446
-Popovers also have two
+弹出框也有两个
 
 
 1225
 00:28:51,446 --> 00:28:52,406
-interaction models.
+交互模型
 
 
 1226
 00:28:52,746 --> 00:28:53,826
-First is touch and show.
+第一个是触摸并显示
 
 
 1227
 00:28:54,636 --> 00:28:55,896
-This happens when the user taps
+当用户点击折叠形式时
 
 
 1228
 00:28:55,936 --> 00:28:58,176
-the class representation.
+会用到这个
 
 
 1229
 00:28:58,476 --> 00:29:00,776
-The popover's opened and it's
+弹出框被打开
 
 
 1230
 00:29:00,776 --> 00:29:02,456
-sticky allowing you to make
+它的粘性让你能做出
 
 
 1231
 00:29:02,766 --> 00:29:04,136
-multiple selections.
+多种选择
 
 
 1232
 00:29:04,766 --> 00:29:05,956
-It's only closed when the user
+它只在用户点击关闭
 
 
 1233
 00:29:05,956 --> 00:29:06,946
-taps the closed button.
+按钮的时候才会关闭
 
 
 1234
 00:29:07,776 --> 00:29:08,996
-The second interaction model is
+第二个交互模型是
 
 
 1235
 00:29:08,996 --> 00:29:09,706
-press and hold.
+按住并保持
 
 
 1236
 00:29:10,046 --> 00:29:11,126
-And this happens when the user
+它在用户按住并保持
 
 
 1237
 00:29:11,126 --> 00:29:12,356
-presses and holds on the class
+折叠形式的时候
 
 
 1238
 00:29:12,356 --> 00:29:13,136
-representation.
+会用到
 
 
 1239
 00:29:13,436 --> 00:29:14,826
-The popover's open directly by
+弹出框可直接通过
 
 
 1240
 00:29:14,826 --> 00:29:16,246
-the user's finger when possible
+用户的手指打开
 
 
 1241
 00:29:16,536 --> 00:29:17,736
-and immediately starts tracking
+并立即开始追踪
 
 
 1242
 00:29:17,736 --> 00:29:18,286
-their input.
+他们的输入
 
 
 1243
 00:29:18,696 --> 00:29:19,816
-It's closed when the user lifts
+当用户做出选择
 
 
 1244
 00:29:19,816 --> 00:29:21,186
-their finger and a selection is
+并抬起手指时
 
 
 1245
 00:29:21,186 --> 00:29:21,596
-made.
+它就关闭了
 
 
 1246
 00:29:21,906 --> 00:29:23,646
-But you'll notice that in these
+你可能会注意到
 
 
 1247
 00:29:23,646 --> 00:29:25,226
-two examples, the popovers
+在这两个例子里
 
 
 1248
 00:29:25,226 --> 00:29:26,006
-actually showed different
+弹出框其实显示的是
 
 
 1249
 00:29:26,006 --> 00:29:26,476
-content.
+不同的内容
 
 
 1250
 00:29:27,316 --> 00:29:29,026
-Touch and show showed several
+触摸并显示展示了多个控件
 
 
 1251
 00:29:29,026 --> 00:29:30,256
-controls whereas press and hold
+而按住并保持
 
 
 1252
 00:29:30,256 --> 00:29:31,656
-only showed a single segmented
+则展示了单个的分段
 
 
 1253
 00:29:31,656 --> 00:29:32,036
-control.
+控制器
 
 
 1254
 00:29:32,356 --> 00:29:33,196
-And that's because press and
+这是因为触摸并显示
 
 
 1255
 00:29:33,196 --> 00:29:34,596
-hold is tracking the user's
+从始至终都在追踪
 
 
 1256
 00:29:34,596 --> 00:29:35,776
-finger the entire time.
+用户的手指
 
 
 1257
 00:29:36,076 --> 00:29:37,446
-And so, it's best to leave that
+所以 我们最好将
 
 
 1258
 00:29:37,446 --> 00:29:39,216
-kind of interaction to a single
+这种交互留给单一的
 
 
 1259
 00:29:39,216 --> 00:29:39,736
-control.
+控件
 
 
 1260
 00:29:39,916 --> 00:29:40,886
-In this case a segmented
+在这里可以是一个分段
 
 
 1261
 00:29:40,886 --> 00:29:42,036
-control, or even something like
+控制器 或者是一个
 
 
 1262
 00:29:42,036 --> 00:29:42,886
-the slider item.
+滑块
 
 
 1263
 00:29:43,996 --> 00:29:46,286
-This is easy to achieve because
+这很容易实现
 
 
 1264
 00:29:46,516 --> 00:29:47,566
-popovers actually have two
+原因是弹出框其实有两个
 
 
 1265
 00:29:47,566 --> 00:29:49,176
-different NSTouchBar properties.
+不同的 NSTouchBar 属性
 
 
 1266
 00:29:49,456 --> 00:29:50,546
-One for the touch and hold
+一个是给触摸并显示的弹出框
 
 
 1267
 00:29:50,546 --> 00:29:51,926
-popover and another for the
+另一个是给
 
 
 1268
 00:29:51,926 --> 00:29:52,616
-press and hold.
+按下并保留的
 
 
 1269
 00:29:53,746 --> 00:29:55,786
-Press and hold, if you do not
+如果你不为按下并保留模型
 
 
 1270
 00:29:55,786 --> 00:29:57,176
-provide an NSTouchBar for press
+提供一个 NSTouchBar
 
 
 1271
 00:29:57,176 --> 00:29:58,346
-and hold, press and hold will
+按下并保留模型
 
 
 1272
 00:29:58,346 --> 00:29:58,976
-not be enabled.
+就不会被启用
 
 
 1273
 00:29:59,636 --> 00:30:01,616
-It is possible to provide the
+这两个属性同时提供
 
 
 1274
 00:30:01,616 --> 00:30:03,146
-same NSTouchBar object for both
+相同的 NSTouchBar
 
 
 1275
 00:30:03,146 --> 00:30:03,986
-of these properties and that
+并且工作的很好
 
 
 1276
 00:30:03,986 --> 00:30:04,886
-will work just fine.
+是有可能的
 
 
 1277
 00:30:05,266 --> 00:30:06,366
-But as I mentioned press and
+但是就像我提到的 按下并保留模型
 
 
 1278
 00:30:06,366 --> 00:30:08,226
-hold is best left reserved for
+最好是留给
 
 
 1279
 00:30:08,456 --> 00:30:10,146
-single things, single items like
+类似分段控制器或者
 
 
 1280
 00:30:10,146 --> 00:30:12,676
-a segmented control or a slider
+滑动模块这样的
 
 
 1281
 00:30:12,676 --> 00:30:12,946
-item.
+单一项
 
 
 1282
 00:30:14,416 --> 00:30:15,826
-Speaking of the slider item,
+我们来说说
 
 
 1283
 00:30:15,826 --> 00:30:16,536
-let's talk about it.
+滑动模块
 
 
 1284
 00:30:17,246 --> 00:30:18,106
-Now, you might be thinking
+现在你可能在想
 
 
 1285
 00:30:18,106 --> 00:30:19,046
-what's the difference between a
+滑动模块和有 NSSlider 作为
 
 
 1286
 00:30:19,046 --> 00:30:20,416
-slider item and a custom Touch
+视图的自定义
 
 
 1287
 00:30:20,466 --> 00:30:21,986
-Bar item with an NSSlider as its
+Touch Bar 有什么
 
 
 1288
 00:30:21,986 --> 00:30:22,296
-view.
+区别
 
 
 1289
 00:30:22,866 --> 00:30:23,936
-Well, let me explain.
+我来为大家解释
 
 
 1290
 00:30:24,916 --> 00:30:25,946
-Sliders have a few different
+滑动模块有几个不同的
 
 
 1291
 00:30:25,946 --> 00:30:26,576
-parts.
+地方
 
 
 1292
 00:30:26,676 --> 00:30:27,976
-First we have the slider itself.
+首先 我们有滑块本身
 
 
 1293
 00:30:28,506 --> 00:30:29,646
-Then, we have these new value
+其次 我们有这些新的值的配件
 
 
 1294
 00:30:29,646 --> 00:30:30,996
-accessories, which are images
+它们是一些
 
 
 1295
 00:30:30,996 --> 00:30:32,176
-and are actually intractable.
+很难处理的图片
 
 
 1296
 00:30:32,176 --> 00:30:34,026
-You can tap on them to increment
+你可以点击它们以
 
 
 1297
 00:30:34,026 --> 00:30:35,256
-or decrement the value of your
+增加或减少你滑块
 
 
 1298
 00:30:35,256 --> 00:30:35,756
-slider.
+的值
 
 
 1299
 00:30:36,416 --> 00:30:37,386
-We also have a label.
+我们还有个标签
 
 
 1300
 00:30:38,276 --> 00:30:39,556
-This can make it extra clear to
+这能让用户
 
 
 1301
 00:30:39,556 --> 00:30:41,656
-your users what this slider is
+更清楚这个滑块
 
 
 1302
 00:30:41,656 --> 00:30:42,526
-actually controlling.
+实际上控制的是什么
 
 
 1303
 00:30:42,726 --> 00:30:43,696
-And it's really useful if you
+而且如果你的 UI 里有
 
 
 1304
 00:30:43,696 --> 00:30:45,206
-have multiple sliders in your
+多个滑块 这将十分
 
 
 1305
 00:30:45,586 --> 00:30:45,676
-UI.
+有用
 
 
 1306
 00:30:46,196 --> 00:30:47,896
-As I mentioned these make really
+就像我提到的 这为
 
 
 1307
 00:30:47,896 --> 00:30:49,126
-great content for press and hold
+按住并保留弹出框提供了
 
 
 1308
 00:30:49,126 --> 00:30:49,696
-popover.
+很好的内容
 
 
 1309
 00:30:49,976 --> 00:30:50,636
-And that's because the
+这是因为对
 
 
 1310
 00:30:50,636 --> 00:30:51,906
-immediately start tracking the
+用户手指立即进行处理
 
 
 1311
 00:30:51,906 --> 00:30:53,416
-user's finger, even though the
+即使触摸
 
 
 1312
 00:30:53,416 --> 00:30:54,846
-touch is offset from the knob of
+不发生在滑块的
 
 
 1313
 00:30:54,846 --> 00:30:55,426
-the slider.
+旋钮上
 
 
 1314
 00:30:55,906 --> 00:30:56,726
-That means the user can
+这意味着用户可以
 
 
 1315
 00:30:56,726 --> 00:30:57,906
-immediately start interacting
+立刻开始与之交互
 
 
 1316
 00:30:57,906 --> 00:30:59,086
-with it and not go searching
+而不用
 
 
 1317
 00:30:59,086 --> 00:31:00,306
-around for the knob for
+四处寻找旋钮来与
 
 
 1318
 00:31:00,306 --> 00:31:01,346
-interacting with the slider.
+滑块进行交互
 
 
 1319
 00:31:01,886 --> 00:31:04,026
-Let's take a look at what this
+我们来看看这在
 
 
 1320
 00:31:04,026 --> 00:31:04,986
-actually looks like in code,
+代码上是什么
 
 
 1321
 00:31:04,986 --> 00:31:05,166
-though.
+样子的
 
 
 1322
 00:31:05,926 --> 00:31:06,846
-First, we're going to create the
+首先 我们要创建项
 
 
 1323
 00:31:06,846 --> 00:31:07,616
-item itself.
+本身
 
 
 1324
 00:31:07,796 --> 00:31:08,866
-We're going to provide a unique
+我们要提供一个唯一
 
 
 1325
 00:31:08,866 --> 00:31:09,546
-identifier.
+标识符
 
 
 1326
 00:31:10,346 --> 00:31:11,366
-Next, we're going to assign it
+接下来 我们要为它
 
 
 1327
 00:31:11,366 --> 00:31:13,046
-minimum and maximum value
+赋最大和最小值的配件
 
 
 1328
 00:31:13,046 --> 00:31:14,056
-accessories and we're going to
+我们还要用 AppKit
 
 
 1329
 00:31:14,056 --> 00:31:15,756
-use images that AppKit provides.
+提供的图片
 
 
 1330
 00:31:16,336 --> 00:31:17,166
-And lastly, we're going to
+最后 我们要
 
 
 1331
 00:31:17,166 --> 00:31:18,476
-assign a label, because maybe we
+赋给他一个标签 因为我们可能
 
 
 1332
 00:31:18,476 --> 00:31:19,836
-want multiple sliders in our UI.
+想在 UI 上有多个滑块
 
 
 1333
 00:31:19,836 --> 00:31:21,966
-But you'll notice that the
+但是你会注意到
 
 
 1334
 00:31:21,966 --> 00:31:23,006
-slider is actually taking up the
+滑块可能会占据
 
 
 1335
 00:31:23,006 --> 00:31:24,516
-entire application section.
+整个应用区域
 
 
 1336
 00:31:24,516 --> 00:31:25,776
-Well, that's because sliders do
+因为滑块没有
 
 
 1337
 00:31:25,776 --> 00:31:27,166
-not have an intrinsic content
+固有内容
 
 
 1338
 00:31:27,166 --> 00:31:27,476
-size.
+大小
 
 
 1339
 00:31:27,526 --> 00:31:28,446
-They're happy to be whatever
+他们很高兴在应用区域
 
 
 1340
 00:31:28,446 --> 00:31:29,786
-size is available in the
+里占据任何
 
 
 1341
 00:31:29,786 --> 00:31:30,786
-application section.
+大小
 
 
 1342
 00:31:31,546 --> 00:31:33,416
-You can change this by adding a
+你可以通过
 
 
 1343
 00:31:33,416 --> 00:31:34,966
-constraint to the slider and
+对滑块添加一个约束来改变它
 
 
 1344
 00:31:34,966 --> 00:31:36,606
-AppKit will check that and
+AppKit 将检查并
 
 
 1345
 00:31:36,606 --> 00:31:38,316
-automatically remeasure and
+自动的重置它的
 
 
 1346
 00:31:38,316 --> 00:31:39,226
-resize the item.
+大小
 
 
 1347
 00:31:39,586 --> 00:31:40,546
-But notice that we're doing this
+但是要注意 我们是
 
 
 1348
 00:31:40,546 --> 00:31:42,036
-on the slider itself, and not
+在滑块本身上做这些事
 
 
 1349
 00:31:42,036 --> 00:31:43,866
-the slider items view and that's
+而不是滑块项的视图上
 
 
 1350
 00:31:43,866 --> 00:31:45,086
-because we have a label here.
+因为我们在这里有个标签
 
 
 1351
 00:31:45,416 --> 00:31:47,096
-And if we change localizations
+如果我们改变位置
 
 
 1352
 00:31:47,226 --> 00:31:48,186
-the length of this string will
+这段字符串的长度会被改变
 
 
 1353
 00:31:48,186 --> 00:31:49,996
-also change and we don't want to
+我们不想引起
 
 
 1354
 00:31:50,526 --> 00:31:51,676
-cause clipping.
+文本剪切
 
 
 1355
 00:31:52,396 --> 00:31:53,326
-Next, let's talk about group
+下面 我们来谈谈
 
 
 1356
 00:31:53,326 --> 00:31:54,006
-Touch Bar item.
+NSGroupTouchBarItem
 
 
 1357
 00:31:54,726 --> 00:31:56,086
-Group item is neat because it
+数据组项很简单
 
 
 1358
 00:31:56,086 --> 00:31:57,286
-allows you to group multiple
+因为它让你将多个
 
 
 1359
 00:31:57,286 --> 00:31:58,706
-Touch Bar items into a single
+Touch Bar 项组合成一个
 
 
 1360
 00:31:58,706 --> 00:32:00,176
-NSTouchBarItem instance.
+单一的 NSTouchBarItem 实例
 
 
 1361
 00:32:00,576 --> 00:32:01,686
-This is because it's similar to
+这是因为它与弹出框很像
 
 
 1362
 00:32:01,686 --> 00:32:03,216
-popovers in that it offers its
+都能提供它的
 
 
 1363
 00:32:03,346 --> 00:32:04,696
-NSTouchBar property.
+NSTouchBar 属性
 
 
 1364
 00:32:05,426 --> 00:32:06,386
-An example of this is the
+在我上方的排版控件
 
 
 1365
 00:32:06,386 --> 00:32:07,686
-formatting controls above me.
+就是这样的一个例子
 
 
 1366
 00:32:08,036 --> 00:32:08,966
-These have actually been grouped
+他们被组合成了一个
 
 
 1367
 00:32:08,966 --> 00:32:10,886
-into a single NSTouchBarItem.
+单一的 NSTouchBarItem
 
 
 1368
 00:32:11,426 --> 00:32:12,736
-There are several reasons you
+有很多原因可能让你做这件事
 
 
 1369
 00:32:12,736 --> 00:32:13,976
-might want to do this, and we'll
+我将对每一个
 
 
 1370
 00:32:13,976 --> 00:32:14,966
-talk about each of these.
+进行讲解
 
 
 1371
 00:32:15,766 --> 00:32:17,286
-When centering multiple items,
+当居中多个项时
 
 
 1372
 00:32:17,586 --> 00:32:18,446
-there's some tricks you can play
+你可以对自定义
 
 
 1373
 00:32:18,446 --> 00:32:19,826
-with customization as well as
+和定位目的使用
 
 
 1374
 00:32:19,826 --> 00:32:21,296
-localization purposes.
+一些技巧
 
 
 1375
 00:32:22,236 --> 00:32:23,266
-If you remember a few minutes
+如果你记得几分钟前
 
 
 1376
 00:32:23,266 --> 00:32:24,176
-ago, when Chris was talking
+Chris 讲到的
 
 
 1377
 00:32:24,176 --> 00:32:24,436
-about the
+principalItemIdentifier
 
 
 1378
 00:32:24,436 --> 00:32:26,236
-principalItemIdentifier, you'll
+你会回忆起
 
 
 1379
 00:32:26,236 --> 00:32:27,566
-recall that a single item
+单一的项标识符
 
 
 1380
 00:32:27,566 --> 00:32:28,866
-identifier is actually provided
+其实是作为主要项
 
 
 1381
 00:32:28,866 --> 00:32:29,576
-as principal.
+提供的
 
 
 1382
 00:32:29,576 --> 00:32:32,276
-But what happens if you want to
+那么如果你想像 FaceTime 一样
 
 
 1383
 00:32:32,276 --> 00:32:34,146
-center multiple items together
+将多个项一起居中
 
 
 1384
 00:32:34,146 --> 00:32:35,336
-like FaceTime is doing here.
+会发生什么
 
 
 1385
 00:32:36,026 --> 00:32:37,396
-Well, you can group these items
+你可以将这些项
 
 
 1386
 00:32:37,476 --> 00:32:39,006
-to a single group Touch Bar item
+组合成单个的 Touch Bar 组合项
 
 
 1387
 00:32:39,006 --> 00:32:40,426
-and then provide that item's
+然后将项的标识符
 
 
 1388
 00:32:40,426 --> 00:32:42,126
-identifier as the principal item
+提供为主要项
 
 
 1389
 00:32:42,126 --> 00:32:42,746
-identifier.
+标识符
 
 
 1390
 00:32:43,026 --> 00:32:45,776
-You can also play some cool
+你也可以在自定义里
 
 
 1391
 00:32:45,776 --> 00:32:47,266
-tricks with the customization.
+使用一些技巧
 
 
 1392
 00:32:47,516 --> 00:32:48,886
-If you have a non-customizable
+如果你像我们这里做的一样
 
 
 1393
 00:32:48,886 --> 00:32:50,506
-group like we do here, you'll
+是一个非自定义的组
 
 
 1394
 00:32:50,506 --> 00:32:51,766
-notice that these items are
+你会注意到这些项已经
 
 
 1395
 00:32:51,766 --> 00:32:52,766
-actually grouped together.
+被聚合到一起
 
 
 1396
 00:32:53,116 --> 00:32:54,666
-That means when the user drags
+这意味着当用户
 
 
 1397
 00:32:54,666 --> 00:32:56,536
-these things into, these buttons
+将这些按钮
 
 
 1398
 00:32:56,536 --> 00:32:58,156
-into the Touch Bar, all three of
+拖拽到 Touch Bar 里的时候
 
 
 1399
 00:32:58,156 --> 00:32:59,126
-these will come together.
+这三个将聚合在一起
 
 
 1400
 00:32:59,856 --> 00:33:00,936
-There's also a single
+这里有一个单个的
 
 
 1401
 00:33:00,936 --> 00:33:02,516
-customization label describing
+自定义标签将这些控件
 
 
 1402
 00:33:02,516 --> 00:33:04,046
-these controls as the playback
+描述为播放
 
 
 1403
 00:33:04,456 --> 00:33:05,776
-controls.
+控件
 
 
 1404
 00:33:06,986 --> 00:33:08,696
-If you do choose to enable
+如果你选择将你的组
 
 
 1405
 00:33:08,696 --> 00:33:09,936
-customization on your groups,
+进行自定义
 
 
 1406
 00:33:09,936 --> 00:33:11,276
-you get some cool behavior there
+你还将获得一些很酷的
 
 
 1407
 00:33:11,276 --> 00:33:11,726
-as well.
+行为
 
 
 1408
 00:33:12,296 --> 00:33:13,606
-In this example, we have two
+在这个例子里 我们有
 
 
 1409
 00:33:13,606 --> 00:33:14,716
-group Touch Bar items.
+两个 Touch Bar 项的组
 
 
 1410
 00:33:15,136 --> 00:33:16,456
-Both of them have customization
+他们都可以进行
 
 
 1411
 00:33:16,456 --> 00:33:16,926
-enabled.
+自定义
 
 
 1412
 00:33:17,376 --> 00:33:18,906
-One contains a group of animals
+他们一个包含一组
 
 
 1413
 00:33:18,906 --> 00:33:19,726
-that you might find in the
+海洋动物
 
 
 1414
 00:33:19,726 --> 00:33:21,066
-ocean, and another on a farm.
+另一组是农场里的动物
 
 
 1415
 00:33:22,096 --> 00:33:23,406
-If I start customizing this,
+如果我开始自定义
 
 
 1416
 00:33:23,406 --> 00:33:24,706
-you'll notice that I'm free to
+你会注意到我可以自由的
 
 
 1417
 00:33:24,706 --> 00:33:26,146
-re-order these items however I
+重新排序这些项
 
 
 1418
 00:33:26,146 --> 00:33:27,426
-choose within their groups.
+无论我在他们的组里怎么选择
 
 
 1419
 00:33:28,656 --> 00:33:30,666
-If I try, however, to grab one
+如果我尝试 拿出一个
 
 
 1420
 00:33:30,806 --> 00:33:32,846
-of the ocean animals and put it
+海洋动物然后
 
 
 1421
 00:33:32,846 --> 00:33:34,496
-into the farm animals group, it
+将它放到农场动物里
 
 
 1422
 00:33:34,496 --> 00:33:35,716
-snaps back to where it was.
+它将回跳到原来的地方
 
 
 1423
 00:33:35,896 --> 00:33:36,996
-Because that would be removing
+因为这是在
 
 
 1424
 00:33:36,996 --> 00:33:38,186
-the item from its group and
+从组里移除项
 
 
 1425
 00:33:38,186 --> 00:33:39,076
-that's not supported.
+这是不被支持的
 
 
 1426
 00:33:41,926 --> 00:33:43,176
-GroupTouchBarItem also has
+GroupTouchBarItem 对本地化
 
 
 1427
 00:33:43,176 --> 00:33:44,256
-really cool purposes for
+也有非常酷的
 
 
 1428
 00:33:44,256 --> 00:33:45,096
-localization.
+作用
 
 
 1429
 00:33:45,526 --> 00:33:46,776
-Now, I'm sure your applications
+现在 我很确定你的应用
 
 
 1430
 00:33:46,776 --> 00:33:47,976
-reach lots of users.
+有很多的用户
 
 
 1431
 00:33:47,976 --> 00:33:49,176
-Some of those users might be
+有些用户的母语是
 
 
 1432
 00:33:49,176 --> 00:33:51,246
-native right to left speakers of
+从右往左阅读的
 
 
 1433
 00:33:51,246 --> 00:33:52,866
-languages like Hebrew or Arabic.
+希伯来语或者阿拉伯语
 
 
 1434
 00:33:53,396 --> 00:33:54,686
-And I'm sure your applications
+我敢肯定你的应用
 
 
 1435
 00:33:54,686 --> 00:33:55,826
-are already flipping were
+已经为这些用户
 
 
 1436
 00:33:55,826 --> 00:33:57,106
-appropriate for those users.
+准确地调换了书写方向
 
 
 1437
 00:33:57,326 --> 00:33:58,556
-And we want Touch Bar to reflect
+我们希望 Touch Bar 也能反映
 
 
 1438
 00:33:58,556 --> 00:33:59,126
-that as well.
+出来
 
 
 1439
 00:34:00,116 --> 00:34:01,376
-A good example of this is
+一个很好的例子是
 
 
 1440
 00:34:01,376 --> 00:34:02,206
-FaceTime's UI.
+FaceTime 的 UI
 
 
 1441
 00:34:02,356 --> 00:34:04,236
-FaceTime chooses to show a full
+FaceTime 选择展示全屏
 
 
 1442
 00:34:04,236 --> 00:34:06,466
-screen and a mute button both on
+静音键既在屏幕上
 
 
 1443
 00:34:06,466 --> 00:34:07,436
-the screen as well as within
+又在 Touch bar
 
 
 1444
 00:34:07,436 --> 00:34:07,966
-Touch Bar.
+上
 
 
 1445
 00:34:08,255 --> 00:34:09,376
-And you'll notice that the order
+你会注意到这些键的
 
 
 1446
 00:34:09,376 --> 00:34:10,326
-of these buttons match.
+顺序是对应的
 
 
 1447
 00:34:11,146 --> 00:34:12,335
-If I go ahead and change the
+如果你将语言换成阿拉伯语
 
 
 1448
 00:34:12,335 --> 00:34:14,456
-language to Arabic, you'll
+你会发现
 
 
 1449
 00:34:14,456 --> 00:34:15,596
-notice that the on-screen
+屏幕上的按钮
 
 
 1450
 00:34:15,826 --> 00:34:17,366
-buttons will actually reverse
+键的顺序已经反转
 
 
 1451
 00:34:17,366 --> 00:34:17,815
-their order.
+过来了
 
 
 1452
 00:34:18,106 --> 00:34:19,376
-And we do the same in Touch Bar
+我们对 Touch Bar 也要
 
 
 1453
 00:34:19,376 --> 00:34:21,476
-to maintain that matching order.
+保持同样的对应顺序
 
 
 1454
 00:34:22,536 --> 00:34:23,626
-But it's important to note that
+但是需要注意
 
 
 1455
 00:34:23,626 --> 00:34:25,216
-not everything actually flips.
+不是所有东西都能反转
 
 
 1456
 00:34:25,275 --> 00:34:26,326
-The escape key and the control
+退出键和控制条
 
 
 1457
 00:34:26,326 --> 00:34:27,666
-strip stay where they're at
+要保持不动 无论是从左到右
 
 
 1458
 00:34:27,666 --> 00:34:28,545
-whether it's left to right or
+还是从右到左
 
 
 1459
 00:34:28,545 --> 00:34:29,085
-right to left.
+阅读
 
 
 1460
 00:34:29,565 --> 00:34:30,876
-And only specific groups of
+只有特殊的项组
 
 
 1461
 00:34:30,876 --> 00:34:32,795
-items should possibly flip.
+才有可能反转
 
 
 1462
 00:34:32,916 --> 00:34:34,596
-Such as the center controls
+比如中央控制器
 
 
 1463
 00:34:34,596 --> 00:34:35,596
-here, which we're flipping to
+我们可以反转以符合
 
 
 1464
 00:34:35,596 --> 00:34:36,706
-match on-screen UI.
+屏幕上的 UI
 
 
 1465
 00:34:37,116 --> 00:34:38,396
-As well as the image and label
+打进电话的图片
 
 
 1466
 00:34:38,396 --> 00:34:39,456
-about the incoming call are
+和标签也是可以
 
 
 1467
 00:34:39,456 --> 00:34:39,846
-flipped.
+反转的
 
 
 1468
 00:34:40,306 --> 00:34:41,565
-But the position of that item
+但是项的位置并没有
 
 
 1469
 00:34:41,565 --> 00:34:42,616
-did not move to the opposite
+移动到 Touch Bar 的
 
 
 1470
 00:34:42,616 --> 00:34:43,396
-side of the Touch Bar.
+另外一边
 
 
 1471
 00:34:44,505 --> 00:34:46,275
-This is easy to achieve using
+使用 10.13 里的 GroupTouchBarItem
 
 
 1472
 00:34:46,275 --> 00:34:47,876
-GroupTouchBarItem's new group
+的新用户组界面布局方向属性
 
 
 1473
 00:34:47,876 --> 00:34:49,216
-user interface layout direction
+可以很轻松的实现
 
 
 1474
 00:34:49,216 --> 00:34:50,536
-property in 10.13.
+这一点
 
 
 1475
 00:34:50,976 --> 00:34:51,906
-You can simply set this to
+你可以设置它去反映
 
 
 1476
 00:34:51,906 --> 00:34:53,525
-reflect NSAppuserInterface
+NSApp 用户界面
 
 
 1477
 00:34:53,525 --> 00:34:54,246
-LayoutDirection.
+布局方向
 
 
 1478
 00:34:55,806 --> 00:34:56,676
-Now, I'm sure you're aware
+现在 我相信你们意识到
 
 
 1479
 00:34:56,676 --> 00:34:57,936
-languages aren't just left to
+语言不只是从左到右或者
 
 
 1480
 00:34:57,936 --> 00:34:58,846
-right or right to left, they
+从右到左
 
 
 1481
 00:34:58,846 --> 00:34:59,816
-also have variable length
+它也有长度有变化的
 
 
 1482
 00:34:59,816 --> 00:35:00,356
-strings.
+字符串
 
 
 1483
 00:35:00,356 --> 00:35:01,396
-And it's important to remember
+这是你在设计
 
 
 1484
 00:35:01,396 --> 00:35:02,776
-that when you're designing your
+你的 UI 时要重点
 
 
 1485
 00:35:02,776 --> 00:35:02,866
-UI.
+记住的
 
 
 1486
 00:35:03,646 --> 00:35:04,786
-In this example, I have a list
+在这个例子里
 
 
 1487
 00:35:04,786 --> 00:35:05,806
-of some of my favorite ocean
+我有一个我最爱的海洋生物
 
 
 1488
 00:35:05,806 --> 00:35:06,256
-animals.
+的清单
 
 
 1489
 00:35:06,626 --> 00:35:08,406
-And I ran this exact same app in
+我用英文和德文运行
 
 
 1490
 00:35:08,406 --> 00:35:09,576
-both English and in German.
+同一个 App
 
 
 1491
 00:35:10,186 --> 00:35:11,716
-In English I was able to fit 6
+用英文时 我可以匹配
 
 
 1492
 00:35:11,716 --> 00:35:12,246
-items here.
+6 个项
 
 
 1493
 00:35:12,246 --> 00:35:13,756
-But in German I only have 5.
+用德文我只能匹配 5 个
 
 
 1494
 00:35:14,236 --> 00:35:15,366
-That's because the shark item
+这是因为鲨鱼项
 
 
 1495
 00:35:15,366 --> 00:35:16,636
-actually didn't have enough room
+没有足够的空间去
 
 
 1496
 00:35:16,636 --> 00:35:17,926
-to fit in Touch Bar and so it
+匹配 Touch Bar
 
 
 1497
 00:35:17,926 --> 00:35:18,986
-was hidden from the user.
+所以它在用户面前是隐藏的
 
 
 1498
 00:35:19,316 --> 00:35:20,486
-Which is really unfortunate for
+这对德文用户来说是
 
 
 1499
 00:35:20,486 --> 00:35:21,346
-our German friends.
+很不幸的
 
 
 1500
 00:35:22,186 --> 00:35:23,946
-Now, you might be tempted to fix
+现在 你可能试图用
 
 
 1501
 00:35:23,946 --> 00:35:25,176
-this using constraints, tying
+约束来解决这个问题
 
 
 1502
 00:35:25,176 --> 00:35:26,426
-each button to be a specific
+将每个键都设置为一样
 
 
 1503
 00:35:26,426 --> 00:35:26,726
-width.
+宽
 
 
 1504
 00:35:26,726 --> 00:35:28,126
-But that's actually not a great
+但是这不是一个好的解决办法
 
 
 1505
 00:35:28,126 --> 00:35:29,766
-solution because as we change
+因为在我们变换位置的时候
 
 
 1506
 00:35:29,766 --> 00:35:31,716
-localizations, we're almost
+我们基本上一定会
 
 
 1507
 00:35:31,716 --> 00:35:32,566
-certainly going to cause
+引起它们其中
 
 
 1508
 00:35:32,566 --> 00:35:33,556
-clipping in one of them.
+一个的反转
 
 
 1509
 00:35:34,516 --> 00:35:35,876
-Now, GroupTouchBarItem actually
+现在 事实上
 
 
 1510
 00:35:35,876 --> 00:35:36,936
-has a great way of handling this
+从 10.13 开始 GroupTouchBarItem 有一个
 
 
 1511
 00:35:36,936 --> 00:35:38,276
-for you automatically starting
+能自动处理这个问题
 
 
 1512
 00:35:38,276 --> 00:35:39,086
-in 10.13.
+的方法
 
 
 1513
 00:35:39,386 --> 00:35:40,456
-And I encourage you to check out
+我鼓励你们去参加
 
 
 1514
 00:35:40,456 --> 00:35:41,546
-the "Advanced Touch Bar Talk"
+今天晚些时候召开的叫做
 
 
 1515
 00:35:41,546 --> 00:35:43,116
-later today which will do a dive
+“Advanced Touch Bar（Touch Bar 进阶）”的演讲
 
 
 1516
 00:35:43,116 --> 00:35:44,446
-into exactly what happens.
+它将深入探讨到底是怎么做的
 
 
 1517
 00:35:46,126 --> 00:35:48,096
-Now, we have a few bonus topics.
+现在 我们有几个额外的话题
 
 
 1518
 00:35:48,096 --> 00:35:49,056
-These are all covered great in
+它们将包括在文档中
 
 
 1519
 00:35:49,056 --> 00:35:50,416
-documentation, but we'll mention
+但我还是要进行
 
 
 1520
 00:35:50,416 --> 00:35:51,146
-them briefly now.
+简要的介绍
 
 
 1521
 00:35:51,606 --> 00:35:52,716
-First is the
+首先要提到的是
 
 
 1522
 00:35:52,716 --> 00:35:54,006
-ColorPickerTouchBarItem.
+ColorPickerTouchBarItem
 
 
 1523
 00:35:54,476 --> 00:35:55,896
-This allows users to interact
+它让用户可以直接
 
 
 1524
 00:35:55,896 --> 00:35:56,826
-with the color picker right
+在 Touch Bar 上
 
 
 1525
 00:35:56,826 --> 00:35:57,486
-through Touch Bar.
+选择颜色
 
 
 1526
 00:35:57,916 --> 00:35:59,016
-They can choose the exact color
+他们可以选择他们
 
 
 1527
 00:35:59,016 --> 00:35:59,636
-that they want.
+想要的颜色
 
 
 1528
 00:35:59,996 --> 00:36:00,946
-They can even change color
+他们甚至可以改变颜色模型
 
 
 1529
 00:36:00,946 --> 00:36:02,416
-models and your document can
+并且你的文档可以对
 
 
 1530
 00:36:02,416 --> 00:36:03,756
-restrict which color models are
+颜色模型支持的
 
 
 1531
 00:36:03,756 --> 00:36:04,346
-supported.
+加以约束
 
 
 1532
 00:36:04,986 --> 00:36:06,366
-Users also have access to their
+用户也可以使用
 
 
 1533
 00:36:06,366 --> 00:36:07,296
-favorite color swatches.
+他们最爱的色板
 
 
 1534
 00:36:07,296 --> 00:36:07,956
-So, it's a really great
+这真的是很好的
 
 
 1535
 00:36:07,956 --> 00:36:08,666
-experience.
+体验
 
 
 1536
 00:36:10,036 --> 00:36:10,816
-We also have a
+我们还有分享服务
 
 
 1537
 00:36:10,816 --> 00:36:11,846
-SharingServicePicker.
+拾取器
 
 
 1538
 00:36:12,306 --> 00:36:13,646
-This lets you easily share a
+这将是你能通过邮件
 
 
 1539
 00:36:13,646 --> 00:36:15,426
-document through mail, messages,
+信息 AirDrop 甚至是
 
 
 1540
 00:36:15,426 --> 00:36:16,856
-air drop, or even third-party
+第三方保险的服务
 
 
 1541
 00:36:16,856 --> 00:36:17,726
-insurance services.
+共享文件
 
 
 1542
 00:36:17,726 --> 00:36:18,566
-And these are all the same
+这些都是通过同一个
 
 
 1543
 00:36:18,566 --> 00:36:20,096
-services available through the
+分享表完成的
 
 
 1544
 00:36:20,096 --> 00:36:20,676
-share sheet.
+服务
 
 
 1545
 00:36:22,066 --> 00:36:22,856
-And finally, we have an
+最后 我们有一个 NSScrubber
 
 
 1546
 00:36:22,896 --> 00:36:24,066
-NSScrubber, which is actually a
+它其实是一个视图
 
 
 1547
 00:36:24,066 --> 00:36:25,156
-view, not an item.
+而不是一个项
 
 
 1548
 00:36:25,186 --> 00:36:26,146
-This could be the view of a
+它可以是 Touch Bar 项的
 
 
 1549
 00:36:26,146 --> 00:36:26,886
-Touch Bar item.
+视图
 
 
 1550
 00:36:27,536 --> 00:36:28,256
-And you can see in an
+这就和我们刚才说到的
 
 
 1551
 00:36:28,256 --> 00:36:29,746
-application such as calendar's
+日历里的时间轴
 
 
 1552
 00:36:30,076 --> 00:36:32,236
-timeline, Safari's tabs or even
+Safari 的标签页
 
 
 1553
 00:36:32,236 --> 00:36:33,546
-the color swatches of the color
+色板里的
 
 
 1554
 00:36:33,546 --> 00:36:34,416
-picker that we just talked
+颜色选择器
 
 
 1555
 00:36:34,416 --> 00:36:34,676
-about.
+一样
 
 
 1556
 00:36:35,506 --> 00:36:36,836
-It's a very versatile, very
+这是一个多功能的
 
 
 1557
 00:36:36,836 --> 00:36:37,746
-fluid control.
+可变的控件
 
 
 1558
 00:36:37,746 --> 00:36:39,296
-And it was designed specifically
+它是特别为 Touch Bar
 
 
 1559
 00:36:39,296 --> 00:36:40,086
-for Touch Bar.
+设计的
 
 
 1560
 00:36:40,426 --> 00:36:41,836
-You can find out more about this
+你可以在之前的演讲中
 
 
 1561
 00:36:41,836 --> 00:36:42,926
-at the advanced talk, which will
+了解到更多更深的
 
 
 1562
 00:36:42,926 --> 00:36:44,856
-do a deep dive on exactly how to
+关于如何使用这个
 
 
 1563
 00:36:44,856 --> 00:36:45,626
-use this control.
+控件的内容
 
 
 1564
 00:36:47,286 --> 00:36:48,616
-Now, we've covered a ton of
+好了 我们今天已经讲到了
 
 
 1565
 00:36:48,616 --> 00:36:49,436
-material today.
+很多内容
 
 
 1566
 00:36:49,766 --> 00:36:51,106
-We talked about the NSTouchBar
+我们讲了 NSTouchBar API
 
 
 1567
 00:36:51,106 --> 00:36:52,726
-API, how it's tied to the
+它如何连接响应器链
 
 
 1568
 00:36:52,726 --> 00:36:54,486
-responder chain, how you can use
+你如何向用户提供
 
 
 1569
 00:36:54,486 --> 00:36:55,886
-it to provide context-sensitive
+上下文敏感
 
 
 1570
 00:36:55,886 --> 00:36:57,136
-controls for your users.
+的控件
 
 
 1571
 00:36:57,376 --> 00:36:58,106
-We've talked about the
+我们讲到 NSTouchBarItem
 
 
 1572
 00:36:58,106 --> 00:36:59,696
-NSTouchBarItem and all of its
+和所有 AppKit
 
 
 1573
 00:36:59,696 --> 00:37:01,036
-subclasses that AppKit provides
+提供的子类以及
 
 
 1574
 00:37:01,036 --> 00:37:02,386
-and their unique functionality.
+它们独一无二的功能
 
 
 1575
 00:37:02,566 --> 00:37:04,096
-So, you now know enough to go
+所以 今天你知道得足够多了
 
 
 1576
 00:37:04,096 --> 00:37:04,986
-adopt Touch Bar in your
+已经可以在你的应用程序中
 
 
 1577
 00:37:04,986 --> 00:37:06,096
-applications today.
+采用 Touch Bar 技术了
 
 
 1578
 00:37:06,826 --> 00:37:08,036
-While you're there, you should
+你在采用的时候
 
 
 1579
 00:37:08,036 --> 00:37:08,976
-definitely enable user
+你绝对应该让你的用户
 
 
 1580
 00:37:08,976 --> 00:37:10,426
-customization so that users can
+能够进行自定义
 
 
 1581
 00:37:10,426 --> 00:37:11,886
-get the exact experience that
+使你的用户得到他们
 
 
 1582
 00:37:11,886 --> 00:37:12,646
-they're looking for.
+想要的体验
 
 
 1583
 00:37:12,646 --> 00:37:14,056
-And definitely remember to
+一定记得在设计你的 UI 时
 
 
 1584
 00:37:14,056 --> 00:37:15,806
-design you UI with localization
+进行本地化 这样
 
 
 1585
 00:37:15,806 --> 00:37:17,646
-in mind so that all users have a
+你的用户才会获得
 
 
 1586
 00:37:17,646 --> 00:37:18,536
-great experience.
+好的体验
 
 
 1587
 00:37:19,106 --> 00:37:20,576
-For more information, you can
+要想了解更多信息
 
 
 1588
 00:37:20,576 --> 00:37:21,776
-check out our developer website.
+你可以登录我们的开发者网站
 
 
 1589
 00:37:21,776 --> 00:37:24,276
-We have some related sessions
+我们有一些你可能会
 
 
 1590
 00:37:24,276 --> 00:37:25,216
-you might be interested in.
+感兴趣的相关会议
 
 
 1591
 00:37:25,626 --> 00:37:26,556
-"Choosing the Right Cocoa
+“Choosing the Right Cocoa Container View
 
 
 1592
 00:37:26,556 --> 00:37:27,776
-Container View" will look at
+（选择正确的 Cocoa 视图容器）”
 
 
 1593
 00:37:28,026 --> 00:37:28,966
-when you might want to choose a
+可以解决当你想将堆栈视图
 
 
 1594
 00:37:28,966 --> 00:37:30,586
-grid view over a stack view.
+换成网格视图的问题
 
 
 1595
 00:37:30,586 --> 00:37:31,866
-And this could be important
+这很重要 因为你可以将
 
 
 1596
 00:37:31,866 --> 00:37:32,806
-because you could use one of
+这些视图容器中的一个
 
 
 1597
 00:37:32,806 --> 00:37:34,356
-these container views as the
+用作 TouchBarItem 的
 
 
 1598
 00:37:34,356 --> 00:37:36,366
-content view of a TouchBarItem.
+内容视图
 
 
 1599
 00:37:37,196 --> 00:37:38,366
-We also have the "Advanced Touch
+还有我们提到过很多次的
 
 
 1600
 00:37:38,366 --> 00:37:39,406
-Bar Talk" which we mentioned
+“Avanced Touch Bar（Touch Bar 进阶）”演讲
 
 
 1601
 00:37:39,406 --> 00:37:40,916
-several times, which will do a
+这个视频里介绍了
 
 
 1602
 00:37:40,916 --> 00:37:42,396
-dive into extra functionality of
+很多 Touch Bar 的
 
 
 1603
 00:37:42,436 --> 00:37:42,886
-Touch Bar.
+额外功能
 
 
 1604
 00:37:43,186 --> 00:37:44,356
-Thank you all so much for
+感谢大家
 
 
 1605
 00:37:44,356 --> 00:37:45,016
-joining us today.
+今天的到来
 
 
 1606
 00:37:45,016 --> 00:37:45,846
-Enjoy the rest of your
+请享受接下来
 
 
 1607
 00:37:45,846 --> 00:37:46,346
-conference
+的会议
 
 
 1608
 00:37:47,016 --> 00:37:48,398
-[ Applause ]
-
-
-1609
-00:37:48,398 --> 00:37:49,780
-.
+[掌声]
 

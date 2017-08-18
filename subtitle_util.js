@@ -43,9 +43,13 @@ module.exports = {
         statements.forEach(function (srtLine, index) {
             finalLines.push(index + 1);
             finalLines.push(srtLine.timeLine);
-            srtLine.subtitles.forEach(function (subtitle) {
-                finalLines.push(subtitle)
-            });
+            if(srtLine.subtitles) {
+                srtLine.subtitles.forEach(function (subtitle) {
+                    finalLines.push(subtitle)
+                });
+            } else {
+                console.log("None subtitles:" , srtLine);
+            }
             finalLines.push("\n");
         });
         return finalLines;

@@ -1,2344 +1,1388 @@
 1
-00:00:27,966 --> 00:00:29,216
->> Hello, and welcome to
+00:00:18,167 --> 00:00:25,167
+<c.magenta>（tvOS上的最佳本地化体验）</c>
 
 
 2
-00:00:29,216 --> 00:00:31,046
-Localization Best Practices on
+00:00:28,067 --> 00:00:31,833
+<c.magenta>大家好 欢迎你们来到</c>
+<c.magenta>“tvOS上的最佳本地化体验”</c>
 
 
 3
-00:00:31,046 --> 00:00:31,696
-tvOS.
+00:00:32,467 --> 00:00:33,933
+<c.magenta>我的名字叫若阿金·罗波·席尔瓦</c>
 
 
 4
-00:00:32,466 --> 00:00:33,776
-My name is Joaquim Lobo Silva,
+00:00:34,033 --> 00:00:35,167
+<c.magenta>在接下来几分钟里</c>
 
 
 5
-00:00:34,036 --> 00:00:35,116
-and over the next few minutes,
+00:00:35,233 --> 00:00:37,500
+<c.magenta>我将会带着你们看一下</c>
+<c.magenta>你们要采取的几个步骤</c>
 
 
 6
-00:00:35,176 --> 00:00:35,996
-I'm going to walk you through
+00:00:37,633 --> 00:00:41,100
+<c.magenta>在tvOS上创造一个</c>
+<c.magenta>很棒的本地化应用体验</c>
 
 
 7
-00:00:35,996 --> 00:00:37,276
-some of the steps you'll want to
+00:00:42,933 --> 00:00:45,700
+<c.magenta>Apple TV已经在多语言</c>
+<c.magenta>和不同地区上架了</c>
 
 
 8
-00:00:37,276 --> 00:00:38,806
-take to build a great localized
+00:00:45,833 --> 00:00:47,300
+<c.magenta>tvOS 11上新加入的是</c>
 
 
 9
-00:00:38,806 --> 00:00:40,926
-application experience on tvOS.
+00:00:47,367 --> 00:00:50,867
+<c.magenta>阿拉伯语和希伯来语</c>
+<c.magenta>以及可选的系统语言</c>
 
 
 10
-00:00:42,896 --> 00:00:44,116
-Apple TV is available in
+00:00:51,700 --> 00:00:53,333
+<c.magenta>将国际化支持加入到你的应用中</c>
 
 
 11
-00:00:44,116 --> 00:00:45,536
-multiple languages and regions.
+00:00:53,400 --> 00:00:55,867
+<c.magenta>是一个进入新市场的好机会</c>
 
 
 12
-00:00:45,776 --> 00:00:47,566
-And new in tvOS 11, is the
+00:00:55,933 --> 00:00:58,933
+<c.magenta>让更多的用户来使用并享受你的内容</c>
 
 
 13
-00:00:47,566 --> 00:00:49,096
-addition of Arabic and Hebrew
+00:00:59,400 --> 00:01:03,067
+<c.magenta>我们有很多的API和工具</c>
+<c.magenta>来帮助你们达成这一点</c>
 
 
 14
-00:00:49,166 --> 00:00:50,676
-and selectable system languages.
+00:01:03,500 --> 00:01:04,467
+<c.magenta>让我们现在就开始吧</c>
 
 
 15
-00:00:51,696 --> 00:00:52,996
-Adding international support to
+00:01:07,067 --> 00:01:09,700
+<c.magenta>我会把这个主题分成</c>
+<c.magenta>三个不同部分来讲</c>
 
 
 16
-00:00:52,996 --> 00:00:54,136
-your app, is an incredible
+00:01:09,967 --> 00:01:13,067
+<c.magenta>首先 我会谈谈如何处理</c>
+<c.magenta>文本的最佳体验</c>
 
 
 17
-00:00:54,136 --> 00:00:55,836
-opportunity to reach new markets
+00:01:13,133 --> 00:01:14,567
+<c.magenta>即显示给你用户的文本信息</c>
 
 
 18
-00:00:55,926 --> 00:00:58,016
-and enable more users to use and
+00:01:15,200 --> 00:01:18,567
+<c.magenta>然后我会说下</c>
+<c.magenta>对于布局和图像应该考虑的因素</c>
 
 
 19
-00:00:58,016 --> 00:00:58,866
-enjoy your content.
+00:01:19,067 --> 00:01:22,267
+<c.magenta>最后 就是导出你本地内容的步骤</c>
 
 
 20
-00:00:59,346 --> 00:01:00,956
-And we have a wide variety of
+00:01:22,367 --> 00:01:24,733
+<c.magenta>还有测试你的应用</c>
+<c.magenta>以确保它能正常运作</c>
 
 
 21
-00:01:00,956 --> 00:01:02,456
-APIs and tools to help you do
+00:01:25,433 --> 00:01:27,167
+<c.magenta>让我们从文本开始说起吧</c>
 
 
 22
-00:01:02,456 --> 00:01:02,966
-just that.
+00:01:29,200 --> 00:01:30,900
+<c.magenta>任何要呈现给你用户的文本信息</c>
 
 
 23
-00:01:03,526 --> 00:01:04,135
-Let's dive right in.
+00:01:30,967 --> 00:01:33,133
+<c.magenta>都应该以他们的偏好语言显示</c>
 
 
 24
-00:01:06,986 --> 00:01:08,246
-I'm going to divide this topic
+00:01:34,200 --> 00:01:37,567
+<c.magenta>如果在你的Storyboard元素里有些文本</c>
+<c.magenta>你就什么都不需要做了</c>
 
 
 25
-00:01:08,246 --> 00:01:09,546
-into three different sections.
+00:01:37,900 --> 00:01:39,700
+<c.magenta>它们被默认标记为“本地化的”</c>
 
 
 26
-00:01:09,916 --> 00:01:11,286
-First, I'll talk about best
+00:01:41,667 --> 00:01:44,300
+<c.magenta>如果你计划呈现的是字符串和代码</c>
 
 
 27
-00:01:11,286 --> 00:01:13,076
-practices on how to handle text
+00:01:44,567 --> 00:01:47,300
+<c.magenta>那么这些内容应该调用</c>
+<c.magenta>NSLocalizedString来返回</c>
 
 
 28
-00:01:13,116 --> 00:01:14,386
-that is displayed to your user.
+00:01:47,667 --> 00:01:50,100
+<c.magenta>这样就可以将你的字符串</c>
+<c.magenta>标记为“本地化的”</c>
 
 
 29
-00:01:15,216 --> 00:01:16,116
-Then, I'll cover some
+00:01:50,167 --> 00:01:53,300
+<c.magenta>以便它会被包含在</c>
+<c.magenta>你将要送出翻译的文件中</c>
 
 
 30
-00:01:16,116 --> 00:01:17,646
-considerations regarding layout
+00:01:54,700 --> 00:01:56,000
+<c.magenta>对于这两种情况</c>
 
 
 31
-00:01:17,696 --> 00:01:18,386
-and images.
+00:01:56,067 --> 00:01:58,900
+<c.magenta>给字符串做好备注是非常有用的</c>
 
 
 32
-00:01:18,996 --> 00:01:20,586
-And finally, the steps needed to
+00:01:59,167 --> 00:02:02,367
+<c.magenta>你应用里的每一个本地化的字符串</c>
+<c.magenta>都应该包含这部分备注</c>
 
 
 33
-00:01:20,586 --> 00:01:22,136
-export your localizable content,
+00:02:02,933 --> 00:02:04,600
+<c.magenta>备注可以被当成定义因素</c>
 
 
 34
-00:01:22,366 --> 00:01:23,646
-as well as test your app, to
+00:02:04,667 --> 00:02:09,233
+<c.magenta>用于已翻译内容和</c>
+<c.magenta>感觉不自然或不清晰的文本信息之间</c>
 
 
 35
-00:01:23,646 --> 00:01:24,586
-make sure it all works.
+00:02:11,500 --> 00:02:13,600
+<c.magenta>这里是一个代码中本地化字符串的例子</c>
 
 
 36
-00:01:25,426 --> 00:01:27,066
-So, let's get started with text.
+00:02:14,067 --> 00:02:16,733
+<c.magenta>如你所见</c>
+<c.magenta>这是个简单的英文单词“订阅”</c>
 
 
 37
-00:01:27,896 --> 00:01:30,366
-Any text that will be presented
+00:02:16,967 --> 00:02:19,567
+<c.magenta>其备注描述了</c>
+<c.magenta>它会出现我UI中的什么位置</c>
 
 
 38
-00:01:30,366 --> 00:01:31,286
-to your user, should be
+00:02:19,667 --> 00:02:22,067
+<c.magenta>还有它在我的应用里会实现什么</c>
 
 
 39
-00:01:31,286 --> 00:01:32,516
-displayed in their preferred
+00:02:25,233 --> 00:02:28,267
+<c.magenta>将备注加到</c>
+<c.magenta>Storyboard元素上也很简单</c>
 
 
 40
-00:01:32,516 --> 00:01:33,026
-language.
+00:02:28,800 --> 00:02:31,100
+<c.magenta>对于每个元素 你就把备注加到</c>
 
 
 41
-00:01:34,196 --> 00:01:35,556
-If you have text in Storyboard
+00:02:31,167 --> 00:02:34,700
+<c.magenta>在Identity Inspector下的</c>
+<c.magenta>Comment for Localizer文本框</c>
 
 
 42
-00:01:35,556 --> 00:01:36,946
-elements, there's nothing else
+00:02:37,967 --> 00:02:40,467
+<c.magenta>需要注意的是</c>
+<c.magenta>要显示你应用中的文本信息时</c>
 
 
 43
-00:01:36,946 --> 00:01:37,426
-you need to do.
+00:02:40,700 --> 00:02:43,333
+<c.magenta>本地化字符串不是唯一实现它的方式</c>
 
 
 44
-00:01:37,906 --> 00:01:39,136
-These are marked "localizable"
+00:02:43,733 --> 00:02:46,567
+<c.magenta>事实上 你的一些用例很有可能</c>
 
 
 45
-00:01:39,136 --> 00:01:39,706
-by default.
+00:02:46,633 --> 00:02:48,667
+<c.magenta>被我们的格式化类所支持</c>
 
 
 46
-00:01:41,646 --> 00:01:42,856
-If you have strings and code
+00:02:49,300 --> 00:02:51,967
+<c.magenta>这些类能帮助你格式化和显示内容</c>
+<c.magenta>像是数字</c>
 
 
 47
-00:01:42,906 --> 00:01:43,636
-that you're planning on
+00:02:52,033 --> 00:02:56,367
+<c.magenta>汇率 日期 像是长度和质量单位</c>
+<c.magenta>以及更多</c>
 
 
 48
-00:01:43,636 --> 00:01:45,036
-presenting, these should be
+00:02:56,533 --> 00:02:59,133
+<c.magenta>根本就不用给这些内容写本地化字符串</c>
 
 
 49
-00:01:45,036 --> 00:01:46,086
-wrapped with a call to
+00:03:01,667 --> 00:03:03,900
+<c.magenta>这里是个关于使用</c>
+<c.magenta>DateFormatter的例子</c>
 
 
 50
-00:01:46,086 --> 00:01:47,166
-"NSLocalizedString."
+00:03:04,300 --> 00:03:05,900
+<c.magenta>我只需创建这个对象</c>
 
 
 51
-00:01:47,646 --> 00:01:48,776
-This will essentially mark your
+00:03:05,967 --> 00:03:08,400
+<c.magenta>在本例中</c>
+<c.magenta>我只关心显示时间</c>
 
 
 52
-00:01:48,776 --> 00:01:50,516
-string as "localizable," so that
+00:03:08,567 --> 00:03:11,600
+<c.magenta>因此我将timeStyle</c>
+<c.magenta>设成我偏好的长度值</c>
 
 
 53
-00:01:50,516 --> 00:01:51,776
-it is included in the file that
+00:03:12,000 --> 00:03:14,800
+<c.magenta>最后得到一个此对象的格式化字符串</c>
 
 
 54
-00:01:51,776 --> 00:01:52,566
-you will send out for
+00:03:15,700 --> 00:03:19,133
+<c.magenta>这个字符串</c>
+<c.magenta>不仅保证是以用户的偏好语言显示</c>
 
 
 55
-00:01:52,566 --> 00:01:53,166
-translation.
+00:03:19,267 --> 00:03:22,200
+<c.magenta>而且处理了一些其他的格式化环境内容</c>
 
 
 56
-00:01:54,616 --> 00:01:56,486
-In both of these cases, comments
+00:03:22,267 --> 00:03:25,833
+<c.magenta>像是用户偏爱12小时制</c>
+<c.magenta>还是24小时制</c>
 
 
 57
-00:01:56,486 --> 00:01:57,816
-on the strings themselves, are
+00:03:28,067 --> 00:03:30,933
+<c.magenta>关于如何最大程度地利用格式器</c>
+<c.magenta>的更多信息</c>
 
 
 58
-00:01:57,816 --> 00:01:59,576
-extremely useful, and should be
+00:03:31,000 --> 00:03:33,600
+<c.magenta>还有它们国际化能力的一些指引内容</c>
 
 
 59
-00:01:59,576 --> 00:02:00,736
-included as part of every
+00:03:33,867 --> 00:03:37,067
+<c.magenta>我强烈建议你们去看看</c>
+<c.magenta>2016年的这两场演讲</c>
 
 
 60
-00:02:00,736 --> 00:02:02,256
-localizable string in your app.
+00:03:40,800 --> 00:03:42,333
+<c.magenta>让我们谈谈远程内容</c>
 
 
 61
-00:02:02,936 --> 00:02:04,166
-Comments can be the defining
+00:03:43,367 --> 00:03:45,233
+<c.magenta>任何你从服务器取得的文本信息</c>
 
 
 62
-00:02:04,166 --> 00:02:05,806
-factor between great translated
+00:03:45,300 --> 00:03:47,767
+<c.magenta>也应该与你应用的运行语言一致</c>
 
 
 63
-00:02:05,806 --> 00:02:07,536
-content and text that feels
+00:03:48,567 --> 00:03:50,000
+<c.magenta>我所指的是 例如</c>
 
 
 64
-00:02:07,536 --> 00:02:09,066
-unnatural or unclear.
+00:03:50,067 --> 00:03:52,767
+<c.magenta>你应用里所显示的</c>
+<c.magenta>多媒体内容和描述信息</c>
 
 
 65
-00:02:11,416 --> 00:02:12,806
-Here's an example of a localized
+00:03:54,933 --> 00:03:57,467
+<c.magenta>为了达成这一点</c>
+<c.magenta>你需要通知你的服务器</c>
 
 
 66
-00:02:12,806 --> 00:02:13,466
-string in code.
+00:03:57,533 --> 00:03:59,900
+<c.magenta>内容应该以什么语言来呈现</c>
 
 
 67
-00:02:14,036 --> 00:02:15,246
-As you can see, this is simply
+00:04:02,233 --> 00:04:05,700
+<c.magenta>我们有些API来让你们知道</c>
+<c.magenta>你应用的当前运行语言是什么</c>
 
 
 68
-00:02:15,246 --> 00:02:16,576
-the English word "subscribe"
+00:04:05,767 --> 00:04:10,467
+<c.magenta>这帮你省了很多工夫</c>
+<c.magenta>来从你支持的语言中选出最好的</c>
 
 
 69
-00:02:16,976 --> 00:02:18,196
-with a comment describing where
+00:04:10,767 --> 00:04:12,733
+<c.magenta>同时还尊重了用户的偏好</c>
 
 
 70
-00:02:18,196 --> 00:02:20,036
-it will appear in my UI, as well
+00:04:14,433 --> 00:04:17,433
+<c.magenta>像是区域差异和</c>
+<c.magenta>适当的区域备用方案这些因素</c>
 
 
 71
-00:02:20,036 --> 00:02:21,066
-as what it does within the
+00:04:17,500 --> 00:04:18,567
+<c.magenta>也被考虑到了</c>
 
 
 72
-00:02:21,066 --> 00:02:22,066
-context of my app.
+00:04:21,966 --> 00:04:23,600
+<c.magenta>举几个小例子</c>
 
 
 73
-00:02:25,206 --> 00:02:26,856
-Comments are just as easy to add
+00:04:23,667 --> 00:04:26,333
+<c.magenta>这里我有一个表格</c>
+<c.magenta>第一列显示的是语种</c>
 
 
 74
-00:02:26,856 --> 00:02:28,186
-to Storyboard elements as well.
+00:04:26,400 --> 00:04:28,500
+<c.magenta>用户可能将此语种选为其系统语言</c>
 
 
 75
-00:02:28,776 --> 00:02:29,876
-For every element, you can
+00:04:28,667 --> 00:04:32,467
+<c.magenta>第二列</c>
+<c.magenta>显示了你应用支持的备选语言</c>
 
 
 76
-00:02:29,876 --> 00:02:31,326
-simply add a comment in the
+00:04:32,967 --> 00:04:36,233
+<c.magenta>第三列就是最终结果</c>
+<c.magenta>在考虑各种情况后所得出</c>
 
 
 77
-00:02:31,326 --> 00:02:32,846
-Comment for Localizer text
+00:04:36,667 --> 00:04:37,767
+<c.magenta>第一个例子是</c>
 
 
 78
-00:02:32,846 --> 00:02:34,016
-field, in the Identity
+00:04:37,833 --> 00:04:40,200
+<c.magenta>用户选择了西班牙语</c>
 
 
 79
-00:02:34,016 --> 00:02:34,526
-Inspector.
+00:04:40,267 --> 00:04:41,833
+<c.magenta>并将区域设为墨西哥</c>
 
 
 80
-00:02:37,946 --> 00:02:39,016
-Do note that when it comes to
+00:04:42,067 --> 00:04:44,700
+<c.magenta>由于识别码是“es-MX”</c>
 
 
 81
-00:02:39,016 --> 00:02:40,456
-displaying text in your app,
+00:04:46,833 --> 00:04:50,267
+<c.magenta>这个应用除了支持西班牙的西班牙语</c>
+<c.magenta>还支持拉丁美洲西班牙语</c>
 
 
 82
-00:02:40,686 --> 00:02:41,776
-localized strings are not the
+00:04:50,333 --> 00:04:56,167
+<c.magenta>在本地化列表中</c>
+<c.magenta>分别是“es-ES”和“es-419”</c>
 
 
 83
-00:02:41,776 --> 00:02:43,166
-only way to accomplish this.
+00:04:56,967 --> 00:05:01,000
+<c.magenta>运行时间接下来会</c>
+<c.magenta>为你的应用选择拉丁美洲西班牙语</c>
 
 
 84
-00:02:43,716 --> 00:02:45,166
-In fact, it's very likely that
+00:05:02,900 --> 00:05:04,667
+<c.magenta>类似地 第二个例子是</c>
 
 
 85
-00:02:45,166 --> 00:02:46,546
-you have a number of use cases
+00:05:04,800 --> 00:05:07,600
+<c.magenta>用户选择了中文</c>
+<c.magenta>并将区域设为中国</c>
 
 
 86
-00:02:46,616 --> 00:02:47,416
-that are covered by our
+00:05:07,833 --> 00:05:10,467
+<c.magenta>Bundle接下来就会选择</c>
+<c.magenta>“简体中文”</c>
 
 
 87
-00:02:47,416 --> 00:02:48,446
-formatted classes.
+00:05:10,533 --> 00:05:12,433
+<c.magenta>从你应用所支持的语种当中</c>
 
 
 88
-00:02:49,296 --> 00:02:50,516
-These help you format and
+00:05:16,733 --> 00:05:18,667
+<c.magenta>要获取你应用的当前运行语言</c>
 
 
 89
-00:02:50,516 --> 00:02:51,936
-display things like numbers,
+00:05:18,800 --> 00:05:22,033
+<c.magenta>你只需要从偏好本地化内容中</c>
+<c.magenta>获取第一个对象</c>
 
 
 90
-00:02:52,006 --> 00:02:54,436
-currencies, dates, units such as
+00:05:22,100 --> 00:05:23,367
+<c.magenta>该内容来自于你应用的bundle</c>
 
 
 91
-00:02:54,436 --> 00:02:56,146
-length and mass, and much more,
+00:05:24,200 --> 00:05:27,133
+<c.magenta>它会返回一个语言识别码</c>
+<c.magenta>你可以将此识别码发送到服务器上</c>
 
 
 92
-00:02:56,516 --> 00:02:57,676
-without having to write out
+00:05:28,533 --> 00:05:29,500
+<c.magenta>同样地</c>
 
 
 93
-00:02:57,676 --> 00:02:58,936
-localized strings for these.
+00:05:29,667 --> 00:05:32,933
+<c.magenta>如果你的服务器支持</c>
+<c.magenta>很多种跟你应用有关的语言</c>
 
 
 94
-00:03:01,646 --> 00:03:02,766
-Here's an example of date
+00:05:33,267 --> 00:05:36,433
+<c.magenta>你也可从这些语言中得到最合适的语言</c>
 
 
 95
-00:03:02,766 --> 00:03:03,706
-formatted usage.
+00:05:36,633 --> 00:05:39,700
+<c.magenta>利用Bundle.preferredLocalizations</c>
+<c.magenta>(from: available)语句</c>
 
 
 96
-00:03:04,276 --> 00:03:06,126
-I simply create the object, and
+00:05:41,600 --> 00:05:43,967
+<c.magenta>这就是关于</c>
+<c.magenta>如何处理你应用中文本信息的概述</c>
 
 
 97
-00:03:06,126 --> 00:03:07,366
-in this case, I only care about
+00:05:44,533 --> 00:05:47,400
+<c.magenta>可以使用Storyboard</c>
+<c.magenta>来将文本标记为本地化的</c>
 
 
 98
-00:03:07,366 --> 00:03:09,426
-showing time, so I set the Time
+00:05:47,467 --> 00:05:49,833
+<c.magenta>也可以调用</c>
+<c.magenta>NSLocalizedString以及相关代码</c>
 
 
 99
-00:03:09,426 --> 00:03:10,806
-Style to a length value of my
+00:05:50,433 --> 00:05:51,667
+<c.magenta>我们有许多格式器</c>
 
 
 100
-00:03:10,806 --> 00:03:12,806
-preference, and finally get a
+00:05:51,733 --> 00:05:54,167
+<c.magenta>用来显示和上下文化信息</c>
 
 
 101
-00:03:12,806 --> 00:03:14,266
-formatted string out of the
+00:05:54,233 --> 00:05:55,500
+<c.magenta>像是日期和数字</c>
 
 
 102
-00:03:14,266 --> 00:03:14,706
-object.
+00:05:55,833 --> 00:05:58,233
+<c.magenta>对于远程内容</c>
+<c.magenta>你可以依赖Bundle API</c>
 
 
 103
-00:03:15,676 --> 00:03:17,076
-This string is guaranteed to not
+00:05:58,300 --> 00:05:59,567
+<c.magenta>来通知你的服务器</c>
 
 
 104
-00:03:17,076 --> 00:03:18,406
-only be in the user's preferred
+00:05:59,633 --> 00:06:01,467
+<c.magenta>你的内容应该被显示成什么语言</c>
 
 
 105
-00:03:18,406 --> 00:03:20,216
-language, but it also takes care
+00:06:03,733 --> 00:06:06,667
+<c.magenta>接下来 让我们谈下布局和图像</c>
 
 
 106
-00:03:20,216 --> 00:03:21,536
-of a number of other formatting
+00:06:09,767 --> 00:06:10,833
+<c.magenta>谈到布局的时候</c>
 
 
 107
-00:03:21,536 --> 00:03:22,986
-contexts, such as whether the
+00:06:10,967 --> 00:06:13,633
+<c.magenta>通常有两种要进行适应的情况</c>
 
 
 108
-00:03:22,986 --> 00:03:25,606
-user prefers 12 or 24-hour time.
+00:06:14,900 --> 00:06:17,500
+<c.magenta>第一种就是单词长度可能不同</c>
 
 
 109
-00:03:26,586 --> 00:03:29,376
-For much more information on how
+00:06:18,400 --> 00:06:20,667
+<c.magenta>例如</c>
+<c.magenta>这里是英文单词"backup"</c>
 
 
 110
-00:03:29,376 --> 00:03:30,256
-to make the most out of
+00:06:21,433 --> 00:06:23,500
+<c.magenta>然后这是芬兰语中同样的单词</c>
 
 
 111
-00:03:30,256 --> 00:03:31,616
-formatters, as well as some
+00:06:24,233 --> 00:06:27,033
+<c.magenta>显著变长或者变短的翻译</c>
 
 
 112
-00:03:31,616 --> 00:03:32,916
-guidance on their international
+00:06:27,100 --> 00:06:29,633
+<c.magenta>会影响你的布局在运行时间中的表现</c>
 
 
 113
-00:03:32,916 --> 00:03:34,786
-prowess, I highly recommend you
+00:06:29,767 --> 00:06:31,467
+<c.magenta>你应该为此相应地进行设计</c>
 
 
 114
-00:03:34,786 --> 00:03:36,116
-check out these two talks from
+00:06:32,933 --> 00:06:35,233
+<c.magenta>另一个方面是文本方向性</c>
 
 
 115
-00:03:36,116 --> 00:03:36,906
-2016.
+00:06:36,133 --> 00:06:37,800
+<c.magenta>英语使用的是拉丁字母表</c>
 
 
 116
-00:03:40,796 --> 00:03:42,126
-Let's talk about remote content.
+00:06:37,867 --> 00:06:40,167
+<c.magenta>读还有解析都是从左到右的</c>
 
 
 117
-00:03:43,346 --> 00:03:44,566
-Any text that you're fetching
+00:06:41,733 --> 00:06:43,033
+<c.magenta>一些语言像是阿拉伯语</c>
 
 
 118
-00:03:44,566 --> 00:03:46,256
-from a server, should also match
+00:06:43,100 --> 00:06:45,233
+<c.magenta>它们的文本是从右到左读的</c>
 
 
 119
-00:03:46,256 --> 00:03:47,596
-your app's running language.
+00:06:45,633 --> 00:06:48,500
+<c.magenta>结果就是有一些设计上的考虑</c>
 
 
 120
-00:03:48,536 --> 00:03:49,996
-I'm referring to, for example,
+00:06:48,567 --> 00:06:50,933
+<c.magenta>来应对关于信息的流向和顺序</c>
 
 
 121
-00:03:49,996 --> 00:03:51,646
-media content and descriptions
+00:06:51,567 --> 00:06:53,500
+<c.magenta>例如 在从右到左的语言中</c>
 
 
 122
-00:03:51,686 --> 00:03:52,736
-that are shown in your app.
+00:06:53,600 --> 00:06:56,333
+<c.magenta>列表中的第一个项目应该是在最右边</c>
 
 
 123
-00:03:53,056 --> 00:03:56,436
-For this to happen, you'll need
+00:06:56,400 --> 00:06:57,767
+<c.magenta>而不是在最左边</c>
 
 
 124
-00:03:56,436 --> 00:03:57,736
-to inform your server what
+00:06:59,667 --> 00:07:02,700
+<c.magenta>如果你的应用用UIKit</c>
+<c.magenta>来显示用户界面元素</c>
 
 
 125
-00:03:57,736 --> 00:03:58,786
-language the content should
+00:07:02,833 --> 00:07:04,567
+<c.magenta>这里有一些你能用得上的技术</c>
 
 
 126
-00:03:58,786 --> 00:04:00,326
-actually be in.
+00:07:04,633 --> 00:07:07,067
+<c.magenta>来让你轻松应对这两种不同的情况</c>
 
 
 127
-00:04:02,226 --> 00:04:03,616
-We have APIs that let you know
+00:07:07,567 --> 00:07:10,967
+<c.magenta>我强烈建议你</c>
+<c.magenta>从UIStackView开始看起</c>
 
 
 128
-00:04:03,616 --> 00:04:04,636
-what language you're app is
+00:07:11,533 --> 00:07:15,167
+<c.magenta>UIStackView是一个用来布局</c>
+<c.magenta>一系列视图的流线型界面</c>
 
 
 129
-00:04:04,636 --> 00:04:06,056
-currently running in, and these
+00:07:15,367 --> 00:07:17,100
+<c.magenta>水平或者垂直地</c>
 
 
 130
-00:04:06,056 --> 00:04:07,356
-do a lot of the heavy lifting in
+00:07:17,300 --> 00:07:20,600
+<c.magenta>它们还可以被嵌套使用</c>
+<c.magenta>来创建这里所显示的复杂布局</c>
 
 
 131
-00:04:07,356 --> 00:04:08,476
-terms of choosing the best
+00:07:22,167 --> 00:07:24,933
+<c.magenta>在本例中</c>
+<c.magenta>你可以看到我有一些编好号的视图</c>
 
 
 132
-00:04:08,476 --> 00:04:09,686
-language out of the ones that
+00:07:25,400 --> 00:07:28,200
+<c.magenta>这里的基本信息流是从左到右的</c>
 
 
 133
-00:04:09,686 --> 00:04:11,496
-you support, while respecting
+00:07:28,267 --> 00:07:30,233
+<c.magenta>就像是英语这样的语言</c>
 
 
 134
-00:04:11,496 --> 00:04:12,496
-the user's preferences.
+00:07:32,133 --> 00:07:34,600
+<c.magenta>关于UIStackView的内容</c>
+<c.magenta>是底层的</c>
 
 
 135
-00:04:14,416 --> 00:04:15,696
-Things like regional variance
+00:07:34,667 --> 00:07:36,733
+<c.magenta>它依赖于叫作自动布局的东西</c>
 
 
 136
-00:04:15,696 --> 00:04:16,875
-and any appropriate regional
+00:07:37,900 --> 00:07:42,400
+<c.magenta>自动布局是一组API</c>
+<c.magenta>它用来确定视图间的布局关系</c>
 
 
 137
-00:04:16,875 --> 00:04:18,446
-fallbacks, are also considered.
+00:07:42,567 --> 00:07:44,900
+<c.magenta>也就是说如果一个视图的尺寸改变了</c>
 
 
 138
-00:04:19,166 --> 00:04:22,906
-Just to give a few small
+00:07:45,000 --> 00:07:48,367
+<c.magenta>其他的视图能够进行相应地适应更改</c>
+<c.magenta>来避免重叠或者截断</c>
 
 
 139
-00:04:22,906 --> 00:04:24,636
-examples, I have here a table
+00:07:49,567 --> 00:07:50,767
+<c.magenta>另外</c>
 
 
 140
-00:04:24,636 --> 00:04:25,836
-where the first column shows a
+00:07:50,967 --> 00:07:54,667
+<c.magenta>自动布局</c>
+<c.magenta>还依赖于头限制和尾限制的概念</c>
 
 
 141
-00:04:25,836 --> 00:04:27,126
-language that the user might
+00:07:55,300 --> 00:07:58,100
+<c.magenta>这些本来是左到右位置限制</c>
 
 
 142
-00:04:27,126 --> 00:04:27,966
-have picked for their system
+00:07:58,200 --> 00:08:01,867
+<c.magenta>不过当运行的是</c>
+<c.magenta>从右到左语言的时候评估的是右到左</c>
 
 
 143
-00:04:27,966 --> 00:04:28,486
-language.
+00:08:02,067 --> 00:08:04,067
+<c.magenta>因此 对于上面的栈视图</c>
 
 
 144
-00:04:28,666 --> 00:04:29,916
-The second column shows
+00:08:04,867 --> 00:08:07,567
+<c.magenta>布局会自动地改变为从右到左</c>
 
 
 145
-00:04:29,916 --> 00:04:31,146
-potential languages that your
+00:08:07,633 --> 00:08:10,000
+<c.magenta>比如 运行在阿拉伯语或者希伯来语时</c>
 
 
 146
-00:04:31,146 --> 00:04:33,166
-application supports, and the
+00:08:12,033 --> 00:08:12,900
+<c.magenta>而且这可以被实现</c>
 
 
 147
-00:04:33,166 --> 00:04:34,336
-third column would be the end
+00:08:12,967 --> 00:08:15,167
+<c.magenta>都不用额外多写一行代码</c>
 
 
 148
-00:04:34,336 --> 00:04:35,976
-result, given the circumstances.
+00:08:15,233 --> 00:08:16,767
+<c.magenta>对于不同的布局环境来说</c>
 
 
 149
-00:04:35,976 --> 00:04:38,226
-For the first example, the user
+00:08:19,300 --> 00:08:20,933
+<c.magenta>对于使用TVMLKit的应用来说</c>
 
 
 150
-00:04:38,226 --> 00:04:39,486
-has picked Spanish as their
+00:08:21,000 --> 00:08:22,200
+<c.magenta>其所提供的标准模板</c>
 
 
 151
-00:04:39,486 --> 00:04:41,086
-language, with their region set
+00:08:22,267 --> 00:08:25,000
+<c.magenta>对于我上面提到的两点</c>
+<c.magenta>所有费力的工作都被它完成了</c>
 
 
 152
-00:04:41,086 --> 00:04:43,846
-to Mexico, hence the "es-MX"
+00:08:26,300 --> 00:08:28,367
+<c.magenta>特别是对于从右到左语言</c>
 
 
 153
-00:04:43,846 --> 00:04:44,426
-identifier.
+00:08:28,433 --> 00:08:32,567
+<c.magenta>有着新加入的阿拉伯语和希伯来语</c>
+<c.magenta>以及可选的系统语言</c>
 
 
 154
-00:04:46,826 --> 00:04:48,236
-The app supports both Spanish
+00:08:33,033 --> 00:08:36,667
+<c.magenta>我们有些新的API</c>
+<c.magenta>来权衡相同的头和尾概念</c>
 
 
 155
-00:04:48,236 --> 00:04:49,426
-for Spain, as well as Latin
+00:08:36,866 --> 00:08:40,533
+<c.magenta>对于有特定位置或者</c>
+<c.magenta>对齐的TVMLKit元素来说</c>
 
 
 156
-00:04:49,426 --> 00:04:50,836
-American Spanish and the list of
+00:08:42,366 --> 00:08:44,300
+<c.magenta>类似地 对于边缘和内填充</c>
 
 
 157
-00:04:50,836 --> 00:04:53,536
-localizations, that's "es-EX"
+00:08:44,367 --> 00:08:47,267
+<c.magenta>我们有新的多媒体询问来描述特定的值</c>
 
 
 158
-00:04:53,606 --> 00:04:55,936
-and "es-419" respectively.
+00:08:47,333 --> 00:08:49,133
+<c.magenta>对于一个特定布局方向来说</c>
 
 
 159
-00:04:56,946 --> 00:04:58,116
-And the runtime will go ahead
+00:08:51,733 --> 00:08:53,600
+<c.magenta>为了深入探究这些新功能</c>
 
 
 160
-00:04:58,116 --> 00:04:59,276
-and pick the Latin American
+00:08:53,867 --> 00:08:56,567
+<c.magenta>请参见TVMLKit进阶</c>
 
 
 161
-00:04:59,276 --> 00:05:00,796
-Spanish variant for your app.
+00:08:59,233 --> 00:09:00,467
+<c.magenta>接下来让我们看看图像</c>
 
 
 162
-00:05:02,896 --> 00:05:04,036
-Similarly, for the second
+00:09:00,567 --> 00:09:02,733
+<c.magenta>对于这个主题</c>
+<c.magenta>我会简要说明一个方法</c>
 
 
 163
-00:05:04,036 --> 00:05:05,516
-example, the user has picked
+00:09:02,800 --> 00:09:05,200
+<c.magenta>你要记住这个方法</c>
+<c.magenta>以应对不同的布局方向</c>
 
 
 164
-00:05:05,516 --> 00:05:06,956
-Chinese with the region set to
+00:09:05,767 --> 00:09:09,433
+<c.magenta>通常你应用中的图像会分为三类</c>
 
 
 165
-00:05:06,956 --> 00:05:08,826
-China, and Bundle will go ahead
+00:09:10,533 --> 00:09:13,800
+<c.magenta>你的绝大多数图像可能都是第一种</c>
+<c.magenta>也就是通用的</c>
 
 
 166
-00:05:08,826 --> 00:05:10,356
-and pick "Simplified Chinese"
+00:09:14,067 --> 00:09:16,533
+<c.magenta>这些图像不需要特别调整</c>
 
 
 167
-00:05:10,466 --> 00:05:11,586
-out of the languages that your
+00:09:16,600 --> 00:09:17,800
+<c.magenta>以应对某个布局方向</c>
 
 
 168
-00:05:11,586 --> 00:05:12,256
-app supports.
+00:09:19,733 --> 00:09:20,833
+<c.magenta>第二种</c>
 
 
 169
-00:05:16,706 --> 00:05:17,656
-To get the language that your
+00:09:20,900 --> 00:09:24,067
+<c.magenta>就是确实有某种方向性的图像</c>
 
 
 170
-00:05:17,656 --> 00:05:19,166
-app is running in, all you have
+00:09:24,533 --> 00:09:25,733
+<c.magenta>这种图像有很多种</c>
 
 
 171
-00:05:19,166 --> 00:05:20,756
-to do is get the first object of
+00:09:25,800 --> 00:09:28,733
+<c.magenta>像是导航箭头 揭露指示器</c>
 
 
 172
-00:05:20,756 --> 00:05:22,316
-preferred localizations from
+00:09:28,867 --> 00:09:32,067
+<c.magenta>或者像是这个例子</c>
+<c.magenta>一种文本的简化呈现</c>
 
 
 173
-00:05:22,316 --> 00:05:22,986
-your app's bundle.
+00:09:32,933 --> 00:09:34,633
+<c.magenta>对于这些图像来说</c>
+<c.magenta>唯一要做的步骤</c>
 
 
 174
-00:05:24,176 --> 00:05:25,236
-This will return a language
+00:09:34,700 --> 00:09:37,067
+<c.magenta>来适应相反方向布局就是</c>
 
 
 175
-00:05:25,236 --> 00:05:26,426
-identifier that you can send to
+00:09:37,300 --> 00:09:38,833
+<c.magenta>从图形角度上镜像它们</c>
 
 
 176
-00:05:26,426 --> 00:05:26,906
-your server.
+00:09:38,967 --> 00:09:40,433
+<c.magenta>现在我们就有正确的结果了</c>
 
 
 177
-00:05:28,516 --> 00:05:30,236
-Alternatively, if your server
+00:09:42,800 --> 00:09:45,733
+<c.magenta>最后 第三种和第二种很类似</c>
 
 
 178
-00:05:30,236 --> 00:05:31,336
-supports a different set of
+00:09:45,833 --> 00:09:47,300
+<c.magenta>不过相对复杂些</c>
 
 
 179
-00:05:31,336 --> 00:05:32,756
-languages relative to your app,
+00:09:47,367 --> 00:09:51,033
+<c.magenta>也就是单纯地翻转它们</c>
+<c.magenta>会得到错误的结果</c>
 
 
 180
-00:05:33,266 --> 00:05:34,426
-you can also get the best
+00:09:52,067 --> 00:09:54,967
+<c.magenta>在本例中 我有一个带对勾的项目列表</c>
 
 
 181
-00:05:34,426 --> 00:05:35,776
-possible language match out of
+00:09:55,167 --> 00:09:57,433
+<c.magenta>但是作为符号 对勾是不应该被镜像的</c>
 
 
 182
-00:05:35,776 --> 00:05:37,876
-those, using Bundle's Preferred
+00:09:59,033 --> 00:10:00,167
+<c.magenta>所以在这种情况下</c>
 
 
 183
-00:05:37,876 --> 00:05:39,576
-Localizations from Available.
+00:10:00,233 --> 00:10:02,300
+<c.magenta>我需要的是两个独立的图像</c>
 
 
 184
-00:05:40,666 --> 00:05:42,806
-So, that's an overview of how to
+00:10:02,367 --> 00:10:03,867
+<c.magenta>每个对应不同的布局方向</c>
 
 
 185
-00:05:42,806 --> 00:05:43,906
-handle text in your app.
+00:10:06,200 --> 00:10:08,967
+<c.magenta>Xcode可以让你</c>
+<c.magenta>轻松应对所有这些情况</c>
 
 
 186
-00:05:44,516 --> 00:05:45,456
-Text can be marked as
+00:10:09,033 --> 00:10:10,833
+<c.magenta>从你的资源目录中就可以找到</c>
 
 
 187
-00:05:45,456 --> 00:05:46,566
-localizable through using
+00:10:11,300 --> 00:10:13,333
+<c.magenta>对于每个资源 你可以标出</c>
 
 
 188
-00:05:46,566 --> 00:05:48,256
-Storyboards, as well as calling
+00:10:13,400 --> 00:10:16,300
+<c.magenta>某个图像是否有固定的方向</c>
+<c.magenta>或者应该适应</c>
 
 
 189
-00:05:48,306 --> 00:05:49,626
-NSLocalizedString and code.
+00:10:16,367 --> 00:10:19,567
+<c.magenta>不论是通过镜像</c>
+<c.magenta>还是指明不同图像的情况</c>
 
 
 190
-00:05:50,426 --> 00:05:51,696
-We have a number of formatters
+00:10:19,767 --> 00:10:22,433
+<c.magenta>接下来就是一般的图像使用了</c>
 
 
 191
-00:05:51,696 --> 00:05:52,736
-that help display and
+00:10:22,500 --> 00:10:25,467
+<c.magenta>通过代码</c>
+<c.magenta>或是通过Interface Builder使用</c>
 
 
 192
-00:05:52,736 --> 00:05:54,416
-contextualize information, like
+00:10:28,000 --> 00:10:29,000
+<c.magenta>对于更多的内容</c>
 
 
 193
-00:05:54,456 --> 00:05:55,276
-dates and numbers.
+00:10:29,067 --> 00:10:31,933
+<c.magenta>关于如何使用资源目录</c>
+<c.magenta>来应对不同的布局方向</c>
 
 
 194
-00:05:55,806 --> 00:05:57,366
-For remote content, you can rely
+00:10:32,100 --> 00:10:34,367
+<c.magenta>请参见2016年的这场演讲</c>
 
 
 195
-00:05:57,366 --> 00:05:59,016
-on the Bundle API to help inform
+00:10:37,367 --> 00:10:38,900
+<c.magenta>这就是关于布局和图像的内容</c>
 
 
 196
-00:05:59,016 --> 00:06:00,186
-your server what language your
+00:10:39,167 --> 00:10:41,267
+<c.magenta>我们看到了UIKit和</c>
+<c.magenta>TVMLKit</c>
 
 
 197
-00:06:00,186 --> 00:06:03,746
-content should be displayed in.
+00:10:41,333 --> 00:10:44,033
+<c.magenta>对于适应的布局</c>
+<c.magenta>有着非常高级别的处理办法</c>
 
 
 198
-00:06:03,746 --> 00:06:05,186
-With that, let's talk a little
+00:10:44,667 --> 00:10:48,967
+<c.magenta>还介绍了一些tvOS11</c>
+<c.magenta>新引入用来支持从右到左语言的API</c>
 
 
 199
-00:06:05,186 --> 00:06:06,426
-about layout and images.
+00:10:49,600 --> 00:10:51,767
+<c.magenta>还有关于图像方向性的概念</c>
 
 
 200
-00:06:09,776 --> 00:06:11,046
-When it comes to layout, there
+00:10:51,833 --> 00:10:53,833
+<c.magenta>以及为何它会成为图像资源的一部分</c>
 
 
 201
-00:06:11,046 --> 00:06:12,106
-are typically two different
+00:10:56,167 --> 00:10:57,067
+<c.magenta>最后同样重要的是</c>
 
 
 202
-00:06:12,106 --> 00:06:13,486
-aspects to adapt for.
+00:10:57,133 --> 00:10:59,500
+<c.magenta>让我们谈谈</c>
+<c.magenta>如何将一门语言添加到你的应用</c>
 
 
 203
-00:06:14,846 --> 00:06:16,066
-The first one is potential
+00:10:59,567 --> 00:11:00,767
+<c.magenta>我从头到尾来讲一下</c>
 
 
 204
-00:06:16,066 --> 00:06:17,436
-differences in word length.
+00:11:03,367 --> 00:11:04,700
+<c.magenta>将一门语言添加到你的项目</c>
 
 
 205
-00:06:18,366 --> 00:06:19,506
-For example, here's the word
+00:11:04,767 --> 00:11:06,400
+<c.magenta>是在项目编辑器内完成的</c>
 
 
 206
-00:06:19,506 --> 00:06:21,756
-"backup" in English, and here's
+00:11:06,800 --> 00:11:09,067
+<c.magenta>在Xcode中选择你的项目文件</c>
 
 
 207
-00:06:21,756 --> 00:06:23,276
-that same word in Finnish.
+00:11:09,133 --> 00:11:10,633
+<c.magenta>在项目设置中</c>
 
 
 208
-00:06:24,226 --> 00:06:25,836
-Translations being significantly
+00:11:10,867 --> 00:11:14,033
+<c.magenta>你可以在本地化区域添加支持的语言</c>
 
 
 209
-00:06:25,836 --> 00:06:27,676
-longer or shorter, can impact
+00:11:15,567 --> 00:11:18,967
+<c.magenta>Xcode会管理并且追踪</c>
+<c.magenta>任何可用的文件管理</c>
 
 
 210
-00:06:27,676 --> 00:06:28,906
-the way your layout behaves at
+00:11:19,033 --> 00:11:21,267
+<c.magenta>像是从Storyboard中</c>
+<c.magenta>提取文本信息</c>
 
 
 211
-00:06:28,906 --> 00:06:30,396
-runtime, and you should design
+00:11:21,433 --> 00:11:24,133
+<c.magenta>还有你在代码中</c>
+<c.magenta>标记为本地化的字符串</c>
 
 
 212
-00:06:30,396 --> 00:06:31,246
-for this accordingly.
+00:11:27,900 --> 00:11:30,867
+<c.magenta>当你准备好将应用的内容进行翻译了</c>
 
 
 213
-00:06:32,906 --> 00:06:34,296
-The other aspect is script
+00:11:30,933 --> 00:11:33,867
+<c.magenta>接下来你只需要在Xcode中</c>
+<c.magenta>选择你的项目文件</c>
 
 
 214
-00:06:34,296 --> 00:06:35,016
-directionality.
+00:11:34,000 --> 00:11:37,100
+<c.magenta>并且在编辑菜单里选择本地化导出</c>
 
 
 215
-00:06:36,116 --> 00:06:37,586
-English uses the Latin alphabet,
+00:11:37,767 --> 00:11:41,300
+<c.magenta>Xcode会生成一个翻译交换文件</c>
+<c.magenta>或者XLIFF</c>
 
 
 216
-00:06:37,866 --> 00:06:39,246
-which is read and parsed from
+00:11:41,367 --> 00:11:43,000
+<c.magenta>你可以把它发出去进行翻译</c>
 
 
 217
-00:06:39,246 --> 00:06:39,976
-left to right.
+00:11:45,633 --> 00:11:47,133
+<c.magenta>一旦你收到送回的这个文件</c>
 
 
 218
-00:06:41,726 --> 00:06:43,356
-Some languages like Arabic, have
+00:11:47,367 --> 00:11:49,900
+<c.magenta>要将该内容重新引入到</c>
+<c.magenta>你的Xcode项目</c>
 
 
 219
-00:06:43,356 --> 00:06:44,646
-their scripts read from right to
+00:11:50,000 --> 00:11:53,800
+<c.magenta>只需要选择引入本地化</c>
+<c.magenta>从相同的菜单中</c>
 
 
 220
-00:06:44,646 --> 00:06:44,946
-left.
+00:11:55,400 --> 00:11:58,267
+<c.magenta>Xcode会更新所有相关文件和资源</c>
 
 
 221
-00:06:45,616 --> 00:06:47,266
-As a result, there are a number
+00:11:58,333 --> 00:12:00,067
+<c.magenta>以确保你的应用在构建的时候</c>
 
 
 222
-00:06:47,266 --> 00:06:48,566
-of design considerations
+00:12:00,233 --> 00:12:02,900
+<c.magenta>包含了所有最新的所支持的翻译</c>
 
 
 223
-00:06:48,566 --> 00:06:50,126
-regarding flow and ordering of
+00:12:07,100 --> 00:12:09,700
+<c.magenta>完成了这个之后</c>
+<c.magenta>测试你的应用是个不错的主意</c>
 
 
 224
-00:06:50,126 --> 00:06:50,746
-information.
+00:12:09,767 --> 00:12:12,167
+<c.magenta>在你计划支持的不同环境上进行测试</c>
 
 
 225
-00:06:51,526 --> 00:06:52,836
-For example, in a right to left
+00:12:13,033 --> 00:12:16,100
+<c.magenta>Xcode提供了许多不同功能</c>
+<c.magenta>来帮助你们实现这个目的</c>
 
 
 226
-00:06:52,836 --> 00:06:54,366
-language, the first item in a
+00:12:16,267 --> 00:12:17,400
+<c.magenta>你就能清楚了解</c>
 
 
 227
-00:06:54,366 --> 00:06:55,626
-list is expected to be in the
+00:12:17,467 --> 00:12:19,533
+<c.magenta>你的应用在这些环境下表现如何</c>
 
 
 228
-00:06:55,626 --> 00:06:57,136
-far right, as opposed to the far
+00:12:19,600 --> 00:12:21,833
+<c.magenta>即使你根本不会说所支持的语言</c>
 
 
 229
-00:06:57,136 --> 00:06:57,526
-left.
+00:12:25,000 --> 00:12:26,267
+<c.magenta>对于Objective-C代码</c>
 
 
 230
-00:06:59,676 --> 00:07:01,066
-If your app uses UIKit to
+00:12:26,333 --> 00:12:28,200
+<c.magenta>静态分析器的支持确保了</c>
 
 
 231
-00:07:01,066 --> 00:07:02,536
-display user interface elements,
+00:12:28,267 --> 00:12:30,467
+<c.magenta>对于一个UI元素而言</c>
+<c.magenta>你所提供的任何字符串</c>
 
 
 232
-00:07:02,836 --> 00:07:03,906
-there are a few technologies
+00:12:30,533 --> 00:12:32,500
+<c.magenta>都会被恰当地标记为“本地化”</c>
 
 
 233
-00:07:03,906 --> 00:07:05,496
-that you can use to easily adapt
+00:12:33,100 --> 00:12:34,533
+<c.magenta>不仅如此 你还可以检查</c>
 
 
 234
-00:07:05,496 --> 00:07:06,916
-for these two different aspects.
+00:12:34,600 --> 00:12:37,367
+<c.magenta>你所有的本地化字符串</c>
+<c.magenta>是否有遗漏的备注</c>
 
 
 235
-00:07:07,506 --> 00:07:08,746
-It's highly recommended that you
+00:12:39,200 --> 00:12:41,033
+<c.magenta>对于在不同语言中运行你的应用</c>
 
 
 236
-00:07:08,746 --> 00:07:09,886
-start off with exploring
+00:12:41,100 --> 00:12:43,233
+<c.magenta>有一组很方便的选择用来模拟</c>
 
 
 237
-00:07:09,886 --> 00:07:10,686
-UIStackView.
+00:12:43,300 --> 00:12:45,433
+<c.magenta>一个特定的语言或者区域设置</c>
 
 
 238
-00:07:11,526 --> 00:07:12,966
-UIStackView is a streamlined
+00:12:46,633 --> 00:12:47,733
+<c.magenta>除此之外</c>
 
 
 239
-00:07:12,966 --> 00:07:14,126
-interface for laying out a
+00:12:47,900 --> 00:12:51,200
+<c.magenta>Xcode还允许你在仿真环境中</c>
+<c.magenta>运行你的应用</c>
 
 
 240
-00:07:14,126 --> 00:07:15,596
-series of views, either
+00:12:51,300 --> 00:12:53,500
+<c.magenta>或者伪语言 像是从右到左</c>
 
 
 241
-00:07:15,596 --> 00:07:16,846
-horizontally or vertically.
+00:12:53,733 --> 00:12:56,767
+<c.magenta>以便你可以接着</c>
+<c.magenta>在你的基本语言中测试你的应用</c>
 
 
 242
-00:07:17,196 --> 00:07:18,336
-And these can be nested to
+00:12:56,967 --> 00:12:59,967
+<c.magenta>同时看看</c>
+<c.magenta>其在从右到左的语言中是什么样的</c>
 
 
 243
-00:07:18,336 --> 00:07:20,156
-create complex layouts as shown
+00:13:00,367 --> 00:13:03,733
+<c.magenta>这可以通过使用你应用中</c>
+<c.magenta>方案编辑器的选项标签页来实现</c>
 
 
 244
-00:07:20,156 --> 00:07:20,456
-here.
+00:13:08,167 --> 00:13:10,333
+<c.magenta>通过Xcode 9进行本地化会议</c>
 
 
 245
-00:07:20,456 --> 00:07:23,386
-In this example, you can see
+00:13:10,400 --> 00:13:12,467
+<c.magenta>涵盖了所有这些功能以及更多的内容</c>
 
 
 246
-00:07:23,386 --> 00:07:24,636
-that I have some numbered views,
+00:13:12,533 --> 00:13:16,333
+<c.magenta>介绍了绝大多数 你准备</c>
+<c.magenta>本地化你的应用时要用到的工具</c>
 
 
 247
-00:07:25,406 --> 00:07:26,416
-and the general flow of
+00:13:17,900 --> 00:13:20,900
+<c.magenta>这就是关于本地化和</c>
+<c.magenta>测试你的应用的概要内容</c>
 
 
 248
-00:07:26,416 --> 00:07:27,766
-information here is left to
+00:13:20,967 --> 00:13:21,933
+<c.magenta>在Xcode中</c>
 
 
 249
-00:07:27,766 --> 00:07:28,986
-right, as expected for a
+00:13:22,367 --> 00:13:24,333
+<c.magenta>我介绍了你要如何添加支持的语言</c>
 
 
 250
-00:07:28,986 --> 00:07:29,966
-language like English.
+00:13:24,400 --> 00:13:26,833
+<c.magenta>到你的项目中 整合翻译</c>
 
 
 251
-00:07:32,096 --> 00:07:33,596
-The thing about UIStackView is
+00:13:26,900 --> 00:13:30,267
+<c.magenta>还有在不同的环境中</c>
+<c.magenta>检查你的项目和应用</c>
 
 
 252
-00:07:33,596 --> 00:07:35,156
-that under the hood, it relies
+00:13:32,033 --> 00:13:34,567
+<c.magenta>有关本地化的更多内容和资源</c>
 
 
 253
-00:07:35,156 --> 00:07:36,616
-on something called Auto Layout.
+00:13:34,633 --> 00:13:36,400
+<c.magenta>请参见为本演讲而制作的链接</c>
 
 
 254
-00:07:37,886 --> 00:07:39,476
-Auto Layout is a set of APIs
+00:13:39,667 --> 00:13:41,200
+<c.magenta>除了这些资源</c>
 
 
 255
-00:07:39,476 --> 00:07:40,576
-that help determine layout
+00:13:41,267 --> 00:13:44,033
+<c.magenta>如果你有兴趣更深入地探究本地化</c>
 
 
 256
-00:07:40,576 --> 00:07:42,196
-relationships between views,
+00:13:44,100 --> 00:13:45,800
+<c.magenta>和国际化的主题</c>
 
 
 257
-00:07:42,546 --> 00:07:44,086
-such that if the size of a view
+00:13:45,900 --> 00:13:47,967
+<c.magenta>可以从这里所列的演讲看起</c>
 
 
 258
-00:07:44,086 --> 00:07:45,996
-changes, other views can adapt
-
-
-259
-00:07:45,996 --> 00:07:47,546
-accordingly to prevent overlap
-
-
-260
-00:07:47,546 --> 00:07:48,176
-or truncation.
-
-
-261
-00:07:49,316 --> 00:07:51,496
-In addition to this, Auto Layout
-
-
-262
-00:07:51,496 --> 00:07:52,826
-also relies on the concept of
-
-
-263
-00:07:52,886 --> 00:07:53,816
-leading and trailing
-
-
-264
-00:07:53,816 --> 00:07:54,406
-constraints.
-
-
-265
-00:07:55,056 --> 00:07:56,526
-These are essentially left and
-
-
-266
-00:07:56,526 --> 00:07:58,306
-right position constraints, but
-
-
-267
-00:07:58,306 --> 00:07:59,846
-that evaluate to right and left
-
-
-268
-00:08:00,026 --> 00:08:01,126
-when running in a right to left
-
-
-269
-00:08:01,126 --> 00:08:01,586
-language.
-
-
-270
-00:08:02,066 --> 00:08:03,716
-So, for the stack views above,
-
-
-271
-00:08:04,846 --> 00:08:06,316
-the layout would automatically
-
-
-272
-00:08:06,316 --> 00:08:07,776
-change to right to left, when
-
-
-273
-00:08:07,776 --> 00:08:09,456
-running in, for example, Arabic
-
-
-274
-00:08:09,456 --> 00:08:09,986
-or Hebrew.
-
-
-275
-00:08:09,986 --> 00:08:12,976
-And this can be accomplished
-
-
-276
-00:08:12,976 --> 00:08:14,246
-without having to write a single
-
-
-277
-00:08:14,246 --> 00:08:15,636
-line of extra code for different
-
-
-278
-00:08:15,636 --> 00:08:16,506
-layout environments.
-
-
-279
-00:08:19,256 --> 00:08:21,066
-For apps using TVMLKit, the
-
-
-280
-00:08:21,066 --> 00:08:22,456
-standard templates provided do
-
-
-281
-00:08:22,456 --> 00:08:23,636
-all the heavy lifting for the
-
-
-282
-00:08:23,636 --> 00:08:24,706
-two aspects I mentioned.
-
-
-283
-00:08:26,086 --> 00:08:27,526
-In particular for right to left
-
-
-284
-00:08:27,526 --> 00:08:29,216
-languages, once again, with the
-
-
-285
-00:08:29,216 --> 00:08:30,736
-addition of Arabic and Hebrew
-
-
-286
-00:08:30,736 --> 00:08:32,316
-and selectable system languages,
-
-
-287
-00:08:33,035 --> 00:08:34,196
-we have some new APIs that
-
-
-288
-00:08:34,196 --> 00:08:35,655
-leverage the same concept of
-
-
-289
-00:08:35,655 --> 00:08:37,606
-leading and trailing for TVMLKit
-
-
-290
-00:08:37,606 --> 00:08:38,846
-elements that have a specific
-
-
-291
-00:08:38,846 --> 00:08:40,285
-position or alignment.
-
-
-292
-00:08:42,346 --> 00:08:43,676
-Similarly, for margins and
-
-
-293
-00:08:43,676 --> 00:08:45,176
-padding, we have new media
-
-
-294
-00:08:45,176 --> 00:08:46,776
-queries to help specify custom
-
-
-295
-00:08:46,776 --> 00:08:48,406
-values for a specific layout
-
-
-296
-00:08:48,406 --> 00:08:48,866
-direction.
-
-
-297
-00:08:51,716 --> 00:08:53,186
-To explore these new features in
-
-
-298
-00:08:53,186 --> 00:08:54,686
-depth, please be sure to check
-
-
-299
-00:08:54,686 --> 00:08:56,406
-out Advances in TVMLKit.
-
-
-300
-00:08:59,236 --> 00:09:00,296
-Let's move on to images.
-
-
-301
-00:09:00,566 --> 00:09:01,726
-And for this, I'm going to
-
-
-302
-00:09:01,726 --> 00:09:02,916
-briefly cover an approach to
-
-
-303
-00:09:02,916 --> 00:09:04,096
-keep in mind for different
-
-
-304
-00:09:04,096 --> 00:09:04,866
-layout directions.
-
-
-305
-00:09:05,756 --> 00:09:07,146
-Typically, images in your app
-
-
-306
-00:09:07,146 --> 00:09:08,356
-will fall into one of three
-
-
-307
-00:09:08,356 --> 00:09:09,216
-separate buckets.
-
-
-308
-00:09:10,516 --> 00:09:12,046
-The first one, likely to be most
-
-
-309
-00:09:12,046 --> 00:09:13,526
-of your images, is universal.
-
-
-310
-00:09:13,996 --> 00:09:15,166
-These are images that do not
-
-
-311
-00:09:15,166 --> 00:09:16,826
-need specific adaptation for a
-
-
-312
-00:09:16,826 --> 00:09:17,566
-layout direction.
-
-
-313
-00:09:19,726 --> 00:09:21,446
-The second category, is images
-
-
-314
-00:09:21,446 --> 00:09:22,866
-that do have some direction
-
-
-315
-00:09:22,866 --> 00:09:23,826
-associated to them.
-
-
-316
-00:09:24,486 --> 00:09:25,786
-This can be a number of things
-
-
-317
-00:09:25,786 --> 00:09:27,186
-such as navigation arrows,
-
-
-318
-00:09:27,346 --> 00:09:29,106
-disclosure indicators, or in
-
-
-319
-00:09:29,106 --> 00:09:30,546
-this case, a simplified
-
-
-320
-00:09:30,546 --> 00:09:31,796
-representation of text.
-
-
-321
-00:09:32,906 --> 00:09:34,306
-The only step required for these
-
-
-322
-00:09:34,306 --> 00:09:36,056
-images to adapt for the opposite
-
-
-323
-00:09:36,056 --> 00:09:37,556
-layout direction, is to
-
-
-324
-00:09:37,556 --> 00:09:38,586
-graphically mirror them.
-
-
-325
-00:09:38,876 --> 00:09:40,056
-And now, we have the correct
-
-
-326
-00:09:40,056 --> 00:09:40,366
-result.
-
-
-327
-00:09:42,776 --> 00:09:44,576
-Lastly, the third category is
-
-
-328
-00:09:44,576 --> 00:09:46,126
-similar to the second, but these
-
-
-329
-00:09:46,126 --> 00:09:47,786
-are relatively complex such that
-
-
-330
-00:09:47,786 --> 00:09:49,036
-simply flipping them would
-
-
-331
-00:09:49,036 --> 00:09:50,496
-actually produce an incorrect
-
-
-332
-00:09:50,496 --> 00:09:50,866
-result.
-
-
-333
-00:09:52,036 --> 00:09:53,646
-In this example, I've a bulleted
-
-
-334
-00:09:53,646 --> 00:09:55,256
-list with checkmarks, but
-
-
-335
-00:09:55,256 --> 00:09:56,516
-checkmarks as a symbol should
-
-
-336
-00:09:56,516 --> 00:09:57,276
-not be mirrored.
-
-
-337
-00:09:59,006 --> 00:10:00,576
-So, in this case, what I really
-
-
-338
-00:10:00,576 --> 00:10:02,526
-need is two separate images, one
-
-
-339
-00:10:02,526 --> 00:10:03,576
-for each layout direction.
-
-
-340
-00:10:06,216 --> 00:10:07,626
-Xcode makes it very easy to
-
-
-341
-00:10:07,626 --> 00:10:09,306
-handle all of these cases, right
-
-
-342
-00:10:09,306 --> 00:10:10,686
-from within your Asset Catalog.
-
-
-343
-00:10:11,276 --> 00:10:12,936
-For each asset, you can specify
-
-
-344
-00:10:12,936 --> 00:10:14,166
-whether or not an image has a
-
-
-345
-00:10:14,166 --> 00:10:15,736
-fixed direction or if it should
-
-
-346
-00:10:15,736 --> 00:10:17,496
-adapt either through mirroring
-
-
-347
-00:10:17,526 --> 00:10:18,826
-or through specifying different
-
-
-348
-00:10:18,826 --> 00:10:19,286
-images.
-
-
-349
-00:10:19,736 --> 00:10:21,086
-Then, it's simply a matter of
-
-
-350
-00:10:21,086 --> 00:10:22,816
-using images regularly either in
-
-
-351
-00:10:22,816 --> 00:10:24,956
-code or in Interface Builder, as
-
-
-352
-00:10:24,956 --> 00:10:25,236
-usual.
-
-
-353
-00:10:27,976 --> 00:10:29,416
-For much more information on how
-
-
-354
-00:10:29,416 --> 00:10:30,626
-to use asset catalogs for
-
-
-355
-00:10:30,626 --> 00:10:31,746
-different layout directions,
-
-
-356
-00:10:32,096 --> 00:10:33,286
-please check out this talk from
-
-
-357
-00:10:33,286 --> 00:10:34,206
-2016.
-
-
-358
-00:10:37,376 --> 00:10:38,696
-So, that's layout and images.
-
-
-359
-00:10:39,146 --> 00:10:40,716
-We've seen how both UIKit and
-
-
-360
-00:10:40,716 --> 00:10:42,336
-TVMLKit have very high-level
-
-
-361
-00:10:42,336 --> 00:10:43,836
-approaches for adaptive layouts,
-
-
-362
-00:10:43,956 --> 00:10:46,076
-as well as some of the new APIs
-
-
-363
-00:10:46,076 --> 00:10:48,086
-introduced in tvOS 11 for right
-
-
-364
-00:10:48,086 --> 00:10:48,716
-to left support.
-
-
-365
-00:10:49,596 --> 00:10:50,956
-And also, the concept of image
-
-
-366
-00:10:50,956 --> 00:10:52,436
-directionality and how this is
-
-
-367
-00:10:52,436 --> 00:10:53,576
-part of image assets.
-
-
-368
-00:10:55,906 --> 00:10:57,526
-Last but not least, let's cover
-
-
-369
-00:10:57,526 --> 00:10:58,556
-how you can actually add a
-
-
-370
-00:10:58,556 --> 00:11:00,006
-language to your app, from start
-
-
-371
-00:11:00,006 --> 00:11:00,486
-to finish.
-
-
-372
-00:11:03,346 --> 00:11:04,286
-Adding a language to your
-
-
-373
-00:11:04,286 --> 00:11:05,916
-project is done in the Project
-
-
-374
-00:11:05,916 --> 00:11:06,256
-Editor.
-
-
-375
-00:11:06,786 --> 00:11:08,086
-Select your project file from
-
-
-376
-00:11:08,086 --> 00:11:09,866
-within Xcode, and in the Project
-
-
-377
-00:11:09,866 --> 00:11:11,836
-Settings, you can add supported
-
-
-378
-00:11:11,836 --> 00:11:13,406
-languages in the Localization
-
-
-379
-00:11:13,406 --> 00:11:14,046
-section.
-
-
-380
-00:11:15,556 --> 00:11:17,246
-Xcode will manage and keep track
-
-
-381
-00:11:17,246 --> 00:11:18,386
-of any applicable file
-
-
-382
-00:11:18,386 --> 00:11:19,956
-management, such as extracting
-
-
-383
-00:11:19,956 --> 00:11:21,726
-text from Storyboards, as well
-
-
-384
-00:11:21,726 --> 00:11:22,806
-as strings you've marked as
-
-
-385
-00:11:22,806 --> 00:11:23,966
-localizable in code.
-
-
-386
-00:11:27,876 --> 00:11:28,906
-When you're ready to send your
-
-
-387
-00:11:28,906 --> 00:11:29,956
-app's content out for
-
-
-388
-00:11:29,956 --> 00:11:31,736
-translation, this is as simple
-
-
-389
-00:11:31,736 --> 00:11:33,116
-as selecting your project file
-
-
-390
-00:11:33,146 --> 00:11:34,956
-in Xcode, and choosing Export
-
-
-391
-00:11:34,956 --> 00:11:36,586
-for Localization in the Editor
-
-
-392
-00:11:36,586 --> 00:11:36,926
-menu.
-
-
-393
-00:11:37,746 --> 00:11:38,786
-Xcode will generate a
-
-
-394
-00:11:38,786 --> 00:11:40,556
-translation interchange file, or
-
-
-395
-00:11:40,556 --> 00:11:42,256
-XLIFF, for you to send out for
-
-
-396
-00:11:42,256 --> 00:11:42,746
-translation.
-
-
-397
-00:11:45,606 --> 00:11:46,966
-Once you have this file back,
-
-
-398
-00:11:47,356 --> 00:11:48,866
-reimporting this content into
-
-
-399
-00:11:48,866 --> 00:11:50,386
-your Xcode project is just a
-
-
-400
-00:11:50,386 --> 00:11:51,716
-matter of selecting Import
-
-
-401
-00:11:51,716 --> 00:11:53,236
-Localizations from that same
-
-
-402
-00:11:53,236 --> 00:11:53,596
-menu.
-
-
-403
-00:11:55,386 --> 00:11:56,726
-Xcode will update all of the
-
-
-404
-00:11:56,726 --> 00:11:58,426
-relevant files and resources to
-
-
-405
-00:11:58,426 --> 00:11:59,506
-make sure that when your app is
-
-
-406
-00:11:59,506 --> 00:12:01,326
-built, all up to date supported
-
-
-407
-00:12:01,326 --> 00:12:02,626
-translations are included.
-
-
-408
-00:12:07,086 --> 00:12:08,516
-Once this is done, it's a good
-
-
-409
-00:12:08,516 --> 00:12:09,916
-idea to test your app in the
-
-
-410
-00:12:09,916 --> 00:12:10,916
-different environments that
-
-
-411
-00:12:10,916 --> 00:12:11,966
-you're planning on supporting.
-
-
-412
-00:12:13,016 --> 00:12:14,276
-Xcode provides a number of
-
-
-413
-00:12:14,276 --> 00:12:15,336
-different features to help you
-
-
-414
-00:12:15,336 --> 00:12:16,996
-do this, and you can get a good
-
-
-415
-00:12:16,996 --> 00:12:18,576
-idea of how your app behaves in
-
-
-416
-00:12:18,576 --> 00:12:20,026
-these circumstances, even if you
-
-
-417
-00:12:20,026 --> 00:12:21,146
-don't speak the languages you
-
-
-418
-00:12:21,146 --> 00:12:21,596
-support.
-
-
-419
-00:12:21,936 --> 00:12:26,806
-For Objective-C code, the Static
-
-
-420
-00:12:26,806 --> 00:12:28,226
-Analyzer supports making sure
-
-
-421
-00:12:28,226 --> 00:12:29,726
-that any string you provide to a
-
-
-422
-00:12:29,726 --> 00:12:31,256
-UI element is appropriately
-
-
-423
-00:12:31,256 --> 00:12:32,296
-marked as "localizable."
-
-
-424
-00:12:32,386 --> 00:12:34,406
-Not only that, you can also
-
-
-425
-00:12:34,406 --> 00:12:35,556
-check if any of your localized
-
-
-426
-00:12:35,556 --> 00:12:37,156
-strings are missing comments.
-
-
-427
-00:12:39,166 --> 00:12:40,056
-For running your app in
-
-
-428
-00:12:40,056 --> 00:12:41,316
-different languages, there's a
-
-
-429
-00:12:41,316 --> 00:12:42,686
-convenient set of options for
-
-
-430
-00:12:42,686 --> 00:12:44,386
-simulating a specific language
-
-
-431
-00:12:44,486 --> 00:12:45,286
-or region setting.
-
-
-432
-00:12:46,626 --> 00:12:48,706
-In addition to this, Xcode also
-
-
-433
-00:12:48,706 --> 00:12:49,846
-lets you run your app in a
-
-
-434
-00:12:49,846 --> 00:12:51,756
-simulated environment, or pseudo
-
-
-435
-00:12:51,756 --> 00:12:53,376
-language, such as right to left,
-
-
-436
-00:12:53,736 --> 00:12:55,146
-so that you can continue testing
-
-
-437
-00:12:55,146 --> 00:12:56,566
-your app in your base language,
-
-
-438
-00:12:56,926 --> 00:12:58,256
-but also see how it would look
-
-
-439
-00:12:58,256 --> 00:12:59,306
-like in a right to left
-
-
-440
-00:12:59,306 --> 00:12:59,736
-language.
-
-
-441
-00:13:00,336 --> 00:13:01,616
-This can be done in the Options
-
-
-442
-00:13:01,616 --> 00:13:03,206
-tab of the Scheme Editor for
-
-
-443
-00:13:03,206 --> 00:13:04,406
-your app.
-
-
-444
-00:13:06,176 --> 00:13:09,976
-The Localizing with Xcode 9
-
-
-445
-00:13:09,976 --> 00:13:11,296
-session, covers all of these
-
-
-446
-00:13:11,296 --> 00:13:12,706
-features and much more for
-
-
-447
-00:13:12,706 --> 00:13:13,916
-getting the most out of the tool
-
-
-448
-00:13:13,916 --> 00:13:15,536
-set when preparing your app for
-
-
-449
-00:13:15,536 --> 00:13:16,146
-localization.
-
-
-450
-00:13:17,876 --> 00:13:18,856
-And that's an overview of
-
-
-451
-00:13:18,856 --> 00:13:20,146
-localizing and testing your
-
-
-452
-00:13:20,146 --> 00:13:21,756
-application, from within Xcode.
-
-
-453
-00:13:22,376 --> 00:13:23,496
-We've seen how you can add
-
-
-454
-00:13:23,496 --> 00:13:24,646
-supported languages to your
-
-
-455
-00:13:24,646 --> 00:13:26,716
-project, integrate translations,
-
-
-456
-00:13:26,806 --> 00:13:28,236
-as well as checking your project
-
-
-457
-00:13:28,236 --> 00:13:29,496
-and app out in different
-
-
-458
-00:13:29,496 --> 00:13:30,106
-environments.
-
-
-459
-00:13:32,026 --> 00:13:33,036
-For more information and
-
-
-460
-00:13:33,036 --> 00:13:34,366
-resources on localization,
-
-
-461
-00:13:34,626 --> 00:13:35,716
-please check out the link for
-
-
-462
-00:13:35,716 --> 00:13:36,176
-the session.
-
-
-463
-00:13:39,646 --> 00:13:41,056
-In addition to these resources,
-
-
-464
-00:13:41,246 --> 00:13:42,526
-if you're interested in a deeper
-
-
-465
-00:13:42,526 --> 00:13:44,256
-exploration of localization and
-
-
-466
-00:13:44,256 --> 00:13:45,946
-internationalization topics, the
-
-
-467
-00:13:45,946 --> 00:13:47,276
-sessions listed are a great
-
-
-468
-00:13:47,276 --> 00:13:47,896
-place to start.
-
-
-469
-00:13:49,916 --> 00:13:50,516
-Thank you for watching.
+00:13:49,933 --> 00:13:50,767
+<c.magenta>感谢你们的观看</c>
 

@@ -1,9324 +1,5324 @@
 1
-00:00:20,516 --> 00:00:23,546
-[ Applause ]
+00:00:18,085 --> 00:00:21,522
+<c.magenta>（创建了不起的基于文档的应用）</c>
 
 
 2
-00:00:24,046 --> 00:00:25,186
->> Hello, everyone.
+00:00:24,424 --> 00:00:25,526
+<c.magenta>大家好</c>
 
 
 3
-00:00:26,306 --> 00:00:27,856
-I hope you're having a great
+00:00:26,560 --> 00:00:28,862
+<c.magenta>希望大家度过一个美好的WWDC</c>
 
 
 4
-00:00:27,856 --> 00:00:28,206
-WWDC.
+00:00:29,563 --> 00:00:31,899
+<c.magenta>欢迎来到“创建了不起的</c>
+<c.magenta>基于文档的应用”演讲</c>
 
 
 5
-00:00:28,206 --> 00:00:31,156
-Welcome to Building Great
+00:00:34,101 --> 00:00:37,471
+<c.magenta>今天我们要谈谈文件应用的新功能</c>
 
 
 6
-00:00:31,216 --> 00:00:32,936
-Document-based Apps.
+00:00:37,905 --> 00:00:39,740
+<c.magenta>以及如何将其整合到你们的应用中</c>
 
 
 7
-00:00:33,946 --> 00:00:35,736
-Today we are going to talk about
+00:00:40,541 --> 00:00:42,376
+<c.magenta>首先 让我们先谈谈文件应用</c>
 
 
 8
-00:00:35,736 --> 00:00:37,406
-all the new features of the
+00:00:43,877 --> 00:00:45,812
+<c.magenta>这款应用最大的功能之一</c>
 
 
 9
-00:00:37,406 --> 00:00:38,756
-Files app and how to integrate
+00:00:46,246 --> 00:00:48,882
+<c.magenta>就是它将全部云供应商</c>
+<c.magenta>集合到了一个地方</c>
 
 
 10
-00:00:38,756 --> 00:00:40,196
-them in your app.
+00:00:49,316 --> 00:00:51,952
+<c.magenta>这是通过新的共享文件</c>
+<c.magenta>扩展实现的</c>
 
 
 11
-00:00:40,576 --> 00:00:41,936
-First, let's talk about the
+00:00:52,452 --> 00:00:55,489
+<c.magenta>使用此共享文件扩展的全部云供应商</c>
 
 
 12
-00:00:41,936 --> 00:00:43,336
-Files app.
+00:00:55,556 --> 00:00:59,626
+<c.magenta>都将会出现在我的iPad</c>
+<c.magenta>侧边栏的iCloud驱动旁边</c>
 
 
 13
-00:00:43,866 --> 00:00:45,336
-One of the biggest features of
+00:01:00,727 --> 00:01:02,930
+<c.magenta>如果你想了解更多关于此扩展的信息</c>
 
 
 14
-00:00:45,336 --> 00:00:47,246
-this app is that it gathers all
+00:01:03,697 --> 00:01:06,200
+<c.magenta>我们邀请你观看</c>
+<c.magenta>“文件共享增强功能”演讲</c>
 
 
 15
-00:00:47,246 --> 00:00:48,636
-the cloud vendors in one place.
+00:01:06,266 --> 00:01:07,434
+<c.magenta>时间是明天上午11点整</c>
 
 
 16
-00:00:49,306 --> 00:00:50,806
-This is done thanks to the new
+00:01:09,870 --> 00:01:12,806
+<c.magenta>系统中默认有两种文件共享</c>
 
 
 17
-00:00:50,806 --> 00:00:51,826
-file provider extension.
+00:01:13,273 --> 00:01:15,375
+<c.magenta>第一种是iCloud驱动供应商</c>
 
 
 18
-00:00:52,416 --> 00:00:54,116
-All the cloud vendors that use
+00:01:15,742 --> 00:01:19,213
+<c.magenta>它显示用户iCloud驱动</c>
+<c.magenta>文件夹内的全部文件</c>
 
 
 19
-00:00:54,116 --> 00:00:55,546
-this file provider extension
+00:01:19,279 --> 00:01:21,548
+<c.magenta>以及系统全部应用的</c>
 
 
 20
-00:00:55,606 --> 00:00:58,506
-will appear next to the iCloud
+00:01:21,748 --> 00:01:23,584
+<c.magenta>云容器中的全部文件</c>
 
 
 21
-00:00:58,506 --> 00:00:59,896
-drive on my iPad in the sidebar.
+00:01:25,853 --> 00:01:28,155
+<c.magenta>第二种共享是在我的iPad上共享</c>
 
 
 22
-00:01:00,436 --> 00:01:02,216
-If you want to know more about
+00:01:28,856 --> 00:01:31,892
+<c.magenta>它允许用户利用他们设备的存储</c>
 
 
 23
-00:01:02,216 --> 00:01:04,316
-this extension, we invite you to
+00:01:32,759 --> 00:01:33,894
+<c.magenta>它会显示应用容器内</c>
 
 
 24
-00:01:04,316 --> 00:01:05,256
-check out the File Provider
+00:01:33,961 --> 00:01:36,330
+<c.magenta>文档文件夹中的内容</c>
 
 
 25
-00:01:05,256 --> 00:01:06,766
-Enhancements session tomorrow at
+00:01:37,164 --> 00:01:40,534
+<c.magenta>如果你希望你的应用成为这种</c>
+<c.magenta>本地存储共享的一部分</c>
 
 
 26
-00:01:06,766 --> 00:01:10,706
-11:00 a.m. There are two file
+00:01:41,134 --> 00:01:43,070
+<c.magenta>你的应用必须得是一款</c>
+<c.magenta>基于文档的应用</c>
 
 
 27
-00:01:11,156 --> 00:01:12,426
-providers by default in the
+00:01:43,604 --> 00:01:47,274
+<c.magenta>或支持文件共享</c>
+<c.magenta>并能在适当的位置打开文档</c>
 
 
 28
-00:01:12,426 --> 00:01:12,796
-system.
+00:01:48,575 --> 00:01:51,712
+<c.magenta>正如我之前所说的</c>
+<c.magenta>我们会在内部显示文档</c>
 
 
 29
-00:01:13,266 --> 00:01:14,106
-The first one is the iCloud
+00:01:51,778 --> 00:01:53,614
+<c.magenta>文档文件夹中的文件</c>
 
 
 30
-00:01:14,106 --> 00:01:15,226
-Drive provider.
+00:01:53,680 --> 00:01:56,650
+<c.magenta>所以请保持</c>
+<c.magenta>这个文件夹中的内容干净整洁</c>
 
 
 31
-00:01:15,806 --> 00:01:16,996
-It will show all the files
+00:01:57,117 --> 00:01:59,853
+<c.magenta>你应该只包含那些</c>
+<c.magenta>对于用户来说很重要的文件</c>
 
 
 32
-00:01:16,996 --> 00:01:18,256
-inside the iCloud drive folder
+00:02:00,521 --> 00:02:01,955
+<c.magenta>同时你得谨记</c>
 
 
 33
-00:01:18,256 --> 00:01:20,116
-of the user as well as all the
+00:02:02,222 --> 00:02:04,892
+<c.magenta>这些文件不会被同步到多台设备中</c>
 
 
 34
-00:01:20,176 --> 00:01:21,766
-files in the Cloud container of
+00:02:04,958 --> 00:02:07,261
+<c.magenta>而是仍然是iCloud备份的</c>
+<c.magenta>一部分</c>
 
 
 35
-00:01:21,766 --> 00:01:23,076
-all the applications in the
+00:02:09,729 --> 00:02:12,299
+<c.magenta>现在我想谈谈新的最近列表视图</c>
 
 
 36
-00:01:23,076 --> 00:01:23,456
-system.
+00:02:13,200 --> 00:02:14,968
+<c.magenta>这个视图会显示近期打开、导入</c>
 
 
 37
-00:01:24,016 --> 00:01:27,366
-The second provider is the on my
+00:02:15,035 --> 00:02:17,938
+<c.magenta>和修改过的全部文档</c>
 
 
 38
-00:01:27,366 --> 00:01:28,066
-iPad provider.
+00:02:18,672 --> 00:02:21,742
+<c.magenta>同时它可以按标签显示全部文档</c>
 
 
 39
-00:01:28,726 --> 00:01:30,386
-It will let the user leverage
+00:02:22,342 --> 00:02:24,878
+<c.magenta>以及与他人共享的全部文档</c>
 
 
 40
-00:01:30,386 --> 00:01:31,656
-the storage of their devices.
+00:02:27,948 --> 00:02:30,050
+<c.magenta>标签是管理文件的一个不错的方式</c>
 
 
 41
-00:01:31,656 --> 00:01:34,196
-It will show the content inside
+00:02:30,384 --> 00:02:32,920
+<c.magenta>在iOS 11中</c>
+<c.magenta>有一个新的标签UI</c>
 
 
 42
-00:01:34,196 --> 00:01:35,866
-the Documents folder of the app
+00:02:32,986 --> 00:02:36,390
+<c.magenta>可以允许用户创建</c>
+<c.magenta>新的标签并进行管理</c>
 
 
 43
-00:01:35,866 --> 00:01:36,326
-container.
+00:02:37,391 --> 00:02:39,593
+<c.magenta>用户可以将标签同步到多台设备上</c>
 
 
 44
-00:01:36,406 --> 00:01:38,606
-If you want your app to be part
+00:02:40,327 --> 00:02:43,297
+<c.magenta>并且标签会被同步到你的全部设备上</c>
 
 
 45
-00:01:38,606 --> 00:01:40,836
-of this local storage provider,
+00:02:45,465 --> 00:02:46,400
+<c.magenta>最后一点</c>
 
 
 46
-00:01:41,196 --> 00:01:42,046
-your app needs to be a
+00:02:46,667 --> 00:02:49,903
+<c.magenta>我要谈的文件应用的最后一个功能</c>
 
 
 47
-00:01:42,046 --> 00:01:44,596
-document-based app or support
+00:02:50,070 --> 00:02:51,238
+<c.magenta>就是最近列表弹出框</c>
 
 
 48
-00:01:44,766 --> 00:01:46,596
-File Sharing and Opening
+00:02:51,805 --> 00:02:54,074
+<c.magenta>用户可以呈现这种弹出框</c>
 
 
 49
-00:01:46,596 --> 00:01:47,266
-Documents In Place.
+00:02:54,374 --> 00:02:56,610
+<c.magenta>当在文件应用中实施长按时</c>
 
 
 50
-00:01:48,116 --> 00:01:49,756
-As I said before, we are going
+00:02:57,678 --> 00:03:00,180
+<c.magenta>这个弹出框会显示全部最近的文档</c>
 
 
 51
-00:01:49,756 --> 00:01:51,106
-to be showing the documents
+00:03:00,447 --> 00:03:03,150
+<c.magenta>并且用户通过一次轻触就能打开</c>
+<c.magenta>全部文档</c>
 
 
 52
-00:01:51,106 --> 00:01:52,526
-inside the, the files inside the
+00:03:03,917 --> 00:03:05,452
+<c.magenta>它还允许用户</c>
 
 
 53
-00:01:52,526 --> 00:01:53,186
-Documents folder.
+00:03:05,786 --> 00:03:07,921
+<c.magenta>将文档导入到任何应用中</c>
 
 
 54
-00:01:53,666 --> 00:01:55,716
-So please keep the content of
+00:03:08,121 --> 00:03:09,857
+<c.magenta>通过新添加的拖拽手势</c>
 
 
 55
-00:01:55,716 --> 00:01:56,666
-this folder clean.
+00:03:12,993 --> 00:03:16,663
+<c.magenta>现在你一定想在你的应用中</c>
+<c.magenta>包含全部这些很棒的功能</c>
 
 
 56
-00:01:57,146 --> 00:01:58,676
-You should only have the files
+00:03:16,897 --> 00:03:18,365
+<c.magenta>（你的应用怎么样？）</c>
 
 
 57
-00:01:58,676 --> 00:01:59,556
-that matter to the user.
+00:03:18,432 --> 00:03:19,466
+<c.magenta>（开发者的请求）</c>
 
 
 58
-00:02:00,536 --> 00:02:01,916
-Also, you have to keep in mind
+00:03:19,533 --> 00:03:21,335
+<c.magenta>通过上次发布</c>
 
 
 59
-00:02:02,276 --> 00:02:03,546
-that these files won't be synced
+00:03:21,502 --> 00:03:23,604
+<c.magenta>我们收到了你们提出的很多请求</c>
 
 
 60
-00:02:03,546 --> 00:02:05,166
-across multiple devices but
+00:03:24,371 --> 00:03:27,407
+<c.magenta>你们想要文件浏览统一的UI</c>
 
 
 61
-00:02:05,276 --> 00:02:07,246
-still will be part of the iCloud
+00:03:28,408 --> 00:03:32,513
+<c.magenta>你们希望你们的应用可以从系统中的</c>
+<c.magenta>其他应用中打开任意文件</c>
 
 
 62
-00:02:07,246 --> 00:02:08,126
-backup.
+00:03:34,915 --> 00:03:36,617
+<c.magenta>你们不想写太多的代码</c>
 
 
 63
-00:02:09,406 --> 00:02:11,166
-Now I would like to talk about
+00:03:36,850 --> 00:03:40,420
+<c.magenta>来采用已经</c>
+<c.magenta>是系统一部分的云供应商</c>
 
 
 64
-00:02:11,266 --> 00:02:12,296
-the new Recents view.
+00:03:41,588 --> 00:03:44,625
+<c.magenta>并且你们想深度整合那些…</c>
 
 
 65
-00:02:13,286 --> 00:02:14,466
-This view will show all the
+00:03:45,192 --> 00:03:47,995
+<c.magenta>在整个系统中整合自定义内容类型</c>
 
 
 66
-00:02:14,466 --> 00:02:15,606
-documents that have been
+00:03:48,996 --> 00:03:51,899
+<c.magenta>嗯 今天我们要来看一些新的API</c>
 
 
 67
-00:02:15,606 --> 00:02:17,426
-recently opened, imported, and
+00:03:52,933 --> 00:03:56,670
+<c.magenta>我稍后再谈我们对这些</c>
+<c.magenta>请求的处理进度</c>
 
 
 68
-00:02:17,426 --> 00:02:17,896
-modified.
+00:03:58,205 --> 00:04:02,142
+<c.magenta>首先我想谈谈新的文档浏览器API</c>
 
 
 69
-00:02:18,686 --> 00:02:20,166
-Also, it will show all the
+00:04:05,479 --> 00:04:06,313
+<c.magenta>今天…</c>
 
 
 70
-00:02:20,166 --> 00:02:22,656
-documents organized by tags and
+00:04:06,380 --> 00:04:09,716
+<c.magenta>今年有一个新类</c>
+<c.magenta>即UI文档浏览器视图控制器</c>
 
 
 71
-00:02:22,756 --> 00:02:23,786
-all the documents that are
+00:04:09,917 --> 00:04:13,153
+<c.magenta>我知道这很拗口</c>
+<c.magenta>所以从现在起我把它叫作浏览器VC</c>
 
 
 72
-00:02:23,786 --> 00:02:24,696
-shared with other people.
+00:04:14,821 --> 00:04:17,156
+<c.magenta>跟这个配套的还有一个</c>
+<c.magenta>新的XCode模板</c>
 
 
 73
-00:02:27,076 --> 00:02:29,466
-Tags are a great means to
+00:04:17,224 --> 00:04:20,994
+<c.magenta>可以让你从零开始</c>
+<c.magenta>创建一个基于文档的新应用</c>
 
 
 74
-00:02:29,466 --> 00:02:30,046
-organize files.
+00:04:22,129 --> 00:04:23,197
+<c.magenta>此外</c>
 
 
 75
-00:02:30,046 --> 00:02:32,236
-And in iOS 11, there's new
+00:04:23,263 --> 00:04:26,633
+<c.magenta>UI文档选择器会获得</c>
+<c.magenta>浏览器VC的一些功能</c>
 
 
 76
-00:02:32,236 --> 00:02:33,736
-tagging UI that will let the
+00:04:29,036 --> 00:04:31,805
+<c.magenta>那么现在让我们先谈谈浏览器VC</c>
 
 
 77
-00:02:33,736 --> 00:02:35,916
-user create new tag and manage
+00:04:32,339 --> 00:04:36,443
+<c.magenta>视图控制器会向应用提供</c>
+<c.magenta>与文件…应用相同的功能</c>
 
 
 78
-00:02:35,956 --> 00:02:36,556
-their tags.
+00:04:36,743 --> 00:04:40,581
+<c.magenta>事实上文件应用只是这个浏览器VC</c>
+<c.magenta>之上的一个很薄的层</c>
 
 
 79
-00:02:37,436 --> 00:02:38,666
-Tags will be synced across
+00:04:43,350 --> 00:04:46,420
+<c.magenta>通过这个视图控制器</c>
+<c.magenta>你就不用再写</c>
 
 
 80
-00:02:38,666 --> 00:02:41,086
-multiple providers and they will
+00:04:46,486 --> 00:04:49,289
+<c.magenta>更多的代码来整合任意支持</c>
 
 
 81
-00:02:41,086 --> 00:02:42,576
-be also synced across all your
+00:04:49,656 --> 00:04:51,024
+<c.magenta>文件共享的云存储供应商了</c>
 
 
 82
-00:02:42,576 --> 00:02:43,046
-devices.
+00:04:53,961 --> 00:04:56,163
+<c.magenta>同时它会支持外观自定义</c>
 
 
 83
-00:02:45,576 --> 00:02:46,946
-The last thing -- The last
+00:04:56,396 --> 00:04:57,831
+<c.magenta>让它看起来跟你的应用相匹配</c>
 
 
 84
-00:02:46,946 --> 00:02:48,726
-feature I would like to talk
+00:04:59,266 --> 00:05:01,235
+<c.magenta>通过这个视图控制器</c>
 
 
 85
-00:02:48,726 --> 00:02:50,316
-about in the Files App is the
+00:05:01,301 --> 00:05:05,172
+<c.magenta>你的应用可以获得我们之前</c>
+<c.magenta>看到过的最近列表弹出框</c>
 
 
 86
-00:02:50,316 --> 00:02:51,016
-Recents Popover.
+00:05:08,141 --> 00:05:10,677
+<c.magenta>在这个浏览器VC中</c>
+<c.magenta>Spotlight扮演了一个关键角色</c>
 
 
 87
-00:02:51,836 --> 00:02:53,526
-The user will be able to present
+00:05:11,478 --> 00:05:12,913
+<c.magenta>通过这个视图控制器</c>
 
 
 88
-00:02:53,526 --> 00:02:55,226
-this popover when performing a
+00:05:13,447 --> 00:05:17,184
+<c.magenta>你文档中的全部元数据</c>
+<c.magenta>将在Spotlight中被自动索引</c>
 
 
 89
-00:02:55,226 --> 00:02:57,466
-long press on the Files App.
+00:05:17,251 --> 00:05:19,219
+<c.magenta>如果你需要进一步整合</c>
 
 
 90
-00:02:57,686 --> 00:02:59,206
-This [inaudible] will show all
+00:05:19,286 --> 00:05:22,689
+<c.magenta>你必须注册你自己的CSSearchableItem</c>
 
 
 91
-00:02:59,206 --> 00:03:00,656
-the recent documents and the
+00:05:23,323 --> 00:05:25,993
+<c.magenta>当前系统中有两个CSSearchableItem</c>
 
 
 92
-00:03:00,656 --> 00:03:02,276
-user will be able to open them
+00:05:26,326 --> 00:05:27,895
+<c.magenta>要复制它们</c>
 
 
 93
-00:03:02,276 --> 00:03:03,456
-with just one tap.
+00:05:28,128 --> 00:05:32,332
+<c.magenta>浏览器VC必须使用这个</c>
+<c.magenta>CSSearchableItem的contentURL</c>
 
 
 94
-00:03:03,946 --> 00:03:06,196
-It will also let the user import
+00:05:32,666 --> 00:05:34,201
+<c.magenta>所以你的设置必须适当</c>
 
 
 95
-00:03:06,196 --> 00:03:07,396
-the document into any
+00:05:34,434 --> 00:05:36,637
+<c.magenta>如果你想了解更多关于</c>
+<c.magenta>Core Spotlight的相关信息</c>
 
 
 96
-00:03:07,396 --> 00:03:09,756
-application using the new Drag
+00:05:36,703 --> 00:05:38,839
+<c.magenta>今天下午4:10有一场演讲</c>
 
 
 97
-00:03:10,336 --> 00:03:13,366
-and Drop gesture.
+00:05:43,443 --> 00:05:46,079
+<c.magenta>在Apple公司</c>
+<c.magenta>我们非常注重用户的隐私权</c>
 
 
 98
-00:03:13,416 --> 00:03:15,176
-I'm sure now you want to have
+00:05:46,580 --> 00:05:49,449
+<c.magenta>为此 我们在创建浏览器VC时</c>
 
 
 99
-00:03:15,176 --> 00:03:16,556
-all these great features in your
+00:05:49,950 --> 00:05:52,920
+<c.magenta>从始至终都考虑到了隐私权</c>
 
 
 100
-00:03:17,246 --> 00:03:17,506
-app.
+00:05:53,754 --> 00:05:55,522
+<c.magenta>当用户安装你的应用后</c>
 
 
 101
-00:03:19,176 --> 00:03:21,036
-Throughout the last release
+00:05:55,589 --> 00:05:57,791
+<c.magenta>你只能看到应用容器内的</c>
 
 
 102
-00:03:21,036 --> 00:03:22,546
-cycles, we've received very many
+00:05:57,858 --> 00:05:59,059
+<c.magenta>全部文档</c>
 
 
 103
-00:03:22,546 --> 00:03:23,156
-requests from you.
+00:06:00,494 --> 00:06:02,963
+<c.magenta>你可以导入和创建新文档</c>
 
 
 104
-00:03:24,376 --> 00:03:26,076
-You want to have a unified UI
+00:06:03,197 --> 00:06:07,067
+<c.magenta>但只能在默认的安全位置</c>
+<c.magenta>你不能挑挑拣拣</c>
 
 
 105
-00:03:26,436 --> 00:03:27,196
-for file browsing.
+00:06:08,435 --> 00:06:13,240
+<c.magenta>那么如何在系统其它地方</c>
+<c.magenta>获取文件呢？</c>
 
 
 106
-00:03:28,426 --> 00:03:29,746
-You want your app to be able to
+00:06:13,874 --> 00:06:15,909
+<c.magenta>嗯 你可以通过用户交互实现</c>
 
 
 107
-00:03:29,746 --> 00:03:31,876
-access any file from other apps
+00:06:16,577 --> 00:06:18,879
+<c.magenta>浏览器VC在不同的进程中运行</c>
 
 
 108
-00:03:31,956 --> 00:03:32,546
-in the system.
+00:06:19,246 --> 00:06:21,215
+<c.magenta>一旦用户轻触某个文档</c>
 
 
 109
-00:03:33,176 --> 00:03:36,236
-You don't want to write more
+00:06:21,849 --> 00:06:25,519
+<c.magenta>浏览器VC将会把该文档的访问权</c>
+<c.magenta>转交给你的应用</c>
 
 
 110
-00:03:36,236 --> 00:03:38,266
-code in order to adopt all the
+00:06:27,588 --> 00:06:30,924
+<c.magenta>现在让我们看一眼UI文档</c>
+<c.magenta>选择器视图控制器</c>
 
 
 111
-00:03:38,266 --> 00:03:39,586
-cloud vendors that are already
+00:06:30,991 --> 00:06:34,661
+<c.magenta>正如我刚才所说的</c>
+<c.magenta>我们会获得浏览器VC的某些功能</c>
 
 
 112
-00:03:39,586 --> 00:03:40,386
-part of the system.
+00:06:35,195 --> 00:06:37,564
+<c.magenta>比如浏览器视图和最近列表视图</c>
 
 
 113
-00:03:41,656 --> 00:03:42,816
-And you want to have deeper
+00:06:38,932 --> 00:06:41,201
+<c.magenta>同时 它将支持同时打开和导入</c>
 
 
 114
-00:03:42,816 --> 00:03:46,096
-integration of your custom
+00:06:41,268 --> 00:06:43,003
+<c.magenta>多个文档</c>
 
 
 115
-00:03:46,096 --> 00:03:47,996
-content types throughout system.
+00:06:43,403 --> 00:06:44,671
+<c.magenta>如果你想支持它</c>
 
 
 116
-00:03:48,986 --> 00:03:51,016
-Well today we are going to view
+00:06:44,738 --> 00:06:47,341
+<c.magenta>你需要将</c>
+<c.magenta>allowsMultipleSelection设为真</c>
 
 
 117
-00:03:51,016 --> 00:03:51,886
-some new API.
+00:06:48,008 --> 00:06:52,012
+<c.magenta>为了支持多个文档</c>
+<c.magenta>我们不支持带有</c>
 
 
 118
-00:03:51,946 --> 00:03:54,636
-I will tell later how we've done
+00:06:52,679 --> 00:06:55,082
+<c.magenta>PickDocumentAtURL委托方法的</c>
+<c.magenta>文档…选择器</c>
 
 
 119
-00:03:54,726 --> 00:03:56,416
-so far with those requests.
+00:06:55,449 --> 00:06:59,052
+<c.magenta>而是倾向于同时支持</c>
+<c.magenta>多个URL的委托方法</c>
 
 
 120
-00:03:57,166 --> 00:03:59,936
-First, I would like to talk
+00:07:01,154 --> 00:07:01,989
+<c.magenta>同时今年</c>
 
 
 121
-00:03:59,936 --> 00:04:05,696
-about the new document browser
+00:07:02,055 --> 00:07:04,691
+<c.magenta>我们不支持UI文档菜单视图控制器</c>
 
 
 122
-00:04:05,696 --> 00:04:06,186
-API.
+00:07:04,758 --> 00:07:07,227
+<c.magenta>而支持UI文档浏览器视图控制器</c>
 
 
 123
-00:04:06,296 --> 00:04:07,606
-This year there's a new class,
+00:07:09,796 --> 00:07:10,631
+<c.magenta>现在</c>
 
 
 124
-00:04:07,686 --> 00:04:09,046
-the UI Document Browser View
+00:07:11,164 --> 00:07:13,400
+<c.magenta>我们了解了浏览器API的大概内容</c>
 
 
 125
-00:04:09,046 --> 00:04:09,446
-Controller.
+00:07:13,800 --> 00:07:15,536
+<c.magenta>让我们来看看如何</c>
+<c.magenta>在你的应用中使用</c>
 
 
 126
-00:04:09,566 --> 00:04:11,396
-I know it's a mouthful, so from
+00:07:15,702 --> 00:07:18,405
+<c.magenta>这个UI文档浏览器视图控制器</c>
 
 
 127
-00:04:11,396 --> 00:04:12,396
-now on I will call it the
+00:07:19,773 --> 00:07:20,874
+<c.magenta>那么首先来看最重要的</c>
 
 
 128
-00:04:12,396 --> 00:04:13,746
-Browser VC.
+00:07:21,475 --> 00:07:23,443
+<c.magenta>你需要配置Info.plist</c>
 
 
 129
-00:04:14,556 --> 00:04:15,796
-Together with this, there's a
+00:07:24,011 --> 00:07:28,115
+<c.magenta>在这里 你需要将UI支持文档</c>
+<c.magenta>浏览器的键值设为是</c>
 
 
 130
-00:04:15,796 --> 00:04:17,766
-new Xcode template that will let
+00:07:28,882 --> 00:07:30,050
+<c.magenta>这将告诉系统</c>
 
 
 131
-00:04:17,766 --> 00:04:19,776
-you create a new document-based
+00:07:30,117 --> 00:07:33,053
+<c.magenta>你的应用是一个基于</c>
+<c.magenta>UI文档浏览器的应用</c>
 
 
 132
-00:04:19,776 --> 00:04:20,886
-application from scratch.
+00:07:34,254 --> 00:07:35,989
+<c.magenta>然后你需要声明</c>
 
 
 133
-00:04:22,146 --> 00:04:24,316
-And also the UI Document Picker
+00:07:36,056 --> 00:07:38,392
+<c.magenta>你的应用所支持的内容类型</c>
 
 
 134
-00:04:24,486 --> 00:04:25,926
-will get some of the features of
+00:07:38,792 --> 00:07:40,994
+<c.magenta>这很重要 因为浏览器VC</c>
 
 
 135
-00:04:25,926 --> 00:04:27,386
-the Browser VC.
+00:07:41,195 --> 00:07:42,696
+<c.magenta>将通过这个内容类型</c>
 
 
 136
-00:04:28,756 --> 00:04:30,356
-So now let's first talk about
+00:07:42,863 --> 00:07:45,732
+<c.magenta>来了解要在你的应用中</c>
+<c.magenta>显示哪些文件</c>
 
 
 137
-00:04:30,356 --> 00:04:31,286
-the Browser View Controller.
+00:07:47,734 --> 00:07:51,071
+<c.magenta>你必须要了解的一点是</c>
+<c.magenta>UI文档浏览器视图控制器</c>
 
 
 138
-00:04:32,356 --> 00:04:33,256
-This view controller will
+00:07:51,138 --> 00:07:53,540
+<c.magenta>必须是你应用中的根视图控制器</c>
 
 
 139
-00:04:33,256 --> 00:04:34,466
-provide your app the same
+00:07:53,874 --> 00:07:55,108
+<c.magenta>否则就不起作用</c>
 
 
 140
-00:04:34,606 --> 00:04:36,786
-feature set as Files app.
+00:07:57,277 --> 00:07:58,245
+<c.magenta>正如我之前所说的</c>
 
 
 141
-00:04:36,786 --> 00:04:38,316
-In fact, Files is just a very
+00:07:58,312 --> 00:08:00,681
+<c.magenta>浏览器VC支持外观自定义</c>
 
 
 142
-00:04:38,316 --> 00:04:39,616
-thin layer on top of this
+00:08:01,248 --> 00:08:02,916
+<c.magenta>默认是这个样子</c>
 
 
 143
-00:04:39,616 --> 00:04:40,456
-Browser View Controller.
+00:08:03,116 --> 00:08:05,285
+<c.magenta>白色背景和蓝色浅色调</c>
 
 
 144
-00:04:43,426 --> 00:04:44,796
-With this view controller, you
+00:08:06,119 --> 00:08:07,387
+<c.magenta>它有两个属性</c>
 
 
 145
-00:04:45,006 --> 00:04:47,096
-won't have to write more code in
+00:08:07,554 --> 00:08:10,057
+<c.magenta>你可以用来进一步自定义</c>
 
 
 146
-00:04:47,096 --> 00:04:48,586
-order to integrate any cloud
+00:08:10,457 --> 00:08:13,126
+<c.magenta>浏览器界面样式有三种模式：</c>
 
 
 147
-00:04:48,586 --> 00:04:50,266
-storage provider that supports
+00:08:13,393 --> 00:08:16,196
+<c.magenta>暗色、白色和亮色以及浅色调</c>
 
 
 148
-00:04:50,266 --> 00:04:52,506
-File Provider.
+00:08:17,064 --> 00:08:20,133
+<c.magenta>如果你使用暗色样式</c>
+<c.magenta>和橘色浅色调</c>
 
 
 149
-00:04:53,976 --> 00:04:55,466
-Also it will support appearance
+00:08:20,200 --> 00:08:21,635
+<c.magenta>你的应用看起来就是这样的：</c>
 
 
 150
-00:04:55,466 --> 00:04:57,236
-customization to make it look
+00:08:24,438 --> 00:08:26,840
+<c.magenta>那么现在</c>
+<c.magenta>我们配置了浏览器VC</c>
 
 
 151
-00:04:57,236 --> 00:04:58,076
-like your app.
+00:08:27,207 --> 00:08:30,477
+<c.magenta>你的应用要支持的第一个东西</c>
+<c.magenta>是支持文档的打开</c>
 
 
 152
-00:04:59,286 --> 00:05:01,036
-And by using this view
+00:08:31,678 --> 00:08:33,480
+<c.magenta>那么让我们看看要如何实现</c>
 
 
 153
-00:05:01,036 --> 00:05:02,986
-controller, your app will get
+00:08:34,448 --> 00:08:35,315
+<c.magenta>首先</c>
 
 
 154
-00:05:02,986 --> 00:05:04,536
-the Recents Popover that we saw
+00:08:35,381 --> 00:08:37,451
+<c.magenta>用户要轻触其中一个文档</c>
 
 
 155
-00:05:04,816 --> 00:05:05,176
-before.
+00:08:38,619 --> 00:08:39,986
+<c.magenta>在这里 浏览器VC</c>
 
 
 156
-00:05:05,846 --> 00:05:09,966
-Spotlight plays a key role in
+00:08:40,320 --> 00:08:42,956
+<c.magenta>将获取并下载文档信息</c>
 
 
 157
-00:05:09,966 --> 00:05:10,616
-this Browser VC.
+00:08:43,023 --> 00:08:44,525
+<c.magenta>一旦文档准备好了</c>
 
 
 158
-00:05:11,536 --> 00:05:12,726
-By using this view controller,
+00:08:45,192 --> 00:08:47,661
+<c.magenta>它将会把访问权交给你的应用</c>
 
 
 159
-00:05:13,556 --> 00:05:14,536
-all the metadata of your
+00:08:48,195 --> 00:08:50,030
+<c.magenta>并调用didPickDelegate方法</c>
 
 
 160
-00:05:14,536 --> 00:05:15,876
-document will automatically be
+00:08:50,631 --> 00:08:53,800
+<c.magenta>在这里 你只需要加载并显示文档</c>
 
 
 161
-00:05:15,876 --> 00:05:16,666
-indexed in Spotlight.
+00:08:56,103 --> 00:08:58,205
+<c.magenta>当打开文档时 浏览器VC</c>
 
 
 162
-00:05:16,666 --> 00:05:18,436
-If you need to have further
+00:08:58,372 --> 00:09:01,642
+<c.magenta>会向你的应用提供该URL的</c>
+<c.magenta>持久访问权</c>
 
 
 163
-00:05:18,436 --> 00:05:19,826
-integration, you will have to
+00:09:02,976 --> 00:09:06,880
+<c.magenta>现在把它存起来 要想还原它的话</c>
+<c.magenta>只存URL是远远不够的</c>
 
 
 164
-00:05:19,826 --> 00:05:21,626
-register your own CS Searchable
+00:09:06,947 --> 00:09:10,217
+<c.magenta>你需要存储与此URL</c>
+<c.magenta>相关联的书签数据</c>
 
 
 165
-00:05:21,706 --> 00:05:21,976
-Items.
+00:09:10,617 --> 00:09:15,088
+<c.magenta>因为这是追踪URL使用权的信息</c>
 
 
 166
-00:05:22,116 --> 00:05:24,426
-Now there will be two CS
+00:09:17,157 --> 00:09:19,459
+<c.magenta>文档打开的代码是这样的</c>
 
 
 167
-00:05:24,426 --> 00:05:26,586
-Searchable Item in the system as
+00:09:19,526 --> 00:09:20,794
+<c.magenta>你只需要实施</c>
 
 
 168
-00:05:26,586 --> 00:05:28,266
-in order to duplicate them, the
+00:09:20,861 --> 00:09:23,063
+<c.magenta>documentBrowser、</c>
+<c.magenta>didPickDocumentURL</c>
 
 
 169
-00:05:28,266 --> 00:05:30,306
-Browser VC will use a content
+00:09:23,931 --> 00:09:26,266
+<c.magenta>并显示视图控制器即可</c>
 
 
 170
-00:05:30,356 --> 00:05:32,336
-URL of this CS Searchable Items.
+00:09:28,569 --> 00:09:29,970
+<c.magenta>跟UI文档选择器类似</c>
 
 
 171
-00:05:32,676 --> 00:05:33,836
-So you have to set it properly.
+00:09:30,037 --> 00:09:33,273
+<c.magenta>浏览器VC支持同时打开多个文档</c>
 
 
 172
-00:05:34,256 --> 00:05:35,566
-If you want to know more about
+00:09:33,841 --> 00:09:35,709
+<c.magenta>如果你希望你的应用支持这个功能</c>
 
 
 173
-00:05:35,566 --> 00:05:36,926
-Core Spotlight, there's a
+00:09:35,776 --> 00:09:38,512
+<c.magenta>你需要</c>
+<c.magenta>将allowsPickingMultipleItems设为真</c>
 
 
 174
-00:05:36,926 --> 00:05:38,816
-session at 4:10 p.m. today.
+00:09:41,615 --> 00:09:44,852
+<c.magenta>现在你的应用可以打开</c>
+<c.magenta>系统中的任意文件了</c>
 
 
 175
-00:05:42,736 --> 00:05:45,156
-At Apple, we deeply care about
+00:09:45,485 --> 00:09:48,088
+<c.magenta>下一步是能创建新文档</c>
 
 
 176
-00:05:45,156 --> 00:05:46,146
-our user's privacy.
+00:09:48,422 --> 00:09:51,091
+<c.magenta>你可以在两个地方创建新文档</c>
 
 
 177
-00:05:46,616 --> 00:05:48,516
-Because of that, we built the
+00:09:51,592 --> 00:09:53,260
+<c.magenta>第一个地方是最近列表视图</c>
 
 
 178
-00:05:48,516 --> 00:05:50,156
-Browser View Controller with
+00:09:53,527 --> 00:09:57,097
+<c.magenta>如果用户轻触这里的创建按钮</c>
+<c.magenta>将会创建一个新文档</c>
 
 
 179
-00:05:50,286 --> 00:05:52,106
-privacy in mind since the very
+00:09:57,164 --> 00:10:00,501
+<c.magenta>在你应用的默认安全位置</c>
 
 
 180
-00:05:52,106 --> 00:05:52,936
-beginning.
+00:10:01,335 --> 00:10:03,637
+<c.magenta>如果用户在浏览视图中</c>
+<c.magenta>轻触创建按钮</c>
 
 
 181
-00:05:53,806 --> 00:05:55,856
-When the user installs your app,
+00:10:03,704 --> 00:10:05,138
+<c.magenta>将会创建一个新文档</c>
 
 
 182
-00:05:55,856 --> 00:05:57,146
-you will only have access to all
+00:10:05,205 --> 00:10:07,307
+<c.magenta>在浏览视图的当前位置</c>
 
 
 183
-00:05:57,146 --> 00:05:59,586
-the documents inside the app
+00:10:08,141 --> 00:10:10,010
+<c.magenta>现在让我们看看流程</c>
 
 
 184
-00:06:00,176 --> 00:06:00,406
-container.
+00:10:10,244 --> 00:10:12,679
+<c.magenta>一旦用户轻触其中一个创建按钮</c>
 
 
 185
-00:06:00,506 --> 00:06:02,106
-You will be able to import and
+00:10:14,181 --> 00:10:16,216
+<c.magenta>你的应用将会收到</c>
+<c.magenta>一个导入处理器</c>
 
 
 186
-00:06:02,106 --> 00:06:03,876
-create new documents but only
+00:10:16,283 --> 00:10:19,887
+<c.magenta>现在 如果你已经有了源URL</c>
+<c.magenta>你可以调用导入处理器</c>
 
 
 187
-00:06:03,876 --> 00:06:05,816
-the default safe location which
+00:10:20,487 --> 00:10:21,355
+<c.magenta>如果你没有</c>
 
 
 188
-00:06:05,816 --> 00:06:06,846
-will be a [inaudible] for you.
+00:10:21,622 --> 00:10:23,824
+<c.magenta>如果你的应用需要</c>
+<c.magenta>显示模板选择器</c>
 
 
 189
-00:06:08,436 --> 00:06:10,486
-So how are you going to access
+00:10:23,891 --> 00:10:26,493
+<c.magenta>以便了解要选择哪个源URL</c>
 
 
 190
-00:06:10,486 --> 00:06:12,796
-to a file in any other place in
+00:10:27,127 --> 00:10:28,028
+<c.magenta>现在正是时候</c>
 
 
 191
-00:06:12,796 --> 00:06:13,236
-the system?
+00:10:28,328 --> 00:10:31,532
+<c.magenta>你呈现一个模板选择器</c>
+<c.magenta>并调用导入处理器</c>
 
 
 192
-00:06:13,876 --> 00:06:15,436
-Well, you will do it via user
+00:10:31,598 --> 00:10:35,169
+<c.magenta>导入处理器将会把那个文件</c>
+<c.magenta>移动到共享文件中</c>
 
 
 193
-00:06:15,436 --> 00:06:16,126
-interaction.
+00:10:35,602 --> 00:10:37,437
+<c.magenta>一旦文件处于共享文件中</c>
 
 
 194
-00:06:16,646 --> 00:06:18,166
-The Browser VC is running in a
+00:10:37,905 --> 00:10:40,474
+<c.magenta>它将通过一个Succeed委托方法</c>
+<c.magenta>把你的应用调回来</c>
 
 
 195
-00:06:18,166 --> 00:06:18,976
-different process.
+00:10:41,308 --> 00:10:42,876
+<c.magenta>在这里 对于文档打开来说</c>
 
 
 196
-00:06:18,976 --> 00:06:20,766
-And once the user taps on a
+00:10:43,177 --> 00:10:45,412
+<c.magenta>你只需要加载并呈现文档</c>
 
 
 197
-00:06:20,766 --> 00:06:22,736
-document, the Browser VC will
+00:10:47,214 --> 00:10:50,484
+<c.magenta>现在导入操作可能由于多种原因</c>
+<c.magenta>导致失败</c>
 
 
 198
-00:06:22,826 --> 00:06:24,706
-forward to your app the access
+00:10:50,817 --> 00:10:51,818
+<c.magenta>如果你失败了</c>
 
 
 199
-00:06:24,706 --> 00:06:25,396
-of that document.
+00:10:52,085 --> 00:10:54,988
+<c.magenta>你需要处理报错</c>
+<c.magenta>并向用户呈现一些UI</c>
 
 
 200
-00:06:25,396 --> 00:06:28,396
-And now, let's take a look at
+00:10:55,789 --> 00:10:58,892
+<c.magenta>现在让我们来看看如何用代码实现</c>
 
 
 201
-00:06:28,396 --> 00:06:29,926
-the UI Document Picker View
+00:10:59,459 --> 00:11:00,761
+<c.magenta>首先你需要实施</c>
 
 
 202
-00:06:29,926 --> 00:06:30,326
-Controller.
+00:11:00,827 --> 00:11:03,230
+<c.magenta>documentBrowser</c>
+<c.magenta>didRequestDocumentCreation</c>
 
 
 203
-00:06:30,406 --> 00:06:32,546
-As I said before, we'll get some
+00:11:03,964 --> 00:11:05,332
+<c.magenta>在这里 正如我之前所说的</c>
 
 
 204
-00:06:32,546 --> 00:06:34,366
-of the features of the Browser
+00:11:05,399 --> 00:11:07,668
+<c.magenta>你可以随意呈现一个模板选择器</c>
 
 
 205
-00:06:34,366 --> 00:06:34,646
-VC.
+00:11:08,001 --> 00:11:10,437
+<c.magenta>在本例中 所呈现的模板选择器</c>
 
 
 206
-00:06:34,876 --> 00:06:36,916
-For example, the Browse View and
+00:11:10,704 --> 00:11:16,009
+<c.magenta>将通过用户为该模板所选择的URL</c>
+<c.magenta>将我们调回来</c>
 
 
 207
-00:06:36,966 --> 00:06:38,736
-the Recents View.
+00:11:16,376 --> 00:11:19,413
+<c.magenta>并会告诉我们</c>
+<c.magenta>用户是否取消了文档创建</c>
 
 
 208
-00:06:38,946 --> 00:06:40,676
-Also, it will support opening
+00:11:20,881 --> 00:11:25,118
+<c.magenta>一旦我们获得URL 我们只需通过</c>
+<c.magenta>一个模型调用导入处理器</c>
 
 
 209
-00:06:40,676 --> 00:06:42,166
-and importing multiple documents
+00:11:25,385 --> 00:11:27,855
+<c.magenta>有两种不同模式：复制和移动</c>
 
 
 210
-00:06:42,166 --> 00:06:42,746
-at the same time.
+00:11:28,655 --> 00:11:30,757
+<c.magenta>如果用户取消了文档创建</c>
 
 
 211
-00:06:43,526 --> 00:06:44,666
-If you want to support it, you
+00:11:30,824 --> 00:11:34,962
+<c.magenta>我们仍需要调用导入处理器</c>
+<c.magenta>但URL为无 模式为空</c>
 
 
 212
-00:06:44,666 --> 00:06:46,256
-need to set the allows Multiple
+00:11:35,562 --> 00:11:36,430
+<c.magenta>这非常重要</c>
 
 
 213
-00:06:46,256 --> 00:06:47,026
-Selection to true.
+00:11:36,797 --> 00:11:40,501
+<c.magenta>这将会告诉浏览器VC</c>
+<c.magenta>创建操作已经结束</c>
 
 
 214
-00:06:48,106 --> 00:06:49,166
-In order to support multiple
+00:11:43,670 --> 00:11:45,405
+<c.magenta>一旦文档被完全导入</c>
 
 
 215
-00:06:49,166 --> 00:06:50,846
-documents, we are deprecating
+00:11:45,472 --> 00:11:48,275
+<c.magenta>将会调用documentBrowser</c>
+<c.magenta>didImportDocumentAtsourceURL</c>
 
 
 216
-00:06:51,126 --> 00:06:53,546
-the document picker with Pick
+00:11:48,542 --> 00:11:50,310
+<c.magenta>toDestinationURL</c>
 
 
 217
-00:06:53,546 --> 00:06:55,136
-Document At URL delegate method
+00:11:50,644 --> 00:11:54,515
+<c.magenta>在这里 你只需要加载</c>
+<c.magenta>并呈现文档的UI</c>
 
 
 218
-00:06:55,436 --> 00:06:56,766
-in favor of a delegate method
+00:11:55,048 --> 00:11:57,584
+<c.magenta>正如我所说过的</c>
+<c.magenta>导入操作可能会失败</c>
 
 
 219
-00:06:56,766 --> 00:06:58,556
-that support multiple URLs at
+00:11:57,985 --> 00:11:59,119
+<c.magenta>如果失败了</c>
 
 
 220
-00:06:58,556 --> 00:07:00,066
-the same time.
+00:11:59,686 --> 00:12:03,423
+<c.magenta>将调用DocumentBrowser</c>
+<c.magenta>failedToImportDocumentURL</c>
 
 
 221
-00:07:01,276 --> 00:07:02,286
-Also this year, we are
+00:12:03,724 --> 00:12:06,727
+<c.magenta>在这里 你需要处理报错</c>
+<c.magenta>并给用户呈现一些UI</c>
 
 
 222
-00:07:02,286 --> 00:07:03,856
-deprecating the UI Document Menu
+00:12:09,162 --> 00:12:13,634
+<c.magenta>现在我们正在同时处理由不同进程</c>
 
 
 223
-00:07:03,856 --> 00:07:05,616
-View Controller in favor of the
+00:12:14,001 --> 00:12:16,970
+<c.magenta>不同应用和不同设备操作的文档</c>
 
 
 224
-00:07:05,616 --> 00:07:06,796
-UI Document Browser View
+00:12:18,338 --> 00:12:22,543
+<c.magenta>为此 使用NS文件协调</c>
+<c.magenta>和NS文件呈现器非常重要</c>
 
 
 225
-00:07:06,796 --> 00:07:07,196
-Controller.
+00:12:22,609 --> 00:12:26,413
+<c.magenta>以避免这些进程之间的一些风险状况</c>
 
 
 226
-00:07:07,196 --> 00:07:12,206
-And now, we've seen an overview
+00:12:27,548 --> 00:12:31,285
+<c.magenta>现在因为文档是在应用容器外部</c>
 
 
 227
-00:07:12,206 --> 00:07:13,456
-of the browser APIs.
+00:12:31,718 --> 00:12:34,121
+<c.magenta>浏览器VC使用的是</c>
+<c.magenta>安全范围内的URL</c>
 
 
 228
-00:07:13,456 --> 00:07:14,986
-Let's take a look at how to make
+00:12:34,555 --> 00:12:37,491
+<c.magenta>这就意味着你需要</c>
+<c.magenta>开始和停止使用该URL</c>
 
 
 229
-00:07:14,986 --> 00:07:16,986
-use of this UI Document Browser
+00:12:37,958 --> 00:12:41,161
+<c.magenta>以便有权读写URL</c>
 
 
 230
-00:07:16,986 --> 00:07:18,596
-View Controller in your app.
+00:12:42,129 --> 00:12:44,198
+<c.magenta>我们强烈推荐你们使用UI文档</c>
 
 
 231
-00:07:19,766 --> 00:07:20,726
-So first things first.
+00:12:44,698 --> 00:12:45,532
+<c.magenta>通过UI文档</c>
 
 
 232
-00:07:21,486 --> 00:07:22,676
-You will have to configure the
+00:12:45,999 --> 00:12:48,302
+<c.magenta>你可以获得文件协调、文件呈现器</c>
 
 
 233
-00:07:22,676 --> 00:07:23,236
-Info.plist.
+00:12:48,502 --> 00:12:50,637
+<c.magenta>和安全范围内的URL支持</c>
+<c.magenta>都是免费的</c>
 
 
 234
-00:07:23,856 --> 00:07:25,686
-Here, you need to set the UI
+00:12:51,004 --> 00:12:52,940
+<c.magenta>还有其它功能 比如自动保存</c>
 
 
 235
-00:07:25,686 --> 00:07:27,806
-Supports Document Browser key to
+00:12:54,107 --> 00:12:56,210
+<c.magenta>如果你想了解</c>
+<c.magenta>关于UI文档的更多信息</c>
 
 
 236
-00:07:27,806 --> 00:07:28,066
-yes.
+00:12:56,577 --> 00:12:59,313
+<c.magenta>请观看WWDC 2015的</c>
 
 
 237
-00:07:28,936 --> 00:07:30,656
-This will tell the system that
+00:12:59,379 --> 00:13:01,415
+<c.magenta>“创建基于文档的应用”演讲</c>
 
 
 238
-00:07:30,736 --> 00:07:32,326
-your app is a UI Document Brower
+00:13:02,583 --> 00:13:05,018
+<c.magenta>现在让我们欢迎我的同事拉斐尔上台</c>
 
 
 239
-00:07:32,326 --> 00:07:33,076
-based application.
+00:13:05,085 --> 00:13:06,653
+<c.magenta>为大家演示如何在你的应用中使用</c>
 
 
 240
-00:07:34,316 --> 00:07:35,936
-Then you will need to declare
+00:13:06,720 --> 00:13:09,156
+<c.magenta>UI文档浏览器视图控制器</c>
 
 
 241
-00:07:36,076 --> 00:07:37,176
-the content types that are
+00:13:09,623 --> 00:13:10,457
+<c.magenta>拉斐尔</c>
 
 
 242
-00:07:37,176 --> 00:07:38,846
-supported by your app.
+00:13:13,627 --> 00:13:14,461
+<c.magenta>谢谢 保</c>
 
 
 243
-00:07:38,846 --> 00:07:39,986
-And this is important because
+00:13:15,262 --> 00:13:16,430
+<c.magenta>大家早上好</c>
 
 
 244
-00:07:39,986 --> 00:07:42,196
-the Browser VC will use this
+00:13:17,231 --> 00:13:18,665
+<c.magenta>那么现在你们已经了解了</c>
 
 
 245
-00:07:42,196 --> 00:07:43,686
-content type in order to know
+00:13:18,732 --> 00:13:21,468
+<c.magenta>新的UI文档浏览器视图</c>
+<c.magenta>控制器的API了</c>
 
 
 246
-00:07:43,686 --> 00:07:45,046
-what files to display in your
+00:13:21,535 --> 00:13:24,638
+<c.magenta>我要给大家做一个简短的演示</c>
 
 
 247
-00:07:45,046 --> 00:07:45,536
-application.
+00:13:24,705 --> 00:13:27,474
+<c.magenta>在iOS 11中创建一款基于</c>
+<c.magenta>文档的了不起的应用是如何简单</c>
 
 
 248
-00:07:46,176 --> 00:07:49,276
-It's important to note that the
+00:13:29,409 --> 00:13:31,812
+<c.magenta>我们要创建一个很简单的粒子编辑器</c>
 
 
 249
-00:07:49,276 --> 00:07:50,246
-UI Document Browser View
+00:13:31,879 --> 00:13:35,215
+<c.magenta>左侧是粒子系统 右侧是检验</c>
 
 
 250
-00:07:50,246 --> 00:07:52,176
-Controller needs to be the root
+00:13:35,282 --> 00:13:38,118
+<c.magenta>允许你自定义粒子系统的一些属性</c>
 
 
 251
-00:07:52,176 --> 00:07:53,906
-View Controller of your app.
+00:13:38,952 --> 00:13:41,922
+<c.magenta>现在每个粒子系统都属于一个文档</c>
 
 
 252
-00:07:53,906 --> 00:07:54,936
-It won't work otherwise.
+00:13:41,989 --> 00:13:44,892
+<c.magenta>因此使用UI文档浏览器视图控制器</c>
 
 
 253
-00:07:55,756 --> 00:07:59,236
-As I said before, the Browser VC
+00:13:44,958 --> 00:13:46,927
+<c.magenta>是我们这款应用的完美选择</c>
 
 
 254
-00:07:59,236 --> 00:08:00,046
-supports appearance
+00:13:47,694 --> 00:13:49,530
+<c.magenta>那么现在让我们切换到XCode</c>
 
 
 255
-00:08:00,046 --> 00:08:00,746
-customization.
+00:13:59,473 --> 00:14:02,943
+<c.magenta>Xcode 11为基于文档的应用</c>
+<c.magenta>准备了新模板</c>
 
 
 256
-00:08:01,246 --> 00:08:02,576
-By default, it will look like
+00:14:03,243 --> 00:14:04,144
+<c.magenta>让我们来试试</c>
 
 
 257
-00:08:02,576 --> 00:08:04,376
-this with a white background and
+00:14:09,483 --> 00:14:12,519
+<c.magenta>让我们把它命名为粒子</c>
+<c.magenta>然后创建新应用</c>
 
 
 258
-00:08:04,376 --> 00:08:05,016
-a blue tint color.
+00:14:15,122 --> 00:14:16,223
+<c.magenta>现在一旦实例化</c>
 
 
 259
-00:08:06,176 --> 00:08:07,756
-There are two properties that
+00:14:16,290 --> 00:14:18,392
+<c.magenta>这个模板上就拥有了你从零开始创建</c>
 
 
 260
-00:08:07,756 --> 00:08:08,806
-you can use in order to
+00:14:18,458 --> 00:14:21,028
+<c.magenta>基于文档的应用的一切东西</c>
 
 
 261
-00:08:08,876 --> 00:08:09,746
-customize it further.
+00:14:21,662 --> 00:14:23,997
+<c.magenta>首先 我们目标的Info.plist</c>
 
 
 262
-00:08:10,476 --> 00:08:12,076
-The browser Interface Style
+00:14:24,064 --> 00:14:26,700
+<c.magenta>已经按保之前提到的方式进行了设置</c>
 
 
 263
-00:08:12,076 --> 00:08:14,106
-which has three modes, dark,
+00:14:26,767 --> 00:14:27,701
+<c.magenta>键也对</c>
 
 
 264
-00:08:14,106 --> 00:08:15,976
-white, and light, and tint
+00:14:28,168 --> 00:14:31,605
+<c.magenta>接下来 我们有一个</c>
+<c.magenta>DocumentBrowserViewController子类</c>
 
 
 265
-00:08:15,976 --> 00:08:16,266
-color.
+00:14:31,905 --> 00:14:35,876
+<c.magenta>拥有稍后进行自定义的全部代码</c>
 
 
 266
-00:08:16,326 --> 00:08:19,326
-If you use a dark style and an
+00:14:37,244 --> 00:14:39,546
+<c.magenta>它还有一个ViewController子类</c>
 
 
 267
-00:08:19,326 --> 00:08:21,086
-orange tint color, your app will
+00:14:39,613 --> 00:14:41,048
+<c.magenta>文档视图控制器</c>
 
 
 268
-00:08:21,086 --> 00:08:24,246
-look like this.
+00:14:41,114 --> 00:14:44,184
+<c.magenta>将会控制文件内容的呈现</c>
 
 
 269
-00:08:24,496 --> 00:08:26,176
-So now that we configured the
+00:14:46,486 --> 00:14:49,089
+<c.magenta>下一步 正如保刚才提到过的</c>
 
 
 270
-00:08:26,176 --> 00:08:28,266
-Browser VC, the first thing your
+00:14:49,156 --> 00:14:51,291
+<c.magenta>我们有UIDocuments的子类</c>
 
 
 271
-00:08:28,266 --> 00:08:29,676
-app will have to support is
+00:14:51,358 --> 00:14:54,228
+<c.magenta>在运行时 作为文档的模型</c>
 
 
 272
-00:08:29,676 --> 00:08:30,476
-Opening Documents.
+00:14:55,495 --> 00:14:58,165
+<c.magenta>最后这点也很重要</c>
+<c.magenta>设置storyBoard</c>
 
 
 273
-00:08:31,686 --> 00:08:32,635
-So let's take a look at how it
+00:14:58,232 --> 00:15:02,369
+<c.magenta>将文档浏览器视图控制器</c>
+<c.magenta>作为已设置好的根视图控制器</c>
 
 
 274
-00:08:32,635 --> 00:08:32,966
-works.
+00:15:02,903 --> 00:15:05,806
+<c.magenta>并且文档视图控制器已准备好实例化</c>
 
 
 275
-00:08:33,926 --> 00:08:36,486
-First, the user will tap on one
+00:15:05,873 --> 00:15:08,575
+<c.magenta>当我们创建新文件或打开现有文件时</c>
 
 
 276
-00:08:36,486 --> 00:08:37,196
-of these documents.
+00:15:09,443 --> 00:15:11,078
+<c.magenta>让我们看一眼我们得到了什么</c>
 
 
 277
-00:08:38,606 --> 00:08:40,686
-Here, the Browser VC will fetch
+00:15:11,144 --> 00:15:13,780
+<c.magenta>通过在模拟器中启动这个模板</c>
 
 
 278
-00:08:40,686 --> 00:08:42,135
-and download the information of
+00:15:24,658 --> 00:15:27,194
+<c.magenta>现在 一旦开始</c>
+<c.magenta>我们会看到新的最近列表视图</c>
 
 
 279
-00:08:42,135 --> 00:08:42,676
-the document.
+00:15:27,261 --> 00:15:30,597
+<c.magenta>有你之前可能创建的最近的文档</c>
 
 
 280
-00:08:42,676 --> 00:08:44,606
-And once the document is ready,
+00:15:31,031 --> 00:15:34,535
+<c.magenta>当然 我们并没有创建过任何文件</c>
+<c.magenta>所以让我们切回到浏览视图</c>
 
 
 281
-00:08:44,676 --> 00:08:46,996
-it will forward the access to
+00:15:37,204 --> 00:15:41,341
+<c.magenta>我们看到侧边栏左侧是云存储供应商</c>
 
 
 282
-00:08:46,996 --> 00:08:48,716
-your application and call the
+00:15:41,408 --> 00:15:43,577
+<c.magenta>就在新增加的我的iPad上的存储旁边</c>
 
 
 283
-00:08:48,716 --> 00:08:50,046
-did Pick Delegate method.
+00:15:44,211 --> 00:15:47,281
+<c.magenta>我们还看到偏好和我们的标签</c>
 
 
 284
-00:08:50,756 --> 00:08:53,066
-Here, you just need to load and
+00:15:47,748 --> 00:15:50,551
+<c.magenta>被同步到了你的全部设备上</c>
 
 
 285
-00:08:53,066 --> 00:08:56,416
-present the document.
+00:15:51,285 --> 00:15:54,087
+<c.magenta>在屏幕中央 我们可以看到一个</c>
+<c.magenta>大的创建文档按钮</c>
 
 
 286
-00:08:56,416 --> 00:08:57,606
-When opening documents, the
+00:15:54,154 --> 00:15:56,490
+<c.magenta>允许你创建新文档</c>
 
 
 287
-00:08:57,606 --> 00:09:00,176
-Browser VC will give your app
+00:15:56,557 --> 00:15:57,424
+<c.magenta>那么让我们点击它</c>
 
 
 288
-00:09:00,176 --> 00:09:01,626
-persistent access to that URL.
+00:15:58,759 --> 00:16:01,361
+<c.magenta>嗯 什么也没发生 这在预料之中</c>
 
 
 289
-00:09:02,996 --> 00:09:04,776
-Now, if you want to restore it,
+00:16:01,428 --> 00:16:04,765
+<c.magenta>这是因为我们还没有通知</c>
+<c.magenta>UIDocumentBrowserViewController</c>
 
 
 290
-00:09:04,776 --> 00:09:06,646
-it's not enough to store the
+00:16:04,831 --> 00:16:07,668
+<c.magenta>在应用中创建新文件的意思</c>
 
 
 291
-00:09:06,646 --> 00:09:06,716
-URL.
+00:16:08,068 --> 00:16:09,169
+<c.magenta>那么让我们来修复一下</c>
 
 
 292
-00:09:06,956 --> 00:09:08,256
-You need to store the bookmark
+00:16:10,637 --> 00:16:14,341
+<c.magenta>因此 我们要切回UIDocument</c>
+<c.magenta>BrowserViewController子类</c>
 
 
 293
-00:09:08,256 --> 00:09:10,176
-data associated to this URL
+00:16:15,242 --> 00:16:16,710
+<c.magenta>正如保之前所提到过的</c>
 
 
 294
-00:09:10,176 --> 00:09:11,596
-because this is the piece of
+00:16:16,777 --> 00:16:20,514
+<c.magenta>当用户轻触创建文档按钮时</c>
+<c.magenta>我们将回调</c>
 
 
 295
-00:09:11,646 --> 00:09:13,866
-information that keeps track of
+00:16:20,581 --> 00:16:23,483
+<c.magenta>DocumentBrowser</c>
+<c.magenta>ViewControllerDelegate函数</c>
 
 
 296
-00:09:14,146 --> 00:09:15,126
-the URL access.
+00:16:24,218 --> 00:16:26,787
+<c.magenta>didRequestDocumentCreation</c>
+<c.magenta>WithHandler</c>
 
 
 297
-00:09:15,696 --> 00:09:18,856
-The code to Opening Document
+00:16:27,821 --> 00:16:32,159
+<c.magenta>现在我们要做的是将新创建</c>
 
 
 298
-00:09:18,986 --> 00:09:19,466
-looks like this.
+00:16:32,226 --> 00:16:35,495
+<c.magenta>文件的URL传给</c>
+<c.magenta>DocumentBrowserViewController</c>
 
 
 299
-00:09:19,606 --> 00:09:20,946
-You just need to implement the
+00:16:36,830 --> 00:16:41,935
+<c.magenta>现在 在我们的例子中 让我向目标中</c>
+<c.magenta>添加一个新的粒子文件</c>
 
 
 300
-00:09:20,946 --> 00:09:22,366
-document Browser did Pick
+00:16:43,871 --> 00:16:47,541
+<c.magenta>确保将其添加到我们的目标中并结束</c>
 
 
 301
-00:09:22,366 --> 00:09:24,936
-Document URLs and present the
+00:16:51,345 --> 00:16:56,517
+<c.magenta>现在当运行时 我们只需要开始</c>
+<c.magenta>并获取此添加文档的URL</c>
 
 
 302
-00:09:24,936 --> 00:09:25,856
-view controller for the
+00:16:56,717 --> 00:16:58,452
+<c.magenta>通过我们的NS mainBundle</c>
 
 
 303
-00:09:25,856 --> 00:09:26,266
-document.
+00:16:59,253 --> 00:17:00,654
+<c.magenta>一旦我们获取URL</c>
 
 
 304
-00:09:26,826 --> 00:09:30,156
-Like the UI Document Picker, the
+00:17:00,721 --> 00:17:04,691
+<c.magenta>就把它传给我们从委托函数中</c>
+<c.magenta>获得的importHandler</c>
 
 
 305
-00:09:30,156 --> 00:09:31,726
-Browser VC supports opening
+00:17:05,192 --> 00:17:07,961
+<c.magenta>然后复制URL</c>
 
 
 306
-00:09:31,726 --> 00:09:32,896
-multiple documents at the same
+00:17:09,796 --> 00:17:12,833
+<c.magenta>现在UIDocument</c>
+<c.magenta>BrowserViewController将获得这个URL</c>
 
 
 307
-00:09:32,896 --> 00:09:33,096
-time.
+00:17:12,900 --> 00:17:15,736
+<c.magenta>并在后台替你执行所有的艰巨任务</c>
 
 
 308
-00:09:33,856 --> 00:09:35,466
-If you want your app to support
+00:17:16,036 --> 00:17:19,306
+<c.magenta>比如将文件移动到合适的位置</c>
+<c.magenta>和处理URL</c>
 
 
 309
-00:09:35,466 --> 00:09:36,956
-this, you need to set the allows
+00:17:20,339 --> 00:17:22,643
+<c.magenta>一旦完成 它将会提供一个回调</c>
 
 
 310
-00:09:36,956 --> 00:09:41,396
-Picking Multiple Items to true.
+00:17:22,709 --> 00:17:26,747
+<c.magenta>didImportDocumentAt sourceURL</c>
 
 
 311
-00:09:41,616 --> 00:09:42,886
-Now that your app is able to
+00:17:27,614 --> 00:17:29,917
+<c.magenta>或failedToImportDocumentAtURL</c>
 
 
 312
-00:09:42,886 --> 00:09:45,626
-open any file in the system, the
+00:17:30,651 --> 00:17:33,353
+<c.magenta>现在如果我们没有成功导入</c>
+<c.magenta>新创建的文件</c>
 
 
 313
-00:09:45,626 --> 00:09:46,866
-next thing is to be able to
+00:17:33,654 --> 00:17:35,389
+<c.magenta>因为我们想成为一名好的开发人员</c>
 
 
 314
-00:09:46,866 --> 00:09:47,846
-create new documents.
+00:17:35,455 --> 00:17:38,091
+<c.magenta>我们应该继续并实施恰当的报错处理</c>
 
 
 315
-00:09:48,466 --> 00:09:49,816
-There are two places where you
+00:17:38,158 --> 00:17:40,661
+<c.magenta>比如把报错呈现给用户</c>
 
 
 316
-00:09:49,816 --> 00:09:50,926
-can create new documents.
+00:17:41,695 --> 00:17:43,964
+<c.magenta>然而如果我们成功了 我们可以继续</c>
 
 
 317
-00:09:51,616 --> 00:09:52,686
-The first one is the Recents
+00:17:44,031 --> 00:17:46,300
+<c.magenta>并呈现我们刚才所创建的文档</c>
 
 
 318
-00:09:52,686 --> 00:09:52,846
-View.
+00:17:49,036 --> 00:17:52,072
+<c.magenta>现在假如用户选择了一个现有文件</c>
 
 
 319
-00:09:53,566 --> 00:09:54,726
-If the user taps the Create
+00:17:52,139 --> 00:17:53,173
+<c.magenta>在那种情况下</c>
 
 
 320
-00:09:54,726 --> 00:09:56,926
-button here, it will create a
+00:17:53,240 --> 00:17:57,244
+<c.magenta>我们要回调</c>
+<c.magenta>didPickDocumentURLs函数</c>
 
 
 321
-00:09:57,146 --> 00:09:59,186
-new document in the default safe
+00:17:58,378 --> 00:17:59,947
+<c.magenta>同样 我们只需要继续</c>
 
 
 322
-00:09:59,186 --> 00:10:01,386
-location of your app.
+00:18:00,214 --> 00:18:03,450
+<c.magenta>比如说我们得到的第一个文档URL</c>
 
 
 323
-00:10:01,386 --> 00:10:02,676
-If you tap the Create button in
+00:18:04,084 --> 00:18:04,918
+<c.magenta>然后呈现它</c>
 
 
 324
-00:10:02,676 --> 00:10:04,216
-the Browse View, it will create
+00:18:05,986 --> 00:18:07,788
+<c.magenta>现在 在应用中呈现文档</c>
 
 
 325
-00:10:04,216 --> 00:10:05,106
-a new document in the current
+00:18:08,322 --> 00:18:11,725
+<c.magenta>意味着将其中一个</c>
+<c.magenta>DocumentViewControllers实例化</c>
 
 
 326
-00:10:05,106 --> 00:10:05,966
-location of the Browse View.
+00:18:12,526 --> 00:18:17,598
+<c.magenta>产生一个我们想要打开的</c>
+<c.magenta>用文档URL初始化的文档</c>
 
 
 327
-00:10:06,056 --> 00:10:08,836
-Now let's take a look at the
+00:18:18,265 --> 00:18:21,435
+<c.magenta>然后我们只需要继续并呈现</c>
+<c.magenta>documentViewController</c>
 
 
 328
-00:10:08,836 --> 00:10:09,256
-workflow.
+00:18:21,902 --> 00:18:23,871
+<c.magenta>现在让我们再看看模拟器</c>
 
 
 329
-00:10:10,246 --> 00:10:11,666
-Once the user taps on one of
+00:18:31,879 --> 00:18:33,013
+<c.magenta>应用再次启动了</c>
 
 
 330
-00:10:11,666 --> 00:10:13,346
-these Create buttons, your app
+00:18:33,080 --> 00:18:36,517
+<c.magenta>我们在浏览视图中</c>
+<c.magenta>并且我们可以轻触创建文档按钮</c>
 
 
 331
-00:10:13,896 --> 00:10:15,646
-will receive an import handler.
+00:18:36,917 --> 00:18:38,886
+<c.magenta>然后就出现了</c>
+<c.magenta>DocumentViewController</c>
 
 
 332
-00:10:16,346 --> 00:10:17,446
-Now if you already have the
+00:18:38,952 --> 00:18:41,355
+<c.magenta>其中包含我们刚创建的</c>
+<c.magenta>文件的详细信息</c>
 
 
 333
-00:10:17,446 --> 00:10:18,996
-source URL, you can call the
+00:18:42,022 --> 00:18:45,092
+<c.magenta>完成后 我们可以再次关闭</c>
+<c.magenta>DocumentViewController</c>
 
 
 334
-00:10:18,996 --> 00:10:19,606
-import handler.
+00:18:45,259 --> 00:18:48,829
+<c.magenta>返回到rootViewController</c>
+<c.magenta>或DocumentBrowserViewController</c>
 
 
 335
-00:10:20,496 --> 00:10:22,476
-If not, if your app needs to
+00:18:51,098 --> 00:18:54,168
+<c.magenta>现在让我们切换到一个更高级的版本</c>
 
 
 336
-00:10:22,476 --> 00:10:24,076
-show some template chooser in
+00:18:54,234 --> 00:18:57,070
+<c.magenta>已经编好了全部代码</c>
 
 
 337
-00:10:24,076 --> 00:10:26,136
-order to know what source URL to
+00:18:57,137 --> 00:19:00,741
+<c.magenta>左侧有粒子系统渲染器</c>
+<c.magenta>右侧有编辑器</c>
 
 
 338
-00:10:26,136 --> 00:10:27,816
-choose, now is the moment.
+00:19:01,041 --> 00:19:02,009
+<c.magenta>这样我们就可以重点关注</c>
 
 
 339
-00:10:28,376 --> 00:10:29,506
-You present a template chooser
+00:19:02,075 --> 00:19:04,912
+<c.magenta>DocumentBrowserViewController</c>
+<c.magenta>相关的代码</c>
 
 
 340
-00:10:29,656 --> 00:10:30,966
-and call the import handler.
+00:19:11,451 --> 00:19:13,954
+<c.magenta>在此之前</c>
+<c.magenta>我要移除我们刚创建的应用</c>
 
 
 341
-00:10:31,586 --> 00:10:34,066
-The import handler will move
+00:19:14,021 --> 00:19:16,690
+<c.magenta>避免其它冲突</c>
 
 
 342
-00:10:34,066 --> 00:10:35,186
-that file to the provider.
+00:19:25,365 --> 00:19:28,202
+<c.magenta>现在这仍然是一样的</c>
+<c.magenta>仍然是同一个项目</c>
 
 
 343
-00:10:35,256 --> 00:10:37,036
-And once the file is in the
+00:19:28,268 --> 00:19:32,472
+<c.magenta>它基于我们一开始实例化的模板</c>
 
 
 344
-00:10:37,036 --> 00:10:38,706
-provider, it will call you back
+00:19:33,040 --> 00:19:35,075
+<c.magenta>让我介绍一下我们给粒子应用</c>
 
 
 345
-00:10:38,876 --> 00:10:40,366
-with a succeed delegate method.
+00:19:35,142 --> 00:19:38,111
+<c.magenta>Info.plist做的一些附件</c>
 
 
 346
-00:10:41,086 --> 00:10:43,306
-Here, as for the open case, you
+00:19:38,779 --> 00:19:44,117
+<c.magenta>首先 SupportDocumentBrowser</c>
+<c.magenta>的键值仍为是</c>
 
 
 347
-00:10:43,306 --> 00:10:44,646
-just need to load and present
+00:19:44,318 --> 00:19:46,019
+<c.magenta>就像保刚才解释过的一样</c>
 
 
 348
-00:10:44,776 --> 00:10:45,306
-the document.
+00:19:47,120 --> 00:19:50,357
+<c.magenta>但更多的是 在已导出的UTI部分</c>
 
 
 349
-00:10:46,066 --> 00:10:48,876
-Now the import operation can
+00:19:50,858 --> 00:19:54,428
+<c.magenta>我们正在为粒子文件</c>
+<c.magenta>创建一个新的UTI类型</c>
 
 
 350
-00:10:48,936 --> 00:10:50,616
-fail for many reasons.
+00:19:55,696 --> 00:19:57,831
+<c.magenta>我们要赋予它一个</c>
+<c.magenta>DescriptionParticles</c>
 
 
 351
-00:10:50,886 --> 00:10:51,936
-And if that is the case, you
+00:19:58,365 --> 00:19:59,967
+<c.magenta>我们给它一个Identifier</c>
 
 
 352
-00:10:52,126 --> 00:10:53,566
-need to handle the error and
+00:20:00,300 --> 00:20:04,872
+<c.magenta>并让它遵守UTI类型的公共数据</c>
+<c.magenta>和公共内容</c>
 
 
 353
-00:10:53,566 --> 00:10:54,716
-present some UI to the user.
+00:20:06,173 --> 00:20:10,077
+<c.magenta>那意味着我们的粒子文件</c>
+<c.magenta>是一连串的数据</c>
 
 
 354
-00:10:55,836 --> 00:10:58,246
-Now let's take a look at how to
+00:20:10,143 --> 00:20:12,946
+<c.magenta>并且拥有文档文件的语义</c>
 
 
 355
-00:10:58,356 --> 00:10:58,806
-code this.
+00:20:14,481 --> 00:20:17,184
+<c.magenta>现在</c>
+<c.magenta>在Additional exported UTI属性中</c>
 
 
 356
-00:10:59,566 --> 00:11:01,046
-First you need to implement the
+00:20:18,051 --> 00:20:20,654
+<c.magenta>我们定义了我们的文件应该有…</c>
 
 
 357
-00:11:01,046 --> 00:11:02,456
-document Browser did Request
+00:20:21,054 --> 00:20:24,024
+<c.magenta>哇哦！抱歉</c>
 
 
 358
-00:11:02,456 --> 00:11:03,246
-Document Creation.
+00:20:26,860 --> 00:20:29,096
+<c.magenta>…应该有粒子扩展</c>
 
 
 359
-00:11:03,976 --> 00:11:05,686
-Here, as I said before, you can
+00:20:29,162 --> 00:20:33,367
+<c.magenta>意思是系统中任何有</c>
+<c.magenta>.particles扩展名的文件</c>
 
 
 360
-00:11:05,686 --> 00:11:06,906
-optionally present a Template
+00:20:33,800 --> 00:20:37,271
+<c.magenta>都将被识别为</c>
+<c.magenta>新创建的UTI类型的文件</c>
 
 
 361
-00:11:06,906 --> 00:11:07,416
-Chooser.
+00:20:39,139 --> 00:20:40,941
+<c.magenta>那么现在已经做好了UTI类型</c>
 
 
 362
-00:11:08,056 --> 00:11:09,676
-Now in this example, the present
+00:20:41,008 --> 00:20:44,311
+<c.magenta>我们可以继续 告诉应用说我们</c>
+<c.magenta>实际上已经能支持了</c>
 
 
 363
-00:11:09,676 --> 00:11:11,396
-Template Chooser will call us
+00:20:44,678 --> 00:20:48,715
+<c.magenta>那么在文档类型中 我们需要再次</c>
+<c.magenta>提到我们的粒子文件格式</c>
 
 
 364
-00:11:11,396 --> 00:11:14,516
-back with the URL that the user
+00:20:49,082 --> 00:20:52,019
+<c.magenta>我们识别了标识符</c>
 
 
 365
-00:11:14,896 --> 00:11:15,866
-picked for the template.
+00:20:52,319 --> 00:20:54,788
+<c.magenta>在附加文档类型属性中</c>
 
 
 366
-00:11:15,866 --> 00:11:17,746
-And it will tell us if the user
+00:20:55,322 --> 00:21:01,328
+<c.magenta>我们定义CFBundleTypeRole为编辑器</c>
+<c.magenta>而LSHandlerRank为所有者</c>
 
 
 367
-00:11:17,746 --> 00:11:19,356
-canceled the document creation.
+00:21:01,929 --> 00:21:04,865
+<c.magenta>如果你想了解更多信息</c>
+<c.magenta>请参看此文档</c>
 
 
 368
-00:11:20,016 --> 00:11:22,266
-Once we get the URL, we just
+00:21:07,134 --> 00:21:09,369
+<c.magenta>那么现在已经设置好了UTI类型</c>
 
 
 369
-00:11:22,266 --> 00:11:24,426
-need to call the import handler
+00:21:09,970 --> 00:21:13,040
+<c.magenta>意思是DocumentBrowserView</c>
+<c.magenta>Controller将确保</c>
 
 
 370
-00:11:24,426 --> 00:11:25,096
-with a mode.
+00:21:13,106 --> 00:21:16,877
+<c.magenta>只允许用户选择新文件类型的文档</c>
 
 
 371
-00:11:25,446 --> 00:11:26,566
-There are two different modes:
+00:21:17,711 --> 00:21:21,682
+<c.magenta>它还能确保当你在DocumentBrowser</c>
+<c.magenta>ViewController中搜索时</c>
 
 
 372
-00:11:26,866 --> 00:11:27,956
-copy and move.
+00:21:21,982 --> 00:21:25,219
+<c.magenta>你只能看到匹配</c>
+<c.magenta>此UI类型的搜索结果</c>
 
 
 373
-00:11:28,436 --> 00:11:29,776
-If the user canceled the
+00:21:26,386 --> 00:21:27,588
+<c.magenta>最后这点也很重要</c>
 
 
 374
-00:11:29,776 --> 00:11:31,396
-document creation, we still need
+00:21:27,654 --> 00:21:30,424
+<c.magenta>在任何UI文档交互控制</c>
 
 
 375
-00:11:31,396 --> 00:11:33,176
-to call the import handler with
+00:21:30,490 --> 00:21:33,060
+<c.magenta>和不同的粒子文件应用中</c>
 
 
 376
-00:11:33,176 --> 00:11:34,676
-nil as the URL and none as the
+00:21:33,227 --> 00:21:35,796
+<c.magenta>你会看到在我们的应用中</c>
+<c.magenta>打开文件的操作</c>
 
 
 377
-00:11:34,676 --> 00:11:34,936
-mode.
+00:21:38,098 --> 00:21:40,467
+<c.magenta>那么现在让我们看看实际的文档</c>
 
 
 378
-00:11:35,616 --> 00:11:36,386
-This is important.
+00:21:40,534 --> 00:21:42,569
+<c.magenta>切换到UIDocument子类</c>
 
 
 379
-00:11:36,816 --> 00:11:38,146
-This will tell the Browser VC
+00:21:43,370 --> 00:21:45,239
+<c.magenta>现在UI文档很强大</c>
 
 
 380
-00:11:38,766 --> 00:11:40,156
-that the creation operation is
+00:21:45,305 --> 00:21:47,608
+<c.magenta>我们强烈鼓励大家使用它</c>
 
 
 381
-00:11:40,156 --> 00:11:40,486
-over.
+00:21:47,908 --> 00:21:50,711
+<c.magenta>正如保刚才所说的</c>
+<c.magenta>它拥有许多很棒的功能</c>
 
 
 382
-00:11:41,176 --> 00:11:44,716
-Once the document is fully
+00:21:50,777 --> 00:21:52,112
+<c.magenta>比如自动保存</c>
 
 
 383
-00:11:44,716 --> 00:11:46,326
-imported, the document Browser
+00:21:52,179 --> 00:21:56,617
+<c.magenta>文件协调、NS文件呈现</c>
+<c.magenta>版本控制等等…</c>
 
 
 384
-00:11:46,326 --> 00:11:47,946
-did Import Document At source
+00:21:57,251 --> 00:22:00,687
+<c.magenta>因此 UIDocument和</c>
+<c.magenta>UIDocumentBrowserViewController</c>
 
 
 385
-00:11:47,946 --> 00:11:49,876
-URL to Destination URL will be
+00:22:00,754 --> 00:22:02,389
+<c.magenta>从字面上看实际上是互生的</c>
 
 
 386
-00:11:49,876 --> 00:11:50,116
-called.
+00:22:02,589 --> 00:22:04,558
+<c.magenta>那么让我们看看我们正在做什么</c>
 
 
 387
-00:11:50,696 --> 00:11:52,606
-Here, you just need to load and
+00:22:06,760 --> 00:22:10,564
+<c.magenta>现在文档显示出文档正处于运行中</c>
 
 
 388
-00:11:52,606 --> 00:11:54,466
-present the UI for the document.
+00:22:10,631 --> 00:22:13,967
+<c.magenta>那么很明显</c>
+<c.magenta>因为我们正在谈粒子系统</c>
 
 
 389
-00:11:54,886 --> 00:11:56,576
-As I said before, the import
+00:22:14,201 --> 00:22:17,070
+<c.magenta>它应该有一个</c>
+<c.magenta>对SCNParticleSystem的引用</c>
 
 
 390
-00:11:56,576 --> 00:11:57,376
-operation can fail.
+00:22:19,706 --> 00:22:21,308
+<c.magenta>接下来我们要</c>
 
 
 391
-00:11:57,436 --> 00:12:00,036
-And if that is the case, the
+00:22:21,375 --> 00:22:24,311
+<c.magenta>保存和加载文件</c>
 
 
 392
-00:12:00,036 --> 00:12:01,306
-Document Browser failed To
+00:22:24,678 --> 00:22:28,515
+<c.magenta>因此 我们需要为类型覆盖函数内容</c>
 
 
 393
-00:12:01,306 --> 00:12:03,196
-Import Document URL will be
+00:22:29,316 --> 00:22:30,751
+<c.magenta>并加载内容</c>
 
 
 394
-00:12:03,196 --> 00:12:03,426
-called.
+00:22:31,652 --> 00:22:33,420
+<c.magenta>现在我们实际上所需要做的就是</c>
 
 
 395
-00:12:03,746 --> 00:12:04,936
-Here, you need to handle the
+00:22:33,487 --> 00:22:37,024
+<c.magenta>把现有的粒子系统归档或不归档</c>
 
 
 396
-00:12:04,936 --> 00:12:06,296
-error and present some UI to the
+00:22:37,558 --> 00:22:39,893
+<c.magenta>这能起作用是因为</c>
+<c.magenta>我们的SCNParticleSystem</c>
 
 
 397
-00:12:06,296 --> 00:12:06,566
-user.
+00:22:39,960 --> 00:22:41,795
+<c.magenta>已经遵守NS编码了</c>
 
 
 398
-00:12:09,186 --> 00:12:10,976
-Now we are dealing with
+00:22:42,429 --> 00:22:44,031
+<c.magenta>所以我们实际上不需要做很多</c>
 
 
 399
-00:12:10,976 --> 00:12:12,556
-documents that are operated by
+00:22:44,097 --> 00:22:46,600
+<c.magenta>我们使用KeyedArchiver归档数据</c>
 
 
 400
-00:12:12,556 --> 00:12:14,516
-different processes, different
+00:22:47,201 --> 00:22:51,839
+<c.magenta>或使用NS KeyedUnarchiver</c>
+<c.magenta>取出现有数据</c>
 
 
 401
-00:12:14,516 --> 00:12:16,456
-apps, and different devices at
+00:22:53,841 --> 00:22:55,943
+<c.magenta>这就是你需要对文档做的全部操作</c>
 
 
 402
-00:12:16,456 --> 00:12:16,976
-the same time.
+00:22:56,009 --> 00:22:58,312
+<c.magenta>让我们看看DocumentViewController</c>
 
 
 403
-00:12:18,376 --> 00:12:19,206
-And because of that, it's
+00:22:59,046 --> 00:23:03,383
+<c.magenta>这是控制呈现文档内容的</c>
 
 
 404
-00:12:19,206 --> 00:12:20,516
-important to use NS File
+00:23:03,851 --> 00:23:06,653
+<c.magenta>那么很明显 在我们呈现</c>
+<c.magenta>DocumentViewController之前</c>
 
 
 405
-00:12:20,516 --> 00:12:22,026
-Coordination and NS File
+00:23:06,720 --> 00:23:09,223
+<c.magenta>我们应该把它传给文档的引用</c>
 
 
 406
-00:12:22,026 --> 00:12:24,976
-Presenter in order to avoid risk
+00:23:14,094 --> 00:23:17,331
+<c.magenta>在本例中 设置文档函数是不同步的</c>
 
 
 407
-00:12:24,976 --> 00:12:25,946
-conditions between these
+00:23:17,397 --> 00:23:21,068
+<c.magenta>这是因为加载文档应该是不同步的</c>
 
 
 408
-00:12:25,976 --> 00:12:26,406
-processes.
+00:23:21,134 --> 00:23:22,803
+<c.magenta>因为包含文件I/O</c>
 
 
 409
-00:12:27,616 --> 00:12:29,746
-Now because the document is
+00:23:23,170 --> 00:23:26,406
+<c.magenta>我们要从磁盘中读取</c>
+<c.magenta>你不应该在主线程上读取</c>
 
 
 410
-00:12:29,746 --> 00:12:31,846
-outside your app container, the
+00:23:26,773 --> 00:23:29,176
+<c.magenta>那么让我们看看该如何实施</c>
 
 
 411
-00:12:31,846 --> 00:12:32,896
-Browser VC is using
+00:23:32,212 --> 00:23:34,681
+<c.magenta>首先我们要保持对文档的引用</c>
 
 
 412
-00:12:32,896 --> 00:12:34,786
-Security-scoped URLs, which
+00:23:35,482 --> 00:23:37,818
+<c.magenta>然后我们继续并加载ViewController</c>
 
 
 413
-00:12:34,786 --> 00:12:36,506
-means you have to start and stop
+00:23:38,118 --> 00:23:41,121
+<c.magenta>然后我们在文档上调用Open函数</c>
 
 
 414
-00:12:36,506 --> 00:12:38,456
-accessing that URL in order to
+00:23:41,722 --> 00:23:43,924
+<c.magenta>现在应该完成了后台的全部工作</c>
 
 
 415
-00:12:38,456 --> 00:12:40,656
-have the right to write and read
+00:23:43,991 --> 00:23:46,126
+<c.magenta>一旦回来 它将会给我们一个回调</c>
 
 
 416
-00:12:40,696 --> 00:12:41,146
-the URL.
+00:23:48,462 --> 00:23:51,398
+<c.magenta>现在如果在文档加载过程中</c>
+<c.magenta>出现任何错误</c>
 
 
 417
-00:12:42,126 --> 00:12:43,316
-We highly encourage you to use
+00:23:51,665 --> 00:23:53,634
+<c.magenta>我们就会调用handleError</c>
 
 
 418
-00:12:43,316 --> 00:12:43,856
-UI Document.
+00:23:53,700 --> 00:23:56,737
+<c.magenta>在UIDocument子类中</c>
+<c.magenta>允许用户交互</c>
 
 
 419
-00:12:44,706 --> 00:12:46,796
-By using it, you will get File
+00:23:57,137 --> 00:24:00,841
+<c.magenta>因为我们想成为一名了不起的开发人员</c>
+<c.magenta>我们必须得实施这个函数</c>
 
 
 420
-00:12:46,796 --> 00:12:48,416
-Coordination, File Presenter,
+00:24:01,341 --> 00:24:04,211
+<c.magenta>如果成功了</c>
+<c.magenta>我们可以继续并获取文档</c>
 
 
 421
-00:12:48,416 --> 00:12:50,216
-and Security-scoped URL support
+00:24:04,278 --> 00:24:07,948
+<c.magenta>并把它传给particleViewController</c>
+<c.magenta>和editorViewController</c>
 
 
 422
-00:12:50,286 --> 00:12:51,796
-for free, as well as other
+00:24:08,916 --> 00:24:11,952
+<c.magenta>现在DocumentViewController实际上</c>
+<c.magenta>只是一个容器视图控制器</c>
 
 
 423
-00:12:51,796 --> 00:12:52,846
-features like Autosave.
+00:24:12,019 --> 00:24:14,855
+<c.magenta>左侧是一个粒子系统</c>
+<c.magenta>右侧是编辑器</c>
 
 
 424
-00:12:53,536 --> 00:12:55,326
-If you want to know more about
+00:24:15,923 --> 00:24:18,792
+<c.magenta>现在无论是什么情况</c>
+<c.magenta>我们都必须调用completionHandler</c>
 
 
 425
-00:12:55,326 --> 00:12:57,206
-UI Document, please take a look
+00:24:19,393 --> 00:24:21,929
+<c.magenta>用于表明我们已经</c>
+<c.magenta>完成了对文档的设置</c>
 
 
 426
-00:12:57,206 --> 00:12:58,456
-at the Building Document-Based
+00:24:24,131 --> 00:24:25,599
+<c.magenta>这就是关于文档的打开</c>
 
 
 427
-00:12:58,456 --> 00:13:01,406
-Apps session from WWDC 2015.
+00:24:25,666 --> 00:24:29,469
+<c.magenta>但是当然了 我们还想在某一时刻</c>
+<c.magenta>遣散DocumentViewController</c>
 
 
 428
-00:13:02,626 --> 00:13:03,596
-And now I would like to
+00:24:32,005 --> 00:24:32,840
+<c.magenta>同样</c>
 
 
 429
-00:13:03,596 --> 00:13:04,776
-introduce my colleague Raffeal
+00:24:32,906 --> 00:24:34,541
+<c.magenta>这次我们不调用Open函数了</c>
 
 
 430
-00:13:05,126 --> 00:13:06,606
-to give you a demo on how to use
+00:24:34,608 --> 00:24:37,177
+<c.magenta>很明显我们要调用Close函数</c>
 
 
 431
-00:13:06,736 --> 00:13:07,836
-the UI Document Browser View
+00:24:38,045 --> 00:24:41,782
+<c.magenta>这又是不同步的 因为我们正在</c>
+<c.magenta>保存文档 如果需要的话</c>
 
 
 432
-00:13:07,836 --> 00:13:09,156
-Controller in your app.
+00:24:42,950 --> 00:24:46,386
+<c.magenta>在completionHandler中 我们只需要</c>
+<c.magenta>遣散DocumentViewController</c>
 
 
 433
-00:13:09,676 --> 00:13:09,946
-Raffael
+00:24:47,387 --> 00:24:50,123
+<c.magenta>DocumentViewController</c>
+<c.magenta>几乎已经完成使命了</c>
 
 
 434
-00:13:10,016 --> 00:13:11,816
-[ Applause ]
+00:24:50,190 --> 00:24:53,861
+<c.magenta>因此我们可以继续并再看一眼</c>
+<c.magenta>DocumentBrowserViewController</c>
 
 
 435
-00:13:11,816 --> 00:13:13,616
-.
+00:24:54,795 --> 00:24:58,232
+<c.magenta>这是控制呈现文档视图控制器的</c>
 
 
 436
-00:13:13,616 --> 00:13:14,136
->> Thanks, Pau.
+00:24:58,298 --> 00:25:01,802
+<c.magenta>无论是创建新文件或是打开现有文件</c>
 
 
 437
-00:13:15,266 --> 00:13:16,026
-Good morning, everyone.
+00:25:03,470 --> 00:25:04,838
+<c.magenta>让我们再看一眼</c>
 
 
 438
-00:13:17,456 --> 00:13:18,646
-So now that you've got to know
+00:25:06,874 --> 00:25:08,308
+<c.magenta>那么当我们创建新文件时</c>
 
 
 439
-00:13:18,646 --> 00:13:20,386
-the API of the new UI Document
+00:25:08,375 --> 00:25:11,311
+<c.magenta>我们得到一个对didRequestDocument</c>
+<c.magenta>CreationWithHandler的回调</c>
 
 
 440
-00:13:20,386 --> 00:13:21,786
-Browser View Controller, I would
+00:25:11,812 --> 00:25:14,047
+<c.magenta>我们从NS mainBundle中获取了URL</c>
 
 
 441
-00:13:21,786 --> 00:13:22,766
-like to walk you through and
+00:25:14,448 --> 00:25:17,551
+<c.magenta>并通过importHandler</c>
+<c.magenta>和复制操作将其传回</c>
 
 
 442
-00:13:22,766 --> 00:13:24,756
-show a demo of how easy it is to
+00:25:18,585 --> 00:25:21,922
+<c.magenta>我们将得到一个对</c>
+<c.magenta>didImportDocumentAtURL</c>
 
 
 443
-00:13:24,756 --> 00:13:26,366
-build a great document-based app
+00:25:21,989 --> 00:25:23,724
+<c.magenta>或failedToImportDocumentAtURL</c>
+<c.magenta>的回调</c>
 
 
 444
-00:13:26,626 --> 00:13:27,486
-for iOS 11.
+00:25:25,325 --> 00:25:27,794
+<c.magenta>如果成功 我们将继续并呈现文档</c>
 
 
 445
-00:13:28,056 --> 00:13:30,466
-We're going to build a very
+00:25:27,861 --> 00:25:31,932
+<c.magenta>就跟我们之前打开一个现有文件一样</c>
 
 
 446
-00:13:30,466 --> 00:13:32,066
-simple particle editor with a
+00:25:33,600 --> 00:25:35,002
+<c.magenta>现在当我们想呈现一个文档时</c>
 
 
 447
-00:13:32,066 --> 00:13:34,096
-particle system on the left and
+00:25:35,068 --> 00:25:38,238
+<c.magenta>我们从storyBoard</c>
+<c.magenta>把DocumentViewController实例化</c>
 
 
 448
-00:13:34,096 --> 00:13:35,346
-an inspect on the right side
+00:25:38,305 --> 00:25:42,142
+<c.magenta>并通过我们刚完成的带有对新创建的</c>
+<c.magenta>文档实例</c>
 
 
 449
-00:13:35,346 --> 00:13:36,486
-that allows you to customize
+00:25:42,309 --> 00:25:46,146
+<c.magenta>引用的函数setDocument传递文档</c>
 
 
 450
-00:13:36,486 --> 00:13:37,636
-some properties of the particle
+00:25:47,080 --> 00:25:50,717
+<c.magenta>完成后 我们只需要继续并呈现</c>
+<c.magenta>DocumentViewController</c>
 
 
 451
-00:13:37,636 --> 00:13:38,016
-system.
+00:25:50,984 --> 00:25:53,020
+<c.magenta>让我们在模拟器中看一下</c>
 
 
 452
-00:13:38,966 --> 00:13:40,706
-Now each particle system comes
+00:26:05,365 --> 00:26:06,533
+<c.magenta>（最近列表）</c>
 
 
 453
-00:13:40,706 --> 00:13:42,176
-within one document and,
+00:26:06,600 --> 00:26:10,237
+<c.magenta>切回浏览视图并点击创建文档按钮</c>
 
 
 454
-00:13:42,176 --> 00:13:43,806
-therefore, using the UI Document
+00:26:10,904 --> 00:26:12,105
+<c.magenta>创建了一个新文件</c>
 
 
 455
-00:13:43,806 --> 00:13:45,156
-Browser View Controller is a
+00:26:12,506 --> 00:26:17,377
+<c.magenta>好了 一个漂亮的粒子应用</c>
+<c.magenta>右侧有检验器</c>
 
 
 456
-00:13:45,156 --> 00:13:46,406
-perfect choice for our
+00:26:17,978 --> 00:26:22,216
+<c.magenta>我们可以稍微修改一下值</c>
+<c.magenta>尺寸和颜色</c>
 
 
 457
-00:13:46,406 --> 00:13:46,936
-applications.
+00:26:23,116 --> 00:26:24,218
+<c.magenta>完成后</c>
 
 
 458
-00:13:47,686 --> 00:13:48,746
-So now let's just switch to
+00:26:24,284 --> 00:26:27,221
+<c.magenta>我们只需要通过按完成按钮</c>
+<c.magenta>再次关闭文档</c>
 
 
 459
-00:13:48,746 --> 00:13:48,976
-Xcode.
+00:26:29,523 --> 00:26:33,560
+<c.magenta>太棒了 那么创建文档和打开文档</c>
+<c.magenta>立竿见影</c>
 
 
 460
-00:13:59,016 --> 00:14:00,796
-Xcode 11 comes with a new
+00:26:33,961 --> 00:26:35,996
+<c.magenta>但还有一点我并不是特别喜欢</c>
 
 
 461
-00:14:00,796 --> 00:14:02,216
-template for document-based
+00:26:36,063 --> 00:26:40,567
+<c.magenta>就是DocumentBrowserViewController</c>
+<c.magenta>是白色的</c>
 
 
 462
-00:14:02,216 --> 00:14:02,886
-applications.
+00:26:40,834 --> 00:26:44,037
+<c.magenta>而ParticleViewController</c>
+<c.magenta>却是很暗的颜色</c>
 
 
 463
-00:14:03,296 --> 00:14:03,936
-Let's try it out.
+00:26:44,371 --> 00:26:45,472
+<c.magenta>那么让我们来修改一下</c>
 
 
 464
-00:14:09,156 --> 00:14:11,096
-Going to call it particles and
+00:26:46,173 --> 00:26:47,341
+<c.magenta>正如保刚才所提到的</c>
 
 
 465
-00:14:11,096 --> 00:14:12,616
-create the new application.
+00:26:47,407 --> 00:26:50,811
+<c.magenta>有三种浏览器用户界面样式</c>
+<c.magenta>供你选择</c>
 
 
 466
-00:14:14,236 --> 00:14:16,596
-Now once instantiated, this
+00:26:50,878 --> 00:26:53,881
+<c.magenta>首先 暗色、亮色和白色</c>
 
 
 467
-00:14:16,636 --> 00:14:17,946
-template comes with everything
+00:26:54,348 --> 00:26:58,151
+<c.magenta>很明显暗色看起来很符合我们的情境</c>
 
 
 468
-00:14:17,946 --> 00:14:18,886
-you need to build a
+00:26:59,620 --> 00:27:03,023
+<c.magenta>因此让我们切回到</c>
+<c.magenta>DocumentBrowserViewController子类</c>
 
 
 469
-00:14:18,886 --> 00:14:20,326
-document-based application from
+00:27:04,124 --> 00:27:07,060
+<c.magenta>现在子类的viewDidLoad方法</c>
 
 
 470
-00:14:20,326 --> 00:14:20,816
-scratch.
+00:27:07,127 --> 00:27:09,730
+<c.magenta>是配置文档浏览器的最佳时刻</c>
 
 
 471
-00:14:21,656 --> 00:14:23,356
-First of all, the Info.plist of
+00:27:10,964 --> 00:27:13,133
+<c.magenta>在这种情况下 我们要做的是</c>
 
 
 472
-00:14:23,356 --> 00:14:25,256
-our target is already set up the
+00:27:15,068 --> 00:27:17,337
+<c.magenta>将browserUserInterfaceStyle</c>
+<c.magenta>设置为暗色</c>
 
 
 473
-00:14:25,256 --> 00:14:26,626
-way Pau mentioned it earlier
+00:27:18,172 --> 00:27:21,074
+<c.magenta>还可以修改</c>
+<c.magenta>DocumentBrowserViewController</c>
 
 
 474
-00:14:26,626 --> 00:14:27,516
-with the right key.
+00:27:21,141 --> 00:27:23,477
+<c.magenta>视图的tintColor</c>
 
 
 475
-00:14:28,216 --> 00:14:30,336
-Next, we have a Document Browser
+00:27:23,644 --> 00:27:26,613
+<c.magenta>在本例中 使用橙黄色</c>
 
 
 476
-00:14:30,336 --> 00:14:32,066
-View Controller subclass that
+00:27:26,680 --> 00:27:29,116
+<c.magenta>应该会很符合我们激情四溢的粒子</c>
 
 
 477
-00:14:32,066 --> 00:14:33,486
-has all the code already in
+00:27:29,783 --> 00:27:30,617
+<c.magenta>让我们看一眼</c>
 
 
 478
-00:14:33,486 --> 00:14:34,756
-place that you might want to
+00:27:39,326 --> 00:27:40,160
+<c.magenta>好了</c>
 
 
 479
-00:14:34,756 --> 00:14:35,556
-customize later.
+00:27:40,360 --> 00:27:42,863
+<c.magenta>这是同一个</c>
+<c.magenta>DocumentBrowserViewController</c>
 
 
 480
-00:14:36,626 --> 00:14:38,306
-It also comes with a view
+00:27:42,930 --> 00:27:44,264
+<c.magenta>只是色调较暗</c>
 
 
 481
-00:14:38,306 --> 00:14:39,716
-controller subclass, the
+00:27:44,331 --> 00:27:46,934
+<c.magenta>这比刚才那个看起来好多了</c>
 
 
 482
-00:14:39,716 --> 00:14:41,396
-Document View Controller which
+00:27:47,000 --> 00:27:50,137
+<c.magenta>当我们打开</c>
+<c.magenta>DocumentViewController时</c>
 
 
 483
-00:14:41,396 --> 00:14:42,786
-will be in charge of presenting
+00:27:50,871 --> 00:27:54,074
+<c.magenta>现在即使是控制UI也更新了外观</c>
 
 
 484
-00:14:42,786 --> 00:14:46,386
-the contents of our files.
+00:27:55,008 --> 00:27:56,410
+<c.magenta>让我们创建一个新文件夹</c>
 
 
 485
-00:14:46,576 --> 00:14:48,686
-Next, as Pau mentioned also
+00:27:59,279 --> 00:28:00,414
+<c.magenta>把它命名为火焰</c>
 
 
 486
-00:14:48,686 --> 00:14:50,546
-earlier, we have the subclass of
+00:28:04,818 --> 00:28:05,986
+<c.magenta>然后打开一个新文档</c>
 
 
 487
-00:14:50,546 --> 00:14:52,256
-UI Document that acts as the
+00:28:07,521 --> 00:28:09,289
+<c.magenta>现在两个视图控制器之间的过渡</c>
 
 
 488
-00:14:52,256 --> 00:14:53,786
-model of our documents at
+00:28:09,356 --> 00:28:11,792
+<c.magenta>变得更流畅了 看起来也更棒了</c>
 
 
 489
-00:14:53,786 --> 00:14:54,106
-runtime.
+00:28:12,860 --> 00:28:15,796
+<c.magenta>那么这就是第一个演示</c>
+<c.magenta>要告诉大家的全部内容</c>
 
 
 490
-00:14:55,506 --> 00:14:56,786
-And last but not least, our
+00:28:16,730 --> 00:28:19,666
+<c.magenta>为了获得一个我们目前</c>
+<c.magenta>所学习的内容的概览</c>
 
 
 491
-00:14:56,786 --> 00:14:58,666
-storyboard is set up to have the
+00:28:19,733 --> 00:28:21,468
+<c.magenta>让我们把舞台交回给保</c>
 
 
 492
-00:14:58,666 --> 00:15:00,246
-Document Browser View Controller
+00:28:34,848 --> 00:28:37,684
+<c.magenta>让我们看一下我们在演示中</c>
+<c.magenta>所看到的内容</c>
 
 
 493
-00:15:00,306 --> 00:15:01,396
-as the root View Controller
+00:28:38,952 --> 00:28:42,356
+<c.magenta>首先我们看到了</c>
+<c.magenta>如何从Xcode模板中</c>
 
 
 494
-00:15:01,396 --> 00:15:03,546
-already set up and the Document
+00:28:42,422 --> 00:28:43,724
+<c.magenta>创建基于文档的新应用</c>
 
 
 495
-00:15:03,546 --> 00:15:04,826
-View Controller ready to be
+00:28:44,291 --> 00:28:48,028
+<c.magenta>然后我们看到了如何创建新文档</c>
+<c.magenta>以及如何打开文档</c>
 
 
 496
-00:15:04,826 --> 00:15:06,556
-instantiated when we create new
+00:28:48,996 --> 00:28:53,100
+<c.magenta>最后我们看到了如何自定义</c>
+<c.magenta>浏览器VC的外观</c>
 
 
 497
-00:15:06,556 --> 00:15:08,296
-files or open existing files.
+00:28:53,367 --> 00:28:55,469
+<c.magenta>使其看起来与应用的其它部分相匹配</c>
 
 
 498
-00:15:09,446 --> 00:15:10,536
-So let's just take a look at
+00:28:57,371 --> 00:29:00,507
+<c.magenta>现在我们了解了</c>
+<c.magenta>浏览器VC的基本功能</c>
 
 
 499
-00:15:10,536 --> 00:15:11,826
-what we get just by launching
+00:29:00,908 --> 00:29:03,610
+<c.magenta>让我们看看如何利用它获得更多功能</c>
 
 
 500
-00:15:11,826 --> 00:15:12,976
-this template in our simulator.
+00:29:03,677 --> 00:29:06,613
+<c.magenta>并为用户提供一种了不起的体验</c>
 
 
 501
-00:15:24,026 --> 00:15:26,506
-Now once started, we see the new
+00:29:07,948 --> 00:29:11,351
+<c.magenta>在这部分中 我会谈到三个话题：</c>
 
 
 502
-00:15:26,506 --> 00:15:28,566
-Recents view with your recent
+00:29:11,652 --> 00:29:15,956
+<c.magenta>open-in-place、如何在浏览器VC中</c>
+<c.magenta>提供自定义动作</c>
 
 
 503
-00:15:28,566 --> 00:15:29,826
-documents that you might have
+00:29:16,023 --> 00:29:18,692
+<c.magenta>以及如何创建很棒的打开体验</c>
 
 
 504
-00:15:29,856 --> 00:15:30,616
-created before.
+00:29:20,661 --> 00:29:22,696
+<c.magenta>那么首先让我们谈谈open-in-place</c>
 
 
 505
-00:15:30,976 --> 00:15:32,056
-Of course, we haven't created
+00:29:23,263 --> 00:29:26,066
+<c.magenta>open-in-place是与iOS 9</c>
+<c.magenta>一起发布的一个很棒的功能</c>
 
 
 506
-00:15:32,056 --> 00:15:33,616
-any files yet, so let's switch
+00:29:26,834 --> 00:29:30,404
+<c.magenta>它允许应用共享文件而无需复制</c>
 
 
 507
-00:15:33,616 --> 00:15:34,336
-to the Browse view.
+00:29:32,306 --> 00:29:33,440
+<c.magenta>同时正因为如此</c>
 
 
 508
-00:15:34,876 --> 00:15:39,896
-We see our Cloud storage vendors
+00:29:33,507 --> 00:29:36,443
+<c.magenta>当你访问这些文档时需要谨慎</c>
 
 
 509
-00:15:39,896 --> 00:15:41,106
-on the left side in the slide
+00:29:36,510 --> 00:29:39,213
+<c.magenta>因为其它应用可能已经访问过它们了</c>
 
 
 510
-00:15:41,166 --> 00:15:42,876
-bar next to the new On My iPad
+00:29:40,681 --> 00:29:43,183
+<c.magenta>现在浏览器VC也使用这个功能</c>
 
 
 511
-00:15:42,876 --> 00:15:43,566
-storage.
+00:29:43,250 --> 00:29:46,086
+<c.magenta>用于从最近列表弹出框中打开文件</c>
 
 
 512
-00:15:44,226 --> 00:15:46,266
-We also see the Favorites and
+00:29:46,720 --> 00:29:49,489
+<c.magenta>那么如果你在你的应用中</c>
+<c.magenta>使用浏览器VC</c>
 
 
 513
-00:15:46,336 --> 00:15:48,686
-our Tags that are synchronized
+00:29:49,556 --> 00:29:51,959
+<c.magenta>你真的需要利用一下</c>
+<c.magenta>open-in-place功能</c>
 
 
 514
-00:15:48,976 --> 00:15:50,356
-across all your devices.
+00:29:52,359 --> 00:29:54,895
+<c.magenta>如果你是从Xcode模板中开始的</c>
+<c.magenta>那非常简单</c>
 
 
 515
-00:15:51,236 --> 00:15:52,306
-In the middle of the screen, we
+00:29:54,962 --> 00:29:56,263
+<c.magenta>你什么也不需要做</c>
 
 
 516
-00:15:52,306 --> 00:15:53,796
-see a large Create Document
+00:29:56,330 --> 00:29:59,666
+<c.magenta>如果不是 那么你需要实施</c>
+<c.magenta>支持open-in-place</c>
 
 
 517
-00:15:53,796 --> 00:15:55,766
-button that allows you to create
+00:30:00,033 --> 00:30:01,535
+<c.magenta>让我们看一下代码</c>
 
 
 518
-00:15:55,766 --> 00:15:56,556
-new documents.
+00:30:01,902 --> 00:30:02,736
+<c.magenta>首先我们需要</c>
 
 
 519
-00:15:56,596 --> 00:15:57,296
-So let's click it.
+00:30:02,803 --> 00:30:05,873
+<c.magenta>实施ApplicationOpenInputURL</c>
+<c.magenta>委托方法</c>
 
 
 520
-00:15:58,776 --> 00:16:00,316
-Well, nothing really happens yet
+00:30:06,740 --> 00:30:10,377
+<c.magenta>在这里 第一件事就是查看</c>
+<c.magenta>输入URL是否为文件URL</c>
 
 
 521
-00:16:00,396 --> 00:16:01,346
-and that's expected.
+00:30:10,777 --> 00:30:14,815
+<c.magenta>如果是 我们可以从浏览器VC中调用</c>
+<c.magenta>revealDocument方法</c>
 
 
 522
-00:16:01,426 --> 00:16:02,536
-That's because we haven't told
+00:30:15,249 --> 00:30:18,085
+<c.magenta>这个方法将会在</c>
+<c.magenta>最近列表视图中展示文档</c>
 
 
 523
-00:16:02,536 --> 00:16:03,746
-the UI Document Browser View
+00:30:18,151 --> 00:30:19,953
+<c.magenta>并且如果准备好了会进行回调</c>
 
 
 524
-00:16:03,746 --> 00:16:05,626
-Controller yet what it means to
+00:30:20,988 --> 00:30:24,758
+<c.magenta>现在我们可以加载并呈现文档了</c>
+<c.magenta>就像我们在打开和创建文档时一样</c>
 
 
 525
-00:16:05,626 --> 00:16:06,946
-create new files in our
+00:30:25,092 --> 00:30:28,362
+<c.magenta>如果失败了 我们就需要处理报错</c>
+<c.magenta>并向用户呈现一些UI</c>
 
 
 526
-00:16:06,946 --> 00:16:07,516
-application.
+00:30:30,631 --> 00:30:34,735
+<c.magenta>现在让我们看看如何向浏览器VC中</c>
+<c.magenta>添加自定义动作</c>
 
 
 527
-00:16:08,126 --> 00:16:09,506
-So let's fix this.
+00:30:35,602 --> 00:30:37,938
+<c.magenta>有三种方式添加自定义动作</c>
 
 
 528
-00:16:10,356 --> 00:16:12,046
-Therefore, we switch back to our
+00:30:38,105 --> 00:30:40,474
+<c.magenta>第一种是UI文档浏览器动作</c>
 
 
 529
-00:16:12,046 --> 00:16:13,166
-UI Document Browser View
+00:30:40,941 --> 00:30:42,009
+<c.magenta>你可以添加动作</c>
 
 
 530
-00:16:13,166 --> 00:16:14,266
-Controller subclass.
+00:30:42,075 --> 00:30:43,677
+<c.magenta>当用户长按</c>
 
 
 531
-00:16:15,236 --> 00:16:16,436
-And as Pau mentioned earlier,
+00:30:43,744 --> 00:30:46,780
+<c.magenta>文档时和当用户进入选择模式时</c>
 
 
 532
-00:16:16,436 --> 00:16:18,186
-when the user tapes the Create
+00:30:48,081 --> 00:30:49,249
+<c.magenta>要创建动作</c>
 
 
 533
-00:16:18,186 --> 00:16:19,776
-Document button, we'll get a
+00:30:49,316 --> 00:30:51,685
+<c.magenta>你需要在处理器中提供</c>
 
 
 534
-00:16:19,776 --> 00:16:21,326
-call back to the Document
+00:30:51,919 --> 00:30:55,455
+<c.magenta>localizedTitle和有效性</c>
 
 
 535
-00:16:21,326 --> 00:16:22,776
-Browser View Controller Delegate
+00:30:55,822 --> 00:30:58,659
+<c.magenta>有效性有两个值：菜单和导航栏</c>
 
 
 536
-00:16:22,776 --> 00:16:25,516
-function did Request Document
+00:30:59,092 --> 00:31:02,729
+<c.magenta>菜单会使动作呈现 当用户长按时</c>
 
 
 537
-00:16:25,726 --> 00:16:26,726
-Creation With Handler.
+00:31:03,163 --> 00:31:05,499
+<c.magenta>而导航栏会使动作呈现</c>
 
 
 538
-00:16:27,816 --> 00:16:29,406
-Now what we have to do here is
+00:31:05,566 --> 00:31:07,634
+<c.magenta>当用户进入选择模式时</c>
 
 
 539
-00:16:30,006 --> 00:16:32,326
-we have to give back a URL of
+00:31:08,635 --> 00:31:10,671
+<c.magenta>处理器会提供用户想要为该动作</c>
 
 
 540
-00:16:32,366 --> 00:16:33,936
-the newly created file to the
+00:31:10,871 --> 00:31:13,440
+<c.magenta>使用的URL数组</c>
 
 
 541
-00:16:33,936 --> 00:16:34,836
-Document Browser View
+00:31:14,341 --> 00:31:18,078
+<c.magenta>现在与打开URL不同</c>
+<c.magenta>这是你获取这些URL的唯一方法</c>
 
 
 542
-00:16:34,836 --> 00:16:35,296
-Controller.
+00:31:18,145 --> 00:31:21,682
+<c.magenta>除非你的应用被毙掉</c>
 
 
 543
-00:16:36,846 --> 00:16:39,126
-Now in our situation, let me add
+00:31:22,649 --> 00:31:25,919
+<c.magenta>现在我们有了动作</c>
+<c.magenta>你需要设置所支持的内容类型</c>
 
 
 544
-00:16:39,486 --> 00:16:41,936
-a new particles file to our
+00:31:25,986 --> 00:31:30,190
+<c.magenta>浏览器VC会使用内容类型来了解</c>
+<c.magenta>何时显示你的动作</c>
 
 
 545
-00:16:42,446 --> 00:16:42,666
-target.
+00:31:30,924 --> 00:31:33,527
+<c.magenta>然后你需要设置支持多项</c>
 
 
 546
-00:16:43,556 --> 00:16:45,136
-We make sure that it's added to
+00:31:33,927 --> 00:31:37,130
+<c.magenta>来表明你是否可以同时支持多个项</c>
 
 
 547
-00:16:45,136 --> 00:16:47,486
-our target and finish.
+00:31:37,531 --> 00:31:40,234
+<c.magenta>并且你只需要将你</c>
+<c.magenta>刚创建的自定义行动</c>
 
 
 548
-00:16:48,086 --> 00:16:53,126
-Now at runtime, we just go ahead
+00:31:40,300 --> 00:31:42,669
+<c.magenta>设置到浏览器VC的</c>
+<c.magenta>自定义动作数组中即可</c>
 
 
 549
-00:16:53,236 --> 00:16:55,736
-and obtain the URL of this added
+00:31:44,471 --> 00:31:47,674
+<c.magenta>第二种动作类型是UI栏按钮项</c>
 
 
 550
-00:16:55,846 --> 00:16:58,436
-document via our NS main bundle.
+00:31:48,342 --> 00:31:51,812
+<c.magenta>你可以在最近列表VC的导航栏中</c>
+<c.magenta>添加这些动作</c>
 
 
 551
-00:16:59,346 --> 00:17:01,576
-Once we get the URL, we pass it
+00:31:52,312 --> 00:31:55,415
+<c.magenta>并浏览…抱歉</c>
+<c.magenta>最近列表视图和浏览器视图</c>
 
 
 552
-00:17:01,576 --> 00:17:03,036
-to the input handler that we get
+00:31:55,616 --> 00:31:59,119
+<c.magenta>并且你可以将它们添加到</c>
+<c.magenta>导航栏的后面或侧面</c>
 
 
 553
-00:17:03,036 --> 00:17:04,636
-from our delegate function.
+00:32:02,289 --> 00:32:04,558
+<c.magenta>第三种动作类型是</c>
 
 
 554
-00:17:05,175 --> 00:17:07,106
-And we perform a copy operation
+00:32:04,625 --> 00:32:07,060
+<c.magenta>UI活动视图控制器</c>
 
 
 555
-00:17:07,146 --> 00:17:07,576
-on the URL.
+00:32:08,128 --> 00:32:10,531
+<c.magenta>浏览器VC会显示这个视图控制器</c>
 
 
 556
-00:17:07,576 --> 00:17:11,016
-Now the UI Document Browser View
+00:32:10,597 --> 00:32:13,166
+<c.magenta>当用户实施共享动作时</c>
 
 
 557
-00:17:11,016 --> 00:17:13,165
-Controller will get this URL and
+00:32:14,635 --> 00:32:18,105
+<c.magenta>浏览器VC会让你控制</c>
+<c.magenta>这个动作视图控制器</c>
 
 
 558
-00:17:13,165 --> 00:17:14,376
-will do all the heavy lifting
+00:32:18,172 --> 00:32:19,406
+<c.magenta>在呈现它之前</c>
 
 
 559
-00:17:14,376 --> 00:17:16,286
-for you in the background like
+00:32:19,740 --> 00:32:22,109
+<c.magenta>同时它会让你添加自定义行动</c>
 
 
 560
-00:17:16,396 --> 00:17:17,465
-moving the file to the right
+00:32:22,176 --> 00:32:24,478
+<c.magenta>当它正在创建这个</c>
+<c.magenta>UI活动视图控制器时</c>
 
 
 561
-00:17:17,465 --> 00:17:19,316
-location and processing the URL.
+00:32:25,379 --> 00:32:26,680
+<c.magenta>那么让我们来看一下代码</c>
 
 
 562
-00:17:20,326 --> 00:17:21,806
-Once it's done, it will give us
+00:32:27,481 --> 00:32:30,117
+<c.magenta>如果你想添加附加的动作 你需要</c>
 
 
 563
-00:17:21,806 --> 00:17:25,266
-a call back to either did Import
+00:32:30,184 --> 00:32:34,288
+<c.magenta>向documentURL委托方法实施</c>
+<c.magenta>文档浏览器应用活动</c>
 
 
 564
-00:17:25,266 --> 00:17:28,215
-Document At source URL or failed
+00:32:35,355 --> 00:32:38,325
+<c.magenta>如果你想获取这个活动视图控制器</c>
 
 
 565
-00:17:28,215 --> 00:17:29,886
-To Import Document At URL.
+00:32:38,859 --> 00:32:43,830
+<c.magenta>你需要实施DocumentBrowser</c>
+<c.magenta>willPresentactivityViewController</c>
 
 
 566
-00:17:30,666 --> 00:17:32,196
-Now if we fail to import the
+00:32:45,465 --> 00:32:47,134
+<c.magenta>这就是关于动作的全部内容</c>
 
 
 567
-00:17:32,196 --> 00:17:34,086
-newly created file, since we
+00:32:47,901 --> 00:32:50,470
+<c.magenta>现在因为你们已经了解了文件应用</c>
 
 
 568
-00:17:34,086 --> 00:17:35,686
-want to be a good developer we
+00:32:50,637 --> 00:32:52,573
+<c.magenta>有一个很棒的打开过渡</c>
 
 
 569
-00:17:35,686 --> 00:17:37,136
-should go ahead and implement
+00:32:52,739 --> 00:32:54,842
+<c.magenta>是从缩略图到全屏</c>
 
 
 570
-00:17:37,216 --> 00:17:38,286
-proper error handling, for
+00:32:56,109 --> 00:32:58,579
+<c.magenta>文件应用之所以能实现这个功能</c>
 
 
 571
-00:17:38,286 --> 00:17:39,866
-example, by presenting an error
+00:32:58,779 --> 00:33:01,515
+<c.magenta>归功于新的UIDocumentBrowser</c>
+<c.magenta>TransitionController</c>
 
 
 572
-00:17:39,866 --> 00:17:40,646
-to the user.
+00:33:03,150 --> 00:33:07,120
+<c.magenta>这个类可以让你设置显示加载进度</c>
 
 
 573
-00:17:41,706 --> 00:17:43,386
-However, if we succeeded, we can
+00:33:07,354 --> 00:33:11,291
+<c.magenta>当你加载文档时 在缩略图顶部</c>
 
 
 574
-00:17:43,386 --> 00:17:44,726
-go ahead and present the
+00:33:11,592 --> 00:33:15,162
+<c.magenta>并且它还让你使用缩放过渡动画</c>
 
 
 575
-00:17:44,726 --> 00:17:45,826
-document that we've just
+00:33:15,362 --> 00:33:19,967
+<c.magenta>当你呈现文档视图控制器时</c>
 
 
 576
-00:17:45,826 --> 00:17:46,226
-created.
+00:33:20,834 --> 00:33:22,669
+<c.magenta>那么现在让我们看一下工作流程</c>
 
 
 577
-00:17:48,686 --> 00:17:50,436
-Now let's say the user has
+00:33:23,370 --> 00:33:27,641
+<c.magenta>首先你需要获取</c>
+<c.magenta>用户刚刚选择的URL</c>
 
 
 578
-00:17:50,486 --> 00:17:52,386
-picked an existing file, in that
+00:33:28,509 --> 00:33:31,144
+<c.magenta>在这里 你要开始加载文档内容</c>
 
 
 579
-00:17:52,386 --> 00:17:53,756
-situation, we're going to get a
+00:33:31,512 --> 00:33:34,848
+<c.magenta>加载时你需要更新过渡控制器</c>
 
 
 580
-00:17:53,756 --> 00:17:55,546
-call back to the did Pick
+00:33:36,316 --> 00:33:39,887
+<c.magenta>一旦文档加载完全</c>
+<c.magenta>你只需要呈现文档</c>
 
 
 581
-00:17:55,626 --> 00:17:57,056
-Document URLs function.
+00:33:40,287 --> 00:33:44,758
+<c.magenta>并使用过渡控制器来驱动</c>
+<c.magenta>呈现时的动画即可</c>
 
 
 582
-00:17:58,396 --> 00:18:00,546
-Same here, we just go ahead take
+00:33:46,460 --> 00:33:48,929
+<c.magenta>那么现在让我们看看是如何实现的</c>
 
 
 583
-00:18:00,546 --> 00:18:02,086
-for example the first of our
+00:33:49,496 --> 00:33:53,300
+<c.magenta>首先一旦你获得用户所选择的URL</c>
 
 
 584
-00:18:02,086 --> 00:18:04,236
-document URLs that we get and
+00:33:54,268 --> 00:33:55,869
+<c.magenta>你需要创建进度对象</c>
 
 
 585
-00:18:04,236 --> 00:18:04,766
-present it.
+00:33:55,936 --> 00:33:58,205
+<c.magenta>那会追踪文档的加载</c>
 
 
 586
-00:18:05,646 --> 00:18:07,586
-Now presenting a document in our
+00:33:59,039 --> 00:34:01,341
+<c.magenta>在这里 你还要创建过渡控制器</c>
 
 
 587
-00:18:07,586 --> 00:18:10,036
-app means instantiating one of
+00:34:01,942 --> 00:34:05,312
+<c.magenta>那会追踪加载并驱动动画</c>
 
 
 588
-00:18:10,066 --> 00:18:11,726
-these Document View Controllers
+00:34:05,546 --> 00:34:07,147
+<c.magenta>从缩略图到全屏</c>
 
 
 589
-00:18:12,516 --> 00:18:15,136
-giving it a document that we
+00:34:07,414 --> 00:34:10,617
+<c.magenta>现在你只需要将进度</c>
+<c.magenta>设置到过渡控制器上</c>
 
 
 590
-00:18:15,136 --> 00:18:16,726
-initialize with document URL
+00:34:11,552 --> 00:34:13,286
+<c.magenta>在这里 我们已经准备加载文档了</c>
 
 
 591
-00:18:16,726 --> 00:18:18,596
-that we want to open and then we
+00:34:13,719 --> 00:34:15,522
+<c.magenta>在本例中 loadDocument方法</c>
 
 
 592
-00:18:18,596 --> 00:18:19,896
-just go ahead and present the
+00:34:15,688 --> 00:34:19,193
+<c.magenta>会加载文档同时会升级</c>
+<c.magenta>我们之前创建的进度</c>
 
 
 593
-00:18:19,896 --> 00:18:20,866
-Document View Controller.
+00:34:19,560 --> 00:34:22,862
+<c.magenta>当文档加载完全后</c>
+<c.magenta>它会回调我们</c>
 
 
 594
-00:18:21,266 --> 00:18:22,276
-Now let's take a look at the
+00:34:23,263 --> 00:34:25,666
+<c.magenta>在这里 我们只需要呈现</c>
+<c.magenta>文档视图控制器</c>
 
 
 595
-00:18:22,276 --> 00:18:22,976
-simulator again.
+00:34:26,400 --> 00:34:29,136
+<c.magenta>现在如果我们停在这里</c>
+<c.magenta>我们会从UIKit中获得动画效果</c>
 
 
 596
-00:18:31,276 --> 00:18:32,956
-The app launches again.
+00:34:29,402 --> 00:34:30,904
+<c.magenta>是从底部开始的一个滑动</c>
 
 
 597
-00:18:33,016 --> 00:18:34,836
-We're in the Browse view and we
+00:34:31,405 --> 00:34:33,706
+<c.magenta>但我们想要这个更好的缩放过渡</c>
 
 
 598
-00:18:34,836 --> 00:18:36,086
-can tap the Create Document
+00:34:34,174 --> 00:34:36,877
+<c.magenta>为此 我们需要实施所呈现的</c>
 
 
 599
-00:18:36,086 --> 00:18:36,476
-button.
+00:34:36,944 --> 00:34:38,411
+<c.magenta>视图控制器的过渡委托</c>
 
 
 600
-00:18:36,846 --> 00:18:38,046
-And the Document View Controller
+00:34:39,612 --> 00:34:41,315
+<c.magenta>过渡委托需要实施</c>
 
 
 601
-00:18:38,046 --> 00:18:39,976
-appears with details about the
+00:34:41,380 --> 00:34:44,051
+<c.magenta>UI视图控制器过渡委托协议</c>
 
 
 602
-00:18:39,976 --> 00:18:41,156
-file that we've just created.
+00:34:44,751 --> 00:34:47,454
+<c.magenta>在此协议中</c>
+<c.magenta>你需要实施两个主方法：</c>
 
 
 603
-00:18:42,026 --> 00:18:43,296
-Once we are done, we can close
+00:34:47,754 --> 00:34:50,190
+<c.magenta>为所呈现的视图控制器</c>
+<c.magenta>实施动画控制器</c>
 
 
 604
-00:18:43,296 --> 00:18:44,356
-the Document View Controller
+00:34:50,257 --> 00:34:52,893
+<c.magenta>以及为所遣散的视图控制器</c>
+<c.magenta>实施动画控制器</c>
 
 
 605
-00:18:44,356 --> 00:18:46,396
-again to return to the root View
+00:34:53,193 --> 00:34:54,862
+<c.magenta>在这里 你只需要返回</c>
 
 
 606
-00:18:46,396 --> 00:18:48,226
-Controller or Document Browser
+00:34:54,928 --> 00:34:57,331
+<c.magenta>我们之前所创建的过渡控制器</c>
 
 
 607
-00:18:48,226 --> 00:18:48,846
-View Controller.
+00:34:58,532 --> 00:35:01,735
+<c.magenta>现在让我们把舞台交还给拉斐尔</c>
+<c.magenta>让他给大家展示如何实施</c>
 
 
 608
-00:18:50,456 --> 00:18:52,416
-Now let me switch to a more
+00:35:01,802 --> 00:35:02,903
+<c.magenta>这些高级功能</c>
 
 
 609
-00:18:52,416 --> 00:18:54,126
-advanced version of this project
+00:35:03,203 --> 00:35:04,037
+<c.magenta>拉斐尔</c>
 
 
 610
-00:18:54,306 --> 00:18:55,656
-which has already all the code
+00:35:06,874 --> 00:35:07,708
+<c.magenta>谢谢 保</c>
 
 
 611
-00:18:55,696 --> 00:18:57,646
-pieces in place to render a
+00:35:08,742 --> 00:35:11,778
+<c.magenta>那么在第二个演示中</c>
+<c.magenta>我想给大家展示三点</c>
 
 
 612
-00:18:57,646 --> 00:18:59,546
-particle system on the left and
+00:35:12,112 --> 00:35:16,416
+<c.magenta>第一是open-in-place</c>
+<c.magenta>以及如何简便地</c>
 
 
 613
-00:18:59,546 --> 00:19:01,216
-an editor on the right side so
+00:35:16,850 --> 00:35:20,220
+<c.magenta>在你的文档浏览器视图控制器</c>
+<c.magenta>应用中采用它</c>
 
 
 614
-00:19:01,216 --> 00:19:02,166
-that we can focus on the
+00:35:20,888 --> 00:35:23,257
+<c.magenta>接下来我们要看看自定义动作</c>
 
 
 615
-00:19:02,166 --> 00:19:03,446
-Document Browser View Controller
+00:35:23,724 --> 00:35:26,927
+<c.magenta>我们会添加一个在长按菜单中</c>
+<c.magenta>显示的新动作</c>
 
 
 616
-00:19:03,446 --> 00:19:03,966
-related code parts.
+00:35:26,994 --> 00:35:28,629
+<c.magenta>当你按住一个文档时</c>
 
 
 617
-00:19:11,586 --> 00:19:12,736
-Before I'm going to remove the
+00:35:29,062 --> 00:35:31,098
+<c.magenta>最后这点也很重要</c>
+<c.magenta>我们要实施</c>
 
 
 618
-00:19:12,736 --> 00:19:14,646
-app that we've just created to
+00:35:31,164 --> 00:35:34,601
+<c.magenta>一个自定义视图控制器过渡</c>
+<c.magenta>来改善用户体验</c>
 
 
 619
-00:19:14,646 --> 00:19:15,976
-avoid any further conflicts.
+00:35:34,668 --> 00:35:37,404
+<c.magenta>当我们打开现有文件或创建新文件时</c>
 
 
 620
-00:19:25,056 --> 00:19:27,426
-Now this is still the same, it's
+00:35:37,471 --> 00:35:38,305
+<c.magenta>那么让我们</c>
 
 
 621
-00:19:27,426 --> 00:19:28,306
-still the same project.
+00:35:38,372 --> 00:35:40,140
+<c.magenta>跳回我们的项目中</c>
 
 
 622
-00:19:28,306 --> 00:19:30,326
-It's based on the template that
+00:35:48,749 --> 00:35:50,284
+<c.magenta>现在让我们谈谈open-in-place</c>
 
 
 623
-00:19:30,326 --> 00:19:31,986
-we've instantiated in the
+00:35:52,219 --> 00:35:56,323
+<c.magenta>open-in-place是和iOS 9一起</c>
+<c.magenta>引入的一个了不起的功能</c>
 
 
 624
-00:19:31,986 --> 00:19:32,456
-beginning.
+00:35:56,390 --> 00:35:57,658
+<c.magenta>它可以让你直接操作</c>
 
 
 625
-00:19:33,046 --> 00:19:34,206
-Let me show you some additions
+00:35:57,724 --> 00:36:00,260
+<c.magenta>用户所选择的文件而不是其副本</c>
 
 
 626
-00:19:34,206 --> 00:19:37,016
-that we made to our Particle app
+00:36:01,361 --> 00:36:03,564
+<c.magenta>现在采用open-in-place非常简单</c>
 
 
 627
-00:19:37,216 --> 00:19:38,026
-Info.plist.
+00:36:03,630 --> 00:36:06,767
+<c.magenta>而且事实上 如果你用的是</c>
+<c.magenta>基于文档的应用模板</c>
 
 
 628
-00:19:38,776 --> 00:19:41,746
-First, again, the key to
+00:36:07,034 --> 00:36:08,735
+<c.magenta>你简直什么也不需要做</c>
 
 
 629
-00:19:41,746 --> 00:19:42,976
-Document Browser View Controller
+00:36:09,636 --> 00:36:14,241
+<c.magenta>它的流程是当用户在你的应用外部</c>
+<c.magenta>轻触文档时</c>
 
 
 630
-00:19:42,976 --> 00:19:44,646
-is still set to yes, just the
+00:36:14,775 --> 00:36:17,044
+<c.magenta>iOS会调用你应用的委托函数</c>
 
 
 631
-00:19:44,646 --> 00:19:45,886
-way Pau explained earlier.
+00:36:17,544 --> 00:36:20,814
+<c.magenta>并打开URL及其选项</c>
+<c.magenta>让我们具体看一下</c>
 
 
 632
-00:19:47,116 --> 00:19:48,326
-But more than that, in the
+00:36:26,486 --> 00:36:30,157
+<c.magenta>在这个函数中</c>
+<c.magenta>我们首先要做的是确保</c>
 
 
 633
-00:19:48,326 --> 00:19:51,116
-Exported UTIs section, we are
+00:36:30,224 --> 00:36:33,260
+<c.magenta>我们从IOS中获取的URL</c>
+<c.magenta>确实是一个文件URL</c>
 
 
 634
-00:19:51,116 --> 00:19:53,336
-creating a new UTI type for our
+00:36:33,560 --> 00:36:35,963
+<c.magenta>如果不是 我们很可能要返回</c>
 
 
 635
-00:19:53,336 --> 00:19:54,456
-Particles files.
+00:36:36,029 --> 00:36:37,898
+<c.magenta>因为我们并不是处于</c>
+<c.magenta>我们所期待的情境中</c>
 
 
 636
-00:19:55,336 --> 00:19:56,286
-We're going to give it a
+00:36:38,732 --> 00:36:42,870
+<c.magenta>一旦通过测试 我们会得到文档</c>
+<c.magenta>浏览器视图控制器</c>
 
 
 637
-00:19:56,286 --> 00:19:57,406
-description particles.
+00:36:43,070 --> 00:36:45,539
+<c.magenta>也就是应用的根视图控制器</c>
 
 
 638
-00:19:58,356 --> 00:20:00,636
-We give it an identifier and we
+00:36:45,939 --> 00:36:49,743
+<c.magenta>并且我们会将URL</c>
+<c.magenta>传给revealDocument函数</c>
 
 
 639
-00:20:00,636 --> 00:20:02,566
-let it conform to the UTI types
+00:36:51,445 --> 00:36:53,647
+<c.magenta>现在文档浏览器视图控制器会再次</c>
 
 
 640
-00:20:02,626 --> 00:20:04,746
-public data and public content.
+00:36:53,714 --> 00:36:56,316
+<c.magenta>替你在后台实现全部艰巨的任务</c>
 
 
 641
-00:20:06,166 --> 00:20:08,046
-That means our Particle files
+00:36:56,750 --> 00:37:01,121
+<c.magenta>它会处理URL 如果需要就移除URL</c>
+<c.magenta>完成后</c>
 
 
 642
-00:20:08,176 --> 00:20:10,636
-are a stream of data and they
+00:37:01,655 --> 00:37:04,525
+<c.magenta>我们会得到一个回调</c>
+<c.magenta>以及completionHandler</c>
 
 
 643
-00:20:10,636 --> 00:20:12,536
-have a semantic of document
+00:37:05,192 --> 00:37:08,262
+<c.magenta>现在再一次 如果我们得到报错</c>
+<c.magenta>因为我们想成为一名好的开发人员</c>
 
 
 644
-00:20:12,536 --> 00:20:12,846
-files.
+00:37:08,629 --> 00:37:10,697
+<c.magenta>我们需要适当地处理报错</c>
 
 
 645
-00:20:14,476 --> 00:20:15,826
-Now in the additional exported
+00:37:10,764 --> 00:37:13,400
+<c.magenta>比如向用户显示警告视图</c>
 
 
 646
-00:20:15,826 --> 00:20:18,956
-UTI properties, we defined that
+00:37:14,668 --> 00:37:19,373
+<c.magenta>如果一切都没问题</c>
+<c.magenta>我们只需要继续并呈现文档</c>
 
 
 647
-00:20:18,956 --> 00:20:21,686
-our files should have, whoops,
+00:37:19,606 --> 00:37:21,942
+<c.magenta>为那个新的显示文档URL</c>
 
 
 648
-00:20:23,076 --> 00:20:28,426
-sorry, should have the particles
+00:37:23,177 --> 00:37:24,378
+<c.magenta>这几乎是你全部</c>
 
 
 649
-00:20:28,426 --> 00:20:28,956
-extension.
+00:37:24,444 --> 00:37:26,180
+<c.magenta>需要做的来支持open-in-place</c>
 
 
 650
-00:20:29,086 --> 00:20:30,716
-That means that any file in the
+00:37:26,246 --> 00:37:28,015
+<c.magenta>在你的基于文档的应用中</c>
 
 
 651
-00:20:30,716 --> 00:20:32,736
-system that has the .particles
+00:37:29,917 --> 00:37:32,085
+<c.magenta>现在让我们看一下自定义动作</c>
 
 
 652
-00:20:32,736 --> 00:20:35,066
-extension will be recognized as
+00:37:33,220 --> 00:37:35,822
+<c.magenta>那么我们的粒子系统很漂亮 是吧？</c>
 
 
 653
-00:20:35,066 --> 00:20:36,896
-a file of our newly created UTI
+00:37:35,889 --> 00:37:38,225
+<c.magenta>我们可能想与朋友们共享</c>
 
 
 654
-00:20:36,896 --> 00:20:37,076
-type.
+00:37:38,825 --> 00:37:42,462
+<c.magenta>那么我要添加一个新动作</c>
+<c.magenta>当你长按文档时执行</c>
 
 
 655
-00:20:37,076 --> 00:20:40,466
-So now that the UTI type is
+00:37:42,529 --> 00:37:46,967
+<c.magenta>将这个粒子系统导出为GIF文件</c>
+<c.magenta>或GIF文件</c>
 
 
 656
-00:20:40,466 --> 00:20:41,976
-done, we can go ahead and tell
+00:37:48,001 --> 00:37:51,004
+<c.magenta>现在让我们再看一下</c>
+<c.magenta>文档浏览器视图控制器</c>
 
 
 657
-00:20:41,976 --> 00:20:43,276
-our application that we're
+00:37:52,239 --> 00:37:56,009
+<c.magenta>viewDidLoad方法是配置</c>
+<c.magenta>这些动作的最佳时刻</c>
 
 
 658
-00:20:43,276 --> 00:20:44,176
-actually supported.
+00:38:03,584 --> 00:38:07,154
+<c.magenta>因此我要实例化一个</c>
+<c.magenta>新的UI文档浏览器行动</c>
 
 
 659
-00:20:44,686 --> 00:20:46,526
-So in the Document Types, we
+00:38:07,788 --> 00:38:12,426
+<c.magenta>我赋予它一个标识符 是整个应用内的</c>
+<c.magenta>唯一标识符 一个localizedTitle</c>
 
 
 660
-00:20:46,526 --> 00:20:47,756
-just mentioned our particles
+00:38:12,960 --> 00:38:15,529
+<c.magenta>并且将有效性设定为仅菜单</c>
 
 
 661
-00:20:47,756 --> 00:20:48,726
-file format again.
+00:38:15,996 --> 00:38:18,899
+<c.magenta>那么这将会确保这个动作只能</c>
 
 
 662
-00:20:49,066 --> 00:20:52,606
-We identified the identifier and
+00:38:19,166 --> 00:38:22,970
+<c.magenta>当你在文档浏览器视图控制器</c>
+<c.magenta>网格内长按时执行</c>
 
 
 663
-00:20:52,606 --> 00:20:53,966
-any additional document type
+00:38:24,838 --> 00:38:28,242
+<c.magenta>我们还赋予它一个处理器 就是那个</c>
 
 
 664
-00:20:53,966 --> 00:20:54,716
-properties.
+00:38:28,308 --> 00:38:30,244
+<c.magenta>无论何时用户轻触动作时执行的那个</c>
 
 
 665
-00:20:55,326 --> 00:20:57,326
-We define our CF Bundle Type
+00:38:30,711 --> 00:38:35,482
+<c.magenta>在本例中 我们继续并在控制台上</c>
+<c.magenta>记录信息</c>
 
 
 666
-00:20:57,326 --> 00:20:59,756
-Role to be editor and the LS
+00:38:36,984 --> 00:38:41,221
+<c.magenta>接下来 我们将所支持的</c>
+<c.magenta>行动内容类型定义为</c>
 
 
 667
-00:20:59,756 --> 00:21:01,166
-Handler Rank to be owner.
+00:38:41,288 --> 00:38:45,759
+<c.magenta>“com.example.particles”</c>
+<c.magenta>仅为我们之前定义的UTI类型</c>
 
 
 668
-00:21:01,936 --> 00:21:02,966
-If you want to learn more about
+00:38:46,326 --> 00:38:50,898
+<c.magenta>那么就可以确保只有我们的文件</c>
+<c.magenta>可以在菜单中获得这个行动</c>
 
 
 669
-00:21:02,966 --> 00:21:04,546
-this, check the documentation.
+00:38:51,999 --> 00:38:54,368
+<c.magenta>最后这点也很重要</c>
+<c.magenta>我们所需要做的就是…</c>
 
 
 670
-00:21:05,106 --> 00:21:08,546
-So now the UTI types are
+00:38:55,068 --> 00:38:58,338
+<c.magenta>定义文档浏览器视图</c>
+<c.magenta>控制器的自定义行动</c>
 
 
 671
-00:21:08,546 --> 00:21:10,946
-properly set and that means that
+00:38:58,405 --> 00:39:01,241
+<c.magenta>使其数组中包含这个新创建的动作</c>
 
 
 672
-00:21:10,946 --> 00:21:12,016
-the Document Browser View
+00:39:02,342 --> 00:39:03,944
+<c.magenta>让我们在模拟器中试一下</c>
 
 
 673
-00:21:12,016 --> 00:21:13,246
-Controller will make sure that
+00:39:11,118 --> 00:39:14,154
+<c.magenta>现在 在我们的现有文件中长按</c>
 
 
 674
-00:21:13,336 --> 00:21:15,056
-users are only allowed to pick
+00:39:14,655 --> 00:39:17,658
+<c.magenta>我们看到这里显示了一个新动作</c>
+<c.magenta>导出为GIF</c>
 
 
 675
-00:21:15,056 --> 00:21:16,766
-documents of our new file type.
+00:39:18,859 --> 00:39:21,094
+<c.magenta>一旦轻触那个</c>
+<c.magenta>我们会看到在控制台中</c>
 
 
 676
-00:21:17,646 --> 00:21:18,886
-It also makes sure that when you
+00:39:21,361 --> 00:39:24,064
+<c.magenta>执行了该动作的处理程序</c>
 
 
 677
-00:21:18,886 --> 00:21:20,546
-search inside the Document
+00:39:25,766 --> 00:39:26,800
+<c.magenta>非常简单</c>
 
 
 678
-00:21:20,546 --> 00:21:22,076
-Browser View Controller, you
+00:39:27,401 --> 00:39:30,671
+<c.magenta>现在让我们看我要展示给你们的</c>
 
 
 679
-00:21:22,076 --> 00:21:23,626
-will only see search results
+00:39:30,737 --> 00:39:34,041
+<c.magenta>第三个很酷的东西</c>
+<c.magenta>就是自定义视图控制器过渡</c>
 
 
 680
-00:21:23,706 --> 00:21:24,936
-that make this UI type.
+00:39:34,942 --> 00:39:37,444
+<c.magenta>目前当我们呈现文档视图控制器时</c>
 
 
 681
-00:21:24,936 --> 00:21:27,976
-And last but not least, in any
+00:39:37,511 --> 00:39:41,315
+<c.magenta>我们会得到一个</c>
+<c.magenta>由UIKit提供的上滑动画</c>
 
 
 682
-00:21:27,976 --> 00:21:29,676
-kind of UI document interaction
+00:39:41,815 --> 00:39:45,586
+<c.magenta>这已经很酷了</c>
+<c.magenta>但这并不是我们真正想要的方式</c>
 
 
 683
-00:21:29,676 --> 00:21:30,976
-control in a different
+00:39:45,919 --> 00:39:48,322
+<c.magenta>相反 它应该是这样的</c>
 
 
 684
-00:21:30,976 --> 00:21:32,986
-application for Particle files,
+00:39:48,722 --> 00:39:50,757
+<c.magenta>用户轻触文档缩略图</c>
 
 
 685
-00:21:33,226 --> 00:21:34,606
-you'll see the action to open
+00:39:50,958 --> 00:39:53,594
+<c.magenta>缩略图放大进入粒子系统</c>
 
 
 686
-00:21:34,606 --> 00:21:36,406
-the file in our app.
+00:39:53,660 --> 00:39:55,996
+<c.magenta>位于文档视图控制器的左侧</c>
 
 
 687
-00:21:37,636 --> 00:21:39,406
-So now let's take a look at our
+00:39:56,563 --> 00:39:58,832
+<c.magenta>让我们看一下该如何实现</c>
 
 
 688
-00:21:39,406 --> 00:21:40,406
-actual documents.
+00:40:02,202 --> 00:40:05,506
+<c.magenta>因此 让我们切回</c>
+<c.magenta>我们之前创建的呈现…</c>
 
 
 689
-00:21:40,526 --> 00:21:41,886
-We switch to our UI Document
+00:40:06,807 --> 00:40:09,109
+<c.magenta>文档函数</c>
 
 
 690
-00:21:41,886 --> 00:21:42,556
-subclass.
+00:40:09,943 --> 00:40:12,779
+<c.magenta>现在 自定义视图控制器过渡的</c>
+<c.magenta>工作方式是</c>
 
 
 691
-00:21:43,366 --> 00:21:44,676
-Now UI Document is quite
+00:40:13,080 --> 00:40:15,616
+<c.magenta>你将自己注册为要呈现的</c>
 
 
 692
-00:21:44,676 --> 00:21:46,426
-powerful and we highly encourage
+00:40:15,682 --> 00:40:18,252
+<c.magenta>视图控制器过渡委托</c>
 
 
 693
-00:21:46,426 --> 00:21:47,306
-you to make user of it.
+00:40:19,052 --> 00:40:23,924
+<c.magenta>在呈现之前 UIKit会调用我们</c>
+<c.magenta>并请求过渡控制器</c>
 
 
 694
-00:21:47,996 --> 00:21:49,216
-As Pau mentioned earlier, it
+00:40:24,658 --> 00:40:26,527
+<c.magenta>我们就返回过渡控制器</c>
 
 
 695
-00:21:49,216 --> 00:21:50,216
-comes with a lot of great
+00:40:26,727 --> 00:40:29,596
+<c.magenta>然后那个对象就会控制驱动动画</c>
 
 
 696
-00:21:50,216 --> 00:21:52,136
-benefits such as autosaving,
+00:40:29,663 --> 00:40:32,065
+<c.magenta>将视图控制器A改为视图控制器B</c>
 
 
 697
-00:21:52,136 --> 00:21:54,056
-file coordination and NS File
+00:40:32,966 --> 00:40:36,637
+<c.magenta>在本例中 视图控制器A就是</c>
+<c.magenta>文档浏览器视图控制器</c>
 
 
 698
-00:21:54,056 --> 00:21:56,326
-Presenter, Versioning, and much
+00:40:37,070 --> 00:40:39,406
+<c.magenta>视图控制器B就是文档视图控制器</c>
 
 
 699
-00:21:56,326 --> 00:21:58,356
-more and, therefore, the UI
+00:40:40,607 --> 00:40:43,710
+<c.magenta>保刚才提到过</c>
+<c.magenta>文档浏览器视图控制器</c>
 
 
 700
-00:21:58,356 --> 00:21:59,766
-Document and the UI Document
+00:40:43,777 --> 00:40:46,613
+<c.magenta>已经提供了这个过渡控制器</c>
 
 
 701
-00:21:59,766 --> 00:22:00,916
-Browser View Controller are
+00:40:47,014 --> 00:40:48,715
+<c.magenta>我们只需要保持引用</c>
 
 
 702
-00:22:00,916 --> 00:22:02,136
-literally made for each other.
+00:40:48,982 --> 00:40:51,885
+<c.magenta>并将其回传给</c>
+<c.magenta>UIKit要调用的函数即可</c>
 
 
 703
-00:22:02,606 --> 00:22:04,016
-So let's take a look at what we
+00:40:57,291 --> 00:41:00,894
+<c.magenta>那么首先我们将自己注册为</c>
 
 
 704
-00:22:04,016 --> 00:22:04,376
-are doing here.
+00:41:00,961 --> 00:41:03,897
+<c.magenta>要呈现的文档视图</c>
+<c.magenta>控制器的过渡委托</c>
 
 
 705
-00:22:04,976 --> 00:22:09,146
-Now the document represents the
+00:41:07,134 --> 00:41:10,404
+<c.magenta>接下来我们要获取新的过渡控制器</c>
 
 
 706
-00:22:09,146 --> 00:22:10,316
-document at runtime.
+00:41:10,470 --> 00:41:14,041
+<c.magenta>通过给文档URL调用过渡控制器</c>
 
 
 707
-00:22:10,656 --> 00:22:12,406
-So obviously since we are
+00:41:14,208 --> 00:41:16,310
+<c.magenta>在我们的UI文档浏览器</c>
+<c.magenta>视图控制器上</c>
 
 
 708
-00:22:12,406 --> 00:22:13,956
-talking about Particle systems,
+00:41:17,277 --> 00:41:20,814
+<c.magenta>现在这个对象并不需要很多配置</c>
 
 
 709
-00:22:14,196 --> 00:22:15,736
-it should have a reference to
+00:41:21,048 --> 00:41:23,417
+<c.magenta>它真正需要的唯一一个东西</c>
+<c.magenta>就是目标视图</c>
 
 
 710
-00:22:15,736 --> 00:22:17,076
-SCN Particle System.
+00:41:24,184 --> 00:41:26,720
+<c.magenta>目标视图是我们要实现动画的那一个</c>
 
 
 711
-00:22:17,666 --> 00:22:20,916
-Now the next thing we are doing
+00:41:26,787 --> 00:41:29,590
+<c.magenta>在本例中就是左侧的粒子系统</c>
 
 
 712
-00:22:20,916 --> 00:22:23,276
-is we're implementing saving and
+00:41:32,125 --> 00:41:34,228
+<c.magenta>我们保持对刚通过变量</c>
 
 
 713
-00:22:23,276 --> 00:22:24,096
-loading files.
+00:41:34,294 --> 00:41:37,097
+<c.magenta>获取的过渡控制器的引用</c>
 
 
 714
-00:22:24,666 --> 00:22:26,126
-Therefore, we have to overwrite
+00:41:39,233 --> 00:41:42,102
+<c.magenta>现在我们需要做的最后一件事</c>
+<c.magenta>就是实施</c>
 
 
 715
-00:22:26,126 --> 00:22:28,246
-the function's content for type
+00:41:42,469 --> 00:41:45,239
+<c.magenta>UI视图控制器过渡委托协议</c>
 
 
 716
-00:22:29,396 --> 00:22:30,716
-and load from contents.
+00:41:53,647 --> 00:41:55,582
+<c.magenta>因此 我们需要实施两个函数：</c>
 
 
 717
-00:22:31,166 --> 00:22:32,706
-Now all we really have to do
+00:41:55,649 --> 00:41:58,285
+<c.magenta>为presentedViewController</c>
+<c.magenta>实施animationController</c>
 
 
 718
-00:22:32,706 --> 00:22:35,396
-here is archiving [inaudible] an
+00:41:58,752 --> 00:42:01,188
+<c.magenta>同时 因为我们想支持关闭文档</c>
 
 
 719
-00:22:35,506 --> 00:22:37,706
-existing Particle system and
+00:42:01,355 --> 00:42:03,824
+<c.magenta>为dismissedViewController</c>
+<c.magenta>实施animationController</c>
 
 
 720
-00:22:37,706 --> 00:22:39,086
-that works because our SCN
+00:42:04,658 --> 00:42:07,861
+<c.magenta>在两个函数中</c>
+<c.magenta>我们所要做的就是返回我们</c>
 
 
 721
-00:22:39,086 --> 00:22:40,376
-Particle System already
+00:42:07,928 --> 00:42:09,096
+<c.magenta>刚获取的过渡控制器</c>
 
 
 722
-00:22:40,376 --> 00:22:41,716
-conformed to NS coding.
+00:42:10,030 --> 00:42:11,465
+<c.magenta>让我们在模拟器中试一下</c>
 
 
 723
-00:22:42,456 --> 00:22:43,486
-So we don't really have to do a
+00:42:23,043 --> 00:42:24,044
+<c.magenta>很漂亮 不是吗？</c>
 
 
 724
-00:22:43,486 --> 00:22:43,926
-lot here.
+00:42:24,111 --> 00:42:27,748
+<c.magenta>我们有一个从缩略图</c>
+<c.magenta>到粒子系统的很好的过渡</c>
 
 
 725
-00:22:44,106 --> 00:22:45,586
-We use a Keyed Archiver to
+00:42:28,448 --> 00:42:30,717
+<c.magenta>当我们完成文件修改后</c>
 
 
 726
-00:22:45,586 --> 00:22:47,986
-archive the data or we use NS
+00:42:30,918 --> 00:42:35,189
+<c.magenta>我们轻触完成按钮来结束文件</c>
+<c.magenta>然后就漂亮地过渡回</c>
 
 
 727
-00:22:48,296 --> 00:22:50,836
-Keyed Unarchiver to unarchive an
+00:42:35,255 --> 00:42:37,257
+<c.magenta>UI文档浏览器视图控制器</c>
 
 
 728
-00:22:50,836 --> 00:22:51,766
-existing one again.
+00:42:39,026 --> 00:42:41,028
+<c.magenta>那么这就是第二个演示的全部内容</c>
 
 
 729
-00:22:52,406 --> 00:22:54,976
-Now that's all you have to do
+00:42:41,094 --> 00:42:43,330
+<c.magenta>让我们看一下我们目前所学到的内容</c>
 
 
 730
-00:22:54,976 --> 00:22:55,826
-about the document.
+00:42:47,868 --> 00:42:50,337
+<c.magenta>首先我们看了如何简便地</c>
 
 
 731
-00:22:56,006 --> 00:22:56,786
-Let's take a look at the
+00:42:50,404 --> 00:42:52,873
+<c.magenta>在你的应用中支持open-in-place</c>
 
 
 732
-00:22:56,786 --> 00:22:57,886
-Document View Controller.
+00:42:53,173 --> 00:42:56,944
+<c.magenta>实际上UI文档浏览器视图控制器</c>
+<c.magenta>会替你完成全部艰巨的任务</c>
 
 
 733
-00:22:59,036 --> 00:23:00,256
-Again, that's the one that is in
+00:42:58,512 --> 00:43:01,748
+<c.magenta>接下来我们实施了一个自定义行动</c>
 
 
 734
-00:23:00,256 --> 00:23:01,536
-charge of presenting the
+00:43:01,949 --> 00:43:05,586
+<c.magenta>仅当你在文档浏览器视图控制器中</c>
+<c.magenta>长按一个文档时执行</c>
 
 
 735
-00:23:01,536 --> 00:23:03,376
-contents of a document.
+00:43:07,421 --> 00:43:11,258
+<c.magenta>最后这点也很重要</c>
+<c.magenta>我们极大地改善了用户体验</c>
 
 
 736
-00:23:03,856 --> 00:23:05,316
-So obviously, before we present
+00:43:11,325 --> 00:43:14,194
+<c.magenta>当打开和关闭文档时</c>
 
 
 737
-00:23:05,316 --> 00:23:06,866
-a Document View Controller, we
+00:43:14,261 --> 00:43:15,863
+<c.magenta>通过实施自定义视图控制器过渡</c>
 
 
 738
-00:23:06,866 --> 00:23:08,656
-should [inaudible] reference to
+00:43:15,929 --> 00:43:18,465
+<c.magenta>使用UI文档浏览器过渡控制器</c>
 
 
 739
-00:23:08,656 --> 00:23:09,206
-a document.
+00:43:19,900 --> 00:43:21,935
+<c.magenta>这就是第二个演示的全部内容</c>
 
 
 740
-00:23:13,296 --> 00:23:15,656
-Now to set document function in
+00:43:22,302 --> 00:43:25,072
+<c.magenta>要了解关于快速预览相关的新功能</c>
 
 
 741
-00:23:15,656 --> 00:23:17,416
-our case is asynchronous and
+00:43:25,138 --> 00:43:28,141
+<c.magenta>让我们把舞台交给</c>
+<c.magenta>我的同事兼朋友马克西姆</c>
 
 
 742
-00:23:17,416 --> 00:23:19,136
-that's because loading a
+00:43:28,942 --> 00:43:29,843
+<c.magenta>马克西姆</c>
 
 
 743
-00:23:19,136 --> 00:23:21,066
-document should be asynchronous
+00:43:31,912 --> 00:43:32,946
+<c.magenta>谢谢 拉斐尔</c>
 
 
 744
-00:23:21,126 --> 00:23:22,206
-because file [inaudible] is
+00:43:34,181 --> 00:43:35,449
+<c.magenta>大家下午好</c>
 
 
 745
-00:23:22,206 --> 00:23:22,606
-involved.
+00:43:39,953 --> 00:43:43,156
+<c.magenta>我相信你们一定都见过文件应用中</c>
+<c.magenta>很棒的缩略图功能吧</c>
 
 
 746
-00:23:23,166 --> 00:23:24,376
-We're reading from the disk and
+00:43:43,857 --> 00:43:46,927
+<c.magenta>而且我相信你一定希望</c>
+<c.magenta>你自己的缩略图</c>
 
 
 747
-00:23:24,376 --> 00:23:25,306
-you shouldn't do this on the
+00:43:46,994 --> 00:43:49,496
+<c.magenta>可以在任何基于</c>
+<c.magenta>文档浏览器的应用中显示出来</c>
 
 
 748
-00:23:25,306 --> 00:23:25,786
-main thread.
+00:43:50,364 --> 00:43:51,465
+<c.magenta>现在你将会看到</c>
 
 
 749
-00:23:26,836 --> 00:23:27,836
-So let's take a look at how we
+00:43:51,532 --> 00:43:54,201
+<c.magenta>这是如何变为可能的</c>
+<c.magenta>全都归功于新的缩略图扩展</c>
 
 
 750
-00:23:27,836 --> 00:23:31,996
-should implement this.
+00:43:56,069 --> 00:43:58,539
+<c.magenta>当前 如果我们是在本场演讲中</c>
 
 
 751
-00:23:32,196 --> 00:23:33,386
-First, we simply keep a
+00:43:58,605 --> 00:44:00,274
+<c.magenta>所创建的粒子应用的粉丝</c>
 
 
 752
-00:23:33,386 --> 00:23:34,686
-reference to our document.
+00:44:00,908 --> 00:44:02,743
+<c.magenta>我们所能使用的都是通用图标</c>
 
 
 753
-00:23:35,476 --> 00:23:36,776
-We then go ahead and load our
+00:44:04,011 --> 00:44:07,080
+<c.magenta>我们可以极大地改善用户体验</c>
+<c.magenta>通过显示</c>
 
 
 754
-00:23:36,776 --> 00:23:39,166
-view controller and then we call
+00:44:07,648 --> 00:44:11,818
+<c.magenta>能暗示用户文件内容的</c>
+<c.magenta>代表性缩略图</c>
 
 
 755
-00:23:39,166 --> 00:23:40,516
-the open function on our
+00:44:13,487 --> 00:44:15,155
+<c.magenta>那么如何提供已经被下载的</c>
 
 
 756
-00:23:40,516 --> 00:23:41,046
-document.
+00:44:15,322 --> 00:44:18,725
+<c.magenta>以及设备上可用的文件的缩略图呢？</c>
 
 
 757
-00:23:41,736 --> 00:23:43,256
-Now this will do all the work in
+00:44:21,895 --> 00:44:25,199
+<c.magenta>这个功能在iOS 11之前就已经</c>
+<c.magenta>通过UI文档实现了</c>
 
 
 758
-00:23:43,256 --> 00:23:44,676
-the background and will give us
+00:44:26,900 --> 00:44:29,937
+<c.magenta>你要做的就是创建UI文档的子类</c>
 
 
 759
-00:23:44,676 --> 00:23:48,296
-a call back once it's back.
+00:44:30,204 --> 00:44:32,206
+<c.magenta>并从子类中返回缩略图</c>
 
 
 760
-00:23:48,466 --> 00:23:49,776
-Now if anything went wrong
+00:44:33,807 --> 00:44:36,476
+<c.magenta>这仅能用于通过你的应用创建的文件</c>
 
 
 761
-00:23:49,776 --> 00:23:50,646
-during the loading of the
+00:44:37,144 --> 00:44:40,314
+<c.magenta>并且它的性能很好</c>
+<c.magenta>因为当iOS请求</c>
 
 
 762
-00:23:50,646 --> 00:23:52,196
-document, we're going to get a
+00:44:40,647 --> 00:44:44,084
+<c.magenta>缩略图的子类时</c>
+<c.magenta>文件已经被加载出来了</c>
 
 
 763
-00:23:52,196 --> 00:23:54,006
-call to handle error user
+00:44:44,885 --> 00:44:46,553
+<c.magenta>让我们快速看一下代码</c>
 
 
 764
-00:23:54,006 --> 00:23:55,636
-interaction permitted on the UI
+00:44:47,354 --> 00:44:48,255
+<c.magenta>我们需要做的是…</c>
 
 
 765
-00:23:55,636 --> 00:23:56,726
-document subclass.
+00:44:49,122 --> 00:44:52,626
+<c.magenta>…实施fileAttributesToWritetoURL</c>
 
 
 766
-00:23:57,136 --> 00:23:57,896
-Since we want to be good
+00:44:52,693 --> 00:44:56,630
+<c.magenta>在你的UI文档子类中</c>
+<c.magenta>为saveOperation方法</c>
 
 
 767
-00:23:57,896 --> 00:24:00,086
-developers, we have to implement
+00:44:56,697 --> 00:45:00,601
+<c.magenta>并从这个函数中返回一个缩略图字典</c>
 
 
 768
-00:24:00,086 --> 00:24:00,616
-this function.
+00:45:03,237 --> 00:45:07,841
+<c.magenta>这很棒</c>
+<c.magenta>但这只能用于通过应用创建的文件</c>
 
 
 769
-00:24:01,336 --> 00:24:03,296
-If we succeeded, we can go ahead
+00:45:08,342 --> 00:45:10,844
+<c.magenta>那么你要如何为你的应用和其他应用</c>
 
 
 770
-00:24:03,366 --> 00:24:04,736
-and take the document and pass
+00:45:10,911 --> 00:45:13,413
+<c.magenta>所创建的文件提供缩略图呢？</c>
 
 
 771
-00:24:04,736 --> 00:24:05,706
-it to our particle View
+00:45:15,315 --> 00:45:19,520
+<c.magenta>为此 我们要给大家提供一个</c>
+<c.magenta>新的缩略图扩展 适用于整个系统</c>
 
 
 772
-00:24:05,706 --> 00:24:07,496
-Controller and our editor View
+00:45:19,820 --> 00:45:24,157
+<c.magenta>这意味着这个扩展…</c>
 
 
 773
-00:24:07,496 --> 00:24:07,956
-Controller.
+00:45:24,424 --> 00:45:30,564
+<c.magenta>意味着任何通过你的扩展</c>
+<c.magenta>创建的缩略图都会显示</c>
 
 
 774
-00:24:07,956 --> 00:24:10,156
-Now the Document View Controller
+00:45:30,631 --> 00:45:34,635
+<c.magenta>在可显示你的扩展</c>
+<c.magenta>所能提供缩略图的文件的</c>
 
 
 775
-00:24:10,156 --> 00:24:11,606
-really is just a container view
+00:45:34,701 --> 00:45:36,970
+<c.magenta>任何基于文档浏览器的应用中显示</c>
 
 
 776
-00:24:11,606 --> 00:24:12,636
-controller with a particle
+00:45:38,539 --> 00:45:40,574
+<c.magenta>这个扩展可应用于全部云供应商</c>
 
 
 777
-00:24:12,636 --> 00:24:14,076
-system on the left and the
+00:45:41,708 --> 00:45:43,377
+<c.magenta>并且是快速预览框架的一部分</c>
 
 
 778
-00:24:14,076 --> 00:24:14,676
-editor on the right.
+00:45:45,212 --> 00:45:46,513
+<c.magenta>让我们看看是如何使用的</c>
 
 
 779
-00:24:15,936 --> 00:24:17,766
-Now in any case, we have to call
+00:45:46,947 --> 00:45:50,984
+<c.magenta>首先你的基于文档浏览器的应用</c>
+<c.magenta>正在显示…</c>
 
 
 780
-00:24:17,766 --> 00:24:19,526
-the completion handler to
+00:45:51,051 --> 00:45:52,553
+<c.magenta>假如说基于文档浏览器的应用</c>
 
 
 781
-00:24:19,526 --> 00:24:20,736
-indicate that we're done with
+00:45:52,619 --> 00:45:54,488
+<c.magenta>正在显示一组文件</c>
 
 
 782
-00:24:20,926 --> 00:24:21,796
-setting the document.
+00:45:55,055 --> 00:45:57,024
+<c.magenta>如果我们想显示这些文件的缩略图</c>
 
 
 783
-00:24:22,316 --> 00:24:25,166
-Now that's about opening a
+00:45:57,090 --> 00:46:00,894
+<c.magenta>并拥有一个良好的用户体验</c>
+<c.magenta>那么就是快速预览缩略图</c>
 
 
 784
-00:24:25,166 --> 00:24:25,636
-document.
+00:46:01,962 --> 00:46:05,065
+<c.magenta>快速预览 我们注意到其中某些文件</c>
 
 
 785
-00:24:25,636 --> 00:24:27,056
-But of course we also want to
+00:46:05,132 --> 00:46:07,734
+<c.magenta>你的扩展可以提供缩略图</c>
 
 
 786
-00:24:27,056 --> 00:24:28,386
-dismiss our Document View
+00:46:07,801 --> 00:46:10,704
+<c.magenta>那么它就会将请求转给你的扩展</c>
 
 
 787
-00:24:28,386 --> 00:24:29,386
-Controller at some point.
+00:46:12,539 --> 00:46:14,541
+<c.magenta>你的扩展将会生成缩略图</c>
 
 
 788
-00:24:29,886 --> 00:24:32,336
-Same thing.
+00:46:15,742 --> 00:46:17,411
+<c.magenta>并将它们返回到快速预览</c>
 
 
 789
-00:24:32,396 --> 00:24:34,036
-Instead of calling the open
+00:46:17,911 --> 00:46:20,414
+<c.magenta>最终将其返回到</c>
 
 
 790
-00:24:34,036 --> 00:24:35,676
-function, this time we call
+00:46:20,480 --> 00:46:22,049
+<c.magenta>请求缩略图的应用中</c>
 
 
 791
-00:24:35,676 --> 00:24:37,116
-obviously the close function.
+00:46:22,516 --> 00:46:24,184
+<c.magenta>然后进行显示</c>
 
 
 792
-00:24:37,916 --> 00:24:39,196
-This is asynchronous again
+00:46:25,586 --> 00:46:27,087
+<c.magenta>让我们看看该如何实现</c>
 
 
 793
-00:24:39,196 --> 00:24:40,446
-because we are saving the
+00:46:29,223 --> 00:46:30,891
+<c.magenta>实际上非常简单</c>
 
 
 794
-00:24:40,446 --> 00:24:41,596
-document if required.
+00:46:30,958 --> 00:46:33,560
+<c.magenta>因为我们在Xcode中</c>
+<c.magenta>添加了一个新模板</c>
 
 
 795
-00:24:41,596 --> 00:24:44,296
-And the completion Handler, we
+00:46:33,627 --> 00:46:36,630
+<c.magenta>包含示例代码以及Info.plist</c>
 
 
 796
-00:24:44,296 --> 00:24:45,596
-just dismiss the Document View
+00:46:38,098 --> 00:46:39,900
+<c.magenta>在创建你的扩展之后</c>
 
 
 797
-00:24:45,596 --> 00:24:46,036
-Controller.
+00:46:40,367 --> 00:46:42,870
+<c.magenta>你需要前往Info.plist文件并编辑它</c>
 
 
 798
-00:24:47,046 --> 00:24:48,486
-Now the Document View Controller
+00:46:43,437 --> 00:46:45,038
+<c.magenta>因此你要做的第一件事就是</c>
 
 
 799
-00:24:48,486 --> 00:24:49,426
-is pretty much done at this
+00:46:45,105 --> 00:46:48,075
+<c.magenta>添加你能提供缩略图的全部UTI</c>
 
 
 800
-00:24:49,426 --> 00:24:49,736
-point.
+00:46:48,141 --> 00:46:50,344
+<c.magenta>到QLSupportedContentTypes数组</c>
 
 
 801
-00:24:50,186 --> 00:24:51,236
-So we can go ahead and take a
+00:46:51,044 --> 00:46:54,982
+<c.magenta>请注意 你只能为你所拥有的UTI</c>
+<c.magenta>提供和导出缩略图</c>
 
 
 802
-00:24:51,236 --> 00:24:52,946
-look again at the Document
+00:46:55,682 --> 00:46:59,319
+<c.magenta>并且iOS会检查UTI质量</c>
+<c.magenta>而不是UTI一致性</c>
 
 
 803
-00:24:52,946 --> 00:24:53,866
-Browser View Controller.
+00:46:59,386 --> 00:47:04,758
+<c.magenta>因此 我们要确保列出</c>
+<c.magenta>plist值内的全部UTI</c>
 
 
 804
-00:24:54,806 --> 00:24:55,726
-This is the one that is in
+00:47:06,293 --> 00:47:08,829
+<c.magenta>现在要如何给文件提供缩略图呢？</c>
 
 
 805
-00:24:55,726 --> 00:24:56,816
-charge of presenting our
+00:47:09,029 --> 00:47:09,897
+<c.magenta>有两种方式</c>
 
 
 806
-00:24:56,816 --> 00:24:58,066
-document view controllers,
+00:47:10,564 --> 00:47:14,168
+<c.magenta>你可以拖动缩略图</c>
+<c.magenta>或返回图片文件URL</c>
 
 
 807
-00:24:58,296 --> 00:24:59,696
-either when we create a new file
+00:47:14,701 --> 00:47:16,870
+<c.magenta>最强大的方法当然是第一个了</c>
 
 
 808
-00:24:59,996 --> 00:25:01,506
-or when we open an existing
+00:47:16,937 --> 00:47:19,339
+<c.magenta>拖动缩略图</c>
+<c.magenta>因为它是最灵活的一个方式</c>
 
 
 809
-00:25:01,506 --> 00:25:01,816
-file.
+00:47:19,840 --> 00:47:21,041
+<c.magenta>让我们看看是如何使用的</c>
 
 
 810
-00:25:02,366 --> 00:25:04,586
-Let's take a look at this again.
+00:47:23,911 --> 00:47:27,047
+<c.magenta>那么在这个扩展中</c>
+<c.magenta>你需要实施的任何方法</c>
 
 
 811
-00:25:05,186 --> 00:25:08,586
-So when we create a new file, we
+00:47:27,114 --> 00:47:31,351
+<c.magenta>都会收到QLFileThumbnailRequest</c>
+<c.magenta>类的一个参数</c>
 
 
 812
-00:25:08,586 --> 00:25:09,996
-get a call back to did Request
+00:47:31,418 --> 00:47:33,520
+<c.magenta>包含三个属性</c>
 
 
 813
-00:25:09,996 --> 00:25:11,236
-Document Creation With Handler.
+00:47:34,388 --> 00:47:37,658
+<c.magenta>文件URL 就是我们</c>
+<c.magenta>要发送文件的文件URL</c>
 
 
 814
-00:25:11,806 --> 00:25:13,386
-We obtained the URL from our NS
+00:47:38,058 --> 00:47:42,462
+<c.magenta>所请求的缩略图的最大尺寸</c>
+<c.magenta>以及比例</c>
 
 
 815
-00:25:13,386 --> 00:25:15,266
-main Bundle and passed it back
+00:47:44,665 --> 00:47:48,035
+<c.magenta>我们要做的就是</c>
+<c.magenta>返回一个QLThumbnailReply对象</c>
 
 
 816
-00:25:15,266 --> 00:25:16,706
-via the import handler and a
+00:47:48,101 --> 00:47:51,338
+<c.magenta>包含绘板和contextSize</c>
 
 
 817
-00:25:16,706 --> 00:25:17,516
-copy operation.
+00:47:51,605 --> 00:47:53,907
+<c.magenta>让我们看看为何需要返回contextSize</c>
 
 
 818
-00:25:18,626 --> 00:25:20,186
-We'll either get a call back to
+00:47:56,076 --> 00:47:58,412
+<c.magenta>请求的最大尺寸参数</c>
 
 
 819
-00:25:20,306 --> 00:25:22,146
-did Import Document At URL or
+00:47:59,079 --> 00:48:02,382
+<c.magenta>表明了你可以绘制缩略图的</c>
 
 
 820
-00:25:22,146 --> 00:25:23,566
-failed To Import Document at
+00:48:02,449 --> 00:48:03,984
+<c.magenta>CGContext的最大尺寸</c>
 
 
 821
-00:25:23,566 --> 00:25:23,766
-URL.
+00:48:05,219 --> 00:48:09,623
+<c.magenta>现在假如我们想把这个图片</c>
+<c.magenta>拖到我们的环境中</c>
 
 
 822
-00:25:25,316 --> 00:25:26,846
-If we succeeded, we go ahead and
+00:48:09,690 --> 00:48:13,827
+<c.magenta>你可以看到 当处于全尺寸中时</c>
+<c.magenta>它比环境的最大尺寸还要大</c>
 
 
 823
-00:25:26,846 --> 00:25:28,256
-present the document, which is
+00:48:13,894 --> 00:48:17,531
+<c.magenta>所以我们需要缩小一点儿</c>
 
 
 824
-00:25:28,256 --> 00:25:30,076
-just the same as when we open a
+00:48:18,098 --> 00:48:22,135
+<c.magenta>确保它能放到CGContext里面</c>
 
 
 825
-00:25:30,076 --> 00:25:31,556
-file that already existed
+00:48:22,402 --> 00:48:26,640
+<c.magenta>但如果我们把这个图片</c>
+<c.magenta>加载到左侧的环境中</c>
 
 
 826
-00:25:31,556 --> 00:25:31,926
-before.
+00:48:26,974 --> 00:48:31,445
+<c.magenta>我们就需要返回一个带有</c>
+<c.magenta>未使用过的透明像素的缩略图</c>
 
 
 827
-00:25:33,586 --> 00:25:34,526
-Now when we want to present a
+00:48:31,512 --> 00:48:33,947
+<c.magenta>意思是一个浮动缩略图</c>
+<c.magenta>这并不是我们想要的</c>
 
 
 828
-00:25:34,526 --> 00:25:35,876
-document, we instantiate the
+00:48:34,781 --> 00:48:38,619
+<c.magenta>所以我们得决定要绘制</c>
 
 
 829
-00:25:35,876 --> 00:25:37,046
-Document View Controller from
+00:48:38,685 --> 00:48:41,221
+<c.magenta>和传给QLThumbnailReply的</c>
+<c.magenta>正确环境尺寸</c>
 
 
 830
-00:25:37,046 --> 00:25:38,996
-the storyboard and we pass the
+00:48:42,055 --> 00:48:46,693
+<c.magenta>得益于此 我们的绘板会收到</c>
+<c.magenta>与所请求的尺寸</c>
 
 
 831
-00:25:39,316 --> 00:25:41,176
-document via our function that
+00:48:47,828 --> 00:48:51,298
+<c.magenta>contextSize正确匹配的CGContext</c>
 
 
 832
-00:25:41,176 --> 00:25:42,536
-we've just completed, set
+00:48:51,899 --> 00:48:55,002
+<c.magenta>并且我们可以</c>
+<c.magenta>按我们所想绘制缩略图</c>
 
 
 833
-00:25:42,566 --> 00:25:44,506
-Document with a reference to a
+00:48:57,070 --> 00:48:59,206
+<c.magenta>现在如果你不想绘制缩略图</c>
 
 
 834
-00:25:44,506 --> 00:25:46,126
-newly created document instance.
+00:48:59,273 --> 00:49:03,477
+<c.magenta>而是倾向于返回一个图片文件URL</c>
 
 
 835
-00:25:47,066 --> 00:25:48,506
-Once that is done, we just go
+00:49:04,044 --> 00:49:05,245
+<c.magenta>也非常简单</c>
 
 
 836
-00:25:48,506 --> 00:25:49,696
-ahead and present the Document
+00:49:07,047 --> 00:49:09,349
+<c.magenta>你会收到同一个</c>
+<c.magenta>QLFileThumbnailRequest</c>
 
 
 837
-00:25:49,696 --> 00:25:50,276
-View Controller.
+00:49:09,983 --> 00:49:12,252
+<c.magenta>并且你所需要返回的就是一个</c>
 
 
 838
-00:25:50,966 --> 00:25:52,486
-Let's take a look at this in the
+00:49:12,319 --> 00:49:14,121
+<c.magenta>包含图片文件URL的</c>
+<c.magenta>QLThumbnailReply</c>
 
 
 839
-00:25:52,486 --> 00:25:52,936
-simulator.
+00:49:14,288 --> 00:49:15,389
+<c.magenta>在这种情况下</c>
 
 
 840
-00:26:06,596 --> 00:26:08,056
-Switch back to the Browse view
+00:49:15,455 --> 00:49:18,258
+<c.magenta>快速预览将会自己决定</c>
 
 
 841
-00:26:08,826 --> 00:26:09,886
-and hit the Create Document
+00:49:18,325 --> 00:49:20,827
+<c.magenta>缩小或放大缩略图</c>
 
 
 842
-00:26:09,886 --> 00:26:10,226
-button.
+00:49:20,894 --> 00:49:23,063
+<c.magenta>它会保持文件的长宽比</c>
 
 
 843
-00:26:10,926 --> 00:26:11,946
-A new file is created.
+00:49:23,330 --> 00:49:25,165
+<c.magenta>从而使缩略图看起来效果不错</c>
 
 
 844
-00:26:12,516 --> 00:26:13,246
-And there we go.
+00:49:27,701 --> 00:49:30,070
+<c.magenta>现在让我们看一下这部分的代码</c>
 
 
 845
-00:26:13,246 --> 00:26:16,226
-Our beautiful particles with an
+00:49:31,071 --> 00:49:34,007
+<c.magenta>你需要实施的唯一一个方法叫作</c>
 
 
 846
-00:26:16,256 --> 00:26:17,386
-inspector on the right side.
+00:49:34,074 --> 00:49:37,144
+<c.magenta>provideThumbnailForRequestHandler</c>
 
 
 847
-00:26:17,976 --> 00:26:19,186
-We can change the values a bit,
+00:49:40,881 --> 00:49:43,650
+<c.magenta>在这个例子中</c>
+<c.magenta>我们要做的第一件事就是提取</c>
 
 
 848
-00:26:19,996 --> 00:26:21,706
-change the size, change the
+00:49:43,717 --> 00:49:46,920
+<c.magenta>QLFileThumbnailRequest的全部参数</c>
 
 
 849
-00:26:21,706 --> 00:26:22,016
-color.
+00:49:47,387 --> 00:49:51,758
+<c.magenta>意思是文件URL、最大尺寸和比例</c>
 
 
 850
-00:26:23,116 --> 00:26:24,496
-And once we are done with it, we
+00:49:52,726 --> 00:49:56,930
+<c.magenta>除了这些参数</c>
+<c.magenta>我们还要决定环境尺寸</c>
 
 
 851
-00:26:24,496 --> 00:26:25,996
-just close the document again by
+00:49:56,997 --> 00:50:00,367
+<c.magenta>我们绘制缩略图的环境 就像我们</c>
+<c.magenta>在刚才的例子中看到过的一样</c>
 
 
 852
-00:26:25,996 --> 00:26:29,376
-pressing the Done button.
+00:50:03,270 --> 00:50:08,275
+<c.magenta>之后正如我们所说过的</c>
+<c.magenta>我们需要提供一个绘板</c>
 
 
 853
-00:26:29,536 --> 00:26:31,516
-Great. So creating documents and
+00:50:09,109 --> 00:50:11,979
+<c.magenta>那么在这里 我们创建一个绘板</c>
+<c.magenta>并在绘板内</c>
 
 
 854
-00:26:31,516 --> 00:26:33,056
-opening documents works like a
+00:50:12,045 --> 00:50:13,881
+<c.magenta>绘制缩略图</c>
 
 
 855
-00:26:33,056 --> 00:26:33,496
-charm.
+00:50:14,248 --> 00:50:17,584
+<c.magenta>因此 绘板需要返回一个成功值来向</c>
 
 
 856
-00:26:33,766 --> 00:26:35,006
-But there is one thing that I
+00:50:17,651 --> 00:50:21,755
+<c.magenta>快速预览表明 无论是或否</c>
+<c.magenta>它实际上可以提供缩略图</c>
 
 
 857
-00:26:35,006 --> 00:26:36,486
-don't really like yet, which is
+00:50:23,223 --> 00:50:24,858
+<c.magenta>最后我们创建QLThumbnailReply</c>
 
 
 858
-00:26:37,066 --> 00:26:38,016
-the Document Browser View
+00:50:24,925 --> 00:50:28,128
+<c.magenta>在contextSize和绘板之外</c>
 
 
 859
-00:26:38,016 --> 00:26:39,886
-Controller here has this white
+00:50:28,195 --> 00:50:31,331
+<c.magenta>并且用我们的回复以及</c>
 
 
 860
-00:26:39,886 --> 00:26:41,646
-appearance whereas the particle
+00:50:31,398 --> 00:50:34,835
+<c.magenta>一个NSR参数</c>
+<c.magenta>调用completionHandler</c>
 
 
 861
-00:26:41,646 --> 00:26:42,846
-View Controller has a really
+00:50:35,369 --> 00:50:37,871
+<c.magenta>在这里 我们传递无 因为我们总是</c>
+<c.magenta>希望提供一个缩略图</c>
 
 
 862
-00:26:42,846 --> 00:26:43,816
-dark appearance.
+00:50:37,938 --> 00:50:42,042
+<c.magenta>但如果由于某些原因你不想总是</c>
+<c.magenta>返回全部请求的缩略图</c>
 
 
 863
-00:26:44,386 --> 00:26:45,256
-So let's fix this.
+00:50:42,109 --> 00:50:45,245
+<c.magenta>你可以提供一个NS报错</c>
 
 
 864
-00:26:46,176 --> 00:26:47,536
-As Pau mentioned earlier, there
+00:50:45,679 --> 00:50:49,316
+<c.magenta>来快速表明你不希望为此请求</c>
+<c.magenta>提供缩略图</c>
 
 
 865
-00:26:47,536 --> 00:26:48,936
-are three browser use interface
+00:50:51,652 --> 00:50:53,921
+<c.magenta>如果你想返回一个图片文件URL</c>
 
 
 866
-00:26:48,936 --> 00:26:50,226
-styles that you can choose from.
+00:50:53,987 --> 00:50:58,325
+<c.magenta>而不是绘制一个缩略图文件请求</c>
 
 
 867
-00:26:50,866 --> 00:26:53,736
-First, dark, light, and white.
+00:50:58,725 --> 00:51:01,929
+<c.magenta>你可以实施同样的方法</c>
+<c.magenta>但需要调用的是completionHandler</c>
 
 
 868
-00:26:54,356 --> 00:26:56,026
-Now obviously, dark seems like a
+00:51:01,995 --> 00:51:05,132
+<c.magenta>用一个包含图片文件URL的</c>
+<c.magenta>QLThumbnailReply</c>
 
 
 869
-00:26:56,026 --> 00:26:57,976
-great choice for our situation
+00:51:05,666 --> 00:51:09,503
+<c.magenta>在这个简单的例子中 我们只返回了</c>
+<c.magenta>来自我们主供应商的图片</c>
 
 
 870
-00:26:57,976 --> 00:26:58,136
-here.
+00:51:13,106 --> 00:51:14,741
+<c.magenta>在创建扩展后</c>
 
 
 871
-00:26:59,316 --> 00:27:00,636
-So let's switch back to the
+00:51:14,808 --> 00:51:18,078
+<c.magenta>你当然希望能看到漂亮的新缩略图了</c>
 
 
 872
-00:27:00,636 --> 00:27:01,886
-Document Browser View Controller
+00:51:18,912 --> 00:51:23,483
+<c.magenta>你可以在任何显示你文件的基于文档</c>
+<c.magenta>浏览器的应用中进行查看</c>
 
 
 873
-00:27:01,886 --> 00:27:02,596
-subclass.
+00:51:23,884 --> 00:51:26,320
+<c.magenta>那么在这里 我们可以从截图中看到</c>
 
 
 874
-00:27:03,126 --> 00:27:05,926
-Now the view Did Load method of
+00:51:26,720 --> 00:51:31,158
+<c.magenta>缩略图来自扩展…</c>
 
 
 875
-00:27:05,926 --> 00:27:08,066
-the subclass is a great moment
+00:51:31,225 --> 00:51:33,694
+<c.magenta>粒子应用的扩展</c>
 
 
 876
-00:27:08,066 --> 00:27:09,146
-to configure the document
+00:51:34,461 --> 00:51:38,298
+<c.magenta>但我们处于文件应用的最近列表内部</c>
+<c.magenta>但我们仍能看到它们</c>
 
 
 877
-00:27:09,146 --> 00:27:09,486
-browser.
+00:51:42,135 --> 00:51:46,206
+<c.magenta>你现在了解如何创建很棒的</c>
+<c.magenta>基于文档的应用了吧</c>
 
 
 878
-00:27:10,556 --> 00:27:12,536
-In this situation, what we can
+00:51:46,273 --> 00:51:49,209
+<c.magenta>通过UI文档浏览器视图控制器</c>
 
 
 879
-00:27:12,536 --> 00:27:16,006
-do is set the browser User
+00:51:49,276 --> 00:51:50,677
+<c.magenta>和缩略图扩展</c>
 
 
 880
-00:27:16,006 --> 00:27:18,376
-Interface Style to dark and we
+00:51:51,178 --> 00:51:53,947
+<c.magenta>那么要如何进一步改善用户体验呢？</c>
 
 
 881
-00:27:18,376 --> 00:27:21,186
-can also modify the tint Color
+00:51:54,915 --> 00:52:00,020
+<c.magenta>如果你导出自定义UTI</c>
+<c.magenta>你很可能希望能提供预览</c>
 
 
 882
-00:27:21,186 --> 00:27:22,306
-of the view of the Document
+00:52:00,087 --> 00:52:04,057
+<c.magenta>iOS可以在任何应用中显示</c>
 
 
 883
-00:27:22,306 --> 00:27:23,146
-Browser View Controller.
+00:52:05,459 --> 00:52:07,628
+<c.magenta>我们现在看这个是如何实现的</c>
 
 
 884
-00:27:23,656 --> 00:27:25,816
-Now in this situation, using a
+00:52:07,694 --> 00:52:09,596
+<c.magenta>通过新的快速浏览预览扩展</c>
 
 
 885
-00:27:25,816 --> 00:27:27,476
-bright orange probably will look
+00:52:12,633 --> 00:52:17,905
+<c.magenta>默认情况下</c>
+<c.magenta>快速预览仅支持有限的文件类型</c>
 
 
 886
-00:27:27,476 --> 00:27:29,036
-great with our fire particles.
+00:52:18,539 --> 00:52:23,210
+<c.magenta>意思是默认情况下快速预览不会</c>
+<c.magenta>预览你的自定义文件类型</c>
 
 
 887
-00:27:29,796 --> 00:27:30,476
-So let's take a look.
+00:52:24,111 --> 00:52:28,949
+<c.magenta>但我有个好消息</c>
+<c.magenta>因为从iOS 11开始</c>
 
 
 888
-00:27:39,016 --> 00:27:39,786
-There we go.
+00:52:30,284 --> 00:52:32,386
+<c.magenta>你将可以向快速预览提供预览</c>
 
 
 889
-00:27:40,056 --> 00:27:41,526
-This is the same Document
+00:52:32,953 --> 00:52:36,223
+<c.magenta>并扩展快速预览的功能</c>
 
 
 890
-00:27:41,526 --> 00:27:43,336
-Browser View Controller but in a
+00:52:36,857 --> 00:52:38,792
+<c.magenta>因为我们将向第三方开放快速预览</c>
 
 
 891
-00:27:43,336 --> 00:27:44,706
-dark appearance which should
+00:52:40,894 --> 00:52:45,832
+<c.magenta>我们要把快速预览开放给第三方</c>
+<c.magenta>所以当你预览扩展时</c>
 
 
 892
-00:27:44,706 --> 00:27:46,276
-look much better than the one
+00:52:46,433 --> 00:52:47,734
+<c.magenta>将是系统范围内的</c>
 
 
 893
-00:27:46,276 --> 00:27:49,386
-before once we open the Document
+00:52:47,801 --> 00:52:51,138
+<c.magenta>意思是任何使用快速预览的应用</c>
 
 
 894
-00:27:49,386 --> 00:27:50,036
-View Controller.
+00:52:51,205 --> 00:52:53,240
+<c.magenta>都将能显示你的预览</c>
 
 
 895
-00:27:50,876 --> 00:27:53,086
-Even the control URI now has the
+00:52:53,440 --> 00:52:57,511
+<c.magenta>并且你还可以决定提供由你的应用</c>
 
 
 896
-00:27:53,086 --> 00:27:54,076
-updated appearance.
+00:52:57,578 --> 00:52:58,812
+<c.magenta>进行索引的Spotlight项预览</c>
 
 
 897
-00:27:55,016 --> 00:27:59,516
-Let's create a new folder, call
+00:52:59,246 --> 00:53:03,483
+<c.magenta>这些预览将会可见</c>
+<c.magenta>当你在支持[听不清]的iPhone上</c>
 
 
 898
-00:27:59,516 --> 00:27:59,976
-it fire,
+00:53:03,550 --> 00:53:05,485
+<c.magenta>瞥一眼Spotlight结果时</c>
 
 
 899
-00:28:04,516 --> 00:28:05,866
-and open a new document.
+00:53:06,987 --> 00:53:11,158
+<c.magenta>你的预览在快速预览中</c>
+<c.magenta>将会享受一等待遇</c>
 
 
 900
-00:28:06,296 --> 00:28:08,506
-Now the transition between the
+00:53:11,758 --> 00:53:14,161
+<c.magenta>它们将得益于完整的快速预览体验</c>
 
 
 901
-00:28:08,506 --> 00:28:10,126
-two view controllers is much
+00:53:14,494 --> 00:53:17,264
+<c.magenta>并作为QL预览控制器的一部分</c>
+<c.magenta>进行预览</c>
 
 
 902
-00:28:10,126 --> 00:28:11,646
-smoother and looks much better.
+00:53:17,331 --> 00:53:19,399
+<c.magenta>就像在预览中创建的其它结果一样</c>
 
 
 903
-00:28:12,596 --> 00:28:13,926
-So that's pretty much all I have
+00:53:20,501 --> 00:53:22,636
+<c.magenta>快速预览将会获取显示加载指示器</c>
 
 
 904
-00:28:13,926 --> 00:28:15,506
-to tell you about the first
+00:53:22,703 --> 00:53:25,339
+<c.magenta>当等待你的扩展返回预览时</c>
 
 
 905
-00:28:15,506 --> 00:28:15,836
-demo.
+00:53:25,772 --> 00:53:26,773
+<c.magenta>让我们看一下流程</c>
 
 
 906
-00:28:16,716 --> 00:28:18,666
-And to get an overview of what
+00:53:27,374 --> 00:53:33,514
+<c.magenta>首先快速预览注意到</c>
+<c.magenta>它不能自己预览文件</c>
 
 
 907
-00:28:18,666 --> 00:28:20,206
-we learned so far, I would like
+00:53:33,580 --> 00:53:35,415
+<c.magenta>但它会请求扩展预览</c>
 
 
 908
-00:28:20,206 --> 00:28:21,156
-to hand it back to Pau
+00:53:35,949 --> 00:53:38,619
+<c.magenta>你的扩展将会花一点时间生成预览</c>
 
 
 909
-00:28:22,516 --> 00:28:25,500
-[ Applause ]
+00:53:39,786 --> 00:53:42,022
+<c.magenta>同时快速预览显示一个加载指示器</c>
 
 
 910
-00:28:34,856 --> 00:28:36,656
->> So let's take a look at what
+00:53:42,389 --> 00:53:43,991
+<c.magenta>你不需要处理这个</c>
 
 
 911
-00:28:36,656 --> 00:28:37,696
-we've seen in the demo.
+00:53:44,825 --> 00:53:48,328
+<c.magenta>当你的扩展准备显示预览时</c>
 
 
 912
-00:28:38,956 --> 00:28:40,806
-First, we saw how to create a
+00:53:48,395 --> 00:53:50,631
+<c.magenta>你需要在代码中</c>
+<c.magenta>调用completionHandler</c>
 
 
 913
-00:28:40,806 --> 00:28:42,216
-new document-based application
+00:53:50,697 --> 00:53:54,968
+<c.magenta>以便通知快速预览可以显示预览了</c>
 
 
 914
-00:28:42,516 --> 00:28:43,426
-from the Xcode template.
+00:53:56,570 --> 00:53:59,740
+<c.magenta>跟缩略图扩展相似</c>
+<c.magenta>你可以很简单地上手</c>
 
 
 915
-00:28:44,276 --> 00:28:46,216
-Then, we saw how to create new
+00:53:59,907 --> 00:54:02,176
+<c.magenta>因为我们为你准备了一个新模板</c>
 
 
 916
-00:28:46,216 --> 00:28:48,026
-documents and how to open them.
+00:54:02,242 --> 00:54:05,812
+<c.magenta>包含一些示例代码、一个storybook</c>
+<c.magenta>还有一个Info.plist</c>
 
 
 917
-00:28:48,656 --> 00:28:50,886
-And finally, we saw how to
+00:54:08,215 --> 00:54:11,084
+<c.magenta>创建扩展之后 你想把它放在</c>
 
 
 918
-00:28:50,886 --> 00:28:52,436
-customize the appearance of the
+00:54:11,151 --> 00:54:15,622
+<c.magenta>这个Info.plist中并编辑它</c>
+<c.magenta>添加你能支持的全部UTI…</c>
 
 
 919
-00:28:52,436 --> 00:28:54,386
-Browser VC to make it look like
+00:54:16,023 --> 00:54:20,027
+<c.magenta>抱歉 向QLSupportedContentTypes</c>
+<c.magenta>数组中添加你所支持的全部UTI</c>
 
 
 920
-00:28:54,386 --> 00:28:55,596
-the rest of our app.
+00:54:20,994 --> 00:54:24,298
+<c.magenta>与缩略图扩展不同</c>
+<c.magenta>缩略图扩展只能</c>
 
 
 921
-00:28:56,646 --> 00:28:59,246
-And now that we have the basics
+00:54:24,364 --> 00:54:26,800
+<c.magenta>提供你自己拥有的</c>
+<c.magenta>预览的图片并在此导入</c>
 
 
 922
-00:28:59,286 --> 00:29:01,586
-of this Browser VC, let's take a
+00:54:28,101 --> 00:54:31,538
+<c.magenta>iOS会检查UTI质量</c>
+<c.magenta>而不是UTI一致性</c>
 
 
 923
-00:29:01,646 --> 00:29:04,176
-look at how to get and provide a
+00:54:32,706 --> 00:54:35,609
+<c.magenta>如果你想为由你的应用</c>
 
 
 924
-00:29:04,176 --> 00:29:06,556
-great experience for our users.
+00:54:35,943 --> 00:54:38,412
+<c.magenta>表明的Spotlight项提供预览</c>
 
 
 925
-00:29:07,956 --> 00:29:09,316
-In this section, I would like to
+00:54:38,478 --> 00:54:42,649
+<c.magenta>你需要把QLSupportsSearchableItems</c>
+<c.magenta>的键值设为是</c>
 
 
 926
-00:29:09,316 --> 00:29:10,906
-talk about three different
+00:54:44,184 --> 00:54:48,055
+<c.magenta>现在让我们快速看一下代码</c>
 
 
 927
-00:29:10,906 --> 00:29:13,086
-topics: open-in-place, how to
+00:54:48,255 --> 00:54:49,990
+<c.magenta>如果你想为文件提供预览</c>
 
 
 928
-00:29:13,086 --> 00:29:15,166
-provide custom actions in the
+00:54:51,225 --> 00:54:54,027
+<c.magenta>你需要实施preparePreviewOfFile</c>
 
 
 929
-00:29:15,166 --> 00:29:17,106
-Browser VC, and how to create a
+00:54:54,194 --> 00:54:56,430
+<c.magenta>在URL completionHandler方法中</c>
 
 
 930
-00:29:17,106 --> 00:29:18,706
-great opening experience.
+00:54:57,431 --> 00:55:01,335
+<c.magenta>而你所需要做的就是</c>
+<c.magenta>加载文件并调用completionHandler</c>
 
 
 931
-00:29:18,706 --> 00:29:21,606
-So first, let's talk about
+00:55:01,401 --> 00:55:03,971
+<c.magenta>从而使快速预览显示你的预览</c>
 
 
 932
-00:29:21,606 --> 00:29:22,416
-open-in-place.
+00:55:04,905 --> 00:55:07,007
+<c.magenta>你可以异步调用completionHandler</c>
 
 
 933
-00:29:23,016 --> 00:29:24,536
-Open-in-place is a great feature
+00:55:07,074 --> 00:55:09,109
+<c.magenta>这正适合本例中的情况</c>
 
 
 934
-00:29:24,846 --> 00:29:26,056
-that came with iOS 9.
+00:55:11,078 --> 00:55:14,581
+<c.magenta>如果你想提供Spotlight预览</c>
+<c.magenta>你需要实施</c>
 
 
 935
-00:29:26,826 --> 00:29:28,516
-It allows apps to share files
+00:55:14,648 --> 00:55:18,619
+<c.magenta>preparePreviewOfSearchableItems</c>
+<c.magenta>identifier queryString</c>
 
 
 936
-00:29:28,516 --> 00:29:29,786
-between them without the need of
+00:55:18,685 --> 00:55:20,153
+<c.magenta>completionHandler方法</c>
 
 
 937
-00:29:29,846 --> 00:29:32,106
-copying them.
+00:55:20,487 --> 00:55:23,123
+<c.magenta>queryString参数可以用于</c>
 
 
 938
-00:29:32,306 --> 00:29:33,786
-Also because of this, you have
+00:55:23,190 --> 00:55:25,626
+<c.magenta>突出显示预览中的任意部分</c>
 
 
 939
-00:29:33,826 --> 00:29:35,856
-to be careful when accessing
+00:55:25,792 --> 00:55:29,263
+<c.magenta>这是用户在Spotlight中</c>
+<c.magenta>输入的queryString</c>
 
 
 940
-00:29:35,856 --> 00:29:37,766
-those documents because other
+00:55:29,329 --> 00:55:33,834
+<c.magenta>在与你的应用索引的项交互之前</c>
 
 
 941
-00:29:37,766 --> 00:29:38,976
-apps might be already accessing
+00:55:35,235 --> 00:55:39,606
+<c.magenta>跟文件示例中一样</c>
 
 
 942
-00:29:38,976 --> 00:29:39,176
-them.
+00:55:39,806 --> 00:55:42,075
+<c.magenta>你所要做的就是准备好你的控制器</c>
 
 
 943
-00:29:40,686 --> 00:29:42,406
-Now the Browser VC makes use of
+00:55:42,142 --> 00:55:43,577
+<c.magenta>并调用completionHandler</c>
 
 
 944
-00:29:42,406 --> 00:29:44,606
-this feature in order to open
+00:55:46,280 --> 00:55:49,449
+<c.magenta>你可以在使用快速预览的</c>
+<c.magenta>任意应用中测试你的预览</c>
 
 
 945
-00:29:44,606 --> 00:29:45,526
-the files from the Recents
+00:55:49,516 --> 00:55:52,519
+<c.magenta>比如邮箱或信息</c>
 
 
 946
-00:29:45,526 --> 00:29:48,506
-Popover, so if you're using the
+00:55:52,986 --> 00:55:55,322
+<c.magenta>或在Spotlight中</c>
+<c.magenta>如果你支持Spotlight预览的话</c>
 
 
 947
-00:29:48,506 --> 00:29:49,796
-Browser VC in your app, you
+00:55:55,389 --> 00:55:57,257
+<c.magenta>这正是本例中的情况</c>
 
 
 948
-00:29:49,796 --> 00:29:51,236
-really need to make use of
+00:55:57,524 --> 00:56:00,794
+<c.magenta>在这里 我们窥视了一下</c>
+<c.magenta>粒子应用提供的结果</c>
 
 
 949
-00:29:51,236 --> 00:29:51,846
-open-in-place.
+00:56:05,599 --> 00:56:09,303
+<c.magenta>我希望用一些性能建议</c>
+<c.magenta>来结束本场演讲</c>
 
 
 950
-00:29:51,976 --> 00:29:53,366
-If you're starting from the
+00:56:09,870 --> 00:56:13,006
+<c.magenta>当处理扩展时 你要一直确保快速</c>
 
 
 951
-00:29:53,366 --> 00:29:54,756
-Xcode template, it's real easy.
+00:56:13,073 --> 00:56:14,775
+<c.magenta>那么在本例中 这是非常重要的</c>
 
 
 952
-00:29:54,946 --> 00:29:55,916
-You don't have to do anything.
+00:56:15,576 --> 00:56:17,344
+<c.magenta>你必须迅速绘制缩略图</c>
 
 
 953
-00:29:56,346 --> 00:29:57,846
-If not, you will have to
+00:56:17,411 --> 00:56:19,046
+<c.magenta>考虑一下…</c>
 
 
 954
-00:29:57,846 --> 00:29:59,496
-implement support open-in-place.
+00:56:20,180 --> 00:56:26,153
+<c.magenta>考虑一下 比如说用户</c>
+<c.magenta>使用了文档浏览器</c>
 
 
 955
-00:30:00,086 --> 00:30:02,126
-So let's take a look at the
+00:56:26,220 --> 00:56:28,956
+<c.magenta>你希望能尽可能快地显示</c>
+<c.magenta>你的缩略图</c>
 
 
 956
-00:30:02,126 --> 00:30:02,306
-code.
+00:56:29,022 --> 00:56:30,357
+<c.magenta>从而获得一个良好的用户体验</c>
 
 
 957
-00:30:02,306 --> 00:30:03,406
-First, we have to implement the
+00:56:31,024 --> 00:56:33,961
+<c.magenta>对于快速浏览预览 你还要确保</c>
 
 
 958
-00:30:03,406 --> 00:30:05,086
-application open input URL
+00:56:34,394 --> 00:56:38,098
+<c.magenta>迅速加载预览</c>
+<c.magenta>因为快速预览必须得快</c>
 
 
 959
-00:30:05,086 --> 00:30:05,686
-delegate method.
+00:56:39,700 --> 00:56:42,803
+<c.magenta>同时请注意</c>
+<c.magenta>你不应该实施任何后台任务</c>
 
 
 960
-00:30:06,726 --> 00:30:08,556
-Here, first thing is to check if
+00:56:42,870 --> 00:56:44,638
+<c.magenta>在调用completionHandler之后</c>
 
 
 961
-00:30:08,556 --> 00:30:10,136
-the input URL is a file URL.
+00:56:46,406 --> 00:56:49,176
+<c.magenta>请谨记 因为扩展内容非常有限</c>
 
 
 962
-00:30:10,246 --> 00:30:12,226
-And if so, we can call the
+00:56:50,377 --> 00:56:54,248
+<c.magenta>因此请避免连接两个大型库</c>
+<c.magenta>并检查遗漏</c>
 
 
 963
-00:30:12,226 --> 00:30:14,026
-Reveal Document method from the
+00:56:55,649 --> 00:56:58,519
+<c.magenta>现在让我们迅速回顾一下</c>
+<c.magenta>我们今天所谈到的东西</c>
 
 
 964
-00:30:14,026 --> 00:30:14,476
-Browser VC.
+00:56:59,786 --> 00:57:03,824
+<c.magenta>首先我们谈了一些文档浏览器API</c>
 
 
 965
-00:30:14,476 --> 00:30:16,706
-This method will reveal the
+00:57:04,291 --> 00:57:05,359
+<c.magenta>API</c>
 
 
 966
-00:30:16,706 --> 00:30:18,066
-document in the Recents View and
+00:57:05,692 --> 00:57:08,095
+<c.magenta>我们主要讲了UI文档</c>
+<c.magenta>浏览器视图控制器</c>
 
 
 967
-00:30:18,066 --> 00:30:18,916
-call us back when it's ready.
+00:57:08,161 --> 00:57:09,463
+<c.magenta>以及如何利用它</c>
 
 
 968
-00:30:19,046 --> 00:30:22,406
-Now we can load and present the
+00:57:10,497 --> 00:57:13,400
+<c.magenta>来创建一个了不起的基于文档的应用</c>
 
 
 969
-00:30:22,406 --> 00:30:24,176
-document as we did for open and
+00:57:13,967 --> 00:57:16,503
+<c.magenta>你了解了它的基本功能和高级功能</c>
 
 
 970
-00:30:24,176 --> 00:30:24,546
-creation.
+00:57:17,471 --> 00:57:22,776
+<c.magenta>然后我们看了如何在iOS 11中</c>
+<c.magenta>自定义享受一等待遇的文件标签</c>
 
 
 971
-00:30:25,176 --> 00:30:26,436
-If it fails, we need to handle
+00:57:22,843 --> 00:57:27,314
+<c.magenta>这都归功于新的缩略图</c>
+<c.magenta>和快速浏览预览扩展</c>
 
 
 972
-00:30:26,436 --> 00:30:28,756
-the error and present some UI to
+00:57:28,615 --> 00:57:33,320
+<c.magenta>现在让我们再看一下在过去的两年中</c>
+<c.magenta>我们所收到你们的请求</c>
 
 
 973
-00:30:30,336 --> 00:30:31,006
-the user.
+00:57:33,587 --> 00:57:36,456
+<c.magenta>看我们是如何处理它们的</c>
 
 
 974
-00:30:31,006 --> 00:30:32,266
-Now let's take a look at how to
+00:57:37,090 --> 00:57:38,825
+<c.magenta>那么这就是我们今天谈到的全部内容</c>
 
 
 975
-00:30:32,266 --> 00:30:33,766
-add custom actions into this
+00:57:40,694 --> 00:57:42,362
+<c.magenta>UI文档浏览器视图控制器</c>
 
 
 976
-00:30:33,766 --> 00:30:34,326
-Browser VC.
+00:57:42,696 --> 00:57:45,032
+<c.magenta>给你提供了一个</c>
+<c.magenta>统一的UI用于文件浏览</c>
 
 
 977
-00:30:35,596 --> 00:30:36,756
-There are three different ways
+00:57:46,900 --> 00:57:49,102
+<c.magenta>新的本地存储和iCloud共享</c>
 
 
 978
-00:30:36,756 --> 00:30:37,826
-of add custom actions.
+00:57:49,169 --> 00:57:53,240
+<c.magenta>提供了一个以安全方式</c>
+<c.magenta>从其他应用中获取文件的方式</c>
 
 
 979
-00:30:38,116 --> 00:30:39,686
-The first one is the UI Document
+00:57:55,843 --> 00:57:58,912
+<c.magenta>新的文件共享扩展</c>
+<c.magenta>允许你流畅地获取</c>
 
 
 980
-00:30:39,686 --> 00:30:40,366
-Browser Action.
+00:57:58,979 --> 00:58:00,480
+<c.magenta>其它云共享</c>
 
 
 981
-00:30:40,926 --> 00:30:42,336
-You can add these actions when
+00:58:01,815 --> 00:58:05,452
+<c.magenta>现在iOS可以深度整合</c>
+<c.magenta>自定义文件类型</c>
 
 
 982
-00:30:42,336 --> 00:30:43,866
-the user performs long press on
+00:58:08,222 --> 00:58:11,425
+<c.magenta>照例 如果你希望获得关于</c>
+<c.magenta>本场演讲的更多信息</c>
 
 
 983
-00:30:43,866 --> 00:30:45,606
-a document and when the user
+00:58:11,491 --> 00:58:14,127
+<c.magenta>请访问Apple的官网</c>
 
 
 984
-00:30:45,656 --> 00:30:46,646
-enters selection mode.
+00:58:15,462 --> 00:58:17,831
+<c.magenta>我们邀请你观看如下这些相关演讲：</c>
 
 
 985
-00:30:48,296 --> 00:30:49,396
-In order to create them, you
+00:58:17,898 --> 00:58:23,504
+<c.magenta>本周稍早些的“拖放”演讲</c>
+<c.magenta>和即将到来的</c>
 
 
 986
-00:30:49,396 --> 00:30:51,646
-need to give an identifier
+00:58:23,704 --> 00:58:26,006
+<c.magenta>iOS和macOS中</c>
+<c.magenta>“Core Spotlight新特性”</c>
 
 
 987
-00:30:51,646 --> 00:30:54,546
-localized Title and availability
+00:58:26,073 --> 00:58:28,041
+<c.magenta>以及“文件共享增强功能”演讲</c>
 
 
 988
-00:30:54,646 --> 00:30:55,306
-in the handler.
+00:58:28,642 --> 00:58:34,515
+<c.magenta>你还可以参考2017年发布的</c>
+<c.magenta>“创建基于文档的应用”</c>
 
 
 989
-00:30:55,576 --> 00:30:57,256
-The availability has two values:
+00:58:35,682 --> 00:58:38,919
+<c.magenta>感谢大家的参与 再一次希望大家</c>
+<c.magenta>度过一个美好的WWDC</c>
 
 
 990
-00:30:57,416 --> 00:30:58,546
-menu and navigation bar.
-
-
-991
-00:30:59,076 --> 00:31:01,246
-Menu will make the action appear
-
-
-992
-00:31:01,246 --> 00:31:02,426
-when the user performs a long
-
-
-993
-00:31:02,426 --> 00:31:03,996
-press and the navigation bar
-
-
-994
-00:31:03,996 --> 00:31:05,756
-will make the action appear when
-
-
-995
-00:31:05,756 --> 00:31:07,506
-the user enters selection mode.
-
-
-996
-00:31:08,336 --> 00:31:09,876
-The handler will give you the
-
-
-997
-00:31:09,876 --> 00:31:11,976
-array of URLs that the user
-
-
-998
-00:31:11,976 --> 00:31:13,316
-wants to use for the action.
-
-
-999
-00:31:14,346 --> 00:31:16,686
-Now unlike the Open URL, this
-
-
-1000
-00:31:16,686 --> 00:31:19,206
-method you will only have access
-
-
-1001
-00:31:19,206 --> 00:31:20,646
-to these URLs until your
-
-
-1002
-00:31:20,646 --> 00:31:21,906
-application gets killed.
-
-
-1003
-00:31:22,646 --> 00:31:24,216
-Now that we have our action, you
-
-
-1004
-00:31:24,216 --> 00:31:25,276
-need to set the supported
-
-
-1005
-00:31:25,276 --> 00:31:26,116
-content types.
-
-
-1006
-00:31:26,116 --> 00:31:27,536
-The Browser VC will use the
-
-
-1007
-00:31:27,536 --> 00:31:29,296
-content types to know when to
-
-
-1008
-00:31:29,296 --> 00:31:30,046
-display your action.
-
-
-1009
-00:31:30,926 --> 00:31:32,206
-Then, you need to set the
-
-
-1010
-00:31:32,206 --> 00:31:34,206
-supports multiple items to
-
-
-1011
-00:31:34,206 --> 00:31:35,726
-specify if you can support
-
-
-1012
-00:31:35,726 --> 00:31:37,136
-multiple items at once.
-
-
-1013
-00:31:37,536 --> 00:31:38,856
-And you just need to set the
-
-
-1014
-00:31:38,916 --> 00:31:40,186
-custom actions that you created
-
-
-1015
-00:31:40,296 --> 00:31:41,926
-into the custom action array of
-
-
-1016
-00:31:41,926 --> 00:31:43,286
-the Browser VC.
-
-
-1017
-00:31:44,196 --> 00:31:46,136
-The second type of actions are
-
-
-1018
-00:31:46,136 --> 00:31:47,656
-the UI Bar Button Items.
-
-
-1019
-00:31:48,346 --> 00:31:49,796
-You can add these actions in the
-
-
-1020
-00:31:49,796 --> 00:31:52,096
-navigation bar of the Recents VC
-
-
-1021
-00:31:52,326 --> 00:31:54,106
-and the browse, sorry, the
-
-
-1022
-00:31:54,106 --> 00:31:55,206
-Recents View and the Browser
-
-
-1023
-00:31:55,206 --> 00:31:56,726
-View and you can add them in the
-
-
-1024
-00:31:56,726 --> 00:31:58,446
-trailing or leading sides of the
-
-
-1025
-00:31:58,446 --> 00:31:59,036
-navigation bar.
-
-
-1026
-00:32:01,816 --> 00:32:03,796
-The third type of actions are
-
-
-1027
-00:32:03,796 --> 00:32:05,536
-the ones that you can add in the
-
-
-1028
-00:32:05,536 --> 00:32:06,906
-UI Activity View Controller.
-
-
-1029
-00:32:08,006 --> 00:32:09,886
-The Browser VC will show this
-
-
-1030
-00:32:09,886 --> 00:32:11,656
-view controller when the user
-
-
-1031
-00:32:11,716 --> 00:32:13,786
-performs the share action.
-
-
-1032
-00:32:14,376 --> 00:32:16,226
-The Browser VC will let you have
-
-
-1033
-00:32:16,226 --> 00:32:17,666
-control of this activity view
-
-
-1034
-00:32:17,666 --> 00:32:18,786
-controller before it gets
-
-
-1035
-00:32:18,826 --> 00:32:19,306
-presented.
-
-
-1036
-00:32:19,526 --> 00:32:21,186
-And also, it will let you add
-
-
-1037
-00:32:21,186 --> 00:32:22,446
-custom actions when it's
-
-
-1038
-00:32:22,446 --> 00:32:24,096
-creating this UI Activity View
-
-
-1039
-00:32:24,096 --> 00:32:24,466
-Controller.
-
-
-1040
-00:32:24,556 --> 00:32:26,046
-So let's take a look at the
-
-
-1041
-00:32:26,046 --> 00:32:26,276
-code.
-
-
-1042
-00:32:26,436 --> 00:32:28,796
-If you want to add additional
-
-
-1043
-00:32:28,796 --> 00:32:30,496
-actions, you need to implement
-
-
-1044
-00:32:30,496 --> 00:32:31,916
-the document Brower application
-
-
-1045
-00:32:31,916 --> 00:32:33,236
-activities for document URL
-
-
-1046
-00:32:33,296 --> 00:32:34,126
-delegate method.
-
-
-1047
-00:32:35,406 --> 00:32:36,986
-If you want to have access to
-
-
-1048
-00:32:36,986 --> 00:32:38,576
-this Activity View Controller,
-
-
-1049
-00:32:38,856 --> 00:32:40,506
-you need to implement the
-
-
-1050
-00:32:40,506 --> 00:32:42,026
-Document Browser will Present
-
-
-1051
-00:32:42,636 --> 00:32:43,736
-activity View Controller.
-
-
-1052
-00:32:45,466 --> 00:32:47,126
-And that's all for the actions.
-
-
-1053
-00:32:47,916 --> 00:32:49,996
-Now as you've seen already in
-
-
-1054
-00:32:49,996 --> 00:32:51,976
-Files, there's a great opening
-
-
-1055
-00:32:51,976 --> 00:32:53,386
-transition that goes from the
-
-
-1056
-00:32:53,386 --> 00:32:54,826
-thumbnail to the full screen.
-
-
-1057
-00:32:56,126 --> 00:32:58,566
-And Files app is able to do this
-
-
-1058
-00:32:58,776 --> 00:33:00,276
-thanks to the new UI Document
-
-
-1059
-00:33:00,276 --> 00:33:01,476
-Browser Transition Controller.
-
-
-1060
-00:33:02,206 --> 00:33:04,936
-This class will let you set
-
-
-1061
-00:33:05,506 --> 00:33:07,806
-display loading progress on top
-
-
-1062
-00:33:07,806 --> 00:33:09,536
-of the thumbnail while you are
-
-
-1063
-00:33:09,536 --> 00:33:11,246
-loading the document.
-
-
-1064
-00:33:11,346 --> 00:33:14,036
-And it will also let you animate
-
-
-1065
-00:33:14,036 --> 00:33:15,766
-with Zoom transition when you're
-
-
-1066
-00:33:15,766 --> 00:33:17,446
-presenting the Document View
-
-
-1067
-00:33:17,746 --> 00:33:19,926
-Controller for the document.
-
-
-1068
-00:33:20,486 --> 00:33:21,986
-So now, let's take a look at the
-
-
-1069
-00:33:21,986 --> 00:33:22,486
-workflow.
-
-
-1070
-00:33:23,246 --> 00:33:26,106
-First, you will have to get the
-
-
-1071
-00:33:26,106 --> 00:33:27,466
-URL that the user just picked.
-
-
-1072
-00:33:28,486 --> 00:33:29,986
-Here, you will start loading the
-
-
-1073
-00:33:29,986 --> 00:33:30,906
-content of the document.
-
-
-1074
-00:33:30,906 --> 00:33:32,976
-And while loading it, you will
-
-
-1075
-00:33:32,976 --> 00:33:34,216
-have to update the Transition
-
-
-1076
-00:33:34,216 --> 00:33:34,626
-Controller.
-
-
-1077
-00:33:35,316 --> 00:33:37,526
-Once the document is fully
-
-
-1078
-00:33:37,526 --> 00:33:39,326
-loaded, you just need to present
-
-
-1079
-00:33:39,326 --> 00:33:40,856
-the document and use the
-
-
-1080
-00:33:40,856 --> 00:33:42,636
-Transition Controller to drive
-
-
-1081
-00:33:42,636 --> 00:33:44,016
-the animation for the
-
-
-1082
-00:33:44,016 --> 00:33:44,596
-presentation.
-
-
-1083
-00:33:44,786 --> 00:33:48,346
-So now, let's take a look at how
-
-
-1084
-00:33:48,346 --> 00:33:48,816
-it works.
-
-
-1085
-00:33:49,606 --> 00:33:51,796
-First, once you have the URL
-
-
-1086
-00:33:51,916 --> 00:33:54,596
-that the user picked, you need
-
-
-1087
-00:33:54,596 --> 00:33:55,736
-to create the progress object
-
-
-1088
-00:33:55,736 --> 00:33:57,606
-that will track the loading of
-
-
-1089
-00:33:57,606 --> 00:33:58,156
-the document.
-
-
-1090
-00:33:59,046 --> 00:34:00,466
-Here, you create also the
-
-
-1091
-00:34:00,466 --> 00:34:02,736
-transition Controller that will
-
-
-1092
-00:34:02,736 --> 00:34:04,306
-track the loading and that will
-
-
-1093
-00:34:04,306 --> 00:34:05,806
-drive the animation from the
-
-
-1094
-00:34:05,806 --> 00:34:06,906
-thumbnail to the full screen.
-
-
-1095
-00:34:07,406 --> 00:34:08,696
-Now you just need to set the
-
-
-1096
-00:34:08,696 --> 00:34:09,966
-progress onto the transition
-
-
-1097
-00:34:09,966 --> 00:34:10,335
-Controller.
-
-
-1098
-00:34:11,196 --> 00:34:12,815
-Here, we are ready to load the
-
-
-1099
-00:34:12,815 --> 00:34:13,196
-document.
-
-
-1100
-00:34:13,735 --> 00:34:14,706
-In our example, the load
-
-
-1101
-00:34:14,706 --> 00:34:16,156
-Document method will load the
-
-
-1102
-00:34:16,156 --> 00:34:17,826
-document while updating the
-
-
-1103
-00:34:17,826 --> 00:34:19,036
-progress that we created before.
-
-
-1104
-00:34:19,036 --> 00:34:21,346
-And when the document is fully
-
-
-1105
-00:34:21,346 --> 00:34:23,266
-loaded, it will call us back.
-
-
-1106
-00:34:23,266 --> 00:34:24,416
-Here, we just need to present
-
-
-1107
-00:34:24,496 --> 00:34:25,585
-the Document View Controller.
-
-
-1108
-00:34:26,386 --> 00:34:27,956
-Now, if we stop here, we will
-
-
-1109
-00:34:27,956 --> 00:34:29,286
-get the [inaudible] from UIKit
-
-
-1110
-00:34:29,406 --> 00:34:30,666
-which is a slide from the bottom
-
-
-1111
-00:34:30,666 --> 00:34:32,786
-but we want to have this nice
-
-
-1112
-00:34:32,786 --> 00:34:33,676
-zoom transition.
-
-
-1113
-00:34:34,096 --> 00:34:35,235
-And for that, we need to
-
-
-1114
-00:34:35,235 --> 00:34:36,476
-implement the transitioning
-
-
-1115
-00:34:36,476 --> 00:34:37,735
-delegate of the presented View
-
-
-1116
-00:34:37,735 --> 00:34:38,186
-Controller.
-
-
-1117
-00:34:38,266 --> 00:34:40,876
-The transitioning delegate needs
-
-
-1118
-00:34:40,906 --> 00:34:42,025
-to implement the UI View
-
-
-1119
-00:34:42,025 --> 00:34:43,166
-Controller Transitioning
-
-
-1120
-00:34:43,166 --> 00:34:43,926
-Delegate protocol.
-
-
-1121
-00:34:44,085 --> 00:34:46,106
-In this protocol, you need to
-
-
-1122
-00:34:46,106 --> 00:34:47,876
-implement two main methods: the
-
-
-1123
-00:34:47,876 --> 00:34:48,866
-animation controller for
-
-
-1124
-00:34:48,866 --> 00:34:49,906
-presented view controller and
-
-
-1125
-00:34:49,906 --> 00:34:51,806
-the animation controller for the
-
-
-1126
-00:34:51,806 --> 00:34:52,606
-dismissed view controller.
-
-
-1127
-00:34:52,706 --> 00:34:54,835
-Here, you just need to return
-
-
-1128
-00:34:54,906 --> 00:34:56,295
-the transition controller that
-
-
-1129
-00:34:56,295 --> 00:34:57,236
-we created before.
-
-
-1130
-00:34:58,546 --> 00:35:00,236
-And now I will like to hand back
-
-
-1131
-00:35:00,236 --> 00:35:01,406
-to Raffael to show you how to
-
-
-1132
-00:35:01,406 --> 00:35:02,446
-implement all these advanced
-
-
-1133
-00:35:02,446 --> 00:35:02,776
-features.
-
-
-1134
-00:35:03,256 --> 00:35:03,506
-Raffael
-
-
-1135
-00:35:04,016 --> 00:35:05,531
-[ Applause ]
-
-
-1136
-00:35:05,531 --> 00:35:07,046
-.
-
-
-1137
-00:35:07,046 --> 00:35:07,516
->> Thanks, Pau.
-
-
-1138
-00:35:08,756 --> 00:35:10,206
-So in this second demo, I'd like
-
-
-1139
-00:35:10,206 --> 00:35:11,736
-to show you three cool things.
-
-
-1140
-00:35:12,106 --> 00:35:13,846
-First, we're going to take a
-
-
-1141
-00:35:13,846 --> 00:35:15,736
-look at open-in-place and how
-
-
-1142
-00:35:15,736 --> 00:35:18,236
-easy it is to adopt it with your
-
-
-1143
-00:35:18,236 --> 00:35:19,516
-Document Browser View Controller
-
-
-1144
-00:35:19,516 --> 00:35:20,096
-application.
-
-
-1145
-00:35:20,876 --> 00:35:22,036
-Next, we're going to take a look
-
-
-1146
-00:35:22,036 --> 00:35:23,246
-at custom actions.
-
-
-1147
-00:35:23,716 --> 00:35:24,866
-We're going to add a new action
-
-
-1148
-00:35:24,866 --> 00:35:26,286
-that shows up in the long press
-
-
-1149
-00:35:26,286 --> 00:35:28,016
-menu when you tap and hold a
-
-
-1150
-00:35:28,016 --> 00:35:28,546
-document.
-
-
-1151
-00:35:29,066 --> 00:35:30,366
-And last but not least, we're
-
-
-1152
-00:35:30,366 --> 00:35:31,756
-going to implement a custom view
-
-
-1153
-00:35:31,756 --> 00:35:33,546
-controller transition to improve
-
-
-1154
-00:35:33,546 --> 00:35:35,356
-the user experience when we open
-
-
-1155
-00:35:35,356 --> 00:35:37,126
-an existing file or create a new
-
-
-1156
-00:35:37,126 --> 00:35:37,356
-one.
-
-
-1157
-00:35:37,866 --> 00:35:39,076
-So let's just jump back right
-
-
-1158
-00:35:39,076 --> 00:35:39,956
-into our project.
-
-
-1159
-00:35:48,746 --> 00:35:49,596
-Now let's talk about
-
-
-1160
-00:35:49,596 --> 00:35:50,396
-open-in-place.
-
-
-1161
-00:35:50,936 --> 00:35:53,556
-Open-in-place is a great feature
-
-
-1162
-00:35:53,556 --> 00:35:55,196
-that has been introduced with
-
-
-1163
-00:35:55,296 --> 00:35:57,096
-iOS 9 and it allows you to work
-
-
-1164
-00:35:57,096 --> 00:35:58,426
-on the file that the user has
-
-
-1165
-00:35:58,426 --> 00:36:00,106
-chosen instead of on a copy of
-
-
-1166
-00:36:00,106 --> 00:36:00,256
-it.
-
-
-1167
-00:36:01,376 --> 00:36:03,516
-Now adopting it is super easy.
-
-
-1168
-00:36:03,626 --> 00:36:05,116
-And, in fact, if you come from
-
-
-1169
-00:36:05,116 --> 00:36:06,316
-the document based apps
-
-
-1170
-00:36:06,316 --> 00:36:07,856
-template, you have literally
-
-
-1171
-00:36:07,856 --> 00:36:09,136
-nothing to do.
-
-
-1172
-00:36:09,626 --> 00:36:11,876
-The way it works is when the
-
-
-1173
-00:36:11,876 --> 00:36:13,636
-user taps the document outside
-
-
-1174
-00:36:13,636 --> 00:36:15,556
-of your app, iOS will make a
-
-
-1175
-00:36:15,556 --> 00:36:17,056
-call to your app delegate to
-
-
-1176
-00:36:17,466 --> 00:36:18,466
-open the URL with options.
-
-
-1177
-00:36:18,466 --> 00:36:19,606
-So let's take a look.
-
-
-1178
-00:36:25,696 --> 00:36:28,066
-Now in this function, what we do
-
-
-1179
-00:36:28,066 --> 00:36:30,006
-is first we make sure that the
-
-
-1180
-00:36:30,006 --> 00:36:31,296
-URL that we get from iOS
-
-
-1181
-00:36:31,396 --> 00:36:33,106
-actually is a file URL.
-
-
-1182
-00:36:33,556 --> 00:36:35,286
-If it's not, we should probably
-
-
-1183
-00:36:35,286 --> 00:36:36,486
-return because we are not in the
-
-
-1184
-00:36:36,486 --> 00:36:37,656
-situation that we expect.
-
-
-1185
-00:36:38,746 --> 00:36:41,076
-Once we pass that test, we get
-
-
-1186
-00:36:41,076 --> 00:36:42,196
-our document Browser View
-
-
-1187
-00:36:42,196 --> 00:36:43,766
-Controller which is the root
-
-
-1188
-00:36:43,766 --> 00:36:44,616
-View Controller of our
-
-
-1189
-00:36:44,616 --> 00:36:45,256
-application.
-
-
-1190
-00:36:45,926 --> 00:36:48,006
-And we take the URL and pass it
-
-
-1191
-00:36:48,006 --> 00:36:49,486
-to the reveal Document function.
-
-
-1192
-00:36:50,106 --> 00:36:52,896
-Now the Document Browser View
-
-
-1193
-00:36:52,896 --> 00:36:54,476
-Controller again will do all the
-
-
-1194
-00:36:54,476 --> 00:36:55,596
-heavy lifting for you in the
-
-
-1195
-00:36:55,596 --> 00:36:56,126
-background.
-
-
-1196
-00:36:56,756 --> 00:36:59,036
-It will process the URL, move it
-
-
-1197
-00:36:59,036 --> 00:37:01,066
-if required, and once it's done,
-
-
-1198
-00:37:01,646 --> 00:37:02,866
-we're going to get a call back
-
-
-1199
-00:37:02,976 --> 00:37:04,416
-with our completion handler.
-
-
-1200
-00:37:05,296 --> 00:37:06,466
-Now again, if we get an error,
-
-
-1201
-00:37:06,706 --> 00:37:07,586
-since we want to be good
-
-
-1202
-00:37:07,626 --> 00:37:09,016
-developers, we're going to
-
-
-1203
-00:37:09,146 --> 00:37:10,626
-handle the error appropriately
-
-
-1204
-00:37:10,676 --> 00:37:12,286
-for example by showing an alert
-
-
-1205
-00:37:12,356 --> 00:37:13,206
-view to the user.
-
-
-1206
-00:37:14,656 --> 00:37:17,366
-If everything went right, we
-
-
-1207
-00:37:17,366 --> 00:37:18,706
-just go ahead and present the
-
-
-1208
-00:37:18,706 --> 00:37:20,976
-document with that new reveal
-
-
-1209
-00:37:20,976 --> 00:37:21,936
-Document URL.
-
-
-1210
-00:37:23,006 --> 00:37:24,416
-That's literally all you have to
-
-
-1211
-00:37:24,416 --> 00:37:26,436
-do to support open-in-place in
-
-
-1212
-00:37:26,436 --> 00:37:27,836
-your document-based application.
-
-
-1213
-00:37:29,906 --> 00:37:31,446
-Now let's take a look at custom
-
-
-1214
-00:37:31,446 --> 00:37:32,036
-actions.
-
-
-1215
-00:37:33,226 --> 00:37:34,796
-So our particle systems are
-
-
-1216
-00:37:34,796 --> 00:37:36,146
-really beautiful, right, and we
-
-
-1217
-00:37:36,146 --> 00:37:37,326
-might want to share them with
-
-
-1218
-00:37:37,326 --> 00:37:37,856
-our friends.
-
-
-1219
-00:37:38,916 --> 00:37:40,476
-So I'm going to add a new action
-
-
-1220
-00:37:40,476 --> 00:37:41,496
-that shows up when you long
-
-
-1221
-00:37:41,496 --> 00:37:43,606
-press a document to export this
-
-
-1222
-00:37:43,606 --> 00:37:46,266
-particle system as a GIF file or
-
-
-1223
-00:37:46,266 --> 00:37:46,766
-a GIF file.
-
-
-1224
-00:37:48,006 --> 00:37:49,016
-Now let's take a look at the
-
-
-1225
-00:37:49,016 --> 00:37:50,336
-Document Browser View Controller
-
-
-1226
-00:37:51,116 --> 00:37:51,236
-again.
-
-
-1227
-00:37:51,996 --> 00:37:53,876
-The view did load method is a
-
-
-1228
-00:37:53,876 --> 00:37:55,426
-great moment to configure these
-
-
-1229
-00:37:55,426 --> 00:37:55,866
-actions.
-
-
-1230
-00:38:02,976 --> 00:38:05,216
-So, therefore, I'm instantiating
-
-
-1231
-00:38:05,216 --> 00:38:06,566
-a new UI Document Browser
-
-
-1232
-00:38:06,566 --> 00:38:07,026
-Action.
-
-
-1233
-00:38:07,506 --> 00:38:09,376
-I give it an identifier that is
-
-
-1234
-00:38:09,376 --> 00:38:11,376
-unique throughout the app, a
-
-
-1235
-00:38:11,376 --> 00:38:13,646
-localized Title, and I set the
-
-
-1236
-00:38:13,646 --> 00:38:15,526
-availability to menu only.
-
-
-1237
-00:38:15,986 --> 00:38:17,836
-So this will make sure that this
-
-
-1238
-00:38:17,836 --> 00:38:19,436
-action only shows up when you
-
-
-1239
-00:38:19,436 --> 00:38:21,316
-long press a document inside
-
-
-1240
-00:38:21,316 --> 00:38:22,236
-your Document Browser View
-
-
-1241
-00:38:22,236 --> 00:38:22,916
-Controller grid.
-
-
-1242
-00:38:24,556 --> 00:38:25,846
-We also have to give it a
-
-
-1243
-00:38:25,846 --> 00:38:27,176
-handler which is the one that
-
-
-1244
-00:38:27,176 --> 00:38:28,766
-will be executed whenever the
-
-
-1245
-00:38:28,766 --> 00:38:30,066
-user taps our action.
-
-
-1246
-00:38:30,696 --> 00:38:32,366
-In this situation, we just go
-
-
-1247
-00:38:32,366 --> 00:38:34,986
-ahead and log [inaudible]to the
-
-
-1248
-00:38:34,986 --> 00:38:35,436
-consol.
-
-
-1249
-00:38:35,906 --> 00:38:39,306
-Next, we define the action
-
-
-1250
-00:38:39,886 --> 00:38:41,646
-supported Content Types to be
-
-
-1251
-00:38:41,816 --> 00:38:43,816
-com.example.particles with just
-
-
-1252
-00:38:43,816 --> 00:38:45,656
-the UTI type we defined earlier.
-
-
-1253
-00:38:46,336 --> 00:38:47,816
-So just make sure that only our
-
-
-1254
-00:38:47,816 --> 00:38:50,126
-own files will get this action
-
-
-1255
-00:38:50,266 --> 00:38:50,876
-in the menu.
-
-
-1256
-00:38:51,296 --> 00:38:53,446
-And last but not least, all we
-
-
-1257
-00:38:53,446 --> 00:38:55,996
-have to do is define the custom
-
-
-1258
-00:38:55,996 --> 00:38:57,526
-actions of our Document Browser
-
-
-1259
-00:38:57,526 --> 00:38:59,226
-View Controller to be array
-
-
-1260
-00:38:59,396 --> 00:39:00,726
-containing this newly created
-
-
-1261
-00:39:00,726 --> 00:39:01,056
-action.
-
-
-1262
-00:39:02,356 --> 00:39:03,316
-Let's try it out in the
-
-
-1263
-00:39:03,316 --> 00:39:03,736
-simulator.
-
-
-1264
-00:39:10,866 --> 00:39:12,966
-Now on our existing file, we
-
-
-1265
-00:39:12,966 --> 00:39:15,106
-perform a long press and we see
-
-
-1266
-00:39:15,106 --> 00:39:15,996
-that there's a new action
-
-
-1267
-00:39:15,996 --> 00:39:17,706
-showing up here, export as GIF.
-
-
-1268
-00:39:18,866 --> 00:39:20,456
-Once tapped, we see that in the
-
-
-1269
-00:39:20,456 --> 00:39:22,266
-console the handler of the
-
-
-1270
-00:39:22,266 --> 00:39:23,926
-action has been executed.
-
-
-1271
-00:39:25,776 --> 00:39:26,746
-That was pretty easy.
-
-
-1272
-00:39:27,156 --> 00:39:28,746
-Now let's move to the third and
-
-
-1273
-00:39:28,746 --> 00:39:30,566
-the coolest things, the coolest
-
-
-1274
-00:39:30,566 --> 00:39:31,666
-thing that I wanted to show you,
-
-
-1275
-00:39:31,666 --> 00:39:33,036
-which is custom view controller
-
-
-1276
-00:39:33,036 --> 00:39:33,586
-transitions.
-
-
-1277
-00:39:34,936 --> 00:39:36,246
-Right now when we present our
-
-
-1278
-00:39:36,246 --> 00:39:37,856
-Document View Controller, we get
-
-
-1279
-00:39:37,856 --> 00:39:39,926
-a simple slide up amination that
-
-
-1280
-00:39:39,926 --> 00:39:42,396
-is provided by UIKit and that's
-
-
-1281
-00:39:42,396 --> 00:39:44,166
-already pretty cool but it's not
-
-
-1282
-00:39:44,166 --> 00:39:45,136
-really the way it should look
-
-
-1283
-00:39:45,136 --> 00:39:45,406
-like.
-
-
-1284
-00:39:45,936 --> 00:39:47,426
-Instead, the way it really
-
-
-1285
-00:39:47,426 --> 00:39:49,136
-should look like is the user
-
-
-1286
-00:39:49,136 --> 00:39:51,156
-taps the document thumbnail and
-
-
-1287
-00:39:51,156 --> 00:39:52,476
-the thumbnail grows into the
-
-
-1288
-00:39:52,476 --> 00:39:54,376
-particle system on the left side
-
-
-1289
-00:39:54,376 --> 00:39:55,686
-of our Document View Controller.
-
-
-1290
-00:39:56,576 --> 00:39:57,546
-So let's take a look at how we
-
-
-1291
-00:39:57,546 --> 00:39:57,976
-can make this work.
-
-
-1292
-00:40:02,196 --> 00:40:04,746
-Therefore, we switch back to the
-
-
-1293
-00:40:04,746 --> 00:40:08,116
-present document function that
-
-
-1294
-00:40:08,116 --> 00:40:09,006
-we created earlier.
-
-
-1295
-00:40:09,936 --> 00:40:11,016
-Now the way custom View
-
-
-1296
-00:40:11,016 --> 00:40:12,826
-Controller transitions work is
-
-
-1297
-00:40:13,086 --> 00:40:14,426
-you register yourself as the
-
-
-1298
-00:40:14,426 --> 00:40:15,926
-transitioning delegate of the
-
-
-1299
-00:40:15,926 --> 00:40:17,196
-view controller that is about to
-
-
-1300
-00:40:17,196 --> 00:40:17,906
-be presented.
-
-
-1301
-00:40:19,036 --> 00:40:20,896
-Before it is presented, UIKit
-
-
-1302
-00:40:20,896 --> 00:40:22,506
-will call us and ask for the
-
-
-1303
-00:40:22,506 --> 00:40:23,756
-transitioning controller.
-
-
-1304
-00:40:24,646 --> 00:40:25,846
-We give back the transitioning
-
-
-1305
-00:40:25,846 --> 00:40:27,646
-controller and that object will
-
-
-1306
-00:40:27,646 --> 00:40:28,936
-be in charge of driving the
-
-
-1307
-00:40:28,936 --> 00:40:30,396
-animation from view controller A
-
-
-1308
-00:40:30,396 --> 00:40:31,926
-to view controller B.
-
-
-1309
-00:40:32,976 --> 00:40:34,316
-View controller A in our
-
-
-1310
-00:40:34,316 --> 00:40:35,516
-situation is the Document
-
-
-1311
-00:40:35,516 --> 00:40:36,496
-Browser View Controller.
-
-
-1312
-00:40:37,066 --> 00:40:38,216
-View controller B is the
-
-
-1313
-00:40:38,216 --> 00:40:39,216
-Document View Controller.
-
-
-1314
-00:40:40,606 --> 00:40:41,786
-Now Pau mentioned that earlier
-
-
-1315
-00:40:41,786 --> 00:40:43,196
-the Document Browser View
-
-
-1316
-00:40:43,196 --> 00:40:44,866
-Controller already gives us this
-
-
-1317
-00:40:44,866 --> 00:40:46,666
-transitioning controller for us.
-
-
-1318
-00:40:47,026 --> 00:40:48,816
-We just have to keep a reference
-
-
-1319
-00:40:49,036 --> 00:40:50,446
-and pass it back to the function
-
-
-1320
-00:40:50,446 --> 00:40:50,896
-that UIKit will call.
-
-
-1321
-00:40:57,306 --> 00:40:59,366
-So first, we register ourselves
-
-
-1322
-00:40:59,576 --> 00:41:01,076
-as the transitioning delegate of
-
-
-1323
-00:41:01,116 --> 00:41:02,186
-the document View Controller
-
-
-1324
-00:41:02,186 --> 00:41:03,506
-that is about to be presented.
-
-
-1325
-00:41:03,936 --> 00:41:09,156
-Next, we obtain a new
-
-
-1326
-00:41:09,156 --> 00:41:10,676
-transitioning Controller by
-
-
-1327
-00:41:10,676 --> 00:41:12,136
-calling the transition
-
-
-1328
-00:41:12,136 --> 00:41:14,426
-Controller for Document URL on
-
-
-1329
-00:41:14,426 --> 00:41:15,726
-our UI Document Browser View
-
-
-1330
-00:41:15,726 --> 00:41:16,206
-Controller.
-
-
-1331
-00:41:17,286 --> 00:41:19,006
-Now this object doesn't really
-
-
-1332
-00:41:19,006 --> 00:41:20,656
-need a lot of configuration.
-
-
-1333
-00:41:21,046 --> 00:41:22,246
-The only thing it really needs
-
-
-1334
-00:41:22,386 --> 00:41:23,276
-is the target View.
-
-
-1335
-00:41:24,196 --> 00:41:25,376
-The target View is the one that
-
-
-1336
-00:41:25,376 --> 00:41:26,616
-we're going to animate to.
-
-
-1337
-00:41:26,786 --> 00:41:28,326
-And in our situation, that's the
-
-
-1338
-00:41:28,326 --> 00:41:29,596
-particle system on the left.
-
-
-1339
-00:41:31,586 --> 00:41:33,256
-We keep a reference to the
-
-
-1340
-00:41:33,256 --> 00:41:34,436
-transitioning controller that
-
-
-1341
-00:41:34,436 --> 00:41:36,336
-we've just obtained via our
-
-
-1342
-00:41:36,336 --> 00:41:36,866
-variable.
-
-
-1343
-00:41:37,446 --> 00:41:40,246
-Now the last thing we really
-
-
-1344
-00:41:40,246 --> 00:41:42,756
-have to do is implementing the
-
-
-1345
-00:41:42,756 --> 00:41:44,276
-UI View Controller Transitioning
-
-
-1346
-00:41:44,276 --> 00:41:45,246
-Delegate protocol.
-
-
-1347
-00:41:53,436 --> 00:41:54,816
-Now, therefore, we implement the
-
-
-1348
-00:41:54,816 --> 00:41:56,186
-two functions: animation
-
-
-1349
-00:41:56,186 --> 00:41:57,566
-Controller for Presented View
-
-
-1350
-00:41:57,566 --> 00:41:59,796
-Controller and also, because we
-
-
-1351
-00:41:59,796 --> 00:42:00,686
-want to support closing
-
-
-1352
-00:42:00,686 --> 00:42:02,356
-documents, animation Controller
-
-
-1353
-00:42:02,356 --> 00:42:03,746
-for dismissed view controller.
-
-
-1354
-00:42:04,736 --> 00:42:06,026
-In both functions, all we have
-
-
-1355
-00:42:06,076 --> 00:42:06,966
-to do is return the
-
-
-1356
-00:42:06,966 --> 00:42:08,156
-transitioning controller that
-
-
-1357
-00:42:08,156 --> 00:42:08,986
-we've just obtained.
-
-
-1358
-00:42:10,016 --> 00:42:10,696
-Let's try it out in the
-
-
-1359
-00:42:10,696 --> 00:42:10,966
-simulator.
-
-
-1360
-00:42:23,146 --> 00:42:24,036
-Beautiful, isn't it?
-
-
-1361
-00:42:24,106 --> 00:42:25,606
-We get a nice transition from
-
-
-1362
-00:42:25,606 --> 00:42:27,126
-the thumbnail to our particle
-
-
-1363
-00:42:27,126 --> 00:42:27,606
-system.
-
-
-1364
-00:42:28,166 --> 00:42:29,566
-And when we're done with the
-
-
-1365
-00:42:29,566 --> 00:42:31,396
-file modifications, we tap the
-
-
-1366
-00:42:31,396 --> 00:42:33,216
-Done button to close the file
-
-
-1367
-00:42:33,216 --> 00:42:34,366
-again and we transition
-
-
-1368
-00:42:34,366 --> 00:42:35,746
-beautifully back to our UI
-
-
-1369
-00:42:35,746 --> 00:42:36,596
-Document Browser View
-
-
-1370
-00:42:36,596 --> 00:42:37,056
-Controller.
-
-
-1371
-00:42:37,616 --> 00:42:40,156
-So that's pretty much it for the
-
-
-1372
-00:42:40,156 --> 00:42:40,846
-second demo.
-
-
-1373
-00:42:41,166 --> 00:42:42,246
-Let's take a look at what we've
-
-
-1374
-00:42:42,246 --> 00:42:42,926
-learned so far.
-
-
-1375
-00:42:47,616 --> 00:42:49,726
-First, we've taken a look at how
-
-
-1376
-00:42:49,726 --> 00:42:50,956
-easy it is to support
-
-
-1377
-00:42:50,956 --> 00:42:52,126
-open-in-place in your
-
-
-1378
-00:42:52,126 --> 00:42:52,756
-application.
-
-
-1379
-00:42:53,166 --> 00:42:54,326
-The UI Document Browser View
-
-
-1380
-00:42:54,326 --> 00:42:55,706
-Controller really does all the
-
-
-1381
-00:42:55,706 --> 00:42:56,716
-heavy lifting for you.
-
-
-1382
-00:42:58,516 --> 00:43:00,516
-Next, we've implemented a custom
-
-
-1383
-00:43:00,516 --> 00:43:02,436
-action that shows up only when
-
-
-1384
-00:43:02,436 --> 00:43:04,026
-you long press a document in the
-
-
-1385
-00:43:04,026 --> 00:43:04,916
-Document Browser View
-
-
-1386
-00:43:04,916 --> 00:43:05,416
-Controller.
-
-
-1387
-00:43:05,986 --> 00:43:09,366
-And last but not least, we've
-
-
-1388
-00:43:09,566 --> 00:43:11,016
-improved the user experience a
-
-
-1389
-00:43:11,016 --> 00:43:12,686
-lot when opening and closing
-
-
-1390
-00:43:12,686 --> 00:43:14,256
-documents by implementing a
-
-
-1391
-00:43:14,256 --> 00:43:15,196
-custom view controller
-
-
-1392
-00:43:15,196 --> 00:43:17,096
-transition using the UI Document
-
-
-1393
-00:43:17,096 --> 00:43:18,276
-Browser Transition Controller.
-
-
-1394
-00:43:18,276 --> 00:43:21,086
-Now that's pretty much it for
-
-
-1395
-00:43:21,086 --> 00:43:21,886
-the second demo.
-
-
-1396
-00:43:22,296 --> 00:43:24,346
-And to tell us what's new on the
-
-
-1397
-00:43:24,346 --> 00:43:25,736
-Quick Look side, I would like to
-
-
-1398
-00:43:25,736 --> 00:43:27,216
-hand it over to my colleague and
-
-
-1399
-00:43:27,216 --> 00:43:28,046
-friend Maxime.
-
-
-1400
-00:43:28,686 --> 00:43:28,906
-Maxime
-
-
-1401
-00:43:29,016 --> 00:43:29,083
-[ Applause ]
-
-
-1402
-00:43:29,083 --> 00:43:29,150
-.
-
-
-1403
-00:43:29,150 --> 00:43:32,666
->> Thank you, Raffael.
-
-
-1404
-00:43:34,296 --> 00:43:34,976
-Good afternoon, everyone.
-
-
-1405
-00:43:39,956 --> 00:43:41,346
-I'm sure you have all seen the
-
-
-1406
-00:43:41,346 --> 00:43:42,836
-great thumbnails of the files
-
-
-1407
-00:43:42,836 --> 00:43:46,286
-app and I'm sure you wish your
-
-
-1408
-00:43:46,286 --> 00:43:47,916
-own thumbnails could show up in
-
-
-1409
-00:43:47,996 --> 00:43:51,046
-any document browser based app.
-
-
-1410
-00:43:51,046 --> 00:43:52,376
-You are now going to see how
-
-
-1411
-00:43:52,486 --> 00:43:56,326
-this is possible thanks to the
-
-
-1412
-00:43:56,326 --> 00:43:57,526
-new thumbnail extension.
-
-
-1413
-00:43:57,526 --> 00:43:58,256
-Currently, [inaudible] particles
-
-
-1414
-00:43:58,296 --> 00:43:59,436
-app that we're building
-
-
-1415
-00:43:59,436 --> 00:44:01,336
-throughout this session, all we
-
-
-1416
-00:44:01,336 --> 00:44:02,606
-can are generic icons.
-
-
-1417
-00:44:03,796 --> 00:44:05,216
-We could highly improve the user
-
-
-1418
-00:44:05,216 --> 00:44:07,286
-experience by displaying instead
-
-
-1419
-00:44:07,706 --> 00:44:09,186
-representative thumbnails that
-
-
-1420
-00:44:09,386 --> 00:44:11,336
-indicate to the user the content
-
-
-1421
-00:44:11,496 --> 00:44:13,326
-of the files.
-
-
-1422
-00:44:13,486 --> 00:44:14,276
-So how can you provide
-
-
-1423
-00:44:14,316 --> 00:44:15,696
-thumbnails of files that have
-
-
-1424
-00:44:15,696 --> 00:44:16,826
-been downloaded and are
-
-
-1425
-00:44:16,826 --> 00:44:20,706
-available on the device?
-
-
-1426
-00:44:21,886 --> 00:44:23,226
-This was already possible before
-
-
-1427
-00:44:23,226 --> 00:44:25,096
-iOS 11 through UI Document.
-
-
-1428
-00:44:25,746 --> 00:44:28,536
-What you have to do is create a
-
-
-1429
-00:44:28,536 --> 00:44:30,006
-subclass of UI Document and
-
-
-1430
-00:44:30,216 --> 00:44:31,476
-return the thumbnail from your
-
-
-1431
-00:44:31,516 --> 00:44:32,686
-subclass.
-
-
-1432
-00:44:33,376 --> 00:44:35,016
-This only works for files
-
-
-1433
-00:44:35,056 --> 00:44:36,526
-created by your application and
-
-
-1434
-00:44:37,276 --> 00:44:38,366
-this has good performance
-
-
-1435
-00:44:38,366 --> 00:44:39,986
-because when iOS will ask your
-
-
-1436
-00:44:39,986 --> 00:44:42,576
-subclass of the thumbnails, the
-
-
-1437
-00:44:42,576 --> 00:44:43,876
-file will be already loaded.
-
-
-1438
-00:44:44,686 --> 00:44:45,906
-Let's take a quick look at the
-
-
-1439
-00:44:45,906 --> 00:44:46,076
-code.
-
-
-1440
-00:44:47,186 --> 00:44:50,126
-What we have to do is implement
-
-
-1441
-00:44:50,126 --> 00:44:52,356
-the file Attributes To Write to
-
-
-1442
-00:44:52,356 --> 00:44:55,306
-URL for save Operation method in
-
-
-1443
-00:44:55,306 --> 00:44:57,136
-your UI document subclass and
-
-
-1444
-00:44:57,136 --> 00:44:59,446
-return a dictionary of
-
-
-1445
-00:44:59,696 --> 00:45:03,186
-thumbnails from this function.
-
-
-1446
-00:45:03,286 --> 00:45:05,596
-So this is nice but this again
-
-
-1447
-00:45:05,596 --> 00:45:07,166
-works only for files created by
-
-
-1448
-00:45:07,166 --> 00:45:07,976
-your application.
-
-
-1449
-00:45:08,356 --> 00:45:09,266
-So how can you provide
-
-
-1450
-00:45:09,266 --> 00:45:10,926
-thumbnails for files created by
-
-
-1451
-00:45:10,926 --> 00:45:12,386
-[inaudible] applications and by
-
-
-1452
-00:45:12,386 --> 00:45:13,416
-other applications?
-
-
-1453
-00:45:13,986 --> 00:45:16,896
-For this we are providing you
-
-
-1454
-00:45:16,896 --> 00:45:18,196
-with a new thumbnail extension
-
-
-1455
-00:45:18,336 --> 00:45:19,286
-which is system wide.
-
-
-1456
-00:45:19,286 --> 00:45:23,616
-It means that this extension,
-
-
-1457
-00:45:24,476 --> 00:45:26,146
-means that any thumbnails
-
-
-1458
-00:45:26,146 --> 00:45:27,326
-generated by [inaudible]
-
-
-1459
-00:45:27,326 --> 00:45:30,866
-extension will be displayed in
-
-
-1460
-00:45:30,866 --> 00:45:32,556
-any document files based app
-
-
-1461
-00:45:32,556 --> 00:45:35,276
-that displays files that your
-
-
-1462
-00:45:35,276 --> 00:45:36,446
-extension can provide thumbnails
-
-
-1463
-00:45:36,446 --> 00:45:36,686
-for.
-
-
-1464
-00:45:38,546 --> 00:45:39,746
-This extension works with all
-
-
-1465
-00:45:39,746 --> 00:45:42,476
-cloud vendors and is part of the
-
-
-1466
-00:45:42,476 --> 00:45:43,186
-Quick Look framework.
-
-
-1467
-00:45:43,666 --> 00:45:46,186
-Let's see how this works.
-
-
-1468
-00:45:46,936 --> 00:45:48,856
-First, your document
-
-
-1469
-00:45:48,856 --> 00:45:51,096
-browser-based app is displaying
-
-
-1470
-00:45:51,096 --> 00:45:52,416
--- Let's say that the document
-
-
-1471
-00:45:52,416 --> 00:45:53,866
-browser based app is displaying
-
-
-1472
-00:45:53,866 --> 00:45:54,496
-a set of files.
-
-
-1473
-00:45:54,596 --> 00:45:56,116
-And if we want to display
-
-
-1474
-00:45:56,116 --> 00:45:57,236
-thumbnails for these files to
-
-
-1475
-00:45:57,236 --> 00:45:58,276
-have a good user experience,
-
-
-1476
-00:45:58,886 --> 00:46:00,396
-it's going to Quick Look for
-
-
-1477
-00:46:00,396 --> 00:46:00,816
-thumbnails.
-
-
-1478
-00:46:01,956 --> 00:46:03,966
-Quick Look, we notice that for
-
-
-1479
-00:46:04,046 --> 00:46:05,326
-some of these files, [inaudible]
-
-
-1480
-00:46:05,326 --> 00:46:06,836
-extension is the one that can
-
-
-1481
-00:46:07,066 --> 00:46:07,976
-provide thumbnails, so it's
-
-
-1482
-00:46:07,976 --> 00:46:10,076
-going to forward the request to
-
-
-1483
-00:46:10,076 --> 00:46:10,706
-your extension.
-
-
-1484
-00:46:11,306 --> 00:46:13,776
-Your extension will generate
-
-
-1485
-00:46:13,776 --> 00:46:16,676
-thumbnails, return them back to
-
-
-1486
-00:46:16,676 --> 00:46:18,816
-Quick Look which will finally
-
-
-1487
-00:46:18,816 --> 00:46:20,476
-forward them back to the app
-
-
-1488
-00:46:20,476 --> 00:46:21,886
-that asked for the thumbnails,
-
-
-1489
-00:46:22,606 --> 00:46:24,746
-which will be able to display
-
-
-1490
-00:46:25,336 --> 00:46:25,436
-them.
-
-
-1491
-00:46:25,646 --> 00:46:26,416
-Let's see how you can get
-
-
-1492
-00:46:26,456 --> 00:46:26,856
-started.
-
-
-1493
-00:46:27,466 --> 00:46:30,826
-This is actually pretty simple
-
-
-1494
-00:46:30,996 --> 00:46:32,776
-because we added a new template
-
-
-1495
-00:46:32,776 --> 00:46:34,496
-in Xcode that contains some
-
-
-1496
-00:46:34,496 --> 00:46:35,886
-sample code for you as well as
-
-
-1497
-00:46:35,886 --> 00:46:36,666
-an Info.plist.
-
-
-1498
-00:46:38,086 --> 00:46:39,906
-After creating your extension,
-
-
-1499
-00:46:40,356 --> 00:46:41,186
-you will want to head to the
-
-
-1500
-00:46:41,186 --> 00:46:42,586
-Info.plist file and edit it.
-
-
-1501
-00:46:42,586 --> 00:46:44,476
-So first thing you will have to
-
-
-1502
-00:46:44,476 --> 00:46:46,536
-do is add all the UTIs you can
-
-
-1503
-00:46:46,536 --> 00:46:47,386
-[inaudible] to QL Supported
-
-
-1504
-00:46:47,466 --> 00:46:48,796
-Content Types array.
-
-
-1505
-00:46:48,796 --> 00:46:51,786
-Please note that you can only
-
-
-1506
-00:46:51,786 --> 00:46:54,016
-provide thumbnails for UTIs you
-
-
-1507
-00:46:54,016 --> 00:46:56,856
-own and export and that iOS will
-
-
-1508
-00:46:56,856 --> 00:46:58,466
-check for UTI equality and not
-
-
-1509
-00:46:58,466 --> 00:46:59,306
-UTI conformance.
-
-
-1510
-00:46:59,396 --> 00:47:00,496
-So we'll have to make sure to
-
-
-1511
-00:47:01,016 --> 00:47:03,916
-list all the UTIs inside
-
-
-1512
-00:47:03,916 --> 00:47:06,156
-[inaudible] of the plist.
-
-
-1513
-00:47:06,316 --> 00:47:07,746
-Now how can you actually provide
-
-
-1514
-00:47:07,746 --> 00:47:08,826
-thumbnails for files?
-
-
-1515
-00:47:09,056 --> 00:47:09,716
-There are two ways.
-
-
-1516
-00:47:10,576 --> 00:47:11,456
-You can either draw the
-
-
-1517
-00:47:11,456 --> 00:47:13,486
-thumbnail or return the image
-
-
-1518
-00:47:13,486 --> 00:47:13,996
-file URL.
-
-
-1519
-00:47:14,486 --> 00:47:15,916
-So the most preferred one is of
-
-
-1520
-00:47:15,916 --> 00:47:17,376
-course the first one, drawing
-
-
-1521
-00:47:17,376 --> 00:47:18,536
-the thumbnail, because it's the
-
-
-1522
-00:47:18,536 --> 00:47:19,356
-most flexible one.
-
-
-1523
-00:47:19,926 --> 00:47:23,806
-Let's see how it works.
-
-
-1524
-00:47:24,016 --> 00:47:25,266
-So any method you will have to
-
-
-1525
-00:47:25,266 --> 00:47:27,286
-implement in this extension will
-
-
-1526
-00:47:27,286 --> 00:47:30,326
-receive a parameter of class QL
-
-
-1527
-00:47:30,326 --> 00:47:32,166
-File Thumbnail Request which
-
-
-1528
-00:47:32,166 --> 00:47:32,966
-contains three [inaudible].
-
-
-1529
-00:47:32,966 --> 00:47:36,346
-The file URL, the URL of the
-
-
-1530
-00:47:36,346 --> 00:47:38,296
-file we want to send a file, the
-
-
-1531
-00:47:38,296 --> 00:47:40,176
-maximum size of the thumbnail
-
-
-1532
-00:47:40,176 --> 00:47:41,816
-which is requested, as well as
-
-
-1533
-00:47:41,816 --> 00:47:42,236
-the scale.
-
-
-1534
-00:47:43,036 --> 00:47:46,456
-What do we have to return is a
-
-
-1535
-00:47:46,456 --> 00:47:48,066
-QL Thumbnail Reply object
-
-
-1536
-00:47:48,106 --> 00:47:50,566
-containing the Drawing Block and
-
-
-1537
-00:47:50,566 --> 00:47:51,206
-context Size.
-
-
-1538
-00:47:51,206 --> 00:47:53,146
-Let's see why you need to return
-
-
-1539
-00:47:53,146 --> 00:47:55,006
-the context Size.
-
-
-1540
-00:47:55,596 --> 00:47:57,856
-The maximum size parameter of
-
-
-1541
-00:47:57,856 --> 00:48:00,176
-the request indicates to you the
-
-
-1542
-00:48:00,176 --> 00:48:02,186
-maximum size of the CG Context
-
-
-1543
-00:48:02,186 --> 00:48:03,496
-you can draw your thumbnail
-
-
-1544
-00:48:03,496 --> 00:48:03,846
-into.
-
-
-1545
-00:48:05,316 --> 00:48:06,896
-Now let's say that we want to
-
-
-1546
-00:48:06,896 --> 00:48:09,106
-draw this image into our
-
-
-1547
-00:48:09,106 --> 00:48:09,526
-context.
-
-
-1548
-00:48:09,576 --> 00:48:11,016
-As you can see at full scale,
-
-
-1549
-00:48:11,016 --> 00:48:12,616
-it's bigger than the maximum
-
-
-1550
-00:48:12,666 --> 00:48:13,526
-size of the Context.
-
-
-1551
-00:48:13,636 --> 00:48:16,456
-So what we'll have to do is
-
-
-1552
-00:48:16,456 --> 00:48:19,046
-downscale it to make sure that
-
-
-1553
-00:48:19,046 --> 00:48:20,786
-it can fit within the CG
-
-
-1554
-00:48:20,786 --> 00:48:21,206
-Context.
-
-
-1555
-00:48:21,206 --> 00:48:23,146
-But if we load this image into
-
-
-1556
-00:48:23,146 --> 00:48:26,656
-the context we have on the left,
-
-
-1557
-00:48:26,976 --> 00:48:28,906
-we'll end up returning a
-
-
-1558
-00:48:28,906 --> 00:48:31,296
-thumbnail with unused
-
-
-1559
-00:48:31,526 --> 00:48:32,296
-[inaudible], meaning a floating
-
-
-1560
-00:48:32,346 --> 00:48:33,656
-thumbnail, which is not what we
-
-
-1561
-00:48:33,656 --> 00:48:33,786
-want.
-
-
-1562
-00:48:33,786 --> 00:48:36,316
-So we'll have to determine the
-
-
-1563
-00:48:36,316 --> 00:48:37,706
-correct context size in which we
-
-
-1564
-00:48:37,706 --> 00:48:40,136
-want to draw and pass it to the
-
-
-1565
-00:48:40,136 --> 00:48:41,046
-QL Thumbnail Reply.
-
-
-1566
-00:48:42,066 --> 00:48:44,136
-Thanks to that, our Drawing
-
-
-1567
-00:48:44,136 --> 00:48:46,696
-Block will receive CG Context
-
-
-1568
-00:48:47,826 --> 00:48:49,536
-correctly set with the requested
-
-
-1569
-00:48:49,616 --> 00:48:52,236
-size, the context Size, and
-
-
-1570
-00:48:52,236 --> 00:48:55,346
-we'll be able to draw the
-
-
-1571
-00:48:56,476 --> 00:48:56,716
-thumbnail [inaudible].
-
-
-1572
-00:48:57,076 --> 00:48:58,496
-Now if you don't want to draw a
-
-
-1573
-00:48:58,496 --> 00:49:00,436
-thumbnail and you prefer
-
-
-1574
-00:49:00,436 --> 00:49:03,006
-returning an image file URL
-
-
-1575
-00:49:03,006 --> 00:49:04,976
-instead, this is quite simple.
-
-
-1576
-00:49:05,306 --> 00:49:07,976
-You will receive the same QL
-
-
-1577
-00:49:07,976 --> 00:49:10,386
-File Thumbnail Request and all
-
-
-1578
-00:49:10,386 --> 00:49:11,886
-you have to return is a QL
-
-
-1579
-00:49:11,886 --> 00:49:12,996
-Thumbnail Reply containing an
-
-
-1580
-00:49:12,996 --> 00:49:13,796
-image file URL.
-
-
-1581
-00:49:14,346 --> 00:49:16,626
-In this case, Quick Look will be
-
-
-1582
-00:49:16,626 --> 00:49:18,606
-the one that will take care of
-
-
-1583
-00:49:18,606 --> 00:49:19,986
-downscaling or upscaling of
-
-
-1584
-00:49:19,986 --> 00:49:20,756
-thumbnail.
-
-
-1585
-00:49:20,896 --> 00:49:22,176
-It will keep the aspect ratio of
-
-
-1586
-00:49:22,176 --> 00:49:24,566
-your file so that the thumbnail
-
-
-1587
-00:49:24,566 --> 00:49:24,926
-will [inaudible].
-
-
-1588
-00:49:25,666 --> 00:49:29,296
-Let's now take a look at how
-
-
-1589
-00:49:29,296 --> 00:49:30,076
-this works in code.
-
-
-1590
-00:49:31,076 --> 00:49:32,026
-The only method you have to
-
-
-1591
-00:49:32,026 --> 00:49:34,476
-implement is called provide
-
-
-1592
-00:49:34,516 --> 00:49:37,156
-Thumbnail for request handler.
-
-
-1593
-00:49:37,226 --> 00:49:42,186
-The first thing we do in this
-
-
-1594
-00:49:42,186 --> 00:49:44,136
-example is extracting all the
-
-
-1595
-00:49:44,136 --> 00:49:45,186
-parameters of the QL File
-
-
-1596
-00:49:45,486 --> 00:49:46,936
-Thumbnail Request.
-
-
-1597
-00:49:47,396 --> 00:49:49,156
-This means the file URL, the
-
-
-1598
-00:49:49,156 --> 00:49:51,746
-maximum size, and the scale.
-
-
-1599
-00:49:52,726 --> 00:49:55,296
-Out of these parameters, we
-
-
-1600
-00:49:55,296 --> 00:49:57,106
-determine the context Size in
-
-
-1601
-00:49:57,106 --> 00:49:58,056
-which we want to do our
-
-
-1602
-00:49:58,056 --> 00:49:59,066
-thumbnail, just like in the
-
-
-1603
-00:49:59,066 --> 00:50:00,696
-example we saw before.
-
-
-1604
-00:50:02,986 --> 00:50:06,466
-After that, as we said, we need
-
-
-1605
-00:50:06,466 --> 00:50:08,266
-to provide a drawing Block.
-
-
-1606
-00:50:09,136 --> 00:50:11,236
-So here we create it and this is
-
-
-1607
-00:50:11,236 --> 00:50:12,276
-[inaudible] that we'll have to
-
-
-1608
-00:50:12,946 --> 00:50:13,786
-draw a thumbnail.
-
-
-1609
-00:50:14,236 --> 00:50:16,456
-So drawing Block has to return a
-
-
-1610
-00:50:16,456 --> 00:50:18,446
-success value to indicate Quick
-
-
-1611
-00:50:18,446 --> 00:50:20,816
-Look [inaudible] it was actually
-
-
-1612
-00:50:20,816 --> 00:50:21,776
-able to provide a thumbnail.
-
-
-1613
-00:50:23,226 --> 00:50:24,356
-Finally, we create the QL
-
-
-1614
-00:50:24,356 --> 00:50:25,466
-Thumbnail Reply out of the
-
-
-1615
-00:50:25,466 --> 00:50:27,466
-context Size and the drawing
-
-
-1616
-00:50:27,466 --> 00:50:31,176
-Block and we call the completion
-
-
-1617
-00:50:31,176 --> 00:50:34,506
-handler with our reply as well
-
-
-1618
-00:50:34,506 --> 00:50:34,676
-as [inaudible].
-
-
-1619
-00:50:35,366 --> 00:50:36,386
-Here we [inaudible] nil because
-
-
-1620
-00:50:36,386 --> 00:50:37,396
-we always want to provide a
-
-
-1621
-00:50:37,396 --> 00:50:39,556
-thumbnail but if for some reason
-
-
-1622
-00:50:39,746 --> 00:50:41,746
-you don't want to always return
-
-
-1623
-00:50:41,746 --> 00:50:42,466
-a thumbnail for all the
-
-
-1624
-00:50:42,466 --> 00:50:46,126
-requests, you will have to
-
-
-1625
-00:50:46,126 --> 00:50:46,676
-provide an [inaudible] to
-
-
-1626
-00:50:46,726 --> 00:50:48,256
-indicate quickly that you don't
-
-
-1627
-00:50:48,286 --> 00:50:51,706
-want to provide a thumbnail for
-
-
-1628
-00:50:51,736 --> 00:50:52,586
-this request.
-
-
-1629
-00:50:52,586 --> 00:50:54,486
-If you'd like to return an image
-
-
-1630
-00:50:54,546 --> 00:50:56,736
-file URL instead of drawing a
-
-
-1631
-00:50:56,796 --> 00:50:58,946
-thumbnail file request, you
-
-
-1632
-00:50:58,946 --> 00:51:00,276
-implement the same method but
-
-
-1633
-00:51:00,276 --> 00:51:02,006
-you call the completion handler
-
-
-1634
-00:51:02,006 --> 00:51:03,116
-with a QL Thumbnail Reply
-
-
-1635
-00:51:03,246 --> 00:51:05,146
-containing the image file URL.
-
-
-1636
-00:51:05,656 --> 00:51:07,116
-In this simple example, we just
-
-
-1637
-00:51:07,116 --> 00:51:09,016
-return an image from our main
-
-
-1638
-00:51:09,766 --> 00:51:09,916
-vendor.
-
-
-1639
-00:51:10,386 --> 00:51:14,456
-After creating your extension,
-
-
-1640
-00:51:14,826 --> 00:51:16,746
-you will of course want to see
-
-
-1641
-00:51:16,876 --> 00:51:18,026
-your beautiful new thumbnails.
-
-
-1642
-00:51:18,926 --> 00:51:20,746
-You can see them in any document
-
-
-1643
-00:51:20,746 --> 00:51:22,736
-browser based app that displays
-
-
-1644
-00:51:22,736 --> 00:51:23,626
-your files.
-
-
-1645
-00:51:23,846 --> 00:51:25,796
-So here, what we can see on the
-
-
-1646
-00:51:25,796 --> 00:51:27,546
-screenshot are thumbnails that
-
-
-1647
-00:51:27,546 --> 00:51:29,956
-come from the extension of
-
-
-1648
-00:51:30,116 --> 00:51:35,346
-Particles app but we are inside
-
-
-1649
-00:51:35,416 --> 00:51:37,056
-the Recents [inaudible] Files
-
-
-1650
-00:51:37,056 --> 00:51:40,626
-app but still we see them.
-
-
-1651
-00:51:42,146 --> 00:51:44,836
-You now know how to build great
-
-
-1652
-00:51:44,836 --> 00:51:46,286
-document-based applications
-
-
-1653
-00:51:46,286 --> 00:51:47,846
-thanks to the UI Document
-
-
-1654
-00:51:47,846 --> 00:51:49,666
-Browser View Controller and the
-
-
-1655
-00:51:49,666 --> 00:51:50,486
-thumbnail extension.
-
-
-1656
-00:51:51,166 --> 00:51:55,256
-So how can you improve the user
-
-
-1657
-00:51:55,346 --> 00:51:56,686
-experience even further?
-
-
-1658
-00:51:57,176 --> 00:51:58,056
-[Inaudible] UTIs, you will
-
-
-1659
-00:51:58,056 --> 00:51:59,086
-likely want to be able to
-
-
-1660
-00:51:59,086 --> 00:52:00,856
-provide previews that iOS can
-
-
-1661
-00:52:00,856 --> 00:52:04,086
-display in any application.
-
-
-1662
-00:52:04,326 --> 00:52:06,836
-We are now going to see how this
-
-
-1663
-00:52:06,866 --> 00:52:09,036
-is possible thanks to the new
-
-
-1664
-00:52:09,036 --> 00:52:14,486
-Quick Look Preview extension.
-
-
-1665
-00:52:15,116 --> 00:52:16,736
-By default, Quick Look
-
-
-1666
-00:52:17,116 --> 00:52:17,896
-[inaudible] set of file types.
-
-
-1667
-00:52:18,536 --> 00:52:19,586
-This means that Quick Look by
-
-
-1668
-00:52:19,586 --> 00:52:22,186
-default cannot preview your
-
-
-1669
-00:52:22,426 --> 00:52:23,196
-custom file types.
-
-
-1670
-00:52:24,096 --> 00:52:27,296
-But I have good news because
-
-
-1671
-00:52:27,496 --> 00:52:30,656
-starting with iOS 11, you will
-
-
-1672
-00:52:30,656 --> 00:52:31,796
-be able to provide previews to
-
-
-1673
-00:52:31,796 --> 00:52:34,866
-Quick Look and extend the
-
-
-1674
-00:52:34,866 --> 00:52:36,066
-capabilities of Quick Look
-
-
-1675
-00:52:36,866 --> 00:52:38,106
-because we are opening Quick
-
-
-1676
-00:52:38,106 --> 00:52:39,336
-Look to [inaudible].
-
-
-1677
-00:52:40,436 --> 00:52:42,306
-We are opening QuickLook
-
-
-1678
-00:52:42,916 --> 00:52:45,206
-[inaudible] so when you preview
-
-
-1679
-00:52:45,206 --> 00:52:47,416
-extension which is system-wide,
-
-
-1680
-00:52:47,796 --> 00:52:49,926
-this means that again any
-
-
-1681
-00:52:49,926 --> 00:52:51,206
-application that uses Quick Look
-
-
-1682
-00:52:51,206 --> 00:52:52,556
-will be able to display your
-
-
-1683
-00:52:52,556 --> 00:52:55,066
-previews and you can also decide
-
-
-1684
-00:52:55,066 --> 00:52:56,566
-to provide previews for
-
-
-1685
-00:52:56,566 --> 00:52:58,036
-Spotlight items [inaudible] by
-
-
-1686
-00:52:58,036 --> 00:52:58,736
-your application.
-
-
-1687
-00:52:59,246 --> 00:53:00,426
-These previews will be visible
-
-
-1688
-00:53:01,226 --> 00:53:03,156
-when peeking on Spotlight
-
-
-1689
-00:53:03,156 --> 00:53:03,223
-[inaudible].
-
-
-1690
-00:53:03,223 --> 00:53:04,486
-On the iPhone, that's
-
-
-1691
-00:53:04,486 --> 00:53:04,553
-[inaudible].
-
-
-1692
-00:53:04,553 --> 00:53:06,736
-Your previews will be
-
-
-1693
-00:53:07,076 --> 00:53:08,036
-[inaudible] in Quick Look.
-
-
-1694
-00:53:08,036 --> 00:53:11,186
-They will benefit from the full
-
-
-1695
-00:53:11,856 --> 00:53:14,976
-Quick Look experience and the
-
-
-1696
-00:53:14,976 --> 00:53:17,026
-previewed as part of QL Preview
-
-
-1697
-00:53:17,026 --> 00:53:19,036
-Controller just like any other
-
-
-1698
-00:53:19,076 --> 00:53:19,396
-[inaudible] preview.
-
-
-1699
-00:53:20,566 --> 00:53:21,626
-Quick Look will take care of
-
-
-1700
-00:53:21,626 --> 00:53:22,616
-displaying a loading spinner
-
-
-1701
-00:53:22,616 --> 00:53:24,336
-while waiting for your extension
-
-
-1702
-00:53:24,336 --> 00:53:25,146
-to return the preview.
-
-
-1703
-00:53:25,776 --> 00:53:26,776
-Let's see the flow.
-
-
-1704
-00:53:27,386 --> 00:53:29,826
-First, Quick Look notices that
-
-
-1705
-00:53:29,826 --> 00:53:33,596
-it can't preview file by itself
-
-
-1706
-00:53:33,596 --> 00:53:34,746
-but will ask for extension for
-
-
-1707
-00:53:34,746 --> 00:53:35,126
-preview.
-
-
-1708
-00:53:35,956 --> 00:53:37,326
-Your extension will take some
-
-
-1709
-00:53:37,326 --> 00:53:38,366
-time to generate a preview.
-
-
-1710
-00:53:39,786 --> 00:53:41,176
-Meanwhile, Quick Look displays a
-
-
-1711
-00:53:41,176 --> 00:53:41,756
-loading spinner.
-
-
-1712
-00:53:42,446 --> 00:53:43,526
-You don't have to take care of
-
-
-1713
-00:53:43,526 --> 00:53:43,716
-this.
-
-
-1714
-00:53:44,866 --> 00:53:47,386
-And when your extension is ready
-
-
-1715
-00:53:47,386 --> 00:53:48,626
-to display the preview, you will
-
-
-1716
-00:53:48,626 --> 00:53:49,586
-have to call the completion
-
-
-1717
-00:53:49,586 --> 00:53:51,286
-handler in your code to notify
-
-
-1718
-00:53:51,286 --> 00:53:53,706
-Quick Look that it can actually
-
-
-1719
-00:53:53,706 --> 00:53:54,836
-display your preview.
-
-
-1720
-00:53:55,396 --> 00:53:57,196
-Just like [inaudible] extension,
-
-
-1721
-00:53:57,196 --> 00:53:59,166
-you can get started pretty
-
-
-1722
-00:53:59,166 --> 00:54:01,046
-easily because, again, we have a
-
-
-1723
-00:54:01,046 --> 00:54:02,336
-new template ready for you that
-
-
-1724
-00:54:02,336 --> 00:54:04,036
-contains some sample code, a
-
-
-1725
-00:54:04,036 --> 00:54:05,826
-storybook, and an Info.plist.
-
-
-1726
-00:54:08,216 --> 00:54:09,516
-After creating your extension,
-
-
-1727
-00:54:09,516 --> 00:54:11,286
-again you will want to head to
-
-
-1728
-00:54:11,286 --> 00:54:13,106
-this Info.plist and edit it, add
-
-
-1729
-00:54:13,696 --> 00:54:14,936
-edit it, add all the UTIs
-
-
-1730
-00:54:14,936 --> 00:54:17,486
-[inaudible], sorry, all the UTIs
-
-
-1731
-00:54:17,486 --> 00:54:18,786
-[inaudible] to the QL Supported
-
-
-1732
-00:54:18,786 --> 00:54:19,366
-Content Types array.
-
-
-1733
-00:54:19,366 --> 00:54:22,736
-Just like for the thumbnail
-
-
-1734
-00:54:22,736 --> 00:54:24,376
-extension that you can only
-
-
-1735
-00:54:24,376 --> 00:54:25,936
-provide previews for images you
-
-
-1736
-00:54:25,936 --> 00:54:28,936
-own and export and that again,
-
-
-1737
-00:54:28,936 --> 00:54:30,466
-iOS will check for UTI equality
-
-
-1738
-00:54:30,466 --> 00:54:31,526
-and not UTI conformance.
-
-
-1739
-00:54:32,716 --> 00:54:35,816
-If you wish to provide previews
-
-
-1740
-00:54:35,946 --> 00:54:37,756
-for Spotlight items indicated by
-
-
-1741
-00:54:37,756 --> 00:54:39,136
-your application, you will have
-
-
-1742
-00:54:39,186 --> 00:54:40,206
-to set the QL Supports
-
-
-1743
-00:54:40,206 --> 00:54:42,206
-Searchable Items key to yes.
-
-
-1744
-00:54:42,376 --> 00:54:45,836
-Now let's take a quick look at
-
-
-1745
-00:54:46,656 --> 00:54:48,046
-how we can [inaudible].
-
-
-1746
-00:54:48,316 --> 00:54:49,346
-If you want to provide previews
-
-
-1747
-00:54:49,346 --> 00:54:51,416
-for file, you will have to
-
-
-1748
-00:54:51,516 --> 00:54:53,656
-implement the prepare Preview of
-
-
-1749
-00:54:53,706 --> 00:54:55,806
-File at URL completion handle
-
-
-1750
-00:54:55,806 --> 00:54:57,416
-[inaudible].
-
-
-1751
-00:54:57,416 --> 00:54:59,366
-And all you have to do here is
-
-
-1752
-00:54:59,366 --> 00:55:00,596
-load the file and call the
-
-
-1753
-00:55:00,596 --> 00:55:02,566
-completion handler so that Quick
-
-
-1754
-00:55:02,596 --> 00:55:03,956
-Look displays your preview.
-
-
-1755
-00:55:04,996 --> 00:55:05,986
-You can call the completion
-
-
-1756
-00:55:05,986 --> 00:55:07,546
-handler asynchronously which is
-
-
-1757
-00:55:07,726 --> 00:55:09,566
-the case in this example.
-
-
-1758
-00:55:10,396 --> 00:55:12,076
-If you wish to provide Spotlight
-
-
-1759
-00:55:12,076 --> 00:55:14,196
-previews, you will have to
-
-
-1760
-00:55:14,196 --> 00:55:15,866
-implement the prepare Preview of
-
-
-1761
-00:55:15,866 --> 00:55:17,806
-Searchable Items identifier
-
-
-1762
-00:55:17,866 --> 00:55:19,486
-query String, completion Handler
-
-
-1763
-00:55:19,486 --> 00:55:19,746
-method.
-
-
-1764
-00:55:20,546 --> 00:55:22,306
-The query String parameter can
-
-
-1765
-00:55:22,306 --> 00:55:24,236
-be used to highlight any part of
-
-
-1766
-00:55:24,236 --> 00:55:25,296
-the preview for the user.
-
-
-1767
-00:55:25,886 --> 00:55:27,706
-This is the query String that
-
-
-1768
-00:55:27,706 --> 00:55:28,446
-the user [inaudible] in
-
-
-1769
-00:55:28,446 --> 00:55:30,396
-Spotlight before interacting
-
-
-1770
-00:55:30,506 --> 00:55:32,666
-[inaudible] that you index with
-
-
-1771
-00:55:32,666 --> 00:55:33,846
-your application.
-
-
-1772
-00:55:35,246 --> 00:55:39,976
-Just like with file example, all
-
-
-1773
-00:55:39,976 --> 00:55:41,756
-you have to do is prepare your
-
-
-1774
-00:55:41,756 --> 00:55:42,636
-controller and call the
-
-
-1775
-00:55:42,636 --> 00:55:43,336
-completion handler.
-
-
-1776
-00:55:44,076 --> 00:55:48,356
-You can test your preview in any
-
-
-1777
-00:55:48,356 --> 00:55:49,756
-application that uses Quick
-
-
-1778
-00:55:49,756 --> 00:55:51,966
-Look, for example mail or
-
-
-1779
-00:55:51,966 --> 00:55:55,016
-messages or in Spotlight if
-
-
-1780
-00:55:55,626 --> 00:55:56,376
-[inaudible] which is the case in
-
-
-1781
-00:55:56,376 --> 00:55:57,286
-this example.
-
-
-1782
-00:55:57,536 --> 00:55:58,426
-We are here peeking on the
-
-
-1783
-00:55:58,426 --> 00:55:59,806
-result index by the particles
-
-
-1784
-00:55:59,806 --> 00:55:59,976
-app.
-
-
-1785
-00:56:05,706 --> 00:56:07,046
-I'd like to finish this
-
-
-1786
-00:56:07,046 --> 00:56:08,186
-extension tour with a few
-
-
-1787
-00:56:08,186 --> 00:56:09,306
-performance recommendations.
-
-
-1788
-00:56:09,946 --> 00:56:11,276
-When dealing with extension, you
-
-
-1789
-00:56:11,276 --> 00:56:12,296
-always have to make sure to be
-
-
-1790
-00:56:12,296 --> 00:56:14,086
-fast and in this case it's very
-
-
-1791
-00:56:14,086 --> 00:56:14,576
-important.
-
-
-1792
-00:56:14,576 --> 00:56:16,836
-You will have to load the
-
-
-1793
-00:56:16,836 --> 00:56:18,016
-thumbnail quickly especially
-
-
-1794
-00:56:18,016 --> 00:56:21,446
-think of a case for instance of
-
-
-1795
-00:56:21,446 --> 00:56:25,836
-the user calling in the document
-
-
-1796
-00:56:25,836 --> 00:56:27,686
-browser you want your thumbnails
-
-
-1797
-00:56:27,686 --> 00:56:29,096
-to be there as fast as possible
-
-
-1798
-00:56:29,096 --> 00:56:29,926
-for a good user experience.
-
-
-1799
-00:56:31,026 --> 00:56:32,736
-For the Quick Look previews, you
-
-
-1800
-00:56:32,736 --> 00:56:34,646
-will also have to make sure to
-
-
-1801
-00:56:34,646 --> 00:56:36,256
-load your previews fast because
-
-
-1802
-00:56:36,256 --> 00:56:37,456
-Quick Look is expected to be
-
-
-1803
-00:56:37,796 --> 00:56:38,036
-quick.
-
-
-1804
-00:56:39,846 --> 00:56:42,036
-Also not that you shouldn't have
-
-
-1805
-00:56:42,036 --> 00:56:43,626
-any background job after calling
-
-
-1806
-00:56:43,626 --> 00:56:44,446
-the completion handler.
-
-
-1807
-00:56:45,146 --> 00:56:47,936
-Keep in mind that with extension
-
-
-1808
-00:56:47,936 --> 00:56:51,216
-memory is very limited, so avoid
-
-
-1809
-00:56:51,216 --> 00:56:52,186
-linking against two large
-
-
-1810
-00:56:52,186 --> 00:56:54,256
-libraries and check for leaks.
-
-
-1811
-00:56:55,656 --> 00:56:56,886
-Let's now recap quickly
-
-
-1812
-00:56:56,886 --> 00:56:57,996
-everything we talked about
-
-
-1813
-00:56:57,996 --> 00:56:58,346
-today.
-
-
-1814
-00:56:59,776 --> 00:57:02,576
-First, we talked about some
-
-
-1815
-00:57:02,576 --> 00:57:04,606
-document browser APIs.
-
-
-1816
-00:57:04,606 --> 00:57:06,796
-We mainly talked about UI
-
-
-1817
-00:57:06,796 --> 00:57:08,246
-Document Browser View Controller
-
-
-1818
-00:57:08,246 --> 00:57:09,466
-and how you can make use of it
-
-
-1819
-00:57:10,486 --> 00:57:12,826
-to create a great document-based
-
-
-1820
-00:57:12,826 --> 00:57:13,406
-application.
-
-
-1821
-00:57:13,976 --> 00:57:15,646
-You learned about its basic and
-
-
-1822
-00:57:15,646 --> 00:57:16,296
-advanced features.
-
-
-1823
-00:57:17,526 --> 00:57:19,216
-We then saw how you could make
-
-
-1824
-00:57:19,866 --> 00:57:21,556
-your custom file tags
-
-
-1825
-00:57:21,626 --> 00:57:24,306
-[inaudible] on iOS 11 thanks to
-
-
-1826
-00:57:24,306 --> 00:57:26,016
-the new thumbnail and Quick Look
-
-
-1827
-00:57:26,016 --> 00:57:27,016
-preview extensions.
-
-
-1828
-00:57:27,016 --> 00:57:30,696
-Now let's take another look at
-
-
-1829
-00:57:30,696 --> 00:57:33,376
-the requests we have received
-
-
-1830
-00:57:33,596 --> 00:57:34,616
-from you in the past two years
-
-
-1831
-00:57:34,616 --> 00:57:36,446
-and see how we addressed them,
-
-
-1832
-00:57:37,106 --> 00:57:38,346
-so everything we talked about
-
-
-1833
-00:57:38,346 --> 00:57:38,576
-today.
-
-
-1834
-00:57:40,716 --> 00:57:41,666
-UI Document Browser View
-
-
-1835
-00:57:41,666 --> 00:57:43,426
-Controller provides you with a
-
-
-1836
-00:57:43,426 --> 00:57:44,786
-unified UI for file browsing.
-
-
-1837
-00:57:46,056 --> 00:57:48,466
-The new local storage and other
-
-
-1838
-00:57:48,466 --> 00:57:50,176
-cloud providers give you access
-
-
-1839
-00:57:50,216 --> 00:57:52,866
-to files from other applications
-
-
-1840
-00:57:52,866 --> 00:57:53,236
-in [inaudible].
-
-
-1841
-00:57:55,856 --> 00:57:57,296
-The new file provider extension
-
-
-1842
-00:57:57,406 --> 00:57:58,526
-allows you to have seamless
-
-
-1843
-00:57:58,526 --> 00:58:01,986
-access to other Cloud Providers.
-
-
-1844
-00:58:01,986 --> 00:58:03,376
-And iOS now has a deep
-
-
-1845
-00:58:03,376 --> 00:58:06,036
-integration of custom file
-
-
-1846
-00:58:07,876 --> 00:58:08,016
-types.
-
-
-1847
-00:58:08,206 --> 00:58:09,986
-As usual, if you wish to have
-
-
-1848
-00:58:09,986 --> 00:58:11,046
-more information about our
-
-
-1849
-00:58:11,076 --> 00:58:13,316
-session, you can visit Apple's
-
-
-1850
-00:58:13,316 --> 00:58:14,156
-website.
-
-
-1851
-00:58:15,466 --> 00:58:16,736
-We invite you to check out these
-
-
-1852
-00:58:16,736 --> 00:58:18,466
-related sessions, the Drag and
-
-
-1853
-00:58:18,466 --> 00:58:21,346
-Drop session that was earlier
-
-
-1854
-00:58:21,346 --> 00:58:23,326
-this week and the upcoming
-
-
-1855
-00:58:23,696 --> 00:58:24,926
-What's new in Core Spotlight for
-
-
-1856
-00:58:24,926 --> 00:58:26,816
-iOS and macOS and File Provider
-
-
-1857
-00:58:26,816 --> 00:58:27,736
-Enhancement sessions.
-
-
-1858
-00:58:27,736 --> 00:58:30,516
-You can also check out previews
-
-
-1859
-00:58:30,816 --> 00:58:33,276
-Building Document-Based Apps
-
-
-1860
-00:58:33,276 --> 00:58:34,386
-from 2017.
-
-
-1861
-00:58:35,696 --> 00:58:36,606
-Thank you all for your
-
-
-1862
-00:58:36,696 --> 00:58:39,016
-attention.
-
-
-1863
-00:58:39,016 --> 00:58:39,456
-[Inaudible].
-
-
-1864
-00:58:39,456 --> 00:58:39,686
-Bye.
-
-
-1865
-00:58:40,516 --> 00:58:43,500
-[ Applause ]
+00:58:39,319 --> 00:58:40,254
+<c.magenta>再见</c>
 

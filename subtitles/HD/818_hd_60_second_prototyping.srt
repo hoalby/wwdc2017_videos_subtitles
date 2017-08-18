@@ -1,1874 +1,1000 @@
 1
-00:00:07,516 --> 00:00:20,996
-[ Background Conversations ]
+00:00:17,551 --> 00:00:21,021
+<c.magenta>（60秒制作样本）</c>
 
 
 2
-00:00:21,496 --> 00:00:23,216
->> I'm sure many of us here have
+00:00:21,488 --> 00:00:24,925
+<c.magenta>我相信很多人</c>
+<c.magenta>都有过这样的经历</c>
 
 
 3
-00:00:23,216 --> 00:00:24,086
-found ourselves in this
+00:00:26,226 --> 00:00:30,063
+<c.magenta>泡在浴缸里的时候</c>
+<c.magenta>你突然想到应用的好点子</c>
 
 
 4
-00:00:24,086 --> 00:00:24,736
-situation.
+00:00:30,998 --> 00:00:32,698
+<c.magenta>或者没那么轻松</c>
 
 
 5
-00:00:26,216 --> 00:00:27,996
-You're in the bathtub, and you
+00:00:33,400 --> 00:00:36,637
+<c.magenta>你收到了短信</c>
+<c.magenta>公司的重要人物</c>
 
 
 6
-00:00:27,996 --> 00:00:29,396
-come up with an amazing idea for
+00:00:36,703 --> 00:00:40,007
+<c.magenta>让你想出一个</c>
+<c.magenta>有关新应用的好点子</c>
 
 
 7
-00:00:29,396 --> 00:00:29,816
-your app.
+00:00:40,407 --> 00:00:42,209
+<c.magenta>看上去是个计时器</c>
 
 
 8
-00:00:31,066 --> 00:00:32,146
-Or perhaps a little bit less
+00:00:43,076 --> 00:00:46,947
+<c.magenta>这种情况下</c>
+<c.magenta>你会想“没时间了”</c>
 
 
 9
-00:00:32,146 --> 00:00:34,356
-relaxing, you get a text message
+00:00:47,014 --> 00:00:50,751
+<c.magenta>你要钻进代码写点Swift程序</c>
 
 
 10
-00:00:34,356 --> 00:00:35,676
-from someone very important in
+00:00:50,817 --> 00:00:53,287
+<c.magenta>但问题是一旦开始写代码</c>
 
 
 11
-00:00:35,676 --> 00:00:37,256
-your organization asking you to
+00:00:53,353 --> 00:00:55,689
+<c.magenta>你就要深入到应用的运作中去</c>
 
 
 12
-00:00:37,256 --> 00:00:39,346
-come up with amazing ideas for a
+00:00:55,756 --> 00:00:59,693
+<c.magenta>这就没有办法去研究其他的可能性</c>
 
 
 13
-00:00:39,346 --> 00:00:39,706
-new app.
+00:01:00,294 --> 00:01:04,298
+<c.magenta>你也可能用Sketch</c>
+<c.magenta>画一些具体的图</c>
 
 
 14
-00:00:39,806 --> 00:00:41,096
-Looks like we are going to be
+00:01:04,565 --> 00:01:08,402
+<c.magenta>问题又来了</c>
+<c.magenta>这些图不是交互的</c>
 
 
 15
-00:00:41,096 --> 00:00:42,046
-looking at Timers today.
+00:01:08,468 --> 00:01:09,603
+<c.magenta>我们是要做应用</c>
 
 
 16
-00:00:43,086 --> 00:00:44,676
-So in those situations, you
+00:01:09,670 --> 00:01:12,306
+<c.magenta>得像一个真的应用才行</c>
 
 
 17
-00:00:44,676 --> 00:00:46,126
-might tell yourself, "I don't
+00:01:13,273 --> 00:01:18,245
+<c.magenta>假设老板要一个计时器</c>
+<c.magenta>我就会这样做</c>
 
 
 18
-00:00:46,126 --> 00:00:46,586
-have time."
+00:01:18,846 --> 00:01:20,681
+<c.magenta>这是个很基本的概念</c>
 
 
 19
-00:00:47,006 --> 00:00:48,296
-You might want to dive into X
+00:01:20,747 --> 00:01:22,883
+<c.magenta>把指针调到5秒</c>
 
 
 20
-00:00:48,296 --> 00:00:49,786
-code, start typing out some
+00:01:22,950 --> 00:01:23,984
+<c.magenta>10秒好了</c>
 
 
 21
-00:00:49,786 --> 00:00:51,576
-Swift, but the problem with that
+00:01:24,051 --> 00:01:26,587
+<c.magenta>按下开始键</c>
+<c.magenta>它就开始倒计时了</c>
 
 
 22
-00:00:51,576 --> 00:00:52,756
-is that once you get committed
+00:01:27,254 --> 00:01:31,558
+<c.magenta>没什么特别的</c>
+<c.magenta>就是我对计时器的概念</c>
 
 
 23
-00:00:52,756 --> 00:00:54,576
-to code, you're really deep into
+00:01:32,359 --> 00:01:35,395
+<c.magenta>从演讲的主题上 你可能猜到了</c>
 
 
 24
-00:00:54,576 --> 00:00:55,806
-how your app is going to work,
+00:01:35,462 --> 00:01:36,897
+<c.magenta>这不是个真实的应用</c>
 
 
 25
-00:00:55,806 --> 00:00:57,326
-and you don't get much leeway to
+00:01:37,231 --> 00:01:38,165
+<c.magenta>这是个样本</c>
 
 
 26
-00:00:57,326 --> 00:00:58,856
-explore all the alternatives
+00:01:39,333 --> 00:01:41,969
+<c.magenta>我只用60秒就完成了</c>
 
 
 27
-00:00:58,856 --> 00:00:59,366
-that you could.
+00:01:42,703 --> 00:01:45,806
+<c.magenta>这比你早上刷牙还快…</c>
 
 
 28
-00:01:00,286 --> 00:01:01,376
-Or you might want to dive into
+00:01:46,240 --> 00:01:47,074
+<c.magenta>希望是</c>
 
 
 29
-00:01:01,376 --> 00:01:02,926
-Sketch, and draw some really
+00:01:49,543 --> 00:01:51,745
+<c.magenta>那么为什么要建立样本？</c>
 
 
 30
-00:01:02,926 --> 00:01:03,856
-detailed visuals.
+00:01:51,879 --> 00:01:54,314
+<c.magenta>样本可以用来测试你的想法</c>
 
 
 31
-00:01:04,556 --> 00:01:05,986
-But again, the problem with that
+00:01:54,381 --> 00:01:56,416
+<c.magenta>有些东西看上去很完美</c>
 
 
 32
-00:01:06,356 --> 00:01:07,606
-is that visuals are not
+00:01:56,483 --> 00:01:59,019
+<c.magenta>但一经试用就会出问题</c>
 
 
 33
-00:01:07,606 --> 00:01:08,236
-interactive.
+00:01:59,419 --> 00:02:01,889
+<c.magenta>有些东西刚开始看着不太好</c>
 
 
 34
-00:01:08,496 --> 00:01:09,486
-We're building apps.
+00:02:01,955 --> 00:02:04,591
+<c.magenta>但也许有很大的潜在价值</c>
 
 
 35
-00:01:09,646 --> 00:01:11,616
-We want to try it as if it were
+00:02:05,058 --> 00:02:07,661
+<c.magenta>这种方法省时省钱能够确保</c>
 
 
 36
-00:01:11,616 --> 00:01:12,056
-a real app.
+00:02:07,728 --> 00:02:11,698
+<c.magenta>你在创造的时候</c>
+<c.magenta>所写的代码 设置的属性</c>
 
 
 37
-00:01:12,946 --> 00:01:14,776
-So let me show you something I
+00:02:11,765 --> 00:02:13,233
+<c.magenta>都是正确的</c>
 
 
 38
-00:01:14,776 --> 00:01:16,896
-may build after getting my CEO
+00:02:14,668 --> 00:02:16,603
+<c.magenta>样本也能激发新灵感</c>
 
 
 39
-00:01:16,896 --> 00:01:17,666
-asking for a Timer.
+00:02:16,670 --> 00:02:20,140
+<c.magenta>创建样本让人们去观察它</c>
 
 
 40
-00:01:18,846 --> 00:01:20,556
-This is a very basic concept.
+00:02:20,207 --> 00:02:23,477
+<c.magenta>会带来新的想法</c>
+<c.magenta>让你的产品更完善</c>
 
 
 41
-00:01:20,776 --> 00:01:22,366
-I tap to add five seconds to the
+00:02:24,144 --> 00:02:25,479
+<c.magenta>设计者都爱流程图</c>
 
 
 42
-00:01:22,366 --> 00:01:22,796
-timer.
+00:02:25,546 --> 00:02:29,016
+<c.magenta>这个流程图代表样本创建的过程</c>
 
 
 43
-00:01:22,876 --> 00:01:23,626
-Let's make it 10.
+00:02:29,149 --> 00:02:33,787
+<c.magenta>创建样本 给他人观察</c>
+<c.magenta>从反馈中学习</c>
 
 
 44
-00:01:23,626 --> 00:01:25,546
-I press Start, and it starts
+00:02:33,854 --> 00:02:36,924
+<c.magenta>这个流程无限循环</c>
 
 
 45
-00:01:25,546 --> 00:01:26,546
-counting down to zero.
+00:02:36,990 --> 00:02:39,226
+<c.magenta>直到我们找到正确的答案</c>
 
 
 46
-00:01:27,286 --> 00:01:29,226
-Nothing fancy here, just an idea
+00:02:40,160 --> 00:02:42,329
+<c.magenta>那么就来建一个样本吧</c>
 
 
 47
-00:01:29,226 --> 00:01:30,716
-I had about how the Timer app
+00:02:42,396 --> 00:02:43,764
+<c.magenta>谁可以建样本？</c>
 
 
 48
-00:01:30,716 --> 00:01:31,126
-might look.
+00:02:43,931 --> 00:02:44,765
+<c.magenta>所有人</c>
 
 
 49
-00:01:32,346 --> 00:01:33,456
-Now, as you might have guessed,
+00:02:45,132 --> 00:02:48,702
+<c.magenta>它只需要用日常所用的工具</c>
 
 
 50
-00:01:33,456 --> 00:01:34,686
-from the title of this talk,
+00:02:48,769 --> 00:02:50,537
+<c.magenta>如果你是开发者</c>
 
 
 51
-00:01:35,496 --> 00:01:36,696
-this is not a real app.
+00:02:50,604 --> 00:02:55,108
+<c.magenta>你可以用Swift的XCode</c>
+<c.magenta>或HTML CSS和JavaScript</c>
 
 
 52
-00:01:37,286 --> 00:01:39,736
-It's a prototype, and it only
+00:02:55,676 --> 00:02:59,947
+<c.magenta>如果你是设计者 你可以用</c>
+<c.magenta>Sketch或Illustrator</c>
 
 
 53
-00:01:39,736 --> 00:01:41,676
-took me 60 seconds to build.
+00:03:00,314 --> 00:03:04,117
+<c.magenta>即使不会写代码也不会设计</c>
+<c.magenta>你也可以建样本</c>
 
 
 54
-00:01:42,666 --> 00:01:44,416
-That is less time than it took
+00:03:04,451 --> 00:03:07,654
+<c.magenta>可以用Keynote</c>
+<c.magenta>或者擅长的文本处理器</c>
 
 
 55
-00:01:44,416 --> 00:01:45,396
-you to brush your teeth this
+00:03:08,655 --> 00:03:10,190
+<c.magenta>只要你能颠覆它们</c>
 
 
 56
-00:01:45,396 --> 00:01:46,656
-morning...hopefully [laughter].
+00:03:10,257 --> 00:03:14,127
+<c.magenta>就是说要赋予</c>
+<c.magenta>这些日常工具新的用途</c>
 
 
 57
-00:01:49,556 --> 00:01:51,496
-So why do we build prototypes?
+00:03:14,494 --> 00:03:18,632
+<c.magenta>只要它能显示图像</c>
+<c.magenta>能与用户互动</c>
 
 
 58
-00:01:51,866 --> 00:01:53,656
-We build prototypes to test
+00:03:18,699 --> 00:03:20,267
+<c.magenta>就能用来建样本</c>
 
 
 59
-00:01:53,656 --> 00:01:54,236
-ideas.
+00:03:21,702 --> 00:03:24,271
+<c.magenta>我下面来演示</c>
+<c.magenta>如何把刚刚的样本</c>
 
 
 60
-00:01:54,396 --> 00:01:55,686
-Some things that seem really
+00:03:24,338 --> 00:03:26,940
+<c.magenta>在60秒内</c>
+<c.magenta>用Keynote完成</c>
 
 
 61
-00:01:55,686 --> 00:01:57,446
-great might turn out to be not
+00:03:27,007 --> 00:03:28,942
+<c.magenta>一会儿要看的视频速度有点快</c>
 
 
 62
-00:01:57,446 --> 00:01:58,816
-so great once you try it.
+00:03:29,009 --> 00:03:32,746
+<c.magenta>因为我经常用Keynote</c>
+<c.magenta>我会帮助你们理解</c>
 
 
 63
-00:01:58,816 --> 00:02:00,796
-And some things that don't
+00:03:33,714 --> 00:03:36,216
+<c.magenta>首先选择</c>
+<c.magenta>iPhone尺寸的文档</c>
 
 
 64
-00:02:00,796 --> 00:02:02,116
-appear very good at first might
+00:03:36,517 --> 00:03:38,685
+<c.magenta>然后给计时器画一个表盘</c>
 
 
 65
-00:02:02,116 --> 00:02:03,486
-actually have some very valuable
+00:03:39,119 --> 00:03:42,456
+<c.magenta>你会发现我用的设计素材没什么特点</c>
 
 
 66
-00:02:03,486 --> 00:02:04,246
-insights to them.
+00:03:42,523 --> 00:03:44,525
+<c.magenta>都是基本的Keynote图形</c>
 
 
 67
-00:02:05,126 --> 00:02:06,466
-This is about saving time and
+00:03:44,758 --> 00:03:46,793
+<c.magenta>现在设计开始键</c>
 
 
 68
-00:02:06,466 --> 00:02:07,926
-money by making sure that when
+00:03:47,194 --> 00:03:49,196
+<c.magenta>还是用基本的Keynote图形</c>
 
 
 69
-00:02:07,926 --> 00:02:09,675
-you commit to building something
+00:03:49,429 --> 00:03:50,464
+<c.magenta>用绿色吧</c>
 
 
 70
-00:02:09,675 --> 00:02:10,826
-by writing code, designing
+00:03:50,931 --> 00:03:52,266
+<c.magenta>写上“开始”</c>
 
 
 71
-00:02:10,826 --> 00:02:12,306
-assets, you're building the
+00:03:52,966 --> 00:03:54,601
+<c.magenta>现在添加指针</c>
 
 
 72
-00:02:12,306 --> 00:02:13,000
-right thing.
+00:03:55,769 --> 00:03:58,939
+<c.magenta>Keynote有个特点</c>
+<c.magenta>就是当你旋转物体</c>
 
 
 73
-00:02:14,656 --> 00:02:15,826
-We also make prototypes to get
+00:03:59,006 --> 00:04:00,140
+<c.magenta>它永远绕中心旋转</c>
 
 
 74
-00:02:15,826 --> 00:02:16,596
-new ideas.
+00:04:00,207 --> 00:04:03,710
+<c.magenta>把指针复制粘贴</c>
+<c.magenta>放到下面</c>
 
 
 75
-00:02:16,686 --> 00:02:18,856
-The act of making prototypes and
+00:04:03,777 --> 00:04:05,145
+<c.magenta>并让它隐形</c>
 
 
 76
-00:02:18,856 --> 00:02:20,506
-showing them to people will
+00:04:05,379 --> 00:04:08,081
+<c.magenta>然后合并就可以转动了</c>
 
 
 77
-00:02:20,506 --> 00:02:21,666
-bring new insights that will
+00:04:08,148 --> 00:04:10,484
+<c.magenta>跟计时器上的指针一模一样</c>
 
 
 78
-00:02:21,666 --> 00:02:22,646
-help make your product even
+00:04:10,551 --> 00:04:14,154
+<c.magenta>设置5秒</c>
+<c.magenta>为第一次计时</c>
 
 
 79
-00:02:22,646 --> 00:02:22,946
-better.
+00:04:14,221 --> 00:04:16,623
+<c.magenta>不要慢速开始 要跟真表一样</c>
 
 
 80
-00:02:24,156 --> 00:02:26,166
-Designers love diagrams, so here
+00:04:16,690 --> 00:04:19,358
+<c.magenta>十秒的时候</c>
+<c.magenta>做另一个动画标记</c>
 
 
 81
-00:02:26,166 --> 00:02:27,056
-is a diagram of what the
+00:04:19,726 --> 00:04:23,564
+<c.magenta>最后一个动画是计时器的指针</c>
 
 
 82
-00:02:27,056 --> 00:02:28,186
-prototyping process might look
+00:04:23,630 --> 00:04:26,133
+<c.magenta>倒转回0秒</c>
 
 
 83
-00:02:28,186 --> 00:02:28,436
-like.
+00:04:27,801 --> 00:04:30,704
+<c.magenta>这个动画开始后</c>
+<c.magenta>让开始键消失</c>
 
 
 84
-00:02:29,146 --> 00:02:31,356
-We make prototypes, we show them
+00:04:31,572 --> 00:04:33,106
+<c.magenta>完成了 就是这样</c>
 
 
 85
-00:02:31,356 --> 00:02:33,146
-to people, and we learn from the
+00:04:33,173 --> 00:04:35,876
+<c.magenta>这个样本可以下载到iPhone</c>
 
 
 86
-00:02:33,146 --> 00:02:33,716
-feedback.
+00:04:35,943 --> 00:04:37,544
+<c.magenta>看上去就像个真的应用</c>
 
 
 87
-00:02:33,716 --> 00:02:36,456
-And we do this over and over and
+00:04:44,451 --> 00:04:47,287
+<c.magenta>样本做好后就要拿给别人看</c>
 
 
 88
-00:02:36,456 --> 00:02:37,846
-over again, until we know we're
+00:04:48,388 --> 00:04:52,392
+<c.magenta>给别人演示的时候</c>
+<c.magenta>我们就会想怎么才能更好？</c>
 
 
 89
-00:02:37,876 --> 00:02:39,036
-really making the right thing.
+00:04:52,960 --> 00:04:56,129
+<c.magenta>理论上有些方法可行</c>
 
 
 90
-00:02:40,186 --> 00:02:41,556
-So let's start by making a
+00:04:56,196 --> 00:04:59,333
+<c.magenta>所以就要找证据</c>
+<c.magenta>证明这些理论的可行性</c>
 
 
 91
-00:02:41,556 --> 00:02:42,036
-prototype.
+00:04:59,600 --> 00:05:03,136
+<c.magenta>不要反驳 理论或者否定别人的反馈</c>
 
 
 92
-00:02:42,396 --> 00:02:43,556
-Who can make prototypes?
+00:05:03,904 --> 00:05:06,607
+<c.magenta>还有一点很重要</c>
+<c.magenta>就是样本要显示在</c>
 
 
 93
-00:02:43,926 --> 00:02:46,526
-Everyone. It is about using
+00:05:06,707 --> 00:05:10,410
+<c.magenta>以后要用的设备上</c>
+<c.magenta>用真实的情景</c>
 
 
 94
-00:02:46,526 --> 00:02:48,086
-tools that you already use every
+00:05:10,711 --> 00:05:12,579
+<c.magenta>不能凭空测试</c>
 
 
 95
-00:02:48,086 --> 00:02:48,346
-day.
+00:05:12,913 --> 00:05:15,048
+<c.magenta>比如我让同事</c>
 
 
 96
-00:02:48,806 --> 00:02:50,726
-If you are a developer, you
+00:05:15,115 --> 00:05:17,951
+<c.magenta>测试水的pH值</c>
+<c.magenta>用它计时</c>
 
 
 97
-00:02:50,726 --> 00:02:53,016
-might use X code in Swift, or
+00:05:18,018 --> 00:05:21,555
+<c.magenta>那么我们加入pH试剂</c>
+<c.magenta>按下开始键</c>
 
 
 98
-00:02:53,016 --> 00:02:54,746
-HTML, CSS, and JavaScript.
+00:05:21,622 --> 00:05:23,957
+<c.magenta>摇晃试管10秒</c>
 
 
 99
-00:02:55,606 --> 00:02:57,976
-If you are a designer, you might
+00:05:24,458 --> 00:05:26,860
+<c.magenta>这个情况下表现得不错对吧？</c>
 
 
 100
-00:02:57,976 --> 00:02:59,626
-use Sketch or Illustrator.
+00:05:26,927 --> 00:05:29,329
+<c.magenta>因为这不是很复杂的事情</c>
 
 
 101
-00:03:00,356 --> 00:03:01,986
-But even if you don't code or
+00:05:29,496 --> 00:05:31,798
+<c.magenta>要想更好 可以加动画</c>
 
 
 102
-00:03:01,986 --> 00:03:03,086
-design, you can build
+00:05:31,865 --> 00:05:34,768
+<c.magenta>或结束音 但看着还不错</c>
 
 
 103
-00:03:03,086 --> 00:03:03,836
-prototypes.
+00:05:36,136 --> 00:05:39,573
+<c.magenta>我的朋友David</c>
+<c.magenta>在高中时很会玩魔方</c>
 
 
 104
-00:03:04,446 --> 00:03:06,216
-You can use keynotes, or your
+00:05:39,640 --> 00:05:43,210
+<c.magenta>那么我就让他试试</c>
+<c.magenta>在10秒内把魔方还原</c>
 
 
 105
-00:03:06,216 --> 00:03:07,286
-favorite text processor.
+00:05:50,484 --> 00:05:54,021
+<c.magenta>哇 他做到了</c>
+<c.magenta>还有富余的时间</c>
 
 
 106
-00:03:08,296 --> 00:03:09,756
-It's about subverting your
+00:05:56,123 --> 00:05:59,426
+<c.magenta>David用完之后告诉了我几件事情</c>
 
 
 107
-00:03:09,756 --> 00:03:10,146
-tools.
+00:05:59,493 --> 00:06:02,696
+<c.magenta>他感觉开始键太小了 不好按</c>
 
 
 108
-00:03:10,266 --> 00:03:12,136
-Use tools that you use already
+00:06:03,297 --> 00:06:04,665
+<c.magenta>他还希望</c>
 
 
 109
-00:03:12,136 --> 00:03:13,756
-every day, and push them in new
+00:06:04,731 --> 00:06:06,233
+<c.magenta>开始之后能倒数计数</c>
 
 
 110
-00:03:13,756 --> 00:03:14,196
-ways.
+00:06:06,300 --> 00:06:09,102
+<c.magenta>这样能知道时间还剩多少</c>
 
 
 111
-00:03:14,496 --> 00:03:16,956
-If it can display images, and
+00:06:09,269 --> 00:06:13,207
+<c.magenta>他还希望能看到精确的时刻</c>
 
 
 112
-00:03:16,956 --> 00:03:18,416
-respond to user interaction, you
+00:06:13,273 --> 00:06:15,309
+<c.magenta>这样他能知道是否打破了记录</c>
 
 
 113
-00:03:18,476 --> 00:03:19,956
-can probably build prototypes
+00:06:15,976 --> 00:06:19,279
+<c.magenta>这就提出了很多有意义的设计问题</c>
 
 
 114
-00:03:19,956 --> 00:03:20,396
-with it.
+00:06:19,346 --> 00:06:21,415
+<c.magenta>让我们进一步思考应该怎么做</c>
 
 
 115
-00:03:20,796 --> 00:03:22,876
-So let me show you how I built
+00:06:24,218 --> 00:06:27,788
+<c.magenta>样本演示过后回想一下</c>
 
 
 116
-00:03:22,876 --> 00:03:23,696
-the prototype we just saw
+00:06:28,188 --> 00:06:30,824
+<c.magenta>从收集的反馈中学习</c>
 
 
 117
-00:03:23,696 --> 00:03:25,656
-earlier, just using Keynotes, in
+00:06:31,191 --> 00:06:32,292
+<c.magenta>哪些可行？</c>
 
 
 118
-00:03:25,656 --> 00:03:26,656
-under 60 seconds.
+00:06:33,060 --> 00:06:34,061
+<c.magenta>哪些不可行？</c>
 
 
 119
-00:03:27,066 --> 00:03:28,206
-Now, the video you're about to
+00:06:34,461 --> 00:06:36,363
+<c.magenta>要不要改进？</c>
 
 
 120
-00:03:28,206 --> 00:03:29,496
-see is a little fast, because I
+00:06:36,530 --> 00:06:38,665
+<c.magenta>还是换一种尝试？</c>
 
 
 121
-00:03:29,496 --> 00:03:30,466
-like to use Keynote a lot for
+00:06:39,032 --> 00:06:41,735
+<c.magenta>或许来场头脑风暴</c>
+<c.magenta>想想下面几步？</c>
 
 
 122
-00:03:30,466 --> 00:03:31,896
-that kind of stuff, but let me
+00:06:42,536 --> 00:06:45,706
+<c.magenta>这几个例子是我们在演示样本时</c>
 
 
 123
-00:03:31,896 --> 00:03:32,496
-get you through it.
+00:06:45,772 --> 00:06:47,541
+<c.magenta>收到的几个问题</c>
 
 
 124
-00:03:32,496 --> 00:03:35,116
-So I start by making my document
+00:06:47,941 --> 00:06:51,578
+<c.magenta>是在左边显示时刻还是让时刻倒数？</c>
 
 
 125
-00:03:35,116 --> 00:03:36,026
-the size of an iPhone.
+00:06:51,912 --> 00:06:54,615
+<c.magenta>怎么暂停或停止计时？</c>
 
 
 126
-00:03:36,546 --> 00:03:37,776
-And I'm going to draw the clock
+00:06:55,449 --> 00:06:59,219
+<c.magenta>电子显示还是模拟显示</c>
+<c.magenta>还是两个一起？</c>
 
 
 127
-00:03:37,776 --> 00:03:38,616
-face for my timer.
+00:07:00,187 --> 00:07:04,691
+<c.magenta>计时器是通用的还是有特殊目的？</c>
 
 
 128
-00:03:39,136 --> 00:03:40,846
-You'll notice I'm not using
+00:07:04,758 --> 00:07:06,460
+<c.magenta>比如魔方</c>
 
 
 129
-00:03:40,846 --> 00:03:42,706
-really fancy design assets, I'm
+00:07:07,427 --> 00:07:10,197
+<c.magenta>问题许多许多</c>
 
 
 130
-00:03:42,706 --> 00:03:44,216
-just using basic Keynote shapes.
+00:07:10,397 --> 00:07:13,133
+<c.magenta>我们的目的不是回答这些问题</c>
 
 
 131
-00:03:44,756 --> 00:03:45,576
-Let's do the same thing for the
+00:07:13,200 --> 00:07:15,235
+<c.magenta>而是提醒你没想到的事情</c>
 
 
 132
-00:03:45,576 --> 00:03:46,716
-button, the Start button.
+00:07:15,302 --> 00:07:19,540
+<c.magenta>这样就可以有策略地选择之后的目标</c>
 
 
 133
-00:03:47,186 --> 00:03:48,376
-Again, just using a basic
+00:07:21,341 --> 00:07:23,677
+<c.magenta>演示之后 我就会做些改进</c>
 
 
 134
-00:03:48,376 --> 00:03:48,916
-Keynote shape.
+00:07:23,944 --> 00:07:26,446
+<c.magenta>David说开始键太小</c>
 
 
 135
-00:03:49,436 --> 00:03:50,356
-Let's make it green.
+00:07:26,513 --> 00:07:28,715
+<c.magenta>表盘看不清楚 我同意</c>
 
 
 136
-00:03:50,926 --> 00:03:52,106
-And let's make it say Start.
+00:07:28,782 --> 00:07:30,984
+<c.magenta>那换成亮红色</c>
 
 
 137
-00:03:52,986 --> 00:03:54,046
-Now, I'm adding the hand for my
+00:07:31,051 --> 00:07:33,921
+<c.magenta>指针做成白色 这样能凸显出来</c>
 
 
 138
-00:03:54,046 --> 00:03:54,466
-timer.
+00:07:34,254 --> 00:07:37,090
+<c.magenta>开始键太小 那么也一起改了吧</c>
 
 
 139
-00:03:55,766 --> 00:03:57,526
-The trick I'm going to use is in
+00:07:37,157 --> 00:07:39,092
+<c.magenta>也许要把整个下半部分</c>
 
 
 140
-00:03:57,526 --> 00:03:58,356
-Keynote, when you rotate
+00:07:39,159 --> 00:07:40,260
+<c.magenta>做成点击区域</c>
 
 
 141
-00:03:58,356 --> 00:03:59,576
-objects, they rotate around
+00:07:40,494 --> 00:07:43,530
+<c.magenta>粗体的“开始”</c>
 
 
 142
-00:03:59,576 --> 00:04:00,136
-their center.
+00:07:43,597 --> 00:07:45,866
+<c.magenta>与表盘颜色一致</c>
 
 
 143
-00:04:00,196 --> 00:04:01,116
-So here, you see I am
+00:07:46,266 --> 00:07:49,102
+<c.magenta>我要添加一个结束画面</c>
 
 
 144
-00:04:01,116 --> 00:04:02,976
-copy/pasting the hand, moving it
+00:07:49,169 --> 00:07:51,638
+<c.magenta>我们知道计时结束了</c>
 
 
 145
-00:04:02,976 --> 00:04:04,306
-to the lower part, and making it
+00:07:51,705 --> 00:07:54,675
+<c.magenta>做一个新画面可自动导入</c>
 
 
 146
-00:04:04,306 --> 00:04:04,846
-invisible.
+00:07:54,741 --> 00:07:56,176
+<c.magenta>显示“时间到”</c>
 
 
 147
-00:04:05,386 --> 00:04:07,496
-Now, I can group them and I can
+00:07:57,044 --> 00:07:59,446
+<c.magenta>这样我们的样本有了新的循环</c>
 
 
 148
-00:04:07,496 --> 00:04:08,856
-rotate it and it will look just
+00:07:59,513 --> 00:08:01,415
+<c.magenta>可以设计给人们演示</c>
 
 
 149
-00:04:08,856 --> 00:04:09,926
-like a hand on the timer would.
+00:08:04,351 --> 00:08:05,552
+<c.magenta>快速完成任务</c>
 
 
 150
-00:04:10,626 --> 00:04:12,426
-So we make it rotate to the 5
+00:08:05,619 --> 00:08:09,690
+<c.magenta>让你能迅速探索不同的想法和方向</c>
 
 
 151
-00:04:12,426 --> 00:04:14,126
-second mark for the first tap,
+00:08:10,090 --> 00:08:12,226
+<c.magenta>这些样本也是我用Keynote</c>
 
 
 152
-00:04:14,246 --> 00:04:15,556
-no easing to make it look just
+00:08:12,292 --> 00:08:13,961
+<c.magenta>创建的计时器</c>
 
 
 153
-00:04:15,556 --> 00:04:17,196
-like a real clock, and we add
+00:08:14,294 --> 00:08:17,531
+<c.magenta>你可以看到有些侧重研究</c>
 
 
 154
-00:04:17,196 --> 00:04:18,526
-another animation for the 10
+00:08:17,598 --> 00:08:20,667
+<c.magenta>计时器的美观和互动方法</c>
 
 
 155
-00:04:18,526 --> 00:04:19,065
-second mark.
+00:08:20,734 --> 00:08:24,137
+<c.magenta>其他的则有特殊用途</c>
 
 
 156
-00:04:19,766 --> 00:04:22,196
-And finally, the last animation,
+00:08:24,204 --> 00:08:27,241
+<c.magenta>比如电影制作或煎牛排</c>
 
 
 157
-00:04:22,286 --> 00:04:23,676
-which is the hand of the timer
+00:08:27,608 --> 00:08:30,811
+<c.magenta>身处多元化的团队</c>
 
 
 158
-00:04:23,676 --> 00:04:25,046
-rotating all the way back to the
+00:08:31,378 --> 00:08:32,813
+<c.magenta>会带来很多帮助</c>
 
 
 159
-00:04:25,046 --> 00:04:25,836
-0 second mark.
+00:08:32,880 --> 00:08:36,817
+<c.magenta>他们会帮你想到你不可能想到的事情</c>
 
 
 160
-00:04:27,786 --> 00:04:29,396
-And as this animation starts, we
+00:08:36,917 --> 00:08:41,922
+<c.magenta>我同事就做了个计时器</c>
+<c.magenta>让小孩在刷牙时用</c>
 
 
 161
-00:04:29,396 --> 00:04:30,566
-make the Start button disappear.
+00:08:45,292 --> 00:08:47,961
+<c.magenta>以上就是快速制作互动样本</c>
 
 
 162
-00:04:31,636 --> 00:04:32,496
-And that's it.
+00:08:48,862 --> 00:08:52,199
+<c.magenta>演示给别人看 从反馈中学习</c>
 
 
 163
-00:04:32,496 --> 00:04:33,456
-Just like that, we have a
+00:08:52,966 --> 00:08:56,036
+<c.magenta>这个过程无限循环</c>
 
 
 164
-00:04:33,456 --> 00:04:35,146
-prototype that we can load on an
+00:08:56,103 --> 00:08:58,105
+<c.magenta>直到我们找到正确答案</c>
 
 
 165
-00:04:35,186 --> 00:04:36,876
-iPhone, and have it look just
+00:08:58,939 --> 00:09:03,577
+<c.magenta>当你做完一个就会想要再做几个</c>
 
 
 166
-00:04:36,876 --> 00:04:37,876
-like a real app.
+00:09:06,547 --> 00:09:09,049
+<c.magenta>有些表现得很好</c>
 
 
 167
-00:04:38,516 --> 00:04:43,966
-[ Applause ]
+00:09:09,116 --> 00:09:12,019
+<c.magenta>整体思路基本没变</c>
 
 
 168
-00:04:44,466 --> 00:04:45,206
->> So now that we've made a
+00:09:12,085 --> 00:09:15,122
+<c.magenta>从样本创建到成品</c>
 
 
 169
-00:04:45,206 --> 00:04:47,116
-prototype, we show it to people.
+00:09:15,556 --> 00:09:17,591
+<c.magenta>大多数情况是有的部分可行</c>
 
 
 170
-00:04:48,386 --> 00:04:49,716
-As we show it to people, we ask
+00:09:17,658 --> 00:09:19,226
+<c.magenta>有的不可行</c>
 
 
 171
-00:04:49,716 --> 00:04:51,456
-ourselves, how can we make it
+00:09:19,293 --> 00:09:22,095
+<c.magenta>你要找到它们</c>
+<c.magenta>改善后再重新放进</c>
 
 
 172
-00:04:51,456 --> 00:04:51,896
-better?
+00:09:22,162 --> 00:09:25,165
+<c.magenta>你要演示和探索的新样本</c>
 
 
 173
-00:04:51,986 --> 00:04:54,666
-I have some theories about what
+00:09:26,133 --> 00:09:30,237
+<c.magenta>最后 有的样本完全不能用</c>
+<c.magenta>这是件好事</c>
 
 
 174
-00:04:54,666 --> 00:04:56,476
-will work and what won't, and
+00:09:30,370 --> 00:09:33,373
+<c.magenta>这是应用给你的宝贵经验</c>
 
 
 175
-00:04:56,476 --> 00:04:57,906
-look for evidence that supports
+00:09:33,440 --> 00:09:37,044
+<c.magenta>因为你不需要花时间设计或编程</c>
 
 
 176
-00:04:57,906 --> 00:04:59,076
-or contradicts those theories.
+00:09:37,110 --> 00:09:39,213
+<c.magenta>去建造根本不能用的东西</c>
 
 
 177
-00:04:59,546 --> 00:05:02,236
-Don't argue, defend, or dismiss
+00:09:39,980 --> 00:09:44,484
+<c.magenta>我们的目标是实现你的想法</c>
 
 
 178
-00:05:02,236 --> 00:05:03,046
-the feedback you get.
+00:09:44,551 --> 00:09:50,424
+<c.magenta>以最快的速度把它放进设备和环境</c>
+<c.magenta>并呈现给人们</c>
 
 
 179
-00:05:03,726 --> 00:05:04,946
-It is also very important to
+00:09:52,993 --> 00:09:55,062
+<c.magenta>在你今天稍后离开WWDC之前</c>
 
 
 180
-00:05:04,946 --> 00:05:06,416
-show your prototypes in context,
+00:09:55,262 --> 00:09:57,264
+<c.magenta>还有几件事可做</c>
 
 
 181
-00:05:06,746 --> 00:05:08,266
-on the device they're meant for,
+00:09:58,465 --> 00:10:00,167
+<c.magenta>如果你还没有做过样本</c>
 
 
 182
-00:05:08,476 --> 00:05:09,386
-in a somewhat realistic
+00:10:00,234 --> 00:10:03,303
+<c.magenta>下次当你想到一个应用或一个应用功能</c>
 
 
 183
-00:05:09,386 --> 00:05:10,086
-situation.
+00:10:03,370 --> 00:10:05,806
+<c.magenta>先做个样本拿给你的同事看</c>
 
 
 184
-00:05:10,736 --> 00:05:11,736
-You can't test things in a
+00:10:06,974 --> 00:10:10,244
+<c.magenta>如果你已经做过样本 那太棒了</c>
 
 
 185
-00:05:11,736 --> 00:05:12,196
-vacuum.
+00:10:10,310 --> 00:10:12,946
+<c.magenta>找没有做过的同事</c>
+<c.magenta>给他们展示你的作品</c>
 
 
 186
-00:05:12,906 --> 00:05:14,556
-So, for example, here I ask my
+00:10:13,881 --> 00:10:17,618
+<c.magenta>如果你是团队经理 为了不出错</c>
 
 
 187
-00:05:14,556 --> 00:05:16,256
-co-worker to test the pH of a
+00:10:18,285 --> 00:10:21,855
+<c.magenta>一定要把制作样本</c>
+<c.magenta>作为工作和文化的一部分</c>
 
 
 188
-00:05:16,446 --> 00:05:17,586
-little bit of water, using the
+00:10:23,290 --> 00:10:24,791
+<c.magenta>想象一下这个美好的画面</c>
 
 
 189
-00:05:17,586 --> 00:05:17,996
-timer.
+00:10:24,858 --> 00:10:28,161
+<c.magenta>下次总裁再给你发这样的短信</c>
 
 
 190
-00:05:17,996 --> 00:05:20,806
-So we add the pH reagent, press
+00:10:28,228 --> 00:10:31,865
+<c.magenta>你就能在60秒之内</c>
+<c.magenta>回复给他这样一个样本</c>
 
 
 191
-00:05:20,806 --> 00:05:22,116
-the Start button, and start
-
-
-192
-00:05:22,116 --> 00:05:23,116
-shaking the test tube for 10
-
-
-193
-00:05:23,116 --> 00:05:23,566
-seconds.
-
-
-194
-00:05:24,456 --> 00:05:25,716
-So in this case, it seems to
-
-
-195
-00:05:25,716 --> 00:05:26,966
-work pretty well, right?
-
-
-196
-00:05:26,966 --> 00:05:28,056
-Like, it is not a very
-
-
-197
-00:05:28,056 --> 00:05:29,176
-complicated use case.
-
-
-198
-00:05:29,506 --> 00:05:30,466
-Maybe it would be nice to have
-
-
-199
-00:05:30,466 --> 00:05:32,716
-the Timer flash, or play a sound
-
-
-200
-00:05:32,716 --> 00:05:34,286
-at the end, but it seems to work
-
-
-201
-00:05:34,286 --> 00:05:34,696
-pretty well.
-
-
-202
-00:05:36,156 --> 00:05:37,386
-Now, my friend David used to be
-
-
-203
-00:05:37,386 --> 00:05:38,306
-really good at solving the
-
-
-204
-00:05:38,306 --> 00:05:39,846
-Rubik's Cube in high school, so
-
-
-205
-00:05:39,846 --> 00:05:40,866
-I asked him to see if he could
-
-
-206
-00:05:40,866 --> 00:05:41,876
-still solve a Rubik's Cube in
-
-
-207
-00:05:41,876 --> 00:05:42,736
-under 10 seconds.
-
-
-208
-00:05:50,216 --> 00:05:50,896
-All right.
-
-
-209
-00:05:51,366 --> 00:05:52,276
-Looks like he's still got it,
-
-
-210
-00:05:52,476 --> 00:05:53,556
-with time to spare, too
-
-
-211
-00:05:53,851 --> 00:05:55,851
-[applause].
-
-
-212
-00:05:56,146 --> 00:05:57,556
-Now, as David was using this,
-
-
-213
-00:05:57,556 --> 00:05:58,456
-there are a number of things
-
-
-214
-00:05:58,456 --> 00:05:59,366
-that he was telling me.
-
-
-215
-00:05:59,496 --> 00:06:00,726
-He found that the Start button
-
-
-216
-00:06:00,726 --> 00:06:02,246
-was a little small, and hard to
-
-
-217
-00:06:02,246 --> 00:06:02,626
-tap.
-
-
-218
-00:06:03,346 --> 00:06:04,726
-He also thought it would be nice
-
-
-219
-00:06:04,726 --> 00:06:05,656
-if there was a countdown when
-
-
-220
-00:06:05,656 --> 00:06:06,946
-you press Start, so he could
-
-
-221
-00:06:07,186 --> 00:06:08,246
-really position himself on the
-
-
-222
-00:06:08,246 --> 00:06:10,386
-Rubik's Cube, and he really
-
-
-223
-00:06:10,386 --> 00:06:12,896
-wanted to see the actual precise
-
-
-224
-00:06:12,926 --> 00:06:14,126
-time, so he could tell if he
-
-
-225
-00:06:14,166 --> 00:06:15,746
-beat his record or not.
-
-
-226
-00:06:15,996 --> 00:06:17,176
-You see that this opens up a lot
-
-
-227
-00:06:17,176 --> 00:06:18,726
-of interesting design questions
-
-
-228
-00:06:18,726 --> 00:06:20,256
-around what we're building, and
-
-
-229
-00:06:20,256 --> 00:06:21,036
-what it should be like.
-
-
-230
-00:06:23,916 --> 00:06:25,546
-Once we've shown our prototypes,
-
-
-231
-00:06:26,126 --> 00:06:27,566
-we take a moment to step back
-
-
-232
-00:06:28,236 --> 00:06:29,326
-and learn from the feedback that
-
-
-233
-00:06:29,326 --> 00:06:30,386
-we have gathered.
-
-
-234
-00:06:31,076 --> 00:06:31,916
-What is working?
-
-
-235
-00:06:33,076 --> 00:06:33,846
-What is not working?
-
-
-236
-00:06:34,476 --> 00:06:36,016
-Do we refine what we have?
-
-
-237
-00:06:36,516 --> 00:06:37,966
-Or do we try something else
-
-
-238
-00:06:37,966 --> 00:06:38,646
-altogether?
-
-
-239
-00:06:39,056 --> 00:06:40,306
-Perhaps do some brainstorming to
-
-
-240
-00:06:40,306 --> 00:06:41,346
-come up with the next steps?
-
-
-241
-00:06:42,546 --> 00:06:44,266
-For example, here are some of
-
-
-242
-00:06:44,266 --> 00:06:46,106
-the questions that we got as we
-
-
-243
-00:06:46,106 --> 00:06:47,146
-showed our prototype.
-
-
-244
-00:06:47,936 --> 00:06:49,226
-Do we display the time left on
-
-
-245
-00:06:49,226 --> 00:06:51,236
-the timer, or the time elapsed?
-
-
-246
-00:06:51,896 --> 00:06:53,826
-How do you pause or stop the
-
-
-247
-00:06:53,826 --> 00:06:54,276
-timer?
-
-
-248
-00:06:55,286 --> 00:06:56,336
-Should we show the time in
-
-
-249
-00:06:56,336 --> 00:06:58,316
-digital form or analog form, or
-
-
-250
-00:06:58,386 --> 00:06:59,036
-maybe both?
-
-
-251
-00:07:00,226 --> 00:07:02,286
-And are we building a generic
-
-
-252
-00:07:02,286 --> 00:07:03,836
-timer, or one for a very
-
-
-253
-00:07:03,836 --> 00:07:05,616
-specific purpose, like solving
-
-
-254
-00:07:05,616 --> 00:07:06,356
-Rubik's Cubes?
-
-
-255
-00:07:07,436 --> 00:07:10,026
-And many, many other questions.
-
-
-256
-00:07:10,376 --> 00:07:12,026
-Now, the goal isn't to answer
-
-
-257
-00:07:12,026 --> 00:07:13,266
-all of those questions, but
-
-
-258
-00:07:13,266 --> 00:07:14,766
-rather to know what you don't
-
-
-259
-00:07:14,766 --> 00:07:15,946
-know, so you can then
-
-
-260
-00:07:15,946 --> 00:07:18,456
-strategically choose what to
-
-
-261
-00:07:18,456 --> 00:07:19,216
-pursue next.
-
-
-262
-00:07:21,336 --> 00:07:22,326
-Here is how I might improve this
-
-
-263
-00:07:22,326 --> 00:07:23,486
-prototype after showing it.
-
-
-264
-00:07:23,946 --> 00:07:25,926
-So, David told me that the Start
-
-
-265
-00:07:25,926 --> 00:07:27,126
-button was small, and the Clock
-
-
-266
-00:07:27,126 --> 00:07:28,636
-was hard to see, so I agree with
-
-
-267
-00:07:28,676 --> 00:07:28,876
-him.
-
-
-268
-00:07:28,876 --> 00:07:29,796
-I'm going to make it a nice,
-
-
-269
-00:07:29,796 --> 00:07:31,796
-bold red, and let's make the
-
-
-270
-00:07:31,796 --> 00:07:33,086
-hand white, just so that it
-
-
-271
-00:07:33,086 --> 00:07:33,866
-really stands out.
-
-
-272
-00:07:34,256 --> 00:07:35,476
-Start button is too small, so
-
-
-273
-00:07:35,476 --> 00:07:36,166
-let's do away with it
-
-
-274
-00:07:36,166 --> 00:07:37,986
-altogether, and maybe we make
-
-
-275
-00:07:37,986 --> 00:07:39,036
-the entire lower portion of
-
-
-276
-00:07:39,036 --> 00:07:40,246
-this, creating a tap region.
-
-
-277
-00:07:40,496 --> 00:07:41,796
-And let's make it say Start in
-
-
-278
-00:07:41,796 --> 00:07:43,286
-nice, bold letters.
-
-
-279
-00:07:43,656 --> 00:07:44,746
-Same color as the clock to keep
-
-
-280
-00:07:44,746 --> 00:07:45,356
-it consistent.
-
-
-281
-00:07:46,306 --> 00:07:48,226
-And I'm going to add a finish
-
-
-282
-00:07:48,226 --> 00:07:49,816
-screen for my timer, so we know
-
-
-283
-00:07:50,006 --> 00:07:51,506
-the timer is done counting down.
-
-
-284
-00:07:51,746 --> 00:07:53,136
-So I just add a new slide that
-
-
-285
-00:07:53,136 --> 00:07:54,886
-we navigate to automatically and
-
-
-286
-00:07:54,886 --> 00:07:55,956
-have it say Timer Done.
-
-
-287
-00:07:56,966 --> 00:07:58,046
-And just like that, we have a
-
-
-288
-00:07:58,046 --> 00:07:59,436
-new iteration of our prototype,
-
-
-289
-00:07:59,566 --> 00:08:01,086
-that we can build on, and show
-
-
-290
-00:08:01,086 --> 00:08:01,466
-to people.
-
-
-291
-00:08:04,056 --> 00:08:06,066
-Making things fast lets you
-
-
-292
-00:08:06,106 --> 00:08:07,956
-quickly explore a very wide
-
-
-293
-00:08:07,956 --> 00:08:09,696
-range of ideas and directions.
-
-
-294
-00:08:10,076 --> 00:08:11,416
-Here are some more prototypes
-
-
-295
-00:08:11,416 --> 00:08:12,716
-that I built in Keynote around
-
-
-296
-00:08:12,716 --> 00:08:13,576
-the concept of the Timer.
-
-
-297
-00:08:14,316 --> 00:08:16,036
-Now, some of them, as you see,
-
-
-298
-00:08:16,036 --> 00:08:17,626
-are aesthetic explorations
-
-
-299
-00:08:17,626 --> 00:08:18,676
-around what a Timer might look
-
-
-300
-00:08:18,676 --> 00:08:19,926
-like, or how you might interact
-
-
-301
-00:08:19,926 --> 00:08:22,756
-with it, while others are more
-
-
-302
-00:08:22,756 --> 00:08:24,216
-specific use cases.
-
-
-303
-00:08:24,216 --> 00:08:26,256
-Timers for developing film or
-
-
-304
-00:08:26,256 --> 00:08:27,046
-cooking a steak.
-
-
-305
-00:08:27,396 --> 00:08:29,676
-That is also where having a very
-
-
-306
-00:08:29,676 --> 00:08:32,395
-diverse team helps your process
-
-
-307
-00:08:32,395 --> 00:08:32,765
-a lot.
-
-
-308
-00:08:32,826 --> 00:08:34,836
-It will let you stumble upon
-
-
-309
-00:08:34,836 --> 00:08:35,986
-things you never would have on
-
-
-310
-00:08:35,986 --> 00:08:36,385
-your own.
-
-
-311
-00:08:36,905 --> 00:08:39,635
-For example, my co-worker made
-
-
-312
-00:08:39,676 --> 00:08:41,086
-this Timer to help their child
-
-
-313
-00:08:41,086 --> 00:08:41,765
-brush their teeth.
-
-
-314
-00:08:42,616 --> 00:08:47,126
-So we make quick interactive
-
-
-315
-00:08:47,126 --> 00:08:47,896
-prototypes.
-
-
-316
-00:08:48,886 --> 00:08:49,896
-We show them to people.
-
-
-317
-00:08:50,056 --> 00:08:51,826
-And we learn from the feedback.
-
-
-318
-00:08:51,866 --> 00:08:54,956
-And we do this over, and over,
-
-
-319
-00:08:55,096 --> 00:08:56,796
-and over again, until we know
-
-
-320
-00:08:56,796 --> 00:08:57,836
-we're doing the right thing.
-
-
-321
-00:08:58,936 --> 00:09:00,386
-If you start by making one
-
-
-322
-00:09:00,386 --> 00:09:02,346
-thing, you'll be inspired to
-
-
-323
-00:09:02,346 --> 00:09:03,136
-make a few others.
-
-
-324
-00:09:03,136 --> 00:09:07,896
-Some of these things will work
-
-
-325
-00:09:07,896 --> 00:09:10,716
-really well, and the ideas will
-
-
-326
-00:09:10,716 --> 00:09:12,116
-make it mostly unchanged
-
-
-327
-00:09:12,116 --> 00:09:12,966
-throughout your prototyping
-
-
-328
-00:09:12,966 --> 00:09:14,296
-process, and on to your final
-
-
-329
-00:09:14,296 --> 00:09:14,726
-product.
-
-
-330
-00:09:15,546 --> 00:09:16,626
-Most things will have some
-
-
-331
-00:09:16,626 --> 00:09:18,116
-aspects that work, and others
-
-
-332
-00:09:18,116 --> 00:09:19,006
-that don't work as well.
-
-
-333
-00:09:19,076 --> 00:09:20,406
-You will be able to take those
-
-
-334
-00:09:20,406 --> 00:09:21,866
-and modify them and recombine
-
-
-335
-00:09:21,866 --> 00:09:23,406
-them in new prototypes that you
-
-
-336
-00:09:23,406 --> 00:09:24,756
-can show and explore.
-
-
-337
-00:09:26,116 --> 00:09:28,086
-And finally, a few things won't
-
-
-338
-00:09:28,086 --> 00:09:29,416
-work at all, and it is great
-
-
-339
-00:09:29,416 --> 00:09:30,166
-when that happens.
-
-
-340
-00:09:30,396 --> 00:09:31,116
-You've just learned something
-
-
-341
-00:09:31,116 --> 00:09:33,096
-very valuable about your app,
-
-
-342
-00:09:33,236 --> 00:09:34,386
-and you're not going to be
-
-
-343
-00:09:34,386 --> 00:09:36,366
-spending designing time or
-
-
-344
-00:09:36,366 --> 00:09:37,756
-programming time building things
-
-
-345
-00:09:37,756 --> 00:09:38,686
-that would not have worked out.
-
-
-346
-00:09:39,546 --> 00:09:42,226
-The goal is to take ideas from
-
-
-347
-00:09:42,226 --> 00:09:44,216
-your head into the real world,
-
-
-348
-00:09:44,616 --> 00:09:47,646
-on device, in context, in front
-
-
-349
-00:09:47,646 --> 00:09:50,216
-of people, as fast as possible.
-
-
-350
-00:09:50,716 --> 00:09:54,426
-As you are leaving WWDC later
-
-
-351
-00:09:54,426 --> 00:09:56,716
-today, here are a few things you
-
-
-352
-00:09:56,716 --> 00:09:57,136
-can do.
-
-
-353
-00:09:58,516 --> 00:09:59,626
-If you don't make prototypes
-
-
-354
-00:09:59,626 --> 00:10:00,946
-already, the next time you have
-
-
-355
-00:10:00,946 --> 00:10:02,516
-an idea for an app, or future
-
-
-356
-00:10:02,516 --> 00:10:04,386
-for your app, make prototypes.
-
-
-357
-00:10:04,436 --> 00:10:05,536
-Show them to your colleagues.
-
-
-358
-00:10:06,986 --> 00:10:08,396
-If you already make prototypes,
-
-
-359
-00:10:08,726 --> 00:10:09,386
-amazing!
-
-
-360
-00:10:09,386 --> 00:10:09,866
-Wonderful!
-
-
-361
-00:10:10,306 --> 00:10:11,976
-Find co-workers who don't, and
-
-
-362
-00:10:11,976 --> 00:10:12,946
-show them how you do it.
-
-
-363
-00:10:13,426 --> 00:10:15,806
-And if you manage a team, make
-
-
-364
-00:10:15,806 --> 00:10:16,656
-sure that you're building the
-
-
-365
-00:10:16,656 --> 00:10:19,436
-right thing, by making time for
-
-
-366
-00:10:19,436 --> 00:10:20,726
-prototyping as part of your
-
-
-367
-00:10:20,726 --> 00:10:21,576
-process and culture.
-
-
-368
-00:10:23,116 --> 00:10:24,566
-Imagine how wonderful it would
-
-
-369
-00:10:24,566 --> 00:10:26,026
-be if the next time you get a
-
-
-370
-00:10:26,026 --> 00:10:27,426
-text message like this from your
-
-
-371
-00:10:27,426 --> 00:10:29,386
-CEO, you can reply just 60
-
-
-372
-00:10:29,386 --> 00:10:30,806
-seconds later with a prototype
-
-
-373
-00:10:31,016 --> 00:10:31,526
-like this.
-
-
-374
-00:10:32,106 --> 00:10:32,446
-Thank you.
-
-
-375
-00:10:33,016 --> 00:10:34,330
-[ Applause ]
+00:10:32,099 --> 00:10:32,933
+<c.magenta>谢谢</c>
 

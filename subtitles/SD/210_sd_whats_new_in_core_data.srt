@@ -1,6134 +1,3670 @@
 1
-00:00:07,516 --> 00:00:16,500
-[ Cheers ]
+00:00:17,651 --> 00:00:22,990
+<c.magenta>（Core Data新特性是什么？</c>
+<c.magenta>2004年来持续至今）</c>
 
 
 2
-00:00:23,516 --> 00:00:25,636
-[ Applause ]
+00:00:26,159 --> 00:00:29,563
+<c.magenta>大家好 欢迎来到演讲210</c>
+<c.magenta>本场演讲主题是“Core Data新特性”</c>
 
 
 3
-00:00:26,136 --> 00:00:28,046
->> Hello, welcome to Session
+00:00:30,297 --> 00:00:31,298
+<c.magenta>我是梅利莎</c>
 
 
 4
-00:00:28,046 --> 00:00:29,726
-2010, What's New in Core Data.
+00:00:31,365 --> 00:00:32,966
+<c.magenta>Core Data的工程师</c>
 
 
 5
-00:00:30,396 --> 00:00:31,336
-I'm Melissa.
+00:00:33,033 --> 00:00:36,436
+<c.magenta>今天我的同事瑞希</c>
+<c.magenta>将会和我一起登台演讲</c>
 
 
 6
-00:00:31,436 --> 00:00:32,176
-I'm one of the Core Data
+00:00:37,070 --> 00:00:39,673
+<c.magenta>我们将会介绍</c>
 
 
 7
-00:00:32,176 --> 00:00:32,976
-engineers.
+00:00:39,740 --> 00:00:41,441
+<c.magenta>过去一年里</c>
+<c.magenta>我们所做的工作</c>
 
 
 8
-00:00:33,056 --> 00:00:34,476
-And I will be joined on stage
+00:00:41,508 --> 00:00:42,943
+<c.magenta>这项工作对我们来说充满乐趣</c>
 
 
 9
-00:00:34,476 --> 00:00:35,816
-later by Rishi, one of my
+00:00:43,010 --> 00:00:44,578
+<c.magenta>希望你们也会觉得有趣</c>
 
 
 10
-00:00:35,816 --> 00:00:36,436
-co-workers.
+00:00:44,645 --> 00:00:47,681
+<c.magenta>而且对你们的应用开发有用处</c>
 
 
 11
-00:00:37,136 --> 00:00:39,006
-And we're here to talk about all
+00:00:48,215 --> 00:00:50,684
+<c.magenta>我们希望本场演讲中</c>
+<c.magenta>所涉及的所有技术问题</c>
 
 
 12
-00:00:39,006 --> 00:00:40,196
-of the stuff that we've been
+00:00:50,751 --> 00:00:51,852
+<c.magenta>大家都曾经遇到过</c>
 
 
 13
-00:00:40,196 --> 00:00:41,486
-working on for the last year
+00:00:52,252 --> 00:00:53,887
+<c.magenta>（路线图）</c>
 
 
 14
-00:00:41,616 --> 00:00:43,056
-because it's been fun for us.
+00:00:53,987 --> 00:00:55,322
+<c.magenta>那么 我们在做些什么呢？</c>
 
 
 15
-00:00:43,056 --> 00:00:44,056
-And we're hoping that you'll
+00:00:55,956 --> 00:00:58,025
+<c.magenta>我们一直在做</c>
+<c.magenta>Core Spotlight整合工作</c>
 
 
 16
-00:00:44,056 --> 00:00:46,076
-find it fun and useful to work
+00:00:58,959 --> 00:01:00,894
+<c.magenta>我们已经增加一系列的</c>
+<c.magenta>新Indexing API</c>
 
 
 17
-00:00:46,076 --> 00:00:47,346
-with in your applications.
+00:01:00,961 --> 00:01:03,697
+<c.magenta>我们还增加了另外一项重要功能</c>
+<c.magenta>持续性历史跟踪</c>
 
 
 18
-00:00:48,166 --> 00:00:49,256
-And we will hope all of the
+00:01:03,764 --> 00:01:05,532
+<c.magenta>瑞希将会介绍这项功能</c>
 
 
 19
-00:00:49,256 --> 00:00:50,286
-technical problems for this
+00:01:05,799 --> 00:01:06,967
+<c.magenta>这是一项很酷的功能</c>
 
 
 20
-00:00:50,286 --> 00:00:51,256
-presentation have already
+00:01:07,034 --> 00:01:08,902
+<c.magenta>我很高兴能够在这里为大家展示</c>
 
 
 21
-00:00:51,256 --> 00:00:51,676
-happened.
+00:01:09,837 --> 00:01:13,006
+<c.magenta>首先让阿方斯给大家打一声招呼</c>
+<c.magenta>它是我的吉祥物 一直陪伴着我</c>
 
 
 22
-00:00:52,946 --> 00:00:56,126
-So what have we been up to?
+00:01:14,441 --> 00:01:15,442
+<c.magenta>那么Core Spotlight</c>
 
 
 23
-00:00:56,126 --> 00:00:57,046
-We've been doing some Core
+00:01:16,276 --> 00:01:17,477
+<c.magenta>什么是Core Spotlight？</c>
 
 
 24
-00:00:57,046 --> 00:00:58,026
-Spotlight Integration.
+00:01:18,345 --> 00:01:19,446
+<c.magenta>讨论Core Spotlight之前</c>
 
 
 25
-00:00:58,336 --> 00:00:59,886
-We've added a bunch of new
+00:01:19,513 --> 00:01:21,281
+<c.magenta>首先让我谈谈Spotlight</c>
 
 
 26
-00:00:59,886 --> 00:01:00,966
-indexing APIs.
+00:01:21,815 --> 00:01:25,219
+<c.magenta>Spotlight是原创性的搜索API</c>
+<c.magenta>它是Mac OS 10上的搜索技术</c>
 
 
 27
-00:01:00,966 --> 00:01:02,176
-And we've added a big new
+00:01:25,285 --> 00:01:28,322
+<c.magenta>它以文档为中心</c>
+<c.magenta>这意味着…</c>
 
 
 28
-00:01:02,176 --> 00:01:03,186
-feature called Persistent
+00:01:28,589 --> 00:01:30,624
+<c.magenta>在Spotlight菜单中</c>
 
 
 29
-00:01:03,186 --> 00:01:03,886
-history tracking.
+00:01:30,691 --> 00:01:33,393
+<c.magenta>进行搜索操作</c>
 
 
 30
-00:01:03,886 --> 00:01:04,936
-That is what Rishi's going to
+00:01:33,460 --> 00:01:36,263
+<c.magenta>所获得的搜索结果</c>
+<c.magenta>将会标识出Spotlight</c>
 
 
 31
-00:01:04,936 --> 00:01:05,446
-talk about.
+00:01:36,330 --> 00:01:38,365
+<c.magenta>检索到的文档</c>
 
 
 32
-00:01:05,936 --> 00:01:07,256
-And it's really cool and I'm
+00:01:38,432 --> 00:01:41,201
+<c.magenta>但是不会告诉你</c>
+<c.magenta>检索内容位于文档的哪个位置</c>
 
 
 33
-00:01:07,256 --> 00:01:08,226
-really excited to see it
+00:01:42,102 --> 00:01:43,737
+<c.magenta>对于数据库来说</c>
+<c.magenta>这并不是理想的方法</c>
 
 
 34
-00:01:08,226 --> 00:01:08,836
-presented here.
+00:01:43,804 --> 00:01:46,006
+<c.magenta>我们知道</c>
+<c.magenta>数据库中有大量的记录</c>
 
 
 35
-00:01:09,896 --> 00:01:11,046
-But first Alphonse says "Hi".
+00:01:47,541 --> 00:01:48,876
+<c.magenta>于是我们推出了</c>
+<c.magenta>Core Spotlight</c>
 
 
 36
-00:01:11,206 --> 00:01:11,946
-He's my mascot.
+00:01:49,343 --> 00:01:50,811
+<c.magenta>Core Spotlight是iOS上的</c>
 
 
 37
-00:01:11,946 --> 00:01:14,316
-I couldn't do this without him.
+00:01:50,878 --> 00:01:52,446
+<c.magenta>原创性搜索技术</c>
 
 
 38
-00:01:14,536 --> 00:01:15,356
-So CoreSpotlight.
+00:01:52,513 --> 00:01:54,381
+<c.magenta>它十分适合数据库</c>
 
 
 39
-00:01:16,346 --> 00:01:17,486
-What is Core Spotlight?
+00:01:54,781 --> 00:01:58,652
+<c.magenta>它不仅会返回</c>
+<c.magenta>用户所选择的</c>
 
 
 40
-00:01:17,636 --> 00:01:19,236
-Before I talk about Core
+00:01:58,986 --> 00:02:00,454
+<c.magenta>应用程序和文档</c>
 
 
 41
-00:01:19,236 --> 00:01:20,096
-Spotlight I want to talk a
+00:02:00,787 --> 00:02:02,723
+<c.magenta>而且会告诉你</c>
+<c.magenta>搜索内容在文档中的位置</c>
 
 
 42
-00:01:20,096 --> 00:01:21,236
-little bit about Spotlight.
+00:02:03,123 --> 00:02:05,058
+<c.magenta>你可以在你的应用程序中</c>
+<c.magenta>集成这项功能</c>
 
 
 43
-00:01:21,496 --> 00:01:22,866
-Spotlight was the original
+00:02:05,125 --> 00:02:09,530
+<c.magenta>这样就可以提供</c>
+<c.magenta>你的用户真正想看到的结果</c>
 
 
 44
-00:01:22,866 --> 00:01:23,986
-search API, and search
+00:02:09,696 --> 00:02:12,065
+<c.magenta>现在Mac OS和iOS</c>
+<c.magenta>已经支持这项功能</c>
 
 
 45
-00:01:23,986 --> 00:01:25,446
-technology on Mac OS 10.
+00:02:12,132 --> 00:02:15,068
+<c.magenta>我们认为现在应该将它集成到</c>
+<c.magenta>Core Data之中</c>
 
 
 46
-00:01:25,446 --> 00:01:26,966
-It was very document centric,
+00:02:16,503 --> 00:02:18,071
+<c.magenta>那么Core Spotlight</c>
+<c.magenta>是如何运作的？</c>
 
 
 47
-00:01:27,496 --> 00:01:29,046
-which meant that the search
+00:02:18,138 --> 00:02:19,306
+<c.magenta>它与Spotlight十分相似</c>
 
 
 48
-00:01:29,046 --> 00:01:30,166
-results that you would get back
+00:02:19,573 --> 00:02:20,807
+<c.magenta>当你安装一个应用之后</c>
 
 
 49
-00:01:30,496 --> 00:01:33,486
-from a customer doing a search
+00:02:20,874 --> 00:02:21,975
+<c.magenta>里面会有很多的数据</c>
 
 
 50
-00:01:33,486 --> 00:01:34,916
-in the Spotlight menu would
+00:02:23,043 --> 00:02:25,512
+<c.magenta>用户进入Spotlight菜单</c>
 
 
 51
-00:01:34,916 --> 00:01:37,256
-identify the document that had
+00:02:25,579 --> 00:02:26,947
+<c.magenta>查找应用之中的数据内容</c>
 
 
 52
-00:01:37,256 --> 00:01:38,586
-been retrieved by Spotlight, but
+00:02:27,147 --> 00:02:29,750
+<c.magenta>比如 一张印度照片</c>
 
 
 53
-00:01:38,586 --> 00:01:39,816
-wouldn't actually tell you where
+00:02:30,384 --> 00:02:36,423
+<c.magenta>Spotlight会启动你的应用</c>
+<c.magenta>为你提供一个用户活动</c>
 
 
 54
-00:01:39,816 --> 00:01:40,976
-in the document that hit came
+00:02:38,592 --> 00:02:40,260
+<c.magenta>你可以用它</c>
 
 
 55
-00:01:40,976 --> 00:01:41,226
-from.
+00:02:40,327 --> 00:02:42,396
+<c.magenta>检索用户想要查找的信息</c>
 
 
 56
-00:01:42,056 --> 00:01:43,316
-And it was not really ideal for
+00:02:43,096 --> 00:02:46,033
+<c.magenta>弹出指定窗口</c>
+<c.magenta>让用户能够看到搜索结果</c>
 
 
 57
-00:01:43,316 --> 00:01:44,596
-databases, which as we know can
+00:02:47,768 --> 00:02:51,138
+<c.magenta>前面我说过 现在</c>
+<c.magenta>Mac OS和iOS已支持此功能</c>
 
 
 58
-00:01:44,596 --> 00:01:45,966
-have lots and lots of records in
+00:02:51,438 --> 00:02:54,141
+<c.magenta>今天Core Spotlight团队</c>
+<c.magenta>希望我告诉你们</c>
 
 
 59
-00:01:46,576 --> 00:01:46,666
-them.
+00:02:54,575 --> 00:02:56,210
+<c.magenta>你们也可以使用</c>
+<c.magenta>Core Spotlight API</c>
 
 
 60
-00:01:47,596 --> 00:01:48,386
-Which brings us to Core
+00:02:56,276 --> 00:02:59,446
+<c.magenta>在你们的应用中</c>
+<c.magenta>访问Spotlight搜索索引</c>
 
 
 61
-00:01:48,386 --> 00:01:48,876
-Spotlight.
+00:02:59,513 --> 00:03:00,514
+<c.magenta>这真的很酷</c>
 
 
 62
-00:01:49,396 --> 00:01:50,786
-Core Spotlight was the original
+00:03:00,948 --> 00:03:02,115
+<c.magenta>它可以完成这些功能</c>
 
 
 63
-00:01:50,786 --> 00:01:52,116
-search technology on iOS.
+00:03:02,282 --> 00:03:04,718
+<c.magenta>而不会造成在系统中</c>
+<c.magenta>留下大量的零长度文件</c>
 
 
 64
-00:01:52,516 --> 00:01:53,666
-And it was much more
+00:03:05,152 --> 00:03:06,253
+<c.magenta>我真的非常希望</c>
 
 
 65
-00:01:53,666 --> 00:01:54,366
-database-friendly.
+00:03:06,320 --> 00:03:09,189
+<c.magenta>你们喜欢这个功能</c>
 
 
 66
-00:01:54,836 --> 00:01:56,486
-It would return not only the
+00:03:11,525 --> 00:03:12,526
+<c.magenta>它是如何运作的呢？</c>
 
 
 67
-00:01:56,486 --> 00:01:58,746
-application and the document
+00:03:12,593 --> 00:03:15,128
+<c.magenta>Core Spotlight集成</c>
+<c.magenta>包含三个基本组件</c>
 
 
 68
-00:01:58,996 --> 00:02:00,566
-that the user had selected, but
+00:03:15,195 --> 00:03:16,763
+<c.magenta>第一个是…</c>
 
 
 69
-00:02:00,816 --> 00:02:02,016
-it would also tell you where in
+00:03:17,197 --> 00:03:20,868
+<c.magenta>我们已经在NSPropertyDescription上</c>
+<c.magenta>重新定义Spotlight属性索引的用途</c>
 
 
 70
-00:02:02,016 --> 00:02:02,676
-that document.
+00:03:20,934 --> 00:03:23,904
+<c.magenta>用它指示属性</c>
+<c.magenta>应该被推入Core Spotlight</c>
 
 
 71
-00:02:03,176 --> 00:02:04,406
-It allowed for deep linking into
+00:03:25,138 --> 00:03:27,307
+<c.magenta>但我们需要一种方法来说明</c>
+<c.magenta>在Spotlight 菜单中</c>
 
 
 72
-00:02:04,446 --> 00:02:05,596
-your application so you could
+00:03:27,374 --> 00:03:28,709
+<c.magenta>应该显示哪些内容</c>
 
 
 73
-00:02:05,596 --> 00:02:07,266
-bring up exactly the results
+00:03:28,876 --> 00:03:29,877
+<c.magenta>我们的表达式为：</c>
 
 
 74
-00:02:07,516 --> 00:02:09,246
-that your user was interested in
+00:03:29,943 --> 00:03:32,646
+<c.magenta>NSEntityDescription.</c>
+<c.magenta>coreSpotlightDisplayNameExpression</c>
 
 
 75
-00:02:09,246 --> 00:02:09,515
-seeing.
+00:03:33,013 --> 00:03:34,615
+<c.magenta>当然还有Exporter</c>
 
 
 76
-00:02:09,746 --> 00:02:11,506
-Now it ships on Mac OS, as well
+00:03:34,681 --> 00:03:36,617
+<c.magenta>无论何时在应用中进行存储</c>
 
 
 77
-00:02:11,506 --> 00:02:11,996
-as on iOS.
+00:03:36,950 --> 00:03:40,454
+<c.magenta>无论将用户进行的任何更改</c>
+<c.magenta>推入Core Spotlight Index</c>
 
 
 78
-00:02:11,996 --> 00:02:13,286
-And we thought this is a great
+00:03:42,089 --> 00:03:44,091
+<c.magenta>CoreSpotlightDisplayNameExpression</c>
 
 
 79
-00:02:13,286 --> 00:02:14,606
-time to integrate with it in
+00:03:44,157 --> 00:03:46,360
+<c.magenta>都能够理解这些操作</c>
 
 
 80
-00:02:14,606 --> 00:02:14,976
-Core Data.
+00:03:46,426 --> 00:03:48,161
+<c.magenta>它其实是NSExpression</c>
+<c.magenta>的一个实例</c>
 
 
 81
-00:02:16,536 --> 00:02:17,846
-So how does Core Spotlight work?
+00:03:48,228 --> 00:03:51,365
+<c.magenta>你将它设置为</c>
+<c.magenta>NS Entity Description上的属性</c>
 
 
 82
-00:02:18,076 --> 00:02:19,196
-Well it's a lot like Spotlight.
+00:03:51,965 --> 00:03:55,335
+<c.magenta>在Core Spotlight索引更新时</c>
+<c.magenta>将会计算它的值</c>
 
 
 83
-00:02:19,606 --> 00:02:20,636
-You've got an application.
+00:03:55,936 --> 00:03:56,970
+<c.magenta>在对象方面…</c>
 
 
 84
-00:02:20,876 --> 00:02:21,856
-It has a bunch of data in it.
+00:03:57,037 --> 00:04:00,474
+<c.magenta>经过更新的托管对象</c>
+<c.magenta>作为求值对象参数</c>
 
 
 85
-00:02:22,636 --> 00:02:24,246
-The user goes into the Spotlight
+00:04:00,908 --> 00:04:04,044
+<c.magenta>这样就能够返回</c>
+<c.magenta>被推入Core Spotlight的任何内容</c>
 
 
 86
-00:02:24,246 --> 00:02:25,596
-menu and looks for something
+00:04:04,111 --> 00:04:06,380
+<c.magenta>甚至不是</c>
+<c.magenta>基本Core Data类型</c>
 
 
 87
-00:02:25,596 --> 00:02:26,316
-that's going to be in your
+00:04:06,446 --> 00:04:09,016
+<c.magenta>比如 一个</c>
+<c.magenta>CS Localized String实例</c>
 
 
 88
-00:02:26,316 --> 00:02:26,996
-application.
+00:04:09,750 --> 00:04:12,452
+<c.magenta>这些表达式</c>
+<c.magenta>进行Keypaths求值</c>
 
 
 89
-00:02:27,206 --> 00:02:29,106
-For example, you know, photo
+00:04:12,519 --> 00:04:14,354
+<c.magenta>但是 更有趣的是</c>
 
 
 90
-00:02:29,206 --> 00:02:29,656
-from India.
+00:04:14,421 --> 00:04:17,925
+<c.magenta>它们可以是内建函数</c>
+<c.magenta>可以是小写 大写等</c>
 
 
 91
-00:02:30,466 --> 00:02:33,546
-And Spotlight launch services
+00:04:18,325 --> 00:04:21,428
+<c.magenta>当然 如果你也可以像我一样</c>
+<c.magenta>使用完全随机的函数</c>
 
 
 92
-00:02:33,546 --> 00:02:35,006
-launches your application and
+00:04:21,495 --> 00:04:25,666
+<c.magenta>在你的运行时 寻找类实例</c>
 
 
 93
-00:02:35,006 --> 00:02:36,446
-you're given a user activity
+00:04:25,732 --> 00:04:28,635
+<c.magenta>调用随机方法以获取内容</c>
 
 
 94
-00:02:36,626 --> 00:02:39,846
-that you can use to retrieve the
+00:04:29,636 --> 00:04:30,704
+<c.magenta>这是很酷的功能</c>
 
 
 95
-00:02:39,846 --> 00:02:41,666
-information about what the user
+00:04:32,439 --> 00:04:34,474
+<c.magenta>当然</c>
+<c.magenta>还有NSCoreDataSpotlightDelegate</c>
 
 
 96
-00:02:41,666 --> 00:02:42,316
-was searching for.
+00:04:34,541 --> 00:04:36,777
+<c.magenta>它相当于一大块的代码</c>
 
 
 97
-00:02:43,046 --> 00:02:44,516
-Popup, you know, that specific
+00:04:36,844 --> 00:04:37,911
+<c.magenta>完成所有工作</c>
 
 
 98
-00:02:44,516 --> 00:02:47,256
-view so your user could see it.
+00:04:38,846 --> 00:04:41,381
+<c.magenta>它实现CSSearchableIndexDelegate</c>
 
 
 99
-00:02:47,876 --> 00:02:49,226
-As I said, it's now shipping on
+00:04:41,582 --> 00:04:44,017
+<c.magenta>提供所有方法的实现</c>
 
 
 100
-00:02:49,226 --> 00:02:51,396
-Mac OS as well as iOS.
+00:04:44,084 --> 00:04:45,619
+<c.magenta>你可以直接使用它</c>
 
 
 101
-00:02:51,516 --> 00:02:52,596
-And at this point the Core
+00:04:46,553 --> 00:04:48,388
+<c.magenta>它在后台线程上使用单独的存储空间</c>
 
 
 102
-00:02:52,596 --> 00:02:53,856
-Spotlight team wants me to tell
+00:04:48,455 --> 00:04:50,157
+<c.magenta>因此你不需要担心</c>
 
 
 103
-00:02:53,856 --> 00:02:55,356
-you that you can also use the
+00:04:50,224 --> 00:04:52,259
+<c.magenta>Spotlight Exporter</c>
+<c.magenta>所做的任何事情</c>
 
 
 104
-00:02:55,356 --> 00:02:56,856
-Core Spotlight API's to access
+00:04:52,326 --> 00:04:55,629
+<c.magenta>阻止你的主视图上下文完成其工作</c>
 
 
 105
-00:02:56,856 --> 00:02:58,146
-the Spotlight search indexes
+00:04:56,463 --> 00:04:57,297
+<c.magenta>你可以使用</c>
 
 
 106
-00:02:58,226 --> 00:02:59,886
-from your application, which is
+00:04:57,364 --> 00:04:59,800
+<c.magenta>NSPersistentStoreDescription</c>
+<c.magenta>和一个模型对它进行初始化</c>
 
 
 107
-00:02:59,886 --> 00:03:00,146
-cool.
+00:04:59,867 --> 00:05:01,935
+<c.magenta>因此它需要知道其处理的工作是什么</c>
 
 
 108
-00:03:00,996 --> 00:03:02,666
-And it does all of this without
+00:05:02,870 --> 00:05:05,172
+<c.magenta>你告诉Persistent Store</c>
 
 
 109
-00:03:02,666 --> 00:03:03,976
-scattering zero-length files all
+00:05:05,239 --> 00:05:09,076
+<c.magenta>它应该通过</c>
+<c.magenta>将Exporter设置为一个选项</c>
 
 
 110
-00:03:03,976 --> 00:03:04,716
-over the file system.
+00:05:09,543 --> 00:05:12,145
+<c.magenta>将其内容导出到</c>
+<c.magenta>Core Spotlight</c>
 
 
 111
-00:03:05,126 --> 00:03:06,086
-And I'm really hoping that at
+00:05:12,212 --> 00:05:15,215
+<c.magenta>当你在PersistentStoreCoordinator上</c>
 
 
 112
-00:03:06,086 --> 00:03:07,216
-least some of you are mentally
+00:05:15,482 --> 00:05:16,750
+<c.magenta>调用NSPersistentStore</c>
 
 
 113
-00:03:07,216 --> 00:03:08,536
-cheering about this because I
+00:05:17,451 --> 00:05:20,988
+<c.magenta>如果你不喜欢默认行为</c>
+<c.magenta>也可以进行重写</c>
 
 
 114
-00:03:08,536 --> 00:03:09,016
-sure was.
+00:05:21,054 --> 00:05:25,826
+<c.magenta>重写方法是 NSDataCoreSpotlight</c>
+<c.magenta>delegate attribute set for object:</c>
 
 
 115
-00:03:09,726 --> 00:03:12,546
-So how does it work?
+00:05:26,126 --> 00:05:28,495
+<c.magenta>重写方法可能是这样的</c>
 
 
 116
-00:03:12,546 --> 00:03:13,986
-There's three basic components
+00:05:28,896 --> 00:05:30,864
+<c.magenta>我们有一个基本方法</c>
 
 
 117
-00:03:13,986 --> 00:03:14,726
-to the Core Spotlight
+00:05:30,931 --> 00:05:33,600
+<c.magenta>它获取超类返回的属性集</c>
 
 
 118
-00:03:14,726 --> 00:03:15,226
-integration.
+00:05:34,601 --> 00:05:37,371
+<c.magenta>它通过对象发现</c>
+<c.magenta>这是一张照片的实例</c>
 
 
 119
-00:03:15,226 --> 00:03:17,486
-First there's -- we've
+00:05:37,437 --> 00:05:40,607
+<c.magenta>因为这是一个照片应用</c>
+<c.magenta>而且这些照片具有标记</c>
 
 
 120
-00:03:17,486 --> 00:03:18,756
-repurposed the index by
+00:05:40,674 --> 00:05:42,743
+<c.magenta>当有人搜索内容时…</c>
 
 
 121
-00:03:18,756 --> 00:03:20,056
-Spotlight property on NS
+00:05:43,844 --> 00:05:46,847
+<c.magenta>当用户搜索内容时</c>
+<c.magenta>将返回具有一个这种标记的结果</c>
 
 
 122
-00:03:20,056 --> 00:03:21,576
-Property Description to indicate
+00:05:46,914 --> 00:05:49,183
+<c.magenta>我想要返回一张</c>
+<c.magenta>具有这个标记的照片</c>
 
 
 123
-00:03:21,576 --> 00:03:22,786
-that a property should be pushed
+00:05:49,550 --> 00:05:51,351
+<c.magenta>因此标记本身并不吸引人</c>
 
 
 124
-00:03:22,786 --> 00:03:23,936
-into Core Spotlight.
+00:05:51,885 --> 00:05:53,987
+<c.magenta>因此我会把所有标记信息</c>
 
 
 125
-00:03:24,046 --> 00:03:26,506
-But we need a way to specify
+00:05:54,054 --> 00:05:57,491
+<c.magenta>堆集到照片对象上</c>
+<c.magenta>当Spotlight中有匹配项时</c>
 
 
 126
-00:03:26,506 --> 00:03:27,626
-what should be showing up in the
+00:05:57,691 --> 00:05:59,226
+<c.magenta>将会返回照片</c>
 
 
 127
-00:03:27,626 --> 00:03:28,756
-Spotlight results menu.
+00:06:00,027 --> 00:06:02,029
+<c.magenta>然后我返回属性集</c>
 
 
 128
-00:03:29,016 --> 00:03:30,416
-And that is NS Entity
+00:06:02,663 --> 00:06:04,665
+<c.magenta>你们大多数人</c>
+<c.magenta>都需要写这么多的代码</c>
 
 
 129
-00:03:30,416 --> 00:03:31,606
-Description Core Spotlight
+00:06:04,731 --> 00:06:05,966
+<c.magenta>来实现此功能</c>
 
 
 130
-00:03:31,606 --> 00:03:32,606
-Display Name Expression.
+00:06:07,901 --> 00:06:09,002
+<c.magenta>现在我进行演示</c>
 
 
 131
-00:03:33,016 --> 00:03:34,156
-And of course there's an
+00:06:09,369 --> 00:06:10,404
+<c.magenta>（演示）</c>
 
 
 132
-00:03:34,206 --> 00:03:34,726
-Exporter.
+00:06:16,410 --> 00:06:17,978
+<c.magenta>这里有一个小应用</c>
 
 
 133
-00:03:34,726 --> 00:03:35,876
-That whenever you do save in
+00:06:20,247 --> 00:06:22,349
+<c.magenta>请忽略后面的X Code</c>
 
 
 134
-00:03:35,876 --> 00:03:37,826
-your application pushes whatever
+00:06:23,917 --> 00:06:25,485
+<c.magenta>这个应用显示照片</c>
 
 
 135
-00:03:37,826 --> 00:03:39,266
-change the user has made into
+00:06:26,220 --> 00:06:27,754
+<c.magenta>你可以滚动 查看内容</c>
 
 
 136
-00:03:39,336 --> 00:03:41,106
-the Core Spotlight Index.
+00:06:29,489 --> 00:06:32,659
+<c.magenta>点击可以查看</c>
 
 
 137
-00:03:41,656 --> 00:03:43,146
-Core Spotlight Display Name
+00:06:33,794 --> 00:06:34,995
+<c.magenta>是各种各样的人像照片</c>
 
 
 138
-00:03:43,146 --> 00:03:45,006
-Expression is kind of the
+00:06:35,062 --> 00:06:36,730
+<c.magenta>含有少量的元数据信息</c>
 
 
 139
-00:03:45,006 --> 00:03:45,876
-trickiest piece of this to
+00:06:37,231 --> 00:06:38,232
+<c.magenta>但是有趣的是</c>
 
 
 140
-00:03:45,876 --> 00:03:46,486
-understand.
+00:06:38,832 --> 00:06:41,602
+<c.magenta>现在我可以调出Spotlight</c>
+<c.magenta>输入搜索内容</c>
 
 
 141
-00:03:46,486 --> 00:03:47,676
-It's actually an instance of NS
+00:06:44,171 --> 00:06:48,842
+<c.magenta>例如 在Spotlight中</c>
+<c.magenta>输入我所知道的内容</c>
 
 
 142
-00:03:47,676 --> 00:03:49,256
-Expression that you set as a
+00:06:48,909 --> 00:06:51,712
+<c.magenta>它会自动激活我的应用</c>
 
 
 143
-00:03:49,256 --> 00:03:50,936
-property on NS Entity
+00:06:51,778 --> 00:06:55,215
+<c.magenta>调用application</c>
+<c.magenta>continue user activity方法</c>
 
 
 144
-00:03:50,936 --> 00:03:51,426
-Description.
+00:06:55,549 --> 00:06:56,917
+<c.magenta>使用NS user activity</c>
 
 
 145
-00:03:52,006 --> 00:03:53,956
-And it's evaluated during the
+00:06:57,317 --> 00:07:00,521
+<c.magenta>我已经跳入这个方法</c>
+<c.magenta>看看其执行结果</c>
 
 
 146
-00:03:53,956 --> 00:03:55,366
-Core Spotlight index update.
+00:07:00,687 --> 00:07:03,390
+<c.magenta>“有人打开了某物”</c>
 
 
 147
-00:03:55,996 --> 00:03:57,476
-With the object -- the managed
+00:07:03,624 --> 00:07:07,261
+<c.magenta>我要挖掘用户活动用户信息</c>
 
 
 148
-00:03:57,476 --> 00:03:59,106
-object that's being updated as
+00:07:07,327 --> 00:07:09,096
+<c.magenta>因为那里有我们需要的内容</c>
 
 
 149
-00:03:59,106 --> 00:04:00,416
-the evaluated object parameter.
+00:07:10,497 --> 00:07:11,798
+<c.magenta>然后查找标识符</c>
 
 
 150
-00:04:00,946 --> 00:04:01,966
-And this allows you to return
+00:07:12,432 --> 00:07:14,434
+<c.magenta>如果我打印出标识符</c>
+<c.magenta>我们可以看到</c>
 
 
 151
-00:04:01,966 --> 00:04:03,436
-anything that can be pushed in
+00:07:14,635 --> 00:07:18,539
+<c.magenta>有很多的标识符和用户信息</c>
 
 
 152
-00:04:03,436 --> 00:04:04,216
-to Core Spotlight.
+00:07:18,605 --> 00:07:21,108
+<c.magenta>是托管对象ID</c>
+<c.magenta>字符串表示</c>
 
 
 153
-00:04:04,216 --> 00:04:05,346
-Even something that's not one of
+00:07:21,608 --> 00:07:24,411
+<c.magenta>我要将它转换成为URI</c>
 
 
 154
-00:04:05,346 --> 00:04:06,396
-the base Core Data types.
+00:07:24,711 --> 00:07:28,282
+<c.magenta>要求persistent StoreCoordinator</c>
+<c.magenta>将它转换成为托管对象ID</c>
 
 
 155
-00:04:06,526 --> 00:04:08,126
-Like for example an instance of
+00:07:30,717 --> 00:07:31,985
+<c.magenta>然后我继续</c>
 
 
 156
-00:04:08,166 --> 00:04:09,046
-CS Localized String.
+00:07:33,854 --> 00:07:34,922
+<c.magenta>哇</c>
 
 
 157
-00:04:09,726 --> 00:04:11,216
-By and large, these expressions
+00:07:36,623 --> 00:07:40,093
+<c.magenta>我打开了用户请求的照片</c>
 
 
 158
-00:04:11,216 --> 00:04:12,566
-are going to evaluate Keypaths
+00:07:40,928 --> 00:07:43,964
+<c.magenta>多么可爱的视图</c>
 
 
 159
-00:04:12,566 --> 00:04:13,516
-but they could be, you know,
+00:07:46,366 --> 00:07:47,201
+<c.magenta>这就是</c>
 
 
 160
-00:04:13,516 --> 00:04:14,436
-much more interesting.
+00:07:47,768 --> 00:07:49,870
+<c.magenta>Core Spotlight Integration工作原理</c>
 
 
 161
-00:04:14,436 --> 00:04:15,276
-They could be built in
+00:07:49,937 --> 00:07:51,238
+<c.magenta>我们已经完成大部分工作</c>
 
 
 162
-00:04:15,276 --> 00:04:17,216
-functions, lowercase, uppercase,
+00:07:51,305 --> 00:07:56,176
+<c.magenta>你需要实现方法就可以了</c>
 
 
 163
-00:04:17,216 --> 00:04:17,976
-stuff like that.
+00:07:56,877 --> 00:07:58,512
+<c.magenta>这就是Core Spotlight Integration</c>
 
 
 164
-00:04:18,406 --> 00:04:19,935
-Or if you're somebody like me
+00:07:59,379 --> 00:08:00,948
+<c.magenta>（便利之处）</c>
 
 
 165
-00:04:19,935 --> 00:04:21,146
-they could be completely random
+00:08:01,014 --> 00:08:03,984
+<c.magenta>我们为你提供一些</c>
+<c.magenta>非常好用的便利功能</c>
 
 
 166
-00:04:21,146 --> 00:04:23,196
-functions that go often dig
+00:08:04,451 --> 00:08:06,820
+<c.magenta>如果你决定启用</c>
+<c.magenta>Core Spotlight Integration</c>
 
 
 167
-00:04:23,196 --> 00:04:24,576
-around in your runtime to find
+00:08:07,354 --> 00:08:09,990
+<c.magenta>传递exporter至…</c>
+<c.magenta>作为选项之一</c>
 
 
 168
-00:04:24,686 --> 00:04:26,516
-instances of classes and call
+00:08:10,057 --> 00:08:12,259
+<c.magenta>当你添加store到persistent</c>
+<c.magenta>store coordinator时</c>
 
 
 169
-00:04:26,516 --> 00:04:27,976
-just random methods on them to
+00:08:12,659 --> 00:08:14,361
+<c.magenta>当你的应用首次启动时</c>
 
 
 170
-00:04:27,976 --> 00:04:28,606
-get their stuff back.
+00:08:14,428 --> 00:08:16,797
+<c.magenta>我们将自动开始导出到</c>
+<c.magenta>Core Spotlight</c>
 
 
 171
-00:04:28,816 --> 00:04:30,536
-I think that's cool too.
+00:08:16,864 --> 00:08:19,766
+<c.magenta>将会继续导出</c>
+<c.magenta>自动导出所有数据</c>
 
 
 172
-00:04:31,326 --> 00:04:33,536
-And of course, there's the NS
+00:08:19,833 --> 00:08:21,835
+<c.magenta>即使你的应用已经退出</c>
 
 
 173
-00:04:33,536 --> 00:04:34,566
-Core Data Spotlight Delegate,
+00:08:21,902 --> 00:08:23,837
+<c.magenta>如果你的用户同时退出应用</c>
 
 
 174
-00:04:34,566 --> 00:04:35,676
-which is like the big and
+00:08:24,304 --> 00:08:25,873
+<c.magenta>我们使用持续性历史跟踪功能</c>
 
 
 175
-00:04:35,676 --> 00:04:36,906
-complicated piece that we wrote
+00:08:25,939 --> 00:08:27,574
+<c.magenta>确保所有数据被推入</c>
 
 
 176
-00:04:36,906 --> 00:04:37,716
-that does all the work.
+00:08:28,075 --> 00:08:30,544
+<c.magenta>即使你的应用崩溃 退出</c>
 
 
 177
-00:04:38,086 --> 00:04:40,636
-It implements CS Searchable
+00:08:31,078 --> 00:08:33,145
+<c.magenta>运行不正常</c>
 
 
 178
-00:04:40,636 --> 00:04:41,326
-Index Delegate.
+00:08:35,249 --> 00:08:36,450
+<c.magenta>（不便之处）</c>
 
 
 179
-00:04:41,416 --> 00:04:42,386
-It provides default
+00:08:36,517 --> 00:08:37,818
+<c.magenta>有少量的不便之处</c>
 
 
 180
-00:04:42,386 --> 00:04:44,086
-implementation of all methods,
+00:08:37,885 --> 00:08:39,653
+<c.magenta>Core Spotlight</c>
+<c.magenta>和Spotlight Integration</c>
 
 
 181
-00:04:44,086 --> 00:04:45,086
-so you can use it straight out
+00:08:39,720 --> 00:08:41,722
+<c.magenta>如果你同时实现这两种功能</c>
+<c.magenta>它们是互相排斥的</c>
 
 
 182
-00:04:45,086 --> 00:04:46,626
-of the box.
+00:08:41,788 --> 00:08:43,890
+<c.magenta>如果你将实体设置到</c>
+<c.magenta>Core Spotlight</c>
 
 
 183
-00:04:46,626 --> 00:04:47,806
-It uses separate store on a
+00:08:44,458 --> 00:08:48,362
+<c.magenta>Display Name Expression</c>
+<c.magenta>属性存储在外部记录中</c>
 
 
 184
-00:04:47,806 --> 00:04:48,936
-background thread so you don't
+00:08:49,496 --> 00:08:51,298
+<c.magenta>模型编译器将会报错</c>
 
 
 185
-00:04:48,936 --> 00:04:49,926
-need to worry about any of the
+00:08:52,132 --> 00:08:54,735
+<c.magenta>目前我们不追踪</c>
+<c.magenta>批处理操作的结果</c>
 
 
 186
-00:04:49,926 --> 00:04:51,226
-work that's being done by the
+00:08:56,770 --> 00:08:58,138
+<c.magenta>一些不便之处</c>
 
 
 187
-00:04:51,226 --> 00:04:52,976
-Spotlight Exporter blocking your
+00:08:58,205 --> 00:09:00,374
+<c.magenta>第一个是我在调试时发现的</c>
 
 
 188
-00:04:52,976 --> 00:04:54,926
-main view context from getting
+00:09:00,440 --> 00:09:03,277
+<c.magenta>因为我在单独框架中</c>
+<c.magenta>构建我的所有单元测试</c>
 
 
 189
-00:04:54,926 --> 00:04:55,596
-its work done.
+00:09:03,343 --> 00:09:06,747
+<c.magenta>由XCTest运行</c>
+<c.magenta>并没有这种授权</c>
 
 
 190
-00:04:56,516 --> 00:04:57,686
-You initialize it with a NS
+00:09:06,813 --> 00:09:09,550
+<c.magenta>这会造成困惑</c>
+<c.magenta>让我无法与Spotlight对话</c>
 
 
 191
-00:04:57,686 --> 00:04:59,406
-Persistent Store Description and
+00:09:10,350 --> 00:09:12,719
+<c.magenta>无论任何应用</c>
+<c.magenta>想要与Spotlight对话</c>
 
 
 192
-00:04:59,406 --> 00:05:00,676
-a model since it needs to know
+00:09:12,786 --> 00:09:16,723
+<c.magenta>都需要com.apple.</c>
+<c.magenta>application-identifier授权</c>
 
 
 193
-00:05:00,676 --> 00:05:02,976
-what it's working with.
+00:09:17,157 --> 00:09:18,458
+<c.magenta>你们大多数都会默认获得授权</c>
 
 
 194
-00:05:02,976 --> 00:05:04,336
-And basically you tell a
+00:09:18,525 --> 00:09:21,562
+<c.magenta>但是如果你想要编写单元测试</c>
+<c.magenta>并由XCTtest运行</c>
 
 
 195
-00:05:04,336 --> 00:05:05,956
-Persistent Store that it should
+00:09:22,229 --> 00:09:23,230
+<c.magenta>请认识到这一点</c>
 
 
 196
-00:05:05,956 --> 00:05:08,606
-be exporting its data to Core
+00:09:23,463 --> 00:09:25,532
+<c.magenta>当然你需要处理搜索结果</c>
 
 
 197
-00:05:08,606 --> 00:05:10,586
-Spotlight by setting the
+00:09:26,934 --> 00:09:29,002
+<c.magenta>你需在application delegate上</c>
 
 
 198
-00:05:10,586 --> 00:05:12,826
-exporter as an option when in
+00:09:30,237 --> 00:09:32,773
+<c.magenta>实现Application</c>
+<c.magenta>Continue User Activity</c>
 
 
 199
-00:05:12,826 --> 00:05:13,616
-when you're calling NS
+00:09:33,140 --> 00:09:34,908
+<c.magenta>设置你想要的内容</c>
 
 
 200
-00:05:13,616 --> 00:05:15,656
-Persistent Store with type on
+00:09:35,209 --> 00:09:36,710
+<c.magenta>我们可以在屏幕上看到</c>
 
 
 201
-00:05:15,656 --> 00:05:16,246
-the Persistent Store
+00:09:37,177 --> 00:09:39,446
+<c.magenta>也可以在演示中看到</c>
+<c.magenta>我在这里显示给大家看</c>
 
 
 202
-00:05:16,246 --> 00:05:16,706
-Coordinator.
+00:09:39,880 --> 00:09:41,281
+<c.magenta>这是你们要实现的方法</c>
 
 
 203
-00:05:17,516 --> 00:05:19,256
-The override point on the
+00:09:41,682 --> 00:09:44,685
+<c.magenta>非常简单 抓取用户活动用户信息</c>
 
 
 204
-00:05:19,256 --> 00:05:20,246
-delegate if you don't like the
+00:09:45,819 --> 00:09:48,622
+<c.magenta>托管对象ID标识符位于这里</c>
 
 
 205
-00:05:20,246 --> 00:05:22,956
-default behavior is NS Data Core
+00:09:48,689 --> 00:09:51,258
+<c.magenta>隶属于KCS Searchable Item</c>
+<c.magenta>Activity Identifier</c>
 
 
 206
-00:05:22,956 --> 00:05:25,236
-Spotlight delegate attribute set
+00:09:52,192 --> 00:09:54,027
+<c.magenta>我已经把它转换为托管对象ID</c>
 
 
 207
-00:05:25,236 --> 00:05:25,826
-for object.
+00:09:54,494 --> 00:09:56,129
+<c.magenta>然后你们就可以进行想要的操作</c>
 
 
 208
-00:05:26,236 --> 00:05:27,676
-And an override might look
+00:09:56,964 --> 00:10:00,767
+<c.magenta>比如查看新窗口</c>
+<c.magenta>缩放到正确的视图大小等</c>
 
 
 209
-00:05:27,676 --> 00:05:28,936
-something like this.
+00:10:02,836 --> 00:10:05,005
+<c.magenta>存在一些不便之处</c>
 
 
 210
-00:05:28,966 --> 00:05:30,146
-Here we've got a basic method
+00:10:05,172 --> 00:10:07,708
+<c.magenta>如果你使用旧的</c>
+<c.magenta>Spotlight Integration</c>
 
 
 211
-00:05:30,146 --> 00:05:31,816
-that goes through and gets the
+00:10:08,609 --> 00:10:13,046
+<c.magenta>你需要决定是否删除旧引用文件</c>
+<c.magenta>如果磁盘上有这些文件</c>
 
 
 212
-00:05:31,816 --> 00:05:32,806
-attribute set return by the
+00:10:13,113 --> 00:10:15,182
+<c.magenta>因为我们不知道</c>
+<c.magenta>这些文件是否有语义学意义</c>
 
 
 213
-00:05:32,806 --> 00:05:33,546
-super class.
+00:10:16,383 --> 00:10:19,286
+<c.magenta>Core Spotlight API是x86指令</c>
 
 
 214
-00:05:34,686 --> 00:05:36,096
-It looks at the object, realizes
+00:10:19,353 --> 00:10:21,722
+<c.magenta>这意味着此功能</c>
+<c.magenta>仅支持x86处理</c>
 
 
 215
-00:05:36,096 --> 00:05:37,006
-that this is an instance of a
+00:10:21,788 --> 00:10:23,724
+<c.magenta>现在是时候升级你的应用了</c>
 
 
 216
-00:05:37,006 --> 00:05:38,446
-photo because I've got like the
+00:10:26,026 --> 00:10:27,027
+<c.magenta>（新Indexing API）</c>
 
 
 217
-00:05:38,446 --> 00:05:40,046
-photo app and those photos have
+00:10:27,094 --> 00:10:31,198
+<c.magenta>关于Core Spotlight就是这些</c>
+<c.magenta>我们还增加了新Indexing API</c>
 
 
 218
-00:05:40,046 --> 00:05:40,716
-tags.
+00:10:32,833 --> 00:10:35,269
+<c.magenta>那么 indexing是什么呢？</c>
+<c.magenta>Indexing让你能够</c>
 
 
 219
-00:05:40,796 --> 00:05:42,316
-And when somebody searches for
+00:10:35,335 --> 00:10:37,404
+<c.magenta>配置你的数据库</c>
+<c.magenta>更快地进行搜索</c>
 
 
 220
-00:05:42,316 --> 00:05:44,366
-something-- when the user
+00:10:38,438 --> 00:10:40,474
+<c.magenta>你可以有多个索引</c>
 
 
 221
-00:05:44,366 --> 00:05:45,306
-searches for something, that
+00:10:40,908 --> 00:10:42,009
+<c.magenta>每个索引可以有多个列</c>
 
 
 222
-00:05:45,306 --> 00:05:46,606
-returns a hit on one of those
+00:10:42,075 --> 00:10:44,344
+<c.magenta>一个列可以属于多个索引</c>
 
 
 223
-00:05:46,606 --> 00:05:47,896
-tags, I actually want to return
+00:10:44,411 --> 00:10:46,480
+<c.magenta>这让你能够设置大量索引</c>
 
 
 224
-00:05:47,896 --> 00:05:49,186
-the photo that has that tag
+00:10:46,847 --> 00:10:49,850
+<c.magenta>数据库可以使用这些索引</c>
+<c.magenta>来选择最高效的索引</c>
 
 
 225
-00:05:49,186 --> 00:05:50,676
-because the tag itself is not
+00:10:50,184 --> 00:10:52,286
+<c.magenta>执行想要的查询</c>
 
 
 226
-00:05:50,676 --> 00:05:51,396
-terribly interesting.
+00:10:52,352 --> 00:10:54,121
+<c.magenta>其表达方式好像是：</c>
 
 
 227
-00:05:51,516 --> 00:05:53,206
-So I go and collapse all of the
+00:10:54,388 --> 00:10:57,257
+<c.magenta>“我想要使用这些列</c>
+<c.magenta>我将使用这个索引”</c>
 
 
 228
-00:05:53,206 --> 00:05:54,746
-tag information on to the photo
+00:10:57,324 --> 00:10:58,892
+<c.magenta>（题外话：INDEXING）</c>
 
 
 229
-00:05:54,746 --> 00:05:56,516
-objects itself so that the photo
+00:10:58,959 --> 00:11:01,261
+<c.magenta>现在我想讨论一些</c>
+<c.magenta>关于indexing的题话外</c>
 
 
 230
-00:05:56,516 --> 00:05:58,186
-will be returned when there's a
+00:11:01,328 --> 00:11:03,263
+<c.magenta>主要是针对</c>
+<c.magenta>不喜欢使用数据库的人</c>
 
 
 231
-00:05:58,186 --> 00:05:59,236
-match in Spotlight.
+00:11:04,198 --> 00:11:07,067
+<c.magenta>基本的索引形式是二叉树索引</c>
 
 
 232
-00:05:59,236 --> 00:06:01,446
-And then I just return the
+00:11:07,134 --> 00:11:08,302
+<c.magenta>支持任何位置和任何数据</c>
 
 
 233
-00:06:01,446 --> 00:06:01,956
-attribute set.
+00:11:09,469 --> 00:11:11,839
+<c.magenta>但是它们仅支持严格比较</c>
 
 
 234
-00:06:01,956 --> 00:06:04,016
-And that's as much code as we
+00:11:11,905 --> 00:11:14,007
+<c.magenta>它们进行数据位比较</c>
 
 
 235
-00:06:04,016 --> 00:06:05,166
-expect most of you to ever have
+00:11:14,074 --> 00:11:16,610
+<c.magenta>如果不相同 索引就不匹配</c>
 
 
 236
-00:06:05,166 --> 00:06:05,926
-to write for this.
+00:11:18,145 --> 00:11:20,280
+<c.magenta>但是 更多类型的索引</c>
 
 
 237
-00:06:06,396 --> 00:06:08,986
-So now I'm going to do a demo.
+00:11:20,347 --> 00:11:21,915
+<c.magenta>开始得到应用</c>
 
 
 238
-00:06:16,446 --> 00:06:17,206
-And I've got a little
+00:11:21,982 --> 00:11:24,051
+<c.magenta>最近 一种非常有用的索引</c>
 
 
 239
-00:06:17,206 --> 00:06:17,926
-application here.
+00:11:24,685 --> 00:11:26,653
+<c.magenta>是RTree Index</c>
 
 
 240
-00:06:19,116 --> 00:06:21,326
-Please ignore the x Code in the
+00:11:27,054 --> 00:11:30,657
+<c.magenta>它是一种经过优化的索引</c>
+<c.magenta>适用于各种基础搜索</c>
 
 
 241
-00:06:21,326 --> 00:06:23,156
-background, we'll get there.
+00:11:31,291 --> 00:11:33,026
+<c.magenta>二进制索引看起来是这样的</c>
 
 
 242
-00:06:23,956 --> 00:06:25,446
-It displays photos.
+00:11:33,093 --> 00:11:34,995
+<c.magenta>这是你的数据</c>
 
 
 243
-00:06:26,206 --> 00:06:28,326
-If you scroll around, look at
+00:11:35,062 --> 00:11:36,663
+<c.magenta>设备尺寸之类的数据</c>
 
 
 244
-00:06:29,256 --> 00:06:31,976
-stuff, click on things to see,
+00:11:36,930 --> 00:11:40,033
+<c.magenta>如果构建一个BTree</c>
+<c.magenta>你就会得到这样的东西</c>
 
 
 245
-00:06:32,226 --> 00:06:32,436
-you know?
+00:11:40,100 --> 00:11:41,401
+<c.magenta>（二叉树索引）</c>
 
 
 246
-00:06:33,816 --> 00:06:34,736
-Photos of people enjoying
+00:11:41,468 --> 00:11:43,770
+<c.magenta>所有节点…</c>
 
 
 247
-00:06:34,736 --> 00:06:35,636
-themselves with a little bit of
+00:11:43,837 --> 00:11:46,907
+<c.magenta>子节点中较小的数</c>
 
 
 248
-00:06:35,636 --> 00:06:36,666
-meta data information.
+00:11:46,974 --> 00:11:48,709
+<c.magenta>位于左边</c>
 
 
 249
-00:06:37,086 --> 00:06:38,246
-But here's the interesting part.
+00:11:48,775 --> 00:11:51,278
+<c.magenta>所有节点中较大的数</c>
+<c.magenta>位于右边</c>
 
 
 250
-00:06:38,856 --> 00:06:40,026
-I can now come up to Spotlight
+00:11:51,345 --> 00:11:53,347
+<c.magenta>然后向下检索</c>
+<c.magenta>非常简单</c>
 
 
 251
-00:06:40,966 --> 00:06:44,916
-and type in for example,
+00:11:54,014 --> 00:11:56,283
+<c.magenta>但是 RTree Data</c>
+<c.magenta>看上去通常是这样的</c>
 
 
 252
-00:06:45,476 --> 00:06:47,336
-something that I know is in
+00:11:56,350 --> 00:11:59,286
+<c.magenta>形成很多奇怪的形状</c>
 
 
 253
-00:06:48,246 --> 00:06:50,386
-Spotlight and it automatically
+00:11:59,353 --> 00:12:00,654
+<c.magenta>是多维图形</c>
 
 
 254
-00:06:50,456 --> 00:06:52,166
-activates my application and
+00:12:00,854 --> 00:12:03,657
+<c.magenta>它们通常互相重叠</c>
+<c.magenta>看上去比较奇怪</c>
 
 
 255
-00:06:52,546 --> 00:06:54,166
-calls the application continue
+00:12:04,024 --> 00:12:06,627
+<c.magenta>并没有一个很好的方法组织它们</c>
 
 
 256
-00:06:54,166 --> 00:06:56,126
-user activity method with an NS
+00:12:06,693 --> 00:12:09,263
+<c.magenta>以形成方向线性二叉树</c>
 
 
 257
-00:06:56,126 --> 00:06:56,826
-user activity.
+00:12:09,696 --> 00:12:12,332
+<c.magenta>RTree Data的存储方式</c>
+<c.magenta>通常是这样的</c>
 
 
 258
-00:06:57,386 --> 00:06:59,006
-And here I've broken in that
+00:12:12,399 --> 00:12:15,035
+<c.magenta>有一个范围零</c>
+<c.magenta>是最小边界块</c>
 
 
 259
-00:06:59,006 --> 00:07:00,366
-method so let's see what's going
+00:12:15,102 --> 00:12:18,539
+<c.magenta>围绕着它的所有子部分</c>
+<c.magenta>或称集合元素</c>
 
 
 260
-00:07:00,366 --> 00:07:00,606
-on.
+00:12:19,339 --> 00:12:24,278
+<c.magenta>比如 范围元素</c>
+<c.magenta>包含范围R6和R10</c>
 
 
 261
-00:07:00,766 --> 00:07:03,536
-Well, somebody opened something
+00:12:24,344 --> 00:12:28,749
+<c.magenta>R6又包含子元素R7</c>
+<c.magenta>R7又包含更多子元素</c>
 
 
 262
-00:07:03,746 --> 00:07:04,756
-and I'm going to go dig around
+00:12:29,049 --> 00:12:30,918
+<c.magenta>这是一种轻度不平衡RTree</c>
 
 
 263
-00:07:04,756 --> 00:07:07,106
-in that user activities user
+00:12:30,984 --> 00:12:32,085
+<c.magenta>我们将会适应它</c>
 
 
 264
-00:07:07,106 --> 00:07:08,086
-info because that's where all
+00:12:34,755 --> 00:12:37,224
+<c.magenta>当前的indexing API</c>
+<c.magenta>有两种类型</c>
 
 
 265
-00:07:08,086 --> 00:07:10,916
-the interesting stuff is and dig
+00:12:37,991 --> 00:12:40,527
+<c.magenta>你可以创建自己的资产索引</c>
 
 
 266
-00:07:10,916 --> 00:07:11,686
-out the identifier.
+00:12:40,594 --> 00:12:44,364
+<c.magenta>通过调用</c>
+<c.magenta>NSAttributeDescription.isIndexed</c>
 
 
 267
-00:07:11,686 --> 00:07:13,746
-And if I print that identifier
+00:12:44,431 --> 00:12:46,600
+<c.magenta>设置那个资产</c>
+<c.magenta>然后为它创建索引</c>
 
 
 268
-00:07:13,746 --> 00:07:15,206
-we can see that well, the
+00:12:47,100 --> 00:12:48,402
+<c.magenta>如果你想要使用多列索引</c>
 
 
 269
-00:07:15,206 --> 00:07:16,826
-identifier and the user info is
+00:12:48,468 --> 00:12:51,205
+<c.magenta>需要调用NS Entity Description</c>
+<c.magenta>compound Indexes</c>
 
 
 270
-00:07:16,826 --> 00:07:18,416
-something that looks an awful
+00:12:51,505 --> 00:12:52,973
+<c.magenta>这让你能够创建一个索引</c>
 
 
 271
-00:07:18,416 --> 00:07:19,796
-lot like a managed object ID
+00:12:53,040 --> 00:12:54,842
+<c.magenta>含有三、四、五个列</c>
 
 
 272
-00:07:19,796 --> 00:07:21,076
-string representation.
+00:12:55,542 --> 00:12:58,579
+<c.magenta>这些API自动创建</c>
 
 
 273
-00:07:21,546 --> 00:07:23,156
-So I'm going to turn that into a
+00:12:58,645 --> 00:13:01,548
+<c.magenta>一个升序二叉树索引</c>
 
 
 274
-00:07:23,516 --> 00:07:25,766
-URI and ask the persistent store
+00:13:03,183 --> 00:13:05,185
+<c.magenta>我们希望升级</c>
+<c.magenta>Core Data API</c>
 
 
 275
-00:07:25,766 --> 00:07:27,386
-coordinator to turn that into a
+00:13:05,252 --> 00:13:06,386
+<c.magenta>让它们变得更强大</c>
 
 
 276
-00:07:27,386 --> 00:07:28,316
-managed object ID.
+00:13:06,787 --> 00:13:08,956
+<c.magenta>它们能够指向新的数据类型</c>
 
 
 277
-00:07:28,866 --> 00:07:31,606
-And then I'm just going to
+00:13:09,556 --> 00:13:10,424
+<c.magenta>可配置性更强</c>
 
 
 278
-00:07:31,606 --> 00:07:36,856
-continue and hey wow, I've
+00:13:10,991 --> 00:13:13,327
+<c.magenta>我们增加了大量的新模型类</c>
 
 
 279
-00:07:36,856 --> 00:07:39,726
-opened the photo that my user
+00:13:14,328 --> 00:13:18,799
+<c.magenta>第一个是NSFetchIndexDescription</c>
+<c.magenta>NSFetchIndexElementDescription</c>
 
 
 280
-00:07:39,766 --> 00:07:41,236
-requested.
+00:13:18,866 --> 00:13:21,935
+<c.magenta>我们为</c>
+<c.magenta>NSEntityDescription.indexes</c>
 
 
 281
-00:07:42,636 --> 00:07:43,836
-Lovely, relaxing view.
+00:13:22,002 --> 00:13:24,905
+<c.magenta>增加新方法</c>
+<c.magenta>它使用Fetch Index Description</c>
 
 
 282
-00:07:44,516 --> 00:07:48,346
-And that sort of how the Core
+00:13:25,339 --> 00:13:27,908
+<c.magenta>一个Fetch index descriptions数组</c>
+<c.magenta>作为其参数</c>
 
 
 283
-00:07:48,346 --> 00:07:49,846
-Spotlight Integration works.
+00:13:28,809 --> 00:13:30,410
+<c.magenta>我们还增加一些函数</c>
 
 
 284
-00:07:49,936 --> 00:07:51,326
-We do most of the work, you need
+00:13:30,477 --> 00:13:33,614
+<c.magenta>数据库是否应该使用特定的参数</c>
 
 
 285
-00:07:51,326 --> 00:07:54,936
-to implement a method that does
+00:13:33,680 --> 00:13:35,582
+<c.magenta>是否进行给定查询求值</c>
 
 
 286
-00:07:55,146 --> 00:07:56,196
-stuff.
+00:13:36,183 --> 00:13:38,418
+<c.magenta>我们增加索引 让你能够声明</c>
 
 
 287
-00:07:57,046 --> 00:07:57,766
-So that's the Core Spotlight
+00:13:38,485 --> 00:13:39,953
+<c.magenta>“嘿 确实使用这个索引”</c>
 
 
 288
-00:07:57,766 --> 00:07:58,276
-Integration.
+00:13:40,521 --> 00:13:43,423
+<c.magenta>始终都有索引存在</c>
 
 
 289
-00:07:59,026 --> 00:08:02,696
-Some totally non-sharp corners,
+00:13:43,891 --> 00:13:46,326
+<c.magenta>能够比用户查询优化器更准确</c>
 
 
 290
-00:08:02,696 --> 00:08:03,986
-stuff we've made easy for you.
+00:13:46,393 --> 00:13:50,097
+<c.magenta>可以指定不要为where语句</c>
+<c.magenta>使用这个特定的索引组件</c>
 
 
 291
-00:08:03,986 --> 00:08:05,516
-If you decide that you want to
+00:13:52,499 --> 00:13:55,836
+<c.magenta>NSFetchIndexElementDescription</c>
+<c.magenta>是一个基本组件</c>
 
 
 292
-00:08:05,516 --> 00:08:06,356
-enable the Core Spotlight
+00:13:55,903 --> 00:14:00,107
+<c.magenta>它允许你指定索引元素</c>
+<c.magenta>后者是一个属性</c>
 
 
 293
-00:08:06,356 --> 00:08:08,726
-Integration and pass an exporter
+00:14:00,974 --> 00:14:03,911
+<c.magenta>你可以指定为属性创建</c>
+<c.magenta>何种类型的索引</c>
 
 
 294
-00:08:08,766 --> 00:08:10,316
-to as one of the options when
+00:14:03,977 --> 00:14:06,613
+<c.magenta>可以是二叉树类型</c>
+<c.magenta>或RTree类型</c>
 
 
 295
-00:08:10,316 --> 00:08:11,316
-you add your store to the
+00:14:07,047 --> 00:14:09,650
+<c.magenta>如果是二叉树索引</c>
+<c.magenta>将会使用指定的检索方向</c>
 
 
 296
-00:08:11,316 --> 00:08:12,266
-persistent store coordinator.
+00:14:09,716 --> 00:14:11,051
+<c.magenta>升序或降序</c>
 
 
 297
-00:08:12,266 --> 00:08:14,046
-We will automatically start
+00:14:11,251 --> 00:14:13,854
+<c.magenta>如果进行特定类型的搜索</c>
+<c.magenta>这一点很重要</c>
 
 
 298
-00:08:14,046 --> 00:08:15,326
-exporting to Core Spotlight on
+00:14:13,921 --> 00:14:16,256
+<c.magenta>比如 如果搜索邮件</c>
+<c.magenta>你可能想要</c>
 
 
 299
-00:08:15,326 --> 00:08:16,636
-your application's first launch.
+00:14:16,323 --> 00:14:19,493
+<c.magenta>首先显示最近的邮件</c>
+<c.magenta>而不是以前的邮件</c>
 
 
 300
-00:08:16,846 --> 00:08:18,116
-And we will continue exporting
+00:14:19,927 --> 00:14:24,698
+<c.magenta>因此 搜索方向会改变数据库的</c>
 
 
 301
-00:08:18,116 --> 00:08:19,486
-until we have exported all of
+00:14:24,765 --> 00:14:25,966
+<c.magenta>索引内容查找顺序</c>
 
 
 302
-00:08:19,486 --> 00:08:20,516
-the data even if your
+00:14:28,569 --> 00:14:32,840
+<c.magenta>FetchIndexDescription允许你</c>
+<c.magenta>将一系列的Fetch Index Elements</c>
 
 
 303
-00:08:20,516 --> 00:08:22,216
-application is exited, if the
+00:14:32,906 --> 00:14:35,709
+<c.magenta>组合成一个索引</c>
+<c.magenta>然后你可以命名</c>
 
 
 304
-00:08:22,216 --> 00:08:23,346
-user exits your application in
+00:14:36,343 --> 00:14:38,545
+<c.magenta>而且你可以设置预测规则</c>
 
 
 305
-00:08:23,346 --> 00:08:23,836
-the meantime.
+00:14:38,712 --> 00:14:42,883
+<c.magenta>规定仅将匹配</c>
+<c.magenta>此预测规则的行放入索引</c>
 
 
 306
-00:08:24,276 --> 00:08:25,296
-We use the Persistent History
+00:14:43,617 --> 00:14:46,253
+<c.magenta>它还进行一些索引内容验证</c>
 
 
 307
-00:08:25,296 --> 00:08:26,456
-Tracking feature to ensure that
+00:14:46,320 --> 00:14:49,189
+<c.magenta>确保创建的索引是合理的</c>
 
 
 308
-00:08:26,456 --> 00:08:27,576
-all of the data is pushed.
+00:14:50,691 --> 00:14:54,761
+<c.magenta>这里有一些不足之处</c>
+<c.magenta>现在你不能混合和匹配索引元素类型</c>
 
 
 309
-00:08:28,116 --> 00:08:28,946
-Even if your application
+00:14:55,095 --> 00:14:57,764
+<c.magenta>要么是RTree索引</c>
+<c.magenta>要么是二叉树索引</c>
 
 
 310
-00:08:28,946 --> 00:08:31,256
-crashes, exits, whatever that
+00:14:58,465 --> 00:15:02,069
+<c.magenta>Range Index只能为小于或等于32位的</c>
 
 
 311
-00:08:31,316 --> 00:08:32,206
-doesn't quite work in the seed
+00:15:02,135 --> 00:15:03,237
+<c.magenta>数值资产创建范围索引</c>
 
 
 312
-00:08:32,206 --> 00:08:33,106
-but it will eventually.
+00:15:03,403 --> 00:15:06,039
+<c.magenta>这是基本SQLite数据库</c>
+<c.magenta>所受到的限制</c>
 
 
 313
-00:08:33,816 --> 00:08:37,885
-Some slightly sharper corners,
+00:15:06,940 --> 00:15:09,142
+<c.magenta>如果你要创建自己的增量存储</c>
 
 
 314
-00:08:37,946 --> 00:08:39,226
-the Core Spotlight and Spotlight
+00:15:10,010 --> 00:15:12,813
+<c.magenta>这是一个限制</c>
+<c.magenta>如果你遇到问题 请告诉我们</c>
 
 
 315
-00:08:39,226 --> 00:08:40,446
-integration aren't mutually
+00:15:12,880 --> 00:15:13,881
+<c.magenta>也许我们能够想出办法</c>
 
 
 316
-00:08:40,446 --> 00:08:41,866
-exclusive, you can't do both.
+00:15:15,482 --> 00:15:20,020
+<c.magenta>但被放入Ranged Index</c>
+<c.magenta>的属性不能是可选的</c>
 
 
 317
-00:08:41,866 --> 00:08:43,226
-If you try setting both entities
+00:15:20,587 --> 00:15:22,623
+<c.magenta>目前没有定义null范围</c>
 
 
 318
-00:08:43,226 --> 00:08:44,956
-to Core Spotlight, Display Name
+00:15:23,690 --> 00:15:27,027
+<c.magenta>如果你们使用代码构建模型</c>
+<c.magenta>有一些人会这样做</c>
 
 
 319
-00:08:44,956 --> 00:08:47,266
-Expression, and the property is
+00:15:27,094 --> 00:15:29,396
+<c.magenta>我曾经在WWDC大会上</c>
+<c.magenta>为你们提供帮助</c>
 
 
 320
-00:08:47,266 --> 00:08:49,776
-stored in External Record, the
+00:15:30,163 --> 00:15:33,967
+<c.magenta>如果在设置索引后 改变实体结构</c>
 
 
 321
-00:08:49,776 --> 00:08:50,736
-model compiler is going to
+00:15:34,434 --> 00:15:36,036
+<c.magenta>我们必须放弃索引</c>
 
 
 322
-00:08:50,736 --> 00:08:51,586
-complain at you.
+00:15:36,103 --> 00:15:38,305
+<c.magenta>这实际上应用于整个实体层级结构</c>
 
 
 323
-00:08:52,156 --> 00:08:53,436
-And we don't currently track the
+00:15:38,372 --> 00:15:40,941
+<c.magenta>如果你在层级结构中</c>
 
 
 324
-00:08:53,436 --> 00:08:54,626
-results of batch operations.
+00:15:41,008 --> 00:15:43,610
+<c.magenta>增加或删除一个实体</c>
 
 
 325
-00:08:56,496 --> 00:08:58,106
-Some slightly sharp corners.
+00:15:43,677 --> 00:15:46,446
+<c.magenta>我们不能再确定索引是否有效</c>
+<c.magenta>因此我们必须放弃索引</c>
 
 
 326
-00:08:58,346 --> 00:08:59,406
-This first one is something I
+00:15:46,947 --> 00:15:47,814
+<c.magenta>始终放弃索引</c>
 
 
 327
-00:08:59,406 --> 00:09:00,446
-discovered while debugging
+00:15:50,751 --> 00:15:56,657
+<c.magenta>你们可能知道 在以前的版本中</c>
+<c.magenta>对实体更改索引</c>
 
 
 328
-00:09:00,446 --> 00:09:02,086
-because I built all of my unit
+00:15:56,723 --> 00:15:59,059
+<c.magenta>并不会更改实体版本Hash</c>
 
 
 329
-00:09:02,086 --> 00:09:03,326
-tests in a separate framework,
+00:15:59,126 --> 00:16:01,361
+<c.magenta>当用户使用新索引</c>
 
 
 330
-00:09:03,396 --> 00:09:05,676
-which is run by XCTest, which
+00:16:01,428 --> 00:16:06,433
+<c.magenta>首次启动新版本应用时</c>
 
 
 331
-00:09:05,676 --> 00:09:06,876
-doesn't have this entitlement,
+00:16:06,500 --> 00:16:07,968
+<c.magenta>这意味着不会进行数据迁移</c>
 
 
 332
-00:09:06,876 --> 00:09:08,356
-which made it very confusing as
+00:16:08,402 --> 00:16:09,670
+<c.magenta>因此不会造成性能损失</c>
 
 
 333
-00:09:08,356 --> 00:09:09,056
-to why I couldn't talk to
+00:16:09,736 --> 00:16:11,872
+<c.magenta>另一方面</c>
+<c.magenta>这也不需要迁移数据</c>
 
 
 334
-00:09:09,056 --> 00:09:09,486
-Spotlight.
+00:16:11,939 --> 00:16:14,241
+<c.magenta>因此不需要更新索引</c>
 
 
 335
-00:09:10,346 --> 00:09:12,136
-Whatever application is trying
+00:16:14,908 --> 00:16:16,910
+<c.magenta>如果想要迁移索引</c>
 
 
 336
-00:09:12,136 --> 00:09:13,156
-to talk to Spotlight, needs to
+00:16:16,977 --> 00:16:19,746
+<c.magenta>而且更新索引 你需要调用</c>
 
 
 337
-00:09:13,156 --> 00:09:13,486
-have the
+00:16:19,813 --> 00:16:23,383
+<c.magenta>模型版本Hash Identifier</c>
+<c.magenta>这将触发迁移</c>
 
 
 338
-00:09:13,486 --> 00:09:15,686
-com.apple.application-identifier
+00:16:24,351 --> 00:16:27,487
+<c.magenta>SQL store将会忽略</c>
+<c.magenta>它无法理解的任何索引</c>
 
 
 339
-00:09:16,246 --> 00:09:16,776
-entitlement.
+00:16:27,988 --> 00:16:30,490
+<c.magenta>这意味着如果你打开数据库</c>
 
 
 340
-00:09:16,776 --> 00:09:17,896
-Most of you are going to get
+00:16:30,557 --> 00:16:33,026
+<c.magenta>你认为你已经添加索引</c>
+<c.magenta>但是却看不到它们</c>
 
 
 341
-00:09:17,896 --> 00:09:19,096
-this by default, but if you're
+00:16:33,594 --> 00:16:35,762
+<c.magenta>可以转到应用控制台</c>
+<c.magenta>控制台会告诉你</c>
 
 
 342
-00:09:19,096 --> 00:09:20,486
-writing your unit tests, which
+00:16:35,829 --> 00:16:36,964
+<c.magenta>你为什么看不到索引</c>
 
 
 343
-00:09:20,516 --> 00:09:22,826
-are run by XCTtest be aware of
+00:16:38,599 --> 00:16:39,967
+<c.magenta>我要再次进行演示</c>
 
 
 344
-00:09:22,826 --> 00:09:23,416
-this.
+00:16:41,034 --> 00:16:42,202
+<c.magenta>这里有一个模型</c>
 
 
 345
-00:09:23,526 --> 00:09:24,486
-And of course you're going to
+00:16:42,836 --> 00:16:46,006
+<c.magenta>我不想使用</c>
 
 
 346
-00:09:24,486 --> 00:09:25,316
-need to handle the search
+00:16:46,073 --> 00:16:49,843
+<c.magenta>因为这是演示</c>
+<c.magenta>我可能会输入出错</c>
 
 
 347
-00:09:25,316 --> 00:09:26,696
-result.
+00:16:50,978 --> 00:16:56,149
+<c.magenta>我在新的建模工具中</c>
+<c.magenta>添加新索引看起来很简单</c>
 
 
 348
-00:09:26,996 --> 00:09:27,986
-You need to implement
+00:16:56,216 --> 00:17:00,754
+<c.magenta>选择想要添加索引的实体</c>
+<c.magenta>然后来到这里</c>
 
 
 349
-00:09:27,986 --> 00:09:30,926
-Application, Continue User
+00:17:01,188 --> 00:17:05,959
+<c.magenta>添加实体 现在你可以看到</c>
+<c.magenta>它有一个Add Fetch Index选项</c>
 
 
 350
-00:09:30,926 --> 00:09:32,216
-Activity on your application
+00:17:06,292 --> 00:17:08,362
+<c.magenta>你可以添加一个</c>
+<c.magenta>将它命名为by Location</c>
 
 
 351
-00:09:32,216 --> 00:09:33,796
-delegate and you know, put
+00:17:10,864 --> 00:17:13,165
+<c.magenta>然后我可以添加多个属性</c>
 
 
 352
-00:09:33,796 --> 00:09:35,406
-whatever you'd like in there.
+00:17:14,501 --> 00:17:17,171
+<c.magenta>latitude和longitude属性</c>
 
 
 353
-00:09:35,406 --> 00:09:37,736
-We saw this on screen or the
+00:17:18,105 --> 00:17:20,507
+<c.magenta>在这里 选择照片</c>
 
 
 354
-00:09:37,736 --> 00:09:38,976
-demo, but I'm just walk through
+00:17:21,474 --> 00:17:24,278
+<c.magenta>然后在这里 更改</c>
+<c.magenta>Version Hash Modifier</c>
 
 
 355
-00:09:38,976 --> 00:09:39,436
-it here.
+00:17:27,748 --> 00:17:29,650
+<c.magenta>现在 当用户启动</c>
 
 
 356
-00:09:39,916 --> 00:09:40,786
-This is the method you'd be
+00:17:29,716 --> 00:17:32,286
+<c.magenta>一个使用此模型版本</c>
+<c.magenta>的应用时</c>
 
 
 357
-00:09:40,786 --> 00:09:41,406
-implementing.
+00:17:33,854 --> 00:17:35,689
+<c.magenta>将会使用新的RTree索引</c>
 
 
 358
-00:09:41,756 --> 00:09:43,266
-Pretty simple, grab the User
+00:17:36,523 --> 00:17:39,359
+<c.magenta>我会运行我的演示应用</c>
 
 
 359
-00:09:43,266 --> 00:09:44,496
-Activity user info.
+00:17:39,793 --> 00:17:41,495
+<c.magenta>它已经内建这种索引</c>
 
 
 360
-00:09:45,366 --> 00:09:47,766
-The identifier manage object ID
+00:17:44,598 --> 00:17:45,832
+<c.magenta>然后…</c>
 
 
 361
-00:09:47,766 --> 00:09:49,486
-is stashed in there under KCS
+00:17:49,102 --> 00:17:50,337
+<c.magenta>来到这里</c>
 
 
 362
-00:09:49,486 --> 00:09:50,636
-Searchable Item Activity
+00:17:50,671 --> 00:17:54,241
+<c.magenta>获取我细心设置的</c>
+<c.magenta>Predicate</c>
 
 
 363
-00:09:50,636 --> 00:09:51,266
-Identifier.
+00:17:56,577 --> 00:17:57,678
+<c.magenta>我忘了一件事情</c>
 
 
 364
-00:09:51,266 --> 00:09:53,296
-Just turn that into a managed
+00:18:00,414 --> 00:18:03,383
+<c.magenta>我要来到这里 编辑scheme</c>
+<c.magenta>因为我们想要看到</c>
 
 
 365
-00:09:53,296 --> 00:09:55,246
-object ID and then you can do
+00:18:03,450 --> 00:18:05,319
+<c.magenta>Core Data</c>
+<c.magenta>向数据库发送什么</c>
 
 
 366
-00:09:55,246 --> 00:09:56,036
-whatever you'd like.
+00:18:06,086 --> 00:18:09,223
+<c.magenta>我已经设置</c>
+<c.magenta>Com Apple SQL Debug Argument</c>
 
 
 367
-00:09:57,046 --> 00:09:59,516
-Watch a new window, zoom to the
+00:18:09,957 --> 00:18:12,993
+<c.magenta>如果你们熟悉SQL Debug</c>
+<c.magenta>将会注意到</c>
 
 
 368
-00:09:59,516 --> 00:10:00,696
-correct view, whatever.
+00:18:13,327 --> 00:18:14,995
+<c.magenta>与Core Data中的功能一样</c>
 
 
 369
-00:10:01,996 --> 00:10:03,956
-There are however some really
+00:18:15,395 --> 00:18:17,431
+<c.magenta>你可以非常熟悉</c>
 
 
 370
-00:10:03,956 --> 00:10:04,896
-sharp corners involved.
+00:18:17,497 --> 00:18:19,299
+<c.magenta>1和2作为数字…</c>
 
 
 371
-00:10:05,186 --> 00:10:06,276
-Which is that if you were using
+00:18:19,366 --> 00:18:20,534
+<c.magenta>你即将设置的级别</c>
 
 
 372
-00:10:06,276 --> 00:10:07,666
-the old Spotlight integration,
+00:18:20,968 --> 00:18:24,771
+<c.magenta>我们增加一个新级别4</c>
+<c.magenta>将打印SQLite使用的查询计划</c>
 
 
 373
-00:10:07,666 --> 00:10:09,646
-it's going to be up to you to
+00:18:24,838 --> 00:18:29,209
+<c.magenta>和Core Data发送至</c>
 
 
 374
-00:10:09,646 --> 00:10:12,136
-delete your old reference files
+00:18:29,276 --> 00:18:30,878
+<c.magenta>数据库的所有语句</c>
 
 
 375
-00:10:12,136 --> 00:10:13,236
-if you had them on disc, because
+00:18:31,278 --> 00:18:35,682
+<c.magenta>因此我将运行我的应用</c>
+<c.magenta>将版本设置为4</c>
 
 
 376
-00:10:13,236 --> 00:10:14,056
-we can't know if there was
+00:18:38,485 --> 00:18:39,353
+<c.magenta>然后回过头来</c>
 
 
 377
-00:10:14,056 --> 00:10:15,206
-semantic meaning to those.
+00:18:41,855 --> 00:18:42,890
+<c.magenta>重置预测规则</c>
 
 
 378
-00:10:15,206 --> 00:10:18,506
-And the Core Spotlight API's are
+00:18:44,358 --> 00:18:45,759
+<c.magenta>运行搜索</c>
 
 
 379
-00:10:18,676 --> 00:10:20,156
-x86 only, which means that this
+00:18:47,661 --> 00:18:50,898
+<c.magenta>现在我们来看上次搜索</c>
 
 
 380
-00:10:20,156 --> 00:10:21,886
-feature is x86 only.
+00:18:53,567 --> 00:18:55,702
+<c.magenta>这更有意思 我来这里</c>
 
 
 381
-00:10:21,886 --> 00:10:22,976
-So it's time to upgrade your
+00:18:55,769 --> 00:19:00,340
+<c.magenta>我把早期的版本</c>
+<c.magenta>复制并粘贴到Text Edit之中</c>
 
 
 382
-00:10:22,976 --> 00:10:23,706
-applications people.
+00:19:00,407 --> 00:19:02,075
+<c.magenta>在这里我要放大文本</c>
 
 
 383
-00:10:25,276 --> 00:10:27,966
-And that's Core Spotlight.
+00:19:04,211 --> 00:19:07,781
+<c.magenta>现在我要选择一小段文本</c>
 
 
 384
-00:10:28,296 --> 00:10:30,626
-We've also added a New Indexing
+00:19:08,916 --> 00:19:10,450
+<c.magenta>Z Photo by Location</c>
 
 
 385
-00:10:30,626 --> 00:10:30,866
-API.
+00:19:10,984 --> 00:19:13,253
+<c.magenta>如果查看查询计划</c>
 
 
 386
-00:10:32,886 --> 00:10:33,786
-So what is indexing?
+00:19:13,453 --> 00:19:15,489
+<c.magenta>你可以看到</c>
+<c.magenta>这是一个虚拟表索引</c>
 
 
 387
-00:10:34,036 --> 00:10:35,266
-Indexing is a way that allows
+00:19:15,789 --> 00:19:18,592
+<c.magenta>实际是在引导位置查询</c>
 
 
 388
-00:10:35,266 --> 00:10:36,516
-you to configure your database
+00:19:18,892 --> 00:19:21,929
+<c.magenta>将经度查询导向</c>
+<c.magenta>一个单独的RTree表</c>
 
 
 389
-00:10:36,516 --> 00:10:37,426
-to do faster searching.
+00:19:22,896 --> 00:19:27,901
+<c.magenta>在这里我们看到</c>
+<c.magenta>查询16行用时0.056秒</c>
 
 
 390
-00:10:38,456 --> 00:10:40,276
-You can have multiple indexes,
+00:19:27,968 --> 00:19:30,737
+<c.magenta>如果与未使用RTree的版本比较</c>
 
 
 391
-00:10:40,676 --> 00:10:41,706
-each of which can have multiple
+00:19:32,372 --> 00:19:34,241
+<c.magenta>这是我们以前的查询</c>
 
 
 392
-00:10:41,706 --> 00:10:42,776
-columns, and a column can
+00:19:34,308 --> 00:19:36,310
+<c.magenta>这个与这个之间的Z经度</c>
 
 
 393
-00:10:42,776 --> 00:10:43,856
-actually belong to multiple
+00:19:37,177 --> 00:19:41,949
+<c.magenta>我们可以看到</c>
+<c.magenta>查询16行用时0.062</c>
 
 
 394
-00:10:43,856 --> 00:10:44,426
-indexes.
+00:19:42,216 --> 00:19:44,685
+<c.magenta>性能提升约10%</c>
 
 
 395
-00:10:44,426 --> 00:10:45,726
-So this allows you to set up a
+00:19:45,118 --> 00:19:48,288
+<c.magenta>在配备SSD Fast Cash</c>
+<c.magenta>的笔记本上</c>
 
 
 396
-00:10:45,726 --> 00:10:47,506
-lot of indexes that the database
+00:19:48,555 --> 00:19:51,225
+<c.magenta>在你的设备上</c>
+<c.magenta>搜索速度提升了10%</c>
 
 
 397
-00:10:47,506 --> 00:10:49,116
-can use to choose the most
+00:19:51,291 --> 00:19:52,926
+<c.magenta>这是一个很小的数据集</c>
 
 
 398
-00:10:49,116 --> 00:10:50,636
-efficient index for whatever
+00:19:53,160 --> 00:19:56,096
+<c.magenta>如果你设备上的数据大量上升</c>
 
 
 399
-00:10:50,636 --> 00:10:52,346
-query it's trying to execute.
+00:19:56,530 --> 00:19:59,800
+<c.magenta>RTree搜索速度相比</c>
+<c.magenta>常规Binary Indexes会有大幅提升</c>
 
 
 400
-00:10:52,346 --> 00:10:53,336
-It will basically look at the
+00:20:01,068 --> 00:20:03,003
+<c.magenta>而且…</c>
 
 
 401
-00:10:53,336 --> 00:10:54,716
-aware clause and say, oh I'm
+00:20:04,605 --> 00:20:05,739
+<c.magenta>我已经证明这一点</c>
 
 
 402
-00:10:54,716 --> 00:10:55,706
-trying to use these columns I'll
+00:20:06,840 --> 00:20:08,008
+<c.magenta>这就是…</c>
 
 
 403
-00:10:55,706 --> 00:10:56,896
-use this index.
+00:20:10,744 --> 00:20:11,945
+<c.magenta>这就是RTree搜索</c>
 
 
 404
-00:10:56,896 --> 00:11:00,066
-And now I'm going to do a little
+00:20:12,946 --> 00:20:15,315
+<c.magenta>还有另外一张幻灯片</c>
+<c.magenta>然后我将舞台交给瑞希</c>
 
 
 405
-00:11:00,066 --> 00:11:01,366
-bit of a digression on indexing
+00:20:15,883 --> 00:20:17,851
+<c.magenta>我们还增加一些混杂的</c>
 
 
 406
-00:11:01,366 --> 00:11:02,416
-for those of you, you know,
+00:20:19,720 --> 00:20:21,021
+<c.magenta>新的属性类型</c>
 
 
 407
-00:11:02,416 --> 00:11:03,256
-aren't database heads.
+00:20:21,455 --> 00:20:25,559
+<c.magenta>增加了NSUUIDA属性类型</c>
+<c.magenta>和NSURL属性类型</c>
 
 
 408
-00:11:04,136 --> 00:11:05,826
-The basic form of indexing that
+00:20:25,759 --> 00:20:28,962
+<c.magenta>由UUID和URL值类提供支持</c>
 
 
 409
-00:11:05,826 --> 00:11:06,766
-supported everywhere by
+00:20:33,967 --> 00:20:36,537
+<c.magenta>很高兴你们欣赏</c>
+<c.magenta>我们所做的工作</c>
 
 
 410
-00:11:06,766 --> 00:11:08,986
-everything is a Binary Index.
+00:20:37,004 --> 00:20:38,472
+<c.magenta>现在我邀请瑞希上台</c>
 
 
 411
-00:11:09,046 --> 00:11:11,176
-But these are very strict
+00:20:38,539 --> 00:20:40,707
+<c.magenta>（持续性历史跟踪）</c>
 
 
 412
-00:11:11,176 --> 00:11:11,926
-comparison only.
+00:20:41,675 --> 00:20:42,676
+<c.magenta>谢谢</c>
 
 
 413
-00:11:11,926 --> 00:11:13,046
-They basically look at the bits
+00:20:47,514 --> 00:20:49,016
+<c.magenta>大家好 我是瑞希·维尔马</c>
 
 
 414
-00:11:13,046 --> 00:11:14,126
-and say are these bits the same?
+00:20:49,082 --> 00:20:51,018
+<c.magenta>我将为大家介绍持续性历史跟踪</c>
 
 
 415
-00:11:14,126 --> 00:11:16,116
-And if not, you know, it's not
+00:20:52,586 --> 00:20:54,421
+<c.magenta>让我们先聊聊你们的应用</c>
 
 
 416
-00:11:16,116 --> 00:11:17,996
-an index head.
+00:20:54,955 --> 00:20:57,691
+<c.magenta>你们开发了很多不错的应用</c>
+<c.magenta>希望你们已经采用</c>
 
 
 417
-00:11:18,196 --> 00:11:20,596
-But over time more types of
+00:20:57,758 --> 00:21:00,394
+<c.magenta>NS Persistent Container</c>
+<c.magenta>那是我们去年推出的</c>
 
 
 418
-00:11:20,596 --> 00:11:22,186
-indexes have become popular and
+00:21:00,460 --> 00:21:01,995
+<c.magenta>假设你已经设置</c>
+<c.magenta>View Context</c>
 
 
 419
-00:11:22,186 --> 00:11:22,966
-something that's really
+00:21:02,329 --> 00:21:03,564
+<c.magenta>和Background Context</c>
 
 
 420
-00:11:22,966 --> 00:11:25,206
-especially nowadays is super
+00:21:04,164 --> 00:21:08,001
+<c.magenta>而且创建Shared Container</c>
+<c.magenta>而且已设置Persistent Store</c>
 
 
 421
-00:11:25,206 --> 00:11:27,226
-useful is an RTree Index, which
+00:21:09,069 --> 00:21:12,639
+<c.magenta>现在你的View Context是一个连接</c>
+<c.magenta>Background Context是另外一个连接</c>
 
 
 422
-00:11:27,226 --> 00:11:28,736
-is a type of index that's
+00:21:13,106 --> 00:21:17,010
+<c.magenta>也许你已设置Background</c>
+<c.magenta>Context 从远程站点</c>
 
 
 423
-00:11:28,736 --> 00:11:30,216
-optimized for doing range base
+00:21:17,077 --> 00:21:19,112
+<c.magenta>下载内容</c>
 
 
 424
-00:11:30,216 --> 00:11:30,596
-searching.
+00:21:20,614 --> 00:21:24,017
+<c.magenta>你们是非常勤勉的开发者</c>
+<c.magenta>你们创建了</c>
 
 
 425
-00:11:30,776 --> 00:11:32,626
-So a binary index sort of looks
+00:21:24,084 --> 00:21:28,388
+<c.magenta>文档扩展、共享扩展和照片编辑扩展</c>
 
 
 426
-00:11:32,626 --> 00:11:33,046
-like this.
+00:21:28,655 --> 00:21:32,025
+<c.magenta>现在所有这些</c>
+<c.magenta>与persistent store之间的连接</c>
 
 
 427
-00:11:33,046 --> 00:11:33,886
-This is the kind of data you
+00:21:32,092 --> 00:21:35,028
+<c.magenta>都可以在任何进程中运行</c>
+<c.magenta>因为它们是扩展</c>
 
 
 428
-00:11:33,886 --> 00:11:34,976
-might have, a bunch of -- you
+00:21:35,095 --> 00:21:37,865
+<c.magenta>或者可能来自于程序中的任何上下文</c>
 
 
 429
-00:11:34,976 --> 00:11:36,886
-know, unit dimensional stuff.
+00:21:37,931 --> 00:21:40,434
+<c.magenta>你们可能不知道</c>
+<c.magenta>这些数据来自于何处</c>
 
 
 430
-00:11:36,886 --> 00:11:38,166
-And if you build a BTree on it
+00:21:41,235 --> 00:21:43,704
+<c.magenta>我们把它们进行细分</c>
+<c.magenta>看看会发生什么</c>
 
 
 431
-00:11:38,166 --> 00:11:39,046
-you end up with something that
+00:21:45,973 --> 00:21:47,040
+<c.magenta>不好意思</c>
 
 
 432
-00:11:39,046 --> 00:11:40,696
-looks a lot like this.
+00:21:47,674 --> 00:21:50,277
+<c.magenta>现在我们进入应用</c>
 
 
 433
-00:11:41,526 --> 00:11:43,266
-You know for every node that all
+00:21:52,479 --> 00:21:54,348
+<c.magenta>用户看到View Context</c>
 
 
 434
-00:11:43,266 --> 00:11:44,656
-of the nodes -- child nodes to
+00:21:54,815 --> 00:21:56,450
+<c.magenta>同时还有Background Context</c>
 
 
 435
-00:11:44,656 --> 00:11:47,496
-the left are smaller valued than
+00:21:56,517 --> 00:21:59,052
+<c.magenta>正在从某个远程资源下载信息</c>
 
 
 436
-00:11:47,686 --> 00:11:49,556
-the parent node and all the
+00:21:59,620 --> 00:22:01,788
+<c.magenta>不幸的是我们经常看到的情况是</c>
 
 
 437
-00:11:49,856 --> 00:11:51,056
-nodes to the right are larger
+00:22:01,855 --> 00:22:04,391
+<c.magenta>Background Context</c>
+<c.magenta>正在下载数据</c>
 
 
 438
-00:11:51,056 --> 00:11:52,346
-valued and you just navigate
+00:22:04,725 --> 00:22:07,494
+<c.magenta>但是View Context可能</c>
+<c.magenta>对这些对象并不知情</c>
 
 
 439
-00:11:52,346 --> 00:11:53,286
-down very, very simply.
+00:22:07,895 --> 00:22:09,897
+<c.magenta>或者它甚至并不关心这些对象</c>
 
 
 440
-00:11:54,056 --> 00:11:55,456
-But RTree Data often looks a lot
+00:22:10,364 --> 00:22:13,867
+<c.magenta>但是Save Notifications进入后</c>
+<c.magenta>必须处理它们</c>
 
 
 441
-00:11:55,456 --> 00:11:56,326
-more like this.
+00:22:14,468 --> 00:22:18,605
+<c.magenta>因此如果忽略Background Context</c>
 
 
 442
-00:11:56,326 --> 00:11:57,686
-You end up having lots of, you
+00:22:18,672 --> 00:22:19,806
+<c.magenta>可能会忽略一些变更</c>
 
 
 443
-00:11:57,686 --> 00:11:59,366
-know, odd shapes,
+00:22:20,073 --> 00:22:21,808
+<c.magenta>很可能会发生这样的情况</c>
 
 
 444
-00:11:59,366 --> 00:12:00,696
-multidimensional things.
+00:22:22,075 --> 00:22:24,878
+<c.magenta>你可能忽略Batch Updates</c>
+<c.magenta>Batch Deletes</c>
 
 
 445
-00:12:00,906 --> 00:12:02,546
-They're often overlapping in
+00:22:25,078 --> 00:22:26,813
+<c.magenta>它们并不生成保存通知</c>
 
 
 446
-00:12:02,546 --> 00:12:03,706
-weird and odd ways.
+00:22:28,315 --> 00:22:32,553
+<c.magenta>现在用户进入Safari</c>
+<c.magenta>决定共享一些东西</c>
 
 
 447
-00:12:04,096 --> 00:12:05,736
-And there's no really great way
+00:22:33,053 --> 00:22:34,821
+<c.magenta>这将写入数据库</c>
 
 
 448
-00:12:05,736 --> 00:12:07,756
-to organize those in a unit
+00:22:35,155 --> 00:22:37,024
+<c.magenta>当开发人员返回应用时</c>
 
 
 449
-00:12:07,756 --> 00:12:09,296
-directional linear Binary tree.
+00:22:37,925 --> 00:22:41,094
+<c.magenta>或用户返回应用时</c>
+<c.magenta>并不知道已经发生哪些变化</c>
 
 
 450
-00:12:09,776 --> 00:12:11,716
-And RTree Data often is stored
+00:22:41,595 --> 00:22:44,798
+<c.magenta>你知道已经发生变化</c>
+<c.magenta>但是并不知详情</c>
 
 
 451
-00:12:11,716 --> 00:12:12,406
-more like this.
+00:22:45,098 --> 00:22:47,467
+<c.magenta>因此你必须重新扫描</c>
+<c.magenta>整个数据库并且查看</c>
 
 
 452
-00:12:12,406 --> 00:12:14,016
-You have a range zero, which is
+00:22:47,534 --> 00:22:49,469
+<c.magenta>自你上次离开之后</c>
+<c.magenta>发生了哪些变化</c>
 
 
 453
-00:12:14,016 --> 00:12:15,216
-the minimum bounding blocks
+00:22:50,704 --> 00:22:53,040
+<c.magenta>不幸的是有时候</c>
+<c.magenta>我们的应用会崩溃</c>
 
 
 454
-00:12:15,216 --> 00:12:17,376
-around all of its subcomponents
+00:22:53,740 --> 00:22:56,743
+<c.magenta>可能是因为用户退出应用</c>
 
 
 455
-00:12:17,456 --> 00:12:19,066
-or its set elements.
+00:22:57,110 --> 00:22:59,246
+<c.magenta>而此时Background Context</c>
+<c.magenta>正在运行</c>
 
 
 456
-00:12:19,396 --> 00:12:21,106
-For example range element fully
+00:22:59,313 --> 00:23:00,547
+<c.magenta>当你的应用恢复运行时</c>
 
 
 457
-00:12:21,106 --> 00:12:23,596
-contains the ranges R6 and R10.
+00:23:00,981 --> 00:23:04,117
+<c.magenta>Background Context并不知道</c>
+<c.magenta>上次离开位置</c>
 
 
 458
-00:12:23,796 --> 00:12:26,506
-And R6 in turn has a single
+00:23:04,318 --> 00:23:05,719
+<c.magenta>从而扫描本地数据库</c>
 
 
 459
-00:12:26,506 --> 00:12:28,346
-child R7, which has more
+00:23:06,186 --> 00:23:09,923
+<c.magenta>因此它必须检查远程内容</c>
+<c.magenta>重新扫描整个本地数据库</c>
 
 
 460
-00:12:28,346 --> 00:12:28,706
-children.
+00:23:10,123 --> 00:23:12,059
+<c.magenta>以了解需要从何处重新开始</c>
 
 
 461
-00:12:28,706 --> 00:12:30,056
-This is actually a slightly
+00:23:13,794 --> 00:23:15,996
+<c.magenta>让我们来仔细看这个例子</c>
 
 
 462
-00:12:30,056 --> 00:12:31,516
-unbalanced RTree but oh well,
+00:23:16,630 --> 00:23:19,600
+<c.magenta>我们有一个应用决定载入一些数据</c>
 
 
 463
-00:12:31,546 --> 00:12:33,676
-we'll live with it.
+00:23:19,900 --> 00:23:24,338
+<c.magenta>因此Background Context载入数据</c>
+<c.magenta>然后View Context开始更新</c>
 
 
 464
-00:12:34,516 --> 00:12:36,616
-The current indexing APIs, well
+00:23:24,938 --> 00:23:28,575
+<c.magenta>现在 用户暂停应用</c>
+<c.magenta>文档扩展开始运行</c>
 
 
 465
-00:12:36,616 --> 00:12:37,416
-we have two of them.
+00:23:29,843 --> 00:23:32,045
+<c.magenta>我们将看到数据插入两个新对象</c>
 
 
 466
-00:12:38,046 --> 00:12:40,236
-You can create a single property
+00:23:33,146 --> 00:23:37,584
+<c.magenta>然后共享扩展开始运行</c>
+<c.magenta>更新一个对象并插入另一个对象</c>
 
 
 467
-00:12:40,236 --> 00:12:42,486
-index by calling an NS Attribute
+00:23:38,051 --> 00:23:39,920
+<c.magenta>照片扩展也是如此</c>
 
 
 468
-00:12:42,486 --> 00:12:44,016
-Description is Indexed.
+00:23:40,988 --> 00:23:44,358
+<c.magenta>这些工作完成后 返回应用</c>
 
 
 469
-00:12:44,266 --> 00:12:45,646
-Set that property and we'll
+00:23:45,092 --> 00:23:48,562
+<c.magenta>注意到一些数据已经过时</c>
 
 
 470
-00:12:45,676 --> 00:12:46,606
-create an index on it.
+00:23:49,930 --> 00:23:55,202
+<c.magenta>我们的应用仅知道最初的六个对象</c>
 
 
 471
-00:12:46,706 --> 00:12:48,136
-If you want to do a multi column
+00:23:55,669 --> 00:23:57,804
+<c.magenta>数据库的其余部分已经修改过</c>
 
 
 472
-00:12:48,136 --> 00:12:49,846
-index you'll call NS Entity
+00:23:57,871 --> 00:24:00,240
+<c.magenta>或者应用不知道这些对象</c>
 
 
 473
-00:12:49,846 --> 00:12:51,196
-Description compound Indexes.
+00:24:00,874 --> 00:24:02,943
+<c.magenta>因此必须查找和扫描所有内容</c>
 
 
 474
-00:12:51,566 --> 00:12:52,726
-And that allows you to create an
+00:24:03,010 --> 00:24:05,179
+<c.magenta>弄清楚哪些内容</c>
+<c.magenta>是View Context</c>
 
 
 475
-00:12:52,726 --> 00:12:53,826
-index that has, you know, three,
+00:24:05,546 --> 00:24:06,980
+<c.magenta>或Background Context</c>
+<c.magenta>所需要的</c>
 
 
 476
-00:12:53,826 --> 00:12:55,016
-four, five columns in it.
+00:24:09,650 --> 00:24:12,152
+<c.magenta>现在我们推出了</c>
+<c.magenta>NS Persistent History</c>
 
 
 477
-00:12:55,576 --> 00:12:56,786
-But both of these API's
+00:24:12,853 --> 00:24:13,754
+<c.magenta>它相当简单</c>
 
 
 478
-00:12:56,816 --> 00:12:58,886
-automatically and only create a
+00:24:14,755 --> 00:24:17,558
+<c.magenta>抓取你的Container</c>
+<c.magenta>抓取你的Store Description</c>
 
 
 479
-00:12:58,886 --> 00:13:01,536
-Binary Index in ascending order.
+00:24:18,659 --> 00:24:20,894
+<c.magenta>瞧</c>
 
 
 480
-00:13:02,106 --> 00:13:04,376
-And we kind of wanted to evolve
+00:24:22,696 --> 00:24:25,432
+<c.magenta>将NS Persistent History Tracking</c>
+<c.magenta>选项设置为真</c>
 
 
 481
-00:13:04,506 --> 00:13:05,696
-the Core Data APIs, make them
+00:24:25,933 --> 00:24:29,136
+<c.magenta>现在 我们将跟踪数据库的所有变化</c>
 
 
 482
-00:13:05,696 --> 00:13:07,236
-ore powerful, a lot of them
+00:24:31,572 --> 00:24:34,174
+<c.magenta>让我们回到前面的…</c>
+<c.magenta>谢谢</c>
 
 
 483
-00:13:07,236 --> 00:13:08,406
-specifying new and interesting
+00:24:37,344 --> 00:24:39,046
+<c.magenta>我们回到前面的例子</c>
 
 
 484
-00:13:08,406 --> 00:13:10,376
-things, more configurable.
+00:24:39,313 --> 00:24:40,647
+<c.magenta>回到View Context之中</c>
 
 
 485
-00:13:10,666 --> 00:13:12,396
-So we've added a bunch of new
+00:24:40,714 --> 00:24:42,549
+<c.magenta>此时Background Context加载数据</c>
 
 
 486
-00:13:12,396 --> 00:13:13,306
-model classes.
+00:24:43,383 --> 00:24:46,453
+<c.magenta>我们将看到</c>
+<c.magenta>事务处理内部所发生的事情</c>
 
 
 487
-00:13:14,296 --> 00:13:15,856
-First is NS Fetch Index
+00:24:46,787 --> 00:24:48,889
+<c.magenta>此事务处理</c>
+<c.magenta>对我的数据库执行写操作</c>
 
 
 488
-00:13:15,856 --> 00:13:17,916
-Description, NS Fetch Element
+00:24:49,223 --> 00:24:53,227
+<c.magenta>我可以看到它是</c>
+<c.magenta>由Background Context在应用中完成的</c>
 
 
 489
-00:13:17,916 --> 00:13:19,516
-Description, and we've added a
+00:24:54,161 --> 00:24:58,065
+<c.magenta>当我的跳出应用</c>
+<c.magenta>用户启动文档扩展</c>
 
 
 490
-00:13:19,516 --> 00:13:20,756
-new method on NS Entity
+00:25:02,035 --> 00:25:05,539
+<c.magenta>我们看到这也会生成一个事务处理</c>
 
 
 491
-00:13:20,756 --> 00:13:22,646
-Description indexes which takes
+00:25:06,240 --> 00:25:08,208
+<c.magenta>在我的共享扩展上</c>
 
 
 492
-00:13:22,806 --> 00:13:24,386
-a Fetch Index Description as
+00:25:11,712 --> 00:25:14,548
+<c.magenta>共享扩展也会注意到已经发生修改</c>
 
 
 493
-00:13:24,386 --> 00:13:26,726
-it's -- an array of Fetch index
+00:25:14,615 --> 00:25:17,684
+<c.magenta>在这里不会进行插入</c>
 
 
 494
-00:13:26,726 --> 00:13:27,916
-descriptions as its parameter.
+00:25:18,485 --> 00:25:21,054
+<c.magenta>在照片扩展上 我们也会看到</c>
 
 
 495
-00:13:28,766 --> 00:13:29,876
-And we've added some functions
+00:25:21,121 --> 00:25:22,422
+<c.magenta>发生第四个事务处理</c>
 
 
 496
-00:13:29,876 --> 00:13:31,396
-to control whether the database
+00:25:23,824 --> 00:25:25,492
+<c.magenta>我们将看到它在照片中完成</c>
 
 
 497
-00:13:31,396 --> 00:13:32,566
-should or should not use a
+00:25:26,527 --> 00:25:29,730
+<c.magenta>现在当我的应用回到前台时</c>
 
 
 498
-00:13:32,566 --> 00:13:34,316
-specific index when its
+00:25:30,330 --> 00:25:34,368
+<c.magenta>仍然有数据</c>
+<c.magenta>但是我知道我在历史表中的位置</c>
 
 
 499
-00:13:34,316 --> 00:13:35,576
-evaluating a given query.
+00:25:34,635 --> 00:25:37,271
+<c.magenta>只需要遍历事务处理1-4</c>
 
 
 500
-00:13:35,616 --> 00:13:37,766
-And we've added index by, which
+00:25:37,804 --> 00:25:39,373
+<c.magenta>瞧 已经更新了</c>
 
 
 501
-00:13:37,766 --> 00:13:39,086
-allows you to say, hey really
+00:25:42,609 --> 00:25:44,344
+<c.magenta>我们引入新的</c>
 
 
 502
-00:13:39,086 --> 00:13:39,946
-use this index.
+00:25:44,411 --> 00:25:46,947
+<c.magenta>Store Request</c>
+<c.magenta>让你获取历史记录</c>
 
 
 503
-00:13:40,526 --> 00:13:42,406
-And no index has existed for
+00:25:47,447 --> 00:25:49,917
+<c.magenta>其名称为 NS Persistent History</c>
+<c.magenta>Change Request</c>
 
 
 504
-00:13:42,406 --> 00:13:43,416
-awhile and it's a way of saying
+00:25:50,384 --> 00:25:52,052
+<c.magenta>你可以启动它</c>
 
 
 505
-00:13:43,916 --> 00:13:45,016
-I know better than you and I
+00:25:52,119 --> 00:25:55,522
+<c.magenta>通过日期、令牌或事务处理</c>
 
 
 506
-00:13:45,016 --> 00:13:45,846
-know better than your query
+00:25:57,457 --> 00:25:59,993
+<c.magenta>而且你可以很容易地</c>
+<c.magenta>设置结果类型</c>
 
 
 507
-00:13:45,846 --> 00:13:47,146
-optimizer, don't use an index
+00:26:00,427 --> 00:26:03,697
+<c.magenta>变化数量即手可得</c>
+<c.magenta>就像状态变量一样</c>
 
 
 508
-00:13:47,146 --> 00:13:49,346
-for this specific component of
+00:26:03,964 --> 00:26:05,566
+<c.magenta>也可以获得所有详情</c>
 
 
 509
-00:13:49,346 --> 00:13:50,076
-the where clause.
+00:26:05,666 --> 00:26:08,068
+<c.magenta>获取所有事务处理和所有变更</c>
 
 
 510
-00:13:50,656 --> 00:13:54,056
-NS Fetch Index Element
+00:26:09,603 --> 00:26:13,307
+<c.magenta>另外 利用变更请求</c>
+<c.magenta>你还可以清空历史记录</c>
 
 
 511
-00:13:54,056 --> 00:13:55,456
-Description is sort of the basic
+00:26:13,473 --> 00:26:17,311
+<c.magenta>你可以重头开始</c>
+<c.magenta>删除特定日期、令牌</c>
 
 
 512
-00:13:55,456 --> 00:13:55,956
-component.
+00:26:17,411 --> 00:26:20,380
+<c.magenta>或事务处理之前的历史记录</c>
 
 
 513
-00:13:55,956 --> 00:13:57,576
-It allows you to specify an
+00:26:21,081 --> 00:26:25,953
+<c.magenta>持续性历史是线性的</c>
+<c.magenta>始终保持较短的长度</c>
 
 
 514
-00:13:58,136 --> 00:13:59,406
-Index Element, basically a
+00:26:27,754 --> 00:26:33,527
+<c.magenta>我们希望你记住 进行删除时</c>
+<c.magenta>你应该保护历史记录</c>
 
 
 515
-00:13:59,406 --> 00:14:00,096
-single property.
+00:26:34,294 --> 00:26:37,397
+<c.magenta>这样它就会知道</c>
 
 
 516
-00:14:01,006 --> 00:14:02,236
-You can specify the type of
+00:26:37,464 --> 00:26:41,235
+<c.magenta>你曾经使用你所需要的历史记录</c>
+<c.magenta>你的客户曾经用过它</c>
 
 
 517
-00:14:02,236 --> 00:14:03,396
-index that should be created on
+00:26:41,301 --> 00:26:43,804
+<c.magenta>你就不会删除</c>
 
 
 518
-00:14:03,396 --> 00:14:04,296
-that property, whether it's
+00:26:43,871 --> 00:26:46,773
+<c.magenta>其他应用用户所需要的东西</c>
 
 
 519
-00:14:04,296 --> 00:14:06,406
-going to be Binary or an RTree.
+00:26:47,140 --> 00:26:50,244
+<c.magenta>现在 我们有了</c>
+<c.magenta>NS Persistent History Transaction</c>
 
 
 520
-00:14:07,066 --> 00:14:08,426
-And if it's Binary index it also
+00:26:50,711 --> 00:26:56,383
+<c.magenta>这是一个大型数据集记录</c>
+<c.magenta>哪些人对你的数据库进行过事务处理</c>
 
 
 521
-00:14:08,426 --> 00:14:09,626
-has you specify a direction,
+00:26:56,550 --> 00:27:00,554
+<c.magenta>你可以看到 我们有Store ID</c>
+<c.magenta>Bundle ID、Process ID</c>
 
 
 522
-00:14:09,776 --> 00:14:10,746
-ascending or descending.
+00:27:00,988 --> 00:27:02,389
+<c.magenta>我们还有令牌</c>
 
 
 523
-00:14:10,746 --> 00:14:12,656
-And this can be important if
+00:27:02,456 --> 00:27:04,925
+<c.magenta>由于历史记录是线性的</c>
 
 
 524
-00:14:12,656 --> 00:14:13,526
-you're doing certain types of
+00:27:05,492 --> 00:27:08,161
+<c.magenta>我们为你提供一个令牌</c>
+<c.magenta>可以加密到磁盘</c>
 
 
 525
-00:14:13,526 --> 00:14:13,996
-searches.
+00:27:08,228 --> 00:27:09,897
+<c.magenta>这样 当应用退出时</c>
 
 
 526
-00:14:13,996 --> 00:14:14,866
-For example if you're doing a
+00:27:09,963 --> 00:27:13,233
+<c.magenta>可以跟踪应用的历史位置</c>
 
 
 527
-00:14:14,866 --> 00:14:16,336
-male search you want to start
+00:27:13,300 --> 00:27:15,802
+<c.magenta>只需重启应用 调出令牌</c>
 
 
 528
-00:14:16,336 --> 00:14:17,716
-with the most recent data first,
+00:27:15,869 --> 00:27:18,839
+<c.magenta>取回历史记录</c>
+<c.magenta>一切就会恢复正常</c>
 
 
 529
-00:14:17,996 --> 00:14:19,146
-instead of the oldest data
+00:27:19,406 --> 00:27:22,309
+<c.magenta>现在 在事务处理中</c>
+<c.magenta>我们允许开发人员</c>
 
 
 530
-00:14:19,146 --> 00:14:19,596
-first.
+00:27:22,609 --> 00:27:26,513
+<c.magenta>希望你们进入</c>
+<c.magenta>Manage Object Context</c>
 
 
 531
-00:14:19,596 --> 00:14:21,636
-So direction changes the order
+00:27:26,580 --> 00:27:30,083
+<c.magenta>告知谁是这个Context</c>
 
 
 532
-00:14:21,636 --> 00:14:24,616
-in which the database will look
+00:27:30,150 --> 00:27:33,220
+<c.magenta>或这个Save Batch Update</c>
+<c.magenta>或Batch Delete的编写者</c>
 
 
 533
-00:14:24,616 --> 00:14:25,866
-at the contents of the index.
+00:27:33,954 --> 00:27:37,925
+<c.magenta>我们允许你进入</c>
+<c.magenta>Manage Object Context</c>
 
 
 534
-00:14:26,446 --> 00:14:30,436
-A Fetch Index Description allows
+00:27:38,058 --> 00:27:39,993
+<c.magenta>设置事务编写者</c>
 
 
 535
-00:14:30,436 --> 00:14:32,066
-you to combine a bunch of Fetch
+00:27:40,661 --> 00:27:43,163
+<c.magenta>做这些工作</c>
+<c.magenta>然后保存或执行请求</c>
 
 
 536
-00:14:32,066 --> 00:14:33,786
-Index Elements into a single
+00:27:43,230 --> 00:27:47,234
+<c.magenta>我们将获取这个字符串</c>
+<c.magenta>放入事务处理 这样你就可以知道</c>
 
 
 537
-00:14:33,786 --> 00:14:35,516
-index, which you'll give a name
+00:27:47,334 --> 00:27:50,003
+<c.magenta>后来哪些人对你的数据库</c>
+<c.magenta>进行了哪些操作</c>
 
 
 538
-00:14:36,346 --> 00:14:37,956
-and optionally you can set a
+00:27:51,839 --> 00:27:54,842
+<c.magenta>作为每个事务处理的一部分</c>
+<c.magenta>都有一组变更</c>
 
 
 539
-00:14:37,956 --> 00:14:40,486
-predicate that says only put
+00:27:55,142 --> 00:27:58,579
+<c.magenta>变更表示对</c>
+<c.magenta>对象进行的某项操作</c>
 
 
 540
-00:14:40,486 --> 00:14:41,846
-rows matching this predicate
+00:27:58,645 --> 00:28:01,481
+<c.magenta>每个事务处理</c>
+<c.magenta>包含许多变更</c>
 
 
 541
-00:14:41,846 --> 00:14:42,506
-into the index.
+00:28:01,615 --> 00:28:05,419
+<c.magenta>比如插入、更新、删除</c>
 
 
 542
-00:14:43,646 --> 00:14:44,826
-It also does some validation of
+00:28:05,819 --> 00:28:09,890
+<c.magenta>在更新时 将会告知</c>
+<c.magenta>哪些属性已经更新</c>
 
 
 543
-00:14:44,826 --> 00:14:45,956
-the index composition to make
+00:28:10,157 --> 00:28:14,828
+<c.magenta>无论属性或关系</c>
+<c.magenta>进行删除操作时</c>
 
 
 544
-00:14:45,956 --> 00:14:48,266
-sure the index you've created is
+00:28:16,697 --> 00:28:21,001
+<c.magenta>将会告知tombstone是什么</c>
+<c.magenta>你可以在模型编辑器中</c>
 
 
 545
-00:14:48,576 --> 00:14:49,106
-reasonable.
+00:28:21,068 --> 00:28:25,138
+<c.magenta>设置一组属性</c>
+<c.magenta>允许你标识算后检查对象</c>
 
 
 546
-00:14:49,566 --> 00:14:52,046
-Some Sharp Corners here, you
+00:28:25,205 --> 00:28:29,476
+<c.magenta>它已经不在数据库之中</c>
+<c.magenta>因此对象ID已经无关紧要</c>
 
 
 547
-00:14:52,046 --> 00:14:53,176
-can't mix and match element
+00:28:29,543 --> 00:28:32,913
+<c.magenta>但是利用tombstone</c>
+<c.magenta>你仍然可以标识对象</c>
 
 
 548
-00:14:53,176 --> 00:14:54,776
-types right now.
+00:28:33,280 --> 00:28:35,382
+<c.magenta>以后进行处理</c>
 
 
 549
-00:14:55,146 --> 00:14:56,376
-It's either going to be an RTree
+00:28:36,450 --> 00:28:38,619
+<c.magenta>现在我们进入模型编辑器</c>
 
 
 550
-00:14:56,556 --> 00:14:57,766
-or a Binary index.
+00:28:40,721 --> 00:28:41,922
+<c.magenta>（模型编辑器）</c>
 
 
 551
-00:14:58,496 --> 00:15:00,146
-Range indexes can only be
+00:28:42,089 --> 00:28:44,691
+<c.magenta>这个实体有一个唯一标识符</c>
 
 
 552
-00:15:00,146 --> 00:15:01,866
-created on numeric properties
+00:28:44,758 --> 00:28:49,229
+<c.magenta>可以为它设置tombstone</c>
+<c.magenta>我们进入并标记为</c>
 
 
 553
-00:15:01,866 --> 00:15:03,406
-less than or equal to 32 bit.
+00:28:49,329 --> 00:28:50,964
+<c.magenta>“删除后保留”</c>
 
 
 554
-00:15:03,406 --> 00:15:04,666
-That's a restriction of the
+00:28:51,331 --> 00:28:54,301
+<c.magenta>非常简单</c>
+<c.magenta>将会显示在tombstone之中</c>
 
 
 555
-00:15:04,666 --> 00:15:06,646
-underlying SQLite database.
+00:28:55,736 --> 00:28:58,338
+<c.magenta>我将进行简短演示</c>
 
 
 556
-00:15:06,866 --> 00:15:08,306
-If you're creating your own
+00:28:58,572 --> 00:29:02,042
+<c.magenta>这里有一个简单的应用</c>
+<c.magenta>它获取我的贴子内容</c>
 
 
 557
-00:15:08,306 --> 00:15:10,606
-incremental store and that's a
+00:29:02,109 --> 00:29:04,311
+<c.magenta>然后将放入我的社交媒体内容源</c>
 
 
 558
-00:15:10,606 --> 00:15:12,026
-restriction -- that's a problem
+00:29:04,511 --> 00:29:08,715
+<c.magenta>这里我设置几个按钮</c>
+<c.magenta>一个下载按钮</c>
 
 
 559
-00:15:12,026 --> 00:15:13,006
-for you, let us know and we'll
+00:29:08,782 --> 00:29:13,020
+<c.magenta>将会在Background Context</c>
+<c.magenta>从云端读取信息</c>
 
 
 560
-00:15:13,006 --> 00:15:13,926
-see what we can do about it.
+00:29:13,387 --> 00:29:17,124
+<c.magenta>一个后台任务将会运行</c>
+<c.magenta>发布我的信息</c>
 
 
 561
-00:15:14,416 --> 00:15:17,126
-But Range -- properties that are
+00:29:17,191 --> 00:29:20,794
+<c.magenta>然后我设置一个标签页</c>
+<c.magenta>在里面可以看到历史记录</c>
 
 
 562
-00:15:17,126 --> 00:15:19,306
-being put in a Ranged Index also
+00:29:21,361 --> 00:29:25,132
+<c.magenta>在我的代码中</c>
+<c.magenta>Use Persistent History设置为假</c>
 
 
 563
-00:15:19,306 --> 00:15:20,026
-can't be optional.
+00:29:25,299 --> 00:29:28,535
+<c.magenta>但是为我的store启用它</c>
+<c.magenta>这样就可以看到发生了哪些变化</c>
 
 
 564
-00:15:20,656 --> 00:15:21,666
-Range of null is a little bit
+00:29:30,304 --> 00:29:32,840
+<c.magenta>在这里有一条用户贴子</c>
 
 
 565
-00:15:21,666 --> 00:15:23,146
-undefined right now.
+00:29:33,140 --> 00:29:35,442
+<c.magenta>用户说：</c>
+<c.magenta>“演示太棒！真不错”</c>
 
 
 566
-00:15:23,706 --> 00:15:24,676
-And if you're building your
+00:29:35,509 --> 00:29:38,478
+<c.magenta>我可以在后台下载</c>
 
 
 567
-00:15:24,676 --> 00:15:26,596
-model in code and we know some
+00:29:38,946 --> 00:29:41,915
+<c.magenta>可以看到 我已经标记</c>
+<c.magenta>贴子的来源</c>
 
 
 568
-00:15:26,596 --> 00:15:27,496
-of you do it, and I've helped
+00:29:41,982 --> 00:29:44,985
+<c.magenta>第一个来自于用户</c>
+<c.magenta>第二个来自于后台</c>
 
 
 569
-00:15:27,496 --> 00:15:29,086
-some of you at previous WWDC's.
+00:29:45,953 --> 00:29:49,223
+<c.magenta>现在我们跳出转至共享扩展</c>
 
 
 570
-00:15:29,086 --> 00:15:31,636
-If you change your entities
+00:29:49,890 --> 00:29:52,759
+<c.magenta>在这里分享Apple信息非常快速</c>
 
 
 571
-00:15:31,636 --> 00:15:33,106
-structurally after you've set
+00:29:52,960 --> 00:29:54,328
+<c.magenta>（活动历史演示）</c>
 
 
 572
-00:15:33,106 --> 00:15:35,136
-indexes, then we're just going
+00:29:56,663 --> 00:29:57,497
+<c.magenta>（取消 发布）</c>
 
 
 573
-00:15:35,136 --> 00:15:35,916
-to drop the index.
+00:29:57,865 --> 00:30:00,968
+<c.magenta>我可以发布这条信息</c>
+<c.magenta>然后在应用中看到</c>
 
 
 574
-00:15:36,126 --> 00:15:37,236
-And that actually applies for
+00:30:01,802 --> 00:30:05,772
+<c.magenta>我们回到应用</c>
+<c.magenta>等等 我丢失了一些灵气</c>
 
 
 575
-00:15:37,236 --> 00:15:38,296
-the entire entity hierarchy.
+00:30:05,839 --> 00:30:06,974
+<c.magenta>真是奇怪</c>
 
 
 576
-00:15:38,376 --> 00:15:40,076
-If you add or remove an entity
+00:30:07,074 --> 00:30:10,677
+<c.magenta>肯定是出错了</c>
+<c.magenta>但是如果我返回历史记录</c>
 
 
 577
-00:15:40,076 --> 00:15:41,466
-in the hierarchy or add or
+00:30:10,744 --> 00:30:14,681
+<c.magenta>可以看到应用中有一条消息</c>
+<c.magenta>而且我已经获得远程内容</c>
 
 
 578
-00:15:41,466 --> 00:15:42,636
-remove properties on any of
+00:30:14,982 --> 00:30:17,351
+<c.magenta>我甚至可以看到共享扩展</c>
 
 
 579
-00:15:42,636 --> 00:15:44,276
-those entities, we can no longer
+00:30:17,651 --> 00:30:19,720
+<c.magenta>但是 我在这里没有看到</c>
 
 
 580
-00:15:44,276 --> 00:15:45,556
-be sure the index is valid so
+00:30:20,587 --> 00:30:22,389
+<c.magenta>与用户一样 我开始添加数据</c>
 
 
 581
-00:15:45,556 --> 00:15:46,926
-we're just going to drop it.
+00:30:22,456 --> 00:30:24,725
+<c.magenta>尝试弄清楚</c>
+<c.magenta>这个UI出了什么问题</c>
 
 
 582
-00:15:46,956 --> 00:15:47,526
-Do it last.
+00:30:25,726 --> 00:30:28,529
+<c.magenta>持续性历史正在显示所有内容</c>
 
 
 583
-00:15:50,856 --> 00:15:52,536
-As you may know from previous
+00:30:28,629 --> 00:30:29,997
+<c.magenta>真奇怪</c>
 
 
 584
-00:15:52,666 --> 00:15:55,126
-versions, changing the indexes
+00:30:30,230 --> 00:30:35,169
+<c.magenta>突然我的应用显出</c>
+<c.magenta>我刚才加载的刷新内容</c>
 
 
 585
-00:15:55,176 --> 00:15:57,406
-on an entity doesn't actually
+00:30:35,269 --> 00:30:37,404
+<c.magenta>在一些视图基础上</c>
 
 
 586
-00:15:57,406 --> 00:15:58,386
-change the entities version
+00:30:37,471 --> 00:30:40,340
+<c.magenta>我最终获取数据库内容</c>
+<c.magenta>并且重新刷新所有内容</c>
 
 
 587
-00:15:58,386 --> 00:16:00,206
-Hash, which means that there's
+00:30:40,841 --> 00:30:43,810
+<c.magenta>只有通过这种方法</c>
+<c.magenta>我才能解决这个问题</c>
 
 
 588
-00:16:00,206 --> 00:16:01,986
-not going to be migration when
+00:30:43,877 --> 00:30:45,979
+<c.magenta>这让用户感到困惑</c>
 
 
 589
-00:16:02,606 --> 00:16:05,456
-the user first launches your new
+00:30:46,713 --> 00:30:49,383
+<c.magenta>但是如果开启</c>
 
 
 590
-00:16:05,456 --> 00:16:06,936
-version of your application with
+00:30:49,449 --> 00:30:52,019
+<c.magenta>不再进行跟踪</c>
+<c.magenta>将会发生什么呢？</c>
 
 
 591
-00:16:07,106 --> 00:16:07,946
-the new indexes.
+00:30:52,119 --> 00:30:53,720
+<c.magenta>我开启它</c>
 
 
 592
-00:16:08,436 --> 00:16:09,116
-So there's not going to be a
+00:30:53,887 --> 00:30:59,660
+<c.magenta>你可以看到</c>
+<c.magenta>我很快就完成Background Context设置</c>
 
 
 593
-00:16:09,116 --> 00:16:09,676
-performance head.
+00:30:59,826 --> 00:31:01,895
+<c.magenta>和View Context设置</c>
 
 
 594
-00:16:09,766 --> 00:16:11,216
-On the other side it's not going
+00:31:01,962 --> 00:31:04,231
+<c.magenta>我让它们互相侦听</c>
 
 
 595
-00:16:11,216 --> 00:16:12,896
-to cause a migration so they're
+00:31:06,600 --> 00:31:10,871
+<c.magenta>我还设置事务编写者</c>
+<c.magenta>非常简单</c>
 
 
 596
-00:16:12,896 --> 00:16:13,656
-not going to get updated
+00:31:10,938 --> 00:31:12,639
+<c.magenta>这样我们就可以看到运行过程</c>
 
 
 597
-00:16:13,656 --> 00:16:14,076
-indexes.
+00:31:13,507 --> 00:31:16,510
+<c.magenta>我可以非常快速地停止应用</c>
+<c.magenta>然后重新启动</c>
 
 
 598
-00:16:14,076 --> 00:16:16,126
-If you want to cause the index
+00:31:16,877 --> 00:31:18,579
+<c.magenta>（构建成功）</c>
 
 
 599
-00:16:16,186 --> 00:16:17,406
-of migration to happen and for
+00:31:21,014 --> 00:31:21,949
+<c.magenta>（库）</c>
 
 
 600
-00:16:17,406 --> 00:16:18,486
-the indexes to be updated,
+00:31:24,451 --> 00:31:27,287
+<c.magenta>这次我们的应用使用历史</c>
 
 
 601
-00:16:18,486 --> 00:16:19,726
-you'll need to call the --
+00:31:27,754 --> 00:31:30,791
+<c.magenta>让我们转到贴子分享功能</c>
+<c.magenta>以前曾经问题重重</c>
 
 
 602
-00:16:19,826 --> 00:16:21,236
-Update the model's version Hash
+00:31:31,892 --> 00:31:36,296
+<c.magenta>High Sierra看上去很酷</c>
+<c.magenta>让我们来快速分享它</c>
 
 
 603
-00:16:21,236 --> 00:16:22,836
-Identifier and that will trigger
+00:31:37,798 --> 00:31:38,966
+<c.magenta>（High Sierra预览）</c>
 
 
 604
-00:16:22,836 --> 00:16:23,406
-a migration.
+00:31:39,032 --> 00:31:40,801
+<c.magenta>我们来分享它</c>
 
 
 605
-00:16:23,446 --> 00:16:25,926
-The SQL store is going to ignore
+00:31:40,934 --> 00:31:43,837
+<c.magenta>非常快</c>
+<c.magenta>让我们来分享其它内容</c>
 
 
 606
-00:16:25,926 --> 00:16:26,926
-any indexes it doesn't
+00:31:44,371 --> 00:31:45,906
+<c.magenta>很酷的新watchOS</c>
 
 
 607
-00:16:26,926 --> 00:16:27,506
-understand.
+00:31:51,044 --> 00:31:52,012
+<c.magenta>（发布）</c>
 
 
 608
-00:16:27,596 --> 00:16:29,686
-So what that means is that if
+00:31:55,549 --> 00:31:57,284
+<c.magenta>现在 当我们返回应用…</c>
 
 
 609
-00:16:29,686 --> 00:16:31,006
-you open your database after you
+00:32:01,021 --> 00:32:02,322
+<c.magenta>瞧！它们出现了</c>
 
 
 610
-00:16:31,006 --> 00:16:32,486
-think you've added indexes and
+00:32:02,523 --> 00:32:06,026
+<c.magenta>我做的只是当视图重新载入时</c>
+<c.magenta>吸取历史记录</c>
 
 
 611
-00:16:32,486 --> 00:16:34,006
-don't see them, go look at the
+00:32:06,927 --> 00:32:09,129
+<c.magenta>而且可以快速地跳转到那段代码</c>
 
 
 612
-00:16:34,006 --> 00:16:35,496
-application console, it probably
+00:32:11,498 --> 00:32:12,533
+<c.magenta>（取回更改）</c>
 
 
 613
-00:16:35,496 --> 00:16:36,486
-told you why you're not seeing
+00:32:15,302 --> 00:32:16,436
+<c.magenta>（跳转到定义）</c>
 
 
 614
-00:16:36,486 --> 00:16:36,626
-them.
+00:32:18,172 --> 00:32:20,140
+<c.magenta>在以前</c>
+<c.magenta>如果我使用Fetch Hit</c>
 
 
 615
-00:16:37,156 --> 00:16:39,706
-And I'm going to do another demo
+00:32:20,207 --> 00:32:23,477
+<c.magenta>而不使用持续性历史</c>
+<c.magenta>将会获取所有内容</c>
 
 
 616
-00:16:39,706 --> 00:16:39,956
-here.
+00:32:23,544 --> 00:32:26,547
+<c.magenta>现在我做的是取回历史</c>
 
 
 617
-00:16:41,086 --> 00:16:42,036
-I have a model here.
+00:32:26,613 --> 00:32:29,616
+<c.magenta>从历史吸取合并上下文</c>
 
 
 618
-00:16:42,866 --> 00:16:43,826
-And I'm actually not going to
+00:32:29,683 --> 00:32:31,652
+<c.magenta>这为我提供更小的子集</c>
 
 
 619
-00:16:43,826 --> 00:16:46,316
-work with my live model because
+00:32:31,718 --> 00:32:35,155
+<c.magenta>我不再需要扫描整个数据库</c>
+<c.magenta>来了解发生了哪些变化</c>
 
 
 620
-00:16:46,316 --> 00:16:48,126
-this is a demo and I will
+00:32:40,127 --> 00:32:42,896
+<c.magenta>简单地说 事情变得更简单</c>
 
 
 621
-00:16:48,476 --> 00:16:51,306
-inevitably typo something, but
+00:32:43,130 --> 00:32:46,667
+<c.magenta>很容易启用持续性历史</c>
+<c.magenta>它只是store中的一个选项</c>
 
 
 622
-00:16:51,586 --> 00:16:54,456
-adding a new index in the new
+00:32:47,801 --> 00:32:50,003
+<c.magenta>它发现那些被忽略的变化</c>
 
 
 623
-00:16:54,666 --> 00:16:55,616
-modeling tools is actually
+00:32:50,070 --> 00:32:52,873
+<c.magenta>你可能已经生成</c>
+<c.magenta>Background Context</c>
 
 
 624
-00:16:55,616 --> 00:16:56,126
-pretty simple.
+00:32:53,006 --> 00:32:55,542
+<c.magenta>你可能未注意到</c>
+<c.magenta>你忽略了一个通知</c>
 
 
 625
-00:16:56,246 --> 00:16:57,776
-You select the entity that you
+00:32:55,609 --> 00:32:58,011
+<c.magenta>你已经使用</c>
+<c.magenta>Batch Updates、Batch Deletes</c>
 
 
 626
-00:16:57,776 --> 00:16:59,976
-want to add an index to and just
+00:32:58,078 --> 00:33:01,648
+<c.magenta>它们不会生成通知</c>
+<c.magenta>你可以发现所有这些操作</c>
 
 
 627
-00:16:59,976 --> 00:17:01,946
-come down here to add entity and
+00:33:01,949 --> 00:33:05,319
+<c.magenta>而不会对数据库的变化一无所知</c>
 
 
 628
-00:17:01,946 --> 00:17:03,786
-you can now see that it has an
+00:33:05,385 --> 00:33:06,587
+<c.magenta>（回顾历史 充满乐趣！）</c>
 
 
 629
-00:17:03,846 --> 00:17:05,786
-Add Fetch Index option.
+00:33:06,653 --> 00:33:07,621
+<c.magenta>（迁移变得更简单）</c>
 
 
 630
-00:17:06,306 --> 00:17:07,836
-And you just add one, call it by
+00:33:07,754 --> 00:33:10,958
+<c.magenta>关于使用持续性历史的两个要点：</c>
 
 
 631
-00:17:07,836 --> 00:17:11,856
-Location, and I can add a couple
+00:33:11,024 --> 00:33:12,793
+<c.magenta>首先是迁移</c>
 
 
 632
-00:17:11,856 --> 00:17:14,336
-of properties to it here -- the
+00:33:12,860 --> 00:33:16,730
+<c.magenta>我们在迁移时尽可能多地</c>
+<c.magenta>保存你的历史记录</c>
 
 
 633
-00:17:14,576 --> 00:17:16,406
-latitude and longitude
+00:33:17,998 --> 00:33:19,166
+<c.magenta>两种情况除外</c>
 
 
 634
-00:17:16,406 --> 00:17:17,006
-properties.
+00:33:19,399 --> 00:33:21,902
+<c.magenta>如果删除模型中的实体</c>
 
 
 635
-00:17:18,116 --> 00:17:19,566
-And if come over here and select
+00:33:21,969 --> 00:33:24,705
+<c.magenta>我们已经拥有这些实体的历史</c>
 
 
 636
-00:17:19,606 --> 00:17:22,286
-the photo, you'd come in here
+00:33:25,005 --> 00:33:28,909
+<c.magenta>必须删除它们的历史记录</c>
+<c.magenta>这将形成空白</c>
 
 
 637
-00:17:22,286 --> 00:17:23,435
-and change the Version Hash
+00:33:29,343 --> 00:33:31,278
+<c.magenta>另一种情况是tombstones</c>
 
 
 638
-00:17:23,556 --> 00:17:24,046
-Modifier.
+00:33:32,145 --> 00:33:33,213
+<c.magenta>对于tombstones</c>
 
 
 639
-00:17:27,046 --> 00:17:29,686
-And now the next time a user
+00:33:33,280 --> 00:33:37,184
+<c.magenta>你并不想在以后</c>
+<c.magenta>使用特定的数据来标识对象</c>
 
 
 640
-00:17:29,686 --> 00:17:30,776
-launches an application that
+00:33:37,251 --> 00:33:41,255
+<c.magenta>也许它会成为安全隐患</c>
+<c.magenta>因此称之为tombstone</c>
 
 
 641
-00:17:30,776 --> 00:17:32,256
-uses this version of the model,
+00:33:41,321 --> 00:33:45,225
+<c.magenta>我们将做同样的事情</c>
+<c.magenta>从模型中删除它的值</c>
 
 
 642
-00:17:32,766 --> 00:17:34,786
-they're going to be using the
+00:33:45,559 --> 00:33:49,429
+<c.magenta>但是如果删除任何数据</c>
+<c.magenta>将会在历史中留下空白</c>
 
 
 643
-00:17:34,786 --> 00:17:35,696
-new RTree index.
+00:33:49,496 --> 00:33:53,567
+<c.magenta>这样只会保存在上次事务处理</c>
+<c.magenta>完成之后的历史记录</c>
 
 
 644
-00:17:35,826 --> 00:17:37,636
-Of course I am going to just
+00:33:53,634 --> 00:33:58,605
+<c.magenta>这样你可以跟踪历史而不会跌入陷阱</c>
 
 
 645
-00:17:37,636 --> 00:17:39,426
-going to run my demo application
+00:33:58,672 --> 00:34:01,875
+<c.magenta>让我因为空白而忽略变化</c>
 
 
 646
-00:17:39,736 --> 00:17:42,726
-which already had that built in.
+00:34:03,210 --> 00:34:04,511
+<c.magenta>在性能方面</c>
 
 
 647
-00:17:44,616 --> 00:17:44,716
-And --
+00:34:06,046 --> 00:34:10,384
+<c.magenta>每次保存和批处理</c>
+<c.magenta>会造成轻微的性能影响</c>
 
 
 648
-00:17:48,586 --> 00:17:49,966
--- I'm going to come down here
+00:34:10,884 --> 00:34:13,320
+<c.magenta>根据批处理的保存操作量</c>
 
 
 649
-00:17:50,706 --> 00:17:52,606
-and grab the Predicate that I
+00:34:13,420 --> 00:34:17,391
+<c.magenta>将会计算哪些内容发生变化</c>
+<c.magenta>并写入数据库</c>
 
 
 650
-00:17:52,606 --> 00:17:56,956
-have carefully set aside -- oh I
+00:34:17,456 --> 00:34:22,094
+<c.magenta>在操作完成之后 占用的内存</c>
 
 
 651
-00:17:56,956 --> 00:17:57,656
-forgot one thing.
+00:34:22,161 --> 00:34:23,463
+<c.magenta>将会交还给你</c>
 
 
 652
-00:17:58,106 --> 00:18:01,556
-I'm going to come up here and
+00:34:23,530 --> 00:34:27,266
+<c.magenta>还会有少量的存储开销</c>
+<c.magenta>但是历史记录将会被清空</c>
 
 
 653
-00:18:01,556 --> 00:18:03,186
-edit the scheme, because we want
+00:34:27,333 --> 00:34:30,771
+<c.magenta>从而能够重新收回占用的空间</c>
 
 
 654
-00:18:03,186 --> 00:18:04,616
-to see what Core Data is sending
+00:34:33,739 --> 00:34:35,309
+<c.magenta>这就是持续性历史跟踪</c>
 
 
 655
-00:18:04,616 --> 00:18:05,916
-to the database.
+00:34:43,483 --> 00:34:47,387
+<c.magenta>让我们总结本场演讲的内容</c>
+<c.magenta>梅利莎介绍了Core Spotlight</c>
 
 
 656
-00:18:06,126 --> 00:18:07,836
-And I've got the Com Apple SQL
+00:34:47,487 --> 00:34:51,425
+<c.magenta>这项技术容易使用</c>
+<c.magenta>便于通过Spotlight分享数据</c>
 
 
 657
-00:18:07,836 --> 00:18:10,066
-Debug Argument Set.
+00:34:51,491 --> 00:34:52,960
+<c.magenta>提供深度链接</c>
 
 
 658
-00:18:10,066 --> 00:18:10,946
-And you'll notice -- for those
+00:34:53,025 --> 00:34:56,763
+<c.magenta>用户可以在手机上的任何位置</c>
+<c.magenta>找到你的应用中的数据</c>
 
 
 659
-00:18:10,946 --> 00:18:12,486
-of you who are familiar with SQL
+00:34:57,364 --> 00:35:00,934
+<c.magenta>新Indexing API</c>
+<c.magenta>让搜索变得更加快速</c>
 
 
 660
-00:18:12,486 --> 00:18:14,796
-Debug as a feature in Core Data,
+00:35:01,001 --> 00:35:03,036
+<c.magenta>让你的应用变得更快</c>
 
 
 661
-00:18:15,446 --> 00:18:16,406
-you're probably most familiar
+00:35:03,570 --> 00:35:06,740
+<c.magenta>最后持续性历史让你知道</c>
 
 
 662
-00:18:16,406 --> 00:18:19,076
-with 1 and 2 as the numbers --
+00:35:06,807 --> 00:35:09,009
+<c.magenta>用户进行的变更</c>
+<c.magenta>不会遗漏任何历史记录</c>
 
 
 663
-00:18:19,176 --> 00:18:20,206
-the levels you're going to be
+00:35:09,076 --> 00:35:11,378
+<c.magenta>让你始终知道</c>
+<c.magenta>谁对你的数据库进行了哪些操作</c>
 
 
 664
-00:18:20,206 --> 00:18:20,536
-setting.
+00:35:12,980 --> 00:35:15,782
+<c.magenta>另外还有一件事情 文件漏洞</c>
 
 
 665
-00:18:20,966 --> 00:18:23,066
-We've added a new level 4, which
+00:35:16,149 --> 00:35:19,119
+<c.magenta>如果你遇到问题</c>
+<c.magenta>如果你有任何需求</c>
 
 
 666
-00:18:23,066 --> 00:18:24,376
-will actually print the query
+00:35:19,953 --> 00:35:22,556
+<c.magenta>请访问bugreport.apple.com</c>
+<c.magenta>我们将会倾听你的意见</c>
 
 
 667
-00:18:24,376 --> 00:18:26,536
-plan that SQLite is using as
+00:35:22,956 --> 00:35:24,291
+<c.magenta>请去访问</c>
 
 
 668
-00:18:26,536 --> 00:18:27,886
-well as all of the statements
+00:35:25,859 --> 00:35:28,795
+<c.magenta>有关更多信息</c>
+<c.magenta>请访问WWDC网站</c>
 
 
 669
-00:18:28,666 --> 00:18:30,226
-that Core Data is sending to the
+00:35:29,530 --> 00:35:33,200
+<c.magenta>另外还有一些相关演讲</c>
+<c.magenta>我们之前举行了“Cocoa新特性”演讲</c>
 
 
 670
-00:18:30,226 --> 00:18:30,816
-database.
+00:35:33,267 --> 00:35:34,835
+<c.magenta>你们可以观看视频</c>
 
 
 671
-00:18:30,936 --> 00:18:31,886
-So I'm going to run my
+00:35:34,902 --> 00:35:37,337
+<c.magenta>接下来我们还有</c>
+<c.magenta>“Foundation新特性”演讲</c>
 
 
 672
-00:18:31,886 --> 00:18:35,206
-application with that version
+00:35:37,704 --> 00:35:41,208
+<c.magenta>在星期三</c>
+<c.magenta>“Core Spotlight新特性”演讲</c>
 
 
 673
-00:18:35,206 --> 00:18:35,696
-set to 4.
+00:35:41,275 --> 00:35:42,776
+<c.magenta>将会和大家分享一些有趣的内容</c>
 
 
 674
-00:18:36,956 --> 00:18:42,676
-Come back, reset that predicate,
+00:35:42,843 --> 00:35:46,213
+<c.magenta>另外请留意星期五上午的</c>
+<c.magenta>“Cocoa开发小技巧”演讲</c>
 
 
 675
-00:18:44,416 --> 00:18:45,596
-and run the search.
-
-
-676
-00:18:46,216 --> 00:18:49,646
-And now we can come and we see
-
-
-677
-00:18:49,736 --> 00:18:50,656
-the last search.
-
-
-678
-00:18:51,036 --> 00:18:54,296
-It's actually kind of more
-
-
-679
-00:18:54,296 --> 00:18:55,086
-interesting and I'm going to
-
-
-680
-00:18:55,086 --> 00:18:57,236
-come over here and I've actually
-
-
-681
-00:18:57,366 --> 00:18:58,516
-copied and pasted an earlier
-
-
-682
-00:18:58,516 --> 00:19:00,626
-version into Text Edit, because
-
-
-683
-00:19:00,626 --> 00:19:01,746
-I could enlarge the text there.
-
-
-684
-00:19:03,836 --> 00:19:05,386
-But you can see I'm now doing a
-
-
-685
-00:19:05,386 --> 00:19:07,226
-sub Select against a separate
-
-
-686
-00:19:07,226 --> 00:19:10,156
-table, Z Photo by Location.
-
-
-687
-00:19:10,996 --> 00:19:12,836
-And if I look down in the query
-
-
-688
-00:19:12,836 --> 00:19:14,226
-plan, you can see that this is a
-
-
-689
-00:19:14,226 --> 00:19:15,406
-virtual table index.
-
-
-690
-00:19:15,846 --> 00:19:17,426
-So that's basically routing the
-
-
-691
-00:19:17,426 --> 00:19:19,666
-location query, the latitude
-
-
-692
-00:19:19,666 --> 00:19:21,586
-query down onto a separate RTree
-
-
-693
-00:19:21,586 --> 00:19:21,926
-table.
-
-
-694
-00:19:22,926 --> 00:19:24,276
-And well, we can see up here
-
-
-695
-00:19:24,276 --> 00:19:26,426
-that it says it took 0.056
-
-
-696
-00:19:26,426 --> 00:19:27,836
-seconds for 16 rows.
-
-
-697
-00:19:27,916 --> 00:19:29,476
-And if I go compare this to the
-
-
-698
-00:19:29,476 --> 00:19:31,866
-version without the RTree, well
-
-
-699
-00:19:31,866 --> 00:19:33,546
-there's the query we were
-
-
-700
-00:19:33,546 --> 00:19:34,926
-originally doing, Z Longitude
-
-
-701
-00:19:34,926 --> 00:19:36,276
-between this and this.
-
-
-702
-00:19:37,196 --> 00:19:38,766
-And we can see that it took
-
-
-703
-00:19:38,956 --> 00:19:41,906
-0.062 seconds for 16 rows.
-
-
-704
-00:19:41,906 --> 00:19:42,926
-So you got to do about a 10
-
-
-705
-00:19:42,926 --> 00:19:44,176
-percent performance improvement
-
-
-706
-00:19:44,216 --> 00:19:47,096
-on a laptop with an SSD Fast
-
-
-707
-00:19:47,096 --> 00:19:48,606
-Cash, all that kind of stuff.
-
-
-708
-00:19:48,606 --> 00:19:49,386
-So it's about a 10 percent
-
-
-709
-00:19:49,386 --> 00:19:50,706
-improvement your devices are
-
-
-710
-00:19:50,706 --> 00:19:51,756
-actually going to -- and it's
-
-
-711
-00:19:51,756 --> 00:19:52,926
-also a very small data set.
-
-
-712
-00:19:53,206 --> 00:19:54,486
-Your devices with a larger data
-
-
-713
-00:19:54,486 --> 00:19:55,356
-set are really going to
-
-
-714
-00:19:55,356 --> 00:19:57,296
-appreciate having RTree's to
-
-
-715
-00:19:57,296 --> 00:19:58,566
-search against instead of
-
-
-716
-00:19:58,726 --> 00:19:59,976
-regular Binary Indexes.
-
-
-717
-00:20:01,096 --> 00:20:01,756
-And --
-
-
-718
-00:20:04,116 --> 00:20:05,326
-I think I'm done here.
-
-
-719
-00:20:06,786 --> 00:20:11,696
-So that is RTree searching.
-
-
-720
-00:20:12,816 --> 00:20:14,236
-I have one more slide before I
-
-
-721
-00:20:14,236 --> 00:20:15,296
-hand you over to Rishi.
-
-
-722
-00:20:15,886 --> 00:20:16,656
-We've also added some
-
-
-723
-00:20:16,656 --> 00:20:17,856
-miscellaneous new stuff.
-
-
-724
-00:20:19,756 --> 00:20:21,536
-Basically new attribute types.
-
-
-725
-00:20:21,536 --> 00:20:23,816
-We've added NSUUIDA Attribute
-
-
-726
-00:20:23,816 --> 00:20:25,806
-Type and a NSURL Attribute type
-
-
-727
-00:20:25,806 --> 00:20:28,096
-backed by the UUID and URL value
-
-
-728
-00:20:28,096 --> 00:20:28,976
-classes respectively.
-
-
-729
-00:20:29,516 --> 00:20:33,546
-[ Applause ]
-
-
-730
-00:20:34,046 --> 00:20:35,086
-You appreciate the work we do.
-
-
-731
-00:20:35,546 --> 00:20:36,196
-That makes us feel good.
-
-
-732
-00:20:36,196 --> 00:20:37,836
-And now I'm going to hand you
-
-
-733
-00:20:37,836 --> 00:20:38,126
-over --
-
-
-734
-00:20:41,226 --> 00:20:41,836
->> Thank you.
-
-
-735
-00:20:42,516 --> 00:20:47,036
-[ Applause ]
-
-
-736
-00:20:47,536 --> 00:20:49,046
->> Hi everybody I'm Rishi Verma
-
-
-737
-00:20:49,046 --> 00:20:49,856
-and I'll be showing you
-
-
-738
-00:20:49,896 --> 00:20:51,026
-Persistent History Tracking.
-
-
-739
-00:20:52,626 --> 00:20:53,936
-So let's talk a little bit about
-
-
-740
-00:20:53,936 --> 00:20:54,316
-your app.
-
-
-741
-00:20:54,946 --> 00:20:55,776
-So you've developed these
-
-
-742
-00:20:55,776 --> 00:20:57,336
-amazing apps and hopefully
-
-
-743
-00:20:57,336 --> 00:20:58,706
-you've adopted the NS Persistent
-
-
-744
-00:20:58,706 --> 00:20:59,996
-Container we introduced last
-
-
-745
-00:20:59,996 --> 00:21:00,306
-release.
-
-
-746
-00:21:00,526 --> 00:21:01,826
-So you've got a View Context set
-
-
-747
-00:21:01,826 --> 00:21:03,446
-up and a Background Context.
-
-
-748
-00:21:04,236 --> 00:21:05,756
-And you've got a Shared
-
-
-749
-00:21:05,756 --> 00:21:07,136
-Container where you've set up
-
-
-750
-00:21:07,136 --> 00:21:07,906
-your Persistent Store.
-
-
-751
-00:21:09,116 --> 00:21:10,416
-Now your view context is one
-
-
-752
-00:21:10,416 --> 00:21:11,696
-connection and your background
-
-
-753
-00:21:11,696 --> 00:21:12,636
-context is another.
-
-
-754
-00:21:13,146 --> 00:21:14,336
-And maybe you've got your
-
-
-755
-00:21:14,336 --> 00:21:16,556
-background context downloading
-
-
-756
-00:21:16,556 --> 00:21:18,336
-contend from the remote site
-
-
-757
-00:21:18,336 --> 00:21:19,096
-that you have set up.
-
-
-758
-00:21:20,636 --> 00:21:22,046
-Now you're a very diligent
-
-
-759
-00:21:22,046 --> 00:21:23,316
-developer and you've gone out
-
-
-760
-00:21:23,316 --> 00:21:24,716
-and created a Document
-
-
-761
-00:21:24,716 --> 00:21:26,686
-Extension, a Shared Extension,
-
-
-762
-00:21:27,086 --> 00:21:28,366
-and a Photo Editing Extension.
-
-
-763
-00:21:28,716 --> 00:21:30,026
-Now all of these connections to
-
-
-764
-00:21:30,026 --> 00:21:31,596
-your persistent store could be
-
-
-765
-00:21:31,596 --> 00:21:34,066
-running in any process since
-
-
-766
-00:21:34,066 --> 00:21:35,456
-they're extensions, or they
-
-
-767
-00:21:35,456 --> 00:21:36,506
-could be coming from our app
-
-
-768
-00:21:36,506 --> 00:21:37,526
-from various context.
-
-
-769
-00:21:37,916 --> 00:21:39,146
-And you may not know exactly
-
-
-770
-00:21:39,146 --> 00:21:40,396
-where this data is coming from.
-
-
-771
-00:21:40,576 --> 00:21:42,306
-Well, let's break it down a
-
-
-772
-00:21:42,306 --> 00:21:44,626
-little bit and see what happens.
-
-
-773
-00:21:45,866 --> 00:21:49,956
-So sorry, so here we are in your
-
-
-774
-00:21:49,956 --> 00:21:53,426
-app and the user is looking at
-
-
-775
-00:21:53,426 --> 00:21:55,096
-your view context and in the
-
-
-776
-00:21:55,096 --> 00:21:56,576
-meantime your background context
-
-
-777
-00:21:56,576 --> 00:21:58,416
-is downloading info from some
-
-
-778
-00:21:58,416 --> 00:21:59,056
-remote source.
-
-
-779
-00:21:59,676 --> 00:22:01,406
-Unfortunately a common thing
-
-
-780
-00:22:01,406 --> 00:22:02,406
-that we've seen is that your
-
-
-781
-00:22:02,406 --> 00:22:03,616
-Background Context may be
-
-
-782
-00:22:03,616 --> 00:22:05,686
-ingesting and your View Context
-
-
-783
-00:22:06,066 --> 00:22:07,046
-may not know about these
-
-
-784
-00:22:07,046 --> 00:22:09,136
-objects, or it may not even care
-
-
-785
-00:22:09,136 --> 00:22:09,936
-about these objects.
-
-
-786
-00:22:10,416 --> 00:22:11,766
-But as your Save Notifications
-
-
-787
-00:22:11,766 --> 00:22:13,266
-come in, you're ingesting them
-
-
-788
-00:22:13,266 --> 00:22:13,716
-anyways.
-
-
-789
-00:22:14,496 --> 00:22:16,756
-And so you're going to be
-
-
-790
-00:22:16,756 --> 00:22:18,086
-missing some changes, if you
-
-
-791
-00:22:18,086 --> 00:22:19,316
-missed out new Background
-
-
-792
-00:22:19,316 --> 00:22:20,666
-Context, because they're really
-
-
-793
-00:22:20,666 --> 00:22:21,736
-easy to generate at this time
-
-
-794
-00:22:22,146 --> 00:22:23,516
-but you may miss out on Batch
-
-
-795
-00:22:23,516 --> 00:22:25,296
-Updates, Batch Deletes, which
-
-
-796
-00:22:25,296 --> 00:22:26,176
-don't generate a Save
-
-
-797
-00:22:26,176 --> 00:22:26,826
-notification.
-
-
-798
-00:22:27,636 --> 00:22:30,626
-Now the user's gone into Safari
-
-
-799
-00:22:31,086 --> 00:22:32,426
-and decided to share something.
-
-
-800
-00:22:33,146 --> 00:22:35,356
-This writes to the database and
-
-
-801
-00:22:35,356 --> 00:22:36,596
-when you're developer comes back
-
-
-802
-00:22:36,596 --> 00:22:38,306
-to the app -- or when you're
-
-
-803
-00:22:38,306 --> 00:22:39,556
-user comes back to the app, you
-
-
-804
-00:22:39,556 --> 00:22:41,076
-don't know what's changed.
-
-
-805
-00:22:41,646 --> 00:22:42,786
-You know something's changed,
-
-
-806
-00:22:42,786 --> 00:22:44,726
-but what exactly you don't know.
-
-
-807
-00:22:45,116 --> 00:22:46,266
-And so you have to rescan the
-
-
-808
-00:22:46,266 --> 00:22:48,016
-entire database and see what has
-
-
-809
-00:22:48,106 --> 00:22:49,126
-changed since you last were
-
-
-810
-00:22:49,126 --> 00:22:49,306
-there.
-
-
-811
-00:22:50,646 --> 00:22:52,426
-And unfortunately sometimes our
-
-
-812
-00:22:52,426 --> 00:22:52,986
-apps crash.
-
-
-813
-00:22:53,126 --> 00:22:55,506
-It may be due to the user
-
-
-814
-00:22:56,116 --> 00:22:57,516
-quitting your app while a
-
-
-815
-00:22:57,516 --> 00:22:58,886
-Background Contact was going.
-
-
-816
-00:22:59,306 --> 00:23:00,536
-And when your app comes back up,
-
-
-817
-00:23:00,986 --> 00:23:02,466
-your Background Context doesn't
-
-
-818
-00:23:02,466 --> 00:23:03,776
-know necessarily where it left
-
-
-819
-00:23:03,776 --> 00:23:05,176
-off, scanning your local
-
-
-820
-00:23:05,176 --> 00:23:05,616
-database.
-
-
-821
-00:23:05,786 --> 00:23:07,126
-So it'll have to check with
-
-
-822
-00:23:07,126 --> 00:23:08,696
-remote content and rescan the
-
-
-823
-00:23:08,696 --> 00:23:10,476
-entire local database to see
-
-
-824
-00:23:10,476 --> 00:23:11,696
-where it needs to be picked up
-
-
-825
-00:23:11,696 --> 00:23:12,046
-again.
-
-
-826
-00:23:12,586 --> 00:23:15,166
-Let's break this example down
-
-
-827
-00:23:15,166 --> 00:23:15,916
-just a little bit more.
-
-
-828
-00:23:16,646 --> 00:23:18,316
-So we have an app, and it
-
-
-829
-00:23:18,316 --> 00:23:19,546
-decides to load some data.
-
-
-830
-00:23:19,986 --> 00:23:21,236
-So the Background Context loads
-
-
-831
-00:23:21,236 --> 00:23:23,056
-some data and the View Context
-
-
-832
-00:23:23,586 --> 00:23:24,206
-gets updated.
-
-
-833
-00:23:24,966 --> 00:23:26,176
-Now when the user suspends the
-
-
-834
-00:23:26,176 --> 00:23:28,206
-app, and the document extension
-
-
-835
-00:23:28,206 --> 00:23:30,506
-comes up, we'll see that data
-
-
-836
-00:23:30,506 --> 00:23:31,816
-inserts two new objects.
-
-
-837
-00:23:33,066 --> 00:23:34,456
-And then my Share Extension
-
-
-838
-00:23:34,456 --> 00:23:36,606
-comes along, updates an object
-
-
-839
-00:23:36,606 --> 00:23:37,556
-and inserts another one.
-
-
-840
-00:23:38,096 --> 00:23:39,836
-And so does my Photos Extension.
-
-
-841
-00:23:41,046 --> 00:23:43,466
-Once all of these are done I'll
-
-
-842
-00:23:43,466 --> 00:23:45,606
-come back to my app and notice
-
-
-843
-00:23:45,716 --> 00:23:49,566
-that some of the data is stale.
-
-
-844
-00:23:50,446 --> 00:23:53,866
-So our app here only knows about
-
-
-845
-00:23:53,866 --> 00:23:55,026
-these original six objects.
-
-
-846
-00:23:55,476 --> 00:23:56,636
-The rest of the database is
-
-
-847
-00:23:56,636 --> 00:23:58,926
-actually modified or it actually
-
-
-848
-00:23:58,926 --> 00:23:59,656
-doesn't know about these
-
-
-849
-00:23:59,656 --> 00:24:00,106
-objects.
-
-
-850
-00:24:00,936 --> 00:24:02,516
-So it has to go through and scan
-
-
-851
-00:24:02,516 --> 00:24:03,556
-everything and see what's
-
-
-852
-00:24:03,556 --> 00:24:05,786
-relevant to that View Context or
-
-
-853
-00:24:05,786 --> 00:24:07,656
-that Background Context.
-
-
-854
-00:24:09,676 --> 00:24:11,086
-Now we've introduced NS
-
-
-855
-00:24:11,196 --> 00:24:12,046
-Persistent History.
-
-
-856
-00:24:12,046 --> 00:24:13,476
-It's rather simple.
-
-
-857
-00:24:14,846 --> 00:24:16,996
-Grab your Container, grab your
-
-
-858
-00:24:16,996 --> 00:24:21,196
-Store Description and voila.
-
-
-859
-00:24:22,856 --> 00:24:24,336
-Set the option NS Persistent
-
-
-860
-00:24:24,336 --> 00:24:26,476
-History Tracking to true and we
-
-
-861
-00:24:26,476 --> 00:24:28,036
-will now track all of your
-
-
-862
-00:24:28,036 --> 00:24:28,946
-changes to your database.
-
-
-863
-00:24:29,036 --> 00:24:32,036
-So let's go back to that
-
-
-864
-00:24:32,036 --> 00:24:32,936
-previous-- thank you.
-
-
-865
-00:24:33,516 --> 00:24:36,856
-[ Applause ]
-
-
-866
-00:24:37,356 --> 00:24:38,276
-So we'll go back to that
-
-
-867
-00:24:38,276 --> 00:24:39,036
-previous example.
-
-
-868
-00:24:39,336 --> 00:24:41,036
-And now in my View Context and
-
-
-869
-00:24:41,036 --> 00:24:42,536
-Background Context load data,
-
-
-870
-00:24:43,426 --> 00:24:44,976
-we'll see that it happens within
-
-
-871
-00:24:45,106 --> 00:24:46,376
-a transaction.
-
-
-872
-00:24:46,856 --> 00:24:48,116
-And this transaction's written
-
-
-873
-00:24:48,116 --> 00:24:48,776
-to my database.
-
-
-874
-00:24:49,216 --> 00:24:50,326
-And I can see that it was done
-
-
-875
-00:24:50,326 --> 00:24:52,616
-by the Background Context and in
-
-
-876
-00:24:52,616 --> 00:24:52,986
-my app.
-
-
-877
-00:24:54,196 --> 00:24:55,916
-Now when I hop out of my app and
-
-
-878
-00:24:55,916 --> 00:24:57,446
-the user goes into a Document
-
-
-879
-00:24:57,446 --> 00:24:57,926
-Extension --
-
-
-880
-00:25:02,036 --> 00:25:03,126
-We'll see that this also
-
-
-881
-00:25:03,156 --> 00:25:06,906
-generates a transaction and so
-
-
-882
-00:25:06,906 --> 00:25:08,136
-on with my share extension.
-
-
-883
-00:25:08,706 --> 00:25:12,876
-And also the Share Extension
-
-
-884
-00:25:12,876 --> 00:25:13,906
-will note that there was a
-
-
-885
-00:25:13,906 --> 00:25:17,426
-modification and not an insert
-
-
-886
-00:25:17,426 --> 00:25:17,616
-here.
-
-
-887
-00:25:18,546 --> 00:25:20,266
-And now with a Photos Extension
-
-
-888
-00:25:20,366 --> 00:25:21,436
-we'll also see the fourth
-
-
-889
-00:25:21,436 --> 00:25:24,106
-transaction come in and we'll
-
-
-890
-00:25:24,106 --> 00:25:25,326
-see that it was done in photos.
-
-
-891
-00:25:25,326 --> 00:25:28,506
-So now when my app is being
-
-
-892
-00:25:28,506 --> 00:25:29,736
-brought back to the foreground,
-
-
-893
-00:25:30,356 --> 00:25:31,876
-I do still have still data, but
-
-
-894
-00:25:31,876 --> 00:25:33,366
-now I know where I am in the
-
-
-895
-00:25:33,366 --> 00:25:35,426
-history table and can simply go
-
-
-896
-00:25:35,426 --> 00:25:37,216
-from transaction 1 to 4.
-
-
-897
-00:25:37,836 --> 00:25:39,306
-And voila I've updated.
-
-
-898
-00:25:42,616 --> 00:25:45,326
-So we've introduced a new Store
-
-
-899
-00:25:45,326 --> 00:25:46,506
-Request for you to fetch your
-
-
-900
-00:25:46,506 --> 00:25:46,876
-history.
-
-
-901
-00:25:47,436 --> 00:25:48,626
-It's called NS Persistent
-
-
-902
-00:25:48,686 --> 00:25:49,726
-History Change Request.
-
-
-903
-00:25:50,426 --> 00:25:52,226
-You can simply start it up with
-
-
-904
-00:25:52,226 --> 00:25:54,796
-either a date, a token, or a
-
-
-905
-00:25:54,796 --> 00:25:55,426
-transaction.
-
-
-906
-00:25:56,016 --> 00:25:59,036
-And you can simply set the
-
-
-907
-00:25:59,036 --> 00:25:59,986
-result type as well.
-
-
-908
-00:26:00,516 --> 00:26:02,736
-As simple as a status, the count
-
-
-909
-00:26:02,736 --> 00:26:04,016
-of change is available.
-
-
-910
-00:26:04,066 --> 00:26:05,616
-Or you can get nitty-gritty and
-
-
-911
-00:26:05,616 --> 00:26:07,306
-get all the transactions and all
-
-
-912
-00:26:07,306 --> 00:26:07,836
-the changes.
-
-
-913
-00:26:09,676 --> 00:26:11,376
-Also with a change request we
-
-
-914
-00:26:11,376 --> 00:26:12,936
-allow you to purge your history.
-
-
-915
-00:26:13,486 --> 00:26:15,776
-So we want you to start this off
-
-
-916
-00:26:15,826 --> 00:26:17,296
-and you can delete the history
-
-
-917
-00:26:17,296 --> 00:26:19,716
-prior to date, a token, or a
-
-
-918
-00:26:19,716 --> 00:26:20,396
-transaction.
-
-
-919
-00:26:21,126 --> 00:26:23,036
-Now your Persistent History is
-
-
-920
-00:26:23,036 --> 00:26:25,176
-linear so this way it will keep
-
-
-921
-00:26:25,176 --> 00:26:25,636
-it short.
-
-
-922
-00:26:26,366 --> 00:26:29,086
-One of the caveats we want you
-
-
-923
-00:26:29,086 --> 00:26:30,386
-to keep in mind when pruning
-
-
-924
-00:26:30,386 --> 00:26:31,996
-your history is that you should
-
-
-925
-00:26:31,996 --> 00:26:33,246
-have a gatekeeper.
-
-
-926
-00:26:34,366 --> 00:26:36,036
-Single place where this should
-
-
-927
-00:26:36,036 --> 00:26:37,636
-be done so that it knows that
-
-
-928
-00:26:37,636 --> 00:26:38,876
-you've consumed the history you
-
-
-929
-00:26:38,876 --> 00:26:40,776
-need, your clients have consumed
-
-
-930
-00:26:40,776 --> 00:26:43,076
-it, and you no longer are
-
-
-931
-00:26:43,076 --> 00:26:44,156
-removing anything that is
-
-
-932
-00:26:44,156 --> 00:26:46,036
-relevant to someone else in your
-
-
-933
-00:26:46,116 --> 00:26:47,416
-app, all right?
-
-
-934
-00:26:47,416 --> 00:26:48,316
-And then now we have NS
-
-
-935
-00:26:48,316 --> 00:26:50,026
-Persistent History Transaction.
-
-
-936
-00:26:50,766 --> 00:26:52,716
-This is a large data blob that
-
-
-937
-00:26:52,796 --> 00:26:55,516
-covers who did the transaction
-
-
-938
-00:26:55,516 --> 00:26:56,106
-to your database.
-
-
-939
-00:26:56,536 --> 00:26:57,376
-So as you can see we have a
-
-
-940
-00:26:57,376 --> 00:27:00,316
-Store ID, a Bundle ID, a Process
-
-
-941
-00:27:00,316 --> 00:27:02,206
-ID, but we also have a Token.
-
-
-942
-00:27:02,576 --> 00:27:05,606
-Since your history is linear, we
-
-
-943
-00:27:05,606 --> 00:27:07,306
-provide you a Token that you can
-
-
-944
-00:27:07,306 --> 00:27:08,916
-encode to disc, so that when
-
-
-945
-00:27:08,916 --> 00:27:10,576
-your app exits you can keep
-
-
-946
-00:27:10,576 --> 00:27:12,276
-track of where your app was in
-
-
-947
-00:27:12,276 --> 00:27:12,786
-the history.
-
-
-948
-00:27:13,406 --> 00:27:15,056
-Simply re-launch your app, pull
-
-
-949
-00:27:15,056 --> 00:27:16,366
-your token, and fetch your
-
-
-950
-00:27:16,366 --> 00:27:17,646
-history based on that and you're
-
-
-951
-00:27:17,646 --> 00:27:18,146
-good to go.
-
-
-952
-00:27:19,516 --> 00:27:21,616
-Now, also in the transaction we
-
-
-953
-00:27:21,616 --> 00:27:24,356
-allow you -- the author, we want
-
-
-954
-00:27:24,356 --> 00:27:25,676
-you to go onto your Manage
-
-
-955
-00:27:25,676 --> 00:27:28,246
-Object Context and tell us who
-
-
-956
-00:27:28,246 --> 00:27:30,296
-is the author of this context
-
-
-957
-00:27:30,296 --> 00:27:32,456
-and this Save Batch Update or
-
-
-958
-00:27:32,456 --> 00:27:33,116
-Batch Delete.
-
-
-959
-00:27:34,056 --> 00:27:36,266
-And so we also allow you to go
-
-
-960
-00:27:36,266 --> 00:27:37,916
-onto the Manage Object Context
-
-
-961
-00:27:38,226 --> 00:27:39,586
-and set the Transaction Author.
-
-
-962
-00:27:40,676 --> 00:27:41,966
-Do this before your save or
-
-
-963
-00:27:41,966 --> 00:27:43,596
-executing a request and we'll
-
-
-964
-00:27:43,596 --> 00:27:45,136
-take this string, put in a
-
-
-965
-00:27:45,136 --> 00:27:46,956
-transaction, so you can identify
-
-
-966
-00:27:47,366 --> 00:27:48,926
-who did what to your database at
-
-
-967
-00:27:48,926 --> 00:27:50,236
-a later time.
-
-
-968
-00:27:51,926 --> 00:27:53,516
-And as part of every transaction
-
-
-969
-00:27:53,516 --> 00:27:54,586
-there is a set of changes.
-
-
-970
-00:27:55,246 --> 00:27:57,006
-A change represents a single
-
-
-971
-00:27:57,076 --> 00:27:58,126
-thing that was done to one
-
-
-972
-00:27:58,126 --> 00:27:58,636
-object.
-
-
-973
-00:27:58,686 --> 00:27:59,976
-So they'll be many changes for
-
-
-974
-00:27:59,976 --> 00:28:03,166
-every transaction and here we'll
-
-
-975
-00:28:03,166 --> 00:28:05,056
-have inserts, and updates, and
-
-
-976
-00:28:05,056 --> 00:28:05,366
-deletes.
-
-
-977
-00:28:05,906 --> 00:28:07,366
-In the case of an update, we'll
-
-
-978
-00:28:07,406 --> 00:28:08,946
-tell you which properties were
-
-
-979
-00:28:08,946 --> 00:28:11,366
-updated -- either attributes or
-
-
-980
-00:28:11,366 --> 00:28:13,516
-relationships, and then in the
-
-
-981
-00:28:13,516 --> 00:28:17,726
-case of a delete we'll tell you
-
-
-982
-00:28:17,726 --> 00:28:18,746
-what the tombstone is.
-
-
-983
-00:28:19,276 --> 00:28:20,376
-It's a set of attributes that
-
-
-984
-00:28:20,376 --> 00:28:21,876
-you can set in the model editor
-
-
-985
-00:28:22,206 --> 00:28:23,466
-that allow you to identify the
-
-
-986
-00:28:23,466 --> 00:28:24,606
-object post mortem.
-
-
-987
-00:28:25,226 --> 00:28:26,316
-It's no longer in your database
-
-
-988
-00:28:26,406 --> 00:28:27,996
-so the object ID isn't as
-
-
-989
-00:28:28,056 --> 00:28:30,106
-relevant anymore, but with a
-
-
-990
-00:28:30,106 --> 00:28:31,646
-tombstone you can still identify
-
-
-991
-00:28:31,646 --> 00:28:34,206
-that object and be able to
-
-
-992
-00:28:34,206 --> 00:28:35,376
-process it later.
-
-
-993
-00:28:36,526 --> 00:28:38,126
-Now here we are in the model
-
-
-994
-00:28:38,126 --> 00:28:38,566
-editor.
-
-
-995
-00:28:42,446 --> 00:28:44,086
-And I have a unique identifier
-
-
-996
-00:28:44,086 --> 00:28:44,656
-for this entity.
-
-
-997
-00:28:44,656 --> 00:28:45,896
-And it would be great if I could
-
-
-998
-00:28:45,896 --> 00:28:46,436
-tombstone it.
-
-
-999
-00:28:46,706 --> 00:28:49,236
-So we simply go in and mark it
-
-
-1000
-00:28:49,366 --> 00:28:50,486
-Preserve After Deletion.
-
-
-1001
-00:28:51,366 --> 00:28:52,396
-And it's that simple and it will
-
-
-1002
-00:28:52,396 --> 00:28:53,346
-show up in my tombstone.
-
-
-1003
-00:28:55,896 --> 00:28:56,916
-And so with that I'd like to
-
-
-1004
-00:28:56,916 --> 00:28:57,816
-show you a quick Demo.
-
-
-1005
-00:28:58,666 --> 00:28:59,786
-So I have a simple app here.
-
-
-1006
-00:29:00,196 --> 00:29:02,846
-It takes a post I have and puts
-
-
-1007
-00:29:02,846 --> 00:29:03,976
-it on my social media feeds.
-
-
-1008
-00:29:04,626 --> 00:29:06,136
-I've set it up with a few
-
-
-1009
-00:29:06,136 --> 00:29:06,696
-buttons here.
-
-
-1010
-00:29:06,886 --> 00:29:09,486
-A download button that will go
-
-
-1011
-00:29:09,486 --> 00:29:10,796
-on a background context and
-
-
-1012
-00:29:11,186 --> 00:29:12,986
-ingest from the Cloud.
-
-
-1013
-00:29:13,546 --> 00:29:15,186
-And a background task that will
-
-
-1014
-00:29:15,186 --> 00:29:17,086
-go out and post all of my stuff.
-
-
-1015
-00:29:17,216 --> 00:29:18,746
-And I've also got a tab where I
-
-
-1016
-00:29:18,746 --> 00:29:19,986
-can go and see the history.
-
-
-1017
-00:29:21,486 --> 00:29:23,576
-Currently in my code I have Use
-
-
-1018
-00:29:23,576 --> 00:29:24,986
-Persistent History set to False,
-
-
-1019
-00:29:24,986 --> 00:29:26,906
-but I've enabled it for my store
-
-
-1020
-00:29:26,906 --> 00:29:27,816
-so that we can see what's
-
-
-1021
-00:29:27,816 --> 00:29:28,286
-changed.
-
-
-1022
-00:29:30,016 --> 00:29:31,926
-So here I am and I'll have a
-
-
-1023
-00:29:31,926 --> 00:29:32,636
-user post.
-
-
-1024
-00:29:33,096 --> 00:29:34,306
-And this user said, "This demo
-
-
-1025
-00:29:34,306 --> 00:29:34,736
-is amazing!"
-
-
-1026
-00:29:34,736 --> 00:29:36,606
-Awesome. And I can also go and
-
-
-1027
-00:29:36,606 --> 00:29:37,746
-download one from the
-
-
-1028
-00:29:37,746 --> 00:29:38,366
-background.
-
-
-1029
-00:29:38,366 --> 00:29:40,846
-And we can see that I've labeled
-
-
-1030
-00:29:40,846 --> 00:29:42,046
-where the post came from.
-
-
-1031
-00:29:42,046 --> 00:29:43,046
-The first one comes from the
-
-
-1032
-00:29:43,046 --> 00:29:44,216
-user, the next one comes from
-
-
-1033
-00:29:44,216 --> 00:29:44,816
-the background.
-
-
-1034
-00:29:45,716 --> 00:29:48,196
-But now let's hop out and go to
-
-
-1035
-00:29:48,196 --> 00:29:49,146
-the Share Extension.
-
-
-1036
-00:29:49,876 --> 00:29:52,116
-And let's share about Apple here
-
-
-1037
-00:29:52,116 --> 00:29:52,636
-real quick.
-
-
-1038
-00:29:58,036 --> 00:30:00,146
-So I can post about this and see
-
-
-1039
-00:30:00,146 --> 00:30:00,696
-in my app.
-
-
-1040
-00:30:00,846 --> 00:30:02,846
-And now when we get back to my
-
-
-1041
-00:30:03,016 --> 00:30:05,736
-app -- oh wait, I lost some
-
-
-1042
-00:30:05,736 --> 00:30:06,686
-data, this is really odd.
-
-
-1043
-00:30:07,366 --> 00:30:08,626
-It must have something wrong.
-
-
-1044
-00:30:08,626 --> 00:30:10,256
-But if I go back to the history
-
-
-1045
-00:30:10,746 --> 00:30:12,526
-I can see that I had a post
-
-
-1046
-00:30:12,526 --> 00:30:14,276
-within the app and I had remote
-
-
-1047
-00:30:14,276 --> 00:30:15,906
-content and I even can see the
-
-
-1048
-00:30:15,906 --> 00:30:16,716
-Share Extension.
-
-
-1049
-00:30:17,716 --> 00:30:19,366
-However I'm not seeing that
-
-
-1050
-00:30:19,366 --> 00:30:21,816
-here, like the user I start
-
-
-1051
-00:30:21,816 --> 00:30:23,146
-adding data and trying to figure
-
-
-1052
-00:30:23,146 --> 00:30:24,196
-out what's wrong with this UI.
-
-
-1053
-00:30:25,036 --> 00:30:27,296
-And my Persistent History once
-
-
-1054
-00:30:27,296 --> 00:30:28,396
-again is showing everything.
-
-
-1055
-00:30:28,716 --> 00:30:29,866
-Oh wait, that's weird.
-
-
-1056
-00:30:30,326 --> 00:30:32,656
-All of a sudden my app has hit
-
-
-1057
-00:30:32,716 --> 00:30:33,826
-some refresh that I've
-
-
-1058
-00:30:33,826 --> 00:30:35,866
-downloaded into it based on some
-
-
-1059
-00:30:35,866 --> 00:30:37,816
-view where I finally go and hit
-
-
-1060
-00:30:37,816 --> 00:30:39,356
-the database and re-fetch
-
-
-1061
-00:30:39,756 --> 00:30:40,306
-everything.
-
-
-1062
-00:30:40,956 --> 00:30:41,766
-Because that's the only way I
-
-
-1063
-00:30:41,766 --> 00:30:43,346
-can solve this problem sometimes
-
-
-1064
-00:30:43,936 --> 00:30:45,056
-and that's frustrating to our
-
-
-1065
-00:30:45,056 --> 00:30:45,526
-users.
-
-
-1066
-00:30:46,466 --> 00:30:48,336
-But what happens if we turn on
-
-
-1067
-00:30:48,336 --> 00:30:50,036
-Persistent History and no longer
-
-
-1068
-00:30:50,036 --> 00:30:51,306
-have to track things like that?
-
-
-1069
-00:30:52,116 --> 00:30:53,736
-So I'll simply turn this on.
-
-
-1070
-00:30:53,956 --> 00:30:55,196
-So as you can see here real
-
-
-1071
-00:30:55,196 --> 00:30:59,006
-quick, I have my Background
-
-
-1072
-00:30:59,006 --> 00:31:01,086
-Context set up and my View
-
-
-1073
-00:31:01,086 --> 00:31:02,776
-Context set up and I've also got
-
-
-1074
-00:31:02,776 --> 00:31:03,806
-them listening to each other.
-
-
-1075
-00:31:04,326 --> 00:31:08,466
-But I also have some Transaction
-
-
-1076
-00:31:08,466 --> 00:31:08,996
-Author set.
-
-
-1077
-00:31:09,056 --> 00:31:09,986
-And I just want to show you how
-
-
-1078
-00:31:10,046 --> 00:31:11,316
-simple that is so that we can
-
-
-1079
-00:31:11,316 --> 00:31:12,226
-see this going forward.
-
-
-1080
-00:31:13,516 --> 00:31:14,986
-OK, so let's stop the app real
-
-
-1081
-00:31:14,986 --> 00:31:16,866
-quick and re-launch.
-
-
-1082
-00:31:24,066 --> 00:31:25,826
-And here we are with our app
-
-
-1083
-00:31:25,826 --> 00:31:26,766
-using History at this time.
-
-
-1084
-00:31:26,766 --> 00:31:28,916
-And let's go to that troublesome
-
-
-1085
-00:31:28,916 --> 00:31:30,606
-case of sharing a post.
-
-
-1086
-00:31:31,436 --> 00:31:33,036
-Well, High Sierra looks pretty
-
-
-1087
-00:31:33,036 --> 00:31:36,666
-cool, so let's share about that
-
-
-1088
-00:31:37,296 --> 00:31:37,686
-real quick.
-
-
-1089
-00:31:39,076 --> 00:31:40,756
-All right, shared about that.
-
-
-1090
-00:31:40,936 --> 00:31:42,086
-Real quick let's just share
-
-
-1091
-00:31:42,086 --> 00:31:43,076
-about one more thing.
-
-
-1092
-00:31:44,046 --> 00:31:45,556
-The cool new watchOS.
-
-
-1093
-00:31:55,106 --> 00:31:56,616
-And now when we get back to the
-
-
-1094
-00:31:56,616 --> 00:31:56,906
-app,
-
-
-1095
-00:32:01,116 --> 00:32:02,326
-voila. There they are.
-
-
-1096
-00:32:02,616 --> 00:32:03,956
-All I've done is absorb the
-
-
-1097
-00:32:03,956 --> 00:32:05,926
-history, when my view reloaded,
-
-
-1098
-00:32:06,856 --> 00:32:08,256
-and we can jump to that code
-
-
-1099
-00:32:08,256 --> 00:32:09,546
-real quick.
-
-
-1100
-00:32:18,326 --> 00:32:19,616
-So previously if I was using
-
-
-1101
-00:32:19,646 --> 00:32:21,356
-Fetch Hit -- not using
-
-
-1102
-00:32:21,356 --> 00:32:22,256
-Persistent History, I was
-
-
-1103
-00:32:22,286 --> 00:32:23,796
-fetching everything, but now
-
-
-1104
-00:32:23,796 --> 00:32:25,516
-that I am all I'm doing is
-
-
-1105
-00:32:25,516 --> 00:32:26,386
-fetching the history and
-
-
-1106
-00:32:26,746 --> 00:32:28,306
-absorbing the merged context
-
-
-1107
-00:32:28,486 --> 00:32:29,546
-from the History.
-
-
-1108
-00:32:29,546 --> 00:32:31,106
-And it gives me a much smaller
-
-
-1109
-00:32:31,106 --> 00:32:32,386
-subset and I no longer have to
-
-
-1110
-00:32:32,386 --> 00:32:34,006
-scan the entire database to see
-
-
-1111
-00:32:34,006 --> 00:32:34,646
-what was different.
-
-
-1112
-00:32:36,516 --> 00:32:39,636
-[ Applause ]
-
-
-1113
-00:32:40,136 --> 00:32:42,576
-And so to recap it's rather
-
-
-1114
-00:32:42,576 --> 00:32:42,896
-easy.
-
-
-1115
-00:32:43,336 --> 00:32:44,596
-Simple to enable Persistent
-
-
-1116
-00:32:44,596 --> 00:32:44,916
-History.
-
-
-1117
-00:32:44,986 --> 00:32:46,066
-It's just one option on your
-
-
-1118
-00:32:46,066 --> 00:32:46,386
-store.
-
-
-1119
-00:32:47,876 --> 00:32:49,096
-It really uncovers all those
-
-
-1120
-00:32:49,096 --> 00:32:49,746
-missing changes.
-
-
-1121
-00:32:50,196 --> 00:32:51,636
-And you may have been generating
-
-
-1122
-00:32:51,636 --> 00:32:53,336
-background context, you may just
-
-
-1123
-00:32:53,336 --> 00:32:54,396
-not realize that you're missing
-
-
-1124
-00:32:54,396 --> 00:32:56,116
-a notification, you've harnessed
-
-
-1125
-00:32:56,156 --> 00:32:57,796
-Batch Updates, Batch Deletes,
-
-
-1126
-00:32:58,096 --> 00:32:58,816
-which don't generate
-
-
-1127
-00:32:58,816 --> 00:32:59,646
-notifications.
-
-
-1128
-00:33:00,186 --> 00:33:01,476
-So they uncover all of that.
-
-
-1129
-00:33:01,886 --> 00:33:03,106
-And you'll never be in the dark
-
-
-1130
-00:33:03,106 --> 00:33:04,196
-again about changes to your
-
-
-1131
-00:33:04,196 --> 00:33:04,586
-database.
-
-
-1132
-00:33:07,826 --> 00:33:09,436
-Two caveats to mention about
-
-
-1133
-00:33:09,436 --> 00:33:11,246
-using persistent history -- the
-
-
-1134
-00:33:11,246 --> 00:33:12,436
-first one is about Migration.
-
-
-1135
-00:33:12,606 --> 00:33:14,396
-We will preserve as much of your
-
-
-1136
-00:33:14,396 --> 00:33:16,136
-history as possible on migration
-
-
-1137
-00:33:18,006 --> 00:33:18,936
-except for two cases.
-
-
-1138
-00:33:19,536 --> 00:33:21,096
-One is if you remove entities
-
-
-1139
-00:33:21,096 --> 00:33:22,466
-from your model and we already
-
-
-1140
-00:33:22,466 --> 00:33:24,556
-have history on these entities,
-
-
-1141
-00:33:25,146 --> 00:33:26,076
-we'll have to remove that
-
-
-1142
-00:33:26,076 --> 00:33:27,496
-history for those entities and
-
-
-1143
-00:33:27,606 --> 00:33:28,346
-that creates a gap.
-
-
-1144
-00:33:29,386 --> 00:33:31,216
-The other one is for tombstones.
-
-
-1145
-00:33:31,356 --> 00:33:34,396
-For tombstones you don't want to
-
-
-1146
-00:33:34,506 --> 00:33:35,916
-have certain data there after
-
-
-1147
-00:33:35,916 --> 00:33:37,146
-awhile to identify the object.
-
-
-1148
-00:33:37,216 --> 00:33:38,246
-Maybe it's become a security
-
-
-1149
-00:33:38,246 --> 00:33:39,106
-concern for you.
-
-
-1150
-00:33:39,106 --> 00:33:41,126
-So you've called the tombstone.
-
-
-1151
-00:33:41,386 --> 00:33:42,566
-So we'll do the same and we'll
-
-
-1152
-00:33:42,566 --> 00:33:44,106
-remove that tombstone value out
-
-
-1153
-00:33:44,396 --> 00:33:45,176
-from the model.
-
-
-1154
-00:33:45,176 --> 00:33:46,836
-But if that removes anything
-
-
-1155
-00:33:46,836 --> 00:33:49,026
-that will leave a gap in your
-
-
-1156
-00:33:49,026 --> 00:33:50,856
-history, we'll also then only
-
-
-1157
-00:33:50,856 --> 00:33:51,816
-preserve your history to the
-
-
-1158
-00:33:51,816 --> 00:33:53,296
-last complete transaction.
-
-
-1159
-00:33:53,716 --> 00:33:56,546
-This way you can go and follow
-
-
-1160
-00:33:56,546 --> 00:33:58,366
-the history without falling into
-
-
-1161
-00:33:58,366 --> 00:33:59,886
-a trap where I am missing
-
-
-1162
-00:33:59,886 --> 00:34:01,696
-changes once again because of a
-
-
-1163
-00:34:01,876 --> 00:34:01,976
-gap.
-
-
-1164
-00:34:03,316 --> 00:34:06,406
-As far as performance there's a
-
-
-1165
-00:34:06,406 --> 00:34:08,516
-slight impact on every save and
-
-
-1166
-00:34:08,516 --> 00:34:10,166
-every batch-operation you do.
-
-
-1167
-00:34:11,235 --> 00:34:12,255
-According to the size of your
-
-
-1168
-00:34:12,255 --> 00:34:13,585
-save and your batch operation
-
-
-1169
-00:34:13,585 --> 00:34:15,126
-we'll do a slight calculation of
-
-
-1170
-00:34:15,126 --> 00:34:16,565
-what changed and write that to
-
-
-1171
-00:34:16,565 --> 00:34:17,065
-the database.
-
-
-1172
-00:34:17,676 --> 00:34:19,956
-However, once your operation is
-
-
-1173
-00:34:19,956 --> 00:34:21,606
-complete all of that memory that
-
-
-1174
-00:34:21,606 --> 00:34:23,146
-we used is returned back to you.
-
-
-1175
-00:34:23,326 --> 00:34:24,716
-There's also small storage
-
-
-1176
-00:34:24,716 --> 00:34:26,476
-overhead, but your history can
-
-
-1177
-00:34:26,476 --> 00:34:27,806
-be purged, so this makes it
-
-
-1178
-00:34:27,806 --> 00:34:29,065
-really easy for you to reclaim
-
-
-1179
-00:34:29,065 --> 00:34:30,476
-that space once you've consumed
-
-
-1180
-00:34:30,476 --> 00:34:30,906
-the history.
-
-
-1181
-00:34:31,426 --> 00:34:34,766
-And that's Persistent History
-
-
-1182
-00:34:34,766 --> 00:34:35,056
-Tracking.
-
-
-1183
-00:34:36,516 --> 00:34:43,016
-[ Applause ]
-
-
-1184
-00:34:43,516 --> 00:34:44,716
-Now just to summarize what we've
-
-
-1185
-00:34:44,716 --> 00:34:45,436
-gone over today.
-
-
-1186
-00:34:45,876 --> 00:34:46,786
-Melissa went over Core
-
-
-1187
-00:34:46,786 --> 00:34:47,286
-Spotlight.
-
-
-1188
-00:34:47,496 --> 00:34:49,556
-It's really easy to adopt, easy
-
-
-1189
-00:34:49,556 --> 00:34:50,585
-to share your data with
-
-
-1190
-00:34:50,585 --> 00:34:52,346
-Spotlight, and it gives you deep
-
-
-1191
-00:34:52,346 --> 00:34:52,746
-linking.
-
-
-1192
-00:34:53,036 --> 00:34:54,295
-So your users can find their
-
-
-1193
-00:34:54,295 --> 00:34:56,255
-data in your app anywhere on the
-
-
-1194
-00:34:56,255 --> 00:34:56,505
-phone.
-
-
-1195
-00:34:57,416 --> 00:34:59,806
-And the New Indexing API makes
-
-
-1196
-00:34:59,806 --> 00:35:01,566
-your searches faster and just
-
-
-1197
-00:35:01,566 --> 00:35:02,856
-makes your app that much faster.
-
-
-1198
-00:35:03,596 --> 00:35:05,606
-And lastly, Persistent History
-
-
-1199
-00:35:06,106 --> 00:35:07,306
-allows you to know who's always
-
-
-1200
-00:35:07,306 --> 00:35:09,426
-done it, never be lost, always
-
-
-1201
-00:35:09,426 --> 00:35:10,316
-know who's done what to your
-
-
-1202
-00:35:10,316 --> 00:35:10,746
-database.
-
-
-1203
-00:35:13,026 --> 00:35:14,676
-One PSA before we go.
-
-
-1204
-00:35:14,916 --> 00:35:15,696
-Please file bugs.
-
-
-1205
-00:35:16,166 --> 00:35:17,176
-Let us know if you run into an
-
-
-1206
-00:35:17,176 --> 00:35:17,496
-issue.
-
-
-1207
-00:35:17,656 --> 00:35:18,466
-Let us know if you want
-
-
-1208
-00:35:18,466 --> 00:35:18,906
-something.
-
-
-1209
-00:35:19,986 --> 00:35:21,526
-Go to bugreport.apple.com.
-
-
-1210
-00:35:21,696 --> 00:35:22,406
-We are listening.
-
-
-1211
-00:35:23,066 --> 00:35:24,136
-So please go and visit.
-
-
-1212
-00:35:25,106 --> 00:35:27,186
-For more information check out
-
-
-1213
-00:35:27,186 --> 00:35:28,796
-the www.DC website.
-
-
-1214
-00:35:29,556 --> 00:35:31,686
-And for some related sessions we
-
-
-1215
-00:35:31,686 --> 00:35:32,626
-had "What's New in Cocoa"
-
-
-1216
-00:35:32,626 --> 00:35:33,986
-earlier today, so go check out
-
-
-1217
-00:35:33,986 --> 00:35:34,466
-that video.
-
-
-1218
-00:35:34,986 --> 00:35:35,836
-We also have "What's New in
-
-
-1219
-00:35:35,836 --> 00:35:36,956
-Foundation" coming up next.
-
-
-1220
-00:35:37,676 --> 00:35:39,936
-And we have some cool stuff on
-
-
-1221
-00:35:39,936 --> 00:35:41,246
-"What's New in Core Spotlight"
-
-
-1222
-00:35:41,246 --> 00:35:42,366
-later on Thursday.
-
-
-1223
-00:35:42,866 --> 00:35:44,016
-And check out the "Cocoa
-
-
-1224
-00:35:44,016 --> 00:35:45,356
-Development Tips" early on
-
-
-1225
-00:35:45,356 --> 00:35:45,956
-Friday morning.
-
-
-1226
-00:35:46,576 --> 00:35:47,276
-Thank you very much.
-
-
-1227
-00:35:48,508 --> 00:35:50,508
-[ Applause ]
+00:35:46,547 --> 00:35:47,481
+<c.magenta>谢谢大家 非常感谢</c>
 

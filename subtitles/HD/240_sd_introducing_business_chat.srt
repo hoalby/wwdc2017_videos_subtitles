@@ -1,6739 +1,6724 @@
 1
 00:00:07,516 --> 00:00:15,500
-[ Cheers ]
+[ 欢呼 ]
 
 
 2
 00:00:22,121 --> 00:00:24,121
-[ Applause ]
+[ 掌声 ]
 
 
 3
 00:00:24,226 --> 00:00:25,066
->> Hi, everyone.
+>>  大家好
 
 
 4
 00:00:26,856 --> 00:00:27,606
-Good morning.
+早上好
 
 
 5
 00:00:28,606 --> 00:00:29,796
-Welcome to our session,
+欢迎参加我们的大会
 
 
 6
 00:00:29,886 --> 00:00:31,136
-Introducing Business Chat
+关于 Business Chat 
 
 
 7
 00:00:31,566 --> 00:00:32,526
-Developer Preview.
+开发者预览版的介绍
 
 
 8
 00:00:33,226 --> 00:00:33,946
-My name is Grant.
+我是 Grant
 
 
 9
 00:00:34,216 --> 00:00:35,366
-And today, I'm going to give you
+今天我将向大家
 
 
 10
 00:00:35,366 --> 00:00:36,596
-an overview of what Business
+大致介绍下
 
 
 11
 00:00:36,596 --> 00:00:38,836
-Chat is and some of the new
+什么是 Business Chat
 
 
 12
 00:00:38,906 --> 00:00:39,486
-features.
+以及一些新功能
 
 
 13
 00:00:40,276 --> 00:00:42,166
-We'll also cover today what you
+我们今天还会介绍在开发者预览版中
 
 
 14
 00:00:42,166 --> 00:00:43,486
-can do during the developer
+你能做些什么
 
 
 15
 00:00:43,486 --> 00:00:46,046
-preview to get ready before the
+以便在明年正式发布前
 
 
 16
 00:00:46,096 --> 00:00:47,506
-public launch next year.
+做好准备
 
 
 17
 00:00:48,066 --> 00:00:50,736
-Later, my friend, Scotty, is
+稍后  我的朋友 Scotty
 
 
 18
 00:00:50,736 --> 00:00:52,086
-going to come up and he's going
+将会上台
 
 
 19
 00:00:52,086 --> 00:00:53,786
-to give us a demo of something
+他将给大家带来
 
 
 20
 00:00:53,786 --> 00:00:55,276
-we're calling Business Chat
+Business Chat Sandbox
 
 
 21
 00:00:55,276 --> 00:00:56,046
-Sandbox.
+的演示
 
 
 22
 00:00:57,066 --> 00:00:58,436
-It's a great tool that going to
+这是一个非常棒的工具
 
 
 23
 00:00:58,436 --> 00:01:01,706
-help you develop and test all
+它能帮你开发以及测试
 
 
 24
 00:01:01,706 --> 00:01:02,706
-your solutions so that you're
+你的方案
 
 
 25
 00:01:02,706 --> 00:01:03,866
-ready for the public launch.
+以便你为公开发布做好准备
 
 
 26
 00:01:04,596 --> 00:01:06,146
-Are you ready?
+你们准备好了吗？
 
 
 27
 00:01:06,686 --> 00:01:07,186
-Let's begin.
+让我们开始吧
 
 
 28
 00:01:09,066 --> 00:01:10,926
-So the telephone has served us
+对于消费者来说
 
 
 29
 00:01:10,926 --> 00:01:12,616
-well as customers but it's not
+电话提供了很好的服务
 
 
 30
 00:01:12,616 --> 00:01:14,406
-always the most ideal way to
+但对于企业来说
 
 
 31
 00:01:14,406 --> 00:01:15,566
-communicate with businesses.
+却并非一直是最好的方式
 
 
 32
 00:01:16,676 --> 00:01:18,036
-Business Chat is important
+Business Chat 很重要
 
 
 33
 00:01:18,036 --> 00:01:19,036
-because it offers a more
+因为它提供了
 
 
 34
 00:01:19,036 --> 00:01:21,076
-flexible and more capable
+更灵活以及
 
 
 35
 00:01:21,076 --> 00:01:21,856
-experience.
+更强大的体验
 
 
 36
 00:01:23,526 --> 00:01:24,986
-For example, sometimes you're
+比如有时你很忙
 
 
 37
 00:01:24,986 --> 00:01:26,336
-busy, you're running around.
+手忙脚乱
 
 
 38
 00:01:26,806 --> 00:01:28,446
-You need a way to resolve issues
+你需要一种
 
 
 39
 00:01:28,446 --> 00:01:30,066
-without dedicating your time to
+不需要花时间打电话的方式
 
 
 40
 00:01:30,066 --> 00:01:30,696
-a phone call.
+来解决问题
 
 
 41
 00:01:31,766 --> 00:01:33,076
-And you definitely don't want to
+并且你绝对不想
 
 
 42
 00:01:33,076 --> 00:01:34,566
-waste your time waiting on hold.
+浪费时间在等待接通上
 
 
 43
 00:01:35,736 --> 00:01:38,036
-You need a way to communicate in
+你需要一种方式
 
 
 44
 00:01:38,036 --> 00:01:39,576
-between the million other things
+能让你在所做的诸多事情之间
 
 
 45
 00:01:39,576 --> 00:01:41,606
-that you're doing, a way to
+进行沟通交流
 
 
 46
 00:01:41,606 --> 00:01:43,406
-communicate on your schedule.
+能让你根据日程表进行沟通交流
 
 
 47
 00:01:44,046 --> 00:01:46,826
-And a telephone call is not
+打电话不具有视觉性
 
 
 48
 00:01:46,826 --> 00:01:48,956
-visual and it's definitely not
+而且显然它没有
 
 
 49
 00:01:48,956 --> 00:01:50,176
-as capable as an iPhone.
+iPhone 强大
 
 
 50
 00:01:51,216 --> 00:01:52,496
-Sometimes you need to show the
+有时你需要向企业
 
 
 51
 00:01:52,496 --> 00:01:53,876
-business what you're seeing.
+展示你所看到的
 
 
 52
 00:01:54,276 --> 00:01:55,526
-You might have an unfamiliar
+你或许对某个产品不熟悉
 
 
 53
 00:01:55,526 --> 00:01:58,156
-product or need help with it or
+或者需要帮助
 
 
 54
 00:01:58,156 --> 00:01:59,856
-maybe while you're chatting, you
+或者当你在说话时
 
 
 55
 00:01:59,856 --> 00:02:02,016
-might need to do something
+你可能需要进行一些互动
 
 
 56
 00:02:02,016 --> 00:02:04,616
-interactive like choosing from
+比如从不同的选项中进行选择
 
 
 57
 00:02:04,616 --> 00:02:07,756
-different options, scheduling an
+进行预约
 
 
 58
 00:02:07,756 --> 00:02:10,326
-appointment, making a payment,
+进行支付
 
 
 59
 00:02:11,216 --> 00:02:13,046
-or even interacting with an app
+或甚至和 App 进行互动
 
 
 60
 00:02:13,836 --> 00:02:15,106
-and that's Business Chat.
+而这就是 Business Chat
 
 
 61
 00:02:15,796 --> 00:02:18,606
-It's a powerful way for
+对于消费者来说
 
 
 62
 00:02:18,606 --> 00:02:20,006
-customers to communicate with
+这是一个强大的沟通方式
 
 
 63
 00:02:20,056 --> 00:02:22,366
-you and to complete tasks.
+能帮助我们更好的完成任务
 
 
 64
 00:02:23,146 --> 00:02:24,000
-Let's watch it in action.
+让我们来看看演示
 
 
 65
 00:02:26,016 --> 00:02:27,046
->> [Background Music]
+>>  [背景音乐]
 
 
 66
 00:02:27,046 --> 00:02:29,646
-Introducing Business Chat, a
+Business Chat
 
 
 67
 00:02:29,646 --> 00:02:31,366
-better way to make meaningful
+是一种能让你和顾客
 
 
 68
 00:02:31,366 --> 00:02:32,716
-connections with your customers.
+更好地建立良好关系的方式
 
 
 69
 00:02:32,716 --> 00:02:35,406
-With Business Chat, it's easy
+有了 Business Chat
 
 
 70
 00:02:35,406 --> 00:02:36,596
-for customers to get in touch
+当顾客需要你时
 
 
 71
 00:02:36,596 --> 00:02:38,116
-when they need you and you can
+他们能很容易地与你取得联系
 
 
 72
 00:02:38,116 --> 00:02:40,266
-help them with everything, all
+而你只需在一场消息对话中
 
 
 73
 00:02:40,266 --> 00:02:42,576
-in one message conversation,
+便能为他提供各种帮助
 
 
 74
 00:02:43,136 --> 00:02:45,126
-have real interactions with your
+当你回答他们的问题时
 
 
 75
 00:02:45,126 --> 00:02:46,736
-customers while answering their
+就能进行
 
 
 76
 00:02:46,736 --> 00:02:49,476
-questions.
+真实的互动
 
 
 77
 00:02:49,876 --> 00:02:51,326
-Help them learn more about your
+帮助他们了解更多
 
 
 78
 00:02:51,326 --> 00:02:52,766
-products and link them straight
+关于你产品的信息
 
 
 79
 00:02:52,766 --> 00:02:53,636
-to the information they're
+以及将他们链接至
 
 
 80
 00:02:53,636 --> 00:02:54,000
-looking for.
+他们需要的信息
 
 
 81
 00:02:56,056 --> 00:02:58,186
-Your customers can always come
+你的顾客总是能
 
 
 82
 00:02:58,186 --> 00:02:59,686
-right back to chat again and
+在此返回到对话中
 
 
 83
 00:02:59,686 --> 00:03:02,066
-with long-lived sessions, you'll
+有了长期保留的对话
 
 
 84
 00:03:02,066 --> 00:03:04,786
-be ready with their information,
+你会准备好他们的信息
 
 
 85
 00:03:04,786 --> 00:03:06,646
-so it's easy for them and easy
+所以这对于你和他们
 
 
 86
 00:03:06,646 --> 00:03:07,000
-for you.
+都很便捷
 
 
 87
 00:03:08,376 --> 00:03:09,576
-If customers already have a
+如果顾客已经有
 
 
 88
 00:03:09,576 --> 00:03:11,506
-product in mind, they can make
+想购买的产品
 
 
 89
 00:03:11,506 --> 00:03:12,516
-their purchase right in the
+他们可以直接在消息对话中
 
 
 90
 00:03:12,516 --> 00:03:13,896
-message conversation with Apple
+进行购买
 
 
 91
 00:03:13,896 --> 00:03:14,000
-Pay.
+并用 Apple Pay 支付
 
 
 92
 00:03:16,046 --> 00:03:18,166
-Integration with Apple Pay means
+Apple Pay 的接入意味着
 
 
 93
 00:03:18,206 --> 00:03:19,976
-customers can pay securely with
+顾客可以安全支付
 
 
 94
 00:03:20,086 --> 00:03:21,000
-just one touch.
+只需轻轻一点
 
 
 95
 00:03:25,716 --> 00:03:27,086
-They can also come back later to
+他们还可以随后返回
 
 
 96
 00:03:27,216 --> 00:03:28,500
-track their orders.
+来追踪自己的订单
 
 
 97
 00:03:29,686 --> 00:03:33,066
-All of this in one place.
+所有的这些都在一处进行
 
 
 98
 00:03:33,516 --> 00:03:34,716
-With Business Chat, your
+有了 Business Chat
 
 
 99
 00:03:34,836 --> 00:03:36,406
-customers can easily find you.
+您的顾客可以轻易找到您
 
 
 100
 00:03:36,926 --> 00:03:38,846
-From Safari, Spotlight, Siri, or
+从 Safari  Spotlight  Siri 或 Maps 上面
 
 
 101
 00:03:39,056 --> 00:03:40,526
-Maps, you're just a touch away.
+只需轻轻一触
 
 
 102
 00:03:41,106 --> 00:03:42,806
-So everyone can enjoy faster,
+每个人都能随时享受
 
 
 103
 00:03:43,056 --> 00:03:44,356
-seamless, more personal
+快捷  无缝以及更加个性化的
 
 
 104
 00:03:44,356 --> 00:03:46,660
-interactions every time.
+交流
 
 
 105
 00:03:47,696 --> 00:03:48,836
-Visit us to learn more.
+请访问我们以了解更多
 
 
 106
 00:03:49,516 --> 00:03:51,516
-[ Music ]
+[ 音乐 ]
 
 
 107
 00:03:52,516 --> 00:03:57,806
-[ Applause ]
+[ 掌声 ]
 
 
 108
 00:03:58,306 --> 00:03:59,726
->> So today, we're opening up
+>>  所以今天我们将向大家介绍
 
 
 109
 00:03:59,726 --> 00:04:01,376
-Business Chat as a Developer
+Business Chat
 
 
 110
 00:04:01,376 --> 00:04:01,826
-Preview.
+的开发者预览版
 
 
 111
 00:04:02,656 --> 00:04:04,166
-Business Chat is not launching
+Business Chat 目前还不会
 
 
 112
 00:04:04,166 --> 00:04:05,846
-publicly yet because we want to
+面向公众开放
 
 
 113
 00:04:05,846 --> 00:04:07,136
-make sure that we get this
+因为我们想
 
 
 114
 00:04:07,136 --> 00:04:07,356
-right.
+确保一切无误
 
 
 115
 00:04:08,466 --> 00:04:09,536
-We know that elevating the
+我们知道要提升
 
 
 116
 00:04:09,536 --> 00:04:11,016
-customer service experience
+顾客体验
 
 
 117
 00:04:11,816 --> 00:04:12,666
-takes coordination.
+需要各方协调
 
 
 118
 00:04:13,196 --> 00:04:14,236
-It's going to take some time.
+这需要一些时间
 
 
 119
 00:04:14,996 --> 00:04:15,926
-And we wanted to give you an
+而且我们想要给你们机会
 
 
 120
 00:04:15,926 --> 00:04:18,505
-opportunity to get connected and
+在正式公开发布之前去连接至 Business Chat
 
 
 121
 00:04:18,505 --> 00:04:20,196
-to integrate Business Chat into
+并将 
 
 
 122
 00:04:20,196 --> 00:04:21,986
-your operations ahead of the
+它融入你们的
 
 
 123
 00:04:21,986 --> 00:04:22,746
-public launch.
+运营当中
 
 
 124
 00:04:23,186 --> 00:04:25,846
-During the Developer Preview,
+在预览版期间
 
 
 125
 00:04:26,076 --> 00:04:27,126
-Business Chat will be
+Business Chat
 
 
 126
 00:04:27,126 --> 00:04:29,706
-operational but your business
+是可以使用的的  但是你的企业
 
 
 127
 00:04:29,706 --> 00:04:30,906
-will not yet be publicly
+无法被公开
 
 
 128
 00:04:30,906 --> 00:04:31,496
-accessible.
+找到
 
 
 129
 00:04:32,456 --> 00:04:34,116
-You will, however, be able to
+你可以将
 
 
 130
 00:04:34,116 --> 00:04:35,076
-white list some of your
+你的一些员工列入白名单
 
 
 131
 00:04:35,076 --> 00:04:36,926
-employees who will be able to
+他们可以
 
 
 132
 00:04:37,086 --> 00:04:38,696
-test your end-to-end experience
+测试端对端的体验
 
 
 133
 00:04:39,006 --> 00:04:40,166
-to make sure that you're ready.
+确保你已经做好准备
 
 
 134
 00:04:40,846 --> 00:04:45,056
-So let's talk about how we're
+所以我们来谈一谈
 
 
 135
 00:04:45,056 --> 00:04:46,446
-making it easy for your
+我们如何使顾客
 
 
 136
 00:04:46,446 --> 00:04:48,726
-customers to find you and to
+轻易地找到你
 
 
 137
 00:04:48,726 --> 00:04:50,006
-start a conversation with your
+并与你的企业
 
 
 138
 00:04:50,006 --> 00:04:50,496
-business.
+进行对话
 
 
 139
 00:04:51,636 --> 00:04:53,106
-Once you have your Business Chat
+一旦你有了 Business Chat 账户
 
 
 140
 00:04:53,106 --> 00:04:54,916
-account, message buttons will
+Message 按钮将会
 
 
 141
 00:04:54,916 --> 00:04:56,706
-start appearing throughout iOS.
+开始贯穿出现在 iOS 中
 
 
 142
 00:04:58,706 --> 00:05:00,446
-For example, this is how it
+例如这就是在
 
 
 143
 00:05:00,446 --> 00:05:01,366
-would look in Safari.
+Safari 中的样子
 
 
 144
 00:05:02,216 --> 00:05:03,856
-Customer might type your website
+顾客输入你的网址后
 
 
 145
 00:05:04,766 --> 00:05:06,036
-and a search result would appear
+搜索结果将会出现
 
 
 146
 00:05:06,036 --> 00:05:07,346
-that highlights your business.
+并重点突出你的企业
 
 
 147
 00:05:08,336 --> 00:05:10,566
-In this example, the user typed
+在这个例子中  用户输入了"apple"
 
 
 148
 00:05:10,566 --> 00:05:12,786
-"apple" and the search result
+搜索结果显示了
 
 
 149
 00:05:12,786 --> 00:05:14,656
-shows the nearby Apple Union
+附近的 Apple Union Square
 
 
 150
 00:05:14,656 --> 00:05:15,436
-Square location.
+的位置
 
 
 151
 00:05:15,436 --> 00:05:17,566
-And you can see that the message
+你可以看到
 
 
 152
 00:05:17,616 --> 00:05:18,926
-button is prominently featured.
+Message 按钮被显著突出
 
 
 153
 00:05:20,456 --> 00:05:21,806
-Your user can start a
+你的用户可以立即
 
 
 154
 00:05:21,806 --> 00:05:24,076
-conversation right from here
+从这里开始对话
 
 
 155
 00:05:24,076 --> 00:05:25,086
-instead of hunting on the
+而不是费劲地从网站
 
 
 156
 00:05:25,086 --> 00:05:25,976
-website for contact information.
+寻找联系信息
 
 
 157
 00:05:26,776 --> 00:05:31,506
-Here is the Message button in
+以下是 Message 按钮在
 
 
 158
 00:05:31,506 --> 00:05:36,096
-Search and in Siri and in Maps
+Search Siri 和 Maps 
 
 
 159
 00:05:37,556 --> 00:05:38,136
-too.
+中的样子
 
 
 160
 00:05:38,466 --> 00:05:40,926
-The Message button can appear
+Message 按钮可以出现在
 
 
 161
 00:05:41,116 --> 00:05:42,116
-for each one of your store
+您任意一个
 
 
 162
 00:05:42,116 --> 00:05:42,926
-locations.
+商店位置旁
 
 
 163
 00:05:43,476 --> 00:05:47,586
-We are also adding new support
+我们还可以为无法显示地理位置的企业
 
 
 164
 00:05:47,636 --> 00:05:49,106
-for businesses that don't have
+提供新的支持
 
 
 165
 00:05:49,106 --> 00:05:50,896
-locations, including those that
+比如在线企业或者
 
 
 166
 00:05:50,896 --> 00:05:52,696
-might be online or app only.
+只有 App 的企业
 
 
 167
 00:05:53,966 --> 00:05:54,866
-Now if you're an online
+如果您是在线企业
 
 
 168
 00:05:54,866 --> 00:05:56,346
-business, or if there're no
+或者附近
 
 
 169
 00:05:56,346 --> 00:05:57,406
-nearby locations, there will
+没有相关地点
 
 
 170
 00:05:57,406 --> 00:05:58,806
-still be a search result
+仍然会为您提供
 
 
 171
 00:05:58,806 --> 00:05:59,766
-available for you.
+搜索结果
 
 
 172
 00:06:00,596 --> 00:06:01,986
-This is how search results might
+如果附近没有 Apple 的商店
 
 
 173
 00:06:01,986 --> 00:06:04,116
-look in Safari if Apple had no
+那么搜索结果在 Safari 中
 
 
 174
 00:06:04,116 --> 00:06:05,476
-nearby store locations.
+将会这样呈现
 
 
 175
 00:06:05,936 --> 00:06:10,406
-Links are another great entry
+链接是另一个你可以使用的
 
 
 176
 00:06:10,406 --> 00:06:12,316
-point that you can use to invite
+很棒的入口来邀请
 
 
 177
 00:06:12,416 --> 00:06:14,076
-your customers into your
+你的顾客到
 
 
 178
 00:06:14,076 --> 00:06:15,396
-Business Chat conversation.
+Business Chat 对话中
 
 
 179
 00:06:17,116 --> 00:06:18,466
-You can put links on your
+你可以将链接放在你的
 
 
 180
 00:06:18,466 --> 00:06:21,516
-websites, in your app, and in
+网站  App
 
 
 181
 00:06:21,516 --> 00:06:22,256
-your emails.
+和邮件中
 
 
 182
 00:06:23,326 --> 00:06:24,846
-When your customer taps your
+当你的顾客点击链接时
 
 
 183
 00:06:24,846 --> 00:06:27,056
-link, it will open your Business
+它会在支持设备
 
 
 184
 00:06:27,056 --> 00:06:29,416
-Chat conversation on supporting
+上的 Messages 中打开
 
 
 185
 00:06:29,416 --> 00:06:31,576
-devices within the Messages app.
+Business Chat 对话
 
 
 186
 00:06:32,866 --> 00:06:34,936
-To create your link, you'll need
+要创建链接  你需要
 
 
 187
 00:06:34,936 --> 00:06:38,706
-your Business Chat ID, which you
+Business Chat ID
 
 
 188
 00:06:38,706 --> 00:06:40,076
-will receive after you create
+你会在创建账户后
 
 
 189
 00:06:40,076 --> 00:06:41,366
-your account.
+收到此 ID
 
 
 190
 00:06:44,256 --> 00:06:45,586
-The next feature that I'd like
+接下来
 
 
 191
 00:06:45,586 --> 00:06:47,146
-to review is something called
+我想讲的功能叫
 
 
 192
 00:06:47,146 --> 00:06:47,836
-Chat Intent.
+Chat Intent
 
 
 193
 00:06:48,856 --> 00:06:51,296
-Chat Intent is a great way to
+Chat Intent 是为你的客户
 
 
 194
 00:06:51,296 --> 00:06:52,746
-provide better support to your
+提供更好的支持方式
 
 
 195
 00:06:52,746 --> 00:06:55,136
-customers by helping you
+通过
 
 
 196
 00:06:55,136 --> 00:06:57,116
-understand the context of their
+帮助你理解
 
 
 197
 00:06:57,116 --> 00:06:57,626
-question.
+他们问题的背景
 
 
 198
 00:06:59,056 --> 00:07:01,096
-When you create links, you can
+当你创建链接时
 
 
 199
 00:07:01,096 --> 00:07:02,996
-tag them to identify where your
+你可以给它们添加标签来说明
 
 
 200
 00:07:02,996 --> 00:07:05,586
-customer tapped or clicked it.
+顾客可以轻点或点击的位置
 
 
 201
 00:07:06,636 --> 00:07:08,456
-There are two Chat Intent values
+你可以使用
 
 
 202
 00:07:08,496 --> 00:07:09,316
-that you can use.
+两种 Chat Intent 值
 
 
 203
 00:07:10,046 --> 00:07:11,796
-The first one is called intent
+第一种叫 intent ID
 
 
 204
 00:07:11,796 --> 00:07:14,796
-ID and the second one is group
+第二种叫 group ID
 
 
 205
 00:07:14,796 --> 00:07:16,466
-ID, and they're completely
+他们是
 
 
 206
 00:07:16,466 --> 00:07:16,936
-optional.
+完全可选的
 
 
 207
 00:07:17,686 --> 00:07:18,876
-They could be whatever you need
+他们可以是
 
 
 208
 00:07:18,876 --> 00:07:19,346
-them to be.
+你自定的
 
 
 209
 00:07:20,726 --> 00:07:22,146
-When your customer taps your
+当顾客点击链接时
 
 
 210
 00:07:22,146 --> 00:07:24,426
-link and that link contains Chat
+且链接包含 Chat Intent 值
 
 
 211
 00:07:24,426 --> 00:07:26,856
-Intent values, those values will
+这些值
 
 
 212
 00:07:26,856 --> 00:07:28,266
-be passed back to you with the
+会在下一条信息中
 
 
 213
 00:07:28,266 --> 00:07:28,836
-next message.
+返还给你
 
 
 214
 00:07:28,836 --> 00:07:30,766
-Let's see how you might use
+让我们看看
 
 
 215
 00:07:30,766 --> 00:07:30,976
-them.
+你该如何使用它
 
 
 216
 00:07:35,736 --> 00:07:36,846
-Let's say your customer is
+让我们假设你的客户
 
 
 217
 00:07:36,846 --> 00:07:38,726
-browsing one of your products
+正在浏览你其中一个产品
 
 
 218
 00:07:39,016 --> 00:07:40,196
-and has a question about it.
+并对此有疑问
 
 
 219
 00:07:41,576 --> 00:07:42,806
-You could use Chat Intent to
+你可以使用 Chat Intent
 
 
 220
 00:07:42,806 --> 00:07:44,626
-know the product config so your
+来了解产品配置
 
 
 221
 00:07:44,626 --> 00:07:46,206
-customer doesn't need to type it
+这样你的客户就不需要
 
 
 222
 00:07:46,206 --> 00:07:46,506
-out.
+将它打出来
 
 
 223
 00:07:48,356 --> 00:07:50,346
-For example, you could put the
+例如你可以将
 
 
 224
 00:07:50,346 --> 00:07:52,436
-product details or the product
+产品详情或产品编码
 
 
 225
 00:07:52,436 --> 00:07:55,126
-code into the Intent field so
+放进 Intent 栏中
 
 
 226
 00:07:55,126 --> 00:07:56,556
-that your support agent can
+这样你的支持人员就能
 
 
 227
 00:07:56,556 --> 00:07:58,526
-provide a faster answer to your
+快速解答
 
 
 228
 00:07:58,786 --> 00:07:59,000
-customer.
+客户的问题
 
 
 229
 00:08:01,216 --> 00:08:02,456
-Or maybe you have different
+或者如果你有
 
 
 230
 00:08:02,456 --> 00:08:04,066
-internal teams that offer
+不同的内部团队
 
 
 231
 00:08:04,066 --> 00:08:06,476
-specialized support, you could
+提供专业支持
 
 
 232
 00:08:06,476 --> 00:08:07,666
-use Chat Intent to route
+你可以使用 Chat Intent
 
 
 233
 00:08:07,666 --> 00:08:08,946
-messages to the relevant
+把消息转给
 
 
 234
 00:08:08,996 --> 00:08:09,786
-internal team.
+相关内部团队
 
 
 235
 00:08:11,746 --> 00:08:12,846
-In this case, you could put the
+在这个例子中  你可以将
 
 
 236
 00:08:12,896 --> 00:08:14,686
-team code into the group field
+团队编码放入 group 栏中
 
 
 237
 00:08:15,136 --> 00:08:16,236
-and that way you could route
+这样你就可以
 
 
 238
 00:08:16,236 --> 00:08:17,846
-incoming messages to the team
+把收到的信息
 
 
 239
 00:08:17,846 --> 00:08:19,296
-that handles that particular
+转给专门处理
 
 
 240
 00:08:19,296 --> 00:08:19,626
-issue.
+此类问题的团队
 
 
 241
 00:08:20,206 --> 00:08:24,466
-And sometimes your customers may
+有时你的客户
 
 
 242
 00:08:24,466 --> 00:08:25,956
-want to chat with one of your
+想要和某个特定地点
 
 
 243
 00:08:25,956 --> 00:08:27,206
-particular locations.
+的商店交谈
 
 
 244
 00:08:28,376 --> 00:08:29,996
-In the future, you will be able
+未来 你可以向 Apple Maps
 
 
 245
 00:08:29,996 --> 00:08:32,346
-to provide your locations and
+提供位置信息
 
 
 246
 00:08:32,346 --> 00:08:34,885
-your location IDs to Apple Maps.
+以及 location ID
 
 
 247
 00:08:35,586 --> 00:08:37,126
-Apple will automatically then
+Apple 随后会自动
 
 
 248
 00:08:37,186 --> 00:08:39,405
-populate the Intent field with
+在 Intent 栏中
 
 
 249
 00:08:39,405 --> 00:08:40,556
-your location ID.
+填充你的 location ID
 
 
 250
 00:08:41,566 --> 00:08:43,506
-That way when the customer taps
+这样当顾客
 
 
 251
 00:08:43,576 --> 00:08:47,296
-the message and sends their
+点击 Message
 
 
 252
 00:08:47,296 --> 00:08:49,066
-message to that location, you
+并向那个位置发送信息时
 
 
 253
 00:08:49,066 --> 00:08:51,076
-will know to which location they
+你就会知道
 
 
 254
 00:08:51,076 --> 00:08:53,216
-were directing their message and
+他们在向何处发送信息
 
 
 255
 00:08:53,216 --> 00:08:54,236
-then you will be able to route
+然后你就可以
 
 
 256
 00:08:54,236 --> 00:08:55,276
-the message appropriately.
+恰当地转发消息
 
 
 257
 00:08:55,926 --> 00:09:00,036
-So we just reviewed all the ways
+所以我们刚刚回顾了
 
 
 258
 00:09:00,036 --> 00:09:01,606
-that your business might be
+能让顾客找到你
 
 
 259
 00:09:01,606 --> 00:09:02,556
-found by your customer.
+的所有方法
 
 
 260
 00:09:03,386 --> 00:09:05,246
-But once your customer taps that
+一旦您的顾客点击了
 
 
 261
 00:09:05,246 --> 00:09:07,196
-Message button, they are then
+Message 按钮
 
 
 262
 00:09:07,196 --> 00:09:09,156
-taken to your conversation
+他们会被带至
 
 
 263
 00:09:09,626 --> 00:09:10,836
-inside of the Messages app.
+Messages App 中与你对话
 
 
 264
 00:09:11,816 --> 00:09:12,956
-So let's explore some of the
+所以让我们探索一下
 
 
 265
 00:09:12,956 --> 00:09:14,726
-features of those Business Chat
+Business Chat 对话的
 
 
 266
 00:09:14,726 --> 00:09:15,586
-conversations.
+一些功能
 
 
 267
 00:09:16,156 --> 00:09:19,956
-It's important to note that your
+重要的一点是
 
 
 268
 00:09:19,956 --> 00:09:21,426
-customer must send the first
+您的顾客必须
 
 
 269
 00:09:21,426 --> 00:09:23,006
-message to open the
+发送首条消息
 
 
 270
 00:09:23,006 --> 00:09:23,726
-conversation.
+来开始对话
 
 
 271
 00:09:24,336 --> 00:09:25,976
-But once that conversation is
+一旦对话开始
 
 
 272
 00:09:25,976 --> 00:09:28,016
-open, you can then message back
+你就可以回复消息
 
 
 273
 00:09:28,516 --> 00:09:30,206
-or send important notifications.
+或发送重要通知
 
 
 274
 00:09:31,666 --> 00:09:33,126
-With your customer's message,
+有了顾客的消息
 
 
 275
 00:09:33,806 --> 00:09:35,226
-you will also receive that
+你还会收到
 
 
 276
 00:09:35,226 --> 00:09:37,046
-customer's opaque ID.
+顾客的不透明 ID
 
 
 277
 00:09:38,186 --> 00:09:40,376
-This is a unique ID designed to
+这是一个独特的 ID
 
 
 278
 00:09:40,426 --> 00:09:42,816
-preserve their anonymity until
+用来保持他们的匿名性
 
 
 279
 00:09:42,816 --> 00:09:43,716
-they're ready to share more
+直到他们准备和你分享
 
 
 280
 00:09:43,746 --> 00:09:45,136
-personal information with you.
+更多个人信息
 
 
 281
 00:09:45,776 --> 00:09:48,476
-In addition, you will also
+此外  你还会收到
 
 
 282
 00:09:48,476 --> 00:09:50,896
-receive the customer's language
+顾客的母语种类
 
 
 283
 00:09:51,396 --> 00:09:53,956
-and device region so that you
+以及设备所在区域以便你
 
 
 284
 00:09:53,956 --> 00:09:55,396
-can route their message to the
+将他们的消息转给
 
 
 285
 00:09:55,396 --> 00:09:57,276
-internal team that's best
+能更好解答
 
 
 286
 00:09:57,276 --> 00:09:58,626
-equipped to answer their
+他们的问题
 
 
 287
 00:09:58,626 --> 00:09:58,976
-question.
+的内部团队
 
 
 288
 00:09:59,676 --> 00:10:04,016
-As we saw in the video, the
+如我们在视频中
 
 
 289
 00:10:04,016 --> 00:10:05,796
-conversation session is long
+看到的那样
 
 
 290
 00:10:05,796 --> 00:10:06,006
-lived.
+对话会长期保留
 
 
 291
 00:10:06,916 --> 00:10:09,336
-Your customer can return and
+您的顾客可以
 
 
 292
 00:10:09,336 --> 00:10:10,636
-pick up where they left off at
+随时回到
 
 
 293
 00:10:10,636 --> 00:10:11,206
-any time.
+他们此前离开的地方
 
 
 294
 00:10:12,296 --> 00:10:13,666
-They should be able to just jump
+他们可以直接进来
 
 
 295
 00:10:13,666 --> 00:10:15,066
-in and ask a quick question
+快速问一个的问题
 
 
 296
 00:10:15,376 --> 00:10:16,906
-without having to re-identify
+并不需要
 
 
 297
 00:10:16,906 --> 00:10:17,546
-themselves.
+重新确认身份
 
 
 298
 00:10:18,396 --> 00:10:19,646
-And you can have their account
+并且你可以提前得知
 
 
 299
 00:10:19,646 --> 00:10:21,696
-information ready so they can
+他们的账户信息
 
 
 300
 00:10:21,696 --> 00:10:23,536
-get help without wasting time
+这样在得到帮助时他们就不需要
 
 
 301
 00:10:23,536 --> 00:10:24,916
-describing what you should
+浪费时间来说明你应该
 
 
 302
 00:10:24,916 --> 00:10:28,936
-already know.
+提前了解的信息
 
 
 303
 00:10:29,376 --> 00:10:30,676
-After your customer sends the
+在你的顾客发送首条消息后
 
 
 304
 00:10:30,676 --> 00:10:32,416
-first message, you might need
+你可能需要
 
 
 305
 00:10:32,416 --> 00:10:34,346
-some personal details to assist
+一些个人详细信息
 
 
 306
 00:10:34,406 --> 00:10:34,556
-them.
+来帮助他们
 
 
 307
 00:10:34,926 --> 00:10:36,376
-So let's say you needed their
+假设你需要
 
 
 308
 00:10:36,376 --> 00:10:36,986
-phone number.
+他们的电话号码
 
 
 309
 00:10:37,236 --> 00:10:40,296
-You might ask and the QuickType
+你问了之后
 
 
 310
 00:10:40,296 --> 00:10:42,026
-keyboard will make intelligent
+QuickType 键盘会给出智能建议
 
 
 311
 00:10:42,026 --> 00:10:44,136
-suggestions so your customer can
+这样你的顾客只需轻轻一点
 
 
 312
 00:10:44,136 --> 00:10:47,226
-reply with just a tap.
+就能回复
 
 
 313
 00:10:47,666 --> 00:10:48,966
-The QuickType keyboard can make
+QuickType 键盘可以
 
 
 314
 00:10:48,966 --> 00:10:50,666
-intelligent suggestions so your
+给出智能建议
 
 
 315
 00:10:50,666 --> 00:10:52,226
-customers can easily provide
+这样顾客可以轻易地提供
 
 
 316
 00:10:52,226 --> 00:10:54,586
-their email address, their phone
+他们的邮箱地址
 
 
 317
 00:10:54,586 --> 00:10:56,996
-number, their postal address,
+电话号码  邮寄地址
 
 
 318
 00:10:57,566 --> 00:11:01,506
-and even their location.
+甚至他们的位置
 
 
 319
 00:11:02,116 --> 00:11:04,636
-Messages is a very personal
+Messages 是一个
 
 
 320
 00:11:04,706 --> 00:11:05,026
-area.
+非常私人的地方
 
 
 321
 00:11:05,616 --> 00:11:07,046
-This is where your customers
+您的顾客在这里
 
 
 322
 00:11:07,046 --> 00:11:08,456
-communicate with their friends
+和他们的朋友以及家人
 
 
 323
 00:11:08,456 --> 00:11:08,926
-and family.
+进行交流
 
 
 324
 00:11:09,956 --> 00:11:11,826
-It's important to us that users
+对我们来说重要的是
 
 
 325
 00:11:11,826 --> 00:11:13,506
-never receive unsolicited
+用户永远不会收到
 
 
 326
 00:11:13,506 --> 00:11:14,176
-messages.
+不请自来的消息
 
 
 327
 00:11:14,916 --> 00:11:16,506
-We wanted to give users full
+我们想要给用户
 
 
 328
 00:11:16,506 --> 00:11:17,396
-control over their
+与企业交流的
 
 
 329
 00:11:17,396 --> 00:11:18,936
-communications with businesses.
+完全控制权
 
 
 330
 00:11:20,516 --> 00:11:21,436
-Users can manage their
+用户可以通过
 
 
 331
 00:11:21,436 --> 00:11:23,736
-conversations by hiding alerts
+隐藏提醒或
 
 
 332
 00:11:24,386 --> 00:11:25,836
-or by deleting the conversation.
+删除对话来管理他们的对话
 
 
 333
 00:11:26,426 --> 00:11:29,696
-When they hide alerts, they will
+当他们隐藏提醒时
 
 
 334
 00:11:29,696 --> 00:11:31,706
-continue to receive messages but
+他们会继续接收消息
 
 
 335
 00:11:31,706 --> 00:11:32,766
-they won't be notified.
+但不会收到通知
 
 
 336
 00:11:33,496 --> 00:11:34,246
-And if they delete the
+如果他们删除了对话
 
 
 337
 00:11:34,246 --> 00:11:36,066
-conversation, that will block
+这会屏蔽
 
 
 338
 00:11:36,166 --> 00:11:37,546
-all future messages from you.
+所有你未来的消息
 
 
 339
 00:11:38,166 --> 00:11:40,456
-Next, attachments.
+下面  附件
 
 
 340
 00:11:40,666 --> 00:11:44,546
-Because Business Chat is within
+因为 Business Chat 存在于
 
 
 341
 00:11:44,546 --> 00:11:46,216
-the Messages app, Business Chat
+Messages App 中
 
 
 342
 00:11:46,216 --> 00:11:47,656
-supports all of the standard
+Business Chat 支持所有标准附件类型
 
 
 343
 00:11:47,656 --> 00:11:49,796
-attachment types like photos,
+比如照片
 
 
 344
 00:11:50,446 --> 00:11:52,596
-videos, and documents.
+视频和文档
 
 
 345
 00:11:53,746 --> 00:11:55,546
-For example, your customer might
+例如您的顾客可以
 
 
 346
 00:11:55,616 --> 00:11:57,386
-send a photo of a product they
+发送一张他们需要的产品的照片
 
 
 347
 00:11:57,386 --> 00:11:59,796
-might need, or your customer
+或者您的顾客
 
 
 348
 00:11:59,796 --> 00:12:01,806
-might send a video of an area of
+发送一段他们房屋区域的视频
 
 
 349
 00:12:01,806 --> 00:12:03,626
-their house to help you provide
+来更好的
 
 
 350
 00:12:03,626 --> 00:12:05,936
-a more accurate quote and you
+明确需求
 
 
 351
 00:12:05,936 --> 00:12:07,776
-can use attachments to send
+您可以使用附件
 
 
 352
 00:12:07,776 --> 00:12:09,126
-forms or other important
+来发送表格
 
 
 353
 00:12:09,126 --> 00:12:09,706
-information.
+或其他重要信息
 
 
 354
 00:12:13,216 --> 00:12:15,056
-Next, let's cover some ways that
+下面我们来说说一些
 
 
 355
 00:12:15,056 --> 00:12:16,456
-you can provide a better
+可以让你为顾客带来更好体验
 
 
 356
 00:12:16,456 --> 00:12:17,766
-experience to your customers.
+的方法
 
 
 357
 00:12:18,956 --> 00:12:20,016
-We wanted to create some
+我们想创建一些
 
 
 358
 00:12:20,016 --> 00:12:22,046
-built-in features that help you
+内置功能
 
 
 359
 00:12:22,046 --> 00:12:24,346
-provide a consistent engaging
+帮助你在
 
 
 360
 00:12:24,346 --> 00:12:26,326
-experience for some common use
+日常使用时
 
 
 361
 00:12:26,326 --> 00:12:26,766
-cases.
+享受一贯的绝佳体验
 
 
 362
 00:12:27,776 --> 00:12:29,306
-It's important to note that
+重要的是要注意
 
 
 363
 00:12:29,306 --> 00:12:31,426
-these features are built in, so
+这些功能是内置的
 
 
 364
 00:12:31,426 --> 00:12:32,926
-they're available for you even
+因此你即使没有自己的 App
 
 
 365
 00:12:32,926 --> 00:12:34,286
-if you don't have your own app.
+他们还是可供你使用
 
 
 366
 00:12:36,296 --> 00:12:38,266
-The first is Time Picker.
+第一个功能是 Time Picker
 
 
 367
 00:12:39,676 --> 00:12:41,226
-Scheduling appointments is a
+预约时间是一种
 
 
 368
 00:12:41,266 --> 00:12:42,306
-common use case.
+常见使用情况
 
 
 369
 00:12:43,626 --> 00:12:45,356
-You can use Time Picker to send
+你可以使用 Time Picker 来发送
 
 
 370
 00:12:45,356 --> 00:12:47,566
-over a list of proposed times to
+建议的时间列表
 
 
 371
 00:12:47,566 --> 00:12:48,636
-your customer to review.
+以供顾客参考
 
 
 372
 00:12:49,776 --> 00:12:51,366
-Your customer can see if they
+您的顾客可以看到
 
 
 373
 00:12:51,366 --> 00:12:53,176
-have a conflict with existing
+这些时间是否与
 
 
 374
 00:12:53,176 --> 00:12:54,176
-appointments that they might
+日历中已存在的事件
 
 
 375
 00:12:54,176 --> 00:12:54,956
-have in Calendar.
+发生冲突
 
 
 376
 00:12:56,316 --> 00:12:58,196
-Your customer can review and
+您的顾客可以参考
 
 
 377
 00:12:58,196 --> 00:13:00,246
-then choose the best option and
+然后选择最佳选项
 
 
 378
 00:13:00,326 --> 00:13:04,206
-send their choice back to you.
+并将选择结果发送给你
 
 
 379
 00:13:04,526 --> 00:13:06,116
-Choosing from a list of options
+从选项列表中选择
 
 
 380
 00:13:06,116 --> 00:13:07,706
-is also another common use case.
+也是一种常见使用情况
 
 
 381
 00:13:08,726 --> 00:13:09,956
-We created List Picker so you
+我们创造了 List Picker
 
 
 382
 00:13:09,956 --> 00:13:11,876
-can provide a visual way to make
+这样在选择时
 
 
 383
 00:13:11,876 --> 00:13:12,436
-a selection.
+更加可视化
 
 
 384
 00:13:14,656 --> 00:13:16,246
-With List Picker, you can send
+有了 List Picker
 
 
 385
 00:13:16,246 --> 00:13:18,096
-your customer a list of options.
+你可以向顾客发送选项列表
 
 
 386
 00:13:18,966 --> 00:13:21,016
-Your customer can select one or
+您的顾客可以选择一个或多个
 
 
 387
 00:13:21,016 --> 00:13:22,686
-more, depending on how you
+这取决于你如何配置它
 
 
 388
 00:13:22,686 --> 00:13:25,106
-configured it, and then send a
+然后将选择结果
 
 
 389
 00:13:25,106 --> 00:13:26,156
-choice back to you.
+发送给你
 
 
 390
 00:13:29,296 --> 00:13:30,716
-Lastly, we know that payments is
+最后我们知道支付
 
 
 391
 00:13:30,716 --> 00:13:31,856
-another common use case.
+也是常见的使用情况
 
 
 392
 00:13:32,596 --> 00:13:34,796
-Apple Pay provides an easy and
+Apple Pay 提供了便捷
 
 
 393
 00:13:34,796 --> 00:13:37,876
-secure way to pay.
+又安全的支付方式
 
 
 394
 00:13:38,076 --> 00:13:39,306
-And if you're also a retailer
+如果你是零售商
 
 
 395
 00:13:39,306 --> 00:13:40,516
-that wants a quick check-out
+并且想要快速结账
 
 
 396
 00:13:40,546 --> 00:13:43,006
-process, customers can quickly
+顾客可以迅速
 
 
 397
 00:13:43,006 --> 00:13:44,526
-and securely provide their
+又安全地提供他们的
 
 
 398
 00:13:44,676 --> 00:13:47,186
-payment, shipping, and contact
+支付 配送和联系信息
 
 
 399
 00:13:47,186 --> 00:13:49,196
-information and then check out
+然后只需轻轻一点
 
 
 400
 00:13:49,276 --> 00:13:49,966
-with just one touch.
+就能结账
 
 
 401
 00:13:55,356 --> 00:13:57,416
-The built-in features that we
+我们刚才所讲到的
 
 
 402
 00:13:57,416 --> 00:13:58,886
-just covered offer a great
+内置功能为一些
 
 
 403
 00:13:58,886 --> 00:14:00,486
-experience for some common use
+常见情况提供了
 
 
 404
 00:14:00,486 --> 00:14:00,866
-cases.
+绝佳体验
 
 
 405
 00:14:01,366 --> 00:14:02,726
-But we know that these just
+但我们知道这些
 
 
 406
 00:14:02,726 --> 00:14:04,076
-scratch the surface of what's
+只是所需功能的
 
 
 407
 00:14:04,076 --> 00:14:04,396
-needed.
+皮毛
 
 
 408
 00:14:05,346 --> 00:14:06,936
-To customize the experience for
+如果您想为您的企业定制体验
 
 
 409
 00:14:06,936 --> 00:14:09,156
-your business, you can extend
+您可以通过使用
 
 
 410
 00:14:09,156 --> 00:14:10,706
-Business Chat by using the
+去年发布的 iOS 10 中的
 
 
 411
 00:14:10,786 --> 00:14:12,566
-iMessage app framework released
+iMessage App 框架
 
 
 412
 00:14:12,566 --> 00:14:14,476
-last year in iOS 10.
+来扩展 Business Chat
 
 
 413
 00:14:15,096 --> 00:14:18,936
-With the Messages framework, you
+有了 Messages 框架
 
 
 414
 00:14:18,936 --> 00:14:20,986
-can create app experiences that
+你可以创造顾客能
 
 
 415
 00:14:20,986 --> 00:14:22,736
-your customers can use directly
+直接从 Business Chat 中
 
 
 416
 00:14:22,736 --> 00:14:23,906
-within Business Chat.
+使用的 App 体验
 
 
 417
 00:14:24,636 --> 00:14:26,686
-Essentially, you can pull in
+重要的是
 
 
 418
 00:14:26,686 --> 00:14:28,156
-parts of your app into the
+当你的顾客需要时
 
 
 419
 00:14:28,156 --> 00:14:30,116
-conversation just when your
+你可以将您的 App 部分
 
 
 420
 00:14:30,166 --> 00:14:31,086
-customer needs it.
+挪到对话中
 
 
 421
 00:14:32,226 --> 00:14:33,456
-Your app can appear like a
+您的 App 可以像一个
 
 
 422
 00:14:33,456 --> 00:14:34,136
-message bubble.
+信息气泡一样出现
 
 
 423
 00:14:34,656 --> 00:14:36,386
-For example, if the customer
+例如如果顾客
 
 
 424
 00:14:36,386 --> 00:14:37,706
-needed to select their seats,
+需要选座
 
 
 425
 00:14:38,186 --> 00:14:39,126
-they could get a bubble like
+他们得到一个这样的气泡提示窗口
 
 
 426
 00:14:39,216 --> 00:14:42,436
-this, tap it, and then quickly
+点击它那么就可以
 
 
 427
 00:14:42,436 --> 00:14:43,000
-complete the task.
+快速完成任务
 
 
 428
 00:14:47,516 --> 00:14:53,596
-[ Applause ]
+[ 掌声 ]
 
 
 429
 00:14:54,096 --> 00:14:55,896
-With iMessage apps, you can
+有了 iMessage App
 
 
 430
 00:14:56,046 --> 00:14:57,616
-speed customers through common
+你可以让顾客
 
 
 431
 00:14:57,616 --> 00:14:59,436
-issues and improve your support
+更快解决常见问题并
 
 
 432
 00:14:59,436 --> 00:15:00,326
-team productivity.
+提高你支持团队的效率
 
 
 433
 00:15:02,606 --> 00:15:04,456
-And Business Chat is a great way
+并且 Business Chat
 
 
 434
 00:15:04,456 --> 00:15:06,176
-to introduce customers to your
+是向顾客介绍你 App 的
 
 
 435
 00:15:06,176 --> 00:15:06,356
-app.
+绝佳方式
 
 
 436
 00:15:07,496 --> 00:15:08,816
-If your customer doesn't yet
+如果您的顾客还没有
 
 
 437
 00:15:08,816 --> 00:15:10,426
-have your app installed, they
+安装您的 App
 
 
 438
 00:15:10,426 --> 00:15:12,016
-can tap to get the app right
+他们在对话中点击
 
 
 439
 00:15:12,116 --> 00:15:14,000
-from within the conversation.
+则可以直接获取 App
 
 
 440
 00:15:17,326 --> 00:15:18,256
-You can use your app to
+你可以通过 Live Message layout
 
 
 441
 00:15:18,256 --> 00:15:20,436
-customize the look and behavior
+使用您的 App
 
 
 442
 00:15:20,436 --> 00:15:22,306
-of Messages using Live Message
+来定制 Messages 的样式
 
 
 443
 00:15:22,306 --> 00:15:22,706
-layouts.
+和行为
 
 
 444
 00:15:24,416 --> 00:15:25,706
-You can customize the bubble,
+您可以定制气泡提示窗口
 
 
 445
 00:15:25,706 --> 00:15:27,766
-for example, by adding a map or
+比如添加地图
 
 
 446
 00:15:27,766 --> 00:15:30,456
-a live countdown, a simple form,
+或实时倒计时  一个简单的表格
 
 
 447
 00:15:31,576 --> 00:15:33,176
-or any other interaction that
+或其他通过你 App
 
 
 448
 00:15:33,176 --> 00:15:35,306
-you create using your app.
+创建的互动
 
 
 449
 00:15:35,856 --> 00:15:39,036
-To learn more about how to
+要了解更多关于
 
 
 450
 00:15:39,036 --> 00:15:40,946
-create iMessage apps, go to
+创建 iMessage App 的信息  请访问
 
 
 451
 00:15:41,186 --> 00:15:44,526
-developer.apple.com/imessage.
+developer.apple.com/imessage
 
 
 452
 00:15:45,326 --> 00:15:49,416
-Next, let's talk about getting
+下面我们来讲讲
 
 
 453
 00:15:49,416 --> 00:15:49,926
-connected.
+如何互联
 
 
 454
 00:15:50,656 --> 00:15:53,886
-As a business, you're going to
+作为企业  你需要
 
 
 455
 00:15:53,886 --> 00:15:55,666
-need a customer service platform
+一个支持 Business Chat
 
 
 456
 00:15:55,946 --> 00:15:57,216
-that supports Business Chat.
+的客户服务平台
 
 
 457
 00:15:58,756 --> 00:15:59,926
-Your platform will help you
+你的平台会帮你
 
 
 458
 00:15:59,926 --> 00:16:01,856
-connect, route messages
+互联  分转内部消息
 
 
 459
 00:16:01,856 --> 00:16:03,636
-internally, and provide
+以及
 
 
 460
 00:16:03,786 --> 00:16:04,826
-productivity tools for your
+为你的团队提供
 
 
 461
 00:16:04,826 --> 00:16:05,116
-team.
+效率工具
 
 
 462
 00:16:06,766 --> 00:16:08,326
-Your platform will also help
+你的平台还会帮助
 
 
 463
 00:16:08,326 --> 00:16:10,116
-connect your apps into your
+将你的 App 接入
 
 
 464
 00:16:10,116 --> 00:16:11,226
-support operations.
+支持的活动
 
 
 465
 00:16:12,526 --> 00:16:13,936
-This is so that your team can
+这样你的团队就能
 
 
 466
 00:16:13,936 --> 00:16:16,796
-send app experiences to your
+让顾客体验到
 
 
 467
 00:16:18,576 --> 00:16:18,826
-customers.
+App
 
 
 468
 00:16:19,146 --> 00:16:21,316
-As a business, you need to apply
+作为企业  你需要在
 
 
 469
 00:16:21,416 --> 00:16:23,326
-for the developer preview at
+register.apple.com
 
 
 470
 00:16:23,326 --> 00:16:24,696
-register.apple.com.
+申请开发者预览版本
 
 
 471
 00:16:26,296 --> 00:16:28,186
-Likewise, if you are a customer
+同理  如果你是一家支持
 
 
 472
 00:16:28,186 --> 00:16:29,646
-service platform that supports
+Messaging 的客户服务平台
 
 
 473
 00:16:29,646 --> 00:16:31,976
-Messaging, you can also apply to
+你也可以申请
 
 
 474
 00:16:32,006 --> 00:16:33,296
-offer Business Chat to your
+并向你的客户提供
 
 
 475
 00:16:33,296 --> 00:16:34,776
-clients too.
+Business Chat
 
 
 476
 00:16:37,856 --> 00:16:39,996
-So once your account is approved
+一旦你的账户通过了
 
 
 477
 00:16:39,996 --> 00:16:42,056
-for Business Chat, you could
+Business Chat 批准
 
 
 478
 00:16:42,056 --> 00:16:43,226
-receive messages from Apple
+你就可以从 Apple 设备
 
 
 479
 00:16:43,226 --> 00:16:43,816
-devices.
+接收消息
 
 
 480
 00:16:44,816 --> 00:16:45,946
-Let's say your customer sends a
+假设你的顾客向你
 
 
 481
 00:16:45,946 --> 00:16:46,596
-message to you.
+发送了一条消息
 
 
 482
 00:16:46,836 --> 00:16:48,546
-This message will first arrive
+这条消息会首先到达
 
 
 483
 00:16:48,546 --> 00:16:50,146
-on Apple's Business Chat server.
+Apple 的 Business Chat 服务器
 
 
 484
 00:16:51,076 --> 00:16:52,966
-From there, messages are passed
+在那里  消息会传递给
 
 
 485
 00:16:52,966 --> 00:16:54,156
-to your customer service
+你的客户服务平台
 
 
 486
 00:16:54,156 --> 00:16:58,056
-platform, and then your platform
+随后你的平台
 
 
 487
 00:16:58,366 --> 00:17:00,076
-will route messages to the
+将此消息分转给
 
 
 488
 00:17:00,076 --> 00:17:01,626
-appropriate person or team
+企业内恰当的
 
 
 489
 00:17:01,836 --> 00:17:02,866
-within your business.
+个人或团队
 
 
 490
 00:17:03,536 --> 00:17:05,876
-When they respond, your message
+当他们作出回应时
 
 
 491
 00:17:05,876 --> 00:17:07,096
-is routed back to your customer.
+消息发回给顾客
 
 
 492
 00:17:07,675 --> 00:17:10,445
-As I mentioned, during Business
+我刚才提到了
 
 
 493
 00:17:10,445 --> 00:17:12,596
-Chat developer preview, your
+在 Business Chat 开发者预览版本期间
 
 
 494
 00:17:12,596 --> 00:17:13,996
-business is not yet publicly
+企业无法向公众
 
 
 495
 00:17:13,996 --> 00:17:14,566
-accessible.
+提供服务
 
 
 496
 00:17:15,536 --> 00:17:17,185
-However, you can white list
+但是你可以将员工
 
 
 497
 00:17:17,185 --> 00:17:19,076
-employees and these employees
+列入白名单
 
 
 498
 00:17:19,076 --> 00:17:20,606
-can test the full experience,
+这些员工可以测试全部功能
 
 
 499
 00:17:21,266 --> 00:17:22,476
-interact with your iMessage
+与你的 iMessage App 互动
 
 
 500
 00:17:22,476 --> 00:17:23,935
-apps, and make sure that
+并确保
 
 
 501
 00:17:23,935 --> 00:17:25,536
-everything is working properly.
+一切都没有问题
 
 
 502
 00:17:26,215 --> 00:17:30,516
-OK, let's go through how to get
+好 让我们回顾下
 
 
 503
 00:17:30,516 --> 00:17:30,956
-started.
+如何入门
 
 
 504
 00:17:31,776 --> 00:17:33,726
-There are three things that you
+你今天就可以做的
 
 
 505
 00:17:33,726 --> 00:17:34,506
-can do today.
+有三件事
 
 
 506
 00:17:35,026 --> 00:17:36,956
-First, start developing.
+一  开始开发
 
 
 507
 00:17:37,476 --> 00:17:38,756
-You can use the Business Chat
+你可以使用 Business Chat Sandbox
 
 
 508
 00:17:38,756 --> 00:17:40,326
-Sandbox that Scotty will take us
+Scottie 待会儿会
 
 
 509
 00:17:40,326 --> 00:17:41,036
-through next.
+给我们介绍
 
 
 510
 00:17:42,026 --> 00:17:44,556
-Second, get connected on a
+二  接入一个
 
 
 511
 00:17:44,606 --> 00:17:46,066
-customer service platform that
+支持 Business Chat 的
 
 
 512
 00:17:46,066 --> 00:17:47,146
-supports Business Chat.
+客户服务平台
 
 
 513
 00:17:48,196 --> 00:17:50,616
-And then, apply for early access
+然后  申请 Business Chat 的
 
 
 514
 00:17:50,616 --> 00:17:51,986
-to Business Chat.
+早期权限
 
 
 515
 00:17:53,536 --> 00:17:55,876
-With that, Scotty will take us
+Scottie 会给我们带来
 
 
 516
 00:17:55,876 --> 00:17:57,006
-through a demo Business Chat
+Business Chat Sandbox 演示
 
 
 517
 00:17:57,006 --> 00:17:59,026
-Sandbox and how you can use it
+以及你如何使用它
 
 
 518
 00:17:59,026 --> 00:18:01,376
-to start developing and testing
+来开始开发并
 
 
 519
 00:18:01,406 --> 00:18:02,476
-your use cases.
+测试使用情况
 
 
 520
 00:18:03,516 --> 00:18:07,500
-[ Applause ]
+[ 掌声 ]
 
 
 521
 00:18:12,816 --> 00:18:14,786
->> Alright, thanks, Grant.
+>> 谢谢你 Grant
 
 
 522
 00:18:16,246 --> 00:18:17,516
-We're real excited about
+我们为 Business Chat
 
 
 523
 00:18:17,516 --> 00:18:18,106
-Business Chat.
+感到兴奋
 
 
 524
 00:18:18,846 --> 00:18:20,336
-We have developed an entire
+我们开发出了一个完整的平台
 
 
 525
 00:18:20,486 --> 00:18:21,906
-platform that will allow
+它允许每个人
 
 
 526
 00:18:21,906 --> 00:18:23,386
-everyone to communicate with
+都能通过世界上
 
 
 527
 00:18:23,386 --> 00:18:25,496
-businesses directly through one
+使用最多的 App - Messages
 
 
 528
 00:18:25,496 --> 00:18:26,986
-of the most used apps on the
+来直接跟企业
 
 
 529
 00:18:27,086 --> 00:18:28,056
-planet, Messages.
+进行交流
 
 
 530
 00:18:29,466 --> 00:18:31,186
-And, as you've seen, we've built
+此外如你看到的
 
 
 531
 00:18:31,186 --> 00:18:32,576
-in some great software into
+我们在每个 iOS 11 设备中
 
 
 532
 00:18:32,576 --> 00:18:34,676
-every iOS 11 device that makes
+内置了一些很棒的软件
 
 
 533
 00:18:34,676 --> 00:18:36,176
-performing these common business
+让完成这些常见任务
 
 
 534
 00:18:36,176 --> 00:18:39,216
-tasks simple and fun, including
+变得简便有趣
 
 
 535
 00:18:39,216 --> 00:18:41,416
-making payments using Apple Pay,
+包括使用 Apple Pay 进行支付
 
 
 536
 00:18:41,976 --> 00:18:43,676
-way better than trying to give
+这比在手机上
 
 
 537
 00:18:43,676 --> 00:18:44,636
-your credit card information
+给出你的信用卡信息
 
 
 538
 00:18:44,636 --> 00:18:45,256
-over the phone.
+棒多了
 
 
 539
 00:18:47,276 --> 00:18:48,866
-And it's even way more secure.
+并且它更加安全
 
 
 540
 00:18:52,786 --> 00:18:54,416
-Now, you can mix these built-in
+现在你可以将这些内置功能
 
 
 541
 00:18:54,416 --> 00:18:56,176
-features with your own custom
+和你创建的自己定制的
 
 
 542
 00:18:56,176 --> 00:18:57,826
-messages apps that you create
+Messages App 融合
 
 
 543
 00:18:58,976 --> 00:19:00,396
-and we think there's some real
+我们认为这对你来说
 
 
 544
 00:19:00,396 --> 00:19:01,856
-opportunity here for you to
+是个很好的机会来
 
 
 545
 00:19:01,856 --> 00:19:03,936
-create some new really amazing
+创造一些很棒的
 
 
 546
 00:19:03,936 --> 00:19:05,346
-customer engagement experiences.
+客户参与新体验
 
 
 547
 00:19:06,166 --> 00:19:08,046
-Now we were so excited about all
+现在我们对所有这些
 
 
 548
 00:19:08,046 --> 00:19:09,396
-of this, we wanted everyone to
+感到兴奋  我们希望每个人
 
 
 549
 00:19:09,396 --> 00:19:11,416
-be able to try this out today
+今天就能用你的 iOS 11 设备
 
 
 550
 00:19:11,416 --> 00:19:12,966
-using your iOS 11 device.
+来尝试一下
 
 
 551
 00:19:13,536 --> 00:19:16,826
-As message app developers, you
+作为 Message App 开发人员
 
 
 552
 00:19:16,826 --> 00:19:18,006
-can try integrating with your
+你可以尝试与你的
 
 
 553
 00:19:18,006 --> 00:19:18,706
-messages apps.
+Messages App 结合
 
 
 554
 00:19:19,086 --> 00:19:20,606
-As customer service platforms,
+至于客户服务平台
 
 
 555
 00:19:20,606 --> 00:19:22,126
-you can see what formats we're
+你可以看到通过网络
 
 
 556
 00:19:22,126 --> 00:19:24,256
-sending over the wire, or as a
+我们发送的什么格式
 
 
 557
 00:19:24,256 --> 00:19:25,636
-business owner or someone who's
+或作为企业老板
 
 
 558
 00:19:25,636 --> 00:19:27,186
-just interested, you can use the
+或者只是感兴趣的人
 
 
 559
 00:19:27,246 --> 00:19:29,166
-Sandbox to dream up the next
+你可以使用 Sandbox
 
 
 560
 00:19:29,166 --> 00:19:30,796
-great customer experience
+来想象未来的绝佳
 
 
 561
 00:19:30,796 --> 00:19:31,516
-engagement.
+客户参与体验
 
 
 562
 00:19:32,296 --> 00:19:34,696
-So what did we do?
+所以我们做了什么
 
 
 563
 00:19:35,586 --> 00:19:38,066
-Well, as Grant showed, we have
+嗯 Grant 刚刚展示了
 
 
 564
 00:19:38,326 --> 00:19:39,666
-this flow of information that
+我们有这个传递的
 
 
 565
 00:19:39,666 --> 00:19:40,466
-goes through and what we've
+信息流和我们已经创造的一些东西
 
 
 566
 00:19:40,466 --> 00:19:42,906
-created as the Sandbox is a way
+Sandbox 
 
 
 567
 00:19:43,536 --> 00:19:44,956
--- Sandbox is pretty much like
+就像
 
 
 568
 00:19:44,956 --> 00:19:46,006
-your own customer service
+我们创造的属于你自己的
 
 
 569
 00:19:46,066 --> 00:19:47,946
-platform that we've created and
+客户服务平台并且
 
 
 570
 00:19:47,946 --> 00:19:49,476
-we've put a web frontend on it.
+我们为它做了网页前端
 
 
 571
 00:19:50,316 --> 00:19:51,306
-Now your business might have its
+你的企业可能有自己
 
 
 572
 00:19:51,306 --> 00:19:53,016
-own web frontend but in this
+网页前端 但在这里
 
 
 573
 00:19:53,046 --> 00:19:54,616
-case, this is a Sandbox
+这是 Sandbox 环境
 
 
 574
 00:19:54,616 --> 00:19:55,656
-environment and you can use to
+你可以用它来试验
 
 
 575
 00:19:55,696 --> 00:19:57,926
-play and we think it'll be great
+我们觉得这样很棒
 
 
 576
 00:19:57,926 --> 00:19:58,866
-so you can experience these
+所以你可以体验这些
 
 
 577
 00:19:58,866 --> 00:19:59,316
-features.
+功能
 
 
 578
 00:20:00,136 --> 00:20:01,356
-So instead of talking about it,
+我一直在说
 
 
 579
 00:20:01,356 --> 00:20:01,896
-let me give you a demo right
+不如现在我来给大家
 
 
 580
 00:20:01,896 --> 00:20:01,963
-now.
+演示一下
 
 
 581
 00:20:02,146 --> 00:20:06,496
-So I'm going to switch over to
+我现在要切换到
 
 
 582
 00:20:06,566 --> 00:20:09,556
-the demo device here and I have
+这里的演示设备
 
 
 583
 00:20:09,936 --> 00:20:11,696
-loaded up here the website for
+我已经在左边加载了
 
 
 584
 00:20:11,696 --> 00:20:12,856
-Business Chat Sandbox on the
+用于 Business Chat Sandbox 的网站
 
 
 585
 00:20:12,856 --> 00:20:15,036
-left and I have an iPhone here
+我把 iPhone 界面放在这里的
 
 
 586
 00:20:15,036 --> 00:20:15,696
-on the right.
+右边
 
 
 587
 00:20:16,826 --> 00:20:19,206
-And as Grant mentioned, the
+Grant 刚才提到了
 
 
 588
 00:20:19,696 --> 00:20:20,796
-interactions with businesses
+和企业之间的互动
 
 
 589
 00:20:20,796 --> 00:20:22,596
-have to be started by your iOS
+必须由你的 iOS 设备
 
 
 590
 00:20:22,596 --> 00:20:22,916
-device.
+来开始
 
 
 591
 00:20:23,506 --> 00:20:24,836
-Grant highlighted a lot of great
+Grant 强调了很多很好的方式
 
 
 592
 00:20:24,836 --> 00:20:26,976
-ways that you can get to your
+可以启动
 
 
 593
 00:20:26,976 --> 00:20:29,166
-Business Chat through things
+Business Chat 比如
 
 
 594
 00:20:29,166 --> 00:20:31,116
-like Maps and Siri, but another
+Maps 和 Siri 但还有个很好的
 
 
 595
 00:20:31,116 --> 00:20:32,346
-great way is QR codes.
+方式就是二维码
 
 
 596
 00:20:32,876 --> 00:20:34,586
-And this has highlighted a new
+而这就体现了
 
 
 597
 00:20:34,586 --> 00:20:36,336
-feature on iOS 11 where you can
+iOS 11 的一个新功能
 
 
 598
 00:20:36,336 --> 00:20:39,706
-use your camera app to hover
+你可以使用你的相机 App
 
 
 599
 00:20:39,706 --> 00:20:41,856
-over a QR code, which I'm going
+悬停在二维码上
 
 
 600
 00:20:41,856 --> 00:20:44,856
-to do now, and you'll see up
+我现在正在做
 
 
 601
 00:20:44,856 --> 00:20:48,026
-pops a message notification.
+你可以看到弹出了一条消息通知
 
 
 602
 00:20:48,486 --> 00:20:50,986
-I can just tap this guy and I'm
+我可以点击它
 
 
 603
 00:20:51,296 --> 00:20:52,176
-brought right into messages
+然后我被转至 Messages
 
 
 604
 00:20:52,176 --> 00:20:53,276
-ready to start a communication
+可以开始和
 
 
 605
 00:20:53,276 --> 00:20:53,976
-with Business Chat Sandbox.
+Business Chat Sandbox 对话
 
 
 606
 00:20:54,516 --> 00:20:58,876
-[ Applause ]
+[ 掌声 ]
 
 
 607
 00:20:59,376 --> 00:21:00,626
-So keep in mind, this is the
+所以请记住
 
 
 608
 00:21:00,676 --> 00:21:01,216
-setup process.
+这是设置流程
 
 
 609
 00:21:01,216 --> 00:21:03,076
-I have logged in with my iCloud
+我用 iCloud 账户
 
 
 610
 00:21:03,176 --> 00:21:05,266
-account to Business Chat Sandbox
+登录了 Business Chat Sandbox
 
 
 611
 00:21:05,636 --> 00:21:06,926
-and I've scanned this QR code
+然后我扫描了这个二维码
 
 
 612
 00:21:07,076 --> 00:21:08,376
-and I'm ready to start talking
+然后我就可以
 
 
 613
 00:21:08,376 --> 00:21:08,846
-to a business.
+和企业对话
 
 
 614
 00:21:09,236 --> 00:21:10,506
-I don't know any other platform
+我不知道其他平台
 
 
 615
 00:21:10,506 --> 00:21:11,736
-that has it this easy.
+有没有这么简便
 
 
 616
 00:21:12,006 --> 00:21:14,186
-So let's start sending a really
+让我们先发送一条
 
 
 617
 00:21:14,326 --> 00:21:16,436
-profound message and say, "Hi."
+意味深长的消息 “Hi”
 
 
 618
 00:21:18,426 --> 00:21:19,946
-And you'll see, boom, on the
+你可以看到  咚  在左边
 
 
 619
 00:21:19,946 --> 00:21:21,686
-left, the Business Chat Sandbox
+Business Chat Sandbox 更新了
 
 
 620
 00:21:21,726 --> 00:21:23,116
-updates since I've made
+因为我已经和
 
 
 621
 00:21:23,116 --> 00:21:24,276
-communication with that
+企业开始
 
 
 622
 00:21:24,276 --> 00:21:24,796
-business.
+对话了
 
 
 623
 00:21:25,576 --> 00:21:26,356
-So what do we have here?
+那么这里有什么呢
 
 
 624
 00:21:26,606 --> 00:21:28,866
-Well, along the top we have a
+嗯  在上边我们有
 
 
 625
 00:21:28,866 --> 00:21:30,066
-bunch of tabs that highlight
+一排标签
 
 
 626
 00:21:30,196 --> 00:21:32,196
-different functionality of
+体现了 Business Chat
 
 
 627
 00:21:32,256 --> 00:21:33,046
-Business Chat.
+的不同功能
 
 
 628
 00:21:33,636 --> 00:21:34,946
-We have Text so you can send
+我们有 Text 这样你就可以
 
 
 629
 00:21:34,946 --> 00:21:35,826
-text back and forth.
+来回发送文字
 
 
 630
 00:21:36,636 --> 00:21:37,836
-We have Attachment so you can
+我们有 Attachment 这样你就可以
 
 
 631
 00:21:37,836 --> 00:21:39,746
-try sending files and other
+发送文件
 
 
 632
 00:21:39,746 --> 00:21:40,966
-types of attachments back and
+和其他类型的
 
 
 633
 00:21:40,966 --> 00:21:41,226
-forth.
+附件
 
 
 634
 00:21:42,246 --> 00:21:43,386
-We have the Time Picker that
+我们有 Time Picker
 
 
 635
 00:21:43,386 --> 00:21:44,216
-Grant highlighted.
+Grant 刚才强调了
 
 
 636
 00:21:44,916 --> 00:21:46,276
-We have List Picker to be able
+我们有 List Picker
 
 
 637
 00:21:46,276 --> 00:21:47,356
-to pick from a list.
+可以从列表进行选择
 
 
 638
 00:21:48,036 --> 00:21:49,146
-We have everyone's favorite
+我们有每个人的最爱
 
 
 639
 00:21:49,146 --> 00:21:50,936
-Apple Pay to collect payments
+Apple Pay 来向顾客
 
 
 640
 00:21:50,936 --> 00:21:51,526
-from customers.
+收款
 
 
 641
 00:21:52,396 --> 00:21:54,416
-We have My App, which allows you
+我们有 My App 可以使你
 
 
 642
 00:21:54,416 --> 00:21:56,926
-to test integrating with your
+测试整合后你自己的
 
 
 643
 00:21:56,926 --> 00:21:58,406
-own custom messages app.
+定制 Messages App
 
 
 644
 00:21:59,486 --> 00:22:01,246
-And Raw JSON, which lets you try
+以及 Raw JSON
 
 
 645
 00:22:01,246 --> 00:22:03,696
-out and modify the JSON and see
+让你试用和修改 JSON
 
 
 646
 00:22:03,696 --> 00:22:05,736
-what happens when you customize
+看看当你根据
 
 
 647
 00:22:05,786 --> 00:22:07,186
-this to your business
+业务环境定制时
 
 
 648
 00:22:07,186 --> 00:22:07,616
-environment.
+会发生什么
 
 
 649
 00:22:08,176 --> 00:22:12,096
-On the right, I have a
+在右边
 
 
 650
 00:22:12,096 --> 00:22:14,086
-transcript showing the
+文字记录展示了
 
 
 651
 00:22:14,466 --> 00:22:16,836
-communications between the
+Sandbox 和我的设备
 
 
 652
 00:22:16,836 --> 00:22:18,116
-Sandbox and my device.
+之间的对话
 
 
 653
 00:22:19,076 --> 00:22:22,016
-And at the bottom, we have a
+在底部有一个
 
 
 654
 00:22:22,016 --> 00:22:24,096
-JSON tab, which actually shows
+JSON 标签  向你展示了
 
 
 655
 00:22:24,096 --> 00:22:25,526
-you the formats that we're
+我们在线上
 
 
 656
 00:22:25,526 --> 00:22:26,356
-sending over the wire.
+发送的格式
 
 
 657
 00:22:26,716 --> 00:22:28,056
-This is really helpful when
+当你在开发
 
 
 658
 00:22:28,056 --> 00:22:29,116
-you're developing customer
+客户服务平台
 
 
 659
 00:22:29,116 --> 00:22:31,016
-service platforms or your own
+或自己的 Messages App
 
 
 660
 00:22:31,016 --> 00:22:32,176
-messages apps to make sure
+想确保没有问题时
 
 
 661
 00:22:32,176 --> 00:22:32,996
-you're getting things right.
+会非常有用
 
 
 662
 00:22:33,916 --> 00:22:36,896
-So as a business, over here I
+作为企业
 
 
 663
 00:22:36,896 --> 00:22:38,526
-might type a response to my
+我想输入
 
 
 664
 00:22:38,726 --> 00:22:40,136
-profound "hi" and say something
+来回复 “hi” 
 
 
 665
 00:22:40,136 --> 00:22:41,736
-like, "How may I help you?"
+比如说“请问有什么可以帮你”
 
 
 666
 00:22:42,056 --> 00:22:45,566
-And we can send that across and
+我们可以发送过去
 
 
 667
 00:22:45,566 --> 00:22:47,186
-you'll see that sends and, boom,
+你可以看到发送了 咚
 
 
 668
 00:22:47,186 --> 00:22:48,706
-we get that right here, great,
+我们发到了右边的设备上
 
 
 669
 00:22:48,706 --> 00:22:49,236
-on the device.
+太棒了
 
 
 670
 00:22:50,006 --> 00:22:50,996
-Great, so now we've established
+所以现在我们已经
 
 
 671
 00:22:50,996 --> 00:22:51,966
-communication.
+开始了沟通
 
 
 672
 00:22:52,496 --> 00:22:54,176
-Let's go to Attachments and see
+让我们到 Attachments 看看
 
 
 673
 00:22:54,176 --> 00:22:55,456
-how we can use Attachments to
+我们如何使用 Attachments
 
 
 674
 00:22:55,456 --> 00:22:56,736
-communicate with our customers.
+来和顾客进行交流
 
 
 675
 00:22:57,076 --> 00:22:58,086
-I have an image here.
+这里有张图片
 
 
 676
 00:22:58,086 --> 00:23:02,736
-We have some internals of what
+我们有张 HomePod
 
 
 677
 00:23:02,736 --> 00:23:04,376
-the home pod might look like.
+内部样子的图片
 
 
 678
 00:23:04,726 --> 00:23:05,836
-So yeah, let's send that to the
+嗯  让我们把这个发给
 
 
 679
 00:23:05,836 --> 00:23:06,346
-customer.
+顾客
 
 
 680
 00:23:06,476 --> 00:23:07,626
-OK, great, I got it on the
+好 在右边
 
 
 681
 00:23:07,626 --> 00:23:07,826
-right.
+看到了
 
 
 682
 00:23:07,826 --> 00:23:08,796
-That's what the inside of the
+这就是
 
 
 683
 00:23:08,796 --> 00:23:09,436
-home pod looks like.
+HomePod 里面的样子
 
 
 684
 00:23:09,496 --> 00:23:11,976
-Great. OK and we can even send
+好  我们甚至还可以
 
 
 685
 00:23:12,256 --> 00:23:12,616
-images back.
+发送照片过去
 
 
 686
 00:23:12,806 --> 00:23:15,186
-I can pull up the camera here
+我可以在这里展开相机
 
 
 687
 00:23:15,376 --> 00:23:18,186
-and the camera comes up here, I
+这里出现了相机界面
 
 
 688
 00:23:18,186 --> 00:23:19,806
-can take a lovely photo of all
+我可以拍一张所有
 
 
 689
 00:23:19,806 --> 00:23:20,446
-you in the audience.
+观众的照片
 
 
 690
 00:23:21,246 --> 00:23:22,116
-Very good.
+很好
 
 
 691
 00:23:22,396 --> 00:23:24,066
-And I can send this now back to
+我可以将这张照片
 
 
 692
 00:23:24,066 --> 00:23:27,046
-the business and tell the
+发给企业并告诉他
 
 
 693
 00:23:27,046 --> 00:23:27,876
-business, great.
+好
 
 
 694
 00:23:27,876 --> 00:23:30,416
-Just give it a second to
+给它一点时间
 
 
 695
 00:23:30,416 --> 00:23:31,216
-receive.
+来接收
 
 
 696
 00:23:31,566 --> 00:23:32,466
-And here it is.
+有了
 
 
 697
 00:23:32,466 --> 00:23:33,516
-Great. Now I've told the
+很好  我已经告诉了
 
 
 698
 00:23:33,516 --> 00:23:34,776
-business all the people looking
+企业以后想要
 
 
 699
 00:23:34,776 --> 00:23:35,696
-to communicate with them in the
+跟他们交流
 
 
 700
 00:23:35,696 --> 00:23:35,936
-future.
+的所有人
 
 
 701
 00:23:36,356 --> 00:23:36,966
-That's great [applause].
+非常棒 [掌声]
 
 
 702
 00:23:41,156 --> 00:23:44,656
-So let's create a scenario that
+所以让我们创建一个
 
 
 703
 00:23:44,656 --> 00:23:45,836
-you might want to go through as
+作为企业你可能
 
 
 704
 00:23:45,836 --> 00:23:47,176
-a business to try out Business
+会经历的场景来尝试一下
 
 
 705
 00:23:47,176 --> 00:23:47,436
-Chat.
+Business Chat
 
 
 706
 00:23:48,376 --> 00:23:50,956
-Let's go on my iOS device and we
+让我们回到我的 iOS 设备
 
 
 707
 00:23:50,956 --> 00:23:53,716
-want to highlight probably
+我们想重点讲下
 
 
 708
 00:23:53,716 --> 00:23:56,426
-something that people experience
+人们会可能会经常遇到的
 
 
 709
 00:23:57,246 --> 00:23:58,096
-pretty often.
+一些事情
 
 
 710
 00:23:58,716 --> 00:24:00,696
-Let's message this business and
+让我们给这个企业发消息
 
 
 711
 00:24:00,696 --> 00:24:02,226
-say something like, "Let's check
+让我们说
 
 
 712
 00:24:02,406 --> 00:24:04,876
-the status of my orders."
+检查一下我的订单状态
 
 
 713
 00:24:05,486 --> 00:24:08,466
-Now this could be any business,
+这可以是任何企业
 
 
 714
 00:24:09,366 --> 00:24:10,546
-shipping any kind of order, so
+发出任何形式的订单
 
 
 715
 00:24:10,546 --> 00:24:12,156
-we're going to send this to the
+我们现在把这个发送给企业
 
 
 716
 00:24:12,506 --> 00:24:14,766
-business and alright.
+好了
 
 
 717
 00:24:14,766 --> 00:24:16,306
-So now we're going to use the
+现在我们要使用
 
 
 718
 00:24:16,306 --> 00:24:19,226
-List Picker to send a list of
+List Picker 来发送
 
 
 719
 00:24:19,226 --> 00:24:20,466
-items of the orders that the
+企业所知道的
 
 
 720
 00:24:20,466 --> 00:24:21,586
-business knows about to this
+此顾客的
 
 
 721
 00:24:21,626 --> 00:24:21,966
-customer.
+订单列表
 
 
 722
 00:24:23,266 --> 00:24:25,146
-Now as Grant mentioned, we have
+Grant 刚才提到了
 
 
 723
 00:24:25,146 --> 00:24:26,036
-long-lived IDs.
+我们有长期保留的 ID
 
 
 724
 00:24:26,036 --> 00:24:27,896
-So previously I had already
+之前我已经认证了
 
 
 725
 00:24:28,646 --> 00:24:30,206
-authenticated myself, so the
+自己的身份
 
 
 726
 00:24:30,206 --> 00:24:31,356
-business knows who I am.
+所以企业知道我是谁
 
 
 727
 00:24:32,146 --> 00:24:35,046
-So they can internally pull up
+所以在内部他们可以
 
 
 728
 00:24:35,046 --> 00:24:36,356
-all of the orders that have been
+找出这个顾客的
 
 
 729
 00:24:36,356 --> 00:24:37,196
-assigned to that customer.
+所有相关订单
 
 
 730
 00:24:38,026 --> 00:24:39,276
-So I'm going to -- I have some
+我在这里保存了
 
 
 731
 00:24:39,326 --> 00:24:40,946
-saved JSON example here that I'm
+一些 JSON 例子
 
 
 732
 00:24:40,946 --> 00:24:43,226
-going to drag in and you'll see
+我把它拖进来
 
 
 733
 00:24:43,226 --> 00:24:44,286
-I filled out the form here.
+你可以看到我填好了这张表
 
 
 734
 00:24:44,286 --> 00:24:45,896
-So what do we have?
+有什么呢
 
 
 735
 00:24:45,896 --> 00:24:47,596
-At the top we have the received
+在顶部我们有
 
 
 736
 00:24:47,596 --> 00:24:48,106
-message.
+Received Message
 
 
 737
 00:24:48,596 --> 00:24:50,276
-This is the message that gets
+这是企业要发送的
 
 
 738
 00:24:50,276 --> 00:24:51,406
-sent by the business and then
+消息然后
 
 
 739
 00:24:51,406 --> 00:24:54,256
-received onto the customer's
+顾客的设备
 
 
 740
 00:24:54,256 --> 00:24:54,566
-device.
+会接收
 
 
 741
 00:24:55,526 --> 00:24:57,286
-You can see you can specify an
+你看你可以指定
 
 
 742
 00:24:57,286 --> 00:24:57,846
-icon.
+图标
 
 
 743
 00:24:58,216 --> 00:24:59,456
-There's a title and subtitle of
+聊天气泡有标题和副标题
 
 
 744
 00:24:59,456 --> 00:25:01,566
-the bubble and we have different
+并且我们有不同的
 
 
 745
 00:25:01,656 --> 00:25:02,426
-size formats.
+尺寸格式
 
 
 746
 00:25:02,426 --> 00:25:04,186
-You can actually modify these to
+你可以根据你喜欢的风格
 
 
 747
 00:25:04,186 --> 00:25:05,876
-whatever style you'd like.
+来修改这些
 
 
 748
 00:25:07,166 --> 00:25:08,706
-Down below, we specify the
+在下面我们
 
 
 749
 00:25:08,706 --> 00:25:08,956
-items.
+注明商品
 
 
 750
 00:25:09,536 --> 00:25:11,236
-So here we have -- You can see I
+这里你可以看到
 
 
 751
 00:25:11,236 --> 00:25:12,606
-have some items here that I have
+我有一些即将收到的
 
 
 752
 00:25:12,606 --> 00:25:13,026
-incoming.
+商品
 
 
 753
 00:25:13,026 --> 00:25:14,596
-I have some T-shirts delivering
+我有一些今天发出的
 
 
 754
 00:25:14,596 --> 00:25:15,126
-today.
+T 恤
 
 
 755
 00:25:15,436 --> 00:25:17,496
-I have a new iPad Pro coming on
+我有个六月 12 号配送的
 
 
 756
 00:25:17,496 --> 00:25:19,396
-June 12th and some Yerba Mate
+iPad Pro 和一些 Yerba Mate
 
 
 757
 00:25:19,396 --> 00:25:20,286
-coming, delicious.
+真棒
 
 
 758
 00:25:20,866 --> 00:25:22,876
-We can specify if we want to
+我们可以说明如果我们想
 
 
 759
 00:25:22,876 --> 00:25:23,986
-select multiple items.
+选择多项商品
 
 
 760
 00:25:23,986 --> 00:25:25,626
-So this allows the customer to
+这可以让顾客
 
 
 761
 00:25:25,626 --> 00:25:26,886
-pick from multiple instead of
+从多个中选择
 
 
 762
 00:25:26,886 --> 00:25:27,636
-one at a time.
+而不是一次一个
 
 
 763
 00:25:27,986 --> 00:25:29,106
-For this case, let's talk about
+在这个例子里  让我们先
 
 
 764
 00:25:29,106 --> 00:25:31,626
-just one shipment at the start.
+只谈一次配送
 
 
 765
 00:25:31,626 --> 00:25:33,936
-And you see I can go ahead and
+你看我可以继续
 
 
 766
 00:25:34,046 --> 00:25:36,106
-add or remove other items and
+添加或删除其他商品
 
 
 767
 00:25:36,106 --> 00:25:37,726
-add or remove other sections as
+以及添加或删除其他
 
 
 768
 00:25:37,726 --> 00:25:38,076
-well.
+部分
 
 
 769
 00:25:38,076 --> 00:25:39,256
-But we're just going to start
+但在这里我们将
 
 
 770
 00:25:39,256 --> 00:25:40,656
-with this one section for this
+只从一个部分
 
 
 771
 00:25:41,556 --> 00:25:41,666
-case.
+开始
 
 
 772
 00:25:41,786 --> 00:25:43,076
-Down below I have the Reply
+在下面是
 
 
 773
 00:25:43,076 --> 00:25:43,516
-Message.
+Reply Message
 
 
 774
 00:25:43,906 --> 00:25:45,496
-Reply Message is the look of the
+Reply Message 是当我把
 
 
 775
 00:25:45,496 --> 00:25:46,916
-bubble when I send back the
+选择结果发回
 
 
 776
 00:25:46,916 --> 00:25:48,296
-choice that I've made back to
+给企业时的
 
 
 777
 00:25:48,296 --> 00:25:48,656
-the business.
+气泡样式
 
 
 778
 00:25:49,826 --> 00:25:51,636
-Here, just like the received
+这里就像 Received Message
 
 
 779
 00:25:51,636 --> 00:25:53,676
-message, I have title and
+有标题和副标题
 
 
 780
 00:25:53,676 --> 00:25:55,476
-subtitle and I can specify the
+并且我可以指定
 
 
 781
 00:25:55,476 --> 00:25:56,186
-icon style.
+图标样式
 
 
 782
 00:25:57,486 --> 00:25:59,176
-On the right, now, you can see
+在右边现在你可以看到
 
 
 783
 00:25:59,176 --> 00:26:01,576
-the JSON has been updated to
+JSON 已经更新了
 
 
 784
 00:26:01,576 --> 00:26:04,056
-include all of the things I've
+包括了我在表格中
 
 
 785
 00:26:04,056 --> 00:26:05,106
-specified in the form.
+指定的所有东西
 
 
 786
 00:26:05,716 --> 00:26:08,846
-We have a section for images
+我们有一块图片区域
 
 
 787
 00:26:09,006 --> 00:26:11,536
-where we have base64 encoded
+图片是 base64 编码的
 
 
 788
 00:26:11,536 --> 00:26:12,776
-images with an identifier.
+且包含标识符
 
 
 789
 00:26:13,746 --> 00:26:15,376
-Below that we have the List
+在下面是 List Picker 区域
 
 
 790
 00:26:15,376 --> 00:26:17,586
-Picker section where you specify
+你可以在这里指定
 
 
 791
 00:26:17,586 --> 00:26:19,186
-the sections and the items that
+区域以及我在左边
 
 
 792
 00:26:19,186 --> 00:26:21,056
-I've typed on the left, things
+输入的商品比如
 
 
 793
 00:26:21,056 --> 00:26:23,306
-like the T-shirts, title, an
+T 恤的标题
 
 
 794
 00:26:23,306 --> 00:26:24,386
-image identifier which
+对应于上面
 
 
 795
 00:26:24,386 --> 00:26:26,046
-references the base64 encoded
+base64 编码图片的图片标识符
 
 
 796
 00:26:26,046 --> 00:26:29,246
-image above, and my other items
+以及我的其他商品
 
 
 797
 00:26:29,456 --> 00:26:30,256
-and some other fields,
+和其他栏
 
 
 798
 00:26:30,256 --> 00:26:32,276
-specifying order, subtitle, et
+指定顺序 副标题
 
 
 799
 00:26:32,276 --> 00:26:32,836
-cetera.
+等等
 
 
 800
 00:26:33,286 --> 00:26:35,026
-Down below, you see we have the
+在下面 你看到有
 
 
 801
 00:26:35,026 --> 00:26:36,276
-received message and reply
+receivedMessage 和 replyMessage 区域
 
 
 802
 00:26:36,276 --> 00:26:38,326
-message mirroring what I've
+反映了我在左边
 
 
 803
 00:26:38,326 --> 00:26:39,466
-entered on the left, which
+输入的内容
 
 
 804
 00:26:39,466 --> 00:26:40,816
-specify how the bubbles will
+这些内容具体说明了
 
 
 805
 00:26:40,816 --> 00:26:41,646
-look when I send them to my
+当发送至设备时气泡框的
 
 
 806
 00:26:41,646 --> 00:26:42,016
-device.
+样式
 
 
 807
 00:26:43,206 --> 00:26:44,626
-Alright, let's give this
+好了 我们
 
 
 808
 00:26:44,626 --> 00:26:46,626
-customer a way to select from
+让顾客从这些选项中
 
 
 809
 00:26:46,626 --> 00:26:46,806
-these.
+进行选择
 
 
 810
 00:26:46,806 --> 00:26:47,646
-I'm going to send this to the
+我把这个发到设备上
 
 
 811
 00:26:47,646 --> 00:26:49,976
-device and you see on the right
+你可以看到在右边
 
 
 812
 00:26:50,956 --> 00:26:55,326
-of my iPhone up comes bubble for
+我的 iPhone 上出现了一个气泡框
 
 
 813
 00:26:55,326 --> 00:26:56,376
-me to select the package.
+以供我选择包裹
 
 
 814
 00:26:57,056 --> 00:26:59,246
-When I tap this bubble, up come
+当我点击气泡框时
 
 
 815
 00:26:59,246 --> 00:27:00,746
-the choices that I specified on
+出现了我在左边指定的
 
 
 816
 00:27:00,746 --> 00:27:00,966
-the left.
+选项
 
 
 817
 00:27:01,516 --> 00:27:06,156
-[ Applause ]
+[ 掌声 ]
 
 
 818
 00:27:06,656 --> 00:27:09,456
-Great. So, let's take a look at
+好了 让我们看看
 
 
 819
 00:27:09,456 --> 00:27:09,766
-these.
+这些
 
 
 820
 00:27:09,766 --> 00:27:11,466
-So I'm really inquiring about
+所以我现在要查询
 
 
 821
 00:27:11,466 --> 00:27:12,366
-this iPad that I'm getting on
+我即将在周一收到的
 
 
 822
 00:27:12,366 --> 00:27:12,896
-Monday.
+iPad
 
 
 823
 00:27:13,276 --> 00:27:15,326
-So I'm going to select this and
+我选择它然后
 
 
 824
 00:27:15,416 --> 00:27:17,846
-you see I tap that and up comes
+你看到我点击时
 
 
 825
 00:27:17,846 --> 00:27:18,876
-the response that I'm ready to
+出现了我准备好
 
 
 826
 00:27:18,926 --> 00:27:19,756
-send back to the business.
+发送回企业的回复
 
 
 827
 00:27:20,586 --> 00:27:22,066
-I can go ahead and just send
+我可以继续并
 
 
 828
 00:27:22,066 --> 00:27:22,486
-that back.
+发送回去
 
 
 829
 00:27:23,086 --> 00:27:24,736
-And now in the Business Chat
+现在 Business Chat Sandbox 中
 
 
 830
 00:27:24,736 --> 00:27:26,246
-Sandbox, in the transcript
+的消息记录里
 
 
 831
 00:27:26,636 --> 00:27:28,056
-you'll see that the List Picker
+你可以看到 List Picker
 
 
 832
 00:27:28,146 --> 00:27:29,746
-response has been highlighted so
+的回复已经强调显示了
 
 
 833
 00:27:29,746 --> 00:27:31,236
-the business knows which item
+这样企业就知道
 
 
 834
 00:27:31,236 --> 00:27:32,866
-I'm actually interested in.
+我感兴趣的是哪个商品
 
 
 835
 00:27:33,866 --> 00:27:34,716
-Alright, great.
+好
 
 
 836
 00:27:34,856 --> 00:27:36,306
-So, let's continue the
+让我们继续
 
 
 837
 00:27:36,306 --> 00:27:37,296
-experience here.
+这个体验
 
 
 838
 00:27:37,446 --> 00:27:39,106
-Let's go from the business and
+让我们在企业这边说
 
 
 839
 00:27:39,106 --> 00:27:42,496
-say, "What would you like help
+关于这个 iPad 
 
 
 840
 00:27:43,336 --> 00:27:44,856
-with for this iPad?"
+有什么需要帮忙的
 
 
 841
 00:27:45,466 --> 00:27:48,946
-So what I really want to do is
+我想做的是
 
 
 842
 00:27:48,946 --> 00:27:49,946
-this iPad is scheduled for
+这个 iPad 将会
 
 
 843
 00:27:49,946 --> 00:27:52,366
-delivery on Monday but I don't
+在周一送达
 
 
 844
 00:27:52,366 --> 00:27:53,316
-really want to wait around for
+但我不想等这么久
 
 
 845
 00:27:53,316 --> 00:27:53,846
-this to come.
+才收到
 
 
 846
 00:27:53,846 --> 00:27:55,646
-I want to go and pick this up as
+我想自己取走
 
 
 847
 00:27:55,646 --> 00:27:58,316
-soon as possible, as this is one
+越快越好因为
 
 
 848
 00:27:58,316 --> 00:27:59,966
-of those new iPads.
+这是一台新推出的 iPad
 
 
 849
 00:27:59,966 --> 00:28:02,736
-So I'm going to say, "Let's
+所以我说
 
 
 850
 00:28:02,736 --> 00:28:05,236
-schedule a pickup."
+让我们安排一次取件
 
 
 851
 00:28:05,396 --> 00:28:06,286
-So we're assuming now this
+我们现在假设
 
 
 852
 00:28:06,346 --> 00:28:08,046
-business actually has some sort
+这个企业有
 
 
 853
 00:28:08,046 --> 00:28:11,016
-of pickup location and to do
+取件点
 
 
 854
 00:28:11,016 --> 00:28:11,976
-that we're going schedule a
+要取件我们要预约
 
 
 855
 00:28:11,976 --> 00:28:12,216
-time.
+时间
 
 
 856
 00:28:12,386 --> 00:28:13,296
-So we're going to switch to the
+所以我们将转到
 
 
 857
 00:28:13,296 --> 00:28:14,986
-Time Picker so we can schedule a
+Time Picker 这样我们就可以
 
 
 858
 00:28:14,986 --> 00:28:16,176
-time for me to go and pick up
+安排一个时间让我去取
 
 
 859
 00:28:16,176 --> 00:28:16,796
-that iPad.
+那个 iPad
 
 
 860
 00:28:17,576 --> 00:28:19,756
-I have some JSON saved down
+我为这个保存了一些 JSON
 
 
 861
 00:28:19,756 --> 00:28:20,406
-below for that.
+在这下面
 
 
 862
 00:28:20,896 --> 00:28:26,896
-So I'm going to drag that in
+我现在把它拖到这栏
 
 
 863
 00:28:26,896 --> 00:28:27,646
-[inaudible] and we'll try that
+让我们再
 
 
 864
 00:28:27,646 --> 00:28:27,986
-again.
+试一次
 
 
 865
 00:28:28,976 --> 00:28:32,046
-OK. So here, we have specified
+好现在我们为已收到的消息
 
 
 866
 00:28:32,046 --> 00:28:33,036
-some different images and
+指定了一些
 
 
 867
 00:28:33,036 --> 00:28:34,796
-different icon styles for
+不同的图片和不同的
 
 
 868
 00:28:34,796 --> 00:28:35,546
-received message.
+图标样式
 
 
 869
 00:28:35,546 --> 00:28:37,146
-This is just like a List Picker.
+这跟 List Picker 一样
 
 
 870
 00:28:37,146 --> 00:28:38,106
-It has a received message.
+它也有 Received Message.
 
 
 871
 00:28:38,106 --> 00:28:39,556
-This is the bubble that comes in
+这是出现在顾客
 
 
 872
 00:28:40,016 --> 00:28:41,826
-to the customer's device.
+设备上的气泡框
 
 
 873
 00:28:42,696 --> 00:28:45,146
-I've set a title for "Hold iPad
+我已经设置了标题为
 
 
 874
 00:28:45,146 --> 00:28:46,846
-for pickup" and a subtle
+" Hold iPad for pickup"和副标题
 
 
 875
 00:28:46,846 --> 00:28:47,546
-"Schedule a time."
+"Schedule a time"
 
 
 876
 00:28:48,376 --> 00:28:51,196
-I also have some details about
+同时关于这个预约
 
 
 877
 00:28:51,196 --> 00:28:52,336
-this appointment or schedule.
+还有一些细节
 
 
 878
 00:28:52,776 --> 00:28:55,096
-I have a name and optionally you
+有预约名称另外你还可以
 
 
 879
 00:28:55,096 --> 00:28:56,346
-can include location details.
+选择额外添加位置信息
 
 
 880
 00:28:57,226 --> 00:28:59,426
-So in this -- A lot of times,
+在这里 -- 有很多时间
 
 
 881
 00:28:59,656 --> 00:29:01,976
-you know, appointments include
+你知道  预约包括
 
 
 882
 00:29:01,976 --> 00:29:03,126
-an actual location that you're
+你可以去的
 
 
 883
 00:29:03,126 --> 00:29:03,506
-going to.
+实际地点
 
 
 884
 00:29:03,506 --> 00:29:04,826
-And for that, we can let you
+对此  我们让你可以
 
 
 885
 00:29:04,826 --> 00:29:08,126
-specify a name, a lat, long, and
+指定名称  经纬度
 
 
 886
 00:29:08,196 --> 00:29:09,756
-then the user can actually route
+然后用户就可以
 
 
 887
 00:29:09,756 --> 00:29:10,756
-to that on their device, which
+在他们设备上规划路线
 
 
 888
 00:29:10,756 --> 00:29:11,826
-I'll show you, momentarily.
+稍后我会演示
 
 
 889
 00:29:12,326 --> 00:29:13,756
-Then we can specify time slots,
+然后我们可以指定时间段
 
 
 890
 00:29:14,466 --> 00:29:17,476
-pick from a calendar, the time
+从日历中选择
 
 
 891
 00:29:17,476 --> 00:29:19,216
-of day, and the duration of that
+当天时间以及预约的
 
 
 892
 00:29:19,216 --> 00:29:19,646
-appointment.
+持续时长
 
 
 893
 00:29:20,776 --> 00:29:22,496
-Down below, I have the reply
+在下面是 Reply Message
 
 
 894
 00:29:22,496 --> 00:29:24,566
-message which is used of course
+当然是用来
 
 
 895
 00:29:24,566 --> 00:29:25,576
-to show what happens when you
+展示当你向企业
 
 
 896
 00:29:25,636 --> 00:29:26,986
-send back the message to the
+发回消息后
 
 
 897
 00:29:26,986 --> 00:29:27,406
-business.
+会发生什么
 
 
 898
 00:29:28,436 --> 00:29:30,196
-Now on the right, you can see
+现在在右边你可以看到
 
 
 899
 00:29:30,786 --> 00:29:33,596
-the JSON has been updated to
+JSON 已经更新了
 
 
 900
 00:29:33,596 --> 00:29:35,596
-also include our common images
+包括了常见的图片格式
 
 
 901
 00:29:35,596 --> 00:29:37,396
-format but below we have the
+但在下面有
 
 
 902
 00:29:37,396 --> 00:29:40,046
-event details and this specifies
+事件详细信息
 
 
 903
 00:29:40,136 --> 00:29:41,416
-things like your time slots.
+这个指定了比如你的时间段
 
 
 904
 00:29:42,496 --> 00:29:44,376
-These are all GMT dates and
+这些都是 GMT 日期和时间格式
 
 
 905
 00:29:44,376 --> 00:29:45,766
-times with their duration in
+持续时间
 
 
 906
 00:29:45,766 --> 00:29:46,196
-seconds.
+以秒表示
 
 
 907
 00:29:47,156 --> 00:29:49,686
-Below that, I have location
+在这下面
 
 
 908
 00:29:49,686 --> 00:29:51,096
-information specified with the
+位置信息指定了
 
 
 909
 00:29:51,096 --> 00:29:53,956
-title, lat, long, and our
+标题  经度  纬度
 
 
 910
 00:29:53,956 --> 00:29:55,236
-familiar received and reply
+以及我们熟悉的已收到
 
 
 911
 00:29:55,236 --> 00:29:55,746
-message.
+和回复消息
 
 
 912
 00:29:55,746 --> 00:29:57,516
-So let's schedule this
+所以让我们
 
 
 913
 00:29:57,516 --> 00:29:57,946
-appointment.
+预约一下
 
 
 914
 00:29:58,046 --> 00:30:00,256
-Time is marching on.
+时间在流逝
 
 
 915
 00:30:00,256 --> 00:30:02,356
-Let's send that over to the
+让我们把这个发送到设备
 
 
 916
 00:30:02,356 --> 00:30:04,886
-device and you see now on the
+现在你看到在
 
 
 917
 00:30:04,886 --> 00:30:06,806
-iPhone here, I have a "Hold iPad
+这里的 iPhone 上出现了
 
 
 918
 00:30:06,956 --> 00:30:07,856
-for pickup."
+"Hold iPad for pickup."
 
 
 919
 00:30:08,076 --> 00:30:09,336
-I can go ahead and tap this.
+我可以点击它
 
 
 920
 00:30:09,816 --> 00:30:12,186
-And you see we're displaying the
+你看现在展示的是
 
 
 921
 00:30:12,186 --> 00:30:13,676
-options that the user can choose
+顾客可以选择的我刚刚
 
 
 922
 00:30:13,676 --> 00:30:14,536
-that I've selected.
+选出来的选项
 
 
 923
 00:30:14,796 --> 00:30:16,266
-I can show more or show less but
+我可以展开或收起
 
 
 924
 00:30:16,266 --> 00:30:18,516
-we by default show the top
+但默认情况下只显示
 
 
 925
 00:30:18,516 --> 00:30:18,906
-three.
+前三个
 
 
 926
 00:30:19,866 --> 00:30:22,166
-I also -- We're tying in to iOS'
+我们在将
 
 
 927
 00:30:22,166 --> 00:30:23,486
-built-in functionality of
+iOS 的内置功能 EventKit
 
 
 928
 00:30:23,486 --> 00:30:24,906
-EventKit, so you can see if
+整合进去这样你就可以看到
 
 
 929
 00:30:24,906 --> 00:30:26,066
-there's any conflicts on your
+是否和你日历中的事件发生冲突
 
 
 930
 00:30:26,066 --> 00:30:27,516
-calendar to help you better
+帮你更好地
 
 
 931
 00:30:27,516 --> 00:30:28,976
-schedule the time.
+安排时间
 
 
 932
 00:30:29,516 --> 00:30:34,456
-[ Applause ]
+[ 掌声 ]
 
 
 933
 00:30:34,956 --> 00:30:36,846
-Now I do have an appointment at
+现在我确实在 11:00 有一个预约
 
 
 934
 00:30:36,846 --> 00:30:38,656
-11:00 but this iPad is way more
+但这个 iPad 比那个
 
 
 935
 00:30:38,656 --> 00:30:39,316
-important than that.
+重要的多
 
 
 936
 00:30:39,316 --> 00:30:40,316
-So I'm going to take an early
+所以我打算早点吃午饭
 
 
 937
 00:30:40,316 --> 00:30:42,206
-lunch and schedule for 11 a.m.
+并预约在上午 11 点
 
 
 938
 00:30:42,536 --> 00:30:43,506
-I'd like to go and pick up this
+我要去拿
 
 
 939
 00:30:43,506 --> 00:30:43,716
-iPad.
+这个 iPad
 
 
 940
 00:30:43,716 --> 00:30:45,936
-So you see now I have the time
+你看我已经选择好了
 
 
 941
 00:30:45,936 --> 00:30:46,736
-selected.
+时间
 
 
 942
 00:30:46,776 --> 00:30:47,986
-I can go ahead and send this
+我可以继续把这个
 
 
 943
 00:30:47,986 --> 00:30:49,606
-back to the Business Chat
+发回给 Business Chat Sandbox
 
 
 944
 00:30:49,606 --> 00:30:52,556
-Sandbox and in the transcript,
+在消息记录里
 
 
 945
 00:30:52,556 --> 00:30:54,656
-in the Sandbox, on the right, we
+在 Sandbox 里  右边
 
 
 946
 00:30:54,656 --> 00:30:55,766
-have the time that I've selected
+出现了我选择的
 
 
 947
 00:30:55,766 --> 00:30:58,746
-notified to the business.
+通知企业的时间
 
 
 948
 00:30:58,866 --> 00:31:00,266
-Now, I did mention that we have
+我刚才提到了我们有
 
 
 949
 00:31:00,266 --> 00:31:01,336
-this location detail.
+这个位置详细信息
 
 
 950
 00:31:01,386 --> 00:31:05,086
-So on the iPhone, once I've sent
+所以在 iPhone 上
 
 
 951
 00:31:05,086 --> 00:31:06,816
-this back to the business, I can
+当我把这个发回企业
 
 
 952
 00:31:06,816 --> 00:31:07,866
-actually go ahead and tap that
+我可以继续点击那个气泡框
 
 
 953
 00:31:07,866 --> 00:31:09,956
-bubble and I get the information
+然后我收到了我发回
 
 
 954
 00:31:09,956 --> 00:31:11,936
-that I've sent back, including
+的信息包括
 
 
 955
 00:31:11,936 --> 00:31:13,456
-the time and location.
+时间和地点
 
 
 956
 00:31:13,726 --> 00:31:15,256
-From here, I can easily add this
+在这里  我可以轻易地将
 
 
 957
 00:31:15,326 --> 00:31:16,596
-appointment right to my calendar
+这个预约添加到我的日历中
 
 
 958
 00:31:17,166 --> 00:31:18,006
-or get directions right in Maps
+或直接从 Maps
 
 
 959
 00:31:18,006 --> 00:31:18,606
-to the location that I've
+获取到我指定的地点
 
 
 960
 00:31:18,606 --> 00:31:18,976
-specified.
+的路线
 
 
 961
 00:31:19,516 --> 00:31:24,576
-[ Applause ]
+[ 掌声 ]
 
 
 962
 00:31:25,076 --> 00:31:28,136
-OK, we're going to close that.
+好了我们把这个关掉
 
 
 963
 00:31:28,136 --> 00:31:29,856
-Great. So these are highlighting
+所以这些体现了
 
 
 964
 00:31:29,856 --> 00:31:30,486
-some of the built-in
+你在和 Business Chat
 
 
 965
 00:31:30,486 --> 00:31:31,606
-interactions that you may
+互动时可能
 
 
 966
 00:31:31,846 --> 00:31:33,396
-encounter when you're
+会碰到的
 
 
 967
 00:31:34,026 --> 00:31:35,266
-interfacing with Business Chat,
+一些内置互动
 
 
 968
 00:31:35,436 --> 00:31:37,296
-but we also wanted to highlight
+但我们还想说
 
 
 969
 00:31:37,926 --> 00:31:39,366
-that you can integrate this with
+你可以将此与
 
 
 970
 00:31:39,366 --> 00:31:41,406
-your own messages apps and take
+你自己的 Messages Apps 整合
 
 
 971
 00:31:41,406 --> 00:31:42,556
-more advantage of the native
+并善加利用
 
 
 972
 00:31:42,556 --> 00:31:43,516
-power of iOS.
+iOS 的原生功能
 
 
 973
 00:31:44,006 --> 00:31:45,056
-So let's switch over to the My
+让我们切换到
 
 
 974
 00:31:45,056 --> 00:31:45,636
-App tab.
+My App 窗口
 
 
 975
 00:31:46,416 --> 00:31:48,016
-And let's talk about this.
+让我们讲讲这个
 
 
 976
 00:31:48,786 --> 00:31:50,936
-From here, we have a bunch of
+在这里有很多字段
 
 
 977
 00:31:50,936 --> 00:31:52,776
-fields that you can use to
+你可以用来和
 
 
 978
 00:31:52,776 --> 00:31:53,866
-communicate with your message
+你的 Message App
 
 
 979
 00:31:53,866 --> 00:31:54,036
-app.
+进行沟通
 
 
 980
 00:31:54,646 --> 00:31:56,716
-The top two fields allow you to
+前面两栏让你可以
 
 
 981
 00:31:56,716 --> 00:31:58,216
-link to the app, allow your
+链接到 App
 
 
 982
 00:31:58,216 --> 00:31:59,256
-customer to link to the app in
+允许你的顾客链接到 App
 
 
 983
 00:31:59,256 --> 00:32:00,126
-case they don't have it
+以防他们还
 
 
 984
 00:32:00,126 --> 00:32:00,606
-installed.
+未安装
 
 
 985
 00:32:01,036 --> 00:32:03,756
-You pull out your iTunes URL ID
+你调出你的 iTunes URL ID
 
 
 986
 00:32:03,756 --> 00:32:05,626
-and enter that here and you
+在这里输入
 
 
 987
 00:32:05,626 --> 00:32:06,776
-provide your app name, which is
+然后提供你的 App 名称
 
 
 988
 00:32:06,776 --> 00:32:08,296
-shown in the transcript.
+名称显示在消息记录中
 
 
 989
 00:32:09,456 --> 00:32:10,706
-Then we have the URL field.
+然后是 URL 字段
 
 
 990
 00:32:11,306 --> 00:32:12,846
-So in messages apps, one of the
+所以在 Messages App 中
 
 
 991
 00:32:12,846 --> 00:32:14,306
-preferred ways to communicate
+和你的 Messages App 
 
 
 992
 00:32:14,306 --> 00:32:15,796
-between your messages apps is
+交流的首选方式实际上
 
 
 993
 00:32:15,796 --> 00:32:16,976
-actually via URL.
+是通过 URL
 
 
 994
 00:32:17,276 --> 00:32:19,376
-And you can put URL keys and
+你可以将 URL key 以及
 
 
 995
 00:32:19,376 --> 00:32:20,876
-values here that the app can
+value 放在这里这样 App 就可以
 
 
 996
 00:32:20,876 --> 00:32:21,306
-then read.
+读取
 
 
 997
 00:32:22,236 --> 00:32:23,376
-Down below we have the team
+在下面我们有
 
 
 998
 00:32:23,426 --> 00:32:24,646
-identifier and bundle
+Team Identifier 和
 
 
 999
 00:32:24,646 --> 00:32:25,236
-identifier.
+Bundle Identifier.
 
 
 1000
 00:32:25,676 --> 00:32:27,836
-These are used so iOS actually
+用了它们 iOS 就
 
 
 1001
 00:32:27,836 --> 00:32:29,406
-knows which message extension to
+知道该实例化哪个
 
 
 1002
 00:32:29,406 --> 00:32:30,326
-instantiate.
+信息后缀
 
 
 1003
 00:32:30,876 --> 00:32:32,106
-And we have an optional session
+另外我们还有个可选的 Session Identifier
 
 
 1004
 00:32:32,136 --> 00:32:33,966
-identifier used in case you have
+以防你同时有
 
 
 1005
 00:32:33,966 --> 00:32:35,966
-multiple message app
+多个 Message App
 
 
 1006
 00:32:36,436 --> 00:32:37,666
-transactions going at once, you
+交易进行
 
 
 1007
 00:32:37,666 --> 00:32:38,886
-can then identify, which one
+你就可以识别
 
 
 1008
 00:32:38,886 --> 00:32:41,546
-you're actually talking about.
+你实际要用的是哪个
 
 
 1009
 00:32:41,546 --> 00:32:43,376
-Live Message Layouts, as Grant
+Live Message Layout
 
 
 1010
 00:32:43,376 --> 00:32:44,526
-mentioned, is a new feature in
+Grant 刚才提到了
 
 
 1011
 00:32:44,646 --> 00:32:46,856
-iOS 11 that lets your message
+是 iOS 11 里的一个新功能
 
 
 1012
 00:32:46,856 --> 00:32:48,566
-bubbles draw all the content,
+让你的消息气泡框生成所有内容
 
 
 1013
 00:32:49,086 --> 00:32:49,886
-providing way more
+提供了更多
 
 
 1014
 00:32:49,886 --> 00:32:51,346
-functionality, native
+的功能
 
 
 1015
 00:32:51,346 --> 00:32:52,946
-functionality from iOS, right in
+iOS 的原生功能
 
 
 1016
 00:32:52,946 --> 00:32:54,036
-the messages transcript.
+就在消息记录里
 
 
 1017
 00:32:55,346 --> 00:32:57,106
-However, if you're sending these
+但是如果你将这些
 
 
 1018
 00:32:57,106 --> 00:32:59,726
-to older iOS devices, they might
+发送到老版本的 iOS 设备上
 
 
 1019
 00:32:59,726 --> 00:33:01,196
-not support Live Message Layout
+它们可能不支持 Live Message Layout
 
 
 1020
 00:33:01,196 --> 00:33:03,136
-as well as other platforms such
+以及其他平台比如
 
 
 1021
 00:33:03,136 --> 00:33:04,106
-as the Mac or the Watch.
+Mac 或 Watch
 
 
 1022
 00:33:04,456 --> 00:33:07,136
-For that, we allow you to enter
+对此我们允许你
 
 
 1023
 00:33:07,136 --> 00:33:08,346
-the information that you may
+针对发送不成功的气泡框
 
 
 1024
 00:33:08,346 --> 00:33:10,666
-have for the fallback bubble so
+输入信息
 
 
 1025
 00:33:10,666 --> 00:33:11,976
-at least they can see that
+这样他们至少可以看到
 
 
 1026
 00:33:11,976 --> 00:33:13,056
-something was received on those
+在那些设备上接收到了
 
 
 1027
 00:33:13,056 --> 00:33:13,506
-devices.
+一些信息
 
 
 1028
 00:33:14,396 --> 00:33:16,436
-So I'm going to go ahead and
+我将继续
 
 
 1029
 00:33:16,436 --> 00:33:19,006
-drag in some content I have for
+拖进一些我为 App 准备的
 
 
 1030
 00:33:19,406 --> 00:33:23,796
-the app here.
+内容
 
 
 1031
 00:33:24,016 --> 00:33:25,596
-And OK, so now you see these
+好了  现在你可以看到
 
 
 1032
 00:33:25,596 --> 00:33:27,346
-fields are filled out and I have
+这些字段已经填充好并且
 
 
 1033
 00:33:27,396 --> 00:33:29,426
-specified some URL parameters,
+我已经指定了 URL 参数
 
 
 1034
 00:33:29,846 --> 00:33:30,946
-which are then read by the
+参数稍后会被设备上的
 
 
 1035
 00:33:30,946 --> 00:33:32,616
-built-in message app on the
+内置 Message App
 
 
 1036
 00:33:32,616 --> 00:33:33,126
-device.
+读取
 
 
 1037
 00:33:33,536 --> 00:33:35,516
-So I have preinstalled already
+我已经在这个 iPhone 上
 
 
 1038
 00:33:35,996 --> 00:33:39,266
-on this iPhone a message app so
+提前安装了一个 Message App
 
 
 1039
 00:33:39,836 --> 00:33:41,316
-I don't have to go and show you
+这样我就不需要向你们展示
 
 
 1040
 00:33:41,316 --> 00:33:42,926
-how that can download from the
+如何从 App Store
 
 
 1041
 00:33:42,926 --> 00:33:43,336
-app store.
+进行下载
 
 
 1042
 00:33:44,296 --> 00:33:45,516
-On the right, you can also see
+在右边你可以看到
 
 
 1043
 00:33:45,516 --> 00:33:47,496
-the JSON contents is now updated
+JSON 内容已经更新了
 
 
 1044
 00:33:48,006 --> 00:33:49,216
-with the fields like you've seen
+包括你在上面看到的字段
 
 
 1045
 00:33:49,216 --> 00:33:52,016
-above, app ID, app name, URL,
+App ID  App 名称 URL
 
 
 1046
 00:33:52,616 --> 00:33:54,516
-some other information including
+以及一些其他信息包括
 
 
 1047
 00:33:54,516 --> 00:33:55,806
-the received message fallback
+Received Message
 
 
 1048
 00:33:55,806 --> 00:33:56,346
-information.
+发送成功信息
 
 
 1049
 00:33:56,966 --> 00:33:59,096
-So I'm going to go ahead and
+所以我将继续
 
 
 1050
 00:33:59,096 --> 00:34:00,936
-send this but before I do,
+发送这个  但在这之前
 
 
 1051
 00:34:00,936 --> 00:34:02,816
-remember I've established
+请记住我已经
 
 
 1052
 00:34:02,816 --> 00:34:04,006
-communication with this business
+和这个企业建立了
 
 
 1053
 00:34:04,006 --> 00:34:04,306
-already.
+对话
 
 
 1054
 00:34:04,436 --> 00:34:07,476
-So time may have passed and what
+一段时间过去了
 
 
 1055
 00:34:07,476 --> 00:34:08,295
-this bubble is going to
+这个气泡框想强调的是
 
 
 1056
 00:34:08,426 --> 00:34:09,616
-highlight is I actually have a
+我有一个包裹
 
 
 1057
 00:34:09,616 --> 00:34:11,626
-shipment that's scheduled for
+预定将在
 
 
 1058
 00:34:11,626 --> 00:34:12,326
-delivery today.
+今天送达
 
 
 1059
 00:34:12,466 --> 00:34:13,886
-So I'm going to send that now
+我现在要发送这个
 
 
 1060
 00:34:13,886 --> 00:34:15,516
-and you'll see that I have these
+你将看到我这些
 
 
 1061
 00:34:15,556 --> 00:34:19,376
-T-shirts scheduled for delivery
+T 恤预定在今天 WWDC 期间
 
 
 1062
 00:34:19,376 --> 00:34:20,766
-today at WWDC.
+送达
 
 
 1063
 00:34:20,966 --> 00:34:21,826
-Now there's supposed to be --
+现在这里应该有 --
 
 
 1064
 00:34:21,826 --> 00:34:23,085
-There's the map there.
+这里有个地图
 
 
 1065
 00:34:23,085 --> 00:34:24,346
-Hold up. I tapped the wrong guy
+等等我点错了
 
 
 1066
-00:34:24,346 --> 00:34:24,545
-there.
+00:34:24,545 --> 00:34:25,646
+这里  向我展示了一张
 
 
 1067
-00:34:24,545 --> 00:34:25,646
-So here's -- And it's showing me
+00:34:25,775 --> 00:34:25,976
+地图
 
 
 1068
-00:34:25,775 --> 00:34:25,976
-a map.
+00:34:31,806 --> 00:34:33,446
+展示了一张预定送货
 
 
 1069
-00:34:31,806 --> 00:34:33,446
-Showing me a map of where those
+00:34:33,446 --> 00:34:34,876
+地点的地图
 
 
 1070
-00:34:33,446 --> 00:34:34,876
-are scheduled for delivery.
+00:34:35,286 --> 00:34:36,476
+所以这就是 [掌声]  这是
 
 
 1071
-00:34:35,286 --> 00:34:36,476
-So this is [applause] -- This is
+00:34:36,666 --> 00:34:40,996
+应该  这只是一个通知
 
 
 1072
-00:34:36,666 --> 00:34:40,996
-a -- This is just a notification
+00:34:40,996 --> 00:34:42,356
+可能会随机出现
 
 
 1073
-00:34:40,996 --> 00:34:42,356
-that may have come in randomly
+00:34:42,525 --> 00:34:44,326
+当你设置好 Business Chat
 
 
 1074
-00:34:42,525 --> 00:34:44,326
-as you have this Business Chat
+00:34:44,876 --> 00:34:45,815
+环境后
 
 
 1075
-00:34:44,876 --> 00:34:45,815
-environment set up.
+00:34:46,366 --> 00:34:48,166
+但是  实际上
 
 
 1076
-00:34:46,366 --> 00:34:48,166
-But -- And actually, this is
+00:34:48,166 --> 00:34:49,726
+这同样使用了 Live Message Layout
 
 
 1077
-00:34:48,166 --> 00:34:49,726
-also using Live Message Layout.
+00:34:49,726 --> 00:34:51,306
+你可以看到这里有张地图
 
 
 1078
-00:34:49,726 --> 00:34:51,306
-So you can see I have a map here
+00:34:51,306 --> 00:34:53,186
+这个气泡样式
 
 
 1079
-00:34:51,306 --> 00:34:53,186
-and the bubble format has this
+00:34:53,266 --> 00:34:54,196
+有绿色脚注
 
 
 1080
-00:34:53,266 --> 00:34:54,196
-green footer.
+00:34:54,196 --> 00:34:55,505
+这可能跟你在 iOS 10 中
 
 
 1081
-00:34:54,196 --> 00:34:55,505
-It doesn't look anything like
+00:34:55,505 --> 00:34:56,596
+见到的气泡框
 
 
 1082
-00:34:55,505 --> 00:34:56,596
-the bubbles that you may have
+00:34:56,676 --> 00:34:57,416
+完全不同
 
 
 1083
-00:34:56,676 --> 00:34:57,416
-seen in iOS 10.
+00:34:58,396 --> 00:34:59,376
+这是因为它从原生系统
 
 
 1084
-00:34:58,396 --> 00:34:59,376
-That's because this is all
+00:34:59,376 --> 00:35:00,976
+自动生成内容
 
 
 1085
-00:34:59,376 --> 00:35:00,976
-drawing the content natively.
+00:35:01,996 --> 00:35:03,646
+你可以看到
 
 
 1086
-00:35:01,996 --> 00:35:03,646
-So what you can see is I have
+00:35:03,646 --> 00:35:04,556
+我为 WWDC 预定了这批 T 恤
 
 
 1087
-00:35:03,646 --> 00:35:04,556
-these T-shirts scheduled for
+00:35:04,556 --> 00:35:06,136
+并且它们预计
 
 
 1088
-00:35:04,556 --> 00:35:06,136
-WWDC and they're scheduled for
+00:35:06,176 --> 00:35:08,626
+今天送货 但是似乎
 
 
 1089
-00:35:06,176 --> 00:35:08,626
-delivery today but it looks like
+00:35:08,626 --> 00:35:09,386
+在地图上
 
 
 1090
-00:35:08,626 --> 00:35:09,386
-on the map that they're
+00:35:09,386 --> 00:35:10,826
+预计送货到
 
 
 1091
-00:35:09,386 --> 00:35:10,826
-scheduled for somewhere in San
+00:35:10,826 --> 00:35:11,346
+San Francisco
 
 
 1092
-00:35:10,826 --> 00:35:11,346
-Francisco.
+00:35:11,346 --> 00:35:12,326
+这明显不对
 
 
 1093
-00:35:11,346 --> 00:35:12,326
-So that's not right.
+00:35:12,716 --> 00:35:14,246
+让我们点击这个气泡框
 
 
 1094
-00:35:12,716 --> 00:35:14,246
-Let's tap this bubble and bring
+00:35:14,246 --> 00:35:16,756
+打开我们的 Message App
 
 
 1095
-00:35:14,246 --> 00:35:16,756
-up our message app.
+00:35:16,906 --> 00:35:19,026
+现在你可以看到
 
 
 1096
-00:35:16,906 --> 00:35:19,026
-And now you can see that I have
+00:35:19,026 --> 00:35:20,076
+我错误地安排了
 
 
 1097
-00:35:19,026 --> 00:35:20,076
-incorrectly scheduled these
+00:35:20,076 --> 00:35:21,256
+这批 T 恤送到 Moscone
 
 
 1098
-00:35:20,076 --> 00:35:21,256
-T-shirts for Moscone.
+00:35:21,476 --> 00:35:22,906
+但我们现在在 San Jose
 
 
 1099
-00:35:21,476 --> 00:35:22,906
-But now we're down in San Jose.
+00:35:22,906 --> 00:35:23,686
+所以我们必须做些什么
 
 
 1100
-00:35:22,906 --> 00:35:23,686
-So we're going to have to do
+00:35:23,686 --> 00:35:25,186
+但在这之前
 
 
 1101
-00:35:23,686 --> 00:35:25,186
-something about that, but before
+00:35:25,186 --> 00:35:27,576
+你可以看到
 
 
 1102
-00:35:25,186 --> 00:35:27,576
-we do, you can see that this is
+00:35:27,576 --> 00:35:29,806
+在 Messages 里这实际上
 
 
 1103
-00:35:27,576 --> 00:35:29,806
-actually this is a live map that
+00:35:29,806 --> 00:35:31,916
+是一张实时地图
 
 
 1104
-00:35:29,806 --> 00:35:31,916
-I have here inside Messages.
+00:35:32,426 --> 00:35:33,316
+你在 Messages App 里
 
 
 1105
-00:35:32,426 --> 00:35:33,316
-Everything you can do with
+00:35:33,316 --> 00:35:34,866
+能做的所有事都可以
 
 
 1106
-00:35:33,316 --> 00:35:34,866
-Messages apps, you can do here
+00:35:34,966 --> 00:35:36,856
+在 Business Chat 里完成
 
 
 1107
-00:35:34,966 --> 00:35:36,856
-in the Business Chat and this --
+00:35:36,996 --> 00:35:38,176
+这里有我们
 
 
 1108
-00:35:36,996 --> 00:35:38,176
-And we also have our current
+00:35:38,176 --> 00:35:39,526
+在 San Jose 的当前位置
 
 
 1109
-00:35:38,176 --> 00:35:39,526
-location here in San Jose.
+00:35:40,396 --> 00:35:41,886
+所以你可以整合
 
 
 1110
-00:35:40,396 --> 00:35:41,886
-So you're able to tie in to all
+00:35:41,886 --> 00:35:42,936
+iOS 中所有很棒的功能
 
 
 1111
-00:35:41,886 --> 00:35:42,936
-of the great powerful features
+00:35:42,936 --> 00:35:44,376
+到你的 Business Chat 中
 
 
 1112
-00:35:42,936 --> 00:35:44,376
-of iOS, right in your business
+00:35:45,206 --> 00:35:46,346
+这不是一个网页
 
 
 1113
-00:35:44,376 --> 00:35:44,556
-chat.
+00:35:47,816 --> 00:35:49,416
+现在我们想重新
 
 
 1114
-00:35:45,206 --> 00:35:46,346
-This is not a web page.
+00:35:49,416 --> 00:35:50,386
+安排到这里因为这是
 
 
 1115
-00:35:47,816 --> 00:35:49,416
-So now we'd like to reroute
+00:35:50,386 --> 00:35:51,686
+展会的最后一天
 
 
 1116
-00:35:49,416 --> 00:35:50,386
-these to here because this is
+00:35:51,686 --> 00:35:52,806
+我们真的需要在这里拿到
 
 
 1117
-00:35:50,386 --> 00:35:51,686
-the last day of the show and we
+00:35:52,806 --> 00:35:53,006
+T 恤
 
 
 1118
-00:35:51,686 --> 00:35:52,806
-really got to get these T-shirts
+00:35:53,006 --> 00:35:54,656
+所以我点击我的当前位置
 
 
 1119
-00:35:52,806 --> 00:35:53,006
-here.
+00:35:54,656 --> 00:35:58,026
+让我们说明
 
 
 1120
-00:35:53,006 --> 00:35:54,656
-So I'm going to tap my current
+00:35:58,026 --> 00:35:59,366
+我们想将送货目的的改到
 
 
 1121
-00:35:54,656 --> 00:35:58,026
-location and let's specify that
+00:35:59,366 --> 00:36:00,246
+我的当前位置
 
 
 1122
-00:35:58,026 --> 00:35:59,366
-we want the shipment rerouted to
+00:36:00,246 --> 00:36:02,116
+有 15 美元费用但我
 
 
 1123
-00:35:59,366 --> 00:36:00,246
-my current location.
+00:36:02,116 --> 00:36:02,926
+也必须花费
 
 
 1124
-00:36:00,246 --> 00:36:02,116
-There's a $15 charge but I'll
+00:36:02,926 --> 00:36:05,006
+我们继续
 
 
 1125
-00:36:02,116 --> 00:36:02,926
-have to expense that.
+00:36:05,006 --> 00:36:06,366
+确认我们想
 
 
 1126
-00:36:02,926 --> 00:36:05,006
-We're going to go ahead and
+00:36:06,366 --> 00:36:08,586
+重新改到 San Jose Convention Center
 
 
 1127
-00:36:05,006 --> 00:36:06,366
-confirm that we want this
+00:36:08,586 --> 00:36:09,496
+然后
 
 
 1128
-00:36:06,366 --> 00:36:08,586
-rerouted to San Jose Convention
+00:36:09,496 --> 00:36:10,216
+将这个发回
 
 
 1129
-00:36:08,586 --> 00:36:09,496
-Center and I'm going to go ahead
+00:36:10,216 --> 00:36:10,556
+企业
 
 
 1130
-00:36:09,496 --> 00:36:10,216
-and send that back to the
+00:36:10,636 --> 00:36:11,976
+你可以看到在 Business Chat Sandbox
 
 
 1131
-00:36:10,216 --> 00:36:10,556
-business.
+00:36:11,976 --> 00:36:14,356
+中我们现在收到了 URL
 
 
 1132
-00:36:10,636 --> 00:36:11,976
-And you'll see in the Business
+00:36:14,356 --> 00:36:16,436
+其中指定了我们
 
 
 1133
-00:36:11,976 --> 00:36:14,356
-Chat Sandbox, now we've received
+00:36:16,436 --> 00:36:18,536
+期望送达的
 
 
 1134
-00:36:14,356 --> 00:36:16,436
-the URL, which specifies the new
+00:36:18,646 --> 00:36:19,576
+新地址
 
 
 1135
-00:36:16,436 --> 00:36:18,536
-location that we've designated
+00:36:20,996 --> 00:36:22,546
+太棒了  刚才展现的
 
 
 1136
-00:36:18,646 --> 00:36:19,576
-for the shipment.
+00:36:23,616 --> 00:36:25,096
+是Messages App
 
 
 1137
-00:36:20,996 --> 00:36:22,546
-Great. So that's showing
+00:36:25,096 --> 00:36:25,366
+的整合
 
 
 1138
-00:36:23,616 --> 00:36:25,096
-integration with your messages
+00:36:26,026 --> 00:36:27,286
+但还有件事
 
 
 1139
-00:36:25,096 --> 00:36:25,366
-apps.
+00:36:27,346 --> 00:36:28,926
+我们安排了一次重新派送
 
 
 1140
-00:36:26,026 --> 00:36:27,286
-But there's one more thing and
+00:36:28,926 --> 00:36:31,156
+这将花费我们 15 美元
 
 
 1141
-00:36:27,346 --> 00:36:28,926
-that we've scheduled a reroute
+00:36:31,716 --> 00:36:32,586
+对此我们
 
 
 1142
-00:36:28,926 --> 00:36:31,156
-and that's going to cost us $15.
+00:36:32,586 --> 00:36:33,786
+要让顾客
 
 
 1143
-00:36:31,716 --> 00:36:32,586
-So for that we're going to
+00:36:33,786 --> 00:36:36,376
+使用 Apple Pay 进行支付
 
 
 1144
-00:36:32,586 --> 00:36:33,786
-request a payment from our
+00:36:36,616 --> 00:36:38,486
+现在我要把
 
 
 1145
-00:36:33,786 --> 00:36:36,376
-customers using Apple Pay.
+00:36:38,486 --> 00:36:40,826
+Apple Pay JSON 拖到这里
 
 
 1146
-00:36:36,616 --> 00:36:38,486
-Now I'm going to drag in our
+00:36:40,826 --> 00:36:42,456
+你看在上面有我们熟悉的
 
 
 1147
-00:36:38,486 --> 00:36:40,826
-Apple Pay JSON here and you see
+00:36:42,456 --> 00:36:45,146
+Received Message 指定了
 
 
 1148
-00:36:40,826 --> 00:36:42,456
-we have our familiar received
+00:36:45,146 --> 00:36:47,886
+图像以及气泡框的标题
 
 
 1149
-00:36:42,456 --> 00:36:45,146
-message at the top specifying an
+00:36:47,886 --> 00:36:48,896
+和副标题
 
 
 1150
-00:36:45,146 --> 00:36:47,886
-image and title and subtitle of
+00:36:49,556 --> 00:36:51,556
+在下面我们可以定义
 
 
 1151
-00:36:47,886 --> 00:36:48,896
-this bubble.
+00:36:51,556 --> 00:36:52,136
+我们的商品
 
 
 1152
-00:36:49,556 --> 00:36:51,556
-And down below, we can specify
+00:36:52,226 --> 00:36:53,196
+这里  有当天
 
 
 1153
-00:36:51,556 --> 00:36:52,136
-our items.
+00:36:53,196 --> 00:36:55,136
+重新配送  这将
 
 
 1154
-00:36:52,226 --> 00:36:53,196
-Here, we have a same-day
+00:36:55,136 --> 00:36:56,956
+花费你 15 美元
 
 
 1155
-00:36:53,196 --> 00:36:55,136
-shipment reroute that going to
+00:36:56,956 --> 00:36:58,546
+此外还有总价
 
 
 1156
-00:36:55,136 --> 00:36:56,956
-cost you 15 bucks and we have a
+00:36:59,056 --> 00:37:00,626
+现在我们还可以选择
 
 
 1157
-00:36:56,956 --> 00:36:58,546
-total price as well.
+00:37:00,626 --> 00:37:02,006
+指定配送方式
 
 
 1158
-00:36:59,056 --> 00:37:00,626
-Optionally now, we can also
+00:37:02,136 --> 00:37:05,066
+对此  这个实际上属于
 
 
 1159
-00:37:00,626 --> 00:37:02,006
-specify shipping methods.
+00:37:05,216 --> 00:37:05,856
+重新配送
 
 
 1160
-00:37:02,136 --> 00:37:05,066
-For this, this actually is the
+00:37:05,856 --> 00:37:07,216
+所以我不会指定
 
 
 1161
-00:37:05,216 --> 00:37:05,856
-reroute.
+00:37:07,276 --> 00:37:08,016
+配送方式
 
 
 1162
-00:37:05,856 --> 00:37:07,216
-So I'm not going to specify
+00:37:08,356 --> 00:37:10,346
+如果你以前
 
 
 1163
-00:37:07,276 --> 00:37:08,016
-shipping methods.
+00:37:10,346 --> 00:37:11,926
+做过 Apple Pay 开发
 
 
 1164
-00:37:08,356 --> 00:37:10,346
-We also have fields that you may
+00:37:11,926 --> 00:37:13,086
+你可能会很熟悉
 
 
 1165
-00:37:10,346 --> 00:37:11,926
-be familiar with if you've done
+00:37:13,086 --> 00:37:13,546
+这些字段
 
 
 1166
-00:37:11,926 --> 00:37:13,086
-Apple Pay development in the
+00:37:14,166 --> 00:37:15,626
+我们有  如果你想指定
 
 
 1167
-00:37:13,086 --> 00:37:13,546
-past.
+00:37:15,626 --> 00:37:17,546
+Apple Pay 表单
 
 
 1168
-00:37:14,166 --> 00:37:15,626
-We have -- If you'd like to
+00:37:17,546 --> 00:37:18,646
+会需要你的账单地址
 
 
 1169
-00:37:15,626 --> 00:37:17,546
-specify the Apple Pay sheet
+00:37:18,646 --> 00:37:20,536
+或收货地址
 
 
 1170
-00:37:17,546 --> 00:37:18,646
-should require your billing
+00:37:20,536 --> 00:37:22,386
+以及你的平台
 
 
 1171
-00:37:18,646 --> 00:37:20,536
-address or your shipping address
+00:37:22,386 --> 00:37:23,576
+包含的商户支持
 
 
 1172
-00:37:20,536 --> 00:37:22,386
-and what merchant capabilities
+00:37:24,506 --> 00:37:26,936
+这些都是标准的
 
 
 1173
-00:37:22,386 --> 00:37:23,576
-your platform may contain.
+00:37:26,936 --> 00:37:29,276
+Apple Pay 功能
 
 
 1174
-00:37:24,506 --> 00:37:26,936
-Now these are all standard Apple
+00:37:29,416 --> 00:37:31,036
+我们在此处没有进行任何
 
 
 1175
-00:37:26,936 --> 00:37:29,276
-Pay functions.
+00:37:31,036 --> 00:37:31,576
+自定义
 
 
 1176
-00:37:29,416 --> 00:37:31,036
-We didn't do anything custom
+00:37:31,576 --> 00:37:33,106
+如果你很熟悉
 
 
 1177
-00:37:31,036 --> 00:37:31,576
-here.
+00:37:33,106 --> 00:37:34,866
+Apple Pay 开发 
 
 
 1178
-00:37:31,576 --> 00:37:33,106
-So if you're familiar developing
+00:37:34,866 --> 00:37:35,586
+这些是你已经
 
 
 1179
-00:37:33,106 --> 00:37:34,866
-with Apple Pay, this is, these
+00:37:35,586 --> 00:37:36,056
+实施过的
 
 
 1180
-00:37:34,866 --> 00:37:35,586
-are things that you've already
+00:37:36,856 --> 00:37:39,056
+我们还遵照了一种非常常见的
 
 
 1181
-00:37:35,586 --> 00:37:36,056
-implemented.
+00:37:39,126 --> 00:37:41,306
+针对 JSON 的 Apple Pay
 
 
 1182
-00:37:36,856 --> 00:37:39,056
-We also followed a very common
+00:37:41,306 --> 00:37:42,236
+JS 格式  我待会儿会在这里向你们
 
 
 1183
-00:37:39,126 --> 00:37:41,306
-Apple Pay JS format for the
+00:37:42,236 --> 00:37:42,906
+展示
 
 
 1184
-00:37:41,306 --> 00:37:42,236
-JSON, which I'll show you over
+00:37:44,156 --> 00:37:46,246
+关于这个请求的 JSON
 
 
 1185
-00:37:42,236 --> 00:37:42,906
-here.
+00:37:46,246 --> 00:37:49,306
+我们有 receivedMessage
 
 
 1186
-00:37:44,156 --> 00:37:46,246
-So for the JSON for this
+00:37:49,306 --> 00:37:52,486
+我们有 images
 
 
 1187
-00:37:46,246 --> 00:37:49,306
-request, we have our received
+00:37:52,486 --> 00:37:54,726
+就像你之前看到的
 
 
 1188
-00:37:49,306 --> 00:37:52,486
-message and we have our images,
+00:37:54,726 --> 00:37:56,776
+但现在我们有一个支付对象
 
 
 1189
-00:37:52,486 --> 00:37:54,726
-as you've seen before, but now
+00:37:56,776 --> 00:37:58,136
+包含了 paymentRequest
 
 
 1190
-00:37:54,726 --> 00:37:56,776
-we have a payment object which
+00:37:58,606 --> 00:38:00,296
+这包括了 lineItems
 
 
 1191
-00:37:56,776 --> 00:37:58,136
-contains a payment request.
+00:38:00,296 --> 00:38:01,946
+same day shipment reroute
 
 
 1192
-00:37:58,606 --> 00:38:00,296
-This contains line items, same
+00:38:02,086 --> 00:38:04,336
+花 15 美元以及一个总价
 
 
 1193
-00:38:00,296 --> 00:38:01,946
-day shipment reroute for 15
+00:38:04,606 --> 00:38:06,846
+然后我们还有
 
 
 1194
-00:38:02,086 --> 00:38:04,336
-bucks, and a total.
+00:38:06,846 --> 00:38:09,216
+Apple Pay 区域包括了
 
 
 1195
-00:38:04,606 --> 00:38:06,846
-And then we also have our Apple
+00:38:09,216 --> 00:38:10,896
+如下信息
 
 
 1196
-00:38:06,846 --> 00:38:09,216
-Pay section, which contains
+00:38:10,896 --> 00:38:12,586
+我们支持的网络 merchantCapabilities
 
 
 1197
-00:38:09,216 --> 00:38:10,896
-information for what networks we
+00:38:12,916 --> 00:38:14,376
+以及我们支持的
 
 
 1198
-00:38:10,896 --> 00:38:12,586
-support, merchant capabilities,
+00:38:14,376 --> 00:38:14,746
+货币类型
 
 
 1199
-00:38:12,916 --> 00:38:14,376
-and what types of currency we
+00:38:16,286 --> 00:38:17,276
+现在这里的下面
 
 
 1200
-00:38:14,376 --> 00:38:14,746
-support.
+00:38:17,276 --> 00:38:19,346
+你还看得我们有一些其他的 URL
 
 
 1201
-00:38:16,286 --> 00:38:17,276
-Now at the bottom, here, you'll
+00:38:19,346 --> 00:38:21,296
+这非常有趣
 
 
 1202
-00:38:17,276 --> 00:38:19,346
-also see we have some other URLs
+00:38:21,296 --> 00:38:22,526
+我们提供了
 
 
 1203
-00:38:19,346 --> 00:38:21,296
-and this is kind of interesting.
+00:38:22,526 --> 00:38:24,676
+一些当你将
 
 
 1204
-00:38:21,296 --> 00:38:22,526
-So what we've done is we've
+00:38:24,676 --> 00:38:26,026
+Apple Pay 和你的业务整合时
 
 
 1205
-00:38:22,526 --> 00:38:24,676
-provided a bunch of URLs that
+00:38:26,026 --> 00:38:27,186
+可以使用的 URL
 
 
 1206
-00:38:24,676 --> 00:38:26,026
-you can use when you integrate
+00:38:27,606 --> 00:38:29,066
+第一个 paymentGatewayUrl
 
 
 1207
-00:38:26,026 --> 00:38:27,186
-Apple Pay with your business.
+00:38:29,066 --> 00:38:31,026
+允许你的企业
 
 
 1208
-00:38:27,606 --> 00:38:29,066
-The first one, payment Gateway
+00:38:31,156 --> 00:38:33,536
+发送加密的有效传输负载
 
 
 1209
-00:38:29,066 --> 00:38:31,026
-URL, allows your business to
+00:38:33,536 --> 00:38:34,686
+来处理支付
 
 
 1210
-00:38:31,156 --> 00:38:33,536
-send its encrypted payload to
+00:38:35,366 --> 00:38:38,206
+好了  我们还有另外三个 URL
 
 
 1211
-00:38:33,536 --> 00:38:34,686
-actually process the payment.
+00:38:38,206 --> 00:38:39,586
+他们被用于当 Apple Pay
 
 
 1212
-00:38:35,366 --> 00:38:38,206
-Great. We also have three URLs
+00:38:39,586 --> 00:38:40,926
+表单出现在屏幕上时
 
 
 1213
-00:38:38,206 --> 00:38:39,586
-that are used when the Apple Pay
+00:38:41,336 --> 00:38:42,426
+如果你将你的支付方式
 
 
 1214
-00:38:39,586 --> 00:38:40,926
-sheet is up on the screen.
+00:38:42,536 --> 00:38:44,506
+从比如借记卡
 
 
 1215
-00:38:41,336 --> 00:38:42,426
-If you change your payment
+00:38:44,506 --> 00:38:45,826
+变成信用卡
 
 
 1216
-00:38:42,536 --> 00:38:44,506
-method from let's say a debit
+00:38:45,826 --> 00:38:48,046
+我们将点击这个 URL 这样你会
 
 
 1217
-00:38:44,506 --> 00:38:45,826
-card to a credit card, we're
+00:38:48,046 --> 00:38:50,386
+在某些情况下可能
 
 
 1218
-00:38:45,826 --> 00:38:48,046
-going to hit this URL so you may
+00:38:50,526 --> 00:38:51,906
+改变了你拥有的优惠条件
 
 
 1219
-00:38:48,046 --> 00:38:50,386
-want to in some cases maybe
+00:38:51,966 --> 00:38:53,066
+一些企业可能
 
 
 1220
-00:38:50,526 --> 00:38:51,906
-change what offerings you have.
+00:38:53,066 --> 00:38:54,176
+会针对特定类型的银行卡
 
 
 1221
-00:38:51,966 --> 00:38:53,066
-Some businesses may offer
+00:38:54,176 --> 00:38:54,586
+提供折扣
 
 
 1222
-00:38:53,066 --> 00:38:54,176
-discounts for certain types of
+00:38:56,276 --> 00:38:57,206
+当你更改你的运输方式时
 
 
 1223
-00:38:54,176 --> 00:38:54,586
-cards.
+00:38:57,206 --> 00:38:59,006
+我们也有机会
 
 
 1224
-00:38:56,276 --> 00:38:57,206
-When you change your shipping
+00:38:59,006 --> 00:39:00,766
+上传服务器并更新你的
 
 
 1225
-00:38:57,206 --> 00:38:59,006
-method, we also have a chance to
+00:39:00,766 --> 00:39:01,476
+运输商品
 
 
 1226
-00:38:59,006 --> 00:39:00,766
-hit a server and update your
+00:39:01,916 --> 00:39:04,316
+假设我们将从
 
 
 1227
-00:39:00,766 --> 00:39:01,476
-shipment items.
+00:39:04,376 --> 00:39:06,166
+陆运变为隔夜送达
 
 
 1228
-00:39:01,916 --> 00:39:04,316
-So let's say we are switching
+00:39:06,166 --> 00:39:07,066
+我们可能需要
 
 
 1229
-00:39:04,376 --> 00:39:06,166
-from ground to overnight
+00:39:07,066 --> 00:39:08,246
+更新你的条目以及
 
 
 1230
-00:39:06,166 --> 00:39:07,066
-delivery, we might have to
+00:39:08,246 --> 00:39:08,716
+总价
 
 
 1231
-00:39:07,066 --> 00:39:08,246
-update your line items and your
+00:39:08,716 --> 00:39:10,926
+然后你的派送联系人
 
 
 1232
-00:39:08,246 --> 00:39:08,716
-total.
+00:39:11,266 --> 00:39:12,536
+如果我突然想把这个包裹
 
 
 1233
-00:39:08,716 --> 00:39:10,926
-And then your shipping contact,
+00:39:12,536 --> 00:39:14,676
+送到夏威夷
 
 
 1234
-00:39:11,266 --> 00:39:12,536
-if suddenly I want this package
+00:39:14,676 --> 00:39:16,116
+你需要更新所有
 
 
 1235
-00:39:12,536 --> 00:39:14,676
-delivered to Hawaii, you might
+00:39:16,116 --> 00:39:17,696
+运输方式 条目以及总价
 
 
 1236
-00:39:14,676 --> 00:39:16,116
-want to update all your shipping
+00:39:18,396 --> 00:39:19,756
+我们还有个 fallbackUrl
 
 
 1237
-00:39:16,116 --> 00:39:17,696
-methods, line items, and totals.
+00:39:19,756 --> 00:39:21,216
+以防顾客
 
 
 1238
-00:39:18,396 --> 00:39:19,756
-We then have a fallback URL,
+00:39:21,216 --> 00:39:22,716
+的设备上
 
 
 1239
-00:39:19,756 --> 00:39:21,216
-which is used in case the
+00:39:22,716 --> 00:39:23,296
+没有 Apple Pay
 
 
 1240
-00:39:21,216 --> 00:39:22,716
-customer doesn't have Apple Pay
+00:39:23,746 --> 00:39:25,596
+你还可以指定一个 URL
 
 
 1241
-00:39:22,716 --> 00:39:23,296
-on their device.
+00:39:25,596 --> 00:39:26,636
+当点击 Apple Pay 气泡框时
 
 
 1242
-00:39:23,746 --> 00:39:25,596
-You can then specify a URL that
+00:39:26,636 --> 00:39:28,526
+会转到你选择的
 
 
 1243
-00:39:25,596 --> 00:39:26,636
-when tapping the Apple Pay
+00:39:28,526 --> 00:39:29,836
+网页上
 
 
 1244
-00:39:26,636 --> 00:39:28,526
-bubble will take you to a web
+00:39:30,626 --> 00:39:31,746
+最后是一个
 
 
 1245
-00:39:28,526 --> 00:39:29,836
-page of your choice.
+00:39:31,746 --> 00:39:32,526
+orderTrackingUrl
 
 
 1246
-00:39:30,626 --> 00:39:31,746
-And then finally, an order
+00:39:32,876 --> 00:39:35,516
+一旦支付
 
 
 1247
-00:39:31,746 --> 00:39:32,526
-tracking URL.
+00:39:35,566 --> 00:39:36,276
+完成
 
 
 1248
-00:39:32,876 --> 00:39:35,516
-This is used once the payment is
+00:39:36,406 --> 00:39:37,186
+我们已经通过
 
 
 1249
-00:39:35,566 --> 00:39:36,276
-complete.
+00:39:37,186 --> 00:39:38,016
+paymentGatewayUrl
 
 
 1250
-00:39:36,406 --> 00:39:37,186
-So we've already sent the
+00:39:38,016 --> 00:39:39,846
+发送了支付  但你的企业
 
 
 1251
-00:39:37,186 --> 00:39:38,016
-payment through the payment
+00:39:39,906 --> 00:39:41,966
+可能会有一个单独的系统来
 
 
 1252
-00:39:38,016 --> 00:39:39,846
-gateway URL but your business
+00:39:41,966 --> 00:39:43,056
+处理所有订单而
 
 
 1253
-00:39:39,906 --> 00:39:41,966
-may have a separate system that
+00:39:43,056 --> 00:39:44,386
+这就是这个 URL
 
 
 1254
-00:39:41,966 --> 00:39:43,056
-handles all your orders and
+00:39:44,386 --> 00:39:44,546
+的用处
 
 
 1255
-00:39:43,056 --> 00:39:44,386
-that's what this URL is used
+00:39:45,156 --> 00:39:47,916
+好  让我们把这个
 
 
 1256
-00:39:44,386 --> 00:39:44,546
-for.
+00:39:47,916 --> 00:39:50,156
+发到设备上这样我们可以
 
 
 1257
-00:39:45,156 --> 00:39:47,916
-Great. OK, let's send this to
+00:39:50,156 --> 00:39:51,446
+得到 15 美元 
 
 
 1258
-00:39:47,916 --> 00:39:50,156
-the device so we can collect
+00:39:51,446 --> 00:39:51,996
+收到 T 恤
 
 
 1259
-00:39:50,156 --> 00:39:51,446
-this $15 and gets these
+00:39:52,766 --> 00:39:54,856
+你看在设备上出现了
 
 
 1260
-00:39:51,446 --> 00:39:51,996
-T-shirts.
+00:39:54,856 --> 00:39:56,746
+重新运输的
 
 
 1261
-00:39:52,766 --> 00:39:54,856
-So you see on the device now up
+00:39:56,746 --> 00:39:56,976
+Apple Pay 按钮
 
 
 1262
-00:39:54,856 --> 00:39:56,746
-comes our shipment reroute Apple
+00:39:57,076 --> 00:39:59,876
+我可以继续点击
 
 
 1263
-00:39:56,746 --> 00:39:56,976
-Pay Button.
+00:39:59,876 --> 00:40:01,256
+这个气泡框然后弹出了
 
 
 1264
-00:39:57,076 --> 00:39:59,876
-And I can go ahead and just tap
+00:40:01,256 --> 00:40:02,456
+熟悉的 Apple Pay 表单
 
 
 1265
-00:39:59,876 --> 00:40:01,256
-this bubble and up pops the
+00:40:03,376 --> 00:40:05,556
+在这里我只需要
 
 
 1266
-00:40:01,256 --> 00:40:02,456
-familiar Apple Pay sheet.
+00:40:05,696 --> 00:40:06,616
+Touch ID
 
 
 1267
-00:40:03,376 --> 00:40:05,556
-From here, all I have to do is
+00:40:06,846 --> 00:40:08,526
+交易进行处理
 
 
 1268
-00:40:05,696 --> 00:40:06,616
-touch ID.
+00:40:08,526 --> 00:40:10,266
+发回给企业
 
 
 1269
-00:40:06,846 --> 00:40:08,526
-The payment gets processed, sent
+00:40:10,266 --> 00:40:11,596
+然后气泡框更新为已支付
 
 
 1270
-00:40:08,526 --> 00:40:10,266
-back to the business, and the
+00:40:11,596 --> 00:40:11,776
+就这样
 
 
 1271
-00:40:10,266 --> 00:40:11,596
-bubble is updated with paid, and
+00:40:12,516 --> 00:40:18,996
+[ 掌声 ]
 
 
 1272
-00:40:11,596 --> 00:40:11,776
-that's it.
+00:40:19,496 --> 00:40:21,776
+好了让我们回到之前的
 
 
 1273
-00:40:12,516 --> 00:40:18,996
-[ Applause ]
+00:40:21,936 --> 00:40:25,326
+幻灯片
 
 
 1274
-00:40:19,496 --> 00:40:21,776
-Alright, so let's go back to
+00:40:25,946 --> 00:40:27,466
+Business Chat Sandbox
 
 
 1275
-00:40:21,936 --> 00:40:25,326
-some slides.
+00:40:27,466 --> 00:40:29,616
+可在这个 URL 获取
 
 
 1276
-00:40:25,946 --> 00:40:27,466
-Business Chat Sandbox is
+00:40:30,866 --> 00:40:32,306
+我们觉得这非常棒
 
 
 1277
-00:40:27,466 --> 00:40:29,616
-available at this URL.
+00:40:32,306 --> 00:40:33,546
+你可以直接进来
 
 
 1278
-00:40:30,866 --> 00:40:32,306
-We think this is really cool and
+00:40:34,026 --> 00:40:35,176
+今天就用你的
 
 
 1279
-00:40:32,306 --> 00:40:33,546
-it's a way where you can just
+00:40:35,176 --> 00:40:36,526
+iOS 11 设备
 
 
 1280
-00:40:34,026 --> 00:40:35,176
-jump in, get started with
+00:40:36,526 --> 00:40:37,346
+使用 Business Chat 吧
 
 
 1281
-00:40:35,176 --> 00:40:36,526
-Business Chat today with your
+00:40:37,516 --> 00:40:39,566
+我们非常期待看到
 
 
 1282
-00:40:36,526 --> 00:40:37,346
-iOS 11 device.
+00:40:39,566 --> 00:40:41,276
+你们能借此创造出怎样的
 
 
 1283
-00:40:37,516 --> 00:40:39,566
-We're really excited to see what
+00:40:41,276 --> 00:40:41,936
+绝佳体验
 
 
 1284
-00:40:39,566 --> 00:40:41,276
-kind of great experiences you
+00:40:42,236 --> 00:40:43,276
+有了 Business Chat Sandbox
 
 
 1285
-00:40:41,276 --> 00:40:41,936
-can create.
+00:40:43,276 --> 00:40:45,036
+你就有了一块画板
 
 
 1286
-00:40:42,236 --> 00:40:43,276
-And with something like Business
+00:40:45,106 --> 00:40:46,846
+来创造下一个
 
 
 1287
-00:40:43,276 --> 00:40:45,036
-Chat Sandbox, you really have a
+00:40:46,896 --> 00:40:48,156
+优秀的企业顾客
 
 
 1288
-00:40:45,106 --> 00:40:46,846
-sketchpad to create the next
+00:40:48,156 --> 00:40:48,556
+体验
 
 
 1289
-00:40:46,896 --> 00:40:48,156
-great business customer
+00:40:48,706 --> 00:40:48,886
+谢谢！
 
 
 1290
-00:40:48,156 --> 00:40:48,556
-experience.
+00:40:49,516 --> 00:40:53,696
+[ 掌声 ]
 
 
 1291
-00:40:48,706 --> 00:40:48,886
-Thank you.
+00:40:54,196 --> 00:40:54,756
+>> 谢谢你 Scottie
 
 
 1292
-00:40:49,516 --> 00:40:53,696
-[ Applause ]
+00:40:54,756 --> 00:40:55,296
+非常棒
 
 
 1293
-00:40:54,196 --> 00:40:54,756
->> Thanks, Scotty.
+00:40:57,906 --> 00:40:59,216
+好了  第二步
 
 
 1294
-00:40:54,756 --> 00:40:55,296
-That was great.
+00:40:59,216 --> 00:40:59,746
+去连接
 
 
 1295
-00:40:57,906 --> 00:40:59,216
-Alright, step two, get
+00:41:00,496 --> 00:41:01,766
+你需要和一个支持
 
 
 1296
-00:40:59,216 --> 00:40:59,746
-connected.
+00:41:01,766 --> 00:41:03,626
+Business Chat 的客户服务平台
 
 
 1297
-00:41:00,496 --> 00:41:01,766
-You need to work with a customer
+00:41:03,626 --> 00:41:05,146
+协作并且我们已经
 
 
 1298
-00:41:01,766 --> 00:41:03,626
-service platform that supports
+00:41:05,146 --> 00:41:06,886
+整合了 LivePerson
 
 
 1299
-00:41:03,626 --> 00:41:05,146
-Business Chat and we've already
+00:41:07,396 --> 00:41:10,436
+Nuance  Genesys 和 Salesforce 
 
 
 1300
-00:41:05,146 --> 00:41:06,886
-integrated with LivePerson,
+00:41:10,946 --> 00:41:12,436
+这些公司可以帮助你
 
 
 1301
-00:41:07,396 --> 00:41:10,436
-Nuance, Genesys, and Salesforce.
+00:41:12,436 --> 00:41:13,906
+让你的企业准备好
 
 
 1302
-00:41:10,946 --> 00:41:12,436
-These companies can help you get
+00:41:13,906 --> 00:41:14,136
+Business Chat
 
 
 1303
-00:41:12,436 --> 00:41:13,906
-your business ready for Business
+00:41:15,606 --> 00:41:16,396
+这些公司会帮你
 
 
 1304
-00:41:13,906 --> 00:41:14,136
-Chat.
+00:41:16,396 --> 00:41:18,066
+连接  分转消息
 
 
 1305
-00:41:15,606 --> 00:41:16,396
-These companies will help you
+00:41:18,476 --> 00:41:19,566
+以及整合你的
 
 
 1306
-00:41:16,396 --> 00:41:18,066
-connect, route your messages,
+00:41:19,566 --> 00:41:19,916
+iMessage App
 
 
 1307
-00:41:18,476 --> 00:41:19,566
-and integrate your iMessage
+00:41:20,546 --> 00:41:22,356
+他们还会添加一些智能工具
 
 
 1308
-00:41:19,566 --> 00:41:19,916
-apps.
+00:41:22,356 --> 00:41:24,396
+来提升你职员的效率
 
 
 1309
-00:41:20,546 --> 00:41:22,356
-They'll also add intelligent
+00:41:24,396 --> 00:41:26,406
+并帮你在各个
 
 
 1310
-00:41:22,356 --> 00:41:24,396
-tools to enhance your agent
+00:41:26,406 --> 00:41:27,926
+平台间管理
 
 
 1311
-00:41:24,396 --> 00:41:26,406
-productivity and help you manage
+00:41:27,926 --> 00:41:28,876
+进行通讯交流
 
 
 1312
-00:41:26,406 --> 00:41:27,926
-your communications across your
+00:41:29,346 --> 00:41:33,056
+下一个  第三步
 
 
 1313
-00:41:27,926 --> 00:41:28,876
-various channels.
+00:41:33,386 --> 00:41:34,786
+你现在可以申请
 
 
 1314
-00:41:29,346 --> 00:41:33,056
-Next, step three.
+00:41:34,786 --> 00:41:36,976
+Business Chat 的早期权限
 
 
 1315
-00:41:33,386 --> 00:41:34,786
-You can apply now for early
+00:41:36,976 --> 00:41:38,806
+通过访问 register.apple.com
 
 
 1316
-00:41:34,786 --> 00:41:36,976
-access to Business Chat by going
+00:41:39,446 --> 00:41:43,736
+最后提醒一下
 
 
 1317
-00:41:36,976 --> 00:41:38,806
-to register.apple.com.
+00:41:43,736 --> 00:41:46,306
+在设计你的解决方案时
 
 
 1318
-00:41:39,446 --> 00:41:43,736
-And as a final note, when
+00:41:46,346 --> 00:41:48,076
+请牢记您的顾客
 
 
 1319
-00:41:43,736 --> 00:41:46,306
-designing your solution, please
+00:41:48,856 --> 00:41:50,156
+完全理解电话
 
 
 1320
-00:41:46,346 --> 00:41:48,076
-keep in mind that your customers
+00:41:50,156 --> 00:41:50,406
+按钮的功能
 
 
 1321
-00:41:48,856 --> 00:41:50,156
-today understand the Call
+00:41:51,526 --> 00:41:53,056
+他们知道当他们使用电话时
 
 
 1322
-00:41:50,156 --> 00:41:50,406
-button.
+00:41:53,496 --> 00:41:54,696
+能从你那里得到
 
 
 1323
-00:41:51,526 --> 00:41:53,056
-They know the type of support
+00:41:55,006 --> 00:41:57,596
+怎样的帮助
 
 
 1324
-00:41:53,496 --> 00:41:54,696
-that they will receive from you
+00:41:57,716 --> 00:41:59,486
+现在当他们看到了新的
 
 
 1325
-00:41:55,006 --> 00:41:57,596
-when they use the telephone.
+00:41:59,486 --> 00:42:01,746
+Message 按钮时  他们应该知道
 
 
 1326
-00:41:57,716 --> 00:41:59,486
-Now, when they see your new
+00:42:02,026 --> 00:42:02,926
+有了 Business Chat
 
 
 1327
-00:41:59,486 --> 00:42:01,746
-Message button, they should know
+00:42:02,926 --> 00:42:05,166
+他们会得到
 
 
 1328
-00:42:02,026 --> 00:42:02,926
-that they'll receive the
+00:42:05,786 --> 00:42:07,186
+更好的帮助
 
 
 1329
-00:42:02,926 --> 00:42:05,166
-equivalent or better support
+00:42:07,836 --> 00:42:10,296
+让我们一起
 
 
 1330
-00:42:05,786 --> 00:42:07,186
-with Business Chat.
+00:42:10,296 --> 00:42:12,226
+马上赋予 Business Chat 
 
 
 1331
-00:42:07,836 --> 00:42:10,296
-Help us make Business Chat an
+00:42:12,226 --> 00:42:13,626
+优秀的客户体验吧
 
 
 1332
-00:42:10,296 --> 00:42:12,226
-awesome user experience right
+00:42:14,436 --> 00:42:16,756
+总结一下我们讲了
 
 
 1333
-00:42:12,226 --> 00:42:13,626
-out of the gate.
+00:42:16,756 --> 00:42:17,806
+很多入门点
 
 
 1334
-00:42:14,436 --> 00:42:16,756
-So to recap, we went through the
+00:42:19,086 --> 00:42:20,176
+你可以用他们来帮助
 
 
 1335
-00:42:16,756 --> 00:42:17,806
-various entry points.
+00:42:20,326 --> 00:42:21,536
+顾客找到你的企业
 
 
 1336
-00:42:19,086 --> 00:42:20,176
-You can use them to help
+00:42:22,046 --> 00:42:23,226
+我们还梳理了内置功能
 
 
 1337
-00:42:20,326 --> 00:42:21,536
-customers find your business.
+00:42:23,226 --> 00:42:25,066
+你可以使用
 
 
 1338
-00:42:22,046 --> 00:42:23,226
-We also reviewed the built-in
+00:42:25,066 --> 00:42:26,316
+iMessage App 来创造
 
 
 1339
-00:42:23,226 --> 00:42:25,066
-features, the iMessage apps that
+00:42:26,316 --> 00:42:27,416
+绝佳用户体验
 
 
 1340
-00:42:25,066 --> 00:42:26,316
-you can use to create a great
+00:42:28,716 --> 00:42:29,826
+今天从
 
 
 1341
-00:42:26,316 --> 00:42:27,416
-customer experience.
-
-
-1342
-00:42:28,716 --> 00:42:29,826
-So start today at
-
-
-1343
 00:42:29,826 --> 00:42:32,026
 developer.apple.com/
 
 
-1344
+1342
 00:42:32,146 --> 00:42:33,326
-businesschat.
+businesschat 开始
+
+
+1343
+00:42:34,476 --> 00:42:35,786
+更多关于会议的信息
+
+
+1344
+00:42:35,786 --> 00:42:37,346
+你可以访问这里
 
 
 1345
-00:42:34,476 --> 00:42:35,786
-For more information about the
-
-
-1346
-00:42:35,786 --> 00:42:37,346
-session, you can also go here.
-
-
-1347
 00:42:39,976 --> 00:42:40,836
-Thanks, everyone.
-
-
-1348
-00:42:41,516 --> 00:42:45,500
-[ Applause ]
+谢谢大家
 
